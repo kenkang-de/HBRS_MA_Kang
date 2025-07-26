@@ -1,0 +1,40 @@
+#ifndef ACTION_H
+#define ACTION_H
+
+#include "ActionLibrary.h" 
+
+#include <string>
+#include <vector>
+
+class Unit;
+
+enum TargetType {ENEMY, ALLY };
+class BattleAction{
+
+private: 
+int targetNumber;
+bool self;
+TargetType targetType;
+std::string ID;
+
+std::vector<std::pair<ConditionFn, ActionFn>> conditionalActions;
+
+public: 
+ BattleAction() : targetNumber(0), self(false), targetType(ENEMY), ID("None") {}
+
+ BattleAction(int _targetNumber, bool _self, TargetType _targetType, std::string id)
+        : targetNumber(_targetNumber), self(_self),  targetType(_targetType), ID(id) {}
+
+const std::string& GetID() const;
+
+void Perform(Unit* actor, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
+
+TargetType GetTargetType() const { return targetType; }
+bool IncludesSelf() const { return self; }
+int GetTargetNumber() const { return targetNumber; }
+
+void AddConditionalAction(const std::string& conditionID, const std::string& actionID, const std::string& param);
+
+};
+
+#endif

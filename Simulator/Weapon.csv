@@ -1,0 +1,11 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS01,Weapon,Saber,5,0,-2,0,0,1,Slash
+BS02,Weapon,Halberd,10,0,-5,0,0,2,Chop
+BS03,Weapon,Rapier,4,1,-1,0,0,1,Thrust
+BS04,Weapon,Bastard,7,0,-3,0,0,3,Slash
+BS05,Weapon,Messer,6,1,-3,0,0,1,Slash
+BS06,Weapon,Staff of Heal,0,0,-3,2,0,2,Heal
+BS07,Weapon,Staff of Fire,0,0,-2,2,0,2,Fire
+BS08,Weapon,Long Bow,10,0,-3,2,0,2,Shoot
+BS09,Weapon,Short Bow,5,0,-1,2,0,2,Shoot
+BS10,Weapon,Composite Bow,8,0,-2,2,0,2,Shoot

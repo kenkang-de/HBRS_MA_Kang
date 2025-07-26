@@ -1,0 +1,11 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,EFKT
+BS11,Armor,Leather Armor,0,3,-2,1,0,0,
+BS12,Armor,Chainmail,0,5,-3,2,0,0,
+BS13,Armor,Scale Armor,0,7,-4,3,0,0,
+BS14,Armor,Buckler,0,4,-1,1,0,1,
+BS15,Armor,Leather Gloves,2,1,0,0,0,0,
+BS16,Armor,Wooden Shield,0,5,-2,3,0,1,
+BS17,Armor,Plate Armor,0,10,-5,4,0,0,
+BS18,Armor,Robe,0,0,0,3,0,0,
+BS19,Armor,Holy Robe,0,0,0,4,0,0,
+BS20,Armor,Iron Shield,0,7,-4,4,0,1,
