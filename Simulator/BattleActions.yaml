@@ -2,19 +2,29 @@
   targetNumber: 1
   self: false
   targetType: ENEMY
+  actionType: MELEE
   actionIDs: ["C00_A00"]
 
 - id: Thrust
   targetNumber: 1
   self: false
   targetType: ENEMY
+  actionType: MELEE
   actionIDs: ["C01_A01", "C02_A00"]
 
 - id: Chop
   targetNumber: 1
   self: false
   targetType: ENEMY
+  actionType: MELEE
   actionIDs: ["C00_A00", "C00_A02(-1)"]
+
+- id: Shoot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00"]
 
 
 

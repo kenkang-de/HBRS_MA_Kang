@@ -2,3 +2,4 @@
 BS01,Weapon,Speed1,5,0,-4,0,0,1,Chop
 BS02,Weapon,Speed2,10,0,-3,0,0,2,Thrust
 BS03,Weapon,Speed3,4,1,-2,0,0,1,Slash
+BS04,Weapon,Range,12,0,-3,0,0,2,Shoot

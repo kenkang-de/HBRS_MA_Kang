@@ -1,0 +1,3 @@
+ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+TestMelee,Weapon,TestMelee,10,0,-2,0,0,1,Chop
+TestRange,Weapon,TestRange,10,0,-2,0,0,2,Shoot

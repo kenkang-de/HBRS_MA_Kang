@@ -141,9 +141,18 @@ Weapon GetRandomWeapon()
 
 void EquipUnitsRandomEquipments(std::list<Unit>& unitList)
 {
-for(Unit& unit: unitList)
-{
-unit.SetWeapon(GetRandomWeapon());
-unit.SetArmor(GetRandomArmor());
-}
+    int unitIndex = 0;
+    for(Unit& unit: unitList)
+    {
+        Weapon randomWeapon = GetRandomWeapon();
+        Armor randomArmor = GetRandomArmor();
+        
+        unit.SetWeapon(randomWeapon);
+        unit.SetArmor(randomArmor);
+        
+        // Debug output to show what each unit got
+        std::cout << "[DEBUG] Unit " << unitIndex << " equipped with action: " << randomWeapon.GetAction().GetID() 
+                  << " (Type: " << (randomWeapon.GetAction().GetActionType() == ActionType::RANGE ? "RANGE" : "MELEE") << ")" << std::endl;
+        unitIndex++;
+    }
 }

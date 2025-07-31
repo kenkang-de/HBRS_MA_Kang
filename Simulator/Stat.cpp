@@ -1,4 +1,6 @@
 #include "Stat.h"
+#include <cassert>
+#include <iostream>
 
 const int Stat::Default_Attack = 1;
 const int Stat::Default_Defense = 0;
@@ -43,6 +45,8 @@ Hitpoint(hitpoint),
 Speed(speed),
 Threat(threat)
 {}
+
+Stat::~Stat() {}
 
 int Stat::GetSpeed() const
 {

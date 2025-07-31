@@ -15,8 +15,10 @@ std::unordered_map<std::string, BattleAction> LoadActionsFromYAML(const std::str
         int targetNumber = node["targetNumber"].as<int>();
         bool self = node["self"].as<bool>();
         TargetType targetType = ParseTargetType(node["targetType"].as<std::string>());
+        ActionType actionType = ParseActionType(node["actionType"].as<std::string>());
 
         BattleAction action(targetNumber, self, targetType, id);
+        action.SetActionType(actionType);
 
         if (node["actionIDs"]) {
             for (const auto& actionIDStr : node["actionIDs"]) {

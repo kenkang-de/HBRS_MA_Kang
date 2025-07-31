@@ -9,12 +9,14 @@
 class Unit;
 
 enum TargetType {ENEMY, ALLY };
+enum ActionType { MELEE, RANGE, MAGIC };
 class BattleAction{
 
 private: 
 int targetNumber;
 bool self;
 TargetType targetType;
+ActionType actionType;
 std::string ID;
 
 std::vector<std::pair<ConditionFn, ActionFn>> conditionalActions;
@@ -28,6 +30,13 @@ public:
 const std::string& GetID() const;
 
 void Perform(Unit* actor, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
+void Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
+
+int CalculateDamage(Unit* actingUnit, Unit* target) const;
+
+
+void SetActionType(ActionType type) { actionType = type; }
+ActionType GetActionType() const { return actionType; }
 
 TargetType GetTargetType() const { return targetType; }
 bool IncludesSelf() const { return self; }

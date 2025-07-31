@@ -1,12 +1,116 @@
 #include "TargetManager.h"
 #include <algorithm>
 
+// MAIN METHOD: This is what BattleManager calls
+std::map<Unit*, std::vector<Unit*>> TargetManager::SelectTargetsForGroup(
+    const std::vector<Unit*>& actingUnits,
+    const std::vector<Unit*>& allUnits
+) {
+    std::map<Unit*, std::vector<Unit*>> groupTargets;
+    
+    if (actingUnits.empty()) return groupTargets;
+
+    // Step 1: Get all alive units
+    std::vector<Unit*> aliveUnits;
+    for (Unit* unit : allUnits) {
+        if (unit && unit->GetTotalStat().GetHP() > 0) {
+            aliveUnits.push_back(unit);
+        }
+    }
+
+    // Step 2: Smart targeting simulation
+    SimulateGroupTargeting(actingUnits, aliveUnits, groupTargets);
+
+    return groupTargets;
+}
+
+// HELPER: Get valid targets for one unit
+std::vector<Unit*> TargetManager::GetValidTargets(Unit* actingUnit, const std::vector<Unit*>& allUnits) {
+    std::vector<Unit*> validTargets;
+    const BattleAction& action = actingUnit->GetWeapon().GetAction();
+    
+    for (Unit* target : allUnits) {
+        if (!target) continue;
+        
+        bool canTarget = false;
+        
+        if (action.GetTargetType() == TargetType::ALLY) {
+            // Can target teammates
+            if (target->team == actingUnit->team) {
+                if (target != actingUnit || action.IncludesSelf()) {
+                    canTarget = true;
+                }
+            }
+        } else {
+            // Can target enemies  
+            if (target->team != actingUnit->team) {
+                canTarget = true;
+            }
+        }
+        
+        if (canTarget) {
+            validTargets.push_back(target);
+        }
+    }
+    
+    return validTargets;
+}
+
+// HELPER: Smart targeting simulation with shared HP
+void TargetManager::SimulateGroupTargeting(
+    const std::vector<Unit*>& actingUnits,
+    const std::vector<Unit*>& allAliveUnits,
+    std::map<Unit*, std::vector<Unit*>>& groupTargets
+) {
+    // Create shared HP simulation
+    std::map<Unit*, int> simulatedHP;
+    for (Unit* unit : allAliveUnits) {
+        simulatedHP[unit] = unit->GetTotalStat().GetHP();
+    }
+
+    // Each unit selects targets using shared simulation
+    for (Unit* actingUnit : actingUnits) {
+        if (!actingUnit) continue;
+        
+        // Get this unit's valid targets
+        std::vector<Unit*> validTargets = GetValidTargets(actingUnit, allAliveUnits);
+        
+        // Find best target that's still alive in simulation
+        Unit* bestTarget = nullptr;
+        for (Unit* target : validTargets) {
+            if (simulatedHP[target] > 0) {
+                bestTarget = target;
+                break; // Take first available target
+            }
+        }
+        
+        // If we found a target, simulate damage
+        if (bestTarget) {
+            const BattleAction& action = actingUnit->GetWeapon().GetAction();
+            int damage = action.CalculateDamage(actingUnit, bestTarget);
+            
+            // Apply damage to simulation
+            simulatedHP[bestTarget] -= damage;
+            if (simulatedHP[bestTarget] < 0) {
+                simulatedHP[bestTarget] = 0;
+            }
+            
+            // Assign target
+            groupTargets[actingUnit] = {bestTarget};
+        } else {
+            // No valid targets
+            groupTargets[actingUnit] = {};
+        }
+    }
+}
+
+// LEGACY METHOD: For backwards compatibility
 std::vector<Unit*> TargetManager::SelectTargets(
     Unit* actingUnit,
     const std::vector<Unit*>& allies,
     const std::vector<Unit*>& enemies,
-    const BattleAction& action)
-{
+    const BattleAction& action
+) {
     std::vector<Unit*> candidates;
 
     // Determine target pool
@@ -16,14 +120,6 @@ std::vector<Unit*> TargetManager::SelectTargets(
         candidates = enemies;
     }
 
-    // Exclude dead units
-    candidates.erase(
-        std::remove_if(candidates.begin(), candidates.end(), [](Unit* u) {
-            return u->GetTotalStat().GetHP() <= 0;
-        }),
-        candidates.end()
-    );
-
     // Handle self-targeting
     if (!action.IncludesSelf()) {
         candidates.erase(
@@ -32,16 +128,14 @@ std::vector<Unit*> TargetManager::SelectTargets(
         );
     }
 
-    // Sort by threat descending
-    std::sort(candidates.begin(), candidates.end(), [](Unit* a, Unit* b) {
-        return a->GetTotalStat().GetThreat() > b->GetTotalStat().GetThreat();
-    });
-
-    // Limit to targetNumber
-    int maxTargets = action.GetTargetNumber();
-    if (maxTargets > 0 && candidates.size() > maxTargets) {
-        candidates.resize(maxTargets);
+    // Filter alive only
+    std::vector<Unit*> aliveTargets;
+    for (Unit* candidate : candidates) {
+        if (candidate && candidate->GetTotalStat().GetHP() > 0) {
+            aliveTargets.push_back(candidate);
+        }
     }
 
-    return candidates;
+    // Return first available target
+    return aliveTargets.empty() ? std::vector<Unit*>{} : std::vector<Unit*>{aliveTargets[0]};
 }

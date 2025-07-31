@@ -18,32 +18,24 @@ int main()
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
 
     LoadArmorListFromCSV("SpeedTest_A.csv");
-    LoadWeaponListFromCSV("SpeedTest.csv",actionMap);
+    LoadWeaponListFromCSV("MeleeRangeTest.csv",actionMap);
 
     EquipUnitsRandomEquipments(allUnits);
 
-    // Split into two teams
-    std::list<Unit> redUnits;
-    std::list<Unit> blueUnits;
+    // Create stable pointers before any list operations
+    std::vector<Unit*> allUnitPtrs;
+    for (Unit& unit : allUnits) {
+        allUnitPtrs.push_back(&unit);
+    }
 
+    // Split into two teams using pointers instead of splice
+    std::vector<Unit*> redPtrs(allUnitPtrs.begin(), allUnitPtrs.begin() + 5);
+    std::vector<Unit*> bluePtrs(allUnitPtrs.begin() + 5, allUnitPtrs.end());
 
-auto it = allUnits.begin();
-std::advance(it, 5);
-
-redUnits.splice(redUnits.begin(), allUnits, allUnits.begin(), it);
-blueUnits.splice(blueUnits.begin(), allUnits, allUnits.begin(), allUnits.end());
-
-    Team redTeam(TeamColor::Red ,redUnits);
-    Team blueTeam(TeamColor::Blue ,blueUnits);
-
-    Battlefield battlefield(redTeam, blueTeam);
-
-    std::vector<Unit*> redPtrs, bluePtrs;
-for (Unit* u : redTeam.GetUnits()) redPtrs.push_back(u);
-for (Unit* u : blueTeam.GetUnits()) bluePtrs.push_back(u);
-
+    // Don't use Team class for now, work directly with Unit pointers
     BattleManager battleManager(redPtrs, bluePtrs);
     battleManager.StartBattle();
-std::cin.get(); // Waits for Enter key
+    
+    std::cin.get(); // Waits for Enter key
     return 0;
 }

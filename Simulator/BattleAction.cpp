@@ -1,3 +1,4 @@
+#include <iostream>
 #include "BattleAction.h"
 #include "TargetManager.h"
 
@@ -13,7 +14,6 @@ void BattleAction::AddConditionalAction(const std::string& conditionID, const st
     );
 }
 
-
 void BattleAction::Perform(Unit* actor, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const {
     std::vector<Unit*> targets = TargetManager::SelectTargets(actor, allies, enemies, *this);
 
@@ -26,4 +26,27 @@ void BattleAction::Perform(Unit* actor, const std::vector<Unit*>& allies, const 
             }
         }
     }
+}
+
+void BattleAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const {
+    if (target) {
+        ActionContext ctx{ actor, target, allies, enemies };
+
+        if (conditionalActions.empty()) {
+            return;
+        }
+
+        bool actionExecuted = false;
+        for (const auto& [condition, action] : conditionalActions) {
+            if (condition(ctx)) {
+                action(ctx);
+                actionExecuted = true;
+            }
+        }
+    }
+}
+
+int BattleAction::CalculateDamage(Unit* actingUnit, Unit* target) const {
+    // Implement damage calculation logic here
+    return actingUnit->GetTotalStat().GetAttack() - target->GetTotalStat().GetDefense();
 }

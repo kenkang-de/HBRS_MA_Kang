@@ -23,6 +23,7 @@ Stat& operator+=(const Stat& other);
 Stat& operator-=(const Stat& other);
 
     Stat();
+    ~Stat();
     Stat(int attack, int defense, int hitpoint, int speed, int threat);
     Stat(const Stat&) = default;
     Stat& operator=(const Stat&) = default;

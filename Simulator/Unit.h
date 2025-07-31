@@ -51,6 +51,8 @@ void ApplyBuff();     // Placeholder
 void ApplyDebuff();   // Placeholder
 
 void TakeDamage(int amount, bool defendable = true);
+
+bool IsAlive() {return GetTotalStat().GetHP() > 0; };
 };
 
 #endif

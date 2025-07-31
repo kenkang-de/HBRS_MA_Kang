@@ -17,9 +17,11 @@ struct ScheduledAction {
 class TurnManager {
 public:
     void Initialize(const std::vector<Unit*>& units);
-    Unit* GetNextUnit();
+    std::vector<Unit*> GetNextUnits(); 
     void AdvanceTick();
     bool HasActions() const;
+    int GetCurrentTick() const { return tick; }
+    void UpdateSpeedChanges(const std::vector<Unit*>& units); // New method for dynamic updates
 
 private:
     int tick = 0;
@@ -28,6 +30,7 @@ private:
 
     int ComputeLCM(const std::vector<int>& speeds);
     int GCD(int a, int b);
+    void RebuildQueue(const std::vector<Unit*>& units); // Helper method to rebuild queue
 };
 
 #endif
