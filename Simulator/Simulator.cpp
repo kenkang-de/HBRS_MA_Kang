@@ -1,4 +1,3 @@
-
 #include <list>
 #include <iostream>
 #include "Unit.h"
@@ -18,7 +17,7 @@ int main()
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
 
     LoadArmorListFromCSV("SpeedTest_A.csv");
-    LoadWeaponListFromCSV("MeleeRangeTest.csv",actionMap);
+    LoadWeaponListFromCSV("MeleeRangeTest.csv", actionMap);
 
     EquipUnitsRandomEquipments(allUnits);
 
@@ -28,14 +27,17 @@ int main()
         allUnitPtrs.push_back(&unit);
     }
 
-    // Split into two teams using pointers instead of splice
+    // Split into two teams using pointers
     std::vector<Unit*> redPtrs(allUnitPtrs.begin(), allUnitPtrs.begin() + 5);
     std::vector<Unit*> bluePtrs(allUnitPtrs.begin() + 5, allUnitPtrs.end());
 
-    // Don't use Team class for now, work directly with Unit pointers
-    BattleManager battleManager(redPtrs, bluePtrs);
+    // Create Battlefield with unit vectors (it will create teams internally)
+    Battlefield battlefield(redPtrs, bluePtrs);
+    
+    // Create BattleManager with just the Battlefield
+    BattleManager battleManager(battlefield);
     battleManager.StartBattle();
     
-    std::cin.get(); // Waits for Enter key
+    std::cin.get();
     return 0;
 }

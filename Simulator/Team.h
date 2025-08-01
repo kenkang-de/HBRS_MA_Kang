@@ -2,7 +2,7 @@
 #define TEAM_H
 
 #include <array>
-#include <list>
+#include <vector> 
 
 class Unit;  
 
@@ -17,19 +17,14 @@ private:
     void SetUnitTeamColor(Unit& unit);
 
 public:
-    Team();
-    Team(TeamColor teamColor, std::list<Unit>& units)
-    { 
-        SetTeamColor(teamColor);
-        GenerateTeam(units); } 
-
-      const std::array<Unit*, 5>& GetUnits() const;
- 
+    Team(TeamColor teamColor, std::vector<Unit*>& units); 
+    const std::array<Unit*, 5>& GetUnits() const;
 
     TeamColor GetTeamColor();
     void SetTeamColor(TeamColor teamColor);
-    void GenerateTeam(std::list<Unit>& units);
+    void GenerateTeam(std::vector<Unit*>& units);
     void AddUnit(Unit& newUnit);
+    bool HasTeamLost();
     bool HasPlace();
 };
 

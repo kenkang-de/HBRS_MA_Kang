@@ -2,21 +2,24 @@
 #define BATTLEFIELD_HPP
 
 #include "Team.h"
+#include <vector>
+
+class Unit;
 
 struct Battlefield
 {
-    private: 
+private: 
+    Team redTeam;
+    Team blueTeam;
+
+public:
+    // Constructor that creates teams from unit vectors
+    Battlefield(std::vector<Unit*>& teamRed, std::vector<Unit*>& teamBlue);
     
-
-    public:
-
-    Battlefield(Team& redTeam, Team& blueTeam)
-    : RedTeam(&redTeam), BlueTeam(&blueTeam)
-    {}
-
-
-    Team* RedTeam;
-    Team* BlueTeam;
+    Team* GetRedTeam() { return &redTeam; }
+    Team* GetBlueTeam() { return &blueTeam; }
+    
+    Team* ResultCheck();
 };
 
 #endif // BATTLEFIELD_HPP

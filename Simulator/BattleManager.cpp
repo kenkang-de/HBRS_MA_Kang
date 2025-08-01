@@ -1,25 +1,21 @@
 #include <iostream>
 
 #include "BattleManager.h"
+#include "Battlefield.h"
 #include "Constants.h"
 #include "TargetManager.h" 
 
 
-BattleManager::BattleManager(std::vector<Unit*>& teamRed, std::vector<Unit*>& teamBlue) {
-    // Set team values and names for red team units
-    for (size_t i = 0; i < teamRed.size(); ++i) {
-        teamRed[i]->team = Red;
-        teamRed[i]->Name = "R" + std::to_string(i);
-    }
-    // Set team values and names for blue team units  
-    for (size_t i = 0; i < teamBlue.size(); ++i) {
-        teamBlue[i]->team = Blue;
-        teamBlue[i]->Name = "B" + std::to_string(i);
-    }
+BattleManager::BattleManager(Battlefield& bf) 
+    : battlefield(bf) {
+    // Get all units from both teams in the battlefield
+    const std::array<Unit*, 5>& redUnits = battlefield.GetRedTeam()->GetUnits();
+    const std::array<Unit*, 5>& blueUnits = battlefield.GetBlueTeam()->GetUnits();
     
-    allUnits.reserve(teamRed.size() + teamBlue.size());
-    allUnits.insert(allUnits.end(), teamRed.begin(), teamRed.end());
-    allUnits.insert(allUnits.end(), teamBlue.begin(), teamBlue.end());
+    // Combine into allUnits vector (total 10 units)
+    allUnits.reserve(10);
+    allUnits.insert(allUnits.end(), redUnits.begin(), redUnits.end());
+    allUnits.insert(allUnits.end(), blueUnits.begin(), blueUnits.end());
 }
 
 void BattleManager::StartBattle() {
@@ -29,7 +25,7 @@ void BattleManager::StartBattle() {
     std::vector<Unit*> rangedUnits;
     std::vector<Unit*> meleeUnits;
 
-    while (!IsBattleOver(true)) {
+    while (!IsBattleOver(false)) {
         // Get all units scheduled to act in the current tick
         std::vector<Unit*> units = turnManager.GetNextUnits();
 
@@ -155,23 +151,18 @@ void BattleManager::PerformAction(Unit* unit) {
 
 
 bool BattleManager::IsBattleOver(bool test) {
-
-    if(test)
-    {
+    if(test) {
         return turnManager.GetCurrentTick() > TEST_ROUND;
     }
-
-    //not for testing, TODO:: when one of all team members hitpoint reaches below 0.
-    else
-    {
-    int aliveCount = 0;
-    for (Unit* u : allUnits) {
-        if (u->GetTotalStat().GetHP() > 0)
-            aliveCount++;
+    
+    // Use battlefield to check for victory
+    Team* winner = battlefield.ResultCheck();
+    if (winner != nullptr) {
+        // Determine team name based on color
+        std::string teamName = (winner->GetTeamColor() == Red) ? "Red Team" : "Blue Team";
+        std::cout << "Battle Over! " << teamName << " wins!" << std::endl;
+        return true;
     }
-    return aliveCount <= 1; // Only 1 unit standing
-    }
-
-    return true;
-
+    
+    return false; // Battle continues
 }

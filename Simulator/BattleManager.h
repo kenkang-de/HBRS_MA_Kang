@@ -3,17 +3,19 @@
 
 #include "Unit.h"
 #include "TurnManager.h"
+#include "Battlefield.h"
 #include <vector>
 
 class BattleAction;
 
 class BattleManager {
 public:
-    BattleManager(std::vector<Unit*>& teamA, std::vector<Unit*>& teamB);
+    BattleManager(Battlefield& bf);
 
     void StartBattle();
 
 private:
+    Battlefield& battlefield;
     std::vector<Unit*> allUnits;
     TurnManager turnManager;
 

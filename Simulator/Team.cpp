@@ -1,6 +1,12 @@
 #include "Team.h"
 #include "Unit.h"
 #include <iostream>
+#include <string>
+
+Team::Team(TeamColor teamColor, std::vector<Unit*>& units) {
+    SetTeamColor(teamColor);
+    GenerateTeam(units);  // Now this will work with vector<Unit*>&
+}
 
    const std::array<Unit*, 5>& Team::GetUnits() const {
     return units;
@@ -19,11 +25,11 @@ void Team::AddUnit(Unit& newUnit) {
         if (units[i] == nullptr) {
             units[i] = &newUnit;
             SetUnitTeamColor(newUnit);
-
+            
             // Assign name based on team color and index
             std::string prefix = (teamColor == Red) ? "R" : "B";
-            newUnit.Name =(prefix + std::to_string(i));
-
+            newUnit.Name = prefix + std::to_string(i);
+            
             return;
         }
     }
@@ -44,15 +50,22 @@ bool Team::HasPlace() {
     return false;
 }
 
-void Team::GenerateTeam(std::list<Unit>& units)
+void Team::GenerateTeam(std::vector<Unit*>& units)
 {
-    if (units.size() != 5) {
-        std::cerr << "A team must consist of exactly 5 units.\n";
-        return;
-    }
-
-    for (Unit& unit : units)
+    // Add up to 5 units to the team
+    for (size_t i = 0; i < units.size() && i < 5; ++i)
     {
-        this->AddUnit(unit);
+        if (units[i] != nullptr) {
+            this->AddUnit(*units[i]);
+        }
     }
+}
+
+bool Team::HasTeamLost() {
+    for (size_t i = 0; i < units.size(); ++i) {
+        if (units[i] != nullptr && units[i]->IsAlive()) {
+            return false; // At least one unit is alive
+        }
+    }
+    return true; // All units are dead
 }
