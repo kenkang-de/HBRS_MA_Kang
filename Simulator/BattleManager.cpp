@@ -105,6 +105,13 @@ void BattleManager::StartBattle() {
                       << " (HP: " << target->GetTotalStat().GetHP() << ")" << std::endl;
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+            
+            // If target is still alive and is a ranged unit, apply delay
+            if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
+                int delayAmount = 1; // You can make this configurable or based on weapon/stats
+                turnManager.DelayUnit(target, delayAmount);
+                std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount << " tick(s) due to melee attack!" << std::endl;
+            }
         }
 
         // Update turn manager with any speed changes that occurred during this tick

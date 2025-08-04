@@ -16,8 +16,8 @@ int main()
 
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
 
-    LoadArmorListFromCSV("SpeedTest_A.csv");
-    LoadWeaponListFromCSV("MeleeRangeTest.csv", actionMap);
+    LoadArmorListFromCSV("MeeleRangeDelayTest_A.csv");
+    LoadWeaponListFromCSV("MeeleRangeDelayTest.csv", actionMap);
 
     EquipUnitsRandomEquipments(allUnits);
 

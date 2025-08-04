@@ -125,4 +125,30 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
 
     return unitsToAct;
 }
+
+void TurnManager::DelayUnit(Unit* targetUnit, int delayTicks) {
+    if (targetUnit == nullptr || delayTicks <= 0) return;
+    
+    // Create temporary storage for all scheduled actions
+    std::vector<ScheduledAction> allActions;
+    
+    // Extract all actions from the queue
+    while (!turnQueue.empty()) {
+        allActions.push_back(turnQueue.top());
+        turnQueue.pop();
+    }
+    
+    // Find and delay the target unit's next action
+    for (auto& action : allActions) {
+        if (action.unit == targetUnit) {
+            action.nextTick += delayTicks;
+            break; // Only delay the first (next) occurrence of this unit
+        }
+    }
+    
+    // Rebuild the queue with the modified actions
+    for (const auto& action : allActions) {
+        turnQueue.push(action);
+    }
+}
     
