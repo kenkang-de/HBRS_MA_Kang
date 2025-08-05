@@ -62,7 +62,14 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.target->GetTotalStat().SetDefense(ctx.target->GetTotalStat().GetDefense() + value);
         };
     }},
-    // Add other parameterized actions here
+    //Undefendable Static damage
+        { "A03", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target)
+                ctx.target->TakeDamage(value, false);
+        };
+    }},
 };
 
 

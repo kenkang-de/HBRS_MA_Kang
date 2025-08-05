@@ -25,6 +25,13 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A00"]
+  
+- id: MagicBolt
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A03(5)"]
 
 
 

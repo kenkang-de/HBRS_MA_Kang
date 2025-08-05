@@ -78,6 +78,7 @@ void BattleManager::StartBattle() {
 
         // Track units killed by ranged attacks in this tick (they cannot act)
         std::set<Unit*> unitsKilledByRanged;
+        std::set<Unit*> magicUnitsTickResetByRanged;
 
         // PHASE 1: Execute ranged actions first
         for (Unit* unit : rangedUnits) {
@@ -110,6 +111,7 @@ void BattleManager::StartBattle() {
                 
                 if (damageTaken > 0) {
                     turnManager.ResetMagicUnitTick(target);
+                    magicUnitsTickResetByRanged.insert(target);  // Track magic units reset by ranged
                     std::cout << "  -> " << target->GetName() << " (magic) tick reset due to ranged attack!" << std::endl;
                 }
             }
@@ -169,8 +171,8 @@ void BattleManager::StartBattle() {
         // PHASE 3: Execute magic actions
         for (Unit* unit : magicUnits) {
             // Magic units can act even if killed by other melee/magic units in same tick
-            // Only skip if killed by ranged units in this tick or already dead before this tick
-            if (unitsKilledByRanged.count(unit) > 0) continue;
+            // Skip if killed by ranged units OR if tick was reset by ranged units in this tick
+            if (unitsKilledByRanged.count(unit) > 0 || magicUnitsTickResetByRanged.count(unit) > 0) continue;
             
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;

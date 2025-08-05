@@ -1,3 +1,4 @@
 ﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
 BS01,Weapon,Meele,5,0,-2,0,0,1,Slash
 BS02,Weapon,Range,5,0,-3,0,0,2,Shoot
+BS03,Weapon,Magic,0,0,-2,0,0,1,MagicBolt
