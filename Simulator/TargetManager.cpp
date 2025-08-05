@@ -73,12 +73,17 @@ void TargetManager::SimulateGroupTargeting(
         // Get this unit's valid targets
         std::vector<Unit*> validTargets = GetValidTargets(actingUnit, allAliveUnits);
         
-        // Find best target that's still alive in simulation
+        // Find best target that's still alive in simulation (prioritize highest threat)
         Unit* bestTarget = nullptr;
+        int highestThreat = -1;
+        
         for (Unit* target : validTargets) {
             if (simulatedHP[target] > 0) {
-                bestTarget = target;
-                break; // Take first available target
+                int targetThreat = target->GetTotalStat().GetThreat();
+                if (targetThreat > highestThreat) {
+                    highestThreat = targetThreat;
+                    bestTarget = target;
+                }
             }
         }
         
