@@ -34,13 +34,19 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
 const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     //Deal Damage
     { "A00", [](const ActionContext& ctx) {
-        if (ctx.actor && ctx.target)
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), true);
+        if (ctx.actor && ctx.target) {
+            // Magic damage ignores defense
+            bool defendable = (ctx.actor->GetWeapon().GetAction().GetActionType() != ActionType::MAGIC);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), defendable);
+        }
     }},
     //Deal Crit Damage
     { "A01", [](const ActionContext& ctx) {
-     if (ctx.actor && ctx.target)
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, true);
+     if (ctx.actor && ctx.target) {
+            // Magic damage ignores defense
+            bool defendable = (ctx.actor->GetWeapon().GetAction().GetActionType() != ActionType::MAGIC);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, defendable);
+        }
     }},
 };
 

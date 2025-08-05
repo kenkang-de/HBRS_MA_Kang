@@ -151,4 +151,34 @@ void TurnManager::DelayUnit(Unit* targetUnit, int delayTicks) {
         turnQueue.push(action);
     }
 }
+
+void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
+    if (magicUnit == nullptr) return;
+    
+    // Create temporary storage for all scheduled actions
+    std::vector<ScheduledAction> allActions;
+    
+    // Extract all actions from the queue
+    while (!turnQueue.empty()) {
+        allActions.push_back(turnQueue.top());
+        turnQueue.pop();
+    }
+    
+    // Find and reset the magic unit's next action tick
+    for (auto& action : allActions) {
+        if (action.unit == magicUnit) {
+            // Reset to current tick + unit's speed
+            int speed = magicUnit->GetTotalStat().GetSpeed();
+            if (speed > 0) {
+                action.nextTick = tick + speed;
+            }
+            break; // Only reset the first (next) occurrence of this unit
+        }
+    }
+    
+    // Rebuild the queue with the modified actions
+    for (const auto& action : allActions) {
+        turnQueue.push(action);
+    }
+}
     

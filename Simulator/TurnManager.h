@@ -23,6 +23,7 @@ public:
     int GetCurrentTick() const { return tick; }
     void UpdateSpeedChanges(const std::vector<Unit*>& units); // New method for dynamic updates
     void DelayUnit(Unit* unit, int delayTicks); // Add delay to a specific unit
+    void ResetMagicUnitTick(Unit* magicUnit); // Reset magic unit's next action tick
 
 private:
     int tick = 0;
