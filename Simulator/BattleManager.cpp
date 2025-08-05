@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 #include "BattleManager.h"
 #include "Battlefield.h"
@@ -18,6 +19,19 @@ BattleManager::BattleManager(Battlefield& bf)
     allUnits.insert(allUnits.end(), blueUnits.begin(), blueUnits.end());
 }
 
+int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
+    // Only apply delay if damage was actually taken
+    if (damageTaken <= 0) return 0;
+    
+    float damageRatio = static_cast<float>(damageTaken) / static_cast<float>(maxHP);
+    
+    // Simple calculation: floor((damage/maxHP) * constant)
+    float delayCalculation = damageRatio * DELAY_MULTIPLIER;
+    int tickDelay = static_cast<int>(std::floor(delayCalculation));
+    
+    return tickDelay; // No maximum cap, just return the calculated delay
+}
+
 void BattleManager::StartBattle() {
     turnManager.Initialize(allUnits);
 
@@ -33,26 +47,17 @@ void BattleManager::StartBattle() {
             std::cout << "[Tick " << turnManager.GetCurrentTick() << "] " << units.size() << " unit(s) acting\n";
         }
 
-        // Filter alive units and separate ranged and melee units
+        // Separate ranged and melee units
         rangedUnits.clear();
         meleeUnits.clear();
 
         for (Unit* unit : units) {
-            // Alive/Dead filtering
-            if (!unit->IsAlive()) continue;
-            
             // Ranged vs Melee separation
             if (unit->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
                 rangedUnits.push_back(unit);
             } else {
                 meleeUnits.push_back(unit);
             }
-        }
-
-        // Shared hitpoints for target simulation
-        std::map<Unit*, int> sharedHP;
-        for (Unit* unit : allUnits) {
-            sharedHP[unit] = unit->GetTotalStat().GetHP();
         }
 
         // Combine all acting units and process them one by one
@@ -66,13 +71,11 @@ void BattleManager::StartBattle() {
 
         // PHASE 1: Execute ranged actions first
         for (Unit* unit : rangedUnits) {
-            if (!unit || !unit->IsAlive()) continue;
-            
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
             Unit* target = targets[0];
-            if (!target || !target->IsAlive()) continue;
+            if (!target->IsAlive()) continue;
             
             // Create ally/enemy lists for this unit
             std::vector<Unit*> unitAllies, unitEnemies;
@@ -80,7 +83,7 @@ void BattleManager::StartBattle() {
             
             // Execute the ranged action
             std::cout << "Ranged: " << unit->GetName() << " targeting " << target->GetName() 
-                      << " (HP: " << target->GetTotalStat().GetHP() << ")" << std::endl;
+                      << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
         }
@@ -88,13 +91,13 @@ void BattleManager::StartBattle() {
         // PHASE 2: Execute melee actions (only for units still alive)
         for (Unit* unit : meleeUnits) {
             // Check if this melee unit is still alive after ranged phase
-            if (!unit || !unit->IsAlive()) continue;
+            if (!unit->IsAlive()) continue;
             
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
             Unit* target = targets[0];
-            if (!target || !target->IsAlive()) continue;
+            if (!target->IsAlive()) continue;
             
             // Create ally/enemy lists for this unit
             std::vector<Unit*> unitAllies, unitEnemies;
@@ -102,15 +105,25 @@ void BattleManager::StartBattle() {
             
             // Execute the melee action
             std::cout << "Melee: " << unit->GetName() << " targeting " << target->GetName() 
-                      << " (HP: " << target->GetTotalStat().GetHP() << ")" << std::endl;
+                      << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+            
+            int hpBeforeAttack = target->GetCurrentHP();
+            int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
             
-            // If target is still alive and is a ranged unit, apply delay
+            // If target is still alive and is a ranged unit, calculate damage-based delay
             if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
-                int delayAmount = 1; // You can make this configurable or based on weapon/stats
-                turnManager.DelayUnit(target, delayAmount);
-                std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount << " tick(s) due to melee attack!" << std::endl;
+                int hpAfterAttack = target->GetCurrentHP();
+                int damageTaken = hpBeforeAttack - hpAfterAttack;
+                
+                int delayAmount = CalculateDelayFromDamage(damageTaken, maxHP);
+                
+                if (delayAmount > 0) {
+                    turnManager.DelayUnit(target, delayAmount);
+                    std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount 
+                              << " tick(s) due to " << damageTaken << "/" << maxHP << " damage!" << std::endl;
+                }
             }
         }
 
@@ -128,7 +141,7 @@ void BattleManager::StartBattle() {
 
 void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action, std::vector<Unit*>& allies, std::vector<Unit*>& enemies) {
     for (Unit* u : allUnits) {
-        if (u->GetTotalStat().GetHP() <= 0) continue;
+        if (!u->IsAlive()) continue;
 
         if (u->team == unit->team) {
             if (u == unit && !action.IncludesSelf()) continue;  // skip self if action does not include self
@@ -138,23 +151,6 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
         }
     }
 }
-
-
-
-
-void BattleManager::PerformAction(Unit* unit) {
-    const BattleAction& action = unit->GetWeapon().GetAction();
-
-    std::vector<Unit*> allies, enemies;
-    SplitAlliesAndEnemies(unit, action, allies, enemies);
-
-    std::cout << "[Tick " << currentTick << "] " << unit->Name 
-              << " (" << (unit->team == Red ? "Red" : "Blue") << ") performs "
-              << action.GetID() << "\n";
-
-    action.Perform(unit, allies, enemies);
-}
-
 
 
 bool BattleManager::IsBattleOver(bool test) {

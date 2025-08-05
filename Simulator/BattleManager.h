@@ -22,8 +22,8 @@ private:
     int currentTick = 0; 
     int CurrentTurn = 0;
 
-    void PerformAction(Unit* unit);
     bool IsBattleOver(bool test);
+    int CalculateDelayFromDamage(int damageTaken, int maxHP);
 
 void SplitAlliesAndEnemies(Unit* unit, const BattleAction& action, std::vector<Unit*>& allies, std::vector<Unit*>& enemies);
 

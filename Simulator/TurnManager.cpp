@@ -108,8 +108,8 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
     while (!turnQueue.empty() && turnQueue.top().nextTick == tick) {
         ScheduledAction top = turnQueue.top();
         
-        // Null pointer check
-        if (top.unit != nullptr) {
+        // Only add alive units to the action list
+        if (top.unit != nullptr && top.unit->IsAlive()) {
             unitsToAct.push_back(top.unit);
         }
         

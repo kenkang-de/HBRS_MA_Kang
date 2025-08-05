@@ -13,6 +13,7 @@ private:
 
     Stat defaultStat;
     Stat totalStat;
+    int currentHP; // Current health points, separate from totalStat
 
     Weapon weapon;
     Armor armor;
@@ -45,14 +46,17 @@ Unit(std::string name, std::string id);
     const Armor& GetArmor() const;
 
     void TakeDamage(int amount);
-void Heal(int amount);
+    void Heal(int amount);
+    int GetCurrentHP() const { return currentHP; }
+    void SetCurrentHP(int hp) { currentHP = hp; }
+    void InitializeCurrentHP() { currentHP = totalStat.GetHP(); } // Initialize currentHP to match totalStat HP
 
-void ApplyBuff();     // Placeholder
-void ApplyDebuff();   // Placeholder
+    void ApplyBuff();     // Placeholder
+    void ApplyDebuff();   // Placeholder
 
-void TakeDamage(int amount, bool defendable = true);
+    void TakeDamage(int amount, bool defendable = true);
 
-bool IsAlive() {return GetTotalStat().GetHP() > 0; };
+    bool IsAlive() { return currentHP > 0; };
 };
 
 #endif

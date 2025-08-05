@@ -4,7 +4,8 @@
 Unit::Unit(std::string name, std::string id)
     : Name(name), ID(id), 
       defaultStat(Stat()),
-      totalStat(defaultStat)
+      totalStat(defaultStat),
+      currentHP(0) // Initialize currentHP to 0, will be set when equipment is applied
        {}
 
 const std::string& Unit::GetName() const {
@@ -33,12 +34,16 @@ void Unit::SetWeapon(const Weapon& w) {
     weapon = w;
     // Add new weapon stats
     totalStat += weapon.GetStat();
+    // Update current HP to match new total HP
+    currentHP = totalStat.GetHP();
 }
 
 void Unit::SetArmor(const Armor& a) {
     totalStat -= armor.GetStat();
     armor = a;
     totalStat += armor.GetStat();
+    // Update current HP to match new total HP
+    currentHP = totalStat.GetHP();
 }
 
 void Unit::UnEquipWeapon() {
@@ -73,17 +78,16 @@ void Unit::TakeDamage(int amount, bool defendable) {
         finalDamage = std::max(0, amount - totalStat.GetDefense());
     }
 
-    int newHP = totalStat.GetHP() - finalDamage;
+    // Subtract damage from current HP
+    currentHP = std::max(0, currentHP - finalDamage);
     std::cout << Name << " took damage: " << finalDamage << (defendable ? " (defended)\n" : " (pierced)\n");
-    totalStat.SetHP(std::max(0, newHP));
-        std::cout << Name << "'s Remaing Health: " << totalStat.GetHP() << std::endl;
+    std::cout << Name << "'s Remaining Health: " << currentHP << std::endl;
 }
 
 
 void Unit::Heal(int amount) {
-    int maxHP = defaultStat.GetHP();  // Assuming defaultStat stores max HP
-    int newHP = totalStat.GetHP() + amount;
-    totalStat.SetHP(std::min(maxHP, newHP));
+    int maxHP = totalStat.GetHP();  // Max HP from totalStat
+    currentHP = std::min(maxHP, currentHP + amount);
 }
 
 void Unit::ApplyBuff() {

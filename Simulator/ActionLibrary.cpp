@@ -6,7 +6,7 @@
 const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap = {
 
     { "TargetLowHP", [](const ActionContext& ctx) {
-        return ctx.target && ctx.target->GetTotalStat().GetHP() < 30;
+        return ctx.target && ctx.target->GetCurrentHP() < 30;
     }},
     { "ActorHasMoreAttackThanTargetDefense", [](const ActionContext& ctx) {
         return ctx.actor && ctx.target &&
@@ -14,7 +14,7 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     }},
     { "AnyAllyLowHP", [](const ActionContext& ctx) {
         return std::any_of(ctx.allies.begin(), ctx.allies.end(), [&](Unit* u) {
-            return u != ctx.actor && u->GetTotalStat().GetHP() < 30;
+            return u != ctx.actor && u->GetCurrentHP() < 30;
         });
     }},
     //ALWAYS

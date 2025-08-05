@@ -62,10 +62,15 @@ void Team::GenerateTeam(std::vector<Unit*>& units)
 }
 
 bool Team::HasTeamLost() {
+    int aliveCount = 0;
+    
     for (size_t i = 0; i < units.size(); ++i) {
-        if (units[i] != nullptr && units[i]->IsAlive()) {
-            return false; // At least one unit is alive
+        if (units[i] != nullptr) {
+            if (units[i]->IsAlive()) {
+                aliveCount++;
+            }
         }
     }
-    return true; // All units are dead
+    
+    return aliveCount == 0; // Team lost if no units are alive
 }

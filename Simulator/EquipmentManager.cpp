@@ -152,7 +152,9 @@ void EquipUnitsRandomEquipments(std::list<Unit>& unitList)
         
         // Debug output to show what each unit got
         std::cout << "[DEBUG] Unit " << unitIndex << " equipped with action: " << randomWeapon.GetAction().GetID() 
-                  << " (Type: " << (randomWeapon.GetAction().GetActionType() == ActionType::RANGE ? "RANGE" : "MELEE") << ")" << std::endl;
+                  << " (Type: " << (randomWeapon.GetAction().GetActionType() == ActionType::RANGE ? "RANGE" : "MELEE") << ")" 
+                  << " TotalHP: " << unit.GetTotalStat().GetHP() 
+                  << " CurrentHP: " << unit.GetCurrentHP() << std::endl;
         unitIndex++;
     }
 }

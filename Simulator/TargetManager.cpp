@@ -13,7 +13,7 @@ std::map<Unit*, std::vector<Unit*>> TargetManager::SelectTargetsForGroup(
     // Step 1: Get all alive units
     std::vector<Unit*> aliveUnits;
     for (Unit* unit : allUnits) {
-        if (unit && unit->GetTotalStat().GetHP() > 0) {
+        if (unit && unit->IsAlive()) {
             aliveUnits.push_back(unit);
         }
     }
@@ -65,13 +65,11 @@ void TargetManager::SimulateGroupTargeting(
     // Create shared HP simulation
     std::map<Unit*, int> simulatedHP;
     for (Unit* unit : allAliveUnits) {
-        simulatedHP[unit] = unit->GetTotalStat().GetHP();
+        simulatedHP[unit] = unit->GetCurrentHP();
     }
 
     // Each unit selects targets using shared simulation
     for (Unit* actingUnit : actingUnits) {
-        if (!actingUnit) continue;
-        
         // Get this unit's valid targets
         std::vector<Unit*> validTargets = GetValidTargets(actingUnit, allAliveUnits);
         
@@ -131,7 +129,7 @@ std::vector<Unit*> TargetManager::SelectTargets(
     // Filter alive only
     std::vector<Unit*> aliveTargets;
     for (Unit* candidate : candidates) {
-        if (candidate && candidate->GetTotalStat().GetHP() > 0) {
+        if (candidate->IsAlive()) {
             aliveTargets.push_back(candidate);
         }
     }
