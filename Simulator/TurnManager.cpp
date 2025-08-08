@@ -45,7 +45,9 @@ void TurnManager::Initialize(const std::vector<Unit*>& units) {
 }
 
 void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
-    // Recalculate LCM with current speeds (only alive units)
+    // Check if any alive unit's speed has actually changed
+    bool needsRebuild = false;
+    
     std::vector<int> currentSpeeds;
     for (Unit* u : units) {
         if (u != nullptr && u->IsAlive() && u->GetTotalStat().GetSpeed() > 0) {
@@ -57,11 +59,12 @@ void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
     
     int newLCM = ComputeLCM(currentSpeeds);
     
-    // If LCM changed, rebuild the entire queue
+    // Rebuild if LCM changed OR if we can't verify speeds are unchanged
+    // For simplicity, rebuild whenever this is called
     if (newLCM != lcm) {
         lcm = newLCM;
-        RebuildQueue(units);
     }
+    RebuildQueue(units);
 }
 
 void TurnManager::RebuildQueue(const std::vector<Unit*>& units) {
@@ -181,4 +184,3 @@ void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
         turnQueue.push(action);
     }
 }
-    

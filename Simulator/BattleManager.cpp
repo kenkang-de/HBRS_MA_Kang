@@ -99,6 +99,9 @@ void BattleManager::StartBattle() {
             int hpBeforeAttack = target->GetCurrentHP();
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
             
+            // Check for speed changes and update turn queue if needed
+            turnManager.UpdateSpeedChanges(allUnits);
+            
             // Track if target was killed by this ranged attack
             if (hpBeforeAttack > 0 && !target->IsAlive()) {
                 unitsKilledByRanged.insert(target);
@@ -141,6 +144,9 @@ void BattleManager::StartBattle() {
             int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+            
+            // Check for speed changes and update turn queue if needed
+            turnManager.UpdateSpeedChanges(allUnits);
             
             // If target is still alive and is a ranged unit, calculate damage-based delay
             if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
@@ -189,6 +195,9 @@ void BattleManager::StartBattle() {
                       << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+            
+            // Check for speed changes and update turn queue if needed
+            turnManager.UpdateSpeedChanges(allUnits);
         }
 
         // Update turn manager with any speed changes that occurred during this tick

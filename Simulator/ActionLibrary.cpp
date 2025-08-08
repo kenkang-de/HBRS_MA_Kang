@@ -90,6 +90,18 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.actor->TakeDamage(value, false);
         };
     }},
+        //Change Speed of a target
+        { "A06", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target) {
+                int oldSpeed = ctx.target->GetTotalStat().GetSpeed();
+                ctx.target->GetTotalStat().SetSpeed(oldSpeed + value);
+                int newSpeed = ctx.target->GetTotalStat().GetSpeed();
+                std::cout << "[A06] " << ctx.target->GetName() << " speed changed from " << oldSpeed << " to " << newSpeed << std::endl;
+            }
+        };
+    }},
 };
 
 
