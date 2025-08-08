@@ -21,13 +21,17 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     { "C00", [](const ActionContext&) {
         return true;
     }},
-    //Actor Attack Higher than Target's Defense.
+    //Actor Attack is Higher than Target's Defense.
     { "C01", [](const ActionContext& ctx) {
         return ctx.actor->GetTotalStat().GetAttack() > ctx.target->GetTotalStat().GetDefense();  
     }},
-    //Actor Attack same or lower than Target's Defense
+    //Actor Attack is same or lower than Target's Defense
     { "C02", [](const ActionContext& ctx) {
     return ctx.actor->GetTotalStat().GetAttack() <= ctx.target->GetTotalStat().GetDefense();  
+    }},
+    //Actor's HP is higher than Target's HP
+    { "C03", [](const ActionContext& ctx) {
+        return ctx.actor->GetCurrentHP() > ctx.target->GetCurrentHP();
     }},
 };
 
@@ -62,12 +66,28 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.target->GetTotalStat().SetDefense(ctx.target->GetTotalStat().GetDefense() + value);
         };
     }},
-    //Undefendable Static damage
+        //Undefendable Static damage
         { "A03", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.target)
                 ctx.target->TakeDamage(value, false);
+        };
+    }},
+       //Increase Actor's Attack
+        { "A04", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor)
+                ctx.actor->GetTotalStat().SetAttack(ctx.actor->GetTotalStat().GetAttack() + value);
+        };
+    }},
+        //Actor Takes damage(undefendable)
+        { "A05", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor)
+                ctx.actor->TakeDamage(value, false);
         };
     }},
 };

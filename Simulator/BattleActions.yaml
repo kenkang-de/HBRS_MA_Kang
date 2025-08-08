@@ -33,5 +33,17 @@
   actionType: MAGIC
   actionIDs: ["C00_A03(5)"]
 
+- id: RageAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A04(1)", "C00_A00", "C00_A05(1)"]
 
+- id: Overpower
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A00", "C03_A00"]
 
