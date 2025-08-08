@@ -52,6 +52,14 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, defendable);
         }
     }},
+    //At Attack, 1/3 of current HP + Speed of the actor is added to damage
+    { "A07", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            // Use floating-point division then cast to int (truncates towards zero)
+            int additionalDamage = static_cast<int>(ctx.actor->GetCurrentHP() / 3.0) + ctx.actor->GetTotalStat().GetSpeed();
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + additionalDamage, true);
+        }
+    }},
 };
 
 using ParamActionFactory = std::function<ActionFn(const std::string& param)>;
@@ -102,6 +110,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+
 };
 
 

@@ -54,3 +54,10 @@
   actionType: MELEE
   actionIDs: ["C00_A00", "C00_A06(-1)"]
 
+- id: ChargeAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A07"]
+
