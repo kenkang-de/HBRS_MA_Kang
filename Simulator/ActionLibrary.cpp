@@ -60,6 +60,12 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + additionalDamage, true);
         }
     }},
+    //Adds actor's Speed to damage and attack.
+    { "A08", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetSpeed(), true);
+        }
+    }},
 };
 
 using ParamActionFactory = std::function<ActionFn(const std::string& param)>;

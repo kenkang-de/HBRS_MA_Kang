@@ -61,3 +61,10 @@
   actionType: MELEE
   actionIDs: ["C00_A07"]
 
+- id: BlitzAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A08"] 
+
