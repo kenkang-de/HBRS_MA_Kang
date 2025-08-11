@@ -33,6 +33,10 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     { "C03", [](const ActionContext& ctx) {
         return ctx.actor->GetCurrentHP() > ctx.target->GetCurrentHP();
     }},
+    //Actor's Attack is higher than 0
+    { "C04", [](const ActionContext& ctx) {
+        return ctx.actor->GetTotalStat().GetAttack() > 0;  
+    }},
 };
 
 const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
@@ -111,7 +115,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.target->TakeDamage(value, false);
         };
     }},
-       //Increase Actor's Attack
+       //Add to Actor's Attack
         { "A04", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
@@ -148,13 +152,13 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
-         //Lower actor's threat(param)
+         //Add to actor's threat(param)
         { "A10", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.actor) {
                 int oldThreat = ctx.actor->GetTotalStat().GetThreat();
-                ctx.actor->GetTotalStat().SetThreat(oldThreat - value);
+                ctx.actor->GetTotalStat().SetThreat(oldThreat + value);
                 int newThreat = ctx.actor->GetTotalStat().GetThreat();
                 std::cout << "[A10] " << ctx.actor->GetName() << " threat changed from " << oldThreat << " to " << newThreat << std::endl;
             }
@@ -170,8 +174,6 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
-
-
 };
 
 

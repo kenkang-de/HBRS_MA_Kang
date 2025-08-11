@@ -1,6 +1,7 @@
 #include "Stat.h"
 #include <cassert>
 #include <iostream>
+#include <algorithm>
 
 const int Stat::Default_Attack = 1;
 const int Stat::Default_Defense = 0;
@@ -73,7 +74,7 @@ int Stat::GetAttack() const {
 }
 
 void Stat::SetAttack(int a) {
-    Attack = a;
+    Attack = std::max(0, a);
 }
 
 int Stat::GetDefense() const {
