@@ -82,3 +82,10 @@
   actionType: MELEE
   actionIDs: ["C00_A00", "C00_A10(1)"] 
 
+- id: FinalAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A11", "C00_A12"]
+

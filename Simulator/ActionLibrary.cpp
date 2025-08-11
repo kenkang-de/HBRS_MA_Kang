@@ -66,6 +66,21 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetSpeed(), true);
         }
     }},
+    //Adds actor's Defense to damage and attack.
+    { "A11", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetDefense(), true);
+        }
+    }},
+    //Delete Actor's Defense
+    { "A12", [](const ActionContext& ctx) {
+        if (ctx.actor) {
+            int oldDefense = ctx.actor->GetTotalStat().GetDefense();
+            ctx.actor->GetTotalStat().SetDefense(0);
+            int newDefense = ctx.actor->GetTotalStat().GetDefense();
+            std::cout << "[A12] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
+        }
+    }},
 };
 
 using ParamActionFactory = std::function<ActionFn(const std::string& param)>;
