@@ -37,6 +37,34 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     { "C04", [](const ActionContext& ctx) {
         return ctx.actor->GetTotalStat().GetAttack() > 0;  
     }},
+    //When by attack kills a Unit
+    { "C05", [](const ActionContext& ctx) {
+        int actorAttack = ctx.actor->GetTotalStat().GetAttack();
+        int targetDefense = ctx.target->GetTotalStat().GetDefense();
+        int targetHP = ctx.target->GetCurrentHP();
+        int damage = actorAttack - targetDefense;
+        bool willKill = damage >= targetHP;
+        
+        std::cout << "[C05] " << ctx.actor->GetName() << " vs " << ctx.target->GetName() 
+                  << " | ATK:" << actorAttack << " - DEF:" << targetDefense << " = " << damage 
+                  << " | Target HP:" << targetHP << " | Will Kill: " << (willKill ? "YES" : "NO") << std::endl;
+        
+        return willKill;
+    }},
+    //When attack would kill target from full HP (true kill, not finishing blow)
+    { "C06", [](const ActionContext& ctx) {
+        int actorAttack = ctx.actor->GetTotalStat().GetAttack();
+        int targetDefense = ctx.target->GetTotalStat().GetDefense();
+        int targetMaxHP = ctx.target->GetTotalStat().GetHP();
+        int damage = actorAttack - targetDefense;
+        bool wouldKillFromFull = damage >= targetMaxHP;
+        
+        std::cout << "[C06] " << ctx.actor->GetName() << " vs " << ctx.target->GetName() 
+                  << " | ATK:" << actorAttack << " - DEF:" << targetDefense << " = " << damage 
+                  << " | Target Max HP:" << targetMaxHP << " | Would Kill From Full: " << (wouldKillFromFull ? "YES" : "NO") << std::endl;
+        
+        return wouldKillFromFull;
+    }}
 };
 
 const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
@@ -85,7 +113,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             std::cout << "[A12] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
         }
     }},
-    //Leech damage and heal actor
+    //Leech damage 
     { "A14", [](const ActionContext& ctx) {
         if (ctx.actor && ctx.target) {
             int simulatedDamage = ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetDefense();
@@ -119,8 +147,12 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         { "A04", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
-            if (ctx.actor)
-                ctx.actor->GetTotalStat().SetAttack(ctx.actor->GetTotalStat().GetAttack() + value);
+            if (ctx.actor) {
+                int oldAttack = ctx.actor->GetTotalStat().GetAttack();
+                ctx.actor->GetTotalStat().SetAttack(oldAttack + value);
+                int newAttack = ctx.actor->GetTotalStat().GetAttack();
+                std::cout << "[A04] " << ctx.actor->GetName() << " attack changed from " << oldAttack << " to " << newAttack << std::endl;
+            }
         };
     }},
         //Actor Takes damage(undefendable)
@@ -171,6 +203,19 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             int simulatedDamage = ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetDefense();
             if (simulatedDamage > 0 && simulatedDamage < value) {
                 ctx.actor->EnhanceHP(value-simulatedDamage);
+            }
+        };
+    }},
+
+        //Add to Actor's Defense
+        { "A15", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor) {
+                int oldDefense = ctx.actor->GetTotalStat().GetDefense();
+                ctx.actor->GetTotalStat().SetDefense(oldDefense + value);
+                int newDefense = ctx.actor->GetTotalStat().GetDefense();
+                std::cout << "[A15] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
             }
         };
     }},
