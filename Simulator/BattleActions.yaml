@@ -68,3 +68,10 @@
   actionType: MELEE
   actionIDs: ["C00_A08"] 
 
+- id: RecklessAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A05(3)", "C00_A09(3)"] 
+

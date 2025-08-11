@@ -116,6 +116,16 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+         //Actor's Add Param to damage and attack
+        { "A09", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target) {
+                ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + value, true);
+            }
+        };
+    }},
+
 
 };
 
