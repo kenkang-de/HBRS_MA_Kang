@@ -57,6 +57,7 @@ Unit(std::string name, std::string id);
     void TakeDamage(int amount, bool defendable = true);
 
     bool IsAlive() { return currentHP > 0; };
+    void EnhanceHP(int amount);
 };
 
 #endif

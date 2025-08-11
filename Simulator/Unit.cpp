@@ -100,3 +100,10 @@ void Unit::ApplyDebuff() {
     int newDef = std::max(0, totalStat.GetDefense() - 1);
     totalStat.SetDefense(newDef);
 }
+
+void Unit::EnhanceHP(int amount) {
+    int newHP = std::max(0, totalStat.GetHP() + amount);
+    totalStat.SetHP(newHP);
+    currentHP += amount; 
+}
+

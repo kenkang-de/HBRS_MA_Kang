@@ -152,6 +152,16 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+        //Param - Damage is added to Actor's HP.
+        { "A13", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            int simulatedDamage = ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetDefense();
+            if (simulatedDamage > 0 && simulatedDamage < value) {
+                ctx.actor->EnhanceHP(value-simulatedDamage);
+            }
+        };
+    }},
 
 
 };

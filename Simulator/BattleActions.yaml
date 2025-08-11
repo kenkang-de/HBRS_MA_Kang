@@ -89,3 +89,10 @@
   actionType: MELEE
   actionIDs: ["C00_A11", "C00_A12"]
 
+- id: PrepAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A13(3)", "C00_A00"]
+
