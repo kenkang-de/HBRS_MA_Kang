@@ -87,7 +87,10 @@ void Unit::TakeDamage(int amount, bool defendable) {
 
 void Unit::Heal(int amount) {
     int maxHP = totalStat.GetHP();  // Max HP from totalStat
+    int oldHP = currentHP;
     currentHP = std::min(maxHP, currentHP + amount);
+    int actualHealing = currentHP - oldHP;
+    std::cout << "[HEAL] " << Name << " healed for " << actualHealing << " HP (from " << oldHP << " to " << currentHP << "/" << maxHP << ")" << std::endl;
 }
 
 void Unit::ApplyBuff() {

@@ -96,3 +96,9 @@
   actionType: MELEE
   actionIDs: ["C00_A13(3)", "C00_A00"]
 
+- id: LeechAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A00", "C00_A14"]

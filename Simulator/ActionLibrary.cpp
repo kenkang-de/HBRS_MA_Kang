@@ -81,6 +81,14 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             std::cout << "[A12] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
         }
     }},
+    //Leech damage and heal actor
+    { "A14", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            int simulatedDamage = ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetDefense();
+            if(simulatedDamage>0)
+                ctx.actor->Heal(simulatedDamage);
+        }
+    }},
 };
 
 using ParamActionFactory = std::function<ActionFn(const std::string& param)>;

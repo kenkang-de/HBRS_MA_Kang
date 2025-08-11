@@ -1,0 +1,4 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS01,Weapon,Meele,1,0,-2,0,0,1,PrepAttack
+BS02,Weapon,Meele,3,0,-2,0,0,2,LeechAttack
+BS03,Weapon,Meele,6,0,-3,0,0,2,Slash
