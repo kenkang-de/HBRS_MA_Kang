@@ -1,5 +1,6 @@
 #include "TargetManager.h"
 #include <algorithm>
+#include <limits.h>
 
 // MAIN METHOD: This is what BattleManager calls
 std::map<Unit*, std::vector<Unit*>> TargetManager::SelectTargetsForGroup(
@@ -75,7 +76,7 @@ void TargetManager::SimulateGroupTargeting(
         
         // Find best target that's still alive in simulation (prioritize highest threat)
         Unit* bestTarget = nullptr;
-        int highestThreat = -1;
+        int highestThreat = INT_MIN;  // Changed from -1 to handle negative threat values
         
         for (Unit* target : validTargets) {
             if (simulatedHP[target] > 0) {

@@ -116,12 +116,24 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
-         //Actor's Add Param to damage and attack
+         //Attack with increased damage(param)
         { "A09", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.target) {
                 ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + value, true);
+            }
+        };
+    }},
+         //Lower actor's threat(param)
+        { "A10", [](const std::string& param) -> ActionFn {
+        int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor) {
+                int oldThreat = ctx.actor->GetTotalStat().GetThreat();
+                ctx.actor->GetTotalStat().SetThreat(oldThreat - value);
+                int newThreat = ctx.actor->GetTotalStat().GetThreat();
+                std::cout << "[A10] " << ctx.actor->GetName() << " threat changed from " << oldThreat << " to " << newThreat << std::endl;
             }
         };
     }},
