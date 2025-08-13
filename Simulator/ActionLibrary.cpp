@@ -100,6 +100,12 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
                 ctx.actor->Heal(simulatedDamage);
         }
     }},
+    //Add Target's speed to damage and attack.
+    { "A21", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.target->GetTotalStat().GetSpeed(), true);
+        }
+    }},
 
 
 };
