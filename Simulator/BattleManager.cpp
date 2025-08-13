@@ -12,19 +12,27 @@
 // Initialize static member
 std::vector<AfterActionEvent> BattleManager::afterActions;
 
+// Static reference for global access
+static BattleManager* currentBattleManager = nullptr;
+
 // Global function for ActionLibrary to call
 void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context) {
     BattleManager::AddAfterAction(action, context);
-} 
+}
 
-// Global function for ActionLibrary to call with action ID
-void AddAfterActionToBattleManager(const std::string& actionID, const ActionContext& context) {
-    BattleManager::AddAfterAction(actionID, context);
+// Global function for ActionLibrary to call DelayUnit
+void DelayUnitInBattleManager(Unit* unit, int delayAmount) {
+    if (currentBattleManager) {
+        currentBattleManager->DelayUnit(unit, delayAmount);
+    }
 } 
 
 
 BattleManager::BattleManager(Battlefield& bf) 
     : battlefield(bf) {
+    // Set global reference for ActionLibrary access
+    currentBattleManager = this;
+    
     // Get all units from both teams in the battlefield
     const std::array<Unit*, 5>& redUnits = battlefield.GetRedTeam()->GetUnits();
     const std::array<Unit*, 5>& blueUnits = battlefield.GetBlueTeam()->GetUnits();
@@ -273,9 +281,9 @@ void BattleManager::AddAfterAction(const BattleAction* battleAction, const Actio
     std::cout << "[AFTER-ACTION] Registered after-action for " << context.actor->GetName() << std::endl;
 }
 
-void BattleManager::AddAfterAction(const std::string& actionID, const ActionContext& context) {
-    afterActions.emplace_back(actionID, context);
-    std::cout << "[AFTER-ACTION] Registered after-action " << actionID << " for " << context.actor->GetName() << std::endl;
+// Public method to access TurnManager DelayUnit functionality
+void BattleManager::DelayUnit(Unit* unit, int delayAmount) {
+    turnManager.DelayUnit(unit, delayAmount);
 }
 
 void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
@@ -287,49 +295,30 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
     for (const auto& afterActionEvent : toProcess) {
         Unit* actor = afterActionEvent.context.actor;
         
-        // Determine the BattleAction to execute
-        const BattleAction* actionToExecute = nullptr;
-        BattleAction dynamicAction; // For dynamically created actions
+        // Use TargetManager to find the best target based on the action's targeting rules
+        Unit* target = TargetManager::FindBestTargetForAction(actor, *afterActionEvent.battleAction, allUnits);
         
-        if (afterActionEvent.battleAction != nullptr) {
-            // Use the provided BattleAction pointer
-            actionToExecute = afterActionEvent.battleAction;
-        } else if (!afterActionEvent.actionID.empty()) {
-            // Create a dynamic BattleAction from the action ID
-            dynamicAction = BattleAction(1, false, TargetType::ENEMY, afterActionEvent.actionID);
-            dynamicAction.SetActionType(ActionType::MELEE); // Default to melee
-            dynamicAction.AddConditionalAction("C00", afterActionEvent.actionID, ""); // Always execute
-            actionToExecute = &dynamicAction;
-        }
-        
-        if (actionToExecute) {
-            // Use TargetManager to find the best target based on the action's targeting rules
-            Unit* target = TargetManager::FindBestTargetForAction(actor, *actionToExecute, allUnits);
+        if (target) {
+            std::cout << "[AFTER-ACTION] " << actor->GetName() << " performs after-action on " 
+                      << target->GetName() << " (threat: " << target->GetTotalStat().GetThreat() << ")" << std::endl;
             
-            if (target) {
-                std::cout << "[AFTER-ACTION] " << actor->GetName() << " performs after-action on " 
-                          << target->GetName() << " (threat: " << target->GetTotalStat().GetThreat() << ")" << std::endl;
+            // Create fresh ally/enemy lists for the after-action
+            std::vector<Unit*> allies, enemies;
+            for (Unit* unit : allUnits) {
+                if (!unit->IsAlive()) continue;
                 
-                // Create fresh ally/enemy lists for the after-action
-                std::vector<Unit*> allies, enemies;
-                for (Unit* unit : allUnits) {
-                    if (!unit->IsAlive()) continue;
-                    
-                    if (unit->team == actor->team) {
-                        if (unit == actor && !actionToExecute->IncludesSelf()) continue;
-                        allies.push_back(unit);
-                    } else {
-                        enemies.push_back(unit);
-                    }
+                if (unit->team == actor->team) {
+                    if (unit == actor && !afterActionEvent.battleAction->IncludesSelf()) continue;
+                    allies.push_back(unit);
+                } else {
+                    enemies.push_back(unit);
                 }
-                
-                // Execute the battle action
-                actionToExecute->Perform(actor, target, allies, enemies);
-            } else {
-                std::cout << "[AFTER-ACTION] No valid target found for " << actor->GetName() << std::endl;
             }
+            
+            // Execute the battle action
+            afterActionEvent.battleAction->Perform(actor, target, allies, enemies);
         } else {
-            std::cout << "[AFTER-ACTION] Error: No valid action to execute for " << actor->GetName() << std::endl;
+            std::cout << "[AFTER-ACTION] No valid target found for " << actor->GetName() << std::endl;
         }
     }
 }

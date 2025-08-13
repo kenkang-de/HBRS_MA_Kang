@@ -12,16 +12,10 @@ class BattleAction;
 // Structure to hold after-action events
 struct AfterActionEvent {
     const BattleAction* battleAction;
-    std::string actionID;  // Alternative: store action ID for dynamic creation
     ActionContext context;
     
-    // Constructor for BattleAction pointer
     AfterActionEvent(const BattleAction* action, const ActionContext& ctx)
-        : battleAction(action), actionID(""), context(ctx) {}
-        
-    // Constructor for action ID
-    AfterActionEvent(const std::string& id, const ActionContext& ctx)
-        : battleAction(nullptr), actionID(id), context(ctx) {}
+        : battleAction(action), context(ctx) {}
 };
 
 class BattleManager {
@@ -32,8 +26,10 @@ public:
     
     // Static methods for after-action system
     static void AddAfterAction(const BattleAction* battleAction, const ActionContext& context);
-    static void AddAfterAction(const std::string& actionID, const ActionContext& context);
     void ProcessAfterActions(const std::vector<Unit*>& allUnits);
+    
+    // Public method to access TurnManager functionality
+    void DelayUnit(Unit* unit, int delayAmount);
 
 private:
     Battlefield& battlefield;

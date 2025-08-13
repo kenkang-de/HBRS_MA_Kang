@@ -100,14 +100,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
                 ctx.actor->Heal(simulatedDamage);
         }
     }},
-    // Chain attack - deals damage and marks target as killed for after-action processing
-    { "A17", [](const ActionContext& ctx) {
-        if (ctx.actor && ctx.target) {
-            // Deal normal damage
-            bool defendable = (ctx.actor->GetWeapon().GetAction().GetActionType() != ActionType::MAGIC);
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), defendable);
-        }
-    }},
+
 
 };
 
@@ -236,6 +229,18 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.actor->GetTotalStat().SetSpeed(oldSpeed + value);
                 int newSpeed = ctx.actor->GetTotalStat().GetSpeed();
                 std::cout << "[A19] " << ctx.actor->GetName() << " speed changed from " << oldSpeed << " to " << newSpeed << std::endl;
+            }
+        };
+    }},
+    
+        //Delay Target Unit
+        { "A20", [](const std::string& param) -> ActionFn {
+           int delayAmount = std::stoi(param);
+        return [delayAmount](const ActionContext& ctx) {
+            if (ctx.target) {
+                extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
+                DelayUnitInBattleManager(ctx.target, delayAmount);
+                std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " ticks" << std::endl;
             }
         };
     }},

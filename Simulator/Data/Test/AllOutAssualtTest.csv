@@ -1,0 +1,3 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS02,Weapon,Range,2,0,-2,0,0,2,DelayShot
+BS03,Weapon,Range,3,0,-2,0,0,2,All-Out Assault

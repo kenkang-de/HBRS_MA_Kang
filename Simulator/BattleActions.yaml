@@ -151,3 +151,17 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A08"] 
+ 
+- id: DelayShot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00","C00_A20(1)"]  
+
+- id: All-Out Assault
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A10(1)", "C00_A04(2)","C00_A00"]  
