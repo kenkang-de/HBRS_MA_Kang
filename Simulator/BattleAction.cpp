@@ -1,6 +1,6 @@
 #include <iostream>
 #include "BattleAction.h"
-#include "TargetManager.h"
+#include "Unit.h"
 
 
 const std::string& BattleAction::GetID() const {
@@ -12,20 +12,6 @@ void BattleAction::AddConditionalAction(const std::string& conditionID, const st
         ActionLibrary::GetCondition(conditionID),
         ActionLibrary::GetAction(actionID, param)
     );
-}
-
-void BattleAction::Perform(Unit* actor, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const {
-    std::vector<Unit*> targets = TargetManager::SelectTargets(actor, allies, enemies, *this);
-
-    for (Unit* target : targets) {
-        ActionContext ctx{ actor, target, allies, enemies };
-
-        for (const auto& [condition, action] : conditionalActions) {
-            if (condition(ctx)) {
-                action(ctx);
-            }
-        }
-    }
 }
 
 void BattleAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const {

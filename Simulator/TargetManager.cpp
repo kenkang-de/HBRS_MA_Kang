@@ -74,19 +74,16 @@ void TargetManager::SimulateGroupTargeting(
         // Get this unit's valid targets
         std::vector<Unit*> validTargets = GetValidTargets(actingUnit, allAliveUnits);
         
-        // Find best target that's still alive in simulation (prioritize highest threat)
-        Unit* bestTarget = nullptr;
-        int highestThreat = INT_MIN;  // Changed from -1 to handle negative threat values
-        
+        // Filter valid targets by simulation (only alive in simulation)
+        std::vector<Unit*> aliveInSimulation;
         for (Unit* target : validTargets) {
             if (simulatedHP[target] > 0) {
-                int targetThreat = target->GetTotalStat().GetThreat();
-                if (targetThreat > highestThreat) {
-                    highestThreat = targetThreat;
-                    bestTarget = target;
-                }
+                aliveInSimulation.push_back(target);
             }
         }
+        
+        // Find best target that's still alive in simulation (prioritize highest threat)
+        Unit* bestTarget = FindHighestThreatTarget(aliveInSimulation);
         
         // If we found a target, simulate damage
         if (bestTarget) {
@@ -108,38 +105,29 @@ void TargetManager::SimulateGroupTargeting(
     }
 }
 
-// LEGACY METHOD: For backwards compatibility
-std::vector<Unit*> TargetManager::SelectTargets(
-    Unit* actingUnit,
-    const std::vector<Unit*>& allies,
-    const std::vector<Unit*>& enemies,
-    const BattleAction& action
-) {
-    std::vector<Unit*> candidates;
-
-    // Determine target pool
-    if (action.GetTargetType() == TargetType::ALLY) {
-        candidates = allies;
-    } else {
-        candidates = enemies;
-    }
-
-    // Handle self-targeting
-    if (!action.IncludesSelf()) {
-        candidates.erase(
-            std::remove(candidates.begin(), candidates.end(), actingUnit),
-            candidates.end()
-        );
-    }
-
-    // Filter alive only
-    std::vector<Unit*> aliveTargets;
+// Helper method: Find target with highest threat value
+Unit* TargetManager::FindHighestThreatTarget(const std::vector<Unit*>& candidates) {
+    Unit* bestTarget = nullptr;
+    int highestThreat = INT_MIN;
+    
     for (Unit* candidate : candidates) {
-        if (candidate->IsAlive()) {
-            aliveTargets.push_back(candidate);
+        if (candidate && candidate->IsAlive()) {
+            int targetThreat = candidate->GetTotalStat().GetThreat();
+            if (targetThreat > highestThreat) {
+                highestThreat = targetThreat;
+                bestTarget = candidate;
+            }
         }
     }
+    
+    return bestTarget;
+}
 
-    // Return first available target
-    return aliveTargets.empty() ? std::vector<Unit*>{} : std::vector<Unit*>{aliveTargets[0]};
+// Helper method: Find best target for a specific action (supports allies, enemies, self-targeting)
+Unit* TargetManager::FindBestTargetForAction(Unit* actor, const BattleAction& action, const std::vector<Unit*>& allUnits) {
+    // Get all valid targets based on the action's targeting rules
+    std::vector<Unit*> validTargets = GetValidTargets(actor, allUnits);
+    
+    // Find the highest threat target among valid targets
+    return FindHighestThreatTarget(validTargets);
 }

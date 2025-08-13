@@ -1,11 +1,26 @@
 #include <iostream>
 #include <cmath>
 #include <set>
+#include <limits.h>
 
 #include "BattleManager.h"
 #include "Battlefield.h"
 #include "Constants.h"
 #include "TargetManager.h" 
+#include "ActionLibrary.h"
+
+// Initialize static member
+std::vector<AfterActionEvent> BattleManager::afterActions;
+
+// Global function for ActionLibrary to call
+void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context) {
+    BattleManager::AddAfterAction(action, context);
+} 
+
+// Global function for ActionLibrary to call with action ID
+void AddAfterActionToBattleManager(const std::string& actionID, const ActionContext& context) {
+    BattleManager::AddAfterAction(actionID, context);
+} 
 
 
 BattleManager::BattleManager(Battlefield& bf) 
@@ -99,6 +114,9 @@ void BattleManager::StartBattle() {
             int hpBeforeAttack = target->GetCurrentHP();
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
             
+            // Process any after-actions triggered
+            ProcessAfterActions(allUnits);
+            
             // Check for speed changes and update turn queue if needed
             turnManager.UpdateSpeedChanges(allUnits);
             
@@ -144,6 +162,9 @@ void BattleManager::StartBattle() {
             int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+            
+            // Process any after-actions triggered
+            ProcessAfterActions(allUnits);
             
             // Check for speed changes and update turn queue if needed
             turnManager.UpdateSpeedChanges(allUnits);
@@ -196,6 +217,9 @@ void BattleManager::StartBattle() {
             
             unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
             
+            // Process any after-actions triggered
+            ProcessAfterActions(allUnits);
+            
             // Check for speed changes and update turn queue if needed
             turnManager.UpdateSpeedChanges(allUnits);
         }
@@ -242,3 +266,72 @@ bool BattleManager::IsBattleOver(bool test) {
     
     return false; // Battle continues
 }
+
+// Static methods for after-action system
+void BattleManager::AddAfterAction(const BattleAction* battleAction, const ActionContext& context) {
+    afterActions.emplace_back(battleAction, context);
+    std::cout << "[AFTER-ACTION] Registered after-action for " << context.actor->GetName() << std::endl;
+}
+
+void BattleManager::AddAfterAction(const std::string& actionID, const ActionContext& context) {
+    afterActions.emplace_back(actionID, context);
+    std::cout << "[AFTER-ACTION] Registered after-action " << actionID << " for " << context.actor->GetName() << std::endl;
+}
+
+void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
+    // Move all after-actions to be processed (clear the vector)
+    std::vector<AfterActionEvent> toProcess = std::move(afterActions);
+    afterActions.clear();
+    
+    // Process each after-action
+    for (const auto& afterActionEvent : toProcess) {
+        Unit* actor = afterActionEvent.context.actor;
+        
+        // Determine the BattleAction to execute
+        const BattleAction* actionToExecute = nullptr;
+        BattleAction dynamicAction; // For dynamically created actions
+        
+        if (afterActionEvent.battleAction != nullptr) {
+            // Use the provided BattleAction pointer
+            actionToExecute = afterActionEvent.battleAction;
+        } else if (!afterActionEvent.actionID.empty()) {
+            // Create a dynamic BattleAction from the action ID
+            dynamicAction = BattleAction(1, false, TargetType::ENEMY, afterActionEvent.actionID);
+            dynamicAction.SetActionType(ActionType::MELEE); // Default to melee
+            dynamicAction.AddConditionalAction("C00", afterActionEvent.actionID, ""); // Always execute
+            actionToExecute = &dynamicAction;
+        }
+        
+        if (actionToExecute) {
+            // Use TargetManager to find the best target based on the action's targeting rules
+            Unit* target = TargetManager::FindBestTargetForAction(actor, *actionToExecute, allUnits);
+            
+            if (target) {
+                std::cout << "[AFTER-ACTION] " << actor->GetName() << " performs after-action on " 
+                          << target->GetName() << " (threat: " << target->GetTotalStat().GetThreat() << ")" << std::endl;
+                
+                // Create fresh ally/enemy lists for the after-action
+                std::vector<Unit*> allies, enemies;
+                for (Unit* unit : allUnits) {
+                    if (!unit->IsAlive()) continue;
+                    
+                    if (unit->team == actor->team) {
+                        if (unit == actor && !actionToExecute->IncludesSelf()) continue;
+                        allies.push_back(unit);
+                    } else {
+                        enemies.push_back(unit);
+                    }
+                }
+                
+                // Execute the battle action
+                actionToExecute->Perform(actor, target, allies, enemies);
+            } else {
+                std::cout << "[AFTER-ACTION] No valid target found for " << actor->GetName() << std::endl;
+            }
+        } else {
+            std::cout << "[AFTER-ACTION] Error: No valid action to execute for " << actor->GetName() << std::endl;
+        }
+    }
+}
+
+

@@ -17,7 +17,7 @@ int main()
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
 
     LoadArmorListFromCSV("Data/Test/NoArmor.csv");
-    LoadWeaponListFromCSV("Data/Test/Killer'sSpiritTest.csv", actionMap);
+    LoadWeaponListFromCSV("Data/Test/MomentumTest.csv", actionMap);
 
     EquipUnitsRandomEquipments(allUnits);
 

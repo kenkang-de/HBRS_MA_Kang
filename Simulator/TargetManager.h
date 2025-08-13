@@ -13,12 +13,9 @@ public:
         const std::vector<Unit*>& actingUnits,
         const std::vector<Unit*>& allUnits);
 
-    // Legacy single-unit method (for backwards compatibility)
-    static std::vector<Unit*> SelectTargets(
-        Unit* actingUnit,
-        const std::vector<Unit*>& allies,
-        const std::vector<Unit*>& enemies,
-        const BattleAction& action);
+    // Helper methods for after-action system
+    static Unit* FindHighestThreatTarget(const std::vector<Unit*>& candidates);
+    static Unit* FindBestTargetForAction(Unit* actor, const BattleAction& action, const std::vector<Unit*>& allUnits);
 
 private:
     // Helper: Get valid targets for a specific unit

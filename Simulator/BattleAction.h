@@ -29,7 +29,6 @@ public:
 
 const std::string& GetID() const;
 
-void Perform(Unit* actor, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
 void Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
 
 int CalculateDamage(Unit* actingUnit, Unit* target) const;

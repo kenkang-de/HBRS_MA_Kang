@@ -46,8 +46,6 @@ void TurnManager::Initialize(const std::vector<Unit*>& units) {
 
 void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
     // Check if any alive unit's speed has actually changed
-    bool needsRebuild = false;
-    
     std::vector<int> currentSpeeds;
     for (Unit* u : units) {
         if (u != nullptr && u->IsAlive() && u->GetTotalStat().GetSpeed() > 0) {
@@ -59,39 +57,69 @@ void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
     
     int newLCM = ComputeLCM(currentSpeeds);
     
-    // Rebuild if LCM changed OR if we can't verify speeds are unchanged
-    // For simplicity, rebuild whenever this is called
+    // Only rebuild if LCM actually changed
     if (newLCM != lcm) {
+        std::cout << "[DEBUG] LCM changed from " << lcm << " to " << newLCM << " - rebuilding queue" << std::endl;
         lcm = newLCM;
+        RebuildQueue(units);
     }
-    RebuildQueue(units);
 }
 
 void TurnManager::RebuildQueue(const std::vector<Unit*>& units) {
-    // Store current units and their relative positions
-    std::vector<std::pair<Unit*, int>> currentUnits;
+    // Store the old LCM for scaling calculations
+    int oldLCM = lcm;
     
-    // Extract all units from the queue
+    // Store units and their new calculated times
+    std::vector<ScheduledAction> newSchedule;
+    
+    // Process existing scheduled actions and calculate new times
     while (!turnQueue.empty()) {
         ScheduledAction action = turnQueue.top();
         turnQueue.pop();
-        if (action.unit != nullptr) {
-            // Calculate how many ticks until this unit's next action
-            int ticksRemaining = action.nextTick - tick;
-            currentUnits.push_back({action.unit, ticksRemaining});
+        
+        if (action.unit != nullptr && action.unit->IsAlive() && action.unit->GetTotalStat().GetSpeed() > 0) {
+            int oldInterval = oldLCM / action.unit->GetTotalStat().GetSpeed();
+            int newInterval = lcm / action.unit->GetTotalStat().GetSpeed();
+            int plannedTick = action.nextTick;
+            int ticksRemaining = plannedTick - tick;
+            
+            int newNextTick;
+            if (ticksRemaining > 0) {
+                // Scale the remaining time by LCM ratio
+                double lcmScale = (double)lcm / oldLCM;
+                int scaledRemaining = (int)(ticksRemaining * lcmScale);
+                newNextTick = tick + scaledRemaining;
+            } else {
+                // Unit was scheduled for current or past tick, use new interval
+                newNextTick = tick + newInterval;
+            }
+            
+            newSchedule.push_back({action.unit, newNextTick});
         }
     }
     
-    // Rebuild queue with new LCM
-    for (const auto& [unit, ticksRemaining] : currentUnits) {
-        // Only reschedule alive units with positive speed
+    // Add any units that weren't previously scheduled but are alive
+    for (Unit* unit : units) {
         if (unit && unit->IsAlive() && unit->GetTotalStat().GetSpeed() > 0) {
-            int newInterval = lcm / unit->GetTotalStat().GetSpeed();
-            // Maintain relative timing as much as possible
-            int newNextTick = tick + std::max(1, ticksRemaining * newInterval / (lcm / unit->GetTotalStat().GetSpeed()));
-            turnQueue.push({unit, newNextTick});
+            // Check if this unit was already processed
+            bool alreadyScheduled = false;
+            for (const auto& scheduled : newSchedule) {
+                if (scheduled.unit == unit) {
+                    alreadyScheduled = true;
+                    break;
+                }
+            }
+            
+            if (!alreadyScheduled) {
+                int newInterval = lcm / unit->GetTotalStat().GetSpeed();
+                newSchedule.push_back({unit, tick + newInterval});
+            }
         }
-        // Units with speed <= 0 are not rescheduled
+    }
+    
+    // Add all calculated schedules to the queue
+    for (const auto& scheduled : newSchedule) {
+        turnQueue.push(scheduled);
     }
 }
 void TurnManager::AdvanceTick() {
@@ -114,6 +142,8 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
         // Only add alive units to the action list
         if (top.unit != nullptr && top.unit->IsAlive()) {
             unitsToAct.push_back(top.unit);
+            // Record when this unit acted
+            lastActionTick[top.unit] = tick;
         }
         
         turnQueue.pop();
@@ -182,5 +212,17 @@ void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
     // Rebuild the queue with the modified actions
     for (const auto& action : allActions) {
         turnQueue.push(action);
+    }
+}
+
+void TurnManager::RemoveDeadUnits(const std::vector<Unit*>& units) {
+    // Clean up lastActionTick for dead units
+    auto it = lastActionTick.begin();
+    while (it != lastActionTick.end()) {
+        if (!it->first->IsAlive()) {
+            it = lastActionTick.erase(it);
+        } else {
+            ++it;
+        }
     }
 }

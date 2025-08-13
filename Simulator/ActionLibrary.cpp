@@ -3,6 +3,9 @@
 #include <algorithm>
 #include <iostream>
 
+// Global registry for loaded BattleActions (set by BattleActionLoader)
+static std::unordered_map<std::string, BattleAction*> globalActionRegistry;
+
 const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap = {
 
     { "TargetLowHP", [](const ActionContext& ctx) {
@@ -37,33 +40,9 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     { "C04", [](const ActionContext& ctx) {
         return ctx.actor->GetTotalStat().GetAttack() > 0;  
     }},
-    //When by attack kills a Unit
+    //Check Target is killed 
     { "C05", [](const ActionContext& ctx) {
-        int actorAttack = ctx.actor->GetTotalStat().GetAttack();
-        int targetDefense = ctx.target->GetTotalStat().GetDefense();
-        int targetHP = ctx.target->GetCurrentHP();
-        int damage = actorAttack - targetDefense;
-        bool willKill = damage >= targetHP;
-        
-        std::cout << "[C05] " << ctx.actor->GetName() << " vs " << ctx.target->GetName() 
-                  << " | ATK:" << actorAttack << " - DEF:" << targetDefense << " = " << damage 
-                  << " | Target HP:" << targetHP << " | Will Kill: " << (willKill ? "YES" : "NO") << std::endl;
-        
-        return willKill;
-    }},
-    //When attack would kill target from full HP (true kill, not finishing blow)
-    { "C06", [](const ActionContext& ctx) {
-        int actorAttack = ctx.actor->GetTotalStat().GetAttack();
-        int targetDefense = ctx.target->GetTotalStat().GetDefense();
-        int targetMaxHP = ctx.target->GetTotalStat().GetHP();
-        int damage = actorAttack - targetDefense;
-        bool wouldKillFromFull = damage >= targetMaxHP;
-        
-        std::cout << "[C06] " << ctx.actor->GetName() << " vs " << ctx.target->GetName() 
-                  << " | ATK:" << actorAttack << " - DEF:" << targetDefense << " = " << damage 
-                  << " | Target Max HP:" << targetMaxHP << " | Would Kill From Full: " << (wouldKillFromFull ? "YES" : "NO") << std::endl;
-        
-        return wouldKillFromFull;
+      return !ctx.target->IsAlive();
     }}
 };
 
@@ -121,6 +100,15 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
                 ctx.actor->Heal(simulatedDamage);
         }
     }},
+    // Chain attack - deals damage and marks target as killed for after-action processing
+    { "A17", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            // Deal normal damage
+            bool defendable = (ctx.actor->GetWeapon().GetAction().GetActionType() != ActionType::MAGIC);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), defendable);
+        }
+    }},
+
 };
 
 using ParamActionFactory = std::function<ActionFn(const std::string& param)>;
@@ -219,6 +207,38 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+
+        //Store After Action - queue the specified action to be executed later
+        { "A18", [](const std::string& param) -> ActionFn {
+        std::string actionID = param;
+        return [actionID](const ActionContext& ctx) {
+            if (ctx.actor) {
+                // Look up the after-action by ID
+                const BattleAction* afterAction = ActionLibrary::GetGlobalAction(actionID);
+                if (afterAction) {
+                    // Register the after-action to be executed later
+                    extern void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context);
+                    AddAfterActionToBattleManager(afterAction, ctx);
+                    std::cout << "[A18] Queuing after-action: " << actionID << " for " << ctx.actor->GetName() << std::endl;
+                } else {
+                    std::cout << "[A18] ERROR: After-action not found: " << actionID << std::endl;
+                }
+            }
+        };
+    }},
+
+        //Add to Actor's Speed
+        { "A19", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor) {
+                int oldSpeed = ctx.actor->GetTotalStat().GetSpeed();
+                ctx.actor->GetTotalStat().SetSpeed(oldSpeed + value);
+                int newSpeed = ctx.actor->GetTotalStat().GetSpeed();
+                std::cout << "[A19] " << ctx.actor->GetName() << " speed changed from " << oldSpeed << " to " << newSpeed << std::endl;
+            }
+        };
+    }},
 };
 
 
@@ -248,6 +268,16 @@ ActionFn ActionLibrary::GetAction(const std::string& id, const std::string& para
     }
 
     throw std::runtime_error("No parameterized action for ID: " + id);
+}
+
+// Global action registry functions
+void ActionLibrary::RegisterGlobalAction(const std::string& id, BattleAction* action) {
+    globalActionRegistry[id] = action;
+}
+
+const BattleAction* ActionLibrary::GetGlobalAction(const std::string& id) {
+    auto it = globalActionRegistry.find(id);
+    return (it != globalActionRegistry.end()) ? it->second : nullptr;
 }
 
 

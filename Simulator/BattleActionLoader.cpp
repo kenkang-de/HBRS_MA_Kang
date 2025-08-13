@@ -1,6 +1,7 @@
 #include "BattleActionLoader.h"
 #include "BattleAction.h"
 #include "BattleActionParser.h"
+#include "ActionLibrary.h"
 
 #include <yaml-cpp/yaml.h>
 #include <fstream>
@@ -50,6 +51,9 @@ action.AddConditionalAction(condID, actID, param);
         }
 
         actionMap[id] = action;
+        
+        // Register in global action registry for A18 after-action system
+        ActionLibrary::RegisterGlobalAction(id, &actionMap[id]);
     }
 
     return actionMap;

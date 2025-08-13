@@ -115,4 +115,32 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C05_A04(1)", "C05_A15(1)", "C00_A00"]
+  actionIDs: ["C00_A00","C05_A04(1)", "C05_A15(1)"]
+
+- id: KillingSpree
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00", "C05_A18(AfterAttack)"]
+
+- id: AfterAttack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00"]
+
+- id: Momentum
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00", "C05_A18(SpeedBoost)"]
+
+- id: SpeedBoost
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A19(1)"]
