@@ -172,3 +172,10 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A21"]  
+
+- id: Smoke Shot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00", "C00_A22"]   

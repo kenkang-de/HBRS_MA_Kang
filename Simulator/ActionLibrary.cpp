@@ -107,6 +107,13 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
         }
     }},
 
+    //Lower target's threat by target's defense. 
+    { "A22", [](const ActionContext& ctx) {
+        if (ctx.actor && ctx.target) {
+            ctx.target->GetTotalStat().SetThreat(ctx.target->GetTotalStat().GetThreat() - ctx.target->GetTotalStat().GetDefense());
+        }
+    }},
+
 
 };
 
