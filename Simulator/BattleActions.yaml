@@ -144,3 +144,10 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A19(1)"]
+
+- id: BlitzShot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A08"] 
