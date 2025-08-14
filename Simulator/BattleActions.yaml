@@ -207,3 +207,10 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A00", "C00_A25"]    
+
+- id: Focus Shot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C01_A09(2)", "C02_A00"]     
