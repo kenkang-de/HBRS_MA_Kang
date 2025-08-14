@@ -179,3 +179,10 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A00", "C00_A22"]   
+
+- id: Heavy Shot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A23", "C00_A19(-1)"]   

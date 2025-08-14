@@ -113,6 +113,12 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->GetTotalStat().SetThreat(ctx.target->GetTotalStat().GetThreat() - ctx.target->GetTotalStat().GetDefense());
         }
     }},
+    //Deals doubled damage
+    { "A23", [](const ActionContext& ctx) {
+     if (ctx.actor && ctx.target) {
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, true);
+        }
+    }},
 
 
 };
