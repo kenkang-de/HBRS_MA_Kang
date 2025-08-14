@@ -133,6 +133,23 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetSpeed(), false);
         }
     }},
+    //lower's enemies attack by damage * 0.5 (needs to be used after damage dealing action)
+    { "A25", [](const ActionContext& ctx) {
+     if (ctx.actor && ctx.target) {
+            // Calculate the damage that would be dealt (before defense)
+            int rawDamage = ctx.actor->GetTotalStat().GetAttack();
+            int defense = ctx.target->GetTotalStat().GetDefense();
+            int actualDamage = std::max(0, rawDamage - defense);  // Damage after defense
+            
+            int attackReduction = static_cast<int>(actualDamage * 0.5);  // Truncate (floor) to integer
+            if (attackReduction > 0) {
+                int oldAttack = ctx.target->GetTotalStat().GetAttack();
+                ctx.target->GetTotalStat().SetAttack(oldAttack - attackReduction);
+                int newAttack = ctx.target->GetTotalStat().GetAttack();
+                std::cout << "[A25] " << ctx.target->GetName() << " attack reduced from " << oldAttack << " to " << newAttack << " (damage: " << actualDamage << ", reduction: " << attackReduction << ")" << std::endl;
+            }
+        }
+    }},
 
 
 };

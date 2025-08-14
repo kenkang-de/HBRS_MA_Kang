@@ -199,4 +199,11 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C06_A23", "C07_A24"]   
+  actionIDs: ["C06_A23", "C07_A24"] 
+
+- id: Wrist Shot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00", "C00_A25"]    
