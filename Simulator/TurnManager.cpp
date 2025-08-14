@@ -139,8 +139,8 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
     while (!turnQueue.empty() && turnQueue.top().nextTick == tick) {
         ScheduledAction top = turnQueue.top();
         
-        // Only add alive units to the action list
-        if (top.unit != nullptr && top.unit->IsAlive()) {
+        // Only add alive units with positive speed to the action list
+        if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
             unitsToAct.push_back(top.unit);
             // Record when this unit acted
             lastActionTick[top.unit] = tick;

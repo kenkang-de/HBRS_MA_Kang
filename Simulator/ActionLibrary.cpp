@@ -43,6 +43,14 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     //Check Target is killed 
     { "C05", [](const ActionContext& ctx) {
       return !ctx.target->IsAlive();
+    }},
+    //Check Target's speed is 0 
+    { "C06", [](const ActionContext& ctx) {
+      return ctx.target->GetTotalStat().GetSpeed() == 0;
+    }},
+    //Check Target's speed is not 0 
+    { "C07", [](const ActionContext& ctx) {
+      return ctx.target->GetTotalStat().GetSpeed() != 0;
     }}
 };
 
@@ -117,6 +125,12 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     { "A23", [](const ActionContext& ctx) {
      if (ctx.actor && ctx.target) {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, true);
+        }
+    }},
+    //Deals pierce damage (Actor's Attack - Target's speed)
+    { "A24", [](const ActionContext& ctx) {
+     if (ctx.actor && ctx.target) {
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetSpeed(), false);
         }
     }},
 

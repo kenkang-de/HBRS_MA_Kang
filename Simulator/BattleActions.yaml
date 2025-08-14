@@ -193,3 +193,10 @@
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A00", "C00_A10(-1)"]   
+
+- id: Fire Arrow
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C06_A23", "C07_A24"]   
