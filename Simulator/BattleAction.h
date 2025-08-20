@@ -12,7 +12,7 @@ enum TargetType {ENEMY, ALLY };
 enum ActionType { MELEE, RANGE, MAGIC };
 class BattleAction{
 
-private: 
+protected: 
 int targetNumber;
 bool self;
 TargetType targetType;
@@ -27,9 +27,11 @@ public:
  BattleAction(int _targetNumber, bool _self, TargetType _targetType, std::string id)
         : targetNumber(_targetNumber), self(_self),  targetType(_targetType), ID(id) {}
 
+virtual ~BattleAction() = default;
+
 const std::string& GetID() const;
 
-void Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
+virtual void Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const;
 
 int CalculateDamage(Unit* actingUnit, Unit* target) const;
 
@@ -42,6 +44,9 @@ bool IncludesSelf() const { return self; }
 int GetTargetNumber() const { return targetNumber; }
 
 void AddConditionalAction(const std::string& conditionID, const std::string& actionID, const std::string& param);
+
+protected:
+    void SetID(const std::string& id) { ID = id; }
 
 };
 

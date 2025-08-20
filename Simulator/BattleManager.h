@@ -28,6 +28,9 @@ public:
     static void AddAfterAction(const BattleAction* battleAction, const ActionContext& context);
     void ProcessAfterActions(const std::vector<Unit*>& allUnits);
     
+    // Boon management - now handled through Units
+    void ApplyUnitBoonsToAfterAction(Unit* unit);
+    
     // Public method to access TurnManager functionality
     void DelayUnit(Unit* unit, int delayAmount);
 

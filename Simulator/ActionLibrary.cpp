@@ -1,5 +1,6 @@
 #include "ActionLibrary.h"
 #include "Unit.h"
+#include "BoonAction.h"
 #include <algorithm>
 #include <iostream>
 
@@ -51,6 +52,10 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
     //Check Target's speed is not 0 
     { "C07", [](const ActionContext& ctx) {
       return ctx.target->GetTotalStat().GetSpeed() != 0;
+    }},
+    //Check Target does NOT have Poison debuff
+    { "C08", [](const ActionContext& ctx) {
+      return !HasBoonOnUnit(ctx.target, "Poison");
     }}
 };
 
@@ -294,6 +299,63 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+    
+    //Special action to directly execute any registered effect action
+    { "EXECUTE_EFFECT", [](const std::string& param) -> ActionFn {
+        // param is the effect name to execute
+        std::string effectName = param;
+        
+        return [effectName](const ActionContext& ctx) {
+            // Get and execute the registered effect action directly
+            const BattleAction* effectAction = ActionLibrary::GetGlobalAction(effectName);
+            if (effectAction) {
+                std::cout << "[EXECUTE_EFFECT] " << ctx.actor->GetName() << " triggered " << effectName << std::endl;
+                effectAction->Perform(ctx.actor, ctx.target, ctx.allies, ctx.enemies);
+            }
+        };
+    }},
+    
+    //Apply Poison Boon (param = usage)
+    { "A26", [](const std::string& param) -> ActionFn {
+        int usage = std::stoi(param);
+        return [usage](const ActionContext& ctx) {
+            if (ctx.target) {
+                auto poisonBoon = std::make_unique<BoonAction>("Poison", "Poison", usage);
+                poisonBoon->AddConditionalAction("C00", "A03", "3"); // Deal 3 undefendable damage per turn
+                
+                AddBoonToUnit(ctx.target, std::move(poisonBoon));
+                std::cout << "[A26] " << ctx.actor->GetName() << " applied Poison to " << ctx.target->GetName() << " for " << usage << " uses" << std::endl;
+            }
+        };
+    }},
+    
+    //Apply Boon with Effect (param format: "EffectName,usage" e.g., "Poison Effect,3")
+    { "A28", [](const std::string& param) -> ActionFn {
+        // Parse parameters: EffectName,usage (e.g., "Poison Effect,3")
+        size_t comma = param.find(',');
+        std::string effectName = param.substr(0, comma);
+        int usage = std::stoi(param.substr(comma + 1));
+        
+        return [effectName, usage](const ActionContext& ctx) {
+            if (ctx.target) {
+                // Get the registered effect action from globalActionRegistry
+                const BattleAction* effectAction = ActionLibrary::GetGlobalAction(effectName);
+                if (effectAction) {
+                    // Create a boon that will execute the specified effect action
+                    auto boon = std::make_unique<BoonAction>(effectName, effectName, usage);
+                    
+                    // Add a conditional action that directly executes the registered effect
+                    boon->AddConditionalAction("C00", "EXECUTE_EFFECT", effectName);
+                    
+                    AddBoonToUnit(ctx.target, std::move(boon));
+                    std::cout << "[A28] " << ctx.actor->GetName() << " applied " << effectName << " to " << ctx.target->GetName() 
+                              << " (usage: " << usage << ")" << std::endl;
+                } else {
+                    std::cout << "[A28] ERROR: Effect action '" << effectName << "' not found in registry!" << std::endl;
+                }
+            }
+        };
+    }},
 };
 
 
@@ -333,6 +395,17 @@ void ActionLibrary::RegisterGlobalAction(const std::string& id, BattleAction* ac
 const BattleAction* ActionLibrary::GetGlobalAction(const std::string& id) {
     auto it = globalActionRegistry.find(id);
     return (it != globalActionRegistry.end()) ? it->second : nullptr;
+}
+
+// Global functions for boon system
+void AddBoonToUnit(Unit* target, std::unique_ptr<BoonAction> boon) {
+    if (target) {
+        target->AddBoon(std::move(boon));
+    }
+}
+
+bool HasBoonOnUnit(Unit* target, const std::string& effectType) {
+    return target ? target->HasBoon(effectType) : false;
 }
 
 

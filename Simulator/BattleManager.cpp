@@ -108,40 +108,45 @@ void BattleManager::StartBattle() {
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
-            Unit* target = targets[0];
-            if (!target->IsAlive()) continue;
-            
-            // Create ally/enemy lists for this unit
-            std::vector<Unit*> unitAllies, unitEnemies;
-            SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
-            
-            // Execute the ranged action
-            std::cout << "Ranged: " << unit->GetName() << " targeting " << target->GetName() 
-                      << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
-            
-            int hpBeforeAttack = target->GetCurrentHP();
-            unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
-            
-            // Process any after-actions triggered
-            ProcessAfterActions(allUnits);
-            
-            // Check for speed changes and update turn queue if needed
-            turnManager.UpdateSpeedChanges(allUnits);
-            
-            // Track if target was killed by this ranged attack
-            if (hpBeforeAttack > 0 && !target->IsAlive()) {
-                unitsKilledByRanged.insert(target);
-            }
-            
-            // If target is still alive and is a magic unit, reset their tick
-            if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
-                int hpAfterAttack = target->GetCurrentHP();
-                int damageTaken = hpBeforeAttack - hpAfterAttack;
+            // Execute action against all targets
+            for (Unit* target : targets) {
+                if (!target->IsAlive()) continue;
                 
-                if (damageTaken > 0) {
-                    turnManager.ResetMagicUnitTick(target);
-                    magicUnitsTickResetByRanged.insert(target);  // Track magic units reset by ranged
-                    std::cout << "  -> " << target->GetName() << " (magic) tick reset due to ranged attack!" << std::endl;
+                // Create ally/enemy lists for this unit
+                std::vector<Unit*> unitAllies, unitEnemies;
+                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
+                
+                // Execute the ranged action
+                std::cout << "Ranged: " << unit->GetName() << " targeting " << target->GetName() 
+                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                
+                int hpBeforeAttack = target->GetCurrentHP();
+                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                
+                // Apply unit boons to after-action system
+                ApplyUnitBoonsToAfterAction(unit);
+                
+                // Process any after-actions triggered
+                ProcessAfterActions(allUnits);
+                
+                // Check for speed changes and update turn queue if needed
+                turnManager.UpdateSpeedChanges(allUnits);
+                
+                // Track if target was killed by this ranged attack
+                if (hpBeforeAttack > 0 && !target->IsAlive()) {
+                    unitsKilledByRanged.insert(target);
+                }
+                
+                // If target is still alive and is a magic unit, reset their tick
+                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
+                    int hpAfterAttack = target->GetCurrentHP();
+                    int damageTaken = hpBeforeAttack - hpAfterAttack;
+                    
+                    if (damageTaken > 0) {
+                        turnManager.ResetMagicUnitTick(target);
+                        magicUnitsTickResetByRanged.insert(target);  // Track magic units reset by ranged
+                        std::cout << "  -> " << target->GetName() << " (magic) tick reset due to ranged attack!" << std::endl;
+                    }
                 }
             }
         }
@@ -155,50 +160,55 @@ void BattleManager::StartBattle() {
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
-            Unit* target = targets[0];
-            if (!target->IsAlive()) continue;
-            
-            // Create ally/enemy lists for this unit
-            std::vector<Unit*> unitAllies, unitEnemies;
-            SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
-            
-            // Execute the melee action
-            std::cout << "Melee: " << unit->GetName() << " targeting " << target->GetName() 
-                      << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
-            
-            int hpBeforeAttack = target->GetCurrentHP();
-            int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
-            
-            unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
-            
-            // Process any after-actions triggered
-            ProcessAfterActions(allUnits);
-            
-            // Check for speed changes and update turn queue if needed
-            turnManager.UpdateSpeedChanges(allUnits);
-            
-            // If target is still alive and is a ranged unit, calculate damage-based delay
-            if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
-                int hpAfterAttack = target->GetCurrentHP();
-                int damageTaken = hpBeforeAttack - hpAfterAttack;
+            // Execute action against all targets
+            for (Unit* target : targets) {
+                if (!target->IsAlive()) continue;
                 
-                int delayAmount = CalculateDelayFromDamage(damageTaken, maxHP);
+                // Create ally/enemy lists for this unit
+                std::vector<Unit*> unitAllies, unitEnemies;
+                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
                 
-                if (delayAmount > 0) {
-                    turnManager.DelayUnit(target, delayAmount);
-                    std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount 
-                              << " tick(s) due to " << damageTaken << "/" << maxHP << " damage!" << std::endl;
+                // Execute the melee action
+                std::cout << "Melee: " << unit->GetName() << " targeting " << target->GetName() 
+                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                
+                int hpBeforeAttack = target->GetCurrentHP();
+                int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
+                
+                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                
+                // Apply unit boons to after-action system
+                ApplyUnitBoonsToAfterAction(unit);
+                
+                // Process any after-actions triggered
+                ProcessAfterActions(allUnits);
+                
+                // Check for speed changes and update turn queue if needed
+                turnManager.UpdateSpeedChanges(allUnits);
+                
+                // If target is still alive and is a ranged unit, calculate damage-based delay
+                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
+                    int hpAfterAttack = target->GetCurrentHP();
+                    int damageTaken = hpBeforeAttack - hpAfterAttack;
+                    
+                    int delayAmount = CalculateDelayFromDamage(damageTaken, maxHP);
+                    
+                    if (delayAmount > 0) {
+                        turnManager.DelayUnit(target, delayAmount);
+                        std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount 
+                                  << " tick(s) due to " << damageTaken << "/" << maxHP << " damage!" << std::endl;
+                    }
                 }
-            }
-            
-            // If target is still alive and is a magic unit, reset their tick
-            if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
-                int hpAfterAttack = target->GetCurrentHP();
-                int damageTaken = hpBeforeAttack - hpAfterAttack;
                 
-                if (damageTaken > 0) {
-                    turnManager.ResetMagicUnitTick(target);
-                    std::cout << "  -> " << target->GetName() << " (magic) tick reset due to melee attack!" << std::endl;
+                // If target is still alive and is a magic unit, reset their tick
+                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
+                    int hpAfterAttack = target->GetCurrentHP();
+                    int damageTaken = hpBeforeAttack - hpAfterAttack;
+                    
+                    if (damageTaken > 0) {
+                        turnManager.ResetMagicUnitTick(target);
+                        std::cout << "  -> " << target->GetName() << " (magic) tick reset due to melee attack!" << std::endl;
+                    }
                 }
             }
         }
@@ -212,18 +222,29 @@ void BattleManager::StartBattle() {
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
-            Unit* target = targets[0];
-            if (!target->IsAlive()) continue;
-            
-            // Create ally/enemy lists for this unit
-            std::vector<Unit*> unitAllies, unitEnemies;
-            SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
-            
-            // Execute the magic action
-            std::cout << "Magic: " << unit->GetName() << " targeting " << target->GetName() 
-                      << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
-            
-            unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+            // Execute action against all targets
+            for (Unit* target : targets) {
+                if (!target->IsAlive()) continue;
+                
+                // Create ally/enemy lists for this unit
+                std::vector<Unit*> unitAllies, unitEnemies;
+                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
+                
+                // Execute the magic action
+                std::cout << "Magic: " << unit->GetName() << " targeting " << target->GetName() 
+                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                
+                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                
+                // Apply unit boons to after-action system
+                ApplyUnitBoonsToAfterAction(unit);
+                
+                // Process any after-actions triggered
+                ProcessAfterActions(allUnits);
+                
+                // Check for speed changes and update turn queue if needed
+                turnManager.UpdateSpeedChanges(allUnits);
+            }
             
             // Process any after-actions triggered
             ProcessAfterActions(allUnits);
@@ -295,8 +316,12 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
     for (const auto& afterActionEvent : toProcess) {
         Unit* actor = afterActionEvent.context.actor;
         
-        // Use TargetManager to find the best target based on the action's targeting rules
-        Unit* target = TargetManager::FindBestTargetForAction(actor, *afterActionEvent.battleAction, allUnits);
+        // Use the target from context if specified, otherwise find a target
+        Unit* target = afterActionEvent.context.target;
+        if (!target || !target->IsAlive()) {
+            // Use TargetManager to find the best target based on the action's targeting rules
+            target = TargetManager::FindBestTargetForAction(actor, *afterActionEvent.battleAction, allUnits);
+        }
         
         if (target) {
             std::cout << "[AFTER-ACTION] " << actor->GetName() << " performs after-action on " 
@@ -320,6 +345,14 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
         } else {
             std::cout << "[AFTER-ACTION] No valid target found for " << actor->GetName() << std::endl;
         }
+    }
+}
+
+// Apply unit boons to after-action system
+void BattleManager::ApplyUnitBoonsToAfterAction(Unit* unit) {
+    if (unit->IsAlive()) {
+        // The unit applies its boons to the after-action system
+        unit->ApplyBoonsToAfterAction();
     }
 }
 

@@ -85,19 +85,47 @@ void TargetManager::SimulateGroupTargeting(
         // Find best target that's still alive in simulation (prioritize highest threat)
         Unit* bestTarget = FindHighestThreatTarget(aliveInSimulation);
         
-        // If we found a target, simulate damage
+        // If we found a target, simulate damage and potentially select more targets
         if (bestTarget) {
             const BattleAction& action = actingUnit->GetWeapon().GetAction();
-            int damage = action.CalculateDamage(actingUnit, bestTarget);
+            std::vector<Unit*> selectedTargets = {bestTarget};
             
-            // Apply damage to simulation
+            // Apply damage to simulation for first target
+            int damage = action.CalculateDamage(actingUnit, bestTarget);
             simulatedHP[bestTarget] -= damage;
             if (simulatedHP[bestTarget] < 0) {
                 simulatedHP[bestTarget] = 0;
             }
             
-            // Assign target
-            groupTargets[actingUnit] = {bestTarget};
+            // Select additional targets if targetNumber > 1
+            int targetNumber = action.GetTargetNumber();
+            for (int i = 1; i < targetNumber; i++) {
+                // Re-filter alive targets after previous selections
+                std::vector<Unit*> remainingTargets;
+                for (Unit* target : validTargets) {
+                    if (simulatedHP[target] > 0 && 
+                        std::find(selectedTargets.begin(), selectedTargets.end(), target) == selectedTargets.end()) {
+                        remainingTargets.push_back(target);
+                    }
+                }
+                
+                Unit* nextTarget = FindHighestThreatTarget(remainingTargets);
+                if (nextTarget) {
+                    selectedTargets.push_back(nextTarget);
+                    
+                    // Apply damage to simulation
+                    int nextDamage = action.CalculateDamage(actingUnit, nextTarget);
+                    simulatedHP[nextTarget] -= nextDamage;
+                    if (simulatedHP[nextTarget] < 0) {
+                        simulatedHP[nextTarget] = 0;
+                    }
+                } else {
+                    break; // No more valid targets
+                }
+            }
+            
+            // Assign all selected targets
+            groupTargets[actingUnit] = selectedTargets;
         } else {
             // No valid targets
             groupTargets[actingUnit] = {};

@@ -2,11 +2,14 @@
 #define UNIT_H
 
 #include <string>
+#include <vector>
+#include <memory>
 
 #include "Stat.h"
 #include "Weapon.h"
 #include "Armor.h"
 #include "Team.h"
+#include "BoonAction.h"
 
 class Unit {
 private:
@@ -17,13 +20,24 @@ private:
 
     Weapon weapon;
     Armor armor;
+    
+    // Boon management
+    std::vector<std::unique_ptr<BoonAction>> activeBoons;
 
 public:
     std::string Name;
     std::string ID;
     TeamColor team;
 
-Unit(std::string name, std::string id);
+    Unit(std::string name, std::string id);
+    
+    // Delete copy constructor and copy assignment operator
+    Unit(const Unit&) = delete;
+    Unit& operator=(const Unit&) = delete;
+    
+    // Default move constructor and move assignment operator
+    Unit(Unit&&) = default;
+    Unit& operator=(Unit&&) = default;
 
     const std::string& GetName() const;
 
@@ -58,6 +72,12 @@ Unit(std::string name, std::string id);
 
     bool IsAlive() { return currentHP > 0; };
     void EnhanceHP(int amount);
+    
+    // Boon management methods
+    void AddBoon(std::unique_ptr<BoonAction> boon);
+    bool HasBoon(const std::string& effectType) const;
+    void ApplyBoonsToAfterAction(); // Called by BattleManager to register boons in after-actions
+    void CleanupExpiredBoons();     // Remove boons with 0 usage
 };
 
 #endif

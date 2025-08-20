@@ -213,4 +213,46 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C01_A09(2)", "C02_A00"]     
+  actionIDs: ["C01_A09(2)", "C02_A00"]
+
+- id: Poison Attack
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A00", "C08_A28(Poison Effect,3)"]
+
+- id: Poison Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A03(3)"]
+
+- id: Healing Touch
+  targetNumber: 1
+  self: false
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A13(5)"]
+
+- id: Venomous Shot
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00", "C08_A28(Poison Effect,2)"]     
+
+- id: Double Shot
+  targetNumber: 2
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00"]    
+
+- id: Tripple Shot
+  targetNumber: 3
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A00"]    

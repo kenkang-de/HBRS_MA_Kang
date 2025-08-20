@@ -1,0 +1,4 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS02,Weapon,Range,3,0,-2,0,0,2,Double Shot
+BS03,Weapon,Range,3,0,-4,0,0,2,Tripple Shot
+BS03,Weapon,Meele,4,0,-2,0,0,2,Slash

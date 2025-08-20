@@ -1,5 +1,10 @@
 #include "Unit.h"
+#include "BoonAction.h"
 #include <iostream>
+#include <algorithm>
+
+// Forward declaration for global function
+void AddAfterActionToBattleManager(const class BattleAction* action, const struct ActionContext& context);
 
 Unit::Unit(std::string name, std::string id)
     : Name(name), ID(id), 
@@ -108,5 +113,61 @@ void Unit::EnhanceHP(int amount) {
     int newHP = std::max(0, totalStat.GetHP() + amount);
     totalStat.SetHP(newHP);
     currentHP += amount; 
+}
+
+// Boon management methods
+void Unit::AddBoon(std::unique_ptr<BoonAction> boon) {
+    // Check if the same effect type already exists
+    for (auto& existingBoon : activeBoons) {
+        if (existingBoon->GetEffectType() == boon->GetEffectType()) {
+            std::cout << "[BOON] Refreshing existing " << boon->GetEffectType() 
+                      << " on " << Name << std::endl;
+            existingBoon->ResetUsage();
+            return;
+        }
+    }
+    
+    // Add new boon
+    std::cout << "[BOON] Applied " << boon->GetEffectType() 
+              << " to " << Name << " (Usage: " << boon->GetUsageNumber() << ")" << std::endl;
+    activeBoons.push_back(std::move(boon));
+}
+
+bool Unit::HasBoon(const std::string& effectType) const {
+    for (const auto& boon : activeBoons) {
+        if (boon->GetEffectType() == effectType && !boon->IsExpired()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void Unit::ApplyBoonsToAfterAction() {
+    // This will be called by BattleManager to register active boons as after-actions
+    if (!activeBoons.empty()) {
+        std::cout << "[DEBUG] " << Name << " processing " << activeBoons.size() << " boons" << std::endl;
+    }
+    for (auto& boon : activeBoons) {
+        if (!boon->IsExpired()) {
+            std::cout << "[DEBUG] Registering boon " << boon->GetEffectType() << " for " << Name << std::endl;
+            // Register this boon in the after-action system
+            AddAfterActionToBattleManager(boon.get(), {this, this, {}, {}});
+        } else {
+            std::cout << "[DEBUG] Skipping expired boon " << boon->GetEffectType() << " for " << Name << std::endl;
+        }
+    }
+}
+
+void Unit::CleanupExpiredBoons() {
+    auto it = activeBoons.begin();
+    while (it != activeBoons.end()) {
+        if ((*it)->IsExpired()) {
+            std::cout << "[BOON] " << (*it)->GetEffectType() 
+                      << " expired on " << Name << std::endl;
+            it = activeBoons.erase(it);
+        } else {
+            ++it;
+        }
+    }
 }
 

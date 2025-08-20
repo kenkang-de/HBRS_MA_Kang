@@ -1,0 +1,6 @@
+ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS01,Weapon,Poison Sword,10,5,-1,0,0,1,Poison Attack
+BS02,Weapon,Healing Staff,5,3,-2,0,0,2,Healing Touch
+BS03,Weapon,Venomous Bow,12,2,-1,0,0,2,Venomous Shot
+BS04,Weapon,Basic Sword,8,4,-1,0,0,1,Slash
+BS05,Weapon,Basic Bow,10,2,-1,0,0,2,Shoot
