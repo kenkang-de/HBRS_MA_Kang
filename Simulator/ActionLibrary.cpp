@@ -356,6 +356,19 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+
+        //Heal target
+        { "A29", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target) {
+                int oldHP = ctx.target->GetTotalStat().GetHP();
+                ctx.target->Heal(value);
+                int newHP = ctx.target->GetTotalStat().GetHP();
+                std::cout << "[A29] " << ctx.actor->GetName() << " healed " << ctx.target->GetName() << " for " << value << " HP" << std::endl;
+            }
+        };
+    }},
 };
 
 

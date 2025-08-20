@@ -234,7 +234,7 @@
   self: false
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A13(5)"]
+  actionIDs: ["C00_A29(5)"]
 
 - id: Venomous Shot
   targetNumber: 1
@@ -270,3 +270,31 @@
   targetType: ENEMY
   actionType: MAGIC
   actionIDs: ["C00_A00"]    
+
+- id: Tetrodo
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C08_A28(Tetrodo Effect,2)"]
+
+- id: Tetrodo Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A03(5)"]
+
+- id: Healing Link
+  targetNumber: 2
+  self: false
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A29(3)"]
+
+- id: Grace
+  targetNumber: 3
+  self: false
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A29(2)"]  
