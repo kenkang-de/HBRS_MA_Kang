@@ -26,7 +26,7 @@
   actionType: RANGE
   actionIDs: ["C00_A00"]
   
-- id: MagicBolt
+- id: Magic Bolt
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -255,4 +255,18 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
+  actionIDs: ["C00_A00"]    
+
+- id: Wind Blade
+  targetNumber: 2
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A00"]  
+
+- id: Meteor
+  targetNumber: 3
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
   actionIDs: ["C00_A00"]    

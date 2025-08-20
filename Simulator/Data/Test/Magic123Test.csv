@@ -1,0 +1,4 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS02,Weapon,Magic,0,0,-3,0,0,2,Magic Bolt
+BS03,Weapon,Magic,3,0,-4,0,0,2,Wind Blade
+BS03,Weapon,Magic,5,0,-4,0,0,2,Meteor
