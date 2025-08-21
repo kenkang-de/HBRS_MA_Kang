@@ -26,6 +26,7 @@ public:
     void DelayUnit(Unit* unit, int delayTicks); // Add delay to a specific unit
     void ResetMagicUnitTick(Unit* magicUnit); // Reset magic unit's next action tick
     void RemoveDeadUnits(const std::vector<Unit*>& units); // Clean up dead units from tracking
+    int GetUnitInterval(Unit* unit) const; // Get the interval for a specific unit
 
 private:
     int tick = 0;

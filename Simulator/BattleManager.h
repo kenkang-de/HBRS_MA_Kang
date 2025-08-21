@@ -33,6 +33,7 @@ public:
     
     // Public method to access TurnManager functionality
     void DelayUnit(Unit* unit, int delayAmount);
+    int GetUnitInterval(Unit* unit) const;
 
 private:
     Battlefield& battlefield;

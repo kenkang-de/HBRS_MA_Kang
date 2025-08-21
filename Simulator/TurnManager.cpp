@@ -226,3 +226,10 @@ void TurnManager::RemoveDeadUnits(const std::vector<Unit*>& units) {
         }
     }
 }
+
+int TurnManager::GetUnitInterval(Unit* unit) const {
+    if (unit == nullptr || unit->GetTotalStat().GetSpeed() <= 0) {
+        return 1; // Default fallback
+    }
+    return lcm / unit->GetTotalStat().GetSpeed();
+}

@@ -298,3 +298,10 @@
   targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A29(2)"]  
+
+- id: Freeze
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A30(1)"]    

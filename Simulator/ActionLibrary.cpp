@@ -293,9 +293,14 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
            int delayAmount = std::stoi(param);
         return [delayAmount](const ActionContext& ctx) {
             if (ctx.target) {
+                // Get the unit's natural interval (how often it normally acts)
+                extern int GetUnitIntervalFromBattleManager(Unit* unit);
+                int unitInterval = GetUnitIntervalFromBattleManager(ctx.target);
+                int totalDelay = delayAmount * unitInterval;
+                
                 extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
-                DelayUnitInBattleManager(ctx.target, delayAmount);
-                std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " ticks" << std::endl;
+                DelayUnitInBattleManager(ctx.target, totalDelay);
+                std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " intervals (" << totalDelay << " ticks)" << std::endl;
             }
         };
     }},
@@ -366,6 +371,23 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 ctx.target->Heal(value);
                 int newHP = ctx.target->GetTotalStat().GetHP();
                 std::cout << "[A29] " << ctx.actor->GetName() << " healed " << ctx.target->GetName() << " for " << value << " HP" << std::endl;
+            }
+        };
+    }},
+
+        //Freeze, delay unit for (param) turn
+        { "A30", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+           if (ctx.target) {
+                // Get the unit's natural interval (how often it normally acts)
+                extern int GetUnitIntervalFromBattleManager(Unit* unit);
+                int unitInterval = GetUnitIntervalFromBattleManager(ctx.target);
+                int totalDelay = value * unitInterval;
+                
+                extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
+                DelayUnitInBattleManager(ctx.target, totalDelay);
+                std::cout << "[A30] " << ctx.target->GetName() << " delayed by " << value << " intervals (" << totalDelay << " ticks)" << std::endl;
             }
         };
     }},

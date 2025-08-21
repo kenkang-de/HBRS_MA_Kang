@@ -1,0 +1,5 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS02,Weapon,Magic,0,0,-3,0,0,2,Tetrodo
+BS03,Weapon,Magic,0,0,-4,0,0,2,Freeze
+BS03,Weapon,Magic,0,0,-4,0,0,2,Healing Link
+BS05,Weapon,Melee,6,0,-2,0,0,2,Slash

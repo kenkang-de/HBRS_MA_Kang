@@ -27,6 +27,14 @@ void DelayUnitInBattleManager(Unit* unit, int delayAmount) {
     }
 } 
 
+// Global function for ActionLibrary to get unit interval
+int GetUnitIntervalFromBattleManager(Unit* unit) {
+    if (currentBattleManager) {
+        return currentBattleManager->GetUnitInterval(unit);
+    }
+    return 1; // Default fallback
+}
+
 
 BattleManager::BattleManager(Battlefield& bf) 
     : battlefield(bf) {
@@ -305,6 +313,11 @@ void BattleManager::AddAfterAction(const BattleAction* battleAction, const Actio
 // Public method to access TurnManager DelayUnit functionality
 void BattleManager::DelayUnit(Unit* unit, int delayAmount) {
     turnManager.DelayUnit(unit, delayAmount);
+}
+
+// Public method to access TurnManager GetUnitInterval functionality
+int BattleManager::GetUnitInterval(Unit* unit) const {
+    return turnManager.GetUnitInterval(unit);
 }
 
 void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
