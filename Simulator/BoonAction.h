@@ -26,7 +26,7 @@ public:
     bool IsExpired() const { return usageNumber <= 0; }
     
     // Reset usage (for reapplying same effect)
-    void ResetUsage() { usageNumber = maxUsage; }
+    virtual void ResetUsage() { usageNumber = maxUsage; }
     
     // Override Perform to handle boon-specific logic
     void Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const override;

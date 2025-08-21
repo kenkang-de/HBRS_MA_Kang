@@ -44,13 +44,12 @@ void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>
             
             // Apply removal effect if specified
             if (!removalEffectName.empty()) {
-                const BattleAction* removalAction = ActionLibrary::GetGlobalAction(removalEffectName);
-                if (removalAction) {
-                    std::cout << " - applying removal effect: " << removalEffectName << std::endl;
-                    removalAction->Perform(actor, target, allies, enemies);
-                } else {
-                    std::cout << " - removal effect '" << removalEffectName << "' not found!" << std::endl;
-                }
+                std::cout << " - applying removal effect: " << removalEffectName << std::endl;
+                
+                // Use EXECUTE_EFFECT to apply removal BattleAction
+                ActionFn removalAction = ActionLibrary::GetAction("EXECUTE_EFFECT", removalEffectName);
+                ActionContext removalContext = {actor, target, allies, enemies};
+                removalAction(removalContext);
             } else {
                 std::cout << " - no removal effect specified" << std::endl;
             }

@@ -305,3 +305,24 @@
   targetType: ENEMY
   actionType: MAGIC
   actionIDs: ["C00_A30(1)"]    
+
+- id: Bulkup
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A31(BulkupSTART,1,BulkupEND)"]
+
+- id: BulkupSTART
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A32(10)"]         
+
+- id: BulkupEND
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A32(-10)"]   

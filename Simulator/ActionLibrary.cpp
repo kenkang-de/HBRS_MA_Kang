@@ -1,6 +1,7 @@
 #include "ActionLibrary.h"
 #include "Unit.h"
 #include "BoonAction.h"
+#include "TempBoonAction.h"
 #include <algorithm>
 #include <iostream>
 
@@ -262,7 +263,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         return [actionID](const ActionContext& ctx) {
             if (ctx.actor) {
                 // Look up the after-action by ID
-                const BattleAction* afterAction = ActionLibrary::GetGlobalAction(actionID);
+                auto afterAction = ActionLibrary::GetGlobalAction(actionID);
                 if (afterAction) {
                     // Register the after-action to be executed later
                     extern void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context);
@@ -312,10 +313,37 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         
         return [effectName](const ActionContext& ctx) {
             // Get and execute the registered effect action directly
-            const BattleAction* effectAction = ActionLibrary::GetGlobalAction(effectName);
+            auto effectAction = ActionLibrary::GetGlobalAction(effectName);
             if (effectAction) {
                 std::cout << "[EXECUTE_EFFECT] " << ctx.actor->GetName() << " triggered " << effectName << std::endl;
                 effectAction->Perform(ctx.actor, ctx.target, ctx.allies, ctx.enemies);
+            }
+        };
+    }},
+    
+    //Special action to execute effect with parameter (param format: "EffectName,parameter")
+    { "EXECUTE_EFFECT_WITH_PARAM", [](const std::string& param) -> ActionFn {
+        // Parse "EffectName,parameter"
+        size_t comma = param.find(',');
+        std::string effectName = param.substr(0, comma);
+        std::string effectParam = param.substr(comma + 1);
+        
+        return [effectName, effectParam](const ActionContext& ctx) {
+            // Get the registered effect action and create a parameterized version
+            auto effectAction = ActionLibrary::GetGlobalAction(effectName);
+            if (effectAction) {
+                std::cout << "[EXECUTE_EFFECT_WITH_PARAM] " << ctx.actor->GetName() << " triggered " << effectName << "(" << effectParam << ")" << std::endl;
+                
+                // Create a temporary action context with the parameter
+                // For now, we'll use the ActionLibrary's parameterized actions directly
+                try {
+                    // Look up the action ID from the effect action and execute with parameter
+                    // This is a simplified approach - in practice you'd need to store the action ID mapping
+                    ActionFn paramAction = ActionLibrary::GetAction("A32", effectParam);
+                    paramAction(ctx);
+                } catch (const std::exception& e) {
+                    std::cout << "[EXECUTE_EFFECT_WITH_PARAM] Error: " << e.what() << std::endl;
+                }
             }
         };
     }},
@@ -344,7 +372,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         return [effectName, usage](const ActionContext& ctx) {
             if (ctx.target) {
                 // Get the registered effect action from globalActionRegistry
-                const BattleAction* effectAction = ActionLibrary::GetGlobalAction(effectName);
+                auto effectAction = ActionLibrary::GetGlobalAction(effectName);
                 if (effectAction) {
                     // Create a boon that will execute the specified effect action
                     auto boon = std::make_unique<BoonAction>(effectName, effectName, usage);
@@ -391,6 +419,55 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             }
         };
     }},
+    // Apply TempBoon with BattleAction names (param format: "StartActionName,duration,EndActionName")
+{ "A31", [](const std::string& param) -> ActionFn {
+    // Parse: "Bulkup(START),3,Bulkup(END)"
+    size_t comma1 = param.find(',');
+    size_t comma2 = param.find(',', comma1 + 1);
+    
+    if (comma1 == std::string::npos || comma2 == std::string::npos) {
+        std::cout << "[A31 ERROR] Invalid parameter format: " << param << std::endl;
+        return [](const ActionContext&) {};
+    }
+    
+    std::string startActionName = param.substr(0, comma1);  // "Bulkup(START)"
+    std::string durationStr = param.substr(comma1 + 1, comma2 - comma1 - 1);
+    std::string endActionName = param.substr(comma2 + 1);  // "Bulkup(END)"
+    
+    std::cout << "[A31 DEBUG] Parsing - Start: '" << startActionName << "', Duration: '" << durationStr << "', End: '" << endActionName << "'" << std::endl;
+    
+    int duration;
+    try {
+        duration = std::stoi(durationStr);
+    } catch (const std::exception& e) {
+        std::cout << "[A31 ERROR] Failed to parse duration '" << durationStr << "': " << e.what() << std::endl;
+        return [](const ActionContext&) {};
+    }
+    
+    return [startActionName, duration, endActionName](const ActionContext& ctx) {
+        if (ctx.target) {
+            // Create TempBoonAction
+            auto tempBoon = std::make_unique<TempBoonAction>(startActionName, startActionName, duration, endActionName);
+            
+            // Add the buff effect using EXECUTE_EFFECT (no parameters needed)
+            tempBoon->AddConditionalAction("C00", "EXECUTE_EFFECT", startActionName);
+            
+            AddBoonToUnit(ctx.target, std::move(tempBoon));
+            std::cout << "[A31] Applied temporary buff " << startActionName << " for " << duration << " turns, removal: " << endActionName << std::endl;
+        }
+    };
+}},
+
+        //Add Actor's HP 
+        { "A32", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.actor) {
+                ctx.actor->EnhanceHP(value);
+            }
+        };
+    }},
+
 };
 
 

@@ -27,7 +27,7 @@ public:
     static ActionFn GetAction(const std::string& id);
     static ActionFn GetAction(const std::string& id, const std::string& param);
 
-    // Global action registry for A18 after-action system
+    // Global action registry for A18 after-action system - using raw pointers for performance
     static void RegisterGlobalAction(const std::string& id, BattleAction* action);
     static const BattleAction* GetGlobalAction(const std::string& id);
 
@@ -37,7 +37,7 @@ private:
 };
 
 // Global functions for BattleManager integration
-void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context);
+void AddAfterActionToBattleManager(std::shared_ptr<const BattleAction> action, const ActionContext& context);
 void DelayUnitInBattleManager(Unit* unit, int delayAmount);
 
 // Global functions for Boon system

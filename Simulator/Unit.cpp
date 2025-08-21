@@ -1,5 +1,7 @@
 #include "Unit.h"
 #include "BoonAction.h"
+#include "TempBoonAction.h"
+#include "ActionLibrary.h"
 #include <iostream>
 #include <algorithm>
 
@@ -164,6 +166,20 @@ void Unit::CleanupExpiredBoons() {
         if ((*it)->IsExpired()) {
             std::cout << "[BOON] " << (*it)->GetEffectType() 
                       << " expired on " << Name << std::endl;
+            
+            // Check if this is a TempBoonAction and execute removal effect
+            TempBoonAction* tempBoon = dynamic_cast<TempBoonAction*>(it->get());
+            if (tempBoon && !tempBoon->GetRemovalEffectName().empty()) {
+                std::cout << "[REMOVAL] Executing " << tempBoon->GetRemovalEffectName() 
+                          << " on " << Name << std::endl;
+                
+                // Create dummy context for removal effect
+                std::vector<Unit*> dummyAllies, dummyEnemies;
+                ActionFn removalAction = ActionLibrary::GetAction("EXECUTE_EFFECT", tempBoon->GetRemovalEffectName());
+                ActionContext removalContext = {this, this, dummyAllies, dummyEnemies};
+                removalAction(removalContext);
+            }
+            
             it = activeBoons.erase(it);
         } else {
             ++it;
