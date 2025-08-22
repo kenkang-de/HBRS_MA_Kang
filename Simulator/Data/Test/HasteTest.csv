@@ -1,0 +1,4 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS05,Weapon,Melee,6,0,-2,0,0,2,Slash
+BS05,Weapon,Magic,0,0,-4,0,0,2,Bulkup
+BS05,Weapon,Magic,0,0,-4,0,0,2,Haste

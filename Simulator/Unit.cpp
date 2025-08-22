@@ -124,7 +124,29 @@ void Unit::AddBoon(std::unique_ptr<BoonAction> boon) {
         if (existingBoon->GetEffectType() == boon->GetEffectType()) {
             std::cout << "[BOON] Refreshing existing " << boon->GetEffectType() 
                       << " on " << Name << std::endl;
-            existingBoon->ResetUsage();
+            
+            // For TempBoonAction, we want to reset duration but NOT reapply the effect
+            TempBoonAction* tempBoon = dynamic_cast<TempBoonAction*>(existingBoon.get());
+            if (tempBoon) {
+                // Store the current execution state before reset
+                bool wasExecuted = tempBoon->HasEffectExecuted();
+                
+                // Reset the usage counter (this also resets flags)
+                BoonAction* baseBoon = static_cast<BoonAction*>(tempBoon);
+                baseBoon->ResetUsage();  
+                
+                // If effect was already executed, prevent reapplication
+                if (wasExecuted) {
+                    tempBoon->MarkAsApplied();
+                    tempBoon->MarkEffectExecuted();
+                    std::cout << "[REFRESH] " << boon->GetEffectType() << " duration refreshed, effect remains active" << std::endl;
+                } else {
+                    std::cout << "[REFRESH] " << boon->GetEffectType() << " duration refreshed, ready for first effect" << std::endl;
+                }
+            } else {
+                // For regular boons, normal reset
+                existingBoon->ResetUsage();
+            }
             return;
         }
     }
@@ -165,20 +187,10 @@ void Unit::CleanupExpiredBoons() {
     while (it != activeBoons.end()) {
         if ((*it)->IsExpired()) {
             std::cout << "[BOON] " << (*it)->GetEffectType() 
-                      << " expired on " << Name << std::endl;
+                      << " expired on " << Name << " - cleaned up" << std::endl;
             
-            // Check if this is a TempBoonAction and execute removal effect
-            TempBoonAction* tempBoon = dynamic_cast<TempBoonAction*>(it->get());
-            if (tempBoon && !tempBoon->GetRemovalEffectName().empty()) {
-                std::cout << "[REMOVAL] Executing " << tempBoon->GetRemovalEffectName() 
-                          << " on " << Name << std::endl;
-                
-                // Create dummy context for removal effect
-                std::vector<Unit*> dummyAllies, dummyEnemies;
-                ActionFn removalAction = ActionLibrary::GetAction("EXECUTE_EFFECT", tempBoon->GetRemovalEffectName());
-                ActionContext removalContext = {this, this, dummyAllies, dummyEnemies};
-                removalAction(removalContext);
-            }
+            // Note: TempBoonAction handles its own removal effects in Perform()
+            // so we don't need to execute removal effects here to avoid double execution
             
             it = activeBoons.erase(it);
         } else {

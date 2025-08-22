@@ -3,17 +3,17 @@
 #include "ActionLibrary.h"
 #include <iostream>
 
-TempBoonAction::TempBoonAction() : BoonAction(), hasBeenApplied(false), removalEffectName("") {}
+TempBoonAction::TempBoonAction() : BoonAction(), hasBeenApplied(false), effectExecuted(false), removalEffectName("") {}
 
 TempBoonAction::TempBoonAction(const std::string& id, const std::string& effectType, int duration, const std::string& removalEffect)
-    : BoonAction(id, effectType, duration), hasBeenApplied(false), removalEffectName(removalEffect) {
+    : BoonAction(id, effectType, duration), hasBeenApplied(false), effectExecuted(false), removalEffectName(removalEffect) {
 }
 
 void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>& allies, const std::vector<Unit*>& enemies) const {
     if (target) {
         ActionContext ctx{ actor, target, allies, enemies };
 
-        if (!hasBeenApplied) {
+        if (!effectExecuted) {
             // Apply the buff effect only once
             std::cout << "[TEMP-BUFF] " << GetEffectType() << " applied to " << target->GetName() 
                       << " (Duration: " << GetUsageNumber() << " turns)" << std::endl;
@@ -27,19 +27,20 @@ void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>
                 }
             }
             
-            // Mark as applied so it doesn't apply again
+            // Mark as applied and effect executed
             MarkAsApplied();
+            MarkEffectExecuted();
         } else {
-            // Just count down duration without triggering effects
+            // Count down duration and decrement usage for subsequent turns
             std::cout << "[TEMP-BUFF] " << GetEffectType() << " on " << target->GetName() 
                       << " (Remaining: " << (GetUsageNumber() - 1) << " turns)" << std::endl;
+            
+            // Only decrement usage after the first application
+            const_cast<TempBoonAction*>(this)->DecrementUsage();
         }
         
-        // Decrement usage after performing
-        const_cast<TempBoonAction*>(this)->DecrementUsage();
-        
-        // Handle expiration
-        if (IsExpired()) {
+        // Handle expiration (only check after potential decrement)
+        if (effectExecuted && IsExpired()) {
             std::cout << "[TEMP-BUFF] " << GetEffectType() << " expired on " << target->GetName();
             
             // Apply removal effect if specified

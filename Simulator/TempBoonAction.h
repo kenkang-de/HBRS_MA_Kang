@@ -5,7 +5,8 @@
 
 class TempBoonAction : public BoonAction {
 private:
-    mutable bool hasBeenApplied;    // Track if the buff has been applied
+    mutable bool hasBeenApplied;    // Track if the buff has been applied to unit
+    mutable bool effectExecuted;    // Track if the effect was actually executed
     std::string removalEffectName;  // Name of the removal effect to apply when expired
     
 public:
@@ -14,6 +15,7 @@ public:
     
     // Getters
     bool HasBeenApplied() const { return hasBeenApplied; }
+    bool HasEffectExecuted() const { return effectExecuted; }
     const std::string& GetRemovalEffectName() const { return removalEffectName; }
     
     // Setters
@@ -21,11 +23,13 @@ public:
     
     // Mark as applied
     void MarkAsApplied() const { hasBeenApplied = true; }
+    void MarkEffectExecuted() const { effectExecuted = true; }
     
     // Reset for reapplication
     void ResetUsage() override { 
         BoonAction::ResetUsage(); 
-        hasBeenApplied = false; 
+        hasBeenApplied = false;
+        effectExecuted = false;
     }
     
     // Override Perform to handle temporary buff logic

@@ -326,3 +326,24 @@
   targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A32(-10)"]   
+
+- id: Haste
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A31(HasteSTART,1,HasteEND)"]
+
+- id: HasteSTART
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A19(2)"]     
+
+- id: HasteEND
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A19(-2)"]  
