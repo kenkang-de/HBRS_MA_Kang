@@ -485,6 +485,19 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         };
     }},
 
+        //Add target's attack 
+        { "A34", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target) {
+                int oldAttack = ctx.target->GetTotalStat().GetAttack();
+                ctx.target->GetTotalStat().SetAttack(oldAttack + value);
+                int newAttack = ctx.target->GetTotalStat().GetAttack();
+                std::cout << "[A34] " << ctx.target->GetName() << " attack changed from " << oldAttack << " to " << newAttack << std::endl;
+            }
+        };
+    }},
+
 };
 
 

@@ -396,3 +396,31 @@
   targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A02(-3)"]  
+
+- id: Cheer
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A34(2)"]
+
+- id: Thunder
+  targetNumber: 4
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A03(2)"]
+
+- id: Earthquake
+  targetNumber: 5
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A03(1)"]   
+
+- id: Corrosion
+  targetNumber: 2
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A34(-1)"]   

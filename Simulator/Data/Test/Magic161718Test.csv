@@ -1,0 +1,5 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,Hand,actionId
+BS05,Weapon,Melee,6,0,-3,6,0,2,Slash
+BS05,Weapon,Magic,0,0,-4,3,0,2,Thunder
+BS05,Weapon,Magic,0,0,-4,4,0,2,Earthquake
+BS05,Weapon,Magic,0,0,-4,5,0,2,Corrosion
