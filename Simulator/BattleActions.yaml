@@ -354,3 +354,10 @@
   targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A33(2)", "C00_A02(1)"]  
+
+- id: Exposure
+  targetNumber: 3
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A33(-2)"]    
