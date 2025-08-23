@@ -164,12 +164,16 @@ using ParamActionFactory = std::function<ActionFn(const std::string& param)>;
 
 static const std::unordered_map<std::string, ParamActionFactory> paramActionFactory = {
 
-        //Lowers Target's Defense
+        //Add to Target's Defense
     { "A02", [](const std::string& param) -> ActionFn {
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
-            if (ctx.target)
-                ctx.target->GetTotalStat().SetDefense(ctx.target->GetTotalStat().GetDefense() + value);
+            if (ctx.target) {
+                int oldDefense = ctx.target->GetTotalStat().GetDefense();
+                ctx.target->GetTotalStat().SetDefense(oldDefense + value);
+                int newDefense = ctx.target->GetTotalStat().GetDefense();
+                std::cout << "[A02] " << ctx.target->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
+            }
         };
     }},
         //Undefendable Static damage
@@ -458,12 +462,25 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     };
 }},
 
-        //Add Actor's HP 
+        //Add target's HP 
         { "A32", [](const std::string& param) -> ActionFn {
            int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
-            if (ctx.actor) {
-                ctx.actor->EnhanceHP(value);
+            if (ctx.target) {
+                ctx.target->EnhanceHP(value);
+            }
+        };
+    }},
+
+        //Add target's threat 
+        { "A33", [](const std::string& param) -> ActionFn {
+           int value = std::stoi(param);
+        return [value](const ActionContext& ctx) {
+            if (ctx.target) {
+                int oldThreat = ctx.target->GetTotalStat().GetThreat();
+                ctx.target->GetTotalStat().SetThreat(oldThreat + value);
+                int newThreat = ctx.target->GetTotalStat().GetThreat();
+                std::cout << "[A33] " << ctx.target->GetName() << " threat changed from " << oldThreat << " to " << newThreat << std::endl;
             }
         };
     }},

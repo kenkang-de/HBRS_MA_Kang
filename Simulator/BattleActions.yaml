@@ -347,3 +347,10 @@
   targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A19(-2)"]  
+
+- id: Vow
+  targetNumber: 2
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A33(2)", "C00_A02(1)"]  
