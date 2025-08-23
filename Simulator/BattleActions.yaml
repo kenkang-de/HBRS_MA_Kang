@@ -367,4 +367,32 @@
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A06(-1)"]     
+  actionIDs: ["C00_A06(-1)"]    
+
+- id: Fatigue
+  targetNumber: 2
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A06(-1)"]    
+
+- id: Protect
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A31(ProtectSTART,1,ProtectEND)"]
+
+- id: ProtectSTART
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A02(3)"]     
+
+- id: ProtectEND
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A02(-3)"]  
