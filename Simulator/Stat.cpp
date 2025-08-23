@@ -56,7 +56,7 @@ int Stat::GetSpeed() const
 
 void Stat::SetSpeed(int s)
 {
-    Speed = s;
+    Speed = std::max(0, s);
 }
 
 int Stat::GetHP() const
@@ -66,7 +66,7 @@ int Stat::GetHP() const
     
 void Stat::SetHP(int hp)
 {
-    Hitpoint = hp;
+    Hitpoint = std::max(0, hp);
 }
 
 int Stat::GetAttack() const {
@@ -82,7 +82,7 @@ int Stat::GetDefense() const {
 }
 
 void Stat::SetDefense(int d) {
-    Defense = d;
+    Defense = std::max(0, d);
 }
 
 int Stat::GetThreat() const {
@@ -90,5 +90,5 @@ int Stat::GetThreat() const {
 }
 
 void Stat::SetThreat(int t) {
-    Threat = t;
+    Threat = std::max(0, t);
 }

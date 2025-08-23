@@ -360,4 +360,11 @@
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A33(-2)"]    
+  actionIDs: ["C00_A33(-2)"]  
+
+- id: Fatigue
+  targetNumber: 2
+  self: false
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A06(-1)"]     
