@@ -117,7 +117,7 @@
   actionType: MELEE
   actionIDs: ["C00_A00","C05_A04(1)", "C05_A15(1)"]
 
-- id: KillingSpree
+- id: Killing Spree
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -145,14 +145,14 @@
   actionType: RANGE
   actionIDs: ["C00_A19(1)"]
 
-- id: BlitzShot
+- id: Blitz Shot
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: RANGE
   actionIDs: ["C00_A08"] 
  
-- id: DelayShot
+- id: Delay Shot
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -187,7 +187,7 @@
   actionType: RANGE
   actionIDs: ["C00_A23", "C00_A19(-1)"]   
 
-- id: Camo Shot
+- id: Camo Throw
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -208,7 +208,7 @@
   actionType: RANGE
   actionIDs: ["C00_A00", "C00_A25"]    
 
-- id: Focus Shot
+- id: Focus Throw
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -236,7 +236,7 @@
   actionType: MAGIC
   actionIDs: ["C00_A29(5)"]
 
-- id: Venomous Shot
+- id: Poison Arrow
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -264,7 +264,7 @@
   actionType: MAGIC
   actionIDs: ["C00_A00"]  
 
-- id: Meteor
+- id: Chain Lightning
   targetNumber: 3
   self: false
   targetType: ENEMY
@@ -404,19 +404,19 @@
   actionType: MAGIC
   actionIDs: ["C00_A34(2)"]
 
-- id: Thunder
+- id: Meteor
   targetNumber: 4
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A03(2)"]
+  actionIDs: ["C00_A03(3)"]
 
 - id: Earthquake
   targetNumber: 5
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A03(1)"]   
+  actionIDs: ["C00_A03(2)"]   
 
 - id: Corrosion
   targetNumber: 2
