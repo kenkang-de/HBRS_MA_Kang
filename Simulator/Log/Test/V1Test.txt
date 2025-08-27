@@ -1,0 +1,200 @@
+[A31 DEBUG] Parsing - Start: 'BulkupSTART', Duration: '1', End: 'BulkupEND'
+[A31 DEBUG] Parsing - Start: 'HasteSTART', Duration: '1', End: 'HasteEND'
+[A31 DEBUG] Parsing - Start: 'ProtectSTART', Duration: '1', End: 'ProtectEND'
+[DEBUG] Loaded action: Slash for weapon: 
+[DEBUG] Loaded action: Chop for weapon: 
+[DEBUG] Loaded action: Thrust for weapon: 
+[DEBUG] Loaded action: Berserk for weapon: 
+[DEBUG] Loaded action: Overpower for weapon: 
+[DEBUG] Loaded action: Achilles' heel for weapon: 
+[DEBUG] Loaded action: Poison Attack for weapon: 
+[DEBUG] Loaded action: Charge Attack for weapon: 
+[DEBUG] Loaded action: Blitz Attack for weapon: 
+[DEBUG] Loaded action: Reckless Attack for weapon: 
+[DEBUG] Loaded action: Fade Attack for weapon: 
+[DEBUG] Loaded action: Final Attack for weapon: 
+[DEBUG] Loaded action: Prep Attack for weapon: 
+[DEBUG] Loaded action: Leech Attack for weapon: 
+[DEBUG] Loaded action: Taunt for weapon: 
+[DEBUG] Loaded action: Killer's Spirit for weapon: 
+[DEBUG] Loaded action: Shoot for weapon: 
+[DEBUG] Loaded action: Killing Spree for weapon: 
+[DEBUG] Loaded action: Momentum for weapon: 
+[DEBUG] Loaded action: Blitz Shot for weapon: 
+[DEBUG] Loaded action: Poison Arrow for weapon: 
+[DEBUG] Loaded action: Delay Shot for weapon: 
+[DEBUG] Loaded action: All-Out Assault for weapon: 
+[DEBUG] Loaded action: Boost Acuity for weapon: 
+[DEBUG] Loaded action: Smoke Shot for weapon: 
+[DEBUG] Loaded action: Double Shot for weapon: 
+[DEBUG] Loaded action: Tripple Shot for weapon: 
+[DEBUG] Loaded action: Heavy Shot for weapon: 
+[DEBUG] Loaded action: Camo Throw for weapon: 
+[DEBUG] Loaded action: Fire Arrow for weapon: 
+[DEBUG] Loaded action: Wrist Shot for weapon: 
+[DEBUG] Loaded action: Focus Throw for weapon: 
+[DEBUG] Loaded action: Magic Bolt for weapon: 
+[DEBUG] Loaded action: Wind Blade for weapon: 
+[DEBUG] Loaded action: Chain Lightning for weapon: 
+[DEBUG] Loaded action: Tetrodo for weapon: 
+[DEBUG] Loaded action: Freeze for weapon: 
+[DEBUG] Loaded action: Healing Touch for weapon: 
+[DEBUG] Loaded action: Healing Link for weapon: 
+[DEBUG] Loaded action: Grace for weapon: 
+[DEBUG] Loaded action: Bulkup for weapon: 
+[DEBUG] Loaded action: Haste for weapon: 
+[DEBUG] Loaded action: Vow for weapon: 
+[DEBUG] Loaded action: Exposure for weapon: 
+[DEBUG] Loaded action: Fatigue for weapon: 
+[DEBUG] Loaded action: Protect for weapon: 
+[DEBUG] Loaded action: Cheer for weapon: 
+[DEBUG] Loaded action: Meteor for weapon: 
+[DEBUG] Loaded action: Earthquake for weapon: 
+[DEBUG] Loaded action: Corrosion for weapon: 
+[DEBUG] R0 equipped with action: Haste (Type: MAGIC) Speed: 0 Threat: 9
+[DEBUG] R1 equipped with action: Reckless Attack (Type: MELEE) Speed: 3 Threat: 3
+[DEBUG] R2 equipped with action: Leech Attack (Type: MELEE) Speed: 5 Threat: 6
+[DEBUG] R3 equipped with action: Tetrodo (Type: MAGIC) Speed: 5 Threat: 2
+[DEBUG] R4 equipped with action: Shoot (Type: RANGE) Speed: 6 Threat: 1
+[DEBUG] B0 equipped with action: Tripple Shot (Type: RANGE) Speed: 1 Threat: 4
+[DEBUG] B1 equipped with action: Tripple Shot (Type: RANGE) Speed: 6 Threat: 4
+[DEBUG] B2 equipped with action: Momentum (Type: RANGE) Speed: 0 Threat: 4
+[DEBUG] B3 equipped with action: Achilles' heel (Type: MELEE) Speed: 6 Threat: 4
+[DEBUG] B4 equipped with action: Momentum (Type: RANGE) Speed: 1 Threat: 5
+[Tick 5] 3 unit(s) acting
+Ranged: R4 targeting B4 (HP: 10)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 10
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R2 (HP: 10)
+R2 took damage: 4 (defended)
+R2's Remaining Health: 6
+Ranged: B1 targeting R1 (HP: 12)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 9
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A06] R0 speed changed from 0 to 0
+[Tick 6] 2 unit(s) acting
+Melee: R2 targeting B4 (HP: 10)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 10
+Magic: R3 targeting B4 (HP: 10)
+[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 10] 4 unit(s) acting
+Ranged: R4 targeting B4 (HP: 10)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 10
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R2 (HP: 6)
+R2 took damage: 4 (defended)
+R2's Remaining Health: 2
+Ranged: B1 targeting R1 (HP: 9)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 6
+Melee: R1 targeting B4 (HP: 10)
+R1 took damage: 3 (pierced)
+R1's Remaining Health: 3
+B4 took damage: 1 (defended)
+B4's Remaining Health: 9
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A06] R0 speed changed from 0 to 0
+[Tick 12] 2 unit(s) acting
+Melee: R2 targeting B4 (HP: 9)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 9
+Magic: R3 targeting B4 (HP: 9)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R3 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 15] 3 unit(s) acting
+Ranged: R4 targeting B4 (HP: 9)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 9
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R2 (HP: 2)
+R2 took damage: 4 (defended)
+R2's Remaining Health: 0
+Ranged: B1 targeting R1 (HP: 3)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 0
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A06] R0 speed changed from 0 to 0
+[Tick 18] 1 unit(s) acting
+Magic: R3 targeting B4 (HP: 9)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R3 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 20] 3 unit(s) acting
+Ranged: R4 targeting B4 (HP: 9)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 9
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R3 (HP: 10)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 5
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: B1 targeting R4 (HP: 8)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 6
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A06] R0 speed changed from 0 to 0
+[Tick 25] 4 unit(s) acting
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R3 (HP: 5)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 0
+[DEBUG] LCM changed from 30 to 6 - rebuilding queue
+Ranged: B1 targeting R4 (HP: 6)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 4
+Ranged: R4 targeting B4 (HP: 9)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 9
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A06] R0 speed changed from 0 to 0
+[Tick 30] 5 unit(s) acting
+Ranged: B0 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B0 targeting R4 (HP: 4)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 1
+Ranged: R4 targeting B4 (HP: 9)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 9
+Ranged: B4 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] Registered after-action for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 5)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 took damage: 5 (pierced)
+B4's Remaining Health: 4
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B1 targeting R4 (HP: 1)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 0

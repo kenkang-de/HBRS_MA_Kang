@@ -69,7 +69,7 @@ void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map
     while (std::getline(file, line)) {
         std::stringstream ss(line);
         std::string token, id, type, name, actionId;
-        int atk, def, spd, thr, hp, hand;
+        int atk, def, spd, thr, hp;
 
         std::getline(ss, id, ',');
         std::getline(ss, type, ',');
@@ -80,7 +80,6 @@ void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map
         std::getline(ss, token, ','); spd = std::stoi(token);
         std::getline(ss, token, ','); thr = std::stoi(token);
         std::getline(ss, token, ','); hp  = std::stoi(token);
-        std::getline(ss, token, ','); hand = std::stoi(token);  // ← You missed this before
         std::getline(ss, actionId, ',');
         actionId = Trim(actionId);
 

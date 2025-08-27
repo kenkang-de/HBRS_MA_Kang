@@ -16,8 +16,8 @@ int main()
 
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
 
-    LoadArmorListFromCSV("Data/Test/Armor1.csv");
-    LoadWeaponListFromCSV("Data/Test/Magic161718Test.csv", actionMap);
+    LoadArmorListFromCSV("Data/Armor_v1.csv");
+    LoadWeaponListFromCSV("Data/Weapon_v1.csv", actionMap);
 
     EquipUnitsRandomEquipments(allUnits);
 
@@ -38,6 +38,5 @@ int main()
     BattleManager battleManager(battlefield);
     battleManager.StartBattle();
     
-    std::cin.get();
     return 0;
 }

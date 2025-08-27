@@ -47,6 +47,13 @@
   actionType: MELEE
   actionIDs: ["C00_A00", "C03_A00"]
 
+- id: Berserk
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A05(2)", "C00_A00", "C00_A02(-1)"]
+
 - id: Achilles' heel
   targetNumber: 1
   self: false
@@ -54,49 +61,49 @@
   actionType: MELEE
   actionIDs: ["C00_A00", "C00_A06(-1)"]
 
-- id: ChargeAttack
+- id: Charge Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A07"]
 
-- id: BlitzAttack
+- id: Blitz Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A08"] 
 
-- id: RecklessAttack
+- id: Reckless Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A05(3)", "C00_A09(3)"] 
 
-- id: FadeAttack
+- id: Fade Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A00", "C00_A10(-1)"] 
 
-- id: FinalAttack
+- id: Final Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A11", "C00_A12"]
 
-- id: PrepAttack
+- id: Prep Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
   actionIDs: ["C00_A13(3)", "C00_A00"]
 
-- id: LeechAttack
+- id: Leech Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
@@ -361,13 +368,6 @@
   targetType: ENEMY
   actionType: MAGIC
   actionIDs: ["C00_A33(-2)"]  
-
-- id: Fatigue
-  targetNumber: 2
-  self: false
-  targetType: ENEMY
-  actionType: MAGIC
-  actionIDs: ["C00_A06(-1)"]    
 
 - id: Fatigue
   targetNumber: 2
