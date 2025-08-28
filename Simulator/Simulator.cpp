@@ -12,6 +12,9 @@
 
 int main()
 {
+    // Reseed random generator for different results each run
+    ReseedRandomGenerator();
+    
     std::list<Unit> allUnits = GenerateUnits(10);
 
     auto actionMap = LoadActionsFromYAML("BattleActions.yaml");

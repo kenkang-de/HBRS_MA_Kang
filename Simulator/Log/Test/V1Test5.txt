@@ -1,0 +1,284 @@
+[DEBUG] R0 W:BSW46(Protect) A:BSA39 ATK:1 DEF:4 SPD:1 THR:7 HP:12
+[DEBUG] R1 W:BSW34(Wind Blade) A:BSA39 ATK:3 DEF:4 SPD:2 THR:5 HP:12
+[DEBUG] R2 W:BSW36(Tetrodo) A:BSA24 ATK:0 DEF:2 SPD:3 THR:3 HP:12
+[DEBUG] R3 W:BSW37(Freeze) A:BSA24 ATK:0 DEF:2 SPD:2 THR:5 HP:12
+[DEBUG] R4 W:BSW49(Earthquake) A:BSA40 ATK:1 DEF:6 SPD:1 THR:11 HP:12
+[DEBUG] B0 W:BSW8(Charge Attack) A:BSA40 ATK:4 DEF:6 SPD:3 THR:9 HP:14
+[DEBUG] B1 W:BSW50(Corrosion) A:BSA24 ATK:0 DEF:2 SPD:2 THR:5 HP:12
+[DEBUG] B2 W:BSW34(Wind Blade) A:BSA34 ATK:4 DEF:5 SPD:2 THR:6 HP:10
+[DEBUG] B3 W:BSW46(Protect) A:BSA24 ATK:0 DEF:2 SPD:2 THR:5 HP:12
+[DEBUG] B4 W:BSW20(Blitz Shot) A:BSA40 ATK:3 DEF:6 SPD:3 THR:7 HP:12
+
+[Tick 2] 3 unit(s) acting
+Ranged: B4 targeting R4 (HP: 12)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 12
+Melee: B0 targeting R4 (HP: 12)
+R4 took damage: 5 (defended)
+R4's Remaining Health: 7
+  -> R4 (magic) tick reset due to melee attack!
+Magic: R2 targeting B0 (HP: 14)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B0 (usage: 2)
+
+[Tick 3] 6 unit(s) acting
+Magic: B1 targeting R4 (HP: 7)
+[A34] R4 attack changed from 1 to 0
+Magic: B1 targeting R0 (HP: 12)
+[A34] R0 attack changed from 1 to 0
+Magic: R3 targeting B0 (HP: 14)
+[A30] B0 delayed by 1 intervals (2 ticks)
+Magic: R4 targeting B0 (HP: 14)
+B0 took damage: 2 (pierced)
+B0's Remaining Health: 12
+Magic: R4 targeting B4 (HP: 12)
+B4 took damage: 2 (pierced)
+B4's Remaining Health: 10
+Magic: R4 targeting B2 (HP: 10)
+B2 took damage: 2 (pierced)
+B2's Remaining Health: 8
+Magic: R4 targeting B1 (HP: 12)
+B1 took damage: 2 (pierced)
+B1's Remaining Health: 10
+Magic: R4 targeting B3 (HP: 12)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 10
+Magic: R1 targeting B0 (HP: 12)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 9
+Magic: R1 targeting B4 (HP: 10)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 7
+Magic: B3 targeting B0 (HP: 9)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B2 targeting R4 (HP: 7)
+R4 took damage: 4 (pierced)
+R4's Remaining Health: 3
+Magic: B2 targeting R0 (HP: 12)
+R0 took damage: 4 (pierced)
+R0's Remaining Health: 8
+
+[Tick 4] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 3)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 3
+Magic: R2 targeting B0 (HP: 9)
+[BOON] Refreshing existing Tetrodo Effect on B0
+[A28] R2 applied Tetrodo Effect to B0 (usage: 2)
+
+[Tick 6] 9 unit(s) acting
+Ranged: B4 targeting R4 (HP: 3)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 3
+Melee: B0 targeting R4 (HP: 3)
+R4 took damage: 4 (defended)
+R4's Remaining Health: 0
+[DEBUG] B0 processing 2 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] Registered after-action for B0
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 4
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
+[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered ProtectSTART
+[A02] B0 defense changed from 6 to 9
+Magic: R3 targeting B0 (HP: 4)
+[A30] B0 delayed by 1 intervals (2 ticks)
+Magic: B3 targeting B0 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R2 targeting B0 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on B0
+[A28] R2 applied Tetrodo Effect to B0 (usage: 2)
+Magic: B2 targeting R0 (HP: 8)
+R0 took damage: 4 (pierced)
+R0's Remaining Health: 4
+Magic: B1 targeting R0 (HP: 4)
+[A34] R0 attack changed from 0 to 0
+Magic: R1 targeting B0 (HP: 4)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 1
+Magic: R1 targeting B4 (HP: 7)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 4
+
+[Tick 8] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 4)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 2
+  -> R0 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B0 (HP: 1)
+[BOON] Refreshing existing Tetrodo Effect on B0
+[A28] R2 applied Tetrodo Effect to B0 (usage: 2)
+
+[Tick 9] 6 unit(s) acting
+Magic: R3 targeting B0 (HP: 1)
+[A30] B0 delayed by 1 intervals (2 ticks)
+Magic: B3 targeting B0 (HP: 1)
+[BOON] Refreshing existing ProtectSTART on B0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B2 targeting R0 (HP: 2)
+R0 took damage: 4 (pierced)
+R0's Remaining Health: 0
+Magic: B2 targeting R1 (HP: 12)
+R1 took damage: 4 (pierced)
+R1's Remaining Health: 8
+Magic: R1 targeting B0 (HP: 1)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 0
+Magic: R1 targeting B4 (HP: 4)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 1
+Magic: B1 targeting R1 (HP: 8)
+[A34] R1 attack changed from 3 to 2
+
+[Tick 10] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 8)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 6
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B4 (HP: 1)
+[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B4 (usage: 2)
+
+[Tick 12] 7 unit(s) acting
+Ranged: B4 targeting R1 (HP: 6)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 4
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] Registered after-action for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 7)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 took damage: 5 (pierced)
+B4's Remaining Health: 0
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R1 (HP: 4)
+R1 took damage: 4 (pierced)
+R1's Remaining Health: 0
+Magic: B2 targeting R3 (HP: 12)
+R3 took damage: 4 (pierced)
+R3's Remaining Health: 8
+Magic: B1 targeting R3 (HP: 8)
+[A34] R3 attack changed from 0 to 0
+
+[Tick 14] 1 unit(s) acting
+Magic: R2 targeting B2 (HP: 8)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
+
+[Tick 15] 4 unit(s) acting
+Magic: R3 targeting B2 (HP: 8)
+[A30] B2 delayed by 1 intervals (3 ticks)
+Magic: B1 targeting R3 (HP: 8)
+[A34] R3 attack changed from 0 to 0
+Magic: B1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 0 to 0
+Magic: B2 targeting R3 (HP: 8)
+R3 took damage: 4 (pierced)
+R3's Remaining Health: 4
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[BOON] Tetrodo Effect triggered on B2 (Usage: 2/2)
+[EXECUTE_EFFECT] B2 triggered Tetrodo Effect
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 3
+Magic: B2 targeting R2 (HP: 12)
+R2 took damage: 4 (pierced)
+R2's Remaining Health: 8
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[BOON] Tetrodo Effect triggered on B2 (Usage: 1/2)
+[EXECUTE_EFFECT] B2 triggered Tetrodo Effect
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 0
+[BOON] Tetrodo Effect expired on B2 - cleaned up
+
+[Tick 16] 1 unit(s) acting
+Magic: R2 targeting B1 (HP: 10)
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+[Tick 18] 4 unit(s) acting
+Magic: B3 targeting B1 (HP: 10)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R3 (HP: 4)
+[A34] R3 attack changed from 0 to 0
+[DEBUG] B1 processing 2 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] Registered after-action for B1
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 5)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 5
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 5)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 2 to 5
+Magic: B1 targeting R2 (HP: 8)
+[A34] R2 attack changed from 0 to 0
+[DEBUG] B1 processing 2 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] Registered after-action for B1
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 5)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 1/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 0
+[BOON] Tetrodo Effect expired on B1 - cleaned up
+[AFTER-ACTION] B1 performs after-action on R3 (threat: 5)
+[TEMP-BUFF] ProtectSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R3 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B1 triggered ProtectEND
+[A02] R3 defense changed from 2 to 0
+[BOON] ProtectSTART expired on B1 - cleaned up
+
+[Tick 20] 1 unit(s) acting
+Magic: R2 targeting B3 (HP: 10)
+[BOON] Applied Tetrodo Effect to B3 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B3 (usage: 2)
+
+[Tick 21] 2 unit(s) acting
+Magic: B3 targeting B3 (HP: 10)
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B3 processing 2 boons
+[DEBUG] Registering boon Tetrodo Effect for B3
+[AFTER-ACTION] Registered after-action for B3
+[DEBUG] Registering boon ProtectSTART for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 5)
+[BOON] Tetrodo Effect triggered on B3 (Usage: 2/2)
+[EXECUTE_EFFECT] B3 triggered Tetrodo Effect
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 5
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 5)
+[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered ProtectSTART
+[A02] B3 defense changed from 2 to 5
+Magic: R3 targeting B3 (HP: 5)
+[A30] B3 delayed by 1 intervals (3 ticks)
+
+[Tick 22] 1 unit(s) acting
+Magic: R2 targeting B3 (HP: 5)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R2 applied Tetrodo Effect to B3 (usage: 2)

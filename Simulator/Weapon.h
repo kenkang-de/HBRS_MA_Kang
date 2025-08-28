@@ -6,16 +6,18 @@
 #include "Stat.h"
 
 class Weapon {
+    std::string id;
     std::string name;
     Stat stat;
     BattleAction action; 
 
 public:
-    Weapon(std::string name, Stat stat, const BattleAction& action)
-        : name(name), stat(stat), action(action) {}
+    Weapon(std::string id, std::string name, Stat stat, const BattleAction& action)
+        : id(id), name(name), stat(stat), action(action) {}
 
-    Weapon() : name("Default Weapon"), stat(Stat::Empty()), action() {}  
+    Weapon() : id(""), name("Default Weapon"), stat(Stat::Empty()), action() {}  
 
+    const std::string& GetID() const { return id; }
     Stat& GetStat() { return stat; }
     const Stat& GetStat() const { return stat; }
 

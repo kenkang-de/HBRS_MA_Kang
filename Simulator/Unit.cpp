@@ -12,7 +12,8 @@ Unit::Unit(std::string name, std::string id)
     : Name(name), ID(id), 
       defaultStat(Stat()),
       totalStat(defaultStat),
-      currentHP(0) // Initialize currentHP to 0, will be set when equipment is applied
+      currentHP(0), // Initialize currentHP to 0, will be set when equipment is applied
+      isFrozen(false) // Initialize isFrozen to false by default
        {}
 
 const std::string& Unit::GetName() const {

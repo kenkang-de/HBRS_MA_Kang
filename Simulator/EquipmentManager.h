@@ -24,6 +24,9 @@ Weapon GetRandomWeapon();
 
 void EquipUnitsRandomEquipments(std::list<Unit>& unitList);
 
+// Function to reseed the random generator for different results each run
+void ReseedRandomGenerator();
+
 void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map<std::string, BattleAction>& actionMap);
 
 

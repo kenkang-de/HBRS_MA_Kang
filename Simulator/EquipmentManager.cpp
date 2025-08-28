@@ -7,8 +7,8 @@
 #include "BattleAction.h"
 
 #include "Unit.h"
-#include <cstdlib>   // for rand()
-#include <ctime>     // for time()
+#include <random>
+#include <chrono>
 
 std::vector<Armor> ArmorList;
 std::vector<Weapon> WeaponList;
@@ -52,7 +52,7 @@ void LoadArmorListFromCSV(const std::string& filepath)
         std::getline(ss, token, ','); hp  = std::stoi(token);
 
         Stat stat(atk, def, hp, spd, thr);
-        Armor armor(name, stat);
+        Armor armor(id, name, stat);
         ArmorList.push_back(armor);
     }
 }
@@ -90,17 +90,20 @@ void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map
         auto it = actionMap.find(actionId);
         if (it != actionMap.end()) {
             action = it->second;
-            std::cout << "[DEBUG] Loaded action: " << action.GetID() << " for weapon: " << name << std::endl;
         } else {
             std::cerr << "[WARNING] Unknown actionId: " << actionId << " for weapon: " << name << std::endl;
         }
 
-Weapon weapon(name, stat, action);
+        Weapon weapon(id, name, stat, action);
         WeaponList.push_back(weapon);
     }
 }
 
 
+
+// Modern random number generator
+static std::random_device rd;
+static std::mt19937 gen(rd());
 
 Armor GetRandomArmor()
 {
@@ -108,17 +111,8 @@ Armor GetRandomArmor()
         throw std::runtime_error("ArmorList is empty");
     }
 
-    // Seed rand() once globally — ideally done in main(), not here
-    static bool seeded = false;
-    if (!seeded) {
-        std::srand(static_cast<unsigned>(std::time(nullptr)));
-        seeded = true;
-    }
-
-    // Generate random index
-    int index = std::rand() % ArmorList.size();
-
-    // Return the armor at that index
+    std::uniform_int_distribution<> dis(0, ArmorList.size() - 1);
+    int index = dis(gen);
     return ArmorList[index];
 }
 
@@ -128,13 +122,8 @@ Weapon GetRandomWeapon()
         throw std::runtime_error("WeaponList is empty");
     }
 
-    static bool seeded = false;
-    if (!seeded) {
-        std::srand(static_cast<unsigned>(std::time(nullptr)));
-        seeded = true;
-    }
-
-    int index = std::rand() % WeaponList.size();
+    std::uniform_int_distribution<> dis(0, WeaponList.size() - 1);
+    int index = dis(gen);
     return WeaponList[index];
 }
 
@@ -148,4 +137,12 @@ void EquipUnitsRandomEquipments(std::list<Unit>& unitList)
         unit.SetWeapon(randomWeapon);
         unit.SetArmor(randomArmor);
     }
+}
+
+void ReseedRandomGenerator()
+{
+    // Use high-resolution clock for better entropy
+    auto now = std::chrono::high_resolution_clock::now();
+    auto seed = std::chrono::duration_cast<std::chrono::nanoseconds>(now.time_since_epoch()).count();
+    gen.seed(static_cast<std::mt19937::result_type>(seed));
 }

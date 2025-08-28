@@ -1,0 +1,11 @@
+ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
+BSW8,Spear,,3,0,-2,2,2,Charge Attack
+BSW20,Bow,,2,0,-2,0,0,Blitz Shot
+BSW21,Crossbow,,2,0,-2,0,0,Poison Arrow
+BSW30,Bow,,4,0,-3,0,0,Fire Arrow
+BSW34,Wand,,2,0,-3,0,0,Wind Blade
+BSW36,Staff,,0,0,-3,0,0,Tetrodo
+BSW37,Staff,,0,0,-4,2,0,Freeze
+BSW46,Charm,,0,0,-4,2,0,Protect
+BSW49,Staff,,0,0,-4,4,0,Earthquake
+BSW50,Wand,,0,0,-4,2,0,Corrosion

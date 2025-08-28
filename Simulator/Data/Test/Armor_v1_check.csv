@@ -1,0 +1,11 @@
+ID,Type,Name,ATK,DEF,SPD,THR,HP
+BSA11,Glove,,1,0,3,4,0
+BSA12,Glove,,-1,1,3,3,0
+BSA14,Robe,,-2,0,2,0,0
+BSA24,Chest,,-1,2,1,3,2
+BSA30,Chest,,0,4,0,4,0
+BSA31,Chest,,0,6,0,6,0
+BSA34,Chest,,1,5,0,6,0
+BSA39,Chest,,0,4,0,5,2
+BSA40,Chest,,0,6,0,7,2
+BSA46,Chest,,1,3,-1,4,1

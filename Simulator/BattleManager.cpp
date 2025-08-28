@@ -77,6 +77,7 @@ void BattleManager::StartBattle() {
         std::vector<Unit*> units = turnManager.GetNextUnits();
 
         if (!units.empty()) {
+            std::cout << std::endl;
             std::cout << "[Tick " << turnManager.GetCurrentTick() << "] " << units.size() << " unit(s) acting\n";
         }
 
@@ -129,7 +130,13 @@ void BattleManager::StartBattle() {
                           << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
                 
                 int hpBeforeAttack = target->GetCurrentHP();
-                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                
+                // Check if unit is frozen - if so, skip the action but still apply boons
+                if (!unit->IsFrozen()) {
+                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                } else {
+                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                }
                 
                 // Apply unit boons to after-action system
                 ApplyUnitBoonsToAfterAction(unit);
@@ -183,7 +190,12 @@ void BattleManager::StartBattle() {
                 int hpBeforeAttack = target->GetCurrentHP();
                 int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
                 
-                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                // Check if unit is frozen - if so, skip the action but still apply boons
+                if (!unit->IsFrozen()) {
+                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                } else {
+                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                }
                 
                 // Apply unit boons to after-action system
                 ApplyUnitBoonsToAfterAction(unit);
@@ -242,7 +254,12 @@ void BattleManager::StartBattle() {
                 std::cout << "Magic: " << unit->GetName() << " targeting " << target->GetName() 
                           << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
                 
-                unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                // Check if unit is frozen - if so, skip the action but still apply boons
+                if (!unit->IsFrozen()) {
+                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                } else {
+                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                }
                 
                 // Apply unit boons to after-action system
                 ApplyUnitBoonsToAfterAction(unit);

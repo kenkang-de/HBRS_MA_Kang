@@ -24,6 +24,8 @@ private:
     // Boon management
     std::vector<std::unique_ptr<BoonAction>> activeBoons;
 
+    bool isFrozen;
+
 public:
     std::string Name;
     std::string ID;
@@ -71,6 +73,8 @@ public:
     void TakeDamage(int amount, bool defendable = true);
 
     bool IsAlive() { return currentHP > 0; };
+    bool IsFrozen() const { return isFrozen; }
+    void SetFrozen(bool frozen) { isFrozen = frozen; }
     void EnhanceHP(int amount);
     
     // Boon management methods

@@ -6,12 +6,15 @@
 
 
 class Armor {
+    std::string id;
     std::string name;
     Stat stat;
 public:
-    Armor(std::string name, Stat stat) : name(name), stat(stat) {}
+    Armor(std::string id, std::string name, Stat stat) : id(id), name(name), stat(stat) {}
 
-    Armor() : name("Default Armor"), stat(Stat::Empty()) {} 
+    Armor() : id(""), name("Default Armor"), stat(Stat::Empty()) {} 
+    
+    const std::string& GetID() const { return id; }
     Stat& GetStat() { return stat; }
 const Stat& GetStat() const { return stat; }
 };

@@ -90,11 +90,17 @@ void TargetManager::SimulateGroupTargeting(
             const BattleAction& action = actingUnit->GetWeapon().GetAction();
             std::vector<Unit*> selectedTargets = {bestTarget};
             
-            // Apply damage to simulation for first target
-            int damage = action.CalculateDamage(actingUnit, bestTarget);
-            simulatedHP[bestTarget] -= damage;
-            if (simulatedHP[bestTarget] < 0) {
-                simulatedHP[bestTarget] = 0;
+            // Only apply damage simulation if this is a damage-dealing action
+            // Pure debuff spells (like Corrosion with negative attack) don't need HP simulation
+            bool isDamageAction = (actingUnit->GetTotalStat().GetAttack() > 0);
+            
+            if (isDamageAction) {
+                // Apply damage to simulation for first target
+                int damage = action.CalculateDamage(actingUnit, bestTarget);
+                simulatedHP[bestTarget] -= damage;
+                if (simulatedHP[bestTarget] < 0) {
+                    simulatedHP[bestTarget] = 0;
+                }
             }
             
             // Select additional targets if targetNumber > 1
@@ -113,11 +119,13 @@ void TargetManager::SimulateGroupTargeting(
                 if (nextTarget) {
                     selectedTargets.push_back(nextTarget);
                     
-                    // Apply damage to simulation
-                    int nextDamage = action.CalculateDamage(actingUnit, nextTarget);
-                    simulatedHP[nextTarget] -= nextDamage;
-                    if (simulatedHP[nextTarget] < 0) {
-                        simulatedHP[nextTarget] = 0;
+                    if (isDamageAction) {
+                        // Apply damage to simulation
+                        int nextDamage = action.CalculateDamage(actingUnit, nextTarget);
+                        simulatedHP[nextTarget] -= nextDamage;
+                        if (simulatedHP[nextTarget] < 0) {
+                            simulatedHP[nextTarget] = 0;
+                        }
                     }
                 } else {
                     break; // No more valid targets

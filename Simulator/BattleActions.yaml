@@ -231,10 +231,10 @@
 
 - id: Poison Effect
   targetNumber: 1
-  self: false
-  targetType: ENEMY
+  self: true
+  targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A03(3)"]
+  actionIDs: ["C00_A03(5)"]
 
 - id: Healing Touch
   targetNumber: 1
@@ -287,8 +287,8 @@
 
 - id: Tetrodo Effect
   targetNumber: 1
-  self: false
-  targetType: ENEMY
+  self: true
+  targetType: ALLY
   actionType: MAGIC
   actionIDs: ["C00_A03(5)"]
 
@@ -311,7 +311,28 @@
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A30(1)"]    
+  actionIDs: ["C00_A30", "C00_A31(FreezeSTART,1,FreezeEnd)"]    
+
+- id: FreezeSTART
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: []    
+
+- id: FreezeEND
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A35"]      
+
+- id: BulkupEND
+  targetNumber: 1
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A32(-10)"]   
 
 - id: Bulkup
   targetNumber: 1

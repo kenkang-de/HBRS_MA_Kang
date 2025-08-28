@@ -77,11 +77,11 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, defendable);
         }
     }},
-    //At Attack, 1/3 of current HP + Speed of the actor is added to damage
+    //At Attack, 1/3 of current HP  of the actor is added to damage
     { "A07", [](const ActionContext& ctx) {
         if (ctx.actor && ctx.target) {
             // Use floating-point division then cast to int (truncates towards zero)
-            int additionalDamage = static_cast<int>(ctx.actor->GetCurrentHP() / 3.0) + ctx.actor->GetTotalStat().GetSpeed();
+            int additionalDamage = static_cast<int>(ctx.actor->GetCurrentHP() / 3.0) ;
             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + additionalDamage, true);
         }
     }},
@@ -156,6 +156,20 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             }
         }
     }},
+
+    //Freeze target
+    { "A30", [](const ActionContext& ctx) {
+     if (ctx.target) {
+            ctx.target-> SetFrozen(true);
+        }
+    }},
+
+    //Unfreeze target
+    { "A35", [](const ActionContext& ctx) {
+     if (ctx.target) {
+            ctx.target->SetFrozen(false);
+        }
+    }}
 
 
 };
@@ -407,22 +421,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         };
     }},
 
-        //Freeze, delay unit for (param) turn
-        { "A30", [](const std::string& param) -> ActionFn {
-           int value = std::stoi(param);
-        return [value](const ActionContext& ctx) {
-           if (ctx.target) {
-                // Get the unit's natural interval (how often it normally acts)
-                extern int GetUnitIntervalFromBattleManager(Unit* unit);
-                int unitInterval = GetUnitIntervalFromBattleManager(ctx.target);
-                int totalDelay = value * unitInterval;
-                
-                extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
-                DelayUnitInBattleManager(ctx.target, totalDelay);
-                std::cout << "[A30] " << ctx.target->GetName() << " delayed by " << value << " intervals (" << totalDelay << " ticks)" << std::endl;
-            }
-        };
-    }},
+     
     // Apply TempBoon with BattleAction names (param format: "StartActionName,duration,EndActionName")
 { "A31", [](const std::string& param) -> ActionFn {
     // Parse: "Bulkup(START),3,Bulkup(END)"
@@ -437,8 +436,6 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     std::string startActionName = param.substr(0, comma1);  // "Bulkup(START)"
     std::string durationStr = param.substr(comma1 + 1, comma2 - comma1 - 1);
     std::string endActionName = param.substr(comma2 + 1);  // "Bulkup(END)"
-    
-    std::cout << "[A31 DEBUG] Parsing - Start: '" << startActionName << "', Duration: '" << durationStr << "', End: '" << endActionName << "'" << std::endl;
     
     int duration;
     try {

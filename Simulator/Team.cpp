@@ -31,17 +31,14 @@ void Team::AddUnit(Unit& newUnit) {
             newUnit.Name = prefix + std::to_string(i);
             
             // Debug output to show what each unit got
-            std::string actionTypeStr;
-            switch(newUnit.GetWeapon().GetAction().GetActionType()) {
-                case ActionType::RANGE: actionTypeStr = "RANGE"; break;
-                case ActionType::MAGIC: actionTypeStr = "MAGIC"; break;
-                case ActionType::MELEE: 
-                default: actionTypeStr = "MELEE"; break;
-            }
-            std::cout << "[DEBUG] " << newUnit.GetName() << " equipped with action: " << newUnit.GetWeapon().GetAction().GetID() 
-                      << " (Type: " << actionTypeStr << ")" 
-                      << " Speed: " << newUnit.GetTotalStat().GetSpeed() 
-                      << " Threat: " << newUnit.GetTotalStat().GetThreat() << std::endl;
+            std::cout << "[DEBUG] " << newUnit.GetName() 
+                      << " W:" << newUnit.GetWeapon().GetID() << "(" << newUnit.GetWeapon().GetAction().GetID() << ")"
+                      << " A:" << newUnit.GetArmor().GetID()
+                      << " ATK:" << newUnit.GetTotalStat().GetAttack()
+                      << " DEF:" << newUnit.GetTotalStat().GetDefense()
+                      << " SPD:" << newUnit.GetTotalStat().GetSpeed() 
+                      << " THR:" << newUnit.GetTotalStat().GetThreat()
+                      << " HP:" << newUnit.GetTotalStat().GetHP() << std::endl;
             
             return;
         }
