@@ -1,9 +1,10 @@
 #include "ResultAnalyzer.h"
+#include "../Paths.h"
 #include <iostream>
 
 int main() {
-    // Create analyzer with Log/Test directory as log directory
-    ResultAnalyzer analyzer("Log/Test/");
+    // Create analyzer with Log/V1 directory as log directory
+    ResultAnalyzer analyzer(Paths::FromAnalysis::LOG_V1_DIR);
     
     std::cout << "Battle Result Analyzer" << std::endl;
     std::cout << "=====================" << std::endl << std::endl;
@@ -21,7 +22,7 @@ int main() {
     analyzer.printStatistics();
     
     // Save results to CSV file
-    analyzer.saveResultsToFile("battle_analysis.csv");
+    analyzer.saveResultsToFile(Paths::BATTLE_ANALYSIS_CSV);
     
     return 0;
 }

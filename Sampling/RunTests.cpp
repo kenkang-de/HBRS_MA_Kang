@@ -1,13 +1,14 @@
 #include "TestRunner.h"
+#include "../Paths.h"
 #include <iostream>
 
 int main() {
     std::cout << "=== Simulator Test Suite Runner ===" << std::endl;
     std::cout << "====================================" << std::endl << std::endl;
     
-    // Create test runner with default settings
+    // Create test runner with updated paths
     // This will run Simulator.exe and save logs to Log/V1/V1test1.txt through V1test10.txt
-    TestRunner runner;
+    TestRunner runner(Paths::FromSampling::SIMULATOR_EXE, Paths::FromSampling::LOG_V1_DIR, Paths::TEST_BASE_NAME);
     
     // Clean old test files
     runner.cleanOldTests(1, 10);

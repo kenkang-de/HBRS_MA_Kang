@@ -1,6 +1,7 @@
 #ifndef TESTRUNNER_H
 #define TESTRUNNER_H
 
+#include "../Paths.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -16,9 +17,9 @@ private:
     std::string testBaseName;
     
 public:
-    TestRunner(const std::string& executable = "Simulator.exe", 
-               const std::string& logDir = "Log/V1/",
-               const std::string& baseName = "V1test");
+    TestRunner(const std::string& executable = Paths::FromSampling::SIMULATOR_EXE, 
+               const std::string& logDir = Paths::FromSampling::LOG_V1_DIR,
+               const std::string& baseName = Paths::TEST_BASE_NAME);
     
     // Create the log directory if it doesn't exist
     bool createLogDirectory();
