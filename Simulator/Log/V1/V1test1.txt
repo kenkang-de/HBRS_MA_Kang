@@ -1,0 +1,55 @@
+[DEBUG] R0 W:BSW47(Cheer) A:BSA33 ATK:2 DEF:1 SPD:1 THR:6 HP:10
+[DEBUG] R1 W:BSW35(Chain Lightning) A:BSA23 ATK:4 DEF:3 SPD:2 THR:7 HP:7
+[DEBUG] R2 W:BSW11(Fade Attack) A:BSA41 ATK:5 DEF:3 SPD:2 THR:7 HP:12
+[DEBUG] R3 W:BSW10(Reckless Attack) A:BSA17 ATK:4 DEF:0 SPD:3 THR:3 HP:12
+[DEBUG] R4 W:BSW24(Boost Acuity) A:BSA5 ATK:4 DEF:0 SPD:7 THR:5 HP:7
+[DEBUG] B0 W:BSW40(Grace) A:BSA33 ATK:2 DEF:1 SPD:2 THR:6 HP:10
+[DEBUG] B1 W:BSW6(Achilles' heel) A:BSA32 ATK:4 DEF:-1 SPD:3 THR:4 HP:10
+[DEBUG] B2 W:BSW28(Heavy Shot) A:BSA2 ATK:4 DEF:-1 SPD:6 THR:4 HP:10
+[DEBUG] B3 W:BSW26(Double Shot) A:BSA19 ATK:1 DEF:1 SPD:5 THR:0 HP:7
+[DEBUG] B4 W:BSW5(Overpower) A:BSA43 ATK:5 DEF:1 SPD:1 THR:4 HP:10
+
+[Tick 30] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+B0 took damage: 5 (defended)
+B0's Remaining Health: 5
+  -> B0 (magic) tick reset due to ranged attack!
+
+[Tick 32] 1 unit(s) acting
+Magic: B0 targeting B1 (HP: 10)
+[HEAL] B1 healed for 0 HP (from 10 to 10/10)
+[A29] B0 healed B1 for 2 HP
+Magic: B0 targeting B2 (HP: 10)
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+[A29] B0 healed B2 for 2 HP
+Magic: B0 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[A29] B0 healed B4 for 2 HP
+
+[Tick 35] 1 unit(s) acting
+Ranged: B2 targeting R1 (HP: 7)
+R1 took damage: 5 (defended)
+R1's Remaining Health: 2
+[A19] B2 speed changed from 6 to 5
+  -> R1 (magic) tick reset due to ranged attack!
+
+[Tick 37] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 5)
+B0 took damage: 4 (pierced)
+B0's Remaining Health: 1
+Magic: R1 targeting B1 (HP: 10)
+B1 took damage: 4 (pierced)
+B1's Remaining Health: 6
+Magic: R1 targeting B2 (HP: 10)
+B2 took damage: 4 (pierced)
+B2's Remaining Health: 6
+
+[Tick 42] 1 unit(s) acting
+Ranged: B3 targeting R1 (HP: 2)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 2
+Ranged: B3 targeting R2 (HP: 12)
+R2 took damage: 0 (defended)
+R2's Remaining Health: 12
+Battle Over! Tick limit reached (50 ticks)
+Battle finished.

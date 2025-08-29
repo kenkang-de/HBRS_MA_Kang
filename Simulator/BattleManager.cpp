@@ -305,8 +305,10 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 
 
 bool BattleManager::IsBattleOver(bool test) {
-    if(test) {
-        return turnManager.GetCurrentTick() > TEST_ROUND;
+    // Check if we've reached the tick limit (50th tick)
+    if (turnManager.GetCurrentTick() >= TEST_TICK) {
+        std::cout << "Battle Over! Tick limit reached (" << TEST_TICK << " ticks)" << std::endl;
+        return true;
     }
     
     // Use battlefield to check for victory
