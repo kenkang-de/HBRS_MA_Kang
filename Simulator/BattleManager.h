@@ -45,6 +45,7 @@ private:
 
     int currentTick = 0; 
     int CurrentTurn = 0;
+    int tickCount = 0;  // Counter for number of ticks that have occurred
 
     bool IsBattleOver(bool test);
     int CalculateDelayFromDamage(int damageTaken, int maxHP);

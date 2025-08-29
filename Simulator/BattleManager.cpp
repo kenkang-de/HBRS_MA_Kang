@@ -37,7 +37,7 @@ int GetUnitIntervalFromBattleManager(Unit* unit) {
 
 
 BattleManager::BattleManager(Battlefield& bf) 
-    : battlefield(bf) {
+    : battlefield(bf), tickCount(0) {
     // Set global reference for ActionLibrary access
     currentBattleManager = this;
     
@@ -79,6 +79,7 @@ void BattleManager::StartBattle() {
         if (!units.empty()) {
             std::cout << std::endl;
             std::cout << "[Tick " << turnManager.GetCurrentTick() << "] " << units.size() << " unit(s) acting\n";
+            tickCount++;  // Increment tick counter when a tick actually occurs
         }
 
         // Separate ranged, melee, and magic units
@@ -305,9 +306,9 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 
 
 bool BattleManager::IsBattleOver(bool test) {
-    // Check if we've reached the tick limit (50th tick)
-    if (turnManager.GetCurrentTick() >= TEST_TICK) {
-        std::cout << "Battle Over! Tick limit reached (" << TEST_TICK << " ticks)" << std::endl;
+    // Check if we've reached the tick limit (50 actual ticks that occurred)
+    if (tickCount >= TEST_TICK) {
+        std::cout << "Battle Over! Tick limit reached (" << tickCount << " ticks occurred)" << std::endl;
         return true;
     }
     

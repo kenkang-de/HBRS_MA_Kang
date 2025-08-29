@@ -1,0 +1,11 @@
+Test Name,Red Damage,Blue Damage,Winner,Damage Ratio,Total Ticks,Stalemate
+V1Test1.txt,63,6,Blue,0.10,210,No
+V1Test2.txt,26,64,Red,2.46,147,No
+V1Test3.txt,13,56,Red,4.31,36,No
+V1Test4.txt,4,59,Red,14.75,22,No
+V1Test5.txt,33,22,Unknown,0.67,192,Yes
+V1Test6.txt,54,12,Unknown,0.22,124,Yes
+V1Test7.txt,61,26,Blue,0.43,122,No
+V1Test8.txt,71,32,Blue,0.45,156,No
+V1Test9.txt,71,19,Blue,0.27,36,No
+V1Test10.txt,59,24,Blue,0.41,111,No

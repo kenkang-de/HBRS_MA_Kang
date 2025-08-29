@@ -71,12 +71,20 @@ inline void TestRunner::printStatus(const std::string& message) {
 inline bool TestRunner::runSingleTest(int testNumber) {
     printStatus("Running test " + std::to_string(testNumber) + "...");
     
-    // Create target file path
-    std::string targetFile = logDirectory + testBaseName + std::to_string(testNumber) + ".txt";
+    // Create target file path (absolute path)
+    std::filesystem::path currentPath = std::filesystem::current_path();
+    std::string targetFile = (currentPath / logDirectory / (testBaseName + std::to_string(testNumber) + ".txt")).string();
+    
+    // Change to Simulator directory to run the executable
+    std::filesystem::path simulatorDir = currentPath / "../Simulator";
+    std::filesystem::current_path(simulatorDir);
     
     // Run the simulator and redirect output to the target file
-    std::string command = simulatorExecutable + " > \"" + targetFile + "\" 2>&1";
+    std::string command = "Simulator.exe > \"" + targetFile + "\" 2>&1";
     int result = std::system(command.c_str());
+    
+    // Restore original directory
+    std::filesystem::current_path(currentPath);
     
     if (result != 0) {
         std::cerr << "Error: Simulator execution failed with code " << result << std::endl;

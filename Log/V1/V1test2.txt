@@ -1,126 +1,219 @@
-[DEBUG] R0 W:BSW36(Tetrodo) A:BSA16 ATK:3 DEF:0 SPD:4 THR:0 HP:6
-[DEBUG] R1 W:BSW3(Thrust) A:BSA41 ATK:3 DEF:3 SPD:4 THR:5 HP:12
-[DEBUG] R2 W:BSW33(Magic Bolt) A:BSA23 ATK:1 DEF:3 SPD:3 THR:3 HP:7
-[DEBUG] R3 W:BSW21(Poison Arrow) A:BSA47 ATK:2 DEF:3 SPD:2 THR:6 HP:13
-[DEBUG] R4 W:BSW27(Tripple Shot) A:BSA14 ATK:1 DEF:0 SPD:4 THR:0 HP:10
-[DEBUG] B0 W:BSW18(Killing Spree) A:BSA24 ATK:4 DEF:2 SPD:3 THR:3 HP:12
-[DEBUG] B1 W:BSW21(Poison Arrow) A:BSA30 ATK:3 DEF:2 SPD:3 THR:4 HP:10
-[DEBUG] B2 W:BSW11(Fade Attack) A:BSA10 ATK:4 DEF:0 SPD:5 THR:4 HP:10
-[DEBUG] B3 W:BSW41(Bulkup) A:BSA35 ATK:0 DEF:0 SPD:1 THR:3 HP:10
-[DEBUG] B4 W:BSW34(Wind Blade) A:BSA47 ATK:2 DEF:3 SPD:1 THR:6 HP:13
+[DEBUG] R0 W:BSW7(Poison Attack) A:BSA31 ATK:3 DEF:4 SPD:3 THR:8 HP:10
+[DEBUG] R1 W:BSW15(Taunt) A:BSA4 ATK:6 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] R2 W:BSW48(Meteor) A:BSA16 ATK:3 DEF:0 SPD:3 THR:5 HP:6
+[DEBUG] R3 W:BSW4(Berserk) A:BSA39 ATK:5 DEF:2 SPD:2 THR:6 HP:16
+[DEBUG] R4 W:BSW3(Thrust) A:BSA7 ATK:3 DEF:0 SPD:7 THR:2 HP:9
+[DEBUG] B0 W:BSW26(Double Shot) A:BSA41 ATK:2 DEF:3 SPD:3 THR:5 HP:12
+[DEBUG] B1 W:BSW18(Killing Spree) A:BSA39 ATK:5 DEF:2 SPD:2 THR:5 HP:12
+[DEBUG] B2 W:BSW26(Double Shot) A:BSA9 ATK:3 DEF:-2 SPD:6 THR:2 HP:10
+[DEBUG] B3 W:BSW24(Boost Acuity) A:BSA44 ATK:4 DEF:3 SPD:2 THR:7 HP:12
+[DEBUG] B4 W:BSW10(Reckless Attack) A:BSA33 ATK:7 DEF:1 SPD:1 THR:6 HP:10
 
-[Tick 12] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 13)
+[Tick 30] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 12)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 12
+
+[Tick 35] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B2 targeting R1 (HP: 8)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 5
+
+[Tick 42] 1 unit(s) acting
+Melee: R1 targeting B3 (HP: 12)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 9
+[A10] R1 threat changed from 6 to 7
+[A04] R1 attack changed from 6 to 5
+
+[Tick 60] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 9)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 9
+
+[Tick 70] 4 unit(s) acting
+Ranged: B0 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B0 targeting R1 (HP: 5)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 3
+Ranged: B2 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Ranged: B2 targeting R1 (HP: 3)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 0
+[DEBUG] LCM changed from 210 to 42 - rebuilding queue
+Melee: R0 targeting B3 (HP: 9)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 9
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R0 applied Poison Effect to B3 (usage: 3)
+Magic: R2 targeting B3 (HP: 9)
+B3 took damage: 3 (pierced)
+B3's Remaining Health: 6
+Magic: R2 targeting B4 (HP: 10)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 7
+Magic: R2 targeting B0 (HP: 12)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 9
+Magic: R2 targeting B1 (HP: 12)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 9
+
+[Tick 90] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 6)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 6
+
+[Tick 96] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 6)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 6
+
+[Tick 102] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 6)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 6
+
+[Tick 105] 4 unit(s) acting
+Ranged: B3 targeting R0 (HP: 10)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 7
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 7)
+[BOON] Poison Effect triggered on B3 (Usage: 3/3)
+[EXECUTE_EFFECT] B3 triggered Poison Effect
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 1
+Ranged: B2 targeting R0 (HP: 7)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 7
+Ranged: B2 targeting R3 (HP: 16)
+R3 took damage: 1 (defended)
+R3's Remaining Health: 15
+Ranged: B1 targeting R0 (HP: 7)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 6
+Melee: R3 targeting B3 (HP: 1)
+R3 took damage: 2 (pierced)
+R3's Remaining Health: 13
+B3 took damage: 2 (defended)
+B3's Remaining Health: 0
+[A02] B3 defense changed from 3 to 2
+
+[Tick 108] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 7)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 2
+
+[Tick 112] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 6
+Ranged: B2 targeting R3 (HP: 13)
 R3 took damage: 1 (defended)
 R3's Remaining Health: 12
-[A10] B2 threat changed from 4 to 3
 
-[Tick 15] 3 unit(s) acting
-Ranged: R4 targeting B4 (HP: 13)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 13
-Ranged: R4 targeting B1 (HP: 10)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 10
-Ranged: R4 targeting B0 (HP: 12)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 12
-Melee: R1 targeting B4 (HP: 13)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 13
-Magic: R0 targeting B4 (HP: 13)
-[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
-[A28] R0 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 114] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 2)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 0
 
-[Tick 20] 3 unit(s) acting
-Ranged: B1 targeting R3 (HP: 12)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 12
-[BOON] Applied Poison Effect to R3 (Usage: 2)
-[A28] B1 applied Poison Effect to R3 (usage: 2)
-Ranged: B0 targeting R3 (HP: 12)
+[Tick 119] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 6
+Ranged: B2 targeting R3 (HP: 12)
 R3 took damage: 1 (defended)
 R3's Remaining Health: 11
-Magic: R2 targeting B4 (HP: 13)
-B4 took damage: 5 (pierced)
-B4's Remaining Health: 8
 
-[Tick 24] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 11)
+[Tick 120] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 9)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 9
+
+[Tick 126] 4 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 6
+Ranged: B2 targeting R3 (HP: 11)
 R3 took damage: 1 (defended)
 R3's Remaining Health: 10
-[A10] B2 threat changed from 3 to 2
+Ranged: B1 targeting R0 (HP: 6)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 5
+Melee: R3 targeting B0 (HP: 9)
+R3 took damage: 2 (pierced)
+R3's Remaining Health: 8
+B0 took damage: 2 (defended)
+B0's Remaining Health: 7
+[A02] B0 defense changed from 3 to 2
+Melee: R4 targeting B0 (HP: 7)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 3
 
-[Tick 30] 4 unit(s) acting
-Ranged: R4 targeting B4 (HP: 8)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 8
-Ranged: R4 targeting B1 (HP: 10)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 10
-Ranged: R4 targeting B0 (HP: 12)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 12
-Ranged: R3 targeting B4 (HP: 8)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 8
-[BOON] Applied Poison Effect to B4 (Usage: 2)
-[A28] R3 applied Poison Effect to B4 (usage: 2)
-[DEBUG] R3 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R3
-[AFTER-ACTION] Registered after-action for R3
-[AFTER-ACTION] R3 performs after-action on R3 (threat: 6)
-[BOON] Poison Effect triggered on R3 (Usage: 2/2)
-[EXECUTE_EFFECT] R3 triggered Poison Effect
-R3 took damage: 5 (pierced)
+[Tick 132] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 3)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 0
+
+[Tick 133] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+Ranged: B2 targeting R3 (HP: 8)
+R3 took damage: 1 (defended)
+R3's Remaining Health: 7
+
+[Tick 138] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 9)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 5
+
+[Tick 140] 3 unit(s) acting
+Ranged: B2 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+Ranged: B2 targeting R3 (HP: 7)
+R3 took damage: 1 (defended)
+R3's Remaining Health: 6
+Melee: R0 targeting B1 (HP: 5)
+B1 took damage: 1 (defended)
+B1's Remaining Health: 4
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R0 applied Poison Effect to B1 (usage: 3)
+Magic: R2 targeting B1 (HP: 4)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 1
+Magic: R2 targeting B2 (HP: 10)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 7
+
+[Tick 144] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 1)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 0
+
+[Tick 147] 2 unit(s) acting
+Ranged: B2 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+Ranged: B2 targeting R3 (HP: 6)
+R3 took damage: 1 (defended)
 R3's Remaining Health: 5
-Melee: R1 targeting B4 (HP: 8)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 8
-Magic: R0 targeting B4 (HP: 8)
-[BOON] Refreshing existing Tetrodo Effect on B4
-[A28] R0 applied Tetrodo Effect to B4 (usage: 2)
-
-[Tick 36] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 5)
-R3 took damage: 1 (defended)
-R3's Remaining Health: 4
-[A10] B2 threat changed from 2 to 1
-
-[Tick 40] 3 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 4
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B1 applied Poison Effect to R3 (usage: 2)
-Ranged: B0 targeting R3 (HP: 4)
-R3 took damage: 1 (defended)
+Melee: R3 targeting B2 (HP: 7)
+R3 took damage: 2 (pierced)
 R3's Remaining Health: 3
-Magic: R2 targeting B4 (HP: 8)
-B4 took damage: 5 (pierced)
-B4's Remaining Health: 3
-
-[Tick 45] 3 unit(s) acting
-Ranged: R4 targeting B4 (HP: 3)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 3
-Ranged: R4 targeting B1 (HP: 10)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 10
-Ranged: R4 targeting B0 (HP: 12)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 12
-Melee: R1 targeting B4 (HP: 3)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 3
-Magic: R0 targeting B4 (HP: 3)
-[BOON] Refreshing existing Tetrodo Effect on B4
-[A28] R0 applied Tetrodo Effect to B4 (usage: 2)
-
-[Tick 48] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 3)
-R3 took damage: 1 (defended)
-R3's Remaining Health: 2
-[A10] B2 threat changed from 1 to 0
-Battle Over! Tick limit reached (50 ticks)
+B2 took damage: 7 (defended)
+B2's Remaining Health: 0
+[A02] B2 defense changed from -2 to 0
+Battle Over! Red Team wins!
 Battle finished.

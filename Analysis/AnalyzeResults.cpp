@@ -21,8 +21,8 @@ int main() {
     // Print overall statistics
     analyzer.printStatistics();
     
-    // Save results to CSV file
-    analyzer.saveResultsToFile(Paths::BATTLE_ANALYSIS_CSV);
+    // Save results to CSV file in Log/V1 directory
+    analyzer.saveResultsToFile(Paths::FromAnalysis::LOG_V1_DIR + Paths::BATTLE_ANALYSIS_CSV);
     
     return 0;
 }

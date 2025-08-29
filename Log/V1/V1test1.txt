@@ -1,55 +1,101 @@
-[DEBUG] R0 W:BSW47(Cheer) A:BSA33 ATK:2 DEF:1 SPD:1 THR:6 HP:10
-[DEBUG] R1 W:BSW35(Chain Lightning) A:BSA23 ATK:4 DEF:3 SPD:2 THR:7 HP:7
-[DEBUG] R2 W:BSW11(Fade Attack) A:BSA41 ATK:5 DEF:3 SPD:2 THR:7 HP:12
-[DEBUG] R3 W:BSW10(Reckless Attack) A:BSA17 ATK:4 DEF:0 SPD:3 THR:3 HP:12
-[DEBUG] R4 W:BSW24(Boost Acuity) A:BSA5 ATK:4 DEF:0 SPD:7 THR:5 HP:7
-[DEBUG] B0 W:BSW40(Grace) A:BSA33 ATK:2 DEF:1 SPD:2 THR:6 HP:10
-[DEBUG] B1 W:BSW6(Achilles' heel) A:BSA32 ATK:4 DEF:-1 SPD:3 THR:4 HP:10
-[DEBUG] B2 W:BSW28(Heavy Shot) A:BSA2 ATK:4 DEF:-1 SPD:6 THR:4 HP:10
-[DEBUG] B3 W:BSW26(Double Shot) A:BSA19 ATK:1 DEF:1 SPD:5 THR:0 HP:7
-[DEBUG] B4 W:BSW5(Overpower) A:BSA43 ATK:5 DEF:1 SPD:1 THR:4 HP:10
+[DEBUG] R0 W:BSW12(Final Attack) A:BSA1 ATK:0 DEF:10 SPD:5 THR:7 HP:10
+[DEBUG] R1 W:BSW22(Delay Shot) A:BSA50 ATK:3 DEF:4 SPD:2 THR:7 HP:15
+[DEBUG] R2 W:BSW45(Fatigue) A:BSA26 ATK:3 DEF:1 SPD:2 THR:4 HP:8
+[DEBUG] R3 W:BSW15(Taunt) A:BSA36 ATK:5 DEF:2 SPD:1 THR:5 HP:10
+[DEBUG] R4 W:BSW46(Protect) A:BSA31 ATK:1 DEF:4 SPD:1 THR:8 HP:10
+[DEBUG] B0 W:BSW25(Smoke Shot) A:BSA32 ATK:5 DEF:-1 SPD:3 THR:2 HP:10
+[DEBUG] B1 W:BSW16(Killer's Spirit) A:BSA38 ATK:7 DEF:0 SPD:1 THR:6 HP:12
+[DEBUG] B2 W:BSW48(Meteor) A:BSA37 ATK:0 DEF:4 SPD:1 THR:10 HP:10
+[DEBUG] B3 W:BSW9(Blitz Attack) A:BSA21 ATK:5 DEF:3 SPD:4 THR:5 HP:10
+[DEBUG] B4 W:BSW20(Blitz Shot) A:BSA5 ATK:3 DEF:0 SPD:7 THR:3 HP:7
 
-[Tick 30] 1 unit(s) acting
-Ranged: R4 targeting B0 (HP: 10)
-B0 took damage: 5 (defended)
-B0's Remaining Health: 5
-  -> B0 (magic) tick reset due to ranged attack!
+[Tick 60] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 took damage: 6 (defended)
+R4's Remaining Health: 4
+  -> R4 (magic) tick reset due to ranged attack!
 
-[Tick 32] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 10)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-[A29] B0 healed B1 for 2 HP
-Magic: B0 targeting B2 (HP: 10)
-[HEAL] B2 healed for 0 HP (from 10 to 10/10)
-[A29] B0 healed B2 for 2 HP
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B0 healed B4 for 2 HP
+[Tick 61] 1 unit(s) acting
+Magic: R4 targeting R4 (HP: 4)
+[BOON] Applied ProtectSTART to R4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R4
+[AFTER-ACTION] Registered after-action for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] ProtectSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered ProtectSTART
+[A02] R4 defense changed from 4 to 7
 
-[Tick 35] 1 unit(s) acting
-Ranged: B2 targeting R1 (HP: 7)
+[Tick 84] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 6 (defended)
+B2's Remaining Health: 4
+[A12] R0 defense changed from 10 to 0
+  -> B2 (magic) tick reset due to melee attack!
+
+[Tick 85] 1 unit(s) acting
+Magic: B2 targeting R4 (HP: 4)
+R4 took damage: 3 (pierced)
+R4's Remaining Health: 1
+Magic: B2 targeting R0 (HP: 10)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 7
+Magic: B2 targeting R1 (HP: 15)
+R1 took damage: 3 (pierced)
+R1's Remaining Health: 12
+Magic: B2 targeting R3 (HP: 10)
+R3 took damage: 3 (pierced)
+R3's Remaining Health: 7
+
+[Tick 105] 1 unit(s) acting
+Melee: B3 targeting R4 (HP: 1)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 0
+
+[Tick 120] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 7)
+R0 took damage: 10 (defended)
+R0's Remaining Health: 0
+[DEBUG] LCM changed from 420 to 84 - rebuilding queue
+
+[Tick 140] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 12)
+R1 took damage: 1 (defended)
+R1's Remaining Health: 11
+
+[Tick 168] 1 unit(s) acting
+Ranged: B0 targeting R3 (HP: 7)
+R3 took damage: 3 (defended)
+R3's Remaining Health: 4
+
+[Tick 180] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 8)
+R2 took damage: 9 (defended)
+R2's Remaining Health: 0
+
+[Tick 192] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 11)
+R1 took damage: 6 (defended)
+R1's Remaining Health: 5
+
+[Tick 196] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 5)
+R1 took damage: 1 (defended)
+R1's Remaining Health: 4
+
+[Tick 204] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 4)
+R3 took damage: 8 (defended)
+R3's Remaining Health: 0
+
+[Tick 210] 2 unit(s) acting
+Ranged: R1 targeting B2 (HP: 4)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 4
+[A20] B2 delayed by 1 intervals (84 ticks)
+Melee: B3 targeting R1 (HP: 4)
 R1 took damage: 5 (defended)
-R1's Remaining Health: 2
-[A19] B2 speed changed from 6 to 5
-  -> R1 (magic) tick reset due to ranged attack!
-
-[Tick 37] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 5)
-B0 took damage: 4 (pierced)
-B0's Remaining Health: 1
-Magic: R1 targeting B1 (HP: 10)
-B1 took damage: 4 (pierced)
-B1's Remaining Health: 6
-Magic: R1 targeting B2 (HP: 10)
-B2 took damage: 4 (pierced)
-B2's Remaining Health: 6
-
-[Tick 42] 1 unit(s) acting
-Ranged: B3 targeting R1 (HP: 2)
-R1 took damage: 0 (defended)
-R1's Remaining Health: 2
-Ranged: B3 targeting R2 (HP: 12)
-R2 took damage: 0 (defended)
-R2's Remaining Health: 12
-Battle Over! Tick limit reached (50 ticks)
+R1's Remaining Health: 0
+Battle Over! Blue Team wins!
 Battle finished.
