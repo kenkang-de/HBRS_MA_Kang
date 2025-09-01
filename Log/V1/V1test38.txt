@@ -1,0 +1,230 @@
+[DEBUG] R0 W:BSW17(Shoot) A:BSA18 ATK:2 DEF:1 SPD:6 THR:1 HP:8
+[DEBUG] R1 W:BSW19(Momentum) A:BSA44 ATK:5 DEF:3 SPD:0 THR:5 HP:12
+[DEBUG] R2 W:BSW25(Smoke Shot) A:BSA4 ATK:4 DEF:0 SPD:7 THR:4 HP:8
+[DEBUG] R3 W:BSW32(Focus Throw) A:BSA13 ATK:5 DEF:1 SPD:6 THR:4 HP:11
+[DEBUG] R4 W:BSW36(Tetrodo) A:BSA9 ATK:1 DEF:-2 SPD:5 THR:2 HP:10
+[DEBUG] B0 W:BSW47(Cheer) A:BSA28 ATK:1 DEF:3 SPD:1 THR:7 HP:10
+[DEBUG] B1 W:BSW24(Boost Acuity) A:BSA21 ATK:4 DEF:3 SPD:4 THR:5 HP:10
+[DEBUG] B2 W:BSW33(Magic Bolt) A:BSA1 ATK:-1 DEF:0 SPD:6 THR:4 HP:10
+[DEBUG] B3 W:BSW4(Berserk) A:BSA14 ATK:3 DEF:0 SPD:4 THR:1 HP:14
+[DEBUG] B4 W:BSW49(Earthquake) A:BSA12 ATK:0 DEF:1 SPD:4 THR:7 HP:10
+
+[Tick 60] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 9
+  -> B0 (magic) tick reset due to ranged attack!
+
+[Tick 61] 1 unit(s) acting
+Magic: B0 targeting B4 (HP: 10)
+[A34] B4 attack changed from 0 to 2
+
+[Tick 70] 3 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 took damage: 1 (defended)
+B4's Remaining Health: 9
+  -> B4 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B4 (HP: 9)
+B4 took damage: 6 (defended)
+B4's Remaining Health: 3
+  -> B4 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R1 (HP: 12)
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 7
+
+[Tick 74] 1 unit(s) acting
+Magic: B4 targeting R1 (HP: 7)
+R1 took damage: 2 (pierced)
+R1's Remaining Health: 5
+Magic: B4 targeting R2 (HP: 8)
+R2 took damage: 2 (pierced)
+R2's Remaining Health: 6
+Magic: B4 targeting R3 (HP: 11)
+R3 took damage: 2 (pierced)
+R3's Remaining Health: 9
+Magic: B4 targeting R4 (HP: 10)
+R4 took damage: 2 (pierced)
+R4's Remaining Health: 8
+Magic: B4 targeting R0 (HP: 8)
+R0 took damage: 2 (pierced)
+R0's Remaining Health: 6
+
+[Tick 84] 1 unit(s) acting
+Magic: R4 targeting B4 (HP: 3)
+[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+[Tick 105] 2 unit(s) acting
+Ranged: B1 targeting R1 (HP: 5)
+R1 took damage: 1 (defended)
+R1's Remaining Health: 4
+Melee: B3 targeting R1 (HP: 4)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 12
+R1 took damage: 0 (defended)
+R1's Remaining Health: 4
+[A02] R1 defense changed from 3 to 2
+
+[Tick 120] 1 unit(s) acting
+Ranged: R2 targeting B4 (HP: 3)
+B4 took damage: 3 (defended)
+B4's Remaining Health: 0
+
+[Tick 140] 3 unit(s) acting
+Ranged: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Ranged: R3 targeting B1 (HP: 10)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 6
+Magic: B2 targeting R1 (HP: 4)
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 0
+
+[Tick 168] 1 unit(s) acting
+Magic: R4 targeting B1 (HP: 6)
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B1 (usage: 2)
+
+[Tick 180] 1 unit(s) acting
+Ranged: R2 targeting B1 (HP: 6)
+B1 took damage: 1 (defended)
+B1's Remaining Health: 5
+
+[Tick 210] 5 unit(s) acting
+Ranged: B1 targeting R2 (HP: 6)
+R2 took damage: 11 (defended)
+R2's Remaining Health: 0
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 2)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 0
+[DEBUG] LCM changed from 420 to 60 - rebuilding queue
+Ranged: R3 targeting B0 (HP: 9)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 5
+  -> B0 (magic) tick reset due to ranged attack!
+Ranged: R0 targeting B0 (HP: 5)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 5
+Magic: B2 targeting R3 (HP: 9)
+R3 took damage: 5 (pierced)
+R3's Remaining Health: 4
+
+[Tick 211] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 5)
+[A34] B0 attack changed from 1 to 3
+
+[Tick 252] 1 unit(s) acting
+Magic: R4 targeting B0 (HP: 5)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B0 (usage: 2)
+
+[Tick 264] 1 unit(s) acting
+Magic: R4 targeting B0 (HP: 5)
+[BOON] Refreshing existing Tetrodo Effect on B0
+[A28] R4 applied Tetrodo Effect to B0 (usage: 2)
+
+[Tick 271] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 5)
+[A34] B0 attack changed from 3 to 5
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 4)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 0
+
+[Tick 276] 1 unit(s) acting
+Magic: R4 targeting B2 (HP: 10)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B2 (usage: 2)
+
+[Tick 280] 3 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 took damage: 2 (defended)
+B2's Remaining Health: 8
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B2 (HP: 8)
+B2 took damage: 7 (defended)
+B2's Remaining Health: 1
+  -> B2 (magic) tick reset due to ranged attack!
+
+[Tick 286] 1 unit(s) acting
+Magic: B2 targeting R3 (HP: 4)
+R3 took damage: 5 (pierced)
+R3's Remaining Health: 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 4)
+[BOON] Tetrodo Effect triggered on B2 (Usage: 2/2)
+[EXECUTE_EFFECT] B2 triggered Tetrodo Effect
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 0
+
+[Tick 288] 1 unit(s) acting
+Magic: R4 targeting B3 (HP: 12)
+[BOON] Applied Tetrodo Effect to B3 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B3 (usage: 2)
+
+[Tick 290] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 12)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 10
+
+[Tick 300] 2 unit(s) acting
+Ranged: R0 targeting B3 (HP: 10)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 8
+Magic: R4 targeting B3 (HP: 8)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R4 applied Tetrodo Effect to B3 (usage: 2)
+
+[Tick 310] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 8)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 6
+
+[Tick 312] 1 unit(s) acting
+Magic: R4 targeting B3 (HP: 6)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R4 applied Tetrodo Effect to B3 (usage: 2)
+
+[Tick 315] 1 unit(s) acting
+Melee: B3 targeting R4 (HP: 8)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 4
+R4 took damage: 5 (defended)
+R4's Remaining Health: 3
+[A02] R4 defense changed from -2 to 0
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 1)
+[BOON] Tetrodo Effect triggered on B3 (Usage: 2/2)
+[EXECUTE_EFFECT] B3 triggered Tetrodo Effect
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 30 - rebuilding queue
+  -> R4 (magic) tick reset due to melee attack!
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW17 A=BSA18 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW19 A=BSA44 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW25 A=BSA4 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW32 A=BSA13 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW36 A=BSA9 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW47 A=BSA28 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW24 A=BSA21 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW33 A=BSA1 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW4 A=BSA14 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW49 A=BSA12 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

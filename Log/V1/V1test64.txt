@@ -1,0 +1,178 @@
+[DEBUG] R0 W:BSW24(Boost Acuity) A:BSA36 ATK:3 DEF:2 SPD:3 THR:5 HP:10
+[DEBUG] R1 W:BSW30(Fire Arrow) A:BSA5 ATK:5 DEF:0 SPD:6 THR:3 HP:7
+[DEBUG] R2 W:BSW41(Bulkup) A:BSA6 ATK:0 DEF:-1 SPD:4 THR:4 HP:10
+[DEBUG] R3 W:BSW39(Healing Link) A:BSA41 ATK:0 DEF:3 SPD:2 THR:7 HP:12
+[DEBUG] R4 W:BSW38(Healing Touch) A:BSA34 ATK:2 DEF:3 SPD:2 THR:8 HP:10
+[DEBUG] B0 W:BSW46(Protect) A:BSA19 ATK:-1 DEF:1 SPD:3 THR:2 HP:7
+[DEBUG] B1 W:BSW4(Berserk) A:BSA36 ATK:4 DEF:2 SPD:2 THR:4 HP:14
+[DEBUG] B2 W:BSW47(Cheer) A:BSA22 ATK:-2 DEF:3 SPD:2 THR:5 HP:10
+[DEBUG] B3 W:BSW30(Fire Arrow) A:BSA16 ATK:7 DEF:0 SPD:4 THR:0 HP:6
+[DEBUG] B4 W:BSW1(Slash) A:BSA27 ATK:8 DEF:1 SPD:4 THR:1 HP:4
+
+[Tick 2] 1 unit(s) acting
+Ranged: R1 targeting B2 (HP: 10)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 7
+  -> B2 (magic) tick reset due to ranged attack!
+
+[Tick 3] 3 unit(s) acting
+Ranged: B3 targeting R4 (HP: 10)
+R4 took damage: 5 (pierced)
+R4's Remaining Health: 5
+  -> R4 (magic) tick reset due to ranged attack!
+Melee: B4 targeting R4 (HP: 5)
+R4 took damage: 5 (defended)
+R4's Remaining Health: 0
+
+[Tick 4] 4 unit(s) acting
+Ranged: R0 targeting B2 (HP: 7)
+B2 took damage: 2 (defended)
+B2's Remaining Health: 5
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 5)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 2
+  -> B2 (magic) tick reset due to ranged attack!
+Magic: B0 targeting B2 (HP: 2)
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 6] 7 unit(s) acting
+Ranged: B3 targeting R3 (HP: 12)
+R3 took damage: 5 (pierced)
+R3's Remaining Health: 7
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 2)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 0
+Melee: B1 targeting R3 (HP: 7)
+B1 took damage: 2 (pierced)
+B1's Remaining Health: 12
+R3 took damage: 1 (defended)
+R3's Remaining Health: 6
+[A02] R3 defense changed from 3 to 2
+  -> R3 (magic) tick reset due to melee attack!
+Melee: B4 targeting R3 (HP: 6)
+R3 took damage: 6 (defended)
+R3's Remaining Health: 0
+
+[Tick 8] 3 unit(s) acting
+Ranged: R0 targeting B1 (HP: 12)
+B1 took damage: 3 (defended)
+B1's Remaining Health: 9
+Ranged: R1 targeting B1 (HP: 9)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 6
+Magic: B0 targeting B1 (HP: 6)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 9] 3 unit(s) acting
+Ranged: B3 targeting R0 (HP: 10)
+R0 took damage: 4 (pierced)
+R0's Remaining Health: 6
+Melee: B4 targeting R0 (HP: 6)
+R0 took damage: 6 (defended)
+R0's Remaining Health: 0
+Magic: R2 targeting R2 (HP: 10)
+[BOON] Applied BulkupSTART to R2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R2
+[AFTER-ACTION] Registered after-action for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 4)
+[TEMP-BUFF] BulkupSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered BulkupSTART
+
+[Tick 10] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 6)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 3
+
+[Tick 12] 6 unit(s) acting
+Ranged: B3 targeting R2 (HP: 20)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 17
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B1 (HP: 3)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 0
+Melee: B4 targeting R2 (HP: 17)
+R2 took damage: 9 (defended)
+R2's Remaining Health: 8
+  -> R2 (magic) tick reset due to melee attack!
+Magic: B0 targeting B0 (HP: 7)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 2)
+[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered ProtectSTART
+[A02] B0 defense changed from 1 to 4
+
+[Tick 14] 1 unit(s) acting
+Ranged: R1 targeting B0 (HP: 7)
+B0 took damage: 2 (pierced)
+B0's Remaining Health: 5
+  -> B0 (magic) tick reset due to ranged attack!
+
+[Tick 15] 2 unit(s) acting
+Ranged: B3 targeting R2 (HP: 8)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 5
+  -> R2 (magic) tick reset due to ranged attack!
+Melee: B4 targeting R1 (HP: 7)
+R1 took damage: 8 (defended)
+R1's Remaining Health: 0
+
+[Tick 17] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 5)
+[BOON] Refreshing existing ProtectSTART on B0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 2)
+[TEMP-BUFF] ProtectSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B0 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B0 triggered ProtectEND
+[A02] B0 defense changed from 4 to 1
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+[Tick 18] 2 unit(s) acting
+Ranged: B3 targeting R2 (HP: 5)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 2
+  -> R2 (magic) tick reset due to ranged attack!
+
+[Tick 21] 3 unit(s) acting
+Ranged: B3 targeting R2 (HP: 2)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 0
+Magic: B0 targeting B0 (HP: 5)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 2)
+[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered ProtectSTART
+[A02] B0 defense changed from 1 to 4
+Battle Over! Blue Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW24 A=BSA36 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW30 A=BSA5 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW41 A=BSA6 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW39 A=BSA41 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW38 A=BSA34 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW46 A=BSA19 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW4 A=BSA36 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW47 A=BSA22 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW30 A=BSA16 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW1 A=BSA27 Won=1 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

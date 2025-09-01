@@ -29,6 +29,10 @@ namespace Paths {
         const std::string LOG_V1_DIR = "../" + Paths::LOG_V1_DIR;
     }
     
+    namespace FromSimulator {
+        const std::string ELEMENT_ANALYSIS_REPORT = "../" + Paths::LOG_V1_DIR + "ElementAnalysisV1_Report.csv";
+    }
+    
     // Output files
     const std::string BATTLE_ANALYSIS_CSV = "battle_analysis.csv";
     

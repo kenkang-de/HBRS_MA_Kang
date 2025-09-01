@@ -1,26 +1,97 @@
 #include "TestRunner.h"
 #include "../Paths.h"
+#include "../Analysis/ElementAnalysis.h"
+#include "../Simulator/Unit.h"
+#include "../Simulator/UnitGenerator.h"
+#include "../Simulator/TurnManager.h"
+#include "../Simulator/EquipmentManager.h"
+#include "../Simulator/Team.h"
+#include "../Simulator/Battlefield.h"
+#include "../Simulator/BattleActionLoader.h"
+#include "../Simulator/BattleManager.h"
+#include "../Simulator/Constants.h"
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include <cstdio>
+#include <chrono>
+#include <iomanip>
+#include <list>
 
 int main() {
-    std::cout << "=== Simulator Test Suite Runner ===" << std::endl;
-    std::cout << "====================================" << std::endl << std::endl;
+    // Start timing
+    auto startTime = std::chrono::high_resolution_clock::now();
     
-    // Create test runner with updated paths
-    // This will run Simulator.exe and save logs to Log/V1/V1test1.txt through V1test10.txt
-    TestRunner runner(Paths::FromSampling::SIMULATOR_EXE, Paths::FromSampling::LOG_V1_DIR, Paths::TEST_BASE_NAME);
+    std::cout << std::endl;
     
-    // Clean old test files
-    runner.cleanOldTests(1, 10);
+    // Run Simulator.exe with configurable simulations parameter
+    std::cout << "Running " << SIMULATION_COUNT << " simulations..." << std::endl;
     
-    // Run the standard test suite (10 tests)
-    if (runner.runStandardTestSuite()) {
-        std::cout << std::endl << "All tests completed successfully!" << std::endl;
-        std::cout << "Results saved in Log/V1/ directory" << std::endl;
-    } else {
-        std::cout << std::endl << "Some tests failed. Check the output above for details." << std::endl;
+    // Change to Simulator directory and call Simulator.exe with parameter
+    std::string command = "cd ../Simulator && .\\Simulator.exe " + std::to_string(SIMULATION_COUNT) + " > ..\\Sampling\\temp_simulation_output.txt 2>&1";
+    
+    int result = std::system(command.c_str());
+    if (result != 0) {
+        std::cout << "Error: Simulation failed!" << std::endl;
         return 1;
     }
+    
+    // Parse the output and extract equipment analysis
+    std::ifstream outputFile("temp_simulation_output.txt");
+    if (!outputFile.is_open()) {
+        std::cout << "Error: Could not read simulation output!" << std::endl;
+        return 1;
+    }
+    
+    // Look for equipment analysis section and save to report
+    std::ofstream reportFile("../Log/V1/ElementAnalysisV1_Report.csv");
+    if (!reportFile.is_open()) {
+        std::cout << "Error: Could not create analysis report!" << std::endl;
+        return 1;
+    }
+    
+    std::string line;
+    bool inAnalysisSection = false;
+    
+    while (std::getline(outputFile, line)) {
+        if (line == "EQUIPMENT_ANALYSIS_START") {
+            inAnalysisSection = true;
+            continue;
+        }
+        if (line == "EQUIPMENT_ANALYSIS_END") {
+            break;
+        }
+        if (inAnalysisSection) {
+            reportFile << line << std::endl;
+        }
+    }
+    
+    outputFile.close();
+    reportFile.close();
+    
+    // Clean up temp file
+    std::remove("temp_simulation_output.txt");
+    
+    std::cout << "Equipment analysis completed" << std::endl;
+    
+    // Calculate and display total execution time
+    auto endTime = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
+    
+    std::cout << "Execution time: ";
+    
+    if (duration.count() >= 60000) { // More than 1 minute
+        auto minutes = duration.count() / 60000;
+        auto seconds = (duration.count() % 60000) / 1000.0;
+        std::cout << minutes << "m " << std::fixed << std::setprecision(1) << seconds << "s";
+    } else if (duration.count() >= 1000) { // More than 1 second
+        auto seconds = duration.count() / 1000.0;
+        std::cout << std::fixed << std::setprecision(2) << seconds << " seconds";
+    } else { // Less than 1 second
+        std::cout << duration.count() << " milliseconds";
+    }
+    
+    std::cout << std::endl << std::endl;
     
     return 0;
 }

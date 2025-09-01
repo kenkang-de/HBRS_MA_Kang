@@ -1,0 +1,134 @@
+[DEBUG] R0 W:BSW41(Bulkup) A:BSA45 ATK:1 DEF:5 SPD:0 THR:9 HP:10
+[DEBUG] R1 W:BSW34(Wind Blade) A:BSA11 ATK:4 DEF:0 SPD:5 THR:4 HP:10
+[DEBUG] R2 W:BSW8(Charge Attack) A:BSA14 ATK:2 DEF:0 SPD:5 THR:2 HP:12
+[DEBUG] R3 W:BSW14(Leech Attack) A:BSA31 ATK:6 DEF:4 SPD:1 THR:8 HP:10
+[DEBUG] R4 W:BSW45(Fatigue) A:BSA29 ATK:1 DEF:0 SPD:1 THR:5 HP:12
+[DEBUG] B0 W:BSW17(Shoot) A:BSA8 ATK:4 DEF:0 SPD:7 THR:3 HP:10
+[DEBUG] B1 W:BSW35(Chain Lightning) A:BSA3 ATK:4 DEF:-2 SPD:5 THR:8 HP:10
+[DEBUG] B2 W:BSW20(Blitz Shot) A:BSA17 ATK:1 DEF:0 SPD:5 THR:1 HP:12
+[DEBUG] B3 W:BSW25(Smoke Shot) A:BSA27 ATK:7 DEF:1 SPD:4 THR:1 HP:4
+[DEBUG] B4 W:BSW7(Poison Attack) A:BSA3 ATK:3 DEF:-2 SPD:7 THR:6 HP:10
+
+[Tick 20] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+Melee: B4 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[BOON] Applied Poison Effect to R0 (Usage: 3)
+[A28] B4 applied Poison Effect to R0 (usage: 3)
+
+[Tick 28] 4 unit(s) acting
+Ranged: B2 targeting R0 (HP: 10)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 9
+  -> R0 (magic) tick reset due to ranged attack!
+Melee: R2 targeting B1 (HP: 10)
+B1 took damage: 8 (defended)
+B1's Remaining Health: 2
+  -> B1 (magic) tick reset due to melee attack!
+Magic: B1 targeting R0 (HP: 9)
+R0 took damage: 4 (pierced)
+R0's Remaining Health: 5
+Magic: B1 targeting R3 (HP: 10)
+R3 took damage: 4 (pierced)
+R3's Remaining Health: 6
+Magic: B1 targeting R4 (HP: 12)
+R4 took damage: 4 (pierced)
+R4's Remaining Health: 8
+Magic: R1 targeting B1 (HP: 2)
+B1 took damage: 4 (pierced)
+B1's Remaining Health: 0
+Magic: R1 targeting B4 (HP: 10)
+B4 took damage: 4 (pierced)
+B4's Remaining Health: 6
+
+[Tick 35] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 5)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 3
+  -> R0 (magic) tick reset due to ranged attack!
+
+[Tick 40] 2 unit(s) acting
+Ranged: B0 targeting R3 (HP: 6)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 6
+Melee: B4 targeting R3 (HP: 6)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 6
+[BOON] Applied Poison Effect to R3 (Usage: 3)
+[A28] B4 applied Poison Effect to R3 (usage: 3)
+
+[Tick 56] 3 unit(s) acting
+Ranged: B2 targeting R3 (HP: 6)
+R3 took damage: 2 (defended)
+R3's Remaining Health: 4
+Melee: R2 targeting B4 (HP: 6)
+B4 took damage: 8 (defended)
+B4's Remaining Health: 0
+Magic: R1 targeting B0 (HP: 10)
+B0 took damage: 4 (pierced)
+B0's Remaining Health: 6
+
+[Tick 60] 1 unit(s) acting
+Ranged: B0 targeting R3 (HP: 4)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 4
+
+[Tick 70] 1 unit(s) acting
+Ranged: B3 targeting R3 (HP: 4)
+R3 took damage: 3 (defended)
+R3's Remaining Health: 1
+
+[Tick 80] 1 unit(s) acting
+Ranged: B0 targeting R4 (HP: 8)
+R4 took damage: 4 (defended)
+R4's Remaining Health: 4
+  -> R4 (magic) tick reset due to ranged attack!
+
+[Tick 81] 1 unit(s) acting
+Magic: R4 targeting B0 (HP: 6)
+[A06] B0 speed changed from 7 to 6
+[DEBUG] LCM changed from 140 to 60 - rebuilding queue
+Magic: R4 targeting B2 (HP: 12)
+[A06] B2 speed changed from 5 to 4
+
+[Tick 84] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 4)
+R4 took damage: 5 (defended)
+R4's Remaining Health: 0
+Melee: R2 targeting B0 (HP: 6)
+B0 took damage: 6 (defended)
+B0's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 20 - rebuilding queue
+Magic: R1 targeting B2 (HP: 12)
+B2 took damage: 4 (pierced)
+B2's Remaining Health: 8
+
+[Tick 96] 2 unit(s) acting
+Melee: R2 targeting B2 (HP: 8)
+B2 took damage: 6 (defended)
+B2's Remaining Health: 2
+  -> B2 (ranged) delayed by 1 tick(s) due to 6/12 damage!
+Magic: R1 targeting B2 (HP: 2)
+B2 took damage: 4 (pierced)
+B2's Remaining Health: 0
+Magic: R1 targeting B3 (HP: 4)
+B3 took damage: 4 (pierced)
+B3's Remaining Health: 0
+[DEBUG] LCM changed from 20 to 5 - rebuilding queue
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW41 A=BSA45 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW34 A=BSA11 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW8 A=BSA14 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW14 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW45 A=BSA29 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW17 A=BSA8 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW35 A=BSA3 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW20 A=BSA17 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW25 A=BSA27 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW7 A=BSA3 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

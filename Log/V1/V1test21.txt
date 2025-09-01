@@ -1,0 +1,578 @@
+[DEBUG] R0 W:BSW1(Slash) A:BSA45 ATK:5 DEF:5 SPD:2 THR:7 HP:10
+[DEBUG] R1 W:BSW25(Smoke Shot) A:BSA41 ATK:3 DEF:3 SPD:3 THR:5 HP:12
+[DEBUG] R2 W:BSW41(Bulkup) A:BSA8 ATK:1 DEF:0 SPD:4 THR:5 HP:10
+[DEBUG] R3 W:BSW1(Slash) A:BSA4 ATK:5 DEF:0 SPD:7 THR:4 HP:8
+[DEBUG] R4 W:BSW38(Healing Touch) A:BSA26 ATK:3 DEF:1 SPD:3 THR:3 HP:6
+[DEBUG] B0 W:BSW42(Haste) A:BSA40 ATK:1 DEF:4 SPD:1 THR:9 HP:12
+[DEBUG] B1 W:BSW40(Grace) A:BSA48 ATK:-2 DEF:5 SPD:1 THR:10 HP:15
+[DEBUG] B2 W:BSW12(Final Attack) A:BSA6 ATK:1 DEF:9 SPD:4 THR:5 HP:10
+[DEBUG] B3 W:BSW50(Corrosion) A:BSA14 ATK:-1 DEF:0 SPD:3 THR:2 HP:10
+[DEBUG] B4 W:BSW47(Cheer) A:BSA29 ATK:1 DEF:0 SPD:1 THR:4 HP:10
+
+[Tick 12] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+
+[Tick 21] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 10)
+R0 took damage: 5 (defended)
+R0's Remaining Health: 5
+[A12] B2 defense changed from 9 to 0
+Magic: R2 targeting R0 (HP: 5)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 24] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+
+[Tick 28] 3 unit(s) acting
+Ranged: R1 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+Magic: R4 targeting R0 (HP: 5)
+[HEAL] R0 healed for 5 HP (from 5 to 10/10)
+[A29] R4 healed R0 for 5 HP
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 5 to 4
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 3 to 2
+
+[Tick 36] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 12)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 11
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 37] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 11)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 1 to 3
+
+[Tick 42] 3 unit(s) acting
+Melee: B2 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A12] B2 defense changed from 0 to 0
+Melee: R0 targeting B0 (HP: 11)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 11
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 48] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 11)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 10
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 51] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 10)
+[BOON] Refreshing existing HasteSTART on B0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
+[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B0 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B0 triggered HasteEND
+[A19] B0 speed changed from 3 to 1
+[BOON] HasteSTART expired on B0 - cleaned up
+
+[Tick 56] 3 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Magic: B3 targeting R0 (HP: 20)
+[A34] R0 attack changed from 4 to 3
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 2 to 1
+Magic: R4 targeting R0 (HP: 20)
+[HEAL] R0 healed for 0 HP (from 20 to 20/20)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 60] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 10)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 9
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 61] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 9)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 1 to 3
+
+[Tick 63] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 20)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 20
+[A12] B2 defense changed from 0 to 0
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 72] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 9)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 8
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 75] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 8)
+[BOON] Refreshing existing HasteSTART on B0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
+[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B0 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B0 triggered HasteEND
+[A19] B0 speed changed from 3 to 1
+[BOON] HasteSTART expired on B0 - cleaned up
+
+[Tick 84] 9 unit(s) acting
+Ranged: R1 targeting B0 (HP: 8)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 8
+Melee: B2 targeting R0 (HP: 20)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 20
+[A12] B2 defense changed from 0 to 0
+Melee: R0 targeting B0 (HP: 8)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 8
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R0 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R0 triggered BulkupEND
+[BOON] BulkupSTART expired on R0 - cleaned up
+Melee: R3 targeting B0 (HP: 8)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 7
+  -> B0 (magic) tick reset due to melee attack!
+Magic: B1 targeting B0 (HP: 7)
+[HEAL] B0 healed for 2 HP (from 7 to 9/12)
+[A29] B1 healed B0 for 2 HP
+Magic: B1 targeting B2 (HP: 10)
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B2 for 2 HP
+Magic: B1 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B4 for 2 HP
+Magic: B4 targeting B0 (HP: 9)
+[A34] B0 attack changed from 1 to 3
+Magic: R4 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R0 for 5 HP
+Magic: R2 targeting R0 (HP: 10)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 3 to 2
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 1 to 0
+
+[Tick 85] 1 unit(s) acting
+Magic: B0 targeting B1 (HP: 15)
+[BOON] Applied HasteSTART to B1 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 96] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+
+[Tick 105] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A12] B2 defense changed from 0 to 0
+Magic: R2 targeting R0 (HP: 10)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 108] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+
+[Tick 112] 3 unit(s) acting
+Ranged: R1 targeting B1 (HP: 15)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 15
+Magic: R4 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R0 for 5 HP
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 2 to 1
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 0 to 0
+
+[Tick 120] 1 unit(s) acting
+Melee: R3 targeting B2 (HP: 10)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 5
+
+[Tick 126] 3 unit(s) acting
+Melee: B2 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A12] B2 defense changed from 0 to 0
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 4
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 132] 1 unit(s) acting
+Melee: R3 targeting B2 (HP: 4)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 0
+
+[Tick 140] 3 unit(s) acting
+Ranged: R1 targeting B4 (HP: 10)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 10
+Magic: B3 targeting R0 (HP: 20)
+[A34] R0 attack changed from 1 to 0
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 0 to 0
+Magic: R4 targeting R0 (HP: 20)
+[HEAL] R0 healed for 0 HP (from 20 to 20/20)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 144] 1 unit(s) acting
+Melee: R3 targeting B4 (HP: 10)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 5
+  -> B4 (magic) tick reset due to melee attack!
+
+[Tick 145] 1 unit(s) acting
+Magic: B4 targeting B4 (HP: 5)
+[A34] B4 attack changed from 1 to 3
+
+[Tick 147] 1 unit(s) acting
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 156] 1 unit(s) acting
+Melee: R3 targeting B4 (HP: 5)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 0
+
+[Tick 168] 7 unit(s) acting
+Ranged: R1 targeting B3 (HP: 10)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 10
+Melee: R3 targeting B3 (HP: 10)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 5
+  -> B3 (magic) tick reset due to melee attack!
+Melee: R0 targeting B3 (HP: 5)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 5
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R0 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R0 triggered BulkupEND
+[BOON] BulkupSTART expired on R0 - cleaned up
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 0 to 0
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 0 to 0
+Magic: B1 targeting B3 (HP: 5)
+[HEAL] B3 healed for 2 HP (from 5 to 7/10)
+[A29] B1 healed B3 for 2 HP
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[TEMP-BUFF] HasteSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered HasteSTART
+[A19] B1 speed changed from 1 to 3
+Magic: B1 targeting B0 (HP: 9)
+[HEAL] B0 healed for 2 HP (from 9 to 11/12)
+[A29] B1 healed B0 for 2 HP
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[TEMP-BUFF] HasteSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B1 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B1 triggered HasteEND
+[A19] B1 speed changed from 3 to 1
+[BOON] HasteSTART expired on B1 - cleaned up
+Magic: R2 targeting R0 (HP: 10)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 169] 1 unit(s) acting
+Magic: B0 targeting B3 (HP: 7)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 171] 1 unit(s) acting
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 0 to 0
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 2)
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+[A19] B3 speed changed from 3 to 5
+[DEBUG] LCM changed from 84 to 420 - rebuilding queue
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 0 to 0
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 2)
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+[A19] B3 speed changed from 5 to 3
+[BOON] HasteSTART expired on B3 - cleaned up
+[DEBUG] LCM changed from 420 to 84 - rebuilding queue
+
+[Tick 180] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 7)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 2
+  -> B3 (magic) tick reset due to melee attack!
+
+[Tick 183] 1 unit(s) acting
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 0 to 0
+Magic: B3 targeting R1 (HP: 12)
+[A34] R1 attack changed from 0 to 0
+
+[Tick 189] 1 unit(s) acting
+Magic: R2 targeting R0 (HP: 10)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 192] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 2)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 0
+
+[Tick 196] 2 unit(s) acting
+Ranged: R1 targeting B0 (HP: 11)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 11
+Magic: R4 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 204] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 11)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 10
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 205] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 10)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 1 to 3
+
+[Tick 210] 2 unit(s) acting
+Melee: R0 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 216] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 10)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 9
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 219] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 9)
+[BOON] Refreshing existing HasteSTART on B0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B0 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B0 triggered HasteEND
+[A19] B0 speed changed from 3 to 1
+[BOON] HasteSTART expired on B0 - cleaned up
+
+[Tick 224] 2 unit(s) acting
+Ranged: R1 targeting B0 (HP: 9)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 9
+Magic: R4 targeting R0 (HP: 20)
+[HEAL] R0 healed for 0 HP (from 20 to 20/20)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 228] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 9)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 8
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 229] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 8)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 1 to 3
+
+[Tick 231] 1 unit(s) acting
+Magic: R2 targeting R0 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 240] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 8)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 7
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 243] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 7)
+[BOON] Refreshing existing HasteSTART on B0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B0 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B0 triggered HasteEND
+[A19] B0 speed changed from 3 to 1
+[BOON] HasteSTART expired on B0 - cleaned up
+
+[Tick 252] 6 unit(s) acting
+Ranged: R1 targeting B0 (HP: 7)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 7
+Melee: R0 targeting B0 (HP: 7)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 7
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 7)
+[TEMP-BUFF] BulkupSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R0 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R0 triggered BulkupEND
+[BOON] BulkupSTART expired on R0 - cleaned up
+Melee: R3 targeting B0 (HP: 7)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 6
+  -> B0 (magic) tick reset due to melee attack!
+Magic: B1 targeting B0 (HP: 6)
+[HEAL] B0 healed for 2 HP (from 6 to 8/12)
+[A29] B1 healed B0 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R0 for 5 HP
+
+[Tick 253] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 8)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 1 to 3
+Battle Over! Tick limit reached (50 ticks occurred)
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW1 A=BSA45 Won=0 Draw=1
+[DEBUG] Unit R1: W=BSW25 A=BSA41 Won=0 Draw=1
+[DEBUG] Unit R2: W=BSW41 A=BSA8 Won=0 Draw=1
+[DEBUG] Unit R3: W=BSW1 A=BSA4 Won=0 Draw=1
+[DEBUG] Unit R4: W=BSW38 A=BSA26 Won=0 Draw=1
+[DEBUG] Unit B0: W=BSW42 A=BSA40 Won=0 Draw=1
+[DEBUG] Unit B1: W=BSW40 A=BSA48 Won=0 Draw=1
+[DEBUG] Unit B2: W=BSW12 A=BSA6 Won=0 Draw=1
+[DEBUG] Unit B3: W=BSW50 A=BSA14 Won=0 Draw=1
+[DEBUG] Unit B4: W=BSW47 A=BSA29 Won=0 Draw=1
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

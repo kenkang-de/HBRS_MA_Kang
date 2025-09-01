@@ -1,0 +1,228 @@
+[DEBUG] R0 W:BSW43(Vow) A:BSA13 ATK:1 DEF:1 SPD:4 THR:6 HP:11
+[DEBUG] R1 W:BSW46(Protect) A:BSA34 ATK:2 DEF:3 SPD:1 THR:8 HP:10
+[DEBUG] R2 W:BSW3(Thrust) A:BSA47 ATK:3 DEF:3 SPD:3 THR:6 HP:13
+[DEBUG] R3 W:BSW12(Final Attack) A:BSA26 ATK:4 DEF:11 SPD:2 THR:4 HP:6
+[DEBUG] R4 W:BSW8(Charge Attack) A:BSA40 ATK:4 DEF:4 SPD:3 THR:9 HP:14
+[DEBUG] B0 W:BSW16(Killer's Spirit) A:BSA38 ATK:7 DEF:0 SPD:1 THR:6 HP:12
+[DEBUG] B1 W:BSW35(Chain Lightning) A:BSA6 ATK:3 DEF:-1 SPD:4 THR:6 HP:10
+[DEBUG] B2 W:BSW5(Overpower) A:BSA12 ATK:4 DEF:1 SPD:5 THR:4 HP:10
+[DEBUG] B3 W:BSW11(Fade Attack) A:BSA20 ATK:4 DEF:1 SPD:3 THR:4 HP:12
+[DEBUG] B4 W:BSW2(Chop) A:BSA17 ATK:3 DEF:0 SPD:4 THR:2 HP:12
+
+[Tick 12] 1 unit(s) acting
+Melee: B2 targeting R4 (HP: 14)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 14
+
+[Tick 15] 3 unit(s) acting
+Melee: B4 targeting R4 (HP: 14)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 14
+[A02] R4 defense changed from 4 to 3
+Magic: B1 targeting R4 (HP: 14)
+R4 took damage: 3 (pierced)
+R4's Remaining Health: 11
+Magic: B1 targeting R1 (HP: 10)
+R1 took damage: 3 (pierced)
+R1's Remaining Health: 7
+Magic: B1 targeting R0 (HP: 11)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 8
+Magic: R0 targeting R4 (HP: 11)
+[A33] R4 threat changed from 9 to 11
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 7)
+[A33] R1 threat changed from 8 to 10
+[A02] R1 defense changed from 3 to 4
+
+[Tick 20] 3 unit(s) acting
+Melee: R2 targeting B0 (HP: 12)
+B0 took damage: 6 (defended)
+B0's Remaining Health: 6
+Melee: R4 targeting B0 (HP: 6)
+B0 took damage: 7 (defended)
+B0's Remaining Health: 0
+Melee: B3 targeting R4 (HP: 11)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 11
+[A10] B3 threat changed from 4 to 3
+
+[Tick 24] 1 unit(s) acting
+Melee: B2 targeting R4 (HP: 11)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 11
+
+[Tick 30] 4 unit(s) acting
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 16 (defended)
+B1's Remaining Health: 0
+[A12] R3 defense changed from 11 to 0
+Melee: B4 targeting R4 (HP: 11)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 11
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 11)
+[A33] R4 threat changed from 11 to 13
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 7)
+[A33] R1 threat changed from 10 to 12
+[A02] R1 defense changed from 4 to 5
+Magic: B1 targeting R4 (HP: 11)
+R4 took damage: 3 (pierced)
+R4's Remaining Health: 8
+Magic: B1 targeting R1 (HP: 7)
+R1 took damage: 3 (pierced)
+R1's Remaining Health: 4
+Magic: B1 targeting R0 (HP: 8)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 5
+
+[Tick 36] 1 unit(s) acting
+Melee: B2 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+
+[Tick 40] 3 unit(s) acting
+Melee: B3 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A10] B3 threat changed from 3 to 2
+Melee: R2 targeting B2 (HP: 10)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 5
+Melee: R4 targeting B2 (HP: 5)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+
+[Tick 45] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 13 to 15
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 12 to 14
+[A02] R1 defense changed from 5 to 6
+
+[Tick 48] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 15 to 17
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 14 to 16
+[A02] R1 defense changed from 6 to 7
+
+[Tick 51] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 17 to 19
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 16 to 18
+[A02] R1 defense changed from 7 to 8
+
+[Tick 54] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 19 to 21
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 18 to 20
+[A02] R1 defense changed from 8 to 9
+
+[Tick 57] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 21 to 23
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 20 to 22
+[A02] R1 defense changed from 9 to 10
+
+[Tick 60] 7 unit(s) acting
+Melee: R2 targeting B3 (HP: 12)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 7
+Melee: B3 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A10] B3 threat changed from 2 to 1
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Melee: R4 targeting B3 (HP: 7)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 2
+Melee: R3 targeting B3 (HP: 2)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 0
+[A12] R3 defense changed from 0 to 0
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 23 to 25
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 22 to 24
+[A02] R1 defense changed from 10 to 11
+Magic: R1 targeting R4 (HP: 8)
+[BOON] Applied ProtectSTART to R4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 63] 2 unit(s) acting
+Melee: B4 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+[A02] R4 defense changed from 4 to 3
+Magic: R0 targeting R4 (HP: 8)
+[A33] R4 threat changed from 25 to 27
+[A02] R4 defense changed from 3 to 4
+Magic: R0 targeting R1 (HP: 4)
+[A33] R1 threat changed from 24 to 26
+[A02] R1 defense changed from 11 to 12
+
+[Tick 64] 2 unit(s) acting
+Melee: R2 targeting B4 (HP: 12)
+B4 took damage: 6 (defended)
+B4's Remaining Health: 6
+Melee: R4 targeting B4 (HP: 6)
+B4 took damage: 6 (defended)
+B4's Remaining Health: 0
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R4
+[AFTER-ACTION] Registered after-action for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 27)
+[TEMP-BUFF] ProtectSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered ProtectSTART
+[A02] R4 defense changed from 4 to 7
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW43 A=BSA13 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW46 A=BSA34 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW3 A=BSA47 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW12 A=BSA26 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW8 A=BSA40 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW16 A=BSA38 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW35 A=BSA6 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW5 A=BSA12 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW11 A=BSA20 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW2 A=BSA17 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

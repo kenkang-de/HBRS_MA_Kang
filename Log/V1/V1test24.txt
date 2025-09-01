@@ -1,0 +1,135 @@
+[DEBUG] R0 W:BSW20(Blitz Shot) A:BSA34 ATK:4 DEF:3 SPD:3 THR:6 HP:10
+[DEBUG] R1 W:BSW33(Magic Bolt) A:BSA28 ATK:1 DEF:3 SPD:2 THR:5 HP:10
+[DEBUG] R2 W:BSW48(Meteor) A:BSA10 ATK:-1 DEF:0 SPD:4 THR:7 HP:10
+[DEBUG] R3 W:BSW39(Healing Link) A:BSA35 ATK:0 DEF:0 SPD:2 THR:3 HP:10
+[DEBUG] R4 W:BSW8(Charge Attack) A:BSA21 ATK:4 DEF:3 SPD:4 THR:5 HP:12
+[DEBUG] B0 W:BSW16(Killer's Spirit) A:BSA43 ATK:7 DEF:1 SPD:0 THR:6 HP:10
+[DEBUG] B1 W:BSW42(Haste) A:BSA19 ATK:-1 DEF:1 SPD:3 THR:2 HP:7
+[DEBUG] B2 W:BSW44(Exposure) A:BSA2 ATK:0 DEF:-1 SPD:6 THR:7 HP:10
+[DEBUG] B3 W:BSW9(Blitz Attack) A:BSA41 ATK:4 DEF:3 SPD:3 THR:7 HP:12
+[DEBUG] B4 W:BSW34(Wind Blade) A:BSA1 ATK:1 DEF:0 SPD:6 THR:4 HP:10
+
+[Tick 2] 2 unit(s) acting
+Magic: B2 targeting R2 (HP: 10)
+[A33] R2 threat changed from 7 to 5
+Magic: B2 targeting R0 (HP: 10)
+[A33] R0 threat changed from 6 to 4
+Magic: B2 targeting R1 (HP: 10)
+[A33] R1 threat changed from 5 to 3
+Magic: B4 targeting R2 (HP: 10)
+R2 took damage: 1 (pierced)
+R2's Remaining Health: 9
+Magic: B4 targeting R0 (HP: 10)
+R0 took damage: 1 (pierced)
+R0's Remaining Health: 9
+
+[Tick 3] 2 unit(s) acting
+Melee: R4 targeting B2 (HP: 10)
+B2 took damage: 9 (defended)
+B2's Remaining Health: 1
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R2 targeting B2 (HP: 1)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 0
+Magic: R2 targeting B3 (HP: 12)
+B3 took damage: 3 (pierced)
+B3's Remaining Health: 9
+Magic: R2 targeting B0 (HP: 10)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 7
+Magic: R2 targeting B4 (HP: 10)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 7
+
+[Tick 4] 4 unit(s) acting
+Ranged: R0 targeting B3 (HP: 9)
+B3 took damage: 4 (defended)
+B3's Remaining Health: 5
+Melee: B3 targeting R2 (HP: 9)
+R2 took damage: 7 (defended)
+R2's Remaining Health: 2
+  -> R2 (magic) tick reset due to melee attack!
+Magic: B1 targeting B3 (HP: 5)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting R2 (HP: 2)
+R2 took damage: 1 (pierced)
+R2's Remaining Health: 1
+Magic: B4 targeting R4 (HP: 12)
+R4 took damage: 1 (pierced)
+R4's Remaining Health: 11
+
+[Tick 6] 4 unit(s) acting
+Melee: R4 targeting B3 (HP: 5)
+B3 took damage: 4 (defended)
+B3's Remaining Health: 1
+Magic: R3 targeting R2 (HP: 1)
+[HEAL] R2 healed for 3 HP (from 1 to 4/10)
+[A29] R3 healed R2 for 3 HP
+Magic: R3 targeting R4 (HP: 11)
+[HEAL] R4 healed for 1 HP (from 11 to 12/12)
+[A29] R3 healed R4 for 3 HP
+Magic: B4 targeting R2 (HP: 4)
+R2 took damage: 1 (pierced)
+R2's Remaining Health: 3
+Magic: B4 targeting R4 (HP: 12)
+R4 took damage: 1 (pierced)
+R4's Remaining Health: 11
+Magic: R1 targeting B3 (HP: 1)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 0
+
+[Tick 8] 4 unit(s) acting
+Ranged: R0 targeting B0 (HP: 7)
+B0 took damage: 6 (defended)
+B0's Remaining Health: 1
+Magic: R2 targeting B0 (HP: 1)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 0
+Magic: R2 targeting B4 (HP: 7)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 4
+Magic: R2 targeting B1 (HP: 7)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 4
+Magic: B4 targeting R2 (HP: 3)
+R2 took damage: 1 (pierced)
+R2's Remaining Health: 2
+Magic: B4 targeting R4 (HP: 11)
+R4 took damage: 1 (pierced)
+R4's Remaining Health: 10
+
+[Tick 9] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 4)
+B4 took damage: 7 (defended)
+B4's Remaining Health: 0
+
+[Tick 11] 1 unit(s) acting
+Magic: R2 targeting B1 (HP: 4)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 1
+
+[Tick 12] 5 unit(s) acting
+Ranged: R0 targeting B1 (HP: 1)
+B1 took damage: 6 (defended)
+B1's Remaining Health: 0
+Magic: R3 targeting R2 (HP: 2)
+[HEAL] R2 healed for 3 HP (from 2 to 5/10)
+[A29] R3 healed R2 for 3 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 2 HP (from 10 to 12/12)
+[A29] R3 healed R4 for 3 HP
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW20 A=BSA34 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW33 A=BSA28 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW48 A=BSA10 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW39 A=BSA35 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW8 A=BSA21 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW16 A=BSA43 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW42 A=BSA19 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW44 A=BSA2 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW9 A=BSA41 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW34 A=BSA1 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

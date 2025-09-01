@@ -1,0 +1,609 @@
+[DEBUG] R0 W:BSW16(Killer's Spirit) A:BSA40 ATK:7 DEF:4 SPD:1 THR:10 HP:12
+[DEBUG] R1 W:BSW14(Leech Attack) A:BSA38 ATK:6 DEF:0 SPD:1 THR:5 HP:12
+[DEBUG] R2 W:BSW24(Boost Acuity) A:BSA38 ATK:4 DEF:0 SPD:3 THR:5 HP:12
+[DEBUG] R3 W:BSW12(Final Attack) A:BSA44 ATK:2 DEF:13 SPD:0 THR:8 HP:12
+[DEBUG] R4 W:BSW44(Exposure) A:BSA11 ATK:2 DEF:0 SPD:5 THR:7 HP:10
+[DEBUG] B0 W:BSW43(Vow) A:BSA50 ATK:1 DEF:4 SPD:0 THR:8 HP:15
+[DEBUG] B1 W:BSW41(Bulkup) A:BSA32 ATK:2 DEF:-1 SPD:1 THR:4 HP:10
+[DEBUG] B2 W:BSW5(Overpower) A:BSA9 ATK:5 DEF:-2 SPD:5 THR:3 HP:10
+[DEBUG] B3 W:BSW28(Heavy Shot) A:BSA20 ATK:3 DEF:1 SPD:3 THR:2 HP:12
+[DEBUG] B4 W:BSW12(Final Attack) A:BSA29 ATK:2 DEF:10 SPD:1 THR:5 HP:10
+
+[Tick 3] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 12)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 11
+Magic: R4 targeting B0 (HP: 15)
+[A33] B0 threat changed from 8 to 6
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 5 to 3
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 4 to 2
+
+[Tick 5] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 11)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 9
+[A19] B3 speed changed from 3 to 2
+[DEBUG] LCM changed from 15 to 30 - rebuilding queue
+Ranged: R2 targeting B0 (HP: 15)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 15
+
+[Tick 6] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 9)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 8
+R0 took damage: 1 (defended)
+R0's Remaining Health: 7
+Magic: R4 targeting B0 (HP: 15)
+[A33] B0 threat changed from 6 to 4
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 3 to 1
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 3 to 1
+
+[Tick 10] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 7)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 5
+[A19] B3 speed changed from 2 to 1
+[DEBUG] LCM changed from 30 to 15 - rebuilding queue
+Ranged: R2 targeting B0 (HP: 15)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 15
+
+[Tick 12] 2 unit(s) acting
+Melee: B2 targeting R0 (HP: 5)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 4
+R0 took damage: 1 (defended)
+R0's Remaining Health: 3
+Magic: R4 targeting B0 (HP: 15)
+[A33] B0 threat changed from 4 to 2
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 2 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 2 to 0
+
+[Tick 15] 6 unit(s) acting
+Melee: B4 targeting R0 (HP: 3)
+R0 took damage: 8 (defended)
+R0's Remaining Health: 0
+[A12] B4 defense changed from 10 to 0
+Melee: R1 targeting B0 (HP: 15)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 13
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+  -> B0 (magic) tick reset due to melee attack!
+Melee: R0 targeting B0 (HP: 13)
+B0 took damage: 3 (defended)
+B0's Remaining Health: 10
+  -> B0 (magic) tick reset due to melee attack!
+Magic: B1 targeting B0 (HP: 10)
+[BOON] Applied BulkupSTART to B0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 2 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 1 to 0
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 1 to 0
+
+[Tick 18] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 20] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+
+[Tick 21] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 24] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 25] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A19] B3 speed changed from 1 to 0
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+
+[Tick 27] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 30] 6 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Melee: R1 targeting B0 (HP: 10)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 8
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+  -> B0 (magic) tick reset due to melee attack!
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Magic: B1 targeting B0 (HP: 8)
+[BOON] Refreshing existing BulkupSTART on B0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting B0 (HP: 8)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 33] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 8)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 35] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 8)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 8
+
+[Tick 36] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 8)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 39] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 8)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 40] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 8)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 8
+
+[Tick 42] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 8)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 45] 6 unit(s) acting
+Ranged: R2 targeting B0 (HP: 8)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 8
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Melee: R1 targeting B0 (HP: 8)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 6
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+  -> B0 (magic) tick reset due to melee attack!
+Magic: B1 targeting B0 (HP: 6)
+[BOON] Refreshing existing BulkupSTART on B0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting B0 (HP: 6)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 48] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 6)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 50] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 6)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 6
+
+[Tick 51] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 6)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 54] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 6)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 55] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 6)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 6
+
+[Tick 57] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 6)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 60] 6 unit(s) acting
+Ranged: R2 targeting B0 (HP: 6)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 6
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Melee: R1 targeting B0 (HP: 6)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 4
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+  -> B0 (magic) tick reset due to melee attack!
+Magic: R4 targeting B0 (HP: 4)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: B1 targeting B0 (HP: 4)
+[BOON] Refreshing existing BulkupSTART on B0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 63] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 4)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 65] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 4)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 4
+
+[Tick 66] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 4)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 69] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 4)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 70] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 4)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 4
+
+[Tick 72] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 4)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 75] 6 unit(s) acting
+Ranged: R2 targeting B0 (HP: 4)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 4
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Melee: R1 targeting B0 (HP: 4)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 2
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+  -> B0 (magic) tick reset due to melee attack!
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Magic: R4 targeting B0 (HP: 2)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: B1 targeting B0 (HP: 2)
+[BOON] Refreshing existing BulkupSTART on B0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 78] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 2)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 80] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 2)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 2
+
+[Tick 81] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 2)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 84] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 2)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 85] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 2)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 2
+
+[Tick 87] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B0 (HP: 2)
+[A33] B0 threat changed from 0 to 0
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+
+[Tick 90] 6 unit(s) acting
+Ranged: R2 targeting B0 (HP: 2)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 2
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Melee: R1 targeting B0 (HP: 2)
+B0 took damage: 2 (defended)
+B0's Remaining Health: 0
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+Magic: B1 targeting B1 (HP: 10)
+[BOON] Applied BulkupSTART to B1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered BulkupSTART
+
+[Tick 93] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B1 (HP: 20)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+
+[Tick 95] 1 unit(s) acting
+Ranged: R2 targeting B1 (HP: 20)
+B1 took damage: 6 (defended)
+B1's Remaining Health: 14
+  -> B1 (magic) tick reset due to ranged attack!
+
+[Tick 96] 3 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B1 (HP: 14)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+Magic: B1 targeting B1 (HP: 14)
+[BOON] Refreshing existing BulkupSTART on B1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B1 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B1 triggered BulkupEND
+[BOON] BulkupSTART expired on B1 - cleaned up
+
+[Tick 99] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B1 (HP: 4)
+[A33] B1 threat changed from 0 to 0
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+
+[Tick 100] 1 unit(s) acting
+Ranged: R2 targeting B1 (HP: 4)
+B1 took damage: 6 (defended)
+B1's Remaining Health: 0
+
+[Tick 102] 2 unit(s) acting
+Melee: B2 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+Magic: R4 targeting B2 (HP: 10)
+[A33] B2 threat changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 0 to 0
+
+[Tick 105] 5 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+B2 took damage: 11 (defended)
+B2's Remaining Health: 0
+Melee: B4 targeting R3 (HP: 12)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 12
+[A12] B4 defense changed from 0 to 0
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 0 to 0
+
+[Tick 108] 1 unit(s) acting
+Magic: R4 targeting B3 (HP: 12)
+[A33] B3 threat changed from 0 to 0
+Magic: R4 targeting B4 (HP: 10)
+[A33] B4 threat changed from 0 to 0
+
+[Tick 110] 1 unit(s) acting
+Ranged: R2 targeting B3 (HP: 12)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 9
+Battle Over! Tick limit reached (50 ticks occurred)
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW16 A=BSA40 Won=0 Draw=1
+[DEBUG] Unit R1: W=BSW14 A=BSA38 Won=0 Draw=1
+[DEBUG] Unit R2: W=BSW24 A=BSA38 Won=0 Draw=1
+[DEBUG] Unit R3: W=BSW12 A=BSA44 Won=0 Draw=1
+[DEBUG] Unit R4: W=BSW44 A=BSA11 Won=0 Draw=1
+[DEBUG] Unit B0: W=BSW43 A=BSA50 Won=0 Draw=1
+[DEBUG] Unit B1: W=BSW41 A=BSA32 Won=0 Draw=1
+[DEBUG] Unit B2: W=BSW5 A=BSA9 Won=0 Draw=1
+[DEBUG] Unit B3: W=BSW28 A=BSA20 Won=0 Draw=1
+[DEBUG] Unit B4: W=BSW12 A=BSA29 Won=0 Draw=1
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

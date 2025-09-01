@@ -1,0 +1,237 @@
+[DEBUG] R0 W:BSW33(Magic Bolt) A:BSA12 ATK:0 DEF:1 SPD:5 THR:3 HP:10
+[DEBUG] R1 W:BSW6(Achilles' heel) A:BSA37 ATK:2 DEF:4 SPD:3 THR:7 HP:10
+[DEBUG] R2 W:BSW12(Final Attack) A:BSA10 ATK:0 DEF:10 SPD:4 THR:5 HP:10
+[DEBUG] R3 W:BSW41(Bulkup) A:BSA4 ATK:1 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] R4 W:BSW1(Slash) A:BSA45 ATK:5 DEF:5 SPD:2 THR:7 HP:10
+[DEBUG] B0 W:BSW5(Overpower) A:BSA22 ATK:2 DEF:3 SPD:3 THR:4 HP:10
+[DEBUG] B1 W:BSW7(Poison Attack) A:BSA21 ATK:3 DEF:3 SPD:4 THR:5 HP:10
+[DEBUG] B2 W:BSW20(Blitz Shot) A:BSA15 ATK:3 DEF:0 SPD:5 THR:0 HP:8
+[DEBUG] B3 W:BSW10(Reckless Attack) A:BSA50 ATK:6 DEF:4 SPD:0 THR:8 HP:15
+[DEBUG] B4 W:BSW41(Bulkup) A:BSA23 ATK:1 DEF:3 SPD:2 THR:5 HP:7
+
+[Tick 12] 3 unit(s) acting
+Ranged: B2 targeting R1 (HP: 10)
+R1 took damage: 4 (defended)
+R1's Remaining Health: 6
+Magic: R0 targeting B3 (HP: 15)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 10
+Magic: R3 targeting R1 (HP: 6)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 15] 2 unit(s) acting
+Melee: R2 targeting B3 (HP: 10)
+B3 took damage: 6 (defended)
+B3's Remaining Health: 4
+[A12] R2 defense changed from 10 to 0
+Melee: B1 targeting R1 (HP: 6)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 6
+[BOON] Applied Poison Effect to R1 (Usage: 3)
+[A28] B1 applied Poison Effect to R1 (usage: 3)
+
+[Tick 20] 2 unit(s) acting
+Melee: B0 targeting R1 (HP: 6)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 6
+R1 took damage: 0 (defended)
+R1's Remaining Health: 6
+Melee: R1 targeting B3 (HP: 4)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 4
+[A06] B3 speed changed from 0 to 0
+[DEBUG] R1 processing 2 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 7)
+[BOON] Poison Effect triggered on R1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 11
+
+[Tick 24] 3 unit(s) acting
+Ranged: B2 targeting R1 (HP: 11)
+R1 took damage: 4 (defended)
+R1's Remaining Health: 7
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B3 (HP: 4)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 0
+
+[Tick 30] 4 unit(s) acting
+Melee: R2 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A12] R2 defense changed from 0 to 0
+Melee: R4 targeting B1 (HP: 10)
+B1 took damage: 2 (defended)
+B1's Remaining Health: 8
+Melee: B1 targeting R1 (HP: 7)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 7
+[BOON] Refreshing existing Poison Effect on R1
+[A28] B1 applied Poison Effect to R1 (usage: 3)
+Magic: B4 targeting B1 (HP: 8)
+[BOON] Applied BulkupSTART to B1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 36] 3 unit(s) acting
+Ranged: B2 targeting R1 (HP: 7)
+R1 took damage: 4 (defended)
+R1's Remaining Health: 3
+Magic: R3 targeting R1 (HP: 3)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B1 (HP: 8)
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 3
+
+[Tick 40] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 3)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 3
+[A06] B1 speed changed from 4 to 3
+[DEBUG] R1 processing 2 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 7)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+[AFTER-ACTION] R1 performs after-action on B1 (threat: 5)
+[BOON] Poison Effect triggered on B1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 0
+
+[Tick 45] 1 unit(s) acting
+Melee: R2 targeting B4 (HP: 7)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 7
+[A12] R2 defense changed from 0 to 0
+
+[Tick 48] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 10)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 7
+Magic: R3 targeting R4 (HP: 7)
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B4 (HP: 7)
+B4 took damage: 5 (pierced)
+B4's Remaining Health: 2
+
+[Tick 60] 7 unit(s) acting
+Ranged: B2 targeting R4 (HP: 7)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 4
+Melee: B0 targeting R4 (HP: 4)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 4
+R4 took damage: 0 (defended)
+R4's Remaining Health: 4
+Melee: R2 targeting B4 (HP: 2)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 2
+[A12] R2 defense changed from 0 to 0
+Melee: R4 targeting B4 (HP: 2)
+B4 took damage: 2 (defended)
+B4's Remaining Health: 0
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R4
+[AFTER-ACTION] Registered after-action for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered BulkupSTART
+Magic: B4 targeting B0 (HP: 10)
+[BOON] Applied BulkupSTART to B0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B0 (HP: 10)
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 5
+Magic: R3 targeting R4 (HP: 14)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 72] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 14)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 11
+Magic: R0 targeting B0 (HP: 5)
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 20 - rebuilding queue
+Magic: R3 targeting R4 (HP: 11)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 75] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 8)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 8
+[A12] R2 defense changed from 0 to 0
+
+[Tick 80] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 8)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 8
+[A12] R2 defense changed from 0 to 0
+
+[Tick 84] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 11)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 8
+Magic: R3 targeting R4 (HP: 8)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B2 (HP: 8)
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 3
+
+[Tick 85] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 3)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 3
+[A12] R2 defense changed from 0 to 0
+
+[Tick 88] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 8)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 5
+Magic: R3 targeting R4 (HP: 5)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R0 targeting B2 (HP: 3)
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 0
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW33 A=BSA12 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW6 A=BSA37 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW12 A=BSA10 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW41 A=BSA4 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW1 A=BSA45 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW5 A=BSA22 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW7 A=BSA21 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW20 A=BSA15 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW10 A=BSA50 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW41 A=BSA23 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

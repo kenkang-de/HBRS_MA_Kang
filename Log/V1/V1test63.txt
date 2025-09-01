@@ -1,0 +1,451 @@
+[DEBUG] R0 W:BSW3(Thrust) A:BSA2 ATK:3 DEF:-1 SPD:8 THR:4 HP:10
+[DEBUG] R1 W:BSW9(Blitz Attack) A:BSA20 ATK:3 DEF:1 SPD:4 THR:4 HP:12
+[DEBUG] R2 W:BSW23(All-Out Assault) A:BSA28 ATK:4 DEF:3 SPD:3 THR:6 HP:10
+[DEBUG] R3 W:BSW37(Freeze) A:BSA43 ATK:1 DEF:1 SPD:0 THR:5 HP:10
+[DEBUG] R4 W:BSW47(Cheer) A:BSA39 ATK:1 DEF:2 SPD:1 THR:7 HP:12
+[DEBUG] B0 W:BSW10(Reckless Attack) A:BSA25 ATK:7 DEF:1 SPD:2 THR:3 HP:8
+[DEBUG] B1 W:BSW36(Tetrodo) A:BSA23 ATK:1 DEF:3 SPD:3 THR:3 HP:7
+[DEBUG] B2 W:BSW45(Fatigue) A:BSA42 ATK:0 DEF:6 SPD:0 THR:10 HP:12
+[DEBUG] B3 W:BSW46(Protect) A:BSA14 ATK:-1 DEF:0 SPD:3 THR:2 HP:10
+[DEBUG] B4 W:BSW6(Achilles' heel) A:BSA17 ATK:1 DEF:0 SPD:5 THR:3 HP:12
+
+[Tick 15] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+
+[Tick 24] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 12)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 12
+[A06] R4 speed changed from 1 to 0
+
+[Tick 30] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 12)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 11
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 11)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 11
+
+[Tick 40] 3 unit(s) acting
+Ranged: R2 targeting B2 (HP: 11)
+[A10] R2 threat changed from 6 to 7
+[A04] R2 attack changed from 4 to 6
+B2 took damage: 0 (defended)
+B2's Remaining Health: 11
+Magic: B1 targeting R4 (HP: 12)
+[BOON] Applied Tetrodo Effect to R4 (Usage: 2)
+[A28] B1 applied Tetrodo Effect to R4 (usage: 2)
+Magic: B3 targeting B2 (HP: 11)
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 45] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 11)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 11
+
+[Tick 48] 1 unit(s) acting
+Melee: B4 targeting R2 (HP: 10)
+R2 took damage: 0 (defended)
+R2's Remaining Health: 10
+[A06] R2 speed changed from 3 to 2
+
+[Tick 60] 3 unit(s) acting
+Melee: B0 targeting R2 (HP: 10)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 5
+R2 took damage: 7 (defended)
+R2's Remaining Health: 3
+  -> R2 (ranged) delayed by 1 tick(s) due to 7/10 damage!
+Melee: R1 targeting B2 (HP: 11)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 10
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 72] 1 unit(s) acting
+Melee: B4 targeting R2 (HP: 3)
+R2 took damage: 0 (defended)
+R2's Remaining Health: 3
+[A06] R2 speed changed from 2 to 1
+
+[Tick 75] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 80] 2 unit(s) acting
+Magic: B3 targeting B2 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R2 (HP: 3)
+[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
+[A28] B1 applied Tetrodo Effect to R2 (usage: 2)
+
+[Tick 81] 1 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+[A10] R2 threat changed from 7 to 8
+[A04] R2 attack changed from 6 to 8
+B2 took damage: 2 (defended)
+B2's Remaining Health: 8
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for R2
+[AFTER-ACTION] Registered after-action for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[BOON] Tetrodo Effect triggered on R2 (Usage: 2/2)
+[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
+R2 took damage: 5 (pierced)
+R2's Remaining Health: 0
+  -> B2 (magic) tick reset due to ranged attack!
+
+[Tick 90] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 8)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 7
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+
+[Tick 96] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 12)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 12
+[A06] R4 speed changed from 0 to 0
+
+[Tick 105] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+
+[Tick 120] 6 unit(s) acting
+Melee: B0 targeting R4 (HP: 12)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 2
+R4 took damage: 8 (defended)
+R4's Remaining Health: 4
+  -> R4 (magic) tick reset due to melee attack!
+Melee: B4 targeting R4 (HP: 4)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 4
+[A06] R4 speed changed from 0 to 0
+Melee: R0 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+Melee: R1 targeting B2 (HP: 7)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 6
+  -> B2 (magic) tick reset due to melee attack!
+Magic: B1 targeting R4 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on R4
+[A28] B1 applied Tetrodo Effect to R4 (usage: 2)
+Magic: B3 targeting B2 (HP: 6)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 135] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 6)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 6
+
+[Tick 144] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 4)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 4
+[A06] R4 speed changed from 0 to 0
+
+[Tick 150] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 6)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 5
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+
+[Tick 160] 2 unit(s) acting
+Magic: B3 targeting B2 (HP: 5)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R4 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on R4
+[A28] B1 applied Tetrodo Effect to R4 (usage: 2)
+
+[Tick 165] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+
+[Tick 168] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 4)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 4
+[A06] R4 speed changed from 0 to 0
+
+[Tick 180] 3 unit(s) acting
+Melee: R1 targeting B2 (HP: 5)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 4
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 4)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 4
+Melee: B0 targeting R4 (HP: 4)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 0
+R4 took damage: 8 (defended)
+R4's Remaining Health: 0
+
+[Tick 192] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 195] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 4)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 4
+
+[Tick 200] 2 unit(s) acting
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+
+[Tick 210] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 4)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 3
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 3)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 3
+
+[Tick 216] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 225] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 3)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 3
+
+[Tick 240] 5 unit(s) acting
+Melee: R1 targeting B2 (HP: 3)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 2
+  -> B2 (magic) tick reset due to melee attack!
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+Melee: R0 targeting B2 (HP: 2)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 2
+Magic: B3 targeting B2 (HP: 2)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+
+[Tick 255] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 2)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 2
+
+[Tick 264] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 270] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 2)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 1
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 1)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 1
+
+[Tick 280] 2 unit(s) acting
+Magic: B3 targeting B2 (HP: 1)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+
+[Tick 285] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 1)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 1
+
+[Tick 288] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 300] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 1)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 0
+
+[Tick 312] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 315] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 7)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 7
+
+[Tick 320] 2 unit(s) acting
+Magic: B3 targeting B1 (HP: 7)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 3 to 6
+
+[Tick 330] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 7)
+B1 took damage: 1 (defended)
+B1's Remaining Health: 6
+  -> B1 (magic) tick reset due to melee attack!
+Melee: R0 targeting B1 (HP: 6)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 6
+
+[Tick 333] 1 unit(s) acting
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B1 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B1 triggered ProtectEND
+[A02] B1 defense changed from 6 to 3
+[BOON] ProtectSTART expired on B1 - cleaned up
+
+[Tick 336] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 345] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 6)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 6
+
+[Tick 360] 4 unit(s) acting
+Melee: R1 targeting B1 (HP: 6)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 2
+  -> B1 (magic) tick reset due to melee attack!
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+Melee: R0 targeting B1 (HP: 2)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 2
+Magic: B3 targeting B1 (HP: 2)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 363] 1 unit(s) acting
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 3 to 6
+
+[Tick 375] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 2)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 2
+
+[Tick 384] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 10
+[A06] R3 speed changed from 0 to 0
+
+[Tick 390] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 2)
+B1 took damage: 1 (defended)
+B1's Remaining Health: 1
+  -> B1 (magic) tick reset due to melee attack!
+Melee: R0 targeting B1 (HP: 1)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 1
+
+[Tick 393] 1 unit(s) acting
+Magic: B1 targeting R3 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B1 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B1 triggered ProtectEND
+[A02] B1 defense changed from 6 to 3
+[BOON] ProtectSTART expired on B1 - cleaned up
+
+[Tick 400] 1 unit(s) acting
+Magic: B3 targeting B1 (HP: 1)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Battle Over! Tick limit reached (50 ticks occurred)
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW3 A=BSA2 Won=0 Draw=1
+[DEBUG] Unit R1: W=BSW9 A=BSA20 Won=0 Draw=1
+[DEBUG] Unit R2: W=BSW23 A=BSA28 Won=0 Draw=1
+[DEBUG] Unit R3: W=BSW37 A=BSA43 Won=0 Draw=1
+[DEBUG] Unit R4: W=BSW47 A=BSA39 Won=0 Draw=1
+[DEBUG] Unit B0: W=BSW10 A=BSA25 Won=0 Draw=1
+[DEBUG] Unit B1: W=BSW36 A=BSA23 Won=0 Draw=1
+[DEBUG] Unit B2: W=BSW45 A=BSA42 Won=0 Draw=1
+[DEBUG] Unit B3: W=BSW46 A=BSA14 Won=0 Draw=1
+[DEBUG] Unit B4: W=BSW6 A=BSA17 Won=0 Draw=1
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

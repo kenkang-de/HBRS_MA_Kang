@@ -69,7 +69,7 @@ inline void TestRunner::printStatus(const std::string& message) {
 }
 
 inline bool TestRunner::runSingleTest(int testNumber) {
-    printStatus("Running test " + std::to_string(testNumber) + "...");
+    // printStatus("Running test " + std::to_string(testNumber) + "...");
     
     // Create target file path (absolute path)
     std::filesystem::path currentPath = std::filesystem::current_path();
@@ -107,7 +107,7 @@ inline bool TestRunner::runSingleTest(int testNumber) {
         file.close();
     }
     
-    printStatus("Test " + std::to_string(testNumber) + " completed -> " + targetFile);
+    // printStatus("Test " + std::to_string(testNumber) + " completed -> " + targetFile);
     return true;
 }
 
@@ -121,8 +121,8 @@ inline bool TestRunner::runTestSuite(int startTest, int endTest) {
         return false;
     }
     
-    printStatus("Starting test suite: " + testBaseName + std::to_string(startTest) + 
-                " to " + testBaseName + std::to_string(endTest));
+    // printStatus("Starting test suite: " + testBaseName + std::to_string(startTest) + 
+    //            " to " + testBaseName + std::to_string(endTest));
     
     int successCount = 0;
     int totalTests = endTest - startTest + 1;
@@ -135,8 +135,7 @@ inline bool TestRunner::runTestSuite(int startTest, int endTest) {
         }
     }
     
-    printStatus("Test suite completed: " + std::to_string(successCount) + "/" + 
-                std::to_string(totalTests) + " tests successful");
+    std::cout << "Completed " << successCount << "/" << totalTests << " simulations successfully" << std::endl;
     
     return successCount == totalTests;
 }
@@ -146,14 +145,14 @@ inline bool TestRunner::runStandardTestSuite() {
 }
 
 inline void TestRunner::cleanOldTests(int startTest, int endTest) {
-    printStatus("Cleaning old test files...");
+    // printStatus("Cleaning old test files...");
     
     for (int i = startTest; i <= endTest; ++i) {
         std::string testFile = logDirectory + testBaseName + std::to_string(i) + ".txt";
         if (std::filesystem::exists(testFile)) {
             try {
                 std::filesystem::remove(testFile);
-                printStatus("Removed old file: " + testFile);
+                // printStatus("Removed old file: " + testFile);
             } catch (const std::exception& e) {
                 std::cerr << "Warning: Could not remove " << testFile << ": " << e.what() << std::endl;
             }

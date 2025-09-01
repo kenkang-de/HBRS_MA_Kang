@@ -1,0 +1,176 @@
+[DEBUG] R0 W:BSW25(Smoke Shot) A:BSA25 ATK:5 DEF:1 SPD:4 THR:1 HP:8
+[DEBUG] R1 W:BSW34(Wind Blade) A:BSA43 ATK:3 DEF:1 SPD:1 THR:3 HP:10
+[DEBUG] R2 W:BSW19(Momentum) A:BSA18 ATK:3 DEF:1 SPD:3 THR:1 HP:8
+[DEBUG] R3 W:BSW2(Chop) A:BSA10 ATK:3 DEF:0 SPD:5 THR:3 HP:10
+[DEBUG] R4 W:BSW46(Protect) A:BSA19 ATK:-1 DEF:1 SPD:3 THR:2 HP:7
+[DEBUG] B0 W:BSW6(Achilles' heel) A:BSA47 ATK:2 DEF:3 SPD:2 THR:8 HP:13
+[DEBUG] B1 W:BSW3(Thrust) A:BSA40 ATK:4 DEF:4 SPD:4 THR:7 HP:12
+[DEBUG] B2 W:BSW47(Cheer) A:BSA30 ATK:1 DEF:2 SPD:1 THR:6 HP:10
+[DEBUG] B3 W:BSW47(Cheer) A:BSA4 ATK:1 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] B4 W:BSW22(Delay Shot) A:BSA36 ATK:2 DEF:2 SPD:3 THR:4 HP:10
+
+[Tick 12] 2 unit(s) acting
+Melee: R3 targeting B0 (HP: 13)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 13
+[A02] B0 defense changed from 3 to 2
+Magic: B3 targeting B0 (HP: 13)
+[A34] B0 attack changed from 2 to 4
+
+[Tick 15] 2 unit(s) acting
+Ranged: R0 targeting B0 (HP: 13)
+B0 took damage: 3 (defended)
+B0's Remaining Health: 10
+Melee: B1 targeting R1 (HP: 10)
+R1 took damage: 7 (defended)
+R1's Remaining Health: 3
+  -> R1 (magic) tick reset due to melee attack!
+
+[Tick 16] 1 unit(s) acting
+Magic: R1 targeting B1 (HP: 12)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 9
+Magic: R1 targeting B0 (HP: 10)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 7
+
+[Tick 20] 3 unit(s) acting
+Ranged: B4 targeting R1 (HP: 3)
+R1 took damage: 1 (defended)
+R1's Remaining Health: 2
+[A20] R1 delayed by 1 intervals (60 ticks)
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B1 (HP: 9)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 9
+Magic: R4 targeting R1 (HP: 2)
+[BOON] Applied ProtectSTART to R1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 21] 1 unit(s) acting
+Magic: R1 targeting B1 (HP: 9)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 6
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 3)
+[TEMP-BUFF] ProtectSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered ProtectSTART
+[A02] R1 defense changed from 1 to 4
+Magic: R1 targeting B0 (HP: 7)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 4
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 3)
+[TEMP-BUFF] ProtectSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R1 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R1 triggered ProtectEND
+[A02] R1 defense changed from 4 to 1
+[BOON] ProtectSTART expired on R1 - cleaned up
+
+[Tick 24] 2 unit(s) acting
+Melee: R3 targeting B1 (HP: 6)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 6
+[A02] B1 defense changed from 4 to 3
+Magic: B3 targeting B1 (HP: 6)
+[A34] B1 attack changed from 4 to 6
+
+[Tick 30] 3 unit(s) acting
+Ranged: R0 targeting B1 (HP: 6)
+B1 took damage: 2 (defended)
+B1's Remaining Health: 4
+Melee: B0 targeting R1 (HP: 2)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 0
+[A06] R1 speed changed from 1 to 0
+Melee: B1 targeting R3 (HP: 10)
+R3 took damage: 12 (defended)
+R3's Remaining Health: 0
+
+[Tick 36] 1 unit(s) acting
+Magic: B3 targeting B0 (HP: 4)
+[A34] B0 attack changed from 4 to 6
+
+[Tick 40] 3 unit(s) acting
+Ranged: R2 targeting B0 (HP: 4)
+B0 took damage: 1 (defended)
+B0's Remaining Health: 3
+Ranged: B4 targeting R4 (HP: 7)
+R4 took damage: 1 (defended)
+R4's Remaining Health: 6
+[A20] R4 delayed by 1 intervals (20 ticks)
+  -> R4 (magic) tick reset due to ranged attack!
+
+[Tick 43] 1 unit(s) acting
+Magic: R4 targeting R4 (HP: 6)
+[BOON] Applied ProtectSTART to R4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R4
+[AFTER-ACTION] Registered after-action for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 2)
+[TEMP-BUFF] ProtectSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered ProtectSTART
+[A02] R4 defense changed from 1 to 4
+
+[Tick 45] 2 unit(s) acting
+Ranged: R0 targeting B0 (HP: 3)
+B0 took damage: 3 (defended)
+B0's Remaining Health: 0
+Melee: B1 targeting R4 (HP: 6)
+R4 took damage: 8 (defended)
+R4's Remaining Health: 0
+
+[Tick 48] 1 unit(s) acting
+Magic: B3 targeting B2 (HP: 10)
+[A34] B2 attack changed from 1 to 3
+
+[Tick 60] 6 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 7
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: B4 targeting R0 (HP: 8)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 7
+[A20] R0 delayed by 1 intervals (15 ticks)
+Ranged: R2 targeting B2 (HP: 7)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 6
+  -> B2 (magic) tick reset due to ranged attack!
+Melee: B1 targeting R0 (HP: 7)
+R0 took damage: 11 (defended)
+R0's Remaining Health: 0
+Magic: B3 targeting B2 (HP: 6)
+[A34] B2 attack changed from 3 to 5
+
+[Tick 61] 1 unit(s) acting
+Magic: B2 targeting B3 (HP: 8)
+[A34] B3 attack changed from 1 to 3
+
+[Tick 72] 1 unit(s) acting
+Magic: B3 targeting B3 (HP: 8)
+[A34] B3 attack changed from 3 to 5
+
+[Tick 75] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 8)
+R2 took damage: 11 (defended)
+R2's Remaining Health: 0
+Battle Over! Blue Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW25 A=BSA25 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW34 A=BSA43 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW19 A=BSA18 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW2 A=BSA10 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW46 A=BSA19 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW6 A=BSA47 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW3 A=BSA40 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW47 A=BSA30 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW47 A=BSA4 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW22 A=BSA36 Won=1 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

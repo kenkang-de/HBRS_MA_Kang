@@ -1,0 +1,334 @@
+[DEBUG] R0 W:BSW48(Meteor) A:BSA41 ATK:0 DEF:3 SPD:1 THR:10 HP:12
+[DEBUG] R1 W:BSW30(Fire Arrow) A:BSA16 ATK:7 DEF:0 SPD:4 THR:0 HP:6
+[DEBUG] R2 W:BSW41(Bulkup) A:BSA13 ATK:1 DEF:1 SPD:4 THR:6 HP:11
+[DEBUG] R3 W:BSW43(Vow) A:BSA22 ATK:-2 DEF:3 SPD:2 THR:5 HP:10
+[DEBUG] R4 W:BSW1(Slash) A:BSA41 ATK:4 DEF:3 SPD:3 THR:5 HP:12
+[DEBUG] B0 W:BSW50(Corrosion) A:BSA4 ATK:1 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] B1 W:BSW40(Grace) A:BSA18 ATK:-1 DEF:1 SPD:4 THR:3 HP:8
+[DEBUG] B2 W:BSW47(Cheer) A:BSA21 ATK:1 DEF:3 SPD:2 THR:5 HP:10
+[DEBUG] B3 W:BSW20(Blitz Shot) A:BSA46 ATK:4 DEF:1 SPD:2 THR:4 HP:11
+[DEBUG] B4 W:BSW46(Protect) A:BSA9 ATK:1 DEF:-2 SPD:4 THR:4 HP:10
+
+[Tick 12] 1 unit(s) acting
+Magic: B0 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B0 targeting R2 (HP: 11)
+[A34] R2 attack changed from 1 to 0
+
+[Tick 15] 4 unit(s) acting
+Ranged: R1 targeting B0 (HP: 8)
+B0 took damage: 2 (pierced)
+B0's Remaining Health: 6
+  -> B0 (magic) tick reset due to ranged attack!
+Magic: B1 targeting B0 (HP: 6)
+[HEAL] B0 healed for 2 HP (from 6 to 8/8)
+[A29] B1 healed B0 for 2 HP
+Magic: B1 targeting B2 (HP: 10)
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B2 for 2 HP
+Magic: B1 targeting B3 (HP: 11)
+[HEAL] B3 healed for 0 HP (from 11 to 11/11)
+[A29] B1 healed B3 for 2 HP
+Magic: R2 targeting R0 (HP: 12)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B4 targeting B0 (HP: 8)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 20] 2 unit(s) acting
+Melee: R4 targeting B0 (HP: 8)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 4
+  -> B0 (magic) tick reset due to melee attack!
+Magic: B0 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered ProtectSTART
+[A02] B0 defense changed from 0 to 3
+Magic: B0 targeting R2 (HP: 11)
+[A34] R2 attack changed from 0 to 0
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[TEMP-BUFF] ProtectSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B0 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B0 triggered ProtectEND
+[A02] B0 defense changed from 3 to 0
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+[Tick 25] 1 unit(s) acting
+Magic: B0 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B0 targeting R2 (HP: 11)
+[A34] R2 attack changed from 0 to 0
+
+[Tick 30] 7 unit(s) acting
+Ranged: R1 targeting B0 (HP: 4)
+B0 took damage: 2 (pierced)
+B0's Remaining Health: 2
+  -> B0 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R0 (HP: 12)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 9
+  -> R0 (magic) tick reset due to ranged attack!
+Magic: B4 targeting B2 (HP: 10)
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R3 targeting R0 (HP: 9)
+[A33] R0 threat changed from 10 to 12
+[A02] R0 defense changed from 3 to 4
+Magic: R3 targeting R2 (HP: 11)
+[A33] R2 threat changed from 6 to 8
+[A02] R2 defense changed from 1 to 2
+Magic: B2 targeting B2 (HP: 10)
+[A34] B2 attack changed from 1 to 3
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 5)
+[TEMP-BUFF] ProtectSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered ProtectSTART
+[A02] B2 defense changed from 3 to 6
+Magic: B1 targeting B2 (HP: 10)
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B2 for 2 HP
+Magic: B1 targeting B3 (HP: 11)
+[HEAL] B3 healed for 0 HP (from 11 to 11/11)
+[A29] B1 healed B3 for 2 HP
+Magic: B1 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B4 for 2 HP
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 31] 1 unit(s) acting
+Magic: R0 targeting B0 (HP: 2)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 0
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 12)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+Magic: R0 targeting B2 (HP: 10)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 7
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 12)
+[TEMP-BUFF] BulkupSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R0 - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R0 triggered BulkupEND
+[BOON] BulkupSTART expired on R0 - cleaned up
+Magic: R0 targeting B3 (HP: 11)
+B3 took damage: 3 (pierced)
+B3's Remaining Health: 8
+Magic: R0 targeting B4 (HP: 10)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 7
+
+[Tick 40] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+
+[Tick 44] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+
+[Tick 45] 4 unit(s) acting
+Ranged: R1 targeting B2 (HP: 7)
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 2
+  -> B2 (magic) tick reset due to ranged attack!
+Magic: B1 targeting B2 (HP: 2)
+[HEAL] B2 healed for 2 HP (from 2 to 4/10)
+[A29] B1 healed B2 for 2 HP
+Magic: B1 targeting B3 (HP: 8)
+[HEAL] B3 healed for 2 HP (from 8 to 10/11)
+[A29] B1 healed B3 for 2 HP
+Magic: B1 targeting B4 (HP: 7)
+[HEAL] B4 healed for 2 HP (from 7 to 9/10)
+[A29] B1 healed B4 for 2 HP
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B4 targeting B2 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 47] 1 unit(s) acting
+Magic: B2 targeting B2 (HP: 4)
+[A34] B2 attack changed from 3 to 5
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 5)
+[TEMP-BUFF] ProtectSTART on B2 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B2 - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B2 triggered ProtectEND
+[A02] B2 defense changed from 6 to 3
+[BOON] ProtectSTART expired on B2 - cleaned up
+
+[Tick 48] 5 unit(s) acting
+Ranged: R1 targeting B2 (HP: 4)
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 0
+Melee: R4 targeting B3 (HP: 10)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 7
+Magic: B4 targeting B3 (HP: 7)
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B1 targeting B3 (HP: 7)
+[HEAL] B3 healed for 2 HP (from 7 to 9/11)
+[A29] B1 healed B3 for 2 HP
+Magic: B1 targeting B4 (HP: 9)
+[HEAL] B4 healed for 1 HP (from 9 to 10/10)
+[A29] B1 healed B4 for 2 HP
+
+[Tick 51] 4 unit(s) acting
+Ranged: R1 targeting B3 (HP: 9)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 4
+Magic: B4 targeting B3 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B1 targeting B3 (HP: 4)
+[HEAL] B3 healed for 2 HP (from 4 to 6/11)
+[A29] B1 healed B3 for 2 HP
+Magic: B1 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B4 for 2 HP
+
+[Tick 52] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 6)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 3
+
+[Tick 54] 4 unit(s) acting
+Ranged: R1 targeting B3 (HP: 3)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 0
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B1 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[A29] B1 healed B4 for 2 HP
+Magic: B4 targeting B4 (HP: 10)
+[BOON] Applied ProtectSTART to B4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B4
+[AFTER-ACTION] Registered after-action for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 4)
+[TEMP-BUFF] ProtectSTART applied to B4 (Duration: 1 turns)
+[EXECUTE_EFFECT] B4 triggered ProtectSTART
+[A02] B4 defense changed from -2 to 1
+
+[Tick 56] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 10)
+B4 took damage: 3 (defended)
+B4's Remaining Health: 7
+  -> B4 (magic) tick reset due to melee attack!
+
+[Tick 57] 3 unit(s) acting
+Ranged: R1 targeting B4 (HP: 7)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 4
+  -> B4 (magic) tick reset due to ranged attack!
+Magic: B1 targeting B4 (HP: 4)
+[HEAL] B4 healed for 2 HP (from 4 to 6/10)
+[A29] B1 healed B4 for 2 HP
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 60] 5 unit(s) acting
+Ranged: R1 targeting B4 (HP: 6)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 3
+  -> B4 (magic) tick reset due to ranged attack!
+Melee: R4 targeting B1 (HP: 8)
+B1 took damage: 3 (defended)
+B1's Remaining Health: 5
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting R0 (HP: 9)
+[A33] R0 threat changed from 12 to 14
+[A02] R0 defense changed from 4 to 5
+Magic: R3 targeting R2 (HP: 11)
+[A33] R2 threat changed from 8 to 10
+[A02] R2 defense changed from 2 to 3
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 63] 2 unit(s) acting
+Ranged: R1 targeting B4 (HP: 3)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 0
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+[Tick 64] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 5)
+B1 took damage: 3 (defended)
+B1's Remaining Health: 2
+  -> B1 (magic) tick reset due to melee attack!
+
+[Tick 66] 3 unit(s) acting
+Ranged: R1 targeting B1 (HP: 2)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 0
+Magic: R3 targeting R0 (HP: 9)
+[A33] R0 threat changed from 14 to 16
+[A02] R0 defense changed from 5 to 6
+Magic: R3 targeting R2 (HP: 11)
+[A33] R2 threat changed from 10 to 12
+[A02] R2 defense changed from 3 to 4
+Magic: R2 targeting R0 (HP: 9)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW48 A=BSA41 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW30 A=BSA16 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW41 A=BSA13 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW43 A=BSA22 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW1 A=BSA41 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW50 A=BSA4 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW40 A=BSA18 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW47 A=BSA21 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW20 A=BSA46 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW46 A=BSA9 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

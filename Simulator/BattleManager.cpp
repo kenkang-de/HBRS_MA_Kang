@@ -2,6 +2,8 @@
 #include <cmath>
 #include <set>
 #include <limits.h>
+#include <ctime>
+#include <fstream>
 
 #include "BattleManager.h"
 #include "Battlefield.h"
@@ -284,6 +286,36 @@ void BattleManager::StartBattle() {
 
         // Advance the tick
         turnManager.AdvanceTick();
+    }
+
+    // Update equipment statistics after battle ends - write to simple file
+    {
+        Team* winner = battlefield.ResultCheck();
+        bool redWon = (winner && winner->GetTeamColor() == Red);
+        bool blueWon = (winner && winner->GetTeamColor() == Blue);
+        bool isDraw = !redWon && !blueWon;
+        
+        // Write equipment usage data to a simple file for RunTests to process
+        std::ofstream equipFile("battle_equipment_data.txt", std::ios::app);
+        std::cout << "[DEBUG] Recording equipment stats for " << allUnits.size() << " units" << std::endl;
+        for (Unit* unit : allUnits) {
+            if (!unit) continue;
+            
+            bool unitWon = (unit->team == Red && redWon) || (unit->team == Blue && blueWon);
+            
+            // Get equipment IDs and record usage
+            const std::string& weaponId = unit->GetWeapon().GetID();
+            const std::string& armorId = unit->GetArmor().GetID();
+            
+            std::cout << "[DEBUG] Unit " << unit->GetName() << ": W=" << weaponId << " A=" << armorId 
+                      << " Won=" << unitWon << " Draw=" << isDraw << std::endl;
+            
+            // Write to file: WeaponID,ArmorID,Won,Draw
+            equipFile << weaponId << "," << armorId << "," << (unitWon ? 1 : 0) << "," << (isDraw ? 1 : 0) << "\n";
+        }
+        equipFile.close();
+        
+        std::cout << "[BattleManager] Equipment data written to battle_equipment_data.txt" << std::endl;
     }
 
     std::cout << "Battle finished.\n";

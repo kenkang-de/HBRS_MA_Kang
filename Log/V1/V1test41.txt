@@ -1,0 +1,312 @@
+[DEBUG] R0 W:BSW14(Leech Attack) A:BSA47 ATK:5 DEF:3 SPD:0 THR:8 HP:13
+[DEBUG] R1 W:BSW47(Cheer) A:BSA36 ATK:0 DEF:2 SPD:1 THR:5 HP:10
+[DEBUG] R2 W:BSW12(Final Attack) A:BSA14 ATK:0 DEF:10 SPD:3 THR:3 HP:10
+[DEBUG] R3 W:BSW40(Grace) A:BSA4 ATK:1 DEF:0 SPD:6 THR:6 HP:8
+[DEBUG] R4 W:BSW50(Corrosion) A:BSA25 ATK:2 DEF:1 SPD:2 THR:3 HP:8
+[DEBUG] B0 W:BSW22(Delay Shot) A:BSA6 ATK:2 DEF:-1 SPD:6 THR:3 HP:10
+[DEBUG] B1 W:BSW47(Cheer) A:BSA8 ATK:1 DEF:0 SPD:4 THR:5 HP:10
+[DEBUG] B2 W:BSW25(Smoke Shot) A:BSA31 ATK:4 DEF:4 SPD:3 THR:6 HP:10
+[DEBUG] B3 W:BSW42(Haste) A:BSA15 ATK:1 DEF:0 SPD:3 THR:2 HP:8
+[DEBUG] B4 W:BSW42(Haste) A:BSA22 ATK:-2 DEF:3 SPD:2 THR:5 HP:10
+
+[Tick 2] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 13)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 13
+[A20] R0 delayed by 1 intervals (1 ticks)
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R1 (HP: 10)
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R1 for 2 HP
+Magic: R3 targeting R2 (HP: 10)
+[HEAL] R2 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R2 for 2 HP
+
+[Tick 3] 1 unit(s) acting
+Magic: B1 targeting B2 (HP: 10)
+[A34] B2 attack changed from 4 to 6
+
+[Tick 4] 5 unit(s) acting
+Ranged: B2 targeting R0 (HP: 13)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 10
+Ranged: B0 targeting R0 (HP: 10)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 10
+[A20] R0 delayed by 1 intervals (1 ticks)
+Melee: R2 targeting B2 (HP: 10)
+B2 took damage: 6 (defended)
+B2's Remaining Health: 4
+[A12] R2 defense changed from 10 to 0
+  -> B2 (ranged) delayed by 1 tick(s) due to 6/10 damage!
+Magic: R3 targeting R0 (HP: 10)
+[HEAL] R0 healed for 2 HP (from 10 to 12/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R1 (HP: 10)
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R1 for 2 HP
+Magic: R3 targeting R2 (HP: 10)
+[HEAL] R2 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R2 for 2 HP
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 6] 5 unit(s) acting
+Ranged: B0 targeting R3 (HP: 8)
+R3 took damage: 2 (defended)
+R3's Remaining Health: 6
+[A20] R3 delayed by 1 intervals (2 ticks)
+  -> R3 (magic) tick reset due to ranged attack!
+Magic: B4 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 6 to 8
+Magic: R4 targeting B2 (HP: 4)
+[A34] B2 attack changed from 8 to 7
+Magic: R4 targeting B1 (HP: 10)
+[A34] B1 attack changed from 1 to 0
+
+[Tick 8] 3 unit(s) acting
+Ranged: B0 targeting R3 (HP: 6)
+R3 took damage: 2 (defended)
+R3's Remaining Health: 4
+[A20] R3 delayed by 1 intervals (2 ticks)
+  -> R3 (magic) tick reset due to ranged attack!
+Melee: R2 targeting B2 (HP: 4)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 4
+[A12] R2 defense changed from 0 to 0
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 9] 2 unit(s) acting
+Ranged: B2 targeting R3 (HP: 4)
+R3 took damage: 7 (defended)
+R3's Remaining Health: 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered HasteSTART
+[A19] B2 speed changed from 3 to 5
+[DEBUG] LCM changed from 12 to 60 - rebuilding queue
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 7 to 9
+
+[Tick 10] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 12)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 12
+[A20] R0 delayed by 1 intervals (1 ticks)
+
+[Tick 12] 6 unit(s) acting
+Melee: R2 targeting B2 (HP: 4)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 4
+[A12] R2 defense changed from 0 to 0
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 9 to 11
+Magic: R1 targeting R0 (HP: 12)
+[A34] R0 attack changed from 5 to 7
+Magic: R4 targeting B2 (HP: 4)
+[A34] B2 attack changed from 11 to 10
+Magic: R4 targeting B1 (HP: 10)
+[A34] B1 attack changed from 0 to 0
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 13] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 12)
+R0 took damage: 7 (defended)
+R0's Remaining Health: 5
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] HasteSTART on B2 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B2 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B2 triggered HasteEND
+[A19] B2 speed changed from 5 to 3
+[BOON] HasteSTART expired on B2 - cleaned up
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+
+[Tick 20] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 10
+[A20] R1 delayed by 1 intervals (12 ticks)
+
+[Tick 22] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 10
+[A20] R1 delayed by 1 intervals (12 ticks)
+
+[Tick 24] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 10
+[A20] R1 delayed by 1 intervals (12 ticks)
+
+[Tick 25] 1 unit(s) acting
+Ranged: B2 targeting R1 (HP: 10)
+R1 took damage: 8 (defended)
+R1's Remaining Health: 2
+  -> R1 (magic) tick reset due to ranged attack!
+
+[Tick 26] 2 unit(s) acting
+Ranged: B0 targeting R1 (HP: 2)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 2
+[A20] R1 delayed by 1 intervals (12 ticks)
+Magic: R1 targeting R1 (HP: 2)
+[A34] R1 attack changed from 0 to 2
+
+[Tick 27] 1 unit(s) acting
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 10 to 12
+
+[Tick 28] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 2)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 2
+[A20] R1 delayed by 1 intervals (12 ticks)
+
+[Tick 29] 1 unit(s) acting
+Ranged: B2 targeting R1 (HP: 2)
+R1 took damage: 10 (defended)
+R1's Remaining Health: 0
+
+[Tick 30] 2 unit(s) acting
+Ranged: B0 targeting R2 (HP: 10)
+R2 took damage: 2 (defended)
+R2's Remaining Health: 8
+[A20] R2 delayed by 1 intervals (4 ticks)
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 12 to 14
+
+[Tick 32] 2 unit(s) acting
+Ranged: B0 targeting R2 (HP: 8)
+R2 took damage: 2 (defended)
+R2's Remaining Health: 6
+[A20] R2 delayed by 1 intervals (4 ticks)
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 33] 2 unit(s) acting
+Ranged: B2 targeting R2 (HP: 6)
+R2 took damage: 14 (defended)
+R2's Remaining Health: 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered HasteSTART
+[A19] B2 speed changed from 3 to 5
+[DEBUG] LCM changed from 12 to 60 - rebuilding queue
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 14 to 16
+
+[Tick 34] 1 unit(s) acting
+Ranged: B0 targeting R4 (HP: 8)
+R4 took damage: 1 (defended)
+R4's Remaining Health: 7
+[A20] R4 delayed by 1 intervals (30 ticks)
+  -> R4 (magic) tick reset due to ranged attack!
+
+[Tick 36] 3 unit(s) acting
+Magic: B1 targeting B2 (HP: 4)
+[A34] B2 attack changed from 16 to 18
+Magic: R4 targeting B2 (HP: 4)
+[A34] B2 attack changed from 18 to 17
+Magic: R4 targeting B1 (HP: 10)
+[A34] B1 attack changed from 0 to 0
+Magic: B3 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 37] 1 unit(s) acting
+Ranged: B2 targeting R4 (HP: 7)
+R4 took damage: 16 (defended)
+R4's Remaining Health: 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] HasteSTART on B2 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B2 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B2 triggered HasteEND
+[A19] B2 speed changed from 5 to 3
+[BOON] HasteSTART expired on B2 - cleaned up
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+
+[Tick 42] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 4)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 44] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+[A20] R0 delayed by 1 intervals (1 ticks)
+
+[Tick 46] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+[A20] R0 delayed by 1 intervals (1 ticks)
+
+[Tick 48] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 5)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 5
+[A20] R0 delayed by 1 intervals (1 ticks)
+Magic: B4 targeting B2 (HP: 4)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 49] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 5)
+R0 took damage: 14 (defended)
+R0's Remaining Health: 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered HasteSTART
+[A19] B2 speed changed from 3 to 5
+[DEBUG] LCM changed from 12 to 60 - rebuilding queue
+Battle Over! Blue Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW14 A=BSA47 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW47 A=BSA36 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW12 A=BSA14 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW40 A=BSA4 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW50 A=BSA25 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW22 A=BSA6 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW47 A=BSA8 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW25 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW42 A=BSA15 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW42 A=BSA22 Won=1 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

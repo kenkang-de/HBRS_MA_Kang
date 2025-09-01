@@ -3,18 +3,17 @@
 
 #include <string>
 #include "Stat.h"
+#include "TestSubject.h"
 
-
-class Armor {
-    std::string id;
+class Armor : public TestSubject {
     std::string name;
     Stat stat;
 public:
-    Armor(std::string id, std::string name, Stat stat) : id(id), name(name), stat(stat) {}
+    Armor(std::string id, std::string name, Stat stat) : TestSubject(id), name(name), stat(stat) {}
 
-    Armor() : id(""), name("Default Armor"), stat(Stat::Empty()) {} 
+    Armor() : TestSubject(""), name("Default Armor"), stat(Stat::Empty()) {} 
     
-    const std::string& GetID() const { return id; }
+    const std::string& GetName() const { return name; }
     Stat& GetStat() { return stat; }
 const Stat& GetStat() const { return stat; }
 };
