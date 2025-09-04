@@ -18,8 +18,8 @@ private:
     Stat totalStat;
     int currentHP; // Current health points, separate from totalStat
 
-    Weapon weapon;
-    Armor armor;
+    const Weapon* weapon;
+    const Armor* armor;
     
     // Boon management
     std::vector<std::unique_ptr<BoonAction>> activeBoons;
@@ -49,17 +49,14 @@ public:
     Stat& GetTotalStat();
     const Stat& GetTotalStat() const;
 
-    void SetWeapon(const Weapon& w);
-    void SetArmor(const Armor& a);
+    void SetWeapon(const Weapon* w);
+    void SetArmor(const Armor* a);
 
     void UnEquipWeapon();
     void UnEquipArmor();
 
-    Weapon& GetWeapon();
-    const Weapon& GetWeapon() const;
-
-    Armor& GetArmor();
-    const Armor& GetArmor() const;
+    const Weapon* GetWeapon() const;
+    const Armor* GetArmor() const;
 
     void TakeDamage(int amount);
     void Heal(int amount);

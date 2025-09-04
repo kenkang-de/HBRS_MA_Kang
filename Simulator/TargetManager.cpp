@@ -28,7 +28,8 @@ std::map<Unit*, std::vector<Unit*>> TargetManager::SelectTargetsForGroup(
 // HELPER: Get valid targets for one unit
 std::vector<Unit*> TargetManager::GetValidTargets(Unit* actingUnit, const std::vector<Unit*>& allUnits) {
     std::vector<Unit*> validTargets;
-    const BattleAction& action = actingUnit->GetWeapon().GetAction();
+    if (!actingUnit->GetWeapon()) return validTargets;
+    const BattleAction& action = actingUnit->GetWeapon()->GetAction();
     
     for (Unit* target : allUnits) {
         if (!target) continue;
@@ -87,7 +88,11 @@ void TargetManager::SimulateGroupTargeting(
         
         // If we found a target, simulate damage and potentially select more targets
         if (bestTarget) {
-            const BattleAction& action = actingUnit->GetWeapon().GetAction();
+            if (!actingUnit->GetWeapon()) {
+                groupTargets[actingUnit] = {};
+                continue;
+            }
+            const BattleAction& action = actingUnit->GetWeapon()->GetAction();
             std::vector<Unit*> selectedTargets = {bestTarget};
             
             // Only apply damage simulation if this is a damage-dealing action

@@ -105,7 +105,7 @@ void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map
 static std::random_device rd;
 static std::mt19937 gen(rd());
 
-Armor GetRandomArmor()
+const Armor* GetRandomArmor()
 {
     if (ArmorList.empty()) {
         throw std::runtime_error("ArmorList is empty");
@@ -113,10 +113,10 @@ Armor GetRandomArmor()
 
     std::uniform_int_distribution<> dis(0, ArmorList.size() - 1);
     int index = dis(gen);
-    return ArmorList[index];
+    return &ArmorList[index];
 }
 
-Weapon GetRandomWeapon()
+const Weapon* GetRandomWeapon()
 {
     if (WeaponList.empty()) {
         throw std::runtime_error("WeaponList is empty");
@@ -124,15 +124,15 @@ Weapon GetRandomWeapon()
 
     std::uniform_int_distribution<> dis(0, WeaponList.size() - 1);
     int index = dis(gen);
-    return WeaponList[index];
+    return &WeaponList[index];
 }
 
 void EquipUnitsRandomEquipments(std::list<Unit>& unitList)
 {
     for(Unit& unit: unitList)
     {
-        Weapon randomWeapon = GetRandomWeapon();
-        Armor randomArmor = GetRandomArmor();
+        const Weapon* randomWeapon = GetRandomWeapon();
+        const Armor* randomArmor = GetRandomArmor();
         
         unit.SetWeapon(randomWeapon);
         unit.SetArmor(randomArmor);

@@ -13,6 +13,8 @@ Unit::Unit(std::string name, std::string id)
       defaultStat(Stat()),
       totalStat(defaultStat),
       currentHP(0), // Initialize currentHP to 0, will be set when equipment is applied
+      weapon(nullptr),
+      armor(nullptr),
       isFrozen(false) // Initialize isFrozen to false by default
        {}
 
@@ -36,47 +38,53 @@ const Stat& Unit::GetTotalStat() const {
     return totalStat;
 }
 
-void Unit::SetWeapon(const Weapon& w) {
-    // Subtract old weapon stats
-    totalStat -= weapon.GetStat();
+void Unit::SetWeapon(const Weapon* w) {
+    // Subtract old weapon stats if any
+    if (weapon) {
+        totalStat -= weapon->GetStat();
+    }
     weapon = w;
-    // Add new weapon stats
-    totalStat += weapon.GetStat();
+    // Add new weapon stats if not null
+    if (weapon) {
+        totalStat += weapon->GetStat();
+    }
     // Update current HP to match new total HP
     currentHP = totalStat.GetHP();
 }
 
-void Unit::SetArmor(const Armor& a) {
-    totalStat -= armor.GetStat();
+void Unit::SetArmor(const Armor* a) {
+    // Subtract old armor stats if any
+    if (armor) {
+        totalStat -= armor->GetStat();
+    }
     armor = a;
-    totalStat += armor.GetStat();
+    // Add new armor stats if not null
+    if (armor) {
+        totalStat += armor->GetStat();
+    }
     // Update current HP to match new total HP
     currentHP = totalStat.GetHP();
 }
 
 void Unit::UnEquipWeapon() {
-    totalStat -= weapon.GetStat();
-    weapon = Weapon(); // reset to default
+    if (weapon) {
+        totalStat -= weapon->GetStat();
+        weapon = nullptr;
+    }
 }
 
 void Unit::UnEquipArmor() {
-    totalStat -= armor.GetStat();
-    armor = Armor(); // reset to default
+    if (armor) {
+        totalStat -= armor->GetStat();
+        armor = nullptr;
+    }
 }
 
-Weapon& Unit::GetWeapon() {
+const Weapon* Unit::GetWeapon() const {
     return weapon;
 }
 
-const Weapon& Unit::GetWeapon() const {
-    return weapon;
-}
-
-Armor& Unit::GetArmor() {
-    return armor;
-}
-
-const Armor& Unit::GetArmor() const {
+const Armor* Unit::GetArmor() const {
     return armor;
 }
 

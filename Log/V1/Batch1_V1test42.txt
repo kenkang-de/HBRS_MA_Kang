@@ -1,0 +1,109 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW33(Magic Bolt) A:BSA5 ATK:1 DEF:0 SPD:6 THR:3 HP:7
+[DEBUG] R1 W:BSW22(Delay Shot) A:BSA30 ATK:3 DEF:2 SPD:3 THR:5 HP:10
+[DEBUG] R2 W:BSW19(Momentum) A:BSA9 ATK:5 DEF:-2 SPD:4 THR:2 HP:10
+[DEBUG] R3 W:BSW20(Blitz Shot) A:BSA8 ATK:3 DEF:0 SPD:6 THR:3 HP:10
+[DEBUG] R4 W:BSW37(Freeze) A:BSA20 ATK:-1 DEF:1 SPD:2 THR:4 HP:12
+[DEBUG] B0 W:BSW38(Healing Touch) A:BSA23 ATK:1 DEF:3 SPD:3 THR:5 HP:7
+[DEBUG] B1 W:BSW5(Overpower) A:BSA29 ATK:5 DEF:0 SPD:2 THR:3 HP:10
+[DEBUG] B2 W:BSW3(Thrust) A:BSA36 ATK:3 DEF:2 SPD:4 THR:3 HP:10
+[DEBUG] B3 W:BSW43(Vow) A:BSA37 ATK:0 DEF:4 SPD:1 THR:7 HP:10
+[DEBUG] B4 W:BSW10(Reckless Attack) A:BSA49 ATK:6 DEF:2 SPD:0 THR:6 HP:15
+
+[Tick 2] 2 unit(s) acting
+Ranged: R3 targeting B3 (HP: 10)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 5
+  -> B3 (magic) tick reset due to ranged attack!
+Magic: R0 targeting B3 (HP: 5)
+B3 took damage: 5 (pierced)
+B3's Remaining Health: 0
+
+[Tick 3] 2 unit(s) acting
+Ranged: R2 targeting B4 (HP: 15)
+B4 took damage: 3 (defended)
+B4's Remaining Health: 12
+Melee: B2 targeting R1 (HP: 10)
+R1 took damage: 4 (defended)
+R1's Remaining Health: 6
+
+[Tick 4] 4 unit(s) acting
+Ranged: R3 targeting B4 (HP: 12)
+B4 took damage: 7 (defended)
+B4's Remaining Health: 5
+Ranged: R1 targeting B4 (HP: 5)
+B4 took damage: 1 (defended)
+B4's Remaining Health: 4
+[A20] B4 delayed by 1 intervals (1 ticks)
+Magic: B0 targeting B4 (HP: 4)
+[HEAL] B4 healed for 5 HP (from 4 to 9/15)
+[A29] B0 healed B4 for 5 HP
+Magic: R0 targeting B4 (HP: 9)
+B4 took damage: 5 (pierced)
+B4's Remaining Health: 4
+
+[Tick 6] 6 unit(s) acting
+Ranged: R3 targeting B4 (HP: 4)
+B4 took damage: 7 (defended)
+B4's Remaining Health: 0
+Melee: B1 targeting R1 (HP: 6)
+R1 took damage: 3 (defended)
+R1's Remaining Health: 3
+R1 took damage: 3 (defended)
+R1's Remaining Health: 0
+Magic: R4 targeting B0 (HP: 7)
+[BOON] Applied FreezeSTART to B0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: R0 targeting B0 (HP: 7)
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 2
+
+[Tick 8] 3 unit(s) acting
+Ranged: R3 targeting B0 (HP: 2)
+B0 took damage: 6 (defended)
+B0's Remaining Health: 0
+
+[Tick 9] 2 unit(s) acting
+Ranged: R2 targeting B1 (HP: 10)
+B1 took damage: 5 (defended)
+B1's Remaining Health: 5
+Melee: B2 targeting R4 (HP: 12)
+R4 took damage: 5 (defended)
+R4's Remaining Health: 7
+  -> R4 (magic) tick reset due to melee attack!
+
+[Tick 10] 2 unit(s) acting
+Ranged: R3 targeting B1 (HP: 5)
+B1 took damage: 9 (defended)
+B1's Remaining Health: 0
+
+[Tick 11] 1 unit(s) acting
+Magic: R4 targeting B2 (HP: 10)
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+[Tick 12] 4 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 took damage: 7 (defended)
+B2's Remaining Health: 3
+Ranged: R2 targeting B2 (HP: 3)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 0
+[AFTER-ACTION] Registered after-action for R2
+[A18] Queuing after-action: SpeedBoost for R2
+[AFTER-ACTION] No valid target found for R2
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW33 A=BSA5 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW22 A=BSA30 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW19 A=BSA9 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW20 A=BSA8 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW37 A=BSA20 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW38 A=BSA23 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW5 A=BSA29 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW3 A=BSA36 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW43 A=BSA37 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW10 A=BSA49 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

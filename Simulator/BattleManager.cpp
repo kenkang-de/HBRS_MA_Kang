@@ -91,7 +91,8 @@ void BattleManager::StartBattle() {
 
         for (Unit* unit : units) {
             // Ranged vs Melee vs Magic separation
-            ActionType actionType = unit->GetWeapon().GetAction().GetActionType();
+            if (!unit->GetWeapon()) continue;
+            ActionType actionType = unit->GetWeapon()->GetAction().GetActionType();
             if (actionType == ActionType::RANGE) {
                 rangedUnits.push_back(unit);
             } else if (actionType == ActionType::MELEE) {
@@ -124,9 +125,12 @@ void BattleManager::StartBattle() {
             for (Unit* target : targets) {
                 if (!target->IsAlive()) continue;
                 
+                // Skip if unit has no weapon
+                if (!unit->GetWeapon()) continue;
+                
                 // Create ally/enemy lists for this unit
                 std::vector<Unit*> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
+                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
                 // Execute the ranged action
                 std::cout << "Ranged: " << unit->GetName() << " targeting " << target->GetName() 
@@ -136,7 +140,7 @@ void BattleManager::StartBattle() {
                 
                 // Check if unit is frozen - if so, skip the action but still apply boons
                 if (!unit->IsFrozen()) {
-                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
                     std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
                 }
@@ -156,7 +160,7 @@ void BattleManager::StartBattle() {
                 }
                 
                 // If target is still alive and is a magic unit, reset their tick
-                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
+                if (target->IsAlive() && target->GetWeapon() && target->GetWeapon()->GetAction().GetActionType() == ActionType::MAGIC) {
                     int hpAfterAttack = target->GetCurrentHP();
                     int damageTaken = hpBeforeAttack - hpAfterAttack;
                     
@@ -184,7 +188,7 @@ void BattleManager::StartBattle() {
                 
                 // Create ally/enemy lists for this unit
                 std::vector<Unit*> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
+                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
                 // Execute the melee action
                 std::cout << "Melee: " << unit->GetName() << " targeting " << target->GetName() 
@@ -195,7 +199,7 @@ void BattleManager::StartBattle() {
                 
                 // Check if unit is frozen - if so, skip the action but still apply boons
                 if (!unit->IsFrozen()) {
-                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
                     std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
                 }
@@ -210,7 +214,7 @@ void BattleManager::StartBattle() {
                 turnManager.UpdateSpeedChanges(allUnits);
                 
                 // If target is still alive and is a ranged unit, calculate damage-based delay
-                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::RANGE) {
+                if (target->IsAlive() && target->GetWeapon() && target->GetWeapon()->GetAction().GetActionType() == ActionType::RANGE) {
                     int hpAfterAttack = target->GetCurrentHP();
                     int damageTaken = hpBeforeAttack - hpAfterAttack;
                     
@@ -224,7 +228,7 @@ void BattleManager::StartBattle() {
                 }
                 
                 // If target is still alive and is a magic unit, reset their tick
-                if (target->IsAlive() && target->GetWeapon().GetAction().GetActionType() == ActionType::MAGIC) {
+                if (target->IsAlive() && target->GetWeapon() && target->GetWeapon()->GetAction().GetActionType() == ActionType::MAGIC) {
                     int hpAfterAttack = target->GetCurrentHP();
                     int damageTaken = hpBeforeAttack - hpAfterAttack;
                     
@@ -251,7 +255,7 @@ void BattleManager::StartBattle() {
                 
                 // Create ally/enemy lists for this unit
                 std::vector<Unit*> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon().GetAction(), unitAllies, unitEnemies);
+                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
                 // Execute the magic action
                 std::cout << "Magic: " << unit->GetName() << " targeting " << target->GetName() 
@@ -259,7 +263,7 @@ void BattleManager::StartBattle() {
                 
                 // Check if unit is frozen - if so, skip the action but still apply boons
                 if (!unit->IsFrozen()) {
-                    unit->GetWeapon().GetAction().Perform(unit, target, unitAllies, unitEnemies);
+                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
                     std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
                 }
@@ -303,9 +307,9 @@ void BattleManager::StartBattle() {
             
             bool unitWon = (unit->team == Red && redWon) || (unit->team == Blue && blueWon);
             
-            // Get equipment IDs and record usage
-            const std::string& weaponId = unit->GetWeapon().GetID();
-            const std::string& armorId = unit->GetArmor().GetID();
+            // Get equipment IDs and record usage - handle null pointers
+            const std::string weaponId = unit->GetWeapon() ? unit->GetWeapon()->GetID() : "None";
+            const std::string armorId = unit->GetArmor() ? unit->GetArmor()->GetID() : "None";
             
             std::cout << "[DEBUG] Unit " << unit->GetName() << ": W=" << weaponId << " A=" << armorId 
                       << " Won=" << unitWon << " Draw=" << isDraw << std::endl;

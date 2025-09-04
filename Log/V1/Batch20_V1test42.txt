@@ -1,0 +1,121 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW31(Wrist Shot) A:BSA45 ATK:3 DEF:5 SPD:2 THR:8 HP:10
+[DEBUG] R1 W:BSW5(Overpower) A:BSA2 ATK:4 DEF:-1 SPD:6 THR:5 HP:10
+[DEBUG] R2 W:BSW24(Boost Acuity) A:BSA47 ATK:3 DEF:3 SPD:2 THR:8 HP:13
+[DEBUG] R3 W:BSW10(Reckless Attack) A:BSA9 ATK:6 DEF:-2 SPD:4 THR:4 HP:10
+[DEBUG] R4 W:BSW13(Prep Attack) A:BSA16 ATK:5 DEF:0 SPD:5 THR:2 HP:6
+[DEBUG] B0 W:BSW48(Meteor) A:BSA18 ATK:-1 DEF:1 SPD:3 THR:6 HP:8
+[DEBUG] B1 W:BSW18(Killing Spree) A:BSA36 ATK:4 DEF:2 SPD:2 THR:3 HP:10
+[DEBUG] B2 W:BSW17(Shoot) A:BSA26 ATK:6 DEF:1 SPD:5 THR:1 HP:6
+[DEBUG] B3 W:BSW46(Protect) A:BSA4 ATK:1 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] B4 W:BSW14(Leech Attack) A:BSA4 ATK:6 DEF:0 SPD:5 THR:6 HP:8
+
+[Tick 10] 1 unit(s) acting
+Melee: R1 targeting B0 (HP: 8)
+B0 took damage: 3 (defended)
+B0's Remaining Health: 5
+B0 took damage: 3 (defended)
+B0's Remaining Health: 2
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 12] 4 unit(s) acting
+Ranged: B2 targeting R0 (HP: 10)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 9
+Melee: R4 targeting B0 (HP: 2)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 0
+Melee: B4 targeting R0 (HP: 9)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 8
+[HEAL] B4 healed for 0 HP (from 8 to 8/8)
+Magic: B3 targeting B3 (HP: 8)
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B3
+[AFTER-ACTION] Registered after-action for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered ProtectSTART
+[A02] B3 defense changed from 0 to 3
+
+[Tick 15] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 8)
+R3 took damage: 3 (pierced)
+R3's Remaining Health: 7
+B3 took damage: 6 (defended)
+B3's Remaining Health: 2
+  -> B3 (magic) tick reset due to melee attack!
+
+[Tick 20] 2 unit(s) acting
+Melee: R1 targeting B3 (HP: 2)
+B3 took damage: 1 (defended)
+B3's Remaining Health: 1
+B3 took damage: 1 (defended)
+B3's Remaining Health: 0
+
+[Tick 24] 3 unit(s) acting
+Ranged: B2 targeting R0 (HP: 8)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 7
+Melee: R4 targeting B4 (HP: 8)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 3
+Melee: B4 targeting R0 (HP: 7)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 6
+[HEAL] B4 healed for 1 HP (from 3 to 4/8)
+
+[Tick 30] 5 unit(s) acting
+Ranged: R0 targeting B4 (HP: 4)
+B4 took damage: 3 (defended)
+B4's Remaining Health: 1
+[A25] B4 attack reduced from 6 to 5 (damage: 3, reduction: 1)
+Ranged: B1 targeting R0 (HP: 6)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 6
+Ranged: R2 targeting B4 (HP: 1)
+B4 took damage: 8 (defended)
+B4's Remaining Health: 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 2 (defended)
+B1's Remaining Health: 8
+B1 took damage: 2 (defended)
+B1's Remaining Health: 6
+Melee: R3 targeting B1 (HP: 6)
+R3 took damage: 3 (pierced)
+R3's Remaining Health: 4
+B1 took damage: 7 (defended)
+B1's Remaining Health: 0
+
+[Tick 36] 2 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 5
+Melee: R4 targeting B2 (HP: 6)
+B2 took damage: 4 (defended)
+B2's Remaining Health: 2
+  -> B2 (ranged) delayed by 1 tick(s) due to 4/6 damage!
+
+[Tick 40] 1 unit(s) acting
+Melee: R1 targeting B2 (HP: 2)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 0
+B2 took damage: 3 (defended)
+B2's Remaining Health: 0
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW31 A=BSA45 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW5 A=BSA2 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW24 A=BSA47 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW10 A=BSA9 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW13 A=BSA16 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW48 A=BSA18 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW18 A=BSA36 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW17 A=BSA26 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW46 A=BSA4 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW14 A=BSA4 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

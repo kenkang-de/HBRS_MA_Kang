@@ -1,0 +1,731 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW6(Achilles' heel) A:BSA20 ATK:1 DEF:1 SPD:4 THR:4 HP:12
+[DEBUG] R1 W:BSW14(Leech Attack) A:BSA6 ATK:5 DEF:-1 SPD:4 THR:4 HP:10
+[DEBUG] R2 W:BSW42(Haste) A:BSA6 ATK:0 DEF:-1 SPD:4 THR:4 HP:10
+[DEBUG] R3 W:BSW5(Overpower) A:BSA32 ATK:6 DEF:-1 SPD:2 THR:3 HP:10
+[DEBUG] R4 W:BSW42(Haste) A:BSA48 ATK:-2 DEF:5 SPD:0 THR:10 HP:15
+[DEBUG] B0 W:BSW20(Blitz Shot) A:BSA45 ATK:3 DEF:5 SPD:2 THR:7 HP:10
+[DEBUG] B1 W:BSW31(Wrist Shot) A:BSA42 ATK:2 DEF:6 SPD:2 THR:8 HP:10
+[DEBUG] B2 W:BSW47(Cheer) A:BSA40 ATK:1 DEF:4 SPD:1 THR:9 HP:12
+[DEBUG] B3 W:BSW18(Killing Spree) A:BSA45 ATK:5 DEF:5 SPD:1 THR:7 HP:10
+[DEBUG] B4 W:BSW46(Protect) A:BSA16 ATK:3 DEF:0 SPD:3 THR:2 HP:6
+
+[Tick 3] 3 unit(s) acting
+Melee: R0 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[A06] B2 speed changed from 1 to 0
+Melee: R1 targeting B2 (HP: 12)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 11
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Applied HasteSTART to R4 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 4] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 11)
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 6] 6 unit(s) acting
+Ranged: B1 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B2 (HP: 11)
+B2 took damage: 2 (defended)
+B2's Remaining Health: 9
+B2 took damage: 2 (defended)
+B2's Remaining Health: 7
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R0 targeting B2 (HP: 7)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 7
+[A06] B2 speed changed from 0 to 0
+Melee: R1 targeting B2 (HP: 7)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 6
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 8] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 6)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 9] 3 unit(s) acting
+Melee: R0 targeting B2 (HP: 6)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 6
+[A06] B2 speed changed from 0 to 0
+Melee: R1 targeting B2 (HP: 6)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 5
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 12] 8 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B1 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+[A06] B2 speed changed from 0 to 0
+Melee: R3 targeting B2 (HP: 5)
+B2 took damage: 2 (defended)
+B2's Remaining Health: 3
+B2 took damage: 2 (defended)
+B2's Remaining Health: 1
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R1 targeting B2 (HP: 1)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 0
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 15] 3 unit(s) acting
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 2 to 1
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 16] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 18] 6 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B1 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 8)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 6 to 9
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 1 to 0
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 20] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 21] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 24] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 27] 3 unit(s) acting
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 28] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 30] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 32] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 33] 3 unit(s) acting
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 36] 7 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 39] 3 unit(s) acting
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 40] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 42] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 44] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 45] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 48] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 51] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 52] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 54] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 56] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 57] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 60] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 63] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 64] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 66] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 68] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 69] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 72] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 75] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 76] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 78] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 80] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 81] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 84] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 87] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 88] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 90] 5 unit(s) acting
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 92] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 93] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 96] 7 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Ranged: B0 targeting R4 (HP: 15)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 15
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Melee: R3 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+[Tick 99] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+[A06] B1 speed changed from 0 to 0
+Melee: R1 targeting B1 (HP: 10)
+B1 took damage: 0 (defended)
+B1's Remaining Health: 10
+Magic: R2 targeting R4 (HP: 15)
+[BOON] Refreshing existing HasteSTART on R4
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 100] 1 unit(s) acting
+Magic: B4 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Battle Over! Tick limit reached (50 ticks occurred)
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW6 A=BSA20 Won=0 Draw=1
+[DEBUG] Unit R1: W=BSW14 A=BSA6 Won=0 Draw=1
+[DEBUG] Unit R2: W=BSW42 A=BSA6 Won=0 Draw=1
+[DEBUG] Unit R3: W=BSW5 A=BSA32 Won=0 Draw=1
+[DEBUG] Unit R4: W=BSW42 A=BSA48 Won=0 Draw=1
+[DEBUG] Unit B0: W=BSW20 A=BSA45 Won=0 Draw=1
+[DEBUG] Unit B1: W=BSW31 A=BSA42 Won=0 Draw=1
+[DEBUG] Unit B2: W=BSW47 A=BSA40 Won=0 Draw=1
+[DEBUG] Unit B3: W=BSW18 A=BSA45 Won=0 Draw=1
+[DEBUG] Unit B4: W=BSW46 A=BSA16 Won=0 Draw=1
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

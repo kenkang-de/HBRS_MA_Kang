@@ -1,0 +1,189 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW35(Chain Lightning) A:BSA31 ATK:4 DEF:4 SPD:1 THR:10 HP:10
+[DEBUG] R1 W:BSW25(Smoke Shot) A:BSA33 ATK:5 DEF:1 SPD:3 THR:4 HP:10
+[DEBUG] R2 W:BSW4(Berserk) A:BSA46 ATK:6 DEF:1 SPD:1 THR:5 HP:15
+[DEBUG] R3 W:BSW50(Corrosion) A:BSA39 ATK:1 DEF:2 SPD:1 THR:7 HP:12
+[DEBUG] R4 W:BSW30(Fire Arrow) A:BSA8 ATK:5 DEF:0 SPD:5 THR:3 HP:10
+[DEBUG] B0 W:BSW42(Haste) A:BSA4 ATK:1 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] B1 W:BSW47(Cheer) A:BSA34 ATK:2 DEF:3 SPD:1 THR:8 HP:10
+[DEBUG] B2 W:BSW43(Vow) A:BSA46 ATK:2 DEF:1 SPD:0 THR:6 HP:11
+[DEBUG] B3 W:BSW5(Overpower) A:BSA44 ATK:5 DEF:3 SPD:1 THR:6 HP:12
+[DEBUG] B4 W:BSW40(Grace) A:BSA32 ATK:2 DEF:-1 SPD:2 THR:4 HP:10
+
+[Tick 6] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 10)
+B1 took damage: 4 (pierced)
+B1's Remaining Health: 6
+  -> B1 (magic) tick reset due to ranged attack!
+Magic: B0 targeting B1 (HP: 6)
+[BOON] Applied HasteSTART to B1 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 7] 1 unit(s) acting
+Magic: B1 targeting B1 (HP: 6)
+[A34] B1 attack changed from 2 to 4
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 8)
+[TEMP-BUFF] HasteSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered HasteSTART
+[A19] B1 speed changed from 1 to 3
+
+[Tick 10] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 6)
+B1 took damage: 2 (defended)
+B1's Remaining Health: 4
+  -> B1 (magic) tick reset due to ranged attack!
+
+[Tick 12] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 8)
+B0 took damage: 0 (pierced)
+B0's Remaining Health: 8
+Magic: B0 targeting B0 (HP: 8)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 5 to 7
+[DEBUG] LCM changed from 30 to 210 - rebuilding queue
+
+[Tick 13] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 8)
+[A34] B0 attack changed from 1 to 3
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 5)
+[TEMP-BUFF] HasteSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B1 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B1 triggered HasteEND
+[A19] B1 speed changed from 3 to 1
+[BOON] HasteSTART expired on B1 - cleaned up
+
+[Tick 15] 1 unit(s) acting
+Magic: B4 targeting B0 (HP: 8)
+[HEAL] B0 healed for 0 HP (from 8 to 8/8)
+[A29] B4 healed B0 for 2 HP
+Magic: B4 targeting B2 (HP: 11)
+[HEAL] B2 healed for 0 HP (from 11 to 11/11)
+[A29] B4 healed B2 for 2 HP
+Magic: B4 targeting B3 (HP: 12)
+[HEAL] B3 healed for 0 HP (from 12 to 12/12)
+[A29] B4 healed B3 for 2 HP
+
+[Tick 18] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 8)
+B0 took damage: -2 (pierced)
+B0's Remaining Health: 10
+Magic: B0 targeting B0 (HP: 10)
+[BOON] Refreshing existing HasteSTART on B0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B0 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B0 triggered HasteEND
+[A19] B0 speed changed from 7 to 5
+[BOON] HasteSTART expired on B0 - cleaned up
+[DEBUG] LCM changed from 210 to 30 - rebuilding queue
+
+[Tick 20] 1 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 took damage: 5 (defended)
+B0's Remaining Health: 5
+  -> B0 (magic) tick reset due to ranged attack!
+
+[Tick 25] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 5)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered HasteSTART
+[A19] B0 speed changed from 5 to 7
+[DEBUG] LCM changed from 30 to 210 - rebuilding queue
+
+[Tick 30] 5 unit(s) acting
+Ranged: R1 targeting B0 (HP: 5)
+B0 took damage: 5 (defended)
+B0's Remaining Health: 0
+[DEBUG] LCM changed from 210 to 30 - rebuilding queue
+Melee: R2 targeting B2 (HP: 11)
+R2 took damage: 2 (pierced)
+R2's Remaining Health: 13
+B2 took damage: 5 (defended)
+B2's Remaining Health: 6
+[A02] B2 defense changed from 1 to 0
+  -> B2 (magic) tick reset due to melee attack!
+Melee: B3 targeting R0 (HP: 10)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 9
+R0 took damage: 1 (defended)
+R0's Remaining Health: 8
+  -> R0 (magic) tick reset due to melee attack!
+Magic: R0 targeting B2 (HP: 6)
+B2 took damage: 4 (pierced)
+B2's Remaining Health: 2
+Magic: R0 targeting B3 (HP: 12)
+B3 took damage: 4 (pierced)
+B3's Remaining Health: 8
+Magic: R0 targeting B1 (HP: 4)
+B1 took damage: 4 (pierced)
+B1's Remaining Health: 0
+Magic: R3 targeting B2 (HP: 2)
+[A34] B2 attack changed from 2 to 1
+Magic: R3 targeting B3 (HP: 8)
+[A34] B3 attack changed from 5 to 4
+
+[Tick 31] 1 unit(s) acting
+Magic: R0 targeting B2 (HP: 2)
+B2 took damage: 4 (pierced)
+B2's Remaining Health: 0
+Magic: R0 targeting B3 (HP: 8)
+B3 took damage: 4 (pierced)
+B3's Remaining Health: 4
+Magic: R0 targeting B4 (HP: 10)
+B4 took damage: 4 (pierced)
+B4's Remaining Health: 6
+
+[Tick 60] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 4)
+B3 took damage: 4 (pierced)
+B3's Remaining Health: 0
+
+[Tick 61] 1 unit(s) acting
+Magic: R0 targeting B4 (HP: 6)
+B4 took damage: 4 (pierced)
+B4's Remaining Health: 2
+
+[Tick 66] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 2)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 0
+[DEBUG] LCM changed from 30 to 15 - rebuilding queue
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW35 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW25 A=BSA33 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW4 A=BSA46 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW50 A=BSA39 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW30 A=BSA8 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW42 A=BSA4 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW47 A=BSA34 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW43 A=BSA46 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW5 A=BSA44 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW40 A=BSA32 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

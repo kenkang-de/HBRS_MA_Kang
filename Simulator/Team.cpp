@@ -32,8 +32,9 @@ void Team::AddUnit(Unit& newUnit) {
             
             // Debug output to show what each unit got
             std::cout << "[DEBUG] " << newUnit.GetName() 
-                      << " W:" << newUnit.GetWeapon().GetID() << "(" << newUnit.GetWeapon().GetAction().GetID() << ")"
-                      << " A:" << newUnit.GetArmor().GetID()
+                      << " W:" << (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetID() : "None") 
+                      << "(" << (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetAction().GetID() : "None") << ")"
+                      << " A:" << (newUnit.GetArmor() ? newUnit.GetArmor()->GetID() : "None")
                       << " ATK:" << newUnit.GetTotalStat().GetAttack()
                       << " DEF:" << newUnit.GetTotalStat().GetDefense()
                       << " SPD:" << newUnit.GetTotalStat().GetSpeed() 

@@ -1,0 +1,284 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW30(Fire Arrow) A:BSA3 ATK:5 DEF:-2 SPD:6 THR:4 HP:10
+[DEBUG] R1 W:BSW39(Healing Link) A:BSA38 ATK:1 DEF:0 SPD:2 THR:5 HP:12
+[DEBUG] R2 W:BSW42(Haste) A:BSA10 ATK:-1 DEF:0 SPD:4 THR:4 HP:10
+[DEBUG] R3 W:BSW36(Tetrodo) A:BSA48 ATK:-2 DEF:5 SPD:1 THR:8 HP:15
+[DEBUG] R4 W:BSW14(Leech Attack) A:BSA32 ATK:7 DEF:-1 SPD:1 THR:4 HP:10
+[DEBUG] B0 W:BSW28(Heavy Shot) A:BSA28 ATK:5 DEF:3 SPD:2 THR:5 HP:10
+[DEBUG] B1 W:BSW16(Killer's Spirit) A:BSA32 ATK:8 DEF:-1 SPD:1 THR:5 HP:10
+[DEBUG] B2 W:BSW10(Reckless Attack) A:BSA1 ATK:4 DEF:0 SPD:5 THR:6 HP:10
+[DEBUG] B3 W:BSW23(All-Out Assault) A:BSA20 ATK:2 DEF:1 SPD:4 THR:3 HP:12
+[DEBUG] B4 W:BSW15(Taunt) A:BSA24 ATK:5 DEF:2 SPD:2 THR:5 HP:12
+
+[Tick 10] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (pierced)
+B2's Remaining Health: 10
+
+[Tick 12] 1 unit(s) acting
+Melee: B2 targeting R3 (HP: 15)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 7
+R3 took damage: 2 (defended)
+R3's Remaining Health: 13
+  -> R3 (magic) tick reset due to melee attack!
+
+[Tick 13] 1 unit(s) acting
+Magic: R3 targeting B2 (HP: 7)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B2 (usage: 2)
+
+[Tick 15] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 13)
+[A10] B3 threat changed from 3 to 4
+[A04] B3 attack changed from 2 to 4
+R3 took damage: 0 (defended)
+R3's Remaining Health: 13
+Magic: R2 targeting R3 (HP: 13)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 20] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 7)
+B2 took damage: 0 (pierced)
+B2's Remaining Health: 7
+
+[Tick 24] 1 unit(s) acting
+Melee: B2 targeting R3 (HP: 13)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 4
+R3 took damage: 2 (defended)
+R3's Remaining Health: 11
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[BOON] Tetrodo Effect triggered on B2 (Usage: 2/2)
+[EXECUTE_EFFECT] B2 triggered Tetrodo Effect
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+  -> R3 (magic) tick reset due to melee attack!
+
+[Tick 25] 1 unit(s) acting
+Magic: R3 targeting B0 (HP: 10)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B0 (usage: 2)
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R3
+[AFTER-ACTION] Registered after-action for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 8)
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+[A19] R3 speed changed from 1 to 3
+
+[Tick 30] 6 unit(s) acting
+Ranged: B3 targeting R3 (HP: 11)
+[A10] B3 threat changed from 4 to 5
+[A04] B3 attack changed from 4 to 6
+R3 took damage: 1 (defended)
+R3's Remaining Health: 10
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R3 (HP: 10)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 5
+[A19] B0 speed changed from 2 to 1
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 5
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: R0 targeting B0 (HP: 5)
+B0 took damage: 4 (pierced)
+B0's Remaining Health: 1
+Melee: B4 targeting R3 (HP: 5)
+R3 took damage: 0 (defended)
+R3's Remaining Health: 5
+[A10] B4 threat changed from 5 to 6
+[A04] B4 attack changed from 5 to 4
+Magic: R2 targeting R3 (HP: 5)
+[BOON] Refreshing existing HasteSTART on R3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: R1 targeting R3 (HP: 5)
+[HEAL] R3 healed for 3 HP (from 5 to 8/15)
+[A29] R1 healed R3 for 3 HP
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 3 HP
+
+[Tick 32] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 12)
+B4 took damage: 3 (pierced)
+B4's Remaining Health: 9
+
+[Tick 33] 3 unit(s) acting
+Ranged: B3 targeting R3 (HP: 8)
+[A10] B3 threat changed from 5 to 6
+[A04] B3 attack changed from 6 to 8
+R3 took damage: 3 (defended)
+R3's Remaining Health: 5
+  -> R3 (magic) tick reset due to ranged attack!
+Magic: R2 targeting R3 (HP: 5)
+[BOON] Refreshing existing HasteSTART on R3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 34] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 12)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 11
+
+[Tick 36] 7 unit(s) acting
+Ranged: R0 targeting B3 (HP: 11)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 10
+Ranged: B0 targeting R3 (HP: 5)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 0
+[A19] B0 speed changed from 1 to 0
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 1/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 0
+[BOON] Tetrodo Effect expired on B0 - cleaned up
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 3 HP
+
+[Tick 38] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 10)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 9
+
+[Tick 39] 2 unit(s) acting
+Ranged: B3 targeting R1 (HP: 12)
+[A10] B3 threat changed from 6 to 7
+[A04] B3 attack changed from 8 to 10
+R1 took damage: 10 (defended)
+R1's Remaining Health: 2
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting R1 (HP: 2)
+[BOON] Applied HasteSTART to R1 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 40] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 9)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 8
+
+[Tick 41] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 3 HP
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 5)
+[TEMP-BUFF] HasteSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered HasteSTART
+[A19] R1 speed changed from 2 to 4
+Magic: R1 targeting R2 (HP: 10)
+[HEAL] R2 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R2 for 3 HP
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 5)
+[TEMP-BUFF] HasteSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R1 - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R1 triggered HasteEND
+[A19] R1 speed changed from 4 to 2
+[BOON] HasteSTART expired on R1 - cleaned up
+
+[Tick 42] 4 unit(s) acting
+Ranged: B3 targeting R1 (HP: 2)
+[A10] B3 threat changed from 7 to 8
+[A04] B3 attack changed from 10 to 12
+R1 took damage: 12 (defended)
+R1's Remaining Health: 0
+Ranged: R0 targeting B3 (HP: 8)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 7
+Melee: B4 targeting R0 (HP: 10)
+R0 took damage: 6 (defended)
+R0's Remaining Health: 4
+[A10] B4 threat changed from 6 to 7
+[A04] B4 attack changed from 4 to 3
+  -> R0 (ranged) delayed by 1 tick(s) due to 6/10 damage!
+Magic: R2 targeting R0 (HP: 4)
+[BOON] Applied HasteSTART to R0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+[Tick 45] 3 unit(s) acting
+Ranged: R0 targeting B3 (HP: 7)
+B3 took damage: 1 (pierced)
+B3's Remaining Health: 6
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
+[TEMP-BUFF] HasteSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered HasteSTART
+[A19] R0 speed changed from 6 to 8
+[DEBUG] LCM changed from 12 to 8 - rebuilding queue
+Ranged: B3 targeting R0 (HP: 4)
+[A10] B3 threat changed from 8 to 9
+[A04] B3 attack changed from 12 to 14
+R0 took damage: 16 (defended)
+R0's Remaining Health: 0
+[DEBUG] LCM changed from 8 to 4 - rebuilding queue
+Magic: R2 targeting R2 (HP: 10)
+[BOON] Applied HasteSTART to R2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R2
+[AFTER-ACTION] Registered after-action for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 4)
+[TEMP-BUFF] HasteSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered HasteSTART
+[A19] R2 speed changed from 4 to 6
+[DEBUG] LCM changed from 4 to 12 - rebuilding queue
+
+[Tick 48] 3 unit(s) acting
+Ranged: B3 targeting R2 (HP: 10)
+[A10] B3 threat changed from 9 to 10
+[A04] B3 attack changed from 14 to 16
+R2 took damage: 16 (defended)
+R2's Remaining Health: 0
+[DEBUG] LCM changed from 12 to 4 - rebuilding queue
+Melee: B4 targeting R4 (HP: 10)
+R4 took damage: 4 (defended)
+R4's Remaining Health: 6
+[A10] B4 threat changed from 7 to 8
+[A04] B4 attack changed from 3 to 2
+
+[Tick 51] 1 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+[A10] B3 threat changed from 10 to 11
+[A04] B3 attack changed from 16 to 18
+R4 took damage: 19 (defended)
+R4's Remaining Health: 0
+Battle Over! Blue Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW30 A=BSA3 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW39 A=BSA38 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW42 A=BSA10 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW36 A=BSA48 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW14 A=BSA32 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW28 A=BSA28 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW16 A=BSA32 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW10 A=BSA1 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW23 A=BSA20 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW15 A=BSA24 Won=1 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

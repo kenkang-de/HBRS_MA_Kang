@@ -18,9 +18,9 @@ void LoadArmorListFromCSV(const std::string& path);
 
 void LoadWeaponListFromCSV(const std::string& path);
 
-Armor GetRandomArmor();
+const Armor* GetRandomArmor();
 
-Weapon GetRandomWeapon();
+const Weapon* GetRandomWeapon();
 
 void EquipUnitsRandomEquipments(std::list<Unit>& unitList);
 

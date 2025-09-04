@@ -1,0 +1,185 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW14(Leech Attack) A:BSA8 ATK:6 DEF:0 SPD:4 THR:5 HP:10
+[DEBUG] R1 W:BSW33(Magic Bolt) A:BSA33 ATK:2 DEF:1 SPD:2 THR:4 HP:10
+[DEBUG] R2 W:BSW28(Heavy Shot) A:BSA27 ATK:8 DEF:1 SPD:3 THR:1 HP:4
+[DEBUG] R3 W:BSW40(Grace) A:BSA38 ATK:1 DEF:0 SPD:2 THR:5 HP:12
+[DEBUG] R4 W:BSW48(Meteor) A:BSA27 ATK:4 DEF:1 SPD:2 THR:6 HP:4
+[DEBUG] B0 W:BSW26(Double Shot) A:BSA39 ATK:3 DEF:2 SPD:3 THR:5 HP:12
+[DEBUG] B1 W:BSW22(Delay Shot) A:BSA43 ATK:3 DEF:1 SPD:2 THR:4 HP:10
+[DEBUG] B2 W:BSW44(Exposure) A:BSA17 ATK:-1 DEF:0 SPD:4 THR:4 HP:12
+[DEBUG] B3 W:BSW37(Freeze) A:BSA39 ATK:1 DEF:2 SPD:1 THR:7 HP:12
+[DEBUG] B4 W:BSW45(Fatigue) A:BSA45 ATK:1 DEF:5 SPD:0 THR:10 HP:12
+
+[Tick 3] 2 unit(s) acting
+Melee: R0 targeting B4 (HP: 12)
+B4 took damage: 1 (defended)
+B4's Remaining Health: 11
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+  -> B4 (magic) tick reset due to melee attack!
+Magic: B2 targeting R4 (HP: 4)
+[A33] R4 threat changed from 6 to 4
+Magic: B2 targeting R0 (HP: 10)
+[A33] R0 threat changed from 5 to 3
+Magic: B2 targeting R3 (HP: 12)
+[A33] R3 threat changed from 5 to 3
+
+[Tick 4] 2 unit(s) acting
+Ranged: R2 targeting B4 (HP: 11)
+B4 took damage: 11 (defended)
+B4's Remaining Health: 0
+[A19] R2 speed changed from 3 to 2
+Ranged: B0 targeting R1 (HP: 10)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 8
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R4 (HP: 4)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 2
+  -> R4 (magic) tick reset due to ranged attack!
+
+[Tick 6] 6 unit(s) acting
+Ranged: B1 targeting R1 (HP: 8)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 6
+[A20] R1 delayed by 1 intervals (6 ticks)
+  -> R1 (magic) tick reset due to ranged attack!
+Melee: R0 targeting B3 (HP: 12)
+B3 took damage: 4 (defended)
+B3's Remaining Health: 8
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+  -> B3 (magic) tick reset due to melee attack!
+Magic: B2 targeting R1 (HP: 6)
+[A33] R1 threat changed from 4 to 2
+Magic: B2 targeting R4 (HP: 2)
+[A33] R4 threat changed from 4 to 2
+Magic: B2 targeting R0 (HP: 10)
+[A33] R0 threat changed from 3 to 1
+Magic: R3 targeting R1 (HP: 6)
+[HEAL] R1 healed for 2 HP (from 6 to 8/10)
+[A29] R3 healed R1 for 2 HP
+Magic: R3 targeting R4 (HP: 2)
+[HEAL] R4 healed for 2 HP (from 2 to 4/4)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R0 for 2 HP
+Magic: R4 targeting B3 (HP: 8)
+B3 took damage: 3 (pierced)
+B3's Remaining Health: 5
+Magic: R4 targeting B0 (HP: 12)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 9
+Magic: R4 targeting B1 (HP: 10)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 7
+Magic: R4 targeting B2 (HP: 12)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 9
+
+[Tick 7] 1 unit(s) acting
+Magic: B3 targeting R3 (HP: 12)
+[BOON] Applied FreezeSTART to R3 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+[Tick 8] 3 unit(s) acting
+Ranged: B0 targeting R3 (HP: 12)
+R3 took damage: 3 (defended)
+R3's Remaining Health: 9
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R1 (HP: 8)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 6
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B3 (HP: 5)
+B3 took damage: 14 (defended)
+B3's Remaining Health: 0
+[A19] R2 speed changed from 2 to 1
+
+[Tick 9] 2 unit(s) acting
+Melee: R0 targeting B0 (HP: 9)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 5
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+Magic: B2 targeting R3 (HP: 9)
+[A33] R3 threat changed from 3 to 1
+Magic: B2 targeting R1 (HP: 6)
+[A33] R1 threat changed from 2 to 0
+Magic: B2 targeting R4 (HP: 4)
+[A33] R4 threat changed from 2 to 0
+
+[Tick 10] 2 unit(s) acting
+Magic: R3 targeting R0 (HP: 10)
+  -> R3 is frozen and cannot act!
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R3
+[AFTER-ACTION] Registered after-action for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 1)
+[TEMP-BUFF] FreezeSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered FreezeSTART
+Magic: R3 targeting R2 (HP: 4)
+  -> R3 is frozen and cannot act!
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R3
+[AFTER-ACTION] Registered after-action for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 1)
+[TEMP-BUFF] FreezeSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R3 - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R3 - cleaned up
+Magic: R3 targeting R1 (HP: 6)
+  -> R3 is frozen and cannot act!
+Magic: R1 targeting B0 (HP: 5)
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 0
+[DEBUG] LCM changed from 12 to 4 - rebuilding queue
+
+[Tick 12] 4 unit(s) acting
+Ranged: B1 targeting R0 (HP: 10)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 7
+[A20] R0 delayed by 1 intervals (1 ticks)
+Melee: R0 targeting B1 (HP: 7)
+B1 took damage: 5 (defended)
+B1's Remaining Health: 2
+[HEAL] R0 healed for 3 HP (from 7 to 10/10)
+  -> B1 (ranged) delayed by 1 tick(s) due to 5/10 damage!
+Magic: R4 targeting B1 (HP: 2)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 0
+Magic: R4 targeting B2 (HP: 9)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 6
+Magic: B2 targeting R0 (HP: 10)
+[A33] R0 threat changed from 1 to 0
+Magic: B2 targeting R2 (HP: 4)
+[A33] R2 threat changed from 1 to 0
+Magic: B2 targeting R3 (HP: 9)
+[A33] R3 threat changed from 1 to 0
+
+[Tick 13] 1 unit(s) acting
+Magic: B2 targeting R0 (HP: 10)
+[A33] R0 threat changed from 0 to 0
+Magic: B2 targeting R1 (HP: 6)
+[A33] R1 threat changed from 0 to 0
+Magic: B2 targeting R2 (HP: 4)
+[A33] R2 threat changed from 0 to 0
+
+[Tick 14] 4 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+B2 took damage: 16 (defended)
+B2's Remaining Health: 0
+[A19] R2 speed changed from 1 to 0
+Battle Over! Red Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW14 A=BSA8 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW33 A=BSA33 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW28 A=BSA27 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW40 A=BSA38 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW48 A=BSA27 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW26 A=BSA39 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW22 A=BSA43 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW44 A=BSA17 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW37 A=BSA39 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW45 A=BSA45 Won=0 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.

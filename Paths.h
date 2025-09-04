@@ -9,6 +9,7 @@ namespace Paths {
     const std::string SIMULATOR_DIR = "Simulator/";
     const std::string ANALYSIS_DIR = "Analysis/";
     const std::string SAMPLING_DIR = "Sampling/";
+    const std::string ELEMENT_DIR = "Element/";
     const std::string LOG_DIR = "Log/";
     const std::string DATA_DIR = "Simulator/Data/";
     
@@ -23,14 +24,22 @@ namespace Paths {
     namespace FromSampling {
         const std::string SIMULATOR_EXE = "../" + Paths::SIMULATOR_EXE;
         const std::string LOG_V1_DIR = "../" + Paths::LOG_V1_DIR;
+        const std::string ELEMENT_DIR = "../" + Paths::ELEMENT_DIR;
     }
     
     namespace FromAnalysis {
         const std::string LOG_V1_DIR = "../" + Paths::LOG_V1_DIR;
+        const std::string ELEMENT_DIR = "../" + Paths::ELEMENT_DIR;
     }
     
     namespace FromSimulator {
-        const std::string ELEMENT_ANALYSIS_REPORT = "../" + Paths::LOG_V1_DIR + "ElementAnalysisV1_Report.csv";
+        const std::string ELEMENT_DIR = "../" + Paths::ELEMENT_DIR;
+    }
+    
+    namespace FromElement {
+        const std::string DATA_DIR = "../" + Paths::DATA_DIR;
+        const std::string SIMULATOR_DIR = "../" + Paths::SIMULATOR_DIR;
+        const std::string SAMPLING_DIR = "../" + Paths::SAMPLING_DIR;
     }
     
     // Output files

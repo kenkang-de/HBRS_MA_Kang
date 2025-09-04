@@ -1,0 +1,176 @@
+[Simulator] Element data not found, falling back to CSV files
+[Simulator] Config loading failed, using random equipment
+[DEBUG] R0 W:BSW13(Prep Attack) A:BSA19 ATK:1 DEF:1 SPD:5 THR:2 HP:7
+[DEBUG] R1 W:BSW4(Berserk) A:BSA23 ATK:5 DEF:3 SPD:3 THR:4 HP:11
+[DEBUG] R2 W:BSW5(Overpower) A:BSA17 ATK:3 DEF:0 SPD:4 THR:2 HP:12
+[DEBUG] R3 W:BSW21(Poison Arrow) A:BSA38 ATK:3 DEF:0 SPD:3 THR:3 HP:12
+[DEBUG] R4 W:BSW19(Momentum) A:BSA22 ATK:2 DEF:3 SPD:2 THR:3 HP:10
+[DEBUG] B0 W:BSW16(Killer's Spirit) A:BSA14 ATK:5 DEF:0 SPD:3 THR:3 HP:10
+[DEBUG] B1 W:BSW34(Wind Blade) A:BSA26 ATK:5 DEF:1 SPD:3 THR:1 HP:6
+[DEBUG] B2 W:BSW28(Heavy Shot) A:BSA42 ATK:4 DEF:6 SPD:1 THR:7 HP:10
+[DEBUG] B3 W:BSW1(Slash) A:BSA31 ATK:5 DEF:4 SPD:3 THR:6 HP:10
+[DEBUG] B4 W:BSW42(Haste) A:BSA35 ATK:0 DEF:0 SPD:1 THR:3 HP:10
+
+[Tick 12] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 15] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 20] 5 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+[BOON] Applied Poison Effect to B2 (Usage: 2)
+[A28] R3 applied Poison Effect to B2 (usage: 2)
+Melee: B0 targeting R1 (HP: 11)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 9
+Melee: R1 targeting B2 (HP: 10)
+R1 took damage: 2 (pierced)
+R1's Remaining Health: 7
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+[A02] B2 defense changed from 6 to 5
+Melee: B3 targeting R1 (HP: 7)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 5
+Magic: B1 targeting R1 (HP: 5)
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 0
+Magic: B1 targeting R3 (HP: 12)
+R3 took damage: 5 (pierced)
+R3's Remaining Health: 7
+
+[Tick 24] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 30] 2 unit(s) acting
+Ranged: R4 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+Melee: R2 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 36] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 40] 4 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R3 applied Poison Effect to B2 (usage: 2)
+Melee: B3 targeting R3 (HP: 7)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 2
+Melee: B0 targeting R3 (HP: 2)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 0
+[A04] B0 attack changed from 5 to 6
+[A15] B0 defense changed from 0 to 1
+Magic: B1 targeting R4 (HP: 10)
+R4 took damage: 5 (pierced)
+R4's Remaining Health: 5
+Magic: B1 targeting R0 (HP: 7)
+R0 took damage: 5 (pierced)
+R0's Remaining Health: 2
+
+[Tick 45] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 48] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+
+[Tick 60] 8 unit(s) acting
+Ranged: R4 targeting B2 (HP: 10)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 10
+Ranged: B2 targeting R4 (HP: 5)
+R4 took damage: 5 (defended)
+R4's Remaining Health: 0
+[A19] B2 speed changed from 1 to 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B2
+[AFTER-ACTION] Registered after-action for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 7)
+[BOON] Poison Effect triggered on B2 (Usage: 2/2)
+[EXECUTE_EFFECT] B2 triggered Poison Effect
+B2 took damage: 5 (pierced)
+B2's Remaining Health: 5
+Melee: R2 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+Magic: B4 targeting B2 (HP: 5)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B1 targeting R0 (HP: 2)
+R0 took damage: 5 (pierced)
+R0's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
+Magic: B1 targeting R2 (HP: 12)
+R2 took damage: 5 (pierced)
+R2's Remaining Health: 7
+
+[Tick 75] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+
+[Tick 78] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+
+[Tick 80] 3 unit(s) acting
+Melee: B3 targeting R2 (HP: 7)
+R2 took damage: 5 (defended)
+R2's Remaining Health: 2
+Melee: B0 targeting R2 (HP: 2)
+R2 took damage: 6 (defended)
+R2's Remaining Health: 0
+[A04] B0 attack changed from 6 to 7
+[A15] B0 defense changed from 1 to 2
+[DEBUG] LCM changed from 12 to 3 - rebuilding queue
+Battle Over! Blue Team wins!
+[DEBUG] Recording equipment stats for 10 units
+[DEBUG] Unit R0: W=BSW13 A=BSA19 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW4 A=BSA23 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW5 A=BSA17 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW21 A=BSA38 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW19 A=BSA22 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW16 A=BSA14 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW34 A=BSA26 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW28 A=BSA42 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW1 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW42 A=BSA35 Won=1 Draw=0
+[BattleManager] Equipment data written to battle_equipment_data.txt
+Battle finished.
