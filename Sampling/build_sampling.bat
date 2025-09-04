@@ -5,9 +5,9 @@ set CXX=g++
 set CXXFLAGS=-std=c++17 -Wall -O2
 set INCLUDES=-I. -I../Simulator -I../Analysis -I../Element -I../Simulator/yaml-cpp/include
 set LIBS=-L../Simulator/yaml-cpp/build -lyaml-cpp
-set TARGET=SamplingMain.exe
+set TARGET=BatchCreator.exe
 
-echo === Building Sampling Controller ===
+echo === Building Batch Creator ===
 
 REM Check if we need to rebuild
 set NEED_REBUILD=0
@@ -15,7 +15,7 @@ if not exist %TARGET% set NEED_REBUILD=1
 
 REM Quick check - if any .cpp is newer than exe, rebuild
 if %NEED_REBUILD%==0 (
-    for %%f in (SamplingMain.cpp SamplingController.cpp ../Element/*.cpp ../Analysis/*.cpp) do (
+    for %%f in (BatchCreator.cpp SamplingController.cpp ../Element/*.cpp ../Analysis/*.cpp) do (
         if "%%f" NEQ "" (
             for /f %%i in ('forfiles /m %TARGET% /c "cmd /c echo @fdate @ftime" 2^>nul') do set TARGET_TIME=%%i
             for /f %%j in ('forfiles /m "%%f" /c "cmd /c echo @fdate @ftime" 2^>nul') do (
@@ -28,7 +28,7 @@ if %NEED_REBUILD%==0 (
 if %NEED_REBUILD%==1 (
     echo Building %TARGET%...
     %CXX% %CXXFLAGS% %INCLUDES% -o %TARGET% ^
-        SamplingMain.cpp ^
+        BatchCreator.cpp ^
         SamplingController.cpp ^
         ../Element/EquipmentLoader.cpp ^
         ../Element/TeamConfiguration.cpp ^

@@ -1,194 +1,267 @@
 [Simulator] Config loading failed, using random equipment
-[DEBUG] R0 W:BSW6(Achilles' heel) A:BSA18 ATK:1 DEF:1 SPD:5 THR:3 HP:8
-[DEBUG] R1 W:BSW36(Tetrodo) A:BSA49 ATK:1 DEF:2 SPD:1 THR:4 HP:15
-[DEBUG] R2 W:BSW44(Exposure) A:BSA23 ATK:1 DEF:3 SPD:3 THR:6 HP:7
-[DEBUG] R3 W:BSW30(Fire Arrow) A:BSA43 ATK:5 DEF:1 SPD:1 THR:3 HP:10
-[DEBUG] R4 W:BSW33(Magic Bolt) A:BSA28 ATK:1 DEF:3 SPD:2 THR:5 HP:10
-[DEBUG] B0 W:BSW17(Shoot) A:BSA36 ATK:3 DEF:2 SPD:4 THR:3 HP:10
-[DEBUG] B1 W:BSW36(Tetrodo) A:BSA6 ATK:0 DEF:-1 SPD:5 THR:2 HP:10
-[DEBUG] B2 W:BSW2(Chop) A:BSA21 ATK:5 DEF:3 SPD:3 THR:4 HP:10
-[DEBUG] B3 W:BSW11(Fade Attack) A:BSA11 ATK:7 DEF:0 SPD:5 THR:6 HP:10
-[DEBUG] B4 W:BSW48(Meteor) A:BSA20 ATK:-1 DEF:1 SPD:2 THR:7 HP:12
+[DEBUG] R0 W:BSW12(Final Attack) A:BSA50 ATK:2 DEF:14 SPD:0 THR:9 HP:15
+[DEBUG] R1 W:BSW30(Fire Arrow) A:BSA50 ATK:5 DEF:4 SPD:1 THR:6 HP:15
+[DEBUG] R2 W:BSW12(Final Attack) A:BSA40 ATK:2 DEF:14 SPD:1 THR:10 HP:12
+[DEBUG] R3 W:BSW36(Tetrodo) A:BSA31 ATK:1 DEF:4 SPD:2 THR:6 HP:10
+[DEBUG] R4 W:BSW7(Poison Attack) A:BSA5 ATK:3 DEF:0 SPD:7 THR:5 HP:7
+[DEBUG] B0 W:BSW47(Cheer) A:BSA32 ATK:2 DEF:-1 SPD:1 THR:4 HP:10
+[DEBUG] B1 W:BSW34(Wind Blade) A:BSA36 ATK:2 DEF:2 SPD:2 THR:3 HP:10
+[DEBUG] B2 W:BSW16(Killer's Spirit) A:BSA44 ATK:7 DEF:3 SPD:0 THR:8 HP:12
+[DEBUG] B3 W:BSW4(Berserk) A:BSA23 ATK:5 DEF:3 SPD:3 THR:4 HP:11
+[DEBUG] B4 W:BSW34(Wind Blade) A:BSA31 ATK:3 DEF:4 SPD:2 THR:6 HP:10
 
-[Tick 12] 3 unit(s) acting
-Melee: R0 targeting B4 (HP: 12)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 12
-[A06] B4 speed changed from 2 to 1
-Melee: B3 targeting R2 (HP: 7)
-R2 took damage: 4 (defended)
-R2's Remaining Health: 3
-[A10] B3 threat changed from 6 to 5
-  -> R2 (magic) tick reset due to melee attack!
-Magic: B1 targeting R2 (HP: 3)
-[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
-[A28] B1 applied Tetrodo Effect to R2 (usage: 2)
+[Tick 6] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R4 applied Poison Effect to B2 (usage: 3)
 
-[Tick 15] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 3)
+[Tick 12] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
+
+[Tick 14] 1 unit(s) acting
+Melee: B3 targeting R2 (HP: 12)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 9
 R2 took damage: 0 (defended)
-R2's Remaining Health: 3
-Magic: R2 targeting B4 (HP: 12)
-[A33] B4 threat changed from 7 to 5
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R2
-[AFTER-ACTION] Registered after-action for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
-[BOON] Tetrodo Effect triggered on R2 (Usage: 2/2)
-[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
-R2 took damage: 5 (pierced)
-R2's Remaining Health: 0
-Magic: R2 targeting B3 (HP: 10)
-[A33] B3 threat changed from 5 to 3
-Magic: R2 targeting B2 (HP: 10)
-[A33] B2 threat changed from 4 to 2
+R2's Remaining Health: 12
+[A02] R2 defense changed from 14 to 13
 
-[Tick 20] 1 unit(s) acting
-Melee: B2 targeting R4 (HP: 10)
-R4 took damage: 2 (defended)
-R4's Remaining Health: 8
-[A02] R4 defense changed from 3 to 2
-  -> R4 (magic) tick reset due to melee attack!
+[Tick 18] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
 
-[Tick 22] 1 unit(s) acting
-Magic: R4 targeting B4 (HP: 12)
-B4 took damage: 5 (pierced)
-B4's Remaining Health: 7
+[Tick 21] 3 unit(s) acting
+Magic: B1 targeting R2 (HP: 12)
+R2 took damage: 2 (pierced)
+R2's Remaining Health: 10
+Magic: B1 targeting R0 (HP: 15)
+R0 took damage: 2 (pierced)
+R0's Remaining Health: 13
+Magic: R3 targeting B2 (HP: 12)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B2 (usage: 2)
+Magic: B4 targeting R2 (HP: 10)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 7
+Magic: B4 targeting R0 (HP: 13)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 10
 
-[Tick 24] 3 unit(s) acting
-Melee: R0 targeting B4 (HP: 7)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 7
-[A06] B4 speed changed from 1 to 0
-Melee: B3 targeting R4 (HP: 8)
-R4 took damage: 5 (defended)
-R4's Remaining Health: 3
-[A10] B3 threat changed from 3 to 2
-  -> R4 (magic) tick reset due to melee attack!
-Magic: B1 targeting R4 (HP: 3)
-[BOON] Applied Tetrodo Effect to R4 (Usage: 2)
-[A28] B1 applied Tetrodo Effect to R4 (usage: 2)
+[Tick 24] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
 
-[Tick 26] 1 unit(s) acting
-Magic: R4 targeting B4 (HP: 7)
-B4 took damage: 5 (pierced)
-B4's Remaining Health: 2
-[DEBUG] R4 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R4
-[AFTER-ACTION] Registered after-action for R4
-[AFTER-ACTION] R4 performs after-action on R4 (threat: 5)
-[BOON] Tetrodo Effect triggered on R4 (Usage: 2/2)
-[EXECUTE_EFFECT] R4 triggered Tetrodo Effect
-R4 took damage: 5 (pierced)
-R4's Remaining Health: 0
+[Tick 28] 1 unit(s) acting
+Melee: B3 targeting R2 (HP: 7)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 7
+R2 took damage: 0 (defended)
+R2's Remaining Health: 7
+[A02] R2 defense changed from 13 to 12
 
 [Tick 30] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 15)
-R1 took damage: 1 (defended)
-R1's Remaining Health: 14
-  -> R1 (magic) tick reset due to ranged attack!
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
 
-[Tick 31] 1 unit(s) acting
-Magic: R1 targeting B4 (HP: 2)
-[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
-[A28] R1 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 36] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 12)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 12
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
 
-[Tick 36] 3 unit(s) acting
-Melee: B3 targeting R1 (HP: 14)
-R1 took damage: 5 (defended)
-R1's Remaining Health: 9
-[A10] B3 threat changed from 2 to 1
-  -> R1 (magic) tick reset due to melee attack!
-Melee: R0 targeting B4 (HP: 2)
+[Tick 42] 8 unit(s) acting
+Ranged: R1 targeting B2 (HP: 12)
+B2 took damage: 7 (defended)
+B2's Remaining Health: 5
+Melee: B3 targeting R2 (HP: 7)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 5
+R2 took damage: 0 (defended)
+R2's Remaining Health: 7
+[A02] R2 defense changed from 12 to 11
+Melee: R4 targeting B2 (HP: 5)
+B2 took damage: 0 (defended)
+B2's Remaining Health: 5
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R4 applied Poison Effect to B2 (usage: 3)
+Melee: R2 targeting B2 (HP: 5)
+B2 took damage: 10 (defended)
+B2's Remaining Health: 0
+[A12] R2 defense changed from 11 to 0
+Magic: B4 targeting R2 (HP: 7)
+R2 took damage: 3 (pierced)
+R2's Remaining Health: 4
+Magic: B4 targeting R0 (HP: 10)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 7
+Magic: B1 targeting R2 (HP: 4)
+R2 took damage: 2 (pierced)
+R2's Remaining Health: 2
+Magic: B1 targeting R0 (HP: 7)
+R0 took damage: 2 (pierced)
+R0's Remaining Health: 5
+
+[Tick 48] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 10)
 B4 took damage: 0 (defended)
-B4's Remaining Health: 2
-[A06] B4 speed changed from 0 to 0
-Magic: B1 targeting R1 (HP: 9)
-[BOON] Applied Tetrodo Effect to R1 (Usage: 2)
-[A28] B1 applied Tetrodo Effect to R1 (usage: 2)
+B4's Remaining Health: 10
+[BOON] Applied Poison Effect to B4 (Usage: 3)
+[A28] R4 applied Poison Effect to B4 (usage: 3)
 
-[Tick 37] 1 unit(s) acting
-Magic: R1 targeting B4 (HP: 2)
-[BOON] Refreshing existing Tetrodo Effect on B4
-[A28] R1 applied Tetrodo Effect to B4 (usage: 2)
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R1
-[AFTER-ACTION] Registered after-action for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 4)
-[BOON] Tetrodo Effect triggered on R1 (Usage: 2/2)
-[EXECUTE_EFFECT] R1 triggered Tetrodo Effect
-R1 took damage: 5 (pierced)
-R1's Remaining Health: 4
-
-[Tick 40] 1 unit(s) acting
-Melee: B2 targeting R1 (HP: 4)
-R1 took damage: 3 (defended)
-R1's Remaining Health: 1
-[A02] R1 defense changed from 2 to 1
-  -> R1 (magic) tick reset due to melee attack!
-
-[Tick 41] 1 unit(s) acting
-Magic: R1 targeting B4 (HP: 2)
-[BOON] Refreshing existing Tetrodo Effect on B4
-[A28] R1 applied Tetrodo Effect to B4 (usage: 2)
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R1
-[AFTER-ACTION] Registered after-action for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 4)
-[BOON] Tetrodo Effect triggered on R1 (Usage: 1/2)
-[EXECUTE_EFFECT] R1 triggered Tetrodo Effect
-R1 took damage: 5 (pierced)
-R1's Remaining Health: 0
-[BOON] Tetrodo Effect expired on R1 - cleaned up
-
-[Tick 45] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 8)
-R0 took damage: 2 (defended)
-R0's Remaining Health: 6
-
-[Tick 48] 3 unit(s) acting
-Melee: R0 targeting B4 (HP: 2)
+[Tick 54] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 10)
 B4 took damage: 0 (defended)
-B4's Remaining Health: 2
-[A06] B4 speed changed from 0 to 0
-Melee: B3 targeting R0 (HP: 6)
-R0 took damage: 6 (defended)
-R0's Remaining Health: 0
-[A10] B3 threat changed from 1 to 0
-Magic: B1 targeting R3 (HP: 10)
-[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
-[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
+B4's Remaining Health: 10
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R4 applied Poison Effect to B4 (usage: 3)
 
-[Tick 60] 5 unit(s) acting
-Ranged: R3 targeting B4 (HP: 2)
-B4 took damage: 9 (defended)
+[Tick 56] 1 unit(s) acting
+Melee: B3 targeting R2 (HP: 2)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 3
+R2 took damage: 5 (defended)
+R2's Remaining Health: 0
+[A02] R2 defense changed from 0 to 0
+
+[Tick 60] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 10)
+B4 took damage: 0 (defended)
+B4's Remaining Health: 10
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R4 applied Poison Effect to B4 (usage: 3)
+
+[Tick 63] 3 unit(s) acting
+Magic: B4 targeting R0 (HP: 5)
+R0 took damage: 3 (pierced)
+R0's Remaining Health: 2
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] Registered after-action for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 6)
+[BOON] Poison Effect triggered on B4 (Usage: 3/3)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 took damage: 5 (pierced)
+B4's Remaining Health: 5
+Magic: B4 targeting R1 (HP: 15)
+R1 took damage: 3 (pierced)
+R1's Remaining Health: 12
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] Registered after-action for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 6)
+[BOON] Poison Effect triggered on B4 (Usage: 2/3)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 took damage: 5 (pierced)
 B4's Remaining Health: 0
-[DEBUG] R3 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R3
-[AFTER-ACTION] Registered after-action for R3
-[AFTER-ACTION] R3 performs after-action on R3 (threat: 3)
-[BOON] Tetrodo Effect triggered on R3 (Usage: 2/2)
-[EXECUTE_EFFECT] R3 triggered Tetrodo Effect
-R3 took damage: 5 (pierced)
-R3's Remaining Health: 5
-Ranged: B0 targeting R3 (HP: 5)
-R3 took damage: 2 (defended)
-R3's Remaining Health: 3
-Melee: B2 targeting R3 (HP: 3)
-R3 took damage: 4 (defended)
-R3's Remaining Health: 0
-[A02] R3 defense changed from 1 to 0
-Battle Over! Blue Team wins!
+Magic: B1 targeting R0 (HP: 2)
+R0 took damage: 2 (pierced)
+R0's Remaining Health: 0
+Magic: B1 targeting R1 (HP: 12)
+R1 took damage: 2 (pierced)
+R1's Remaining Health: 10
+
+[Tick 66] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 10)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 6
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R4 applied Poison Effect to B0 (usage: 3)
+  -> B0 (magic) tick reset due to melee attack!
+
+[Tick 67] 1 unit(s) acting
+Magic: B0 targeting B0 (HP: 6)
+[A34] B0 attack changed from 2 to 4
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B0
+[AFTER-ACTION] Registered after-action for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 4)
+[BOON] Poison Effect triggered on B0 (Usage: 3/3)
+[EXECUTE_EFFECT] B0 triggered Poison Effect
+B0 took damage: 5 (pierced)
+B0's Remaining Health: 1
+
+[Tick 70] 1 unit(s) acting
+Melee: B3 targeting R1 (HP: 10)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 1
+R1 took damage: 1 (defended)
+R1's Remaining Health: 9
+[A02] R1 defense changed from 4 to 3
+
+[Tick 72] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 1)
+B0 took damage: 4 (defended)
+B0's Remaining Health: 0
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R4 applied Poison Effect to B0 (usage: 3)
+
+[Tick 78] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 1)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 1
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R4 applied Poison Effect to B3 (usage: 3)
+
+[Tick 84] 5 unit(s) acting
+Ranged: R1 targeting B3 (HP: 1)
+B3 took damage: 2 (pierced)
+B3's Remaining Health: 0
+[DEBUG] LCM changed from 42 to 14 - rebuilding queue
+Melee: R4 targeting B1 (HP: 10)
+B1 took damage: 1 (defended)
+B1's Remaining Health: 9
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R4 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: B1 targeting R1 (HP: 9)
+R1 took damage: 2 (pierced)
+R1's Remaining Health: 7
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[BOON] Poison Effect triggered on B1 (Usage: 3/3)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 4
+Magic: B1 targeting R3 (HP: 10)
+R3 took damage: 2 (pierced)
+R3's Remaining Health: 8
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] Registered after-action for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[BOON] Poison Effect triggered on B1 (Usage: 2/3)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
+B1 took damage: 5 (pierced)
+B1's Remaining Health: 0
+Battle Over! Red Team wins!
 [DEBUG] Recording equipment stats for 10 units
-[DEBUG] Unit R0: W=BSW6 A=BSA18 Won=0 Draw=0
-[DEBUG] Unit R1: W=BSW36 A=BSA49 Won=0 Draw=0
-[DEBUG] Unit R2: W=BSW44 A=BSA23 Won=0 Draw=0
-[DEBUG] Unit R3: W=BSW30 A=BSA43 Won=0 Draw=0
-[DEBUG] Unit R4: W=BSW33 A=BSA28 Won=0 Draw=0
-[DEBUG] Unit B0: W=BSW17 A=BSA36 Won=1 Draw=0
-[DEBUG] Unit B1: W=BSW36 A=BSA6 Won=1 Draw=0
-[DEBUG] Unit B2: W=BSW2 A=BSA21 Won=1 Draw=0
-[DEBUG] Unit B3: W=BSW11 A=BSA11 Won=1 Draw=0
-[DEBUG] Unit B4: W=BSW48 A=BSA20 Won=1 Draw=0
+[DEBUG] Unit R0: W=BSW12 A=BSA50 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW30 A=BSA50 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW12 A=BSA40 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW36 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW7 A=BSA5 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW47 A=BSA32 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW34 A=BSA36 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW16 A=BSA44 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW4 A=BSA23 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW34 A=BSA31 Won=0 Draw=0
 [BattleManager] Equipment data written to battle_equipment_data.txt
 Battle finished.

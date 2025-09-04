@@ -113,11 +113,11 @@ private:
             return false;
         }
         
-        // Execute SamplingController to create batch configurations (suppress output)
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SamplingMain.exe >nul 2>&1";
+        // Execute Batch Creator to create batch configurations (suppress output)
+        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchCreator.exe >nul 2>&1";
         int execResult = std::system(execCmd.c_str());
         if (execResult != 0) {
-            std::cerr << "    ERROR: SamplingController execution failed with exit code: " << execResult << std::endl;
+            std::cerr << "    ERROR: Batch Creator execution failed with exit code: " << execResult << std::endl;
             return false;
         }
         
@@ -133,16 +133,16 @@ private:
         }
         
         
-        // Build SimpleBatchRunner (suppress output)
-        std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 SimpleBatchRunner.cpp -o SimpleBatchRunner.exe >nul 2>&1";
+        // Build Batch Executor (suppress output)
+        std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 BatchExecutor.cpp -o BatchExecutor.exe >nul 2>&1";
         if (std::system(buildRunnerCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: SimpleBatchRunner build failed!" << std::endl;
+            std::cerr << "    ERROR: Batch Executor build failed!" << std::endl;
             return false;
         }
         
         
         // Execute batch simulations (suppress output)
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SimpleBatchRunner.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
+        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchExecutor.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
         if (std::system(execCmd.c_str()) != 0) {
             std::cerr << "    ERROR: Batch simulation execution failed!" << std::endl;
             return false;

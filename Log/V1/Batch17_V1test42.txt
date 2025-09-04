@@ -1,717 +1,192 @@
 [Simulator] Config loading failed, using random equipment
-[DEBUG] R0 W:BSW39(Healing Link) A:BSA20 ATK:-1 DEF:1 SPD:3 THR:4 HP:12
-[DEBUG] R1 W:BSW27(Tripple Shot) A:BSA7 ATK:2 DEF:0 SPD:5 THR:2 HP:9
-[DEBUG] R2 W:BSW27(Tripple Shot) A:BSA10 ATK:1 DEF:0 SPD:5 THR:2 HP:10
-[DEBUG] R3 W:BSW25(Smoke Shot) A:BSA48 ATK:1 DEF:5 SPD:2 THR:8 HP:15
-[DEBUG] R4 W:BSW15(Taunt) A:BSA13 ATK:6 DEF:1 SPD:4 THR:6 HP:11
-[DEBUG] B0 W:BSW47(Cheer) A:BSA17 ATK:-1 DEF:0 SPD:3 THR:3 HP:12
-[DEBUG] B1 W:BSW30(Fire Arrow) A:BSA49 ATK:5 DEF:2 SPD:1 THR:4 HP:15
-[DEBUG] B2 W:BSW6(Achilles' heel) A:BSA4 ATK:3 DEF:0 SPD:7 THR:6 HP:8
-[DEBUG] B3 W:BSW40(Grace) A:BSA47 ATK:0 DEF:3 SPD:1 THR:8 HP:13
-[DEBUG] B4 W:BSW30(Fire Arrow) A:BSA2 ATK:4 DEF:-1 SPD:6 THR:4 HP:10
+[DEBUG] R0 W:BSW43(Vow) A:BSA43 ATK:1 DEF:1 SPD:0 THR:5 HP:10
+[DEBUG] R1 W:BSW39(Healing Link) A:BSA28 ATK:1 DEF:3 SPD:2 THR:7 HP:10
+[DEBUG] R2 W:BSW28(Heavy Shot) A:BSA38 ATK:5 DEF:0 SPD:2 THR:3 HP:12
+[DEBUG] R3 W:BSW8(Charge Attack) A:BSA25 ATK:5 DEF:1 SPD:4 THR:3 HP:10
+[DEBUG] R4 W:BSW9(Blitz Attack) A:BSA15 ATK:5 DEF:0 SPD:5 THR:2 HP:8
+[DEBUG] B0 W:BSW5(Overpower) A:BSA48 ATK:2 DEF:5 SPD:1 THR:9 HP:15
+[DEBUG] B1 W:BSW44(Exposure) A:BSA40 ATK:1 DEF:4 SPD:2 THR:10 HP:12
+[DEBUG] B2 W:BSW22(Delay Shot) A:BSA44 ATK:3 DEF:3 SPD:2 THR:6 HP:12
+[DEBUG] B3 W:BSW7(Poison Attack) A:BSA34 ATK:4 DEF:3 SPD:3 THR:8 HP:10
+[DEBUG] B4 W:BSW48(Meteor) A:BSA44 ATK:1 DEF:3 SPD:0 THR:10 HP:12
 
-[Tick 60] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 15)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 15
-[A06] R3 speed changed from 2 to 1
+[Tick 12] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 12)
+B1 took damage: 6 (defended)
+B1's Remaining Health: 6
+  -> B1 (magic) tick reset due to melee attack!
 
-[Tick 70] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 15)
-R3 took damage: 3 (pierced)
-R3's Remaining Health: 12
+[Tick 14] 1 unit(s) acting
+Magic: B1 targeting R1 (HP: 10)
+[A33] R1 threat changed from 7 to 5
+Magic: B1 targeting R0 (HP: 10)
+[A33] R0 threat changed from 5 to 3
+Magic: B1 targeting R2 (HP: 12)
+[A33] R2 threat changed from 3 to 1
 
-[Tick 84] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 13)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 13
-Ranged: R2 targeting B2 (HP: 8)
-B2 took damage: 1 (defended)
-B2's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 13)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 13
-Ranged: R1 targeting B2 (HP: 7)
-B2 took damage: 2 (defended)
-B2's Remaining Health: 5
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
+[Tick 15] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 6)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 2
+  -> B1 (magic) tick reset due to melee attack!
 
-[Tick 105] 1 unit(s) acting
-Melee: R4 targeting B3 (HP: 13)
-B3 took damage: 3 (defended)
-B3's Remaining Health: 10
-[A10] R4 threat changed from 6 to 7
-[A04] R4 attack changed from 6 to 5
-  -> B3 (magic) tick reset due to melee attack!
+[Tick 17] 1 unit(s) acting
+Magic: B1 targeting R1 (HP: 10)
+[A33] R1 threat changed from 5 to 3
+Magic: B1 targeting R0 (HP: 10)
+[A33] R0 threat changed from 3 to 1
+Magic: B1 targeting R3 (HP: 10)
+[A33] R3 threat changed from 3 to 1
 
-[Tick 106] 1 unit(s) acting
-Magic: B3 targeting B2 (HP: 5)
-[HEAL] B2 healed for 2 HP (from 5 to 7/8)
-[A29] B3 healed B2 for 2 HP
-Magic: B3 targeting B1 (HP: 15)
-[HEAL] B1 healed for 0 HP (from 15 to 15/15)
-[A29] B3 healed B1 for 2 HP
-Magic: B3 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B3 healed B4 for 2 HP
+[Tick 20] 1 unit(s) acting
+Melee: B3 targeting R1 (HP: 10)
+R1 took damage: 1 (defended)
+R1's Remaining Health: 9
+[BOON] Applied Poison Effect to R1 (Usage: 3)
+[A28] B3 applied Poison Effect to R1 (usage: 3)
+  -> R1 (magic) tick reset due to melee attack!
 
-[Tick 120] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 12)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 12
-[A06] R3 speed changed from 1 to 0
+[Tick 22] 1 unit(s) acting
+Magic: R1 targeting R4 (HP: 8)
+[HEAL] R4 healed for 0 HP (from 8 to 8/8)
+[A29] R1 healed R4 for 3 HP
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 3)
+[BOON] Poison Effect triggered on R1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 4
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 3 HP
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] Registered after-action for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 3)
+[BOON] Poison Effect triggered on R1 (Usage: 2/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 took damage: 5 (pierced)
+R1's Remaining Health: 0
 
-[Tick 140] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 took damage: 3 (defended)
-R3's Remaining Health: 9
-Magic: R0 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/15)
-[A29] R0 healed R3 for 3 HP
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: B0 targeting B3 (HP: 10)
-[A34] B3 attack changed from 0 to 2
+[Tick 24] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 2)
+B1 took damage: 6 (defended)
+B1's Remaining Health: 0
 
-[Tick 168] 2 unit(s) acting
-Ranged: R1 targeting B3 (HP: 10)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 10
-Ranged: R1 targeting B2 (HP: 7)
-B2 took damage: 2 (defended)
-B2's Remaining Health: 5
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B3 (HP: 10)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 10
-Ranged: R2 targeting B2 (HP: 5)
-B2 took damage: 1 (defended)
-B2's Remaining Health: 4
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 180] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 12)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 12
-[A06] R3 speed changed from 0 to 0
-
-[Tick 210] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 took damage: 3 (defended)
-R3's Remaining Health: 9
-Melee: R4 targeting B3 (HP: 10)
-B3 took damage: 2 (defended)
-B3's Remaining Health: 8
-[A10] R4 threat changed from 7 to 8
-[A04] R4 attack changed from 5 to 4
-  -> B3 (magic) tick reset due to melee attack!
-
-[Tick 211] 1 unit(s) acting
-Magic: B3 targeting B2 (HP: 4)
-[HEAL] B2 healed for 2 HP (from 4 to 6/8)
-[A29] B3 healed B2 for 2 HP
-Magic: B3 targeting B1 (HP: 15)
-[HEAL] B1 healed for 0 HP (from 15 to 15/15)
-[A29] B3 healed B1 for 2 HP
-Magic: B3 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B3 healed B4 for 2 HP
-
-[Tick 240] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 9)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 9
-[A06] R3 speed changed from 0 to 0
-
-[Tick 252] 2 unit(s) acting
-Ranged: R1 targeting B3 (HP: 8)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 8
-Ranged: R1 targeting B2 (HP: 6)
-B2 took damage: 2 (defended)
-B2's Remaining Health: 4
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B3 (HP: 8)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 8
-Ranged: R2 targeting B2 (HP: 4)
-B2 took damage: 1 (defended)
-B2's Remaining Health: 3
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 280] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 9)
-R3 took damage: 3 (defended)
-R3's Remaining Health: 6
-Magic: R0 targeting R3 (HP: 6)
-[HEAL] R3 healed for 3 HP (from 6 to 9/15)
-[A29] R0 healed R3 for 3 HP
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: B0 targeting B3 (HP: 8)
-[A34] B3 attack changed from 2 to 4
-
-[Tick 300] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 9)
-R3 took damage: 0 (defended)
-R3's Remaining Health: 9
-[A06] R3 speed changed from 0 to 0
-
-[Tick 315] 1 unit(s) acting
-Melee: R4 targeting B3 (HP: 8)
-B3 took damage: 1 (defended)
-B3's Remaining Health: 7
-[A10] R4 threat changed from 8 to 9
-[A04] R4 attack changed from 4 to 3
-  -> B3 (magic) tick reset due to melee attack!
-
-[Tick 316] 1 unit(s) acting
-Magic: B3 targeting B2 (HP: 3)
-[HEAL] B2 healed for 2 HP (from 3 to 5/8)
-[A29] B3 healed B2 for 2 HP
-Magic: B3 targeting B1 (HP: 15)
-[HEAL] B1 healed for 0 HP (from 15 to 15/15)
-[A29] B3 healed B1 for 2 HP
-Magic: B3 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B3 healed B4 for 2 HP
-
-[Tick 336] 2 unit(s) acting
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B2 (HP: 5)
-B2 took damage: 2 (defended)
-B2's Remaining Health: 3
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B2 (HP: 3)
-B2 took damage: 1 (defended)
-B2's Remaining Health: 2
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 350] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 11)
-R4 took damage: 0 (pierced)
-R4's Remaining Health: 11
-
-[Tick 360] 1 unit(s) acting
-Melee: B2 targeting R4 (HP: 11)
-R4 took damage: 2 (defended)
-R4's Remaining Health: 9
-[A06] R4 speed changed from 4 to 3
-[DEBUG] LCM changed from 420 to 210 - rebuilding queue
-
-[Tick 420] 8 unit(s) acting
-Ranged: B1 targeting R4 (HP: 9)
-R4 took damage: 2 (pierced)
-R4's Remaining Health: 7
-Ranged: B4 targeting R4 (HP: 7)
-R4 took damage: 1 (pierced)
-R4's Remaining Health: 6
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B2 (HP: 2)
-B2 took damage: 2 (defended)
-B2's Remaining Health: 0
-[DEBUG] LCM changed from 210 to 30 - rebuilding queue
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B4 (HP: 10)
-B4 took damage: 2 (defended)
-B4's Remaining Health: 8
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-[A10] R4 threat changed from 9 to 10
-[A04] R4 attack changed from 3 to 2
-Magic: B0 targeting B3 (HP: 7)
-[A34] B3 attack changed from 4 to 6
-Magic: R0 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/15)
-[A29] R0 healed R3 for 3 HP
-Magic: R0 targeting R1 (HP: 9)
-[HEAL] R1 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R1 for 3 HP
-
-[Tick 455] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 6)
-R4 took damage: 1 (pierced)
+[Tick 30] 3 unit(s) acting
+Ranged: R2 targeting B4 (HP: 12)
+B4 took damage: 7 (defended)
+B4's Remaining Health: 5
+[A19] R2 speed changed from 2 to 1
+  -> B4 (magic) tick reset due to ranged attack!
+Ranged: B2 targeting R4 (HP: 8)
+R4 took damage: 3 (defended)
 R4's Remaining Health: 5
-
-[Tick 460] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 5)
-R4 took damage: 1 (pierced)
-R4's Remaining Health: 4
-
-[Tick 462] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B4 (HP: 8)
-B4 took damage: 2 (defended)
-B4's Remaining Health: 6
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B4 (HP: 6)
-B4 took damage: 3 (defended)
-B4's Remaining Health: 3
-
-[Tick 465] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 4)
-R4 took damage: 1 (pierced)
-R4's Remaining Health: 3
-
-[Tick 468] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B4 (HP: 3)
-B4 took damage: 2 (defended)
-B4's Remaining Health: 1
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B4 (HP: 1)
-B4 took damage: 3 (defended)
+[A20] R4 delayed by 1 intervals (12 ticks)
+Melee: R3 targeting B4 (HP: 5)
+B4 took damage: 5 (defended)
 B4's Remaining Health: 0
-[DEBUG] LCM changed from 30 to 15 - rebuilding queue
 
-[Tick 474] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B0 (HP: 12)
-B0 took damage: 1 (defended)
-B0's Remaining Health: 11
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B0 (HP: 11)
-B0 took damage: 2 (defended)
-B0's Remaining Health: 9
-  -> B0 (magic) tick reset due to ranged attack!
+[Tick 40] 1 unit(s) acting
+Melee: B3 targeting R4 (HP: 5)
+R4 took damage: 4 (defended)
+R4's Remaining Health: 1
+[BOON] Applied Poison Effect to R4 (Usage: 3)
+[A28] B3 applied Poison Effect to R4 (usage: 3)
 
-[Tick 477] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B0 (HP: 9)
-B0 took damage: 1 (defended)
-B0's Remaining Health: 8
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B0 (HP: 8)
-B0 took damage: 2 (defended)
-B0's Remaining Health: 6
-  -> B0 (magic) tick reset due to ranged attack!
+[Tick 45] 1 unit(s) acting
+Melee: R3 targeting B0 (HP: 15)
+B0 took damage: 3 (defended)
+B0's Remaining Health: 12
 
-[Tick 480] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B0 (HP: 6)
-B0 took damage: 1 (defended)
-B0's Remaining Health: 5
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B0 (HP: 5)
-B0 took damage: 2 (defended)
-B0's Remaining Health: 3
-  -> B0 (magic) tick reset due to ranged attack!
+[Tick 48] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 12)
+B0 took damage: 5 (defended)
+B0's Remaining Health: 7
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R4
+[AFTER-ACTION] Registered after-action for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 2)
+[BOON] Poison Effect triggered on R4 (Usage: 3/3)
+[EXECUTE_EFFECT] R4 triggered Poison Effect
+R4 took damage: 5 (pierced)
+R4's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 12 - rebuilding queue
 
-[Tick 483] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R2 targeting B0 (HP: 3)
-B0 took damage: 1 (defended)
+[Tick 60] 5 unit(s) acting
+Ranged: R2 targeting B0 (HP: 7)
+B0 took damage: 5 (defended)
 B0's Remaining Health: 2
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B0 (HP: 2)
-B0 took damage: 2 (defended)
+[A19] R2 speed changed from 1 to 0
+Ranged: B2 targeting R0 (HP: 10)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 8
+[A20] R0 delayed by 1 intervals (1 ticks)
+  -> R0 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R0 (HP: 8)
+R0 took damage: 1 (defended)
+R0's Remaining Health: 7
+  -> R0 (magic) tick reset due to melee attack!
+Melee: B3 targeting R0 (HP: 7)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 4
+[BOON] Applied Poison Effect to R0 (Usage: 3)
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+  -> R0 (magic) tick reset due to melee attack!
+Melee: R3 targeting B0 (HP: 2)
+B0 took damage: 3 (defended)
 B0's Remaining Health: 0
 
-[Tick 486] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
+[Tick 63] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 10)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 5
 
-[Tick 489] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
+[Tick 64] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 4)
+R0 took damage: 3 (defended)
+R0's Remaining Health: 1
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+  -> R0 (magic) tick reset due to melee attack!
 
-[Tick 490] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-[A10] R4 threat changed from 10 to 11
-[A04] R4 attack changed from 2 to 1
-Magic: R0 targeting R4 (HP: 3)
-[HEAL] R4 healed for 3 HP (from 3 to 6/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 12)
-[HEAL] R3 healed for 3 HP (from 12 to 15/15)
-[A29] R0 healed R3 for 3 HP
+[Tick 66] 2 unit(s) acting
+Ranged: B2 targeting R0 (HP: 1)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 0
+[A20] R0 delayed by 1 intervals (1 ticks)
+Melee: R3 targeting B3 (HP: 5)
+B3 took damage: 5 (defended)
+B3's Remaining Health: 0
+[DEBUG] LCM changed from 12 to 4 - rebuilding queue
 
-[Tick 492] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
+[Tick 69] 1 unit(s) acting
+Melee: R3 targeting B2 (HP: 12)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 7
 
-[Tick 495] 4 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-[A10] R4 threat changed from 11 to 12
-[A04] R4 attack changed from 1 to 0
-Magic: R0 targeting R4 (HP: 6)
-[HEAL] R4 healed for 3 HP (from 6 to 9/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
+[Tick 70] 1 unit(s) acting
+Melee: R3 targeting B2 (HP: 7)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 2
 
-[Tick 498] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 500] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 2 HP (from 9 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 501] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 504] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 505] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 507] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 510] 4 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 513] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 515] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 516] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 519] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 520] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 522] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-
-[Tick 525] 4 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Melee: R4 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Magic: R0 targeting R4 (HP: 11)
-[HEAL] R4 healed for 0 HP (from 11 to 11/11)
-[A29] R0 healed R4 for 3 HP
-Magic: R0 targeting R3 (HP: 15)
-[HEAL] R3 healed for 0 HP (from 15 to 15/15)
-[A29] R0 healed R3 for 3 HP
-
-[Tick 528] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R2 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Ranged: R1 targeting B3 (HP: 7)
-B3 took damage: 0 (defended)
-B3's Remaining Health: 7
-Ranged: R1 targeting B1 (HP: 15)
-B1 took damage: 0 (defended)
-B1's Remaining Health: 15
-Battle Over! Tick limit reached (50 ticks occurred)
+[Tick 71] 1 unit(s) acting
+Melee: R3 targeting B2 (HP: 2)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 0
+Battle Over! Red Team wins!
 [DEBUG] Recording equipment stats for 10 units
-[DEBUG] Unit R0: W=BSW39 A=BSA20 Won=0 Draw=1
-[DEBUG] Unit R1: W=BSW27 A=BSA7 Won=0 Draw=1
-[DEBUG] Unit R2: W=BSW27 A=BSA10 Won=0 Draw=1
-[DEBUG] Unit R3: W=BSW25 A=BSA48 Won=0 Draw=1
-[DEBUG] Unit R4: W=BSW15 A=BSA13 Won=0 Draw=1
-[DEBUG] Unit B0: W=BSW47 A=BSA17 Won=0 Draw=1
-[DEBUG] Unit B1: W=BSW30 A=BSA49 Won=0 Draw=1
-[DEBUG] Unit B2: W=BSW6 A=BSA4 Won=0 Draw=1
-[DEBUG] Unit B3: W=BSW40 A=BSA47 Won=0 Draw=1
-[DEBUG] Unit B4: W=BSW30 A=BSA2 Won=0 Draw=1
+[DEBUG] Unit R0: W=BSW43 A=BSA43 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW39 A=BSA28 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW28 A=BSA38 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW8 A=BSA25 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW9 A=BSA15 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW5 A=BSA48 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW44 A=BSA40 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW22 A=BSA44 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW7 A=BSA34 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW48 A=BSA44 Won=0 Draw=0
 [BattleManager] Equipment data written to battle_equipment_data.txt
 Battle finished.

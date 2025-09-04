@@ -1,336 +1,204 @@
 [Simulator] Config loading failed, using random equipment
-[DEBUG] R0 W:BSW42(Haste) A:BSA12 ATK:0 DEF:1 SPD:4 THR:5 HP:10
-[DEBUG] R1 W:BSW44(Exposure) A:BSA47 ATK:0 DEF:3 SPD:1 THR:9 HP:13
-[DEBUG] R2 W:BSW45(Fatigue) A:BSA7 ATK:0 DEF:0 SPD:4 THR:5 HP:11
-[DEBUG] R3 W:BSW37(Freeze) A:BSA8 ATK:1 DEF:0 SPD:4 THR:5 HP:10
-[DEBUG] R4 W:BSW13(Prep Attack) A:BSA25 ATK:4 DEF:1 SPD:4 THR:3 HP:8
-[DEBUG] B0 W:BSW9(Blitz Attack) A:BSA45 ATK:5 DEF:5 SPD:2 THR:9 HP:10
-[DEBUG] B1 W:BSW14(Leech Attack) A:BSA42 ATK:5 DEF:6 SPD:0 THR:9 HP:10
-[DEBUG] B2 W:BSW12(Final Attack) A:BSA30 ATK:2 DEF:12 SPD:1 THR:7 HP:10
-[DEBUG] B3 W:BSW18(Killing Spree) A:BSA31 ATK:5 DEF:4 SPD:2 THR:6 HP:10
-[DEBUG] B4 W:BSW19(Momentum) A:BSA30 ATK:5 DEF:2 SPD:1 THR:4 HP:10
+[DEBUG] R0 W:BSW34(Wind Blade) A:BSA44 ATK:3 DEF:3 SPD:1 THR:5 HP:12
+[DEBUG] R1 W:BSW45(Fatigue) A:BSA40 ATK:1 DEF:4 SPD:1 THR:10 HP:14
+[DEBUG] R2 W:BSW7(Poison Attack) A:BSA15 ATK:3 DEF:0 SPD:5 THR:2 HP:8
+[DEBUG] R3 W:BSW1(Slash) A:BSA13 ATK:5 DEF:1 SPD:6 THR:4 HP:11
+[DEBUG] R4 W:BSW2(Chop) A:BSA28 ATK:5 DEF:3 SPD:2 THR:6 HP:10
+[DEBUG] B0 W:BSW10(Reckless Attack) A:BSA8 ATK:6 DEF:0 SPD:4 THR:5 HP:10
+[DEBUG] B1 W:BSW9(Blitz Attack) A:BSA46 ATK:6 DEF:1 SPD:2 THR:6 HP:11
+[DEBUG] B2 W:BSW44(Exposure) A:BSA30 ATK:1 DEF:2 SPD:2 THR:7 HP:10
+[DEBUG] B3 W:BSW35(Chain Lightning) A:BSA47 ATK:3 DEF:3 SPD:0 THR:10 HP:13
+[DEBUG] B4 W:BSW25(Smoke Shot) A:BSA10 ATK:2 DEF:0 SPD:6 THR:2 HP:10
 
-[Tick 1] 4 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R0 targeting R1 (HP: 13)
-[BOON] Applied HasteSTART to R1 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 2 to 1
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Applied FreezeSTART to B0 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 10] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 14)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 14
+Melee: R3 targeting B3 (HP: 13)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 11
+  -> B3 (magic) tick reset due to melee attack!
 
-[Tick 2] 6 unit(s) acting
-Ranged: B3 targeting R1 (HP: 13)
-R1 took damage: 2 (defended)
-R1's Remaining Health: 11
-  -> R1 (magic) tick reset due to ranged attack!
-Melee: B0 targeting R1 (HP: 11)
-  -> B0 is frozen and cannot act!
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for B0
-[AFTER-ACTION] Registered after-action for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
-[TEMP-BUFF] FreezeSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered FreezeSTART
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R0 targeting R1 (HP: 11)
-[BOON] Refreshing existing HasteSTART on R1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 1 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
+[Tick 12] 1 unit(s) acting
+Melee: R2 targeting B3 (HP: 11)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 11
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R2 applied Poison Effect to B3 (usage: 3)
 
-[Tick 3] 5 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-Magic: R0 targeting R1 (HP: 11)
-[BOON] Refreshing existing HasteSTART on R1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: R1 targeting B0 (HP: 10)
-[A33] B0 threat changed from 9 to 7
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon HasteSTART for R1
-[AFTER-ACTION] Registered after-action for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 9)
-[TEMP-BUFF] HasteSTART applied to R1 (Duration: 1 turns)
-[EXECUTE_EFFECT] R1 triggered HasteSTART
-[A19] R1 speed changed from 1 to 3
-[DEBUG] LCM changed from 4 to 12 - rebuilding queue
-Magic: R1 targeting B1 (HP: 10)
-[A33] B1 threat changed from 9 to 7
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon HasteSTART for R1
-[AFTER-ACTION] Registered after-action for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 9)
-[TEMP-BUFF] HasteSTART on R1 (Remaining: 0 turns)
-[TEMP-BUFF] HasteSTART expired on R1 - applying removal effect: HasteEND
-[EXECUTE_EFFECT] R1 triggered HasteEND
-[A19] R1 speed changed from 3 to 1
-[BOON] HasteSTART expired on R1 - cleaned up
-[DEBUG] LCM changed from 12 to 4 - rebuilding queue
-Magic: R1 targeting B2 (HP: 10)
-[A33] B2 threat changed from 7 to 5
-
-[Tick 4] 7 unit(s) acting
-Ranged: B3 targeting R1 (HP: 11)
-R1 took damage: 2 (defended)
+[Tick 15] 1 unit(s) acting
+Melee: B0 targeting R1 (HP: 14)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 7
+R1 took damage: 5 (defended)
 R1's Remaining Health: 9
-  -> R1 (magic) tick reset due to ranged attack!
+  -> R1 (magic) tick reset due to melee attack!
+
+[Tick 16] 1 unit(s) acting
+Magic: R1 targeting B3 (HP: 11)
+[A06] B3 speed changed from 0 to 0
+Magic: R1 targeting B2 (HP: 10)
+[A06] B2 speed changed from 2 to 1
+
+[Tick 20] 2 unit(s) acting
 Ranged: B4 targeting R1 (HP: 9)
-R1 took damage: 2 (defended)
-R1's Remaining Health: 7
-  -> R1 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R1 (HP: 7)
-R1 took damage: 11 (defended)
-R1's Remaining Health: 0
-[A12] B2 defense changed from 12 to 0
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
+R1 took damage: 0 (defended)
+R1's Remaining Health: 9
+Melee: R3 targeting B3 (HP: 11)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 9
+  -> B3 (magic) tick reset due to melee attack!
 
-[Tick 5] 4 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R0 targeting R0 (HP: 10)
-[BOON] Applied HasteSTART to R0 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon HasteSTART for R0
-[AFTER-ACTION] Registered after-action for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 5)
-[TEMP-BUFF] HasteSTART applied to R0 (Duration: 1 turns)
-[EXECUTE_EFFECT] R0 triggered HasteSTART
-[A19] R0 speed changed from 4 to 6
-[DEBUG] LCM changed from 4 to 12 - rebuilding queue
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
+[Tick 24] 1 unit(s) acting
+Melee: R2 targeting B3 (HP: 9)
+B3 took damage: 0 (defended)
+B3's Remaining Health: 9
+[BOON] Refreshing existing Poison Effect on B3
+[A28] R2 applied Poison Effect to B3 (usage: 3)
 
-[Tick 6] 5 unit(s) acting
-Ranged: B3 targeting R0 (HP: 10)
-R0 took damage: 4 (defended)
-R0's Remaining Health: 6
-  -> R0 (magic) tick reset due to ranged attack!
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-[Tick 8] 2 unit(s) acting
-Ranged: B4 targeting R0 (HP: 6)
-R0 took damage: 4 (defended)
-R0's Remaining Health: 2
-  -> R0 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R0 (HP: 2)
-R0 took damage: 1 (defended)
-R0's Remaining Health: 1
-[A12] B2 defense changed from 0 to 0
-  -> R0 (magic) tick reset due to melee attack!
-
-[Tick 9] 3 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-
-[Tick 12] 4 unit(s) acting
-Ranged: B3 targeting R0 (HP: 1)
-R0 took damage: 4 (defended)
-R0's Remaining Health: 0
-[AFTER-ACTION] Registered after-action for B3
-[A18] Queuing after-action: AfterAttack for B3
-[AFTER-ACTION] B3 performs after-action on R2 (threat: 5)
-R2 took damage: 5 (defended)
-R2's Remaining Health: 6
-[DEBUG] LCM changed from 12 to 4 - rebuilding queue
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-
-[Tick 15] 3 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-
-[Tick 16] 3 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-
-[Tick 17] 3 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-Magic: R2 targeting B0 (HP: 10)
-[A06] B0 speed changed from 0 to 0
-Magic: R2 targeting B1 (HP: 10)
-[A06] B1 speed changed from 0 to 0
-
-[Tick 18] 4 unit(s) acting
-Ranged: B3 targeting R2 (HP: 6)
-R2 took damage: 5 (defended)
-R2's Remaining Health: 1
-  -> R2 (magic) tick reset due to ranged attack!
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-[Tick 19] 2 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Magic: R3 targeting B0 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on B0
-[REFRESH] FreezeSTART duration refreshed, effect remains active
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-[Tick 20] 5 unit(s) acting
-Ranged: B4 targeting R2 (HP: 1)
-R2 took damage: 5 (defended)
-R2's Remaining Health: 0
-[AFTER-ACTION] Registered after-action for B4
-[A18] Queuing after-action: SpeedBoost for B4
-[AFTER-ACTION] B4 performs after-action on R3 (threat: 5)
-[A19] B4 speed changed from 1 to 2
-Ranged: B3 targeting R3 (HP: 10)
-R3 took damage: 5 (defended)
-R3's Remaining Health: 5
-  -> R3 (magic) tick reset due to ranged attack!
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-Melee: B2 targeting R3 (HP: 5)
-R3 took damage: 2 (defended)
-R3's Remaining Health: 3
-[A12] B2 defense changed from 0 to 0
-  -> R3 (magic) tick reset due to melee attack!
-
-[Tick 21] 1 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-
-[Tick 22] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 3)
-R3 took damage: 5 (defended)
-R3's Remaining Health: 0
-[AFTER-ACTION] Registered after-action for B3
-[A18] Queuing after-action: AfterAttack for B3
-[AFTER-ACTION] B3 performs after-action on R4 (threat: 3)
-R4 took damage: 4 (defended)
+[Tick 30] 6 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 10
+Melee: R3 targeting B3 (HP: 9)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 7
+  -> B3 (magic) tick reset due to melee attack!
+Melee: R4 targeting B3 (HP: 7)
+B3 took damage: 2 (defended)
+B3's Remaining Health: 5
+[A02] B3 defense changed from 3 to 2
+  -> B3 (magic) tick reset due to melee attack!
+Melee: B0 targeting R4 (HP: 10)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 4
+R4 took damage: 6 (defended)
 R4's Remaining Health: 4
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-
-[Tick 23] 1 unit(s) acting
-Melee: R4 targeting B0 (HP: 10)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 10
-
-[Tick 24] 4 unit(s) acting
-Ranged: B3 targeting R4 (HP: 4)
-R4 took damage: 4 (defended)
+Melee: B1 targeting R4 (HP: 4)
+R4 took damage: 5 (defended)
 R4's Remaining Health: 0
-[AFTER-ACTION] Registered after-action for B3
-[A18] Queuing after-action: AfterAttack for B3
-[AFTER-ACTION] No valid target found for B3
-[DEBUG] LCM changed from 4 to 2 - rebuilding queue
-Battle Over! Blue Team wins!
+Magic: B2 targeting R0 (HP: 12)
+[A33] R0 threat changed from 5 to 3
+Magic: B2 targeting R3 (HP: 11)
+[A33] R3 threat changed from 4 to 2
+
+[Tick 36] 1 unit(s) acting
+Melee: R2 targeting B3 (HP: 5)
+B3 took damage: 1 (defended)
+B3's Remaining Health: 4
+[BOON] Refreshing existing Poison Effect on B3
+[A28] R2 applied Poison Effect to B3 (usage: 3)
+  -> B3 (magic) tick reset due to melee attack!
+
+[Tick 40] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 12)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 12
+Melee: R3 targeting B3 (HP: 4)
+B3 took damage: 3 (defended)
+B3's Remaining Health: 1
+  -> B3 (magic) tick reset due to melee attack!
+
+[Tick 45] 1 unit(s) acting
+Melee: B0 targeting R1 (HP: 9)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 1
+R1 took damage: 5 (defended)
+R1's Remaining Health: 4
+  -> R1 (magic) tick reset due to melee attack!
+
+[Tick 46] 1 unit(s) acting
+Magic: R1 targeting B3 (HP: 1)
+[A06] B3 speed changed from 0 to 0
+Magic: R1 targeting B2 (HP: 10)
+[A06] B2 speed changed from 1 to 0
+
+[Tick 48] 1 unit(s) acting
+Melee: R2 targeting B3 (HP: 1)
+B3 took damage: 1 (defended)
+B3's Remaining Health: 0
+[BOON] Refreshing existing Poison Effect on B3
+[A28] R2 applied Poison Effect to B3 (usage: 3)
+
+[Tick 50] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 4)
+R1 took damage: 0 (defended)
+R1's Remaining Health: 4
+Melee: R3 targeting B2 (HP: 10)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 7
+  -> B2 (magic) tick reset due to melee attack!
+
+[Tick 60] 6 unit(s) acting
+Ranged: B4 targeting R2 (HP: 8)
+R2 took damage: 2 (defended)
+R2's Remaining Health: 6
+Melee: B0 targeting R2 (HP: 6)
+B0 took damage: 3 (pierced)
+B0's Remaining Health: 0
+R2 took damage: 9 (defended)
+R2's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 6 - rebuilding queue
+Melee: B1 targeting R3 (HP: 11)
+R3 took damage: 7 (defended)
+R3's Remaining Health: 4
+Melee: R2 targeting B2 (HP: 7)
+B2 took damage: 1 (defended)
+B2's Remaining Health: 6
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+  -> B2 (magic) tick reset due to melee attack!
+Melee: R3 targeting B2 (HP: 6)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 3
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R0 targeting B2 (HP: 3)
+B2 took damage: 3 (pierced)
+B2's Remaining Health: 0
+Magic: R0 targeting B1 (HP: 11)
+B1 took damage: 3 (pierced)
+B1's Remaining Health: 8
+
+[Tick 70] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 4)
+R3 took damage: 1 (defended)
+R3's Remaining Health: 3
+Melee: R3 targeting B1 (HP: 8)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 4
+
+[Tick 71] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 3)
+R3 took damage: 1 (defended)
+R3's Remaining Health: 2
+Melee: R3 targeting B1 (HP: 4)
+B1 took damage: 4 (defended)
+B1's Remaining Health: 0
+
+[Tick 72] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 12)
+R0 took damage: 0 (defended)
+R0's Remaining Health: 12
+Melee: R3 targeting B4 (HP: 10)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 5
+  -> B4 (ranged) delayed by 1 tick(s) due to 5/10 damage!
+
+[Tick 73] 1 unit(s) acting
+Melee: R3 targeting B4 (HP: 5)
+B4 took damage: 5 (defended)
+B4's Remaining Health: 0
+Battle Over! Red Team wins!
 [DEBUG] Recording equipment stats for 10 units
-[DEBUG] Unit R0: W=BSW42 A=BSA12 Won=0 Draw=0
-[DEBUG] Unit R1: W=BSW44 A=BSA47 Won=0 Draw=0
-[DEBUG] Unit R2: W=BSW45 A=BSA7 Won=0 Draw=0
-[DEBUG] Unit R3: W=BSW37 A=BSA8 Won=0 Draw=0
-[DEBUG] Unit R4: W=BSW13 A=BSA25 Won=0 Draw=0
-[DEBUG] Unit B0: W=BSW9 A=BSA45 Won=1 Draw=0
-[DEBUG] Unit B1: W=BSW14 A=BSA42 Won=1 Draw=0
-[DEBUG] Unit B2: W=BSW12 A=BSA30 Won=1 Draw=0
-[DEBUG] Unit B3: W=BSW18 A=BSA31 Won=1 Draw=0
-[DEBUG] Unit B4: W=BSW19 A=BSA30 Won=1 Draw=0
+[DEBUG] Unit R0: W=BSW34 A=BSA44 Won=1 Draw=0
+[DEBUG] Unit R1: W=BSW45 A=BSA40 Won=1 Draw=0
+[DEBUG] Unit R2: W=BSW7 A=BSA15 Won=1 Draw=0
+[DEBUG] Unit R3: W=BSW1 A=BSA13 Won=1 Draw=0
+[DEBUG] Unit R4: W=BSW2 A=BSA28 Won=1 Draw=0
+[DEBUG] Unit B0: W=BSW10 A=BSA8 Won=0 Draw=0
+[DEBUG] Unit B1: W=BSW9 A=BSA46 Won=0 Draw=0
+[DEBUG] Unit B2: W=BSW44 A=BSA30 Won=0 Draw=0
+[DEBUG] Unit B3: W=BSW35 A=BSA47 Won=0 Draw=0
+[DEBUG] Unit B4: W=BSW25 A=BSA10 Won=0 Draw=0
 [BattleManager] Equipment data written to battle_equipment_data.txt
 Battle finished.
