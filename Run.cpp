@@ -44,39 +44,22 @@ public:
     int executeFullPipeline() {
         auto startTime = std::chrono::high_resolution_clock::now();
         
-        std::cout << "=== MA Research Pipeline Controller ===" << std::endl;
-        std::cout << "Battle Configurations: " << numBattleConfigs << " (generates " << (numBattleConfigs * 2) << " teams)" << std::endl;
-        std::cout << "Simulations per Batch: " << simulationsPerBatch << std::endl;
-        std::cout << "Expected Batches: " << ((numBattleConfigs * 2) / 10) << " batches of 10 teams each" << std::endl;
-        std::cout << "Expected Total Matches: " << ((numBattleConfigs * 2) / 10) * 45 << " matches" << std::endl;
-        std::cout << std::endl;
-        
         // Stage 1: Element Generation (Team Configuration)
-        std::cout << "[Stage 1] Equipment & Team Configuration Generation..." << std::endl;
         if (!executeElementGeneration()) {
             std::cerr << "ERROR: Element generation failed!" << std::endl;
             return 1;
         }
         
         // Stage 2: Sampling & Batch Creation
-        std::cout << "[Stage 2] Sampling & Batch Configuration..." << std::endl;
         if (!executeSampling()) {
             std::cerr << "ERROR: Sampling execution failed!" << std::endl;
             return 2;
         }
         
         // Stage 3: Batch Simulation Execution
-        std::cout << "[Stage 3] Tournament Simulation Execution..." << std::endl;
         if (!executeBatchSimulations()) {
             std::cerr << "ERROR: Batch simulation execution failed!" << std::endl;
             return 3;
-        }
-        
-        // Stage 4: TestSubject Equipment Analysis (using real accumulated Equipment data)
-        std::cout << "[Stage 4] TestSubject Equipment Analysis..." << std::endl;
-        if (!executeTestSubjectAnalysis()) {
-            std::cerr << "ERROR: TestSubject analysis failed!" << std::endl;
-            return 4;
         }
         
         // Final timing and summary
@@ -97,19 +80,11 @@ public:
             std::cout << duration.count() << " milliseconds";
         }
         
-        std::cout << std::endl;
-        std::cout << "Configuration Files: " << Paths::ELEMENT_DIR + "element_test_configs.csv" << std::endl;
-        std::cout << "Batch Files: " << Paths::SAMPLING_DIR + "Batches/" << std::endl;
-        std::cout << "Simulation Results: " << Paths::LOG_V1_DIR << std::endl;
-        std::cout << "Equipment Analysis: " << Paths::LOG_V1_DIR + "EquipmentAnalysis_Aggregated.csv" << std::endl;
-        std::cout << "Analysis Reports: " << Paths::ANALYSIS_DIR << std::endl;
-        
         return 0;
     }
     
 private:
     bool executeElementGeneration() {
-        if (verboseOutput) std::cout << "  → Building Element.exe..." << std::endl;
         
         // Build Element.exe
         std::string buildCmd = "cd " + Paths::ELEMENT_DIR + " && .\\build.bat";
@@ -117,8 +92,7 @@ private:
             std::cerr << "    ERROR: Element build failed!" << std::endl;
             return false;
         }
-        
-        if (verboseOutput) std::cout << "  → Generating " << numBattleConfigs << " battle configurations (" << (numBattleConfigs * 2) << " teams)..." << std::endl;
+    
         
         // Execute Element.exe to generate equipment and configurations
         std::string execCmd = "cd " + Paths::ELEMENT_DIR + " && .\\Element.exe " + std::to_string(numBattleConfigs);
@@ -127,12 +101,10 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → Equipment and team configuration generation complete" << std::endl;
         return true;
     }
     
     bool executeSampling() {
-        if (verboseOutput) std::cout << "  → Building SamplingController..." << std::endl;
         
         // Build SamplingController
         std::string buildCmd = "cd " + Paths::SAMPLING_DIR + " && .\\build_sampling.bat";
@@ -141,8 +113,6 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → Executing sampling and batch creation..." << std::endl;
-        
         // Execute SamplingController to create batch configurations
         std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SamplingMain.exe";
         if (std::system(execCmd.c_str()) != 0) {
@@ -150,13 +120,10 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → Batch configuration creation complete" << std::endl;
         return true;
     }
     
     bool executeBatchSimulations() {
-        if (verboseOutput) std::cout << "  → Building Simulator.exe..." << std::endl;
-        
         // Build Simulator
         std::string buildCmd = "cd " + Paths::SIMULATOR_DIR + " && .\\build.bat";
         if (std::system(buildCmd.c_str()) != 0) {
@@ -164,7 +131,6 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → Building SimpleBatchRunner..." << std::endl;
         
         // Build SimpleBatchRunner
         std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 SimpleBatchRunner.cpp -o SimpleBatchRunner.exe";
@@ -173,7 +139,6 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → Running tournament simulations on all batches..." << std::endl;
         
         // Execute batch simulations
         std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SimpleBatchRunner.exe " + std::to_string(simulationsPerBatch);
@@ -182,12 +147,10 @@ private:
             return false;
         }
         
-        if (verboseOutput) std::cout << "  → All batch simulations complete" << std::endl;
         return true;
     }
     
     bool executeTestSubjectAnalysis() {
-        std::cout << "  → Building EquipmentAggregator for TestSubject analysis..." << std::endl;
         
         // Build EquipmentAggregator to analyze the real TestSubject data from Equipment objects
         std::string buildCmd = "cd " + Paths::ANALYSIS_DIR + " && g++ -std=c++17 EquipmentAggregator.cpp -o EquipmentAggregator.exe";
@@ -196,8 +159,6 @@ private:
             return false;
         }
         
-        std::cout << "  → Analyzing accumulated TestSubject statistics from Equipment objects..." << std::endl;
-        
         // Execute EquipmentAggregator to get real accumulated TestSubject statistics
         std::string execCmd = "cd " + Paths::ANALYSIS_DIR + " && .\\EquipmentAggregator.exe";
         if (std::system(execCmd.c_str()) != 0) {
@@ -205,7 +166,6 @@ private:
             return false;
         }
         
-        std::cout << "  → TestSubject Equipment analysis complete - data from actual Weapon/Armor objects" << std::endl;
         return true;
     }
 };

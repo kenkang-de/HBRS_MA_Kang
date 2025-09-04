@@ -1,148 +1,119 @@
 [Simulator] Element data not found, falling back to CSV files
 [Simulator] Config loading failed, using random equipment
-[DEBUG] R0 W:BSW20(Blitz Shot) A:BSA12 ATK:2 DEF:1 SPD:6 THR:3 HP:10
-[DEBUG] R1 W:BSW6(Achilles' heel) A:BSA36 ATK:2 DEF:2 SPD:3 THR:5 HP:10
-[DEBUG] R2 W:BSW37(Freeze) A:BSA28 ATK:1 DEF:3 SPD:1 THR:7 HP:10
-[DEBUG] R3 W:BSW14(Leech Attack) A:BSA18 ATK:4 DEF:1 SPD:3 THR:3 HP:8
-[DEBUG] R4 W:BSW2(Chop) A:BSA3 ATK:5 DEF:-2 SPD:6 THR:5 HP:10
-[DEBUG] B0 W:BSW7(Poison Attack) A:BSA42 ATK:2 DEF:6 SPD:2 THR:9 HP:10
-[DEBUG] B1 W:BSW28(Heavy Shot) A:BSA25 ATK:6 DEF:1 SPD:3 THR:1 HP:8
-[DEBUG] B2 W:BSW3(Thrust) A:BSA21 ATK:4 DEF:3 SPD:5 THR:3 HP:10
-[DEBUG] B3 W:BSW45(Fatigue) A:BSA29 ATK:1 DEF:0 SPD:1 THR:5 HP:12
-[DEBUG] B4 W:BSW27(Tripple Shot) A:BSA37 ATK:2 DEF:4 SPD:2 THR:5 HP:10
+[DEBUG] R0 W:BSW15(Taunt) A:BSA9 ATK:6 DEF:-2 SPD:4 THR:4 HP:10
+[DEBUG] R1 W:BSW18(Killing Spree) A:BSA33 ATK:6 DEF:1 SPD:2 THR:4 HP:10
+[DEBUG] R2 W:BSW29(Camo Throw) A:BSA27 ATK:8 DEF:1 SPD:4 THR:2 HP:4
+[DEBUG] R3 W:BSW4(Berserk) A:BSA30 ATK:5 DEF:2 SPD:2 THR:5 HP:14
+[DEBUG] R4 W:BSW48(Meteor) A:BSA49 ATK:1 DEF:2 SPD:0 THR:9 HP:15
+[DEBUG] B0 W:BSW12(Final Attack) A:BSA20 ATK:0 DEF:11 SPD:2 THR:5 HP:12
+[DEBUG] B1 W:BSW8(Charge Attack) A:BSA8 ATK:4 DEF:0 SPD:6 THR:5 HP:12
+[DEBUG] B2 W:BSW15(Taunt) A:BSA34 ATK:7 DEF:3 SPD:1 THR:8 HP:10
+[DEBUG] B3 W:BSW35(Chain Lightning) A:BSA27 ATK:7 DEF:1 SPD:2 THR:5 HP:4
+[DEBUG] B4 W:BSW29(Camo Throw) A:BSA39 ATK:5 DEF:2 SPD:3 THR:6 HP:12
 
-[Tick 5] 2 unit(s) acting
-Ranged: R0 targeting B0 (HP: 10)
-B0 took damage: 2 (defended)
-B0's Remaining Health: 8
-Melee: R4 targeting B0 (HP: 8)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 8
-[A02] B0 defense changed from 6 to 5
+[Tick 2] 1 unit(s) acting
+Melee: B1 targeting R4 (HP: 15)
+R4 took damage: 6 (defended)
+R4's Remaining Health: 9
+  -> R4 (magic) tick reset due to melee attack!
 
-[Tick 6] 1 unit(s) acting
-Melee: B2 targeting R2 (HP: 10)
-R2 took damage: 5 (defended)
-R2's Remaining Health: 5
-  -> R2 (magic) tick reset due to melee attack!
+[Tick 3] 2 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+B2 took damage: 5 (defended)
+B2's Remaining Health: 5
+[A10] R2 threat changed from 2 to 1
+Melee: R0 targeting B2 (HP: 5)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 2
+[A10] R0 threat changed from 4 to 5
+[A04] R0 attack changed from 6 to 5
 
-[Tick 7] 1 unit(s) acting
-Magic: R2 targeting B0 (HP: 8)
-[BOON] Applied FreezeSTART to B0 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-[Tick 10] 5 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-R2 took damage: 9 (defended)
-R2's Remaining Health: 0
-[A19] B1 speed changed from 3 to 2
-Ranged: R0 targeting B0 (HP: 8)
-B0 took damage: 3 (defended)
-B0's Remaining Health: 5
-Melee: R1 targeting B0 (HP: 5)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 5
-[A06] B0 speed changed from 2 to 1
-Melee: R3 targeting B0 (HP: 5)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 5
-Melee: R4 targeting B0 (HP: 5)
-B0 took damage: 0 (defended)
-B0's Remaining Health: 5
-[A02] B0 defense changed from 5 to 4
-
-[Tick 12] 1 unit(s) acting
-Melee: B2 targeting R1 (HP: 10)
-R1 took damage: 6 (defended)
-R1's Remaining Health: 4
-
-[Tick 15] 4 unit(s) acting
-Ranged: B4 targeting R1 (HP: 4)
-R1 took damage: 0 (defended)
-R1's Remaining Health: 4
-Ranged: B4 targeting R4 (HP: 10)
-R4 took damage: 4 (defended)
+[Tick 4] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 9)
+R4 took damage: 3 (defended)
 R4's Remaining Health: 6
-Ranged: B4 targeting R0 (HP: 10)
-R0 took damage: 1 (defended)
-R0's Remaining Health: 9
-Ranged: R0 targeting B0 (HP: 5)
-B0 took damage: 4 (defended)
-B0's Remaining Health: 1
-Melee: B0 targeting R1 (HP: 4)
-  -> B0 is frozen and cannot act!
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for B0
-[AFTER-ACTION] Registered after-action for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 9)
-[TEMP-BUFF] FreezeSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered FreezeSTART
-Melee: R4 targeting B0 (HP: 1)
-B0 took damage: 1 (defended)
-B0's Remaining Health: 0
-[A02] B0 defense changed from 4 to 3
+[A10] B4 threat changed from 6 to 5
+  -> R4 (magic) tick reset due to ranged attack!
+Melee: B1 targeting R4 (HP: 6)
+R4 took damage: 6 (defended)
+R4's Remaining Health: 0
 
-[Tick 18] 1 unit(s) acting
-Melee: B2 targeting R1 (HP: 4)
-R1 took damage: 6 (defended)
+[Tick 6] 7 unit(s) acting
+Ranged: R1 targeting B2 (HP: 2)
+B2 took damage: 3 (defended)
+B2's Remaining Health: 0
+[AFTER-ACTION] Registered after-action for R1
+[A18] Queuing after-action: AfterAttack for R1
+[AFTER-ACTION] R1 performs after-action on B0 (threat: 5)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 12
+Ranged: R2 targeting B0 (HP: 12)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 12
+[A10] R2 threat changed from 1 to 0
+Melee: B0 targeting R0 (HP: 10)
+R0 took damage: 13 (defended)
+R0's Remaining Health: 0
+[A12] B0 defense changed from 11 to 0
+Melee: R0 targeting B0 (HP: 12)
+B0 took damage: 5 (defended)
+B0's Remaining Health: 7
+[A10] R0 threat changed from 5 to 6
+[A04] R0 attack changed from 5 to 4
+Melee: R3 targeting B0 (HP: 7)
+R3 took damage: 2 (pierced)
+R3's Remaining Health: 12
+B0 took damage: 5 (defended)
+B0's Remaining Health: 2
+[A02] B0 defense changed from 0 to 0
+Magic: B3 targeting R3 (HP: 12)
+R3 took damage: 7 (pierced)
+R3's Remaining Health: 5
+Magic: B3 targeting R1 (HP: 10)
+R1 took damage: 7 (pierced)
+R1's Remaining Health: 3
+
+[Tick 8] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 5)
+R3 took damage: 3 (defended)
+R3's Remaining Health: 2
+[A10] B4 threat changed from 5 to 4
+Melee: B1 targeting R3 (HP: 2)
+R3 took damage: 6 (defended)
+R3's Remaining Health: 0
+
+[Tick 9] 1 unit(s) acting
+Ranged: R2 targeting B0 (HP: 2)
+B0 took damage: 8 (defended)
+B0's Remaining Health: 0
+[A10] R2 threat changed from 0 to 0
+
+[Tick 10] 1 unit(s) acting
+Melee: B1 targeting R1 (HP: 3)
+R1 took damage: 7 (defended)
 R1's Remaining Health: 0
 
-[Tick 20] 4 unit(s) acting
-Ranged: R0 targeting B3 (HP: 12)
-B3 took damage: 8 (defended)
-B3's Remaining Health: 4
-  -> B3 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R4 (HP: 6)
-R4 took damage: 14 (defended)
-R4's Remaining Health: 0
-[A19] B1 speed changed from 2 to 1
-Melee: R3 targeting B3 (HP: 4)
-B3 took damage: 4 (defended)
-B3's Remaining Health: 0
-[HEAL] R3 healed for 0 HP (from 8 to 8/8)
-
-[Tick 24] 1 unit(s) acting
-Melee: B2 targeting R0 (HP: 9)
-R0 took damage: 7 (defended)
-R0's Remaining Health: 2
-  -> R0 (ranged) delayed by 1 tick(s) due to 7/10 damage!
-
-[Tick 26] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 took damage: 4 (defended)
-B4's Remaining Health: 6
-
-[Tick 30] 3 unit(s) acting
-Ranged: B4 targeting R0 (HP: 2)
-R0 took damage: 1 (defended)
-R0's Remaining Health: 1
-Ranged: B4 targeting R3 (HP: 8)
-R3 took damage: 1 (defended)
-R3's Remaining Health: 7
-Melee: R3 targeting B4 (HP: 6)
-B4 took damage: 0 (defended)
-B4's Remaining Health: 6
-Melee: B2 targeting R0 (HP: 1)
-R0 took damage: 7 (defended)
-R0's Remaining Health: 0
-
-[Tick 35] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 7)
-R3 took damage: 11 (defended)
-R3's Remaining Health: 0
-[A19] B1 speed changed from 1 to 0
-[DEBUG] LCM changed from 30 to 10 - rebuilding queue
+[Tick 12] 4 unit(s) acting
+Ranged: R2 targeting B1 (HP: 12)
+B1 took damage: 8 (defended)
+B1's Remaining Health: 4
+[A10] R2 threat changed from 0 to 0
+Ranged: B4 targeting R2 (HP: 4)
+R2 took damage: 4 (defended)
+R2's Remaining Health: 0
+[A10] B4 threat changed from 4 to 3
+[DEBUG] LCM changed from 12 to 6 - rebuilding queue
 Battle Over! Blue Team wins!
 [DEBUG] Recording equipment stats for 10 units
-[DEBUG] Unit R0: W=BSW20 A=BSA12 Won=0 Draw=0
-[DEBUG] Unit R1: W=BSW6 A=BSA36 Won=0 Draw=0
-[DEBUG] Unit R2: W=BSW37 A=BSA28 Won=0 Draw=0
-[DEBUG] Unit R3: W=BSW14 A=BSA18 Won=0 Draw=0
-[DEBUG] Unit R4: W=BSW2 A=BSA3 Won=0 Draw=0
-[DEBUG] Unit B0: W=BSW7 A=BSA42 Won=1 Draw=0
-[DEBUG] Unit B1: W=BSW28 A=BSA25 Won=1 Draw=0
-[DEBUG] Unit B2: W=BSW3 A=BSA21 Won=1 Draw=0
-[DEBUG] Unit B3: W=BSW45 A=BSA29 Won=1 Draw=0
-[DEBUG] Unit B4: W=BSW27 A=BSA37 Won=1 Draw=0
+[DEBUG] Unit R0: W=BSW15 A=BSA9 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW18 A=BSA33 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW29 A=BSA27 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW4 A=BSA30 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW48 A=BSA49 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW12 A=BSA20 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW8 A=BSA8 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW15 A=BSA34 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW35 A=BSA27 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW29 A=BSA39 Won=1 Draw=0
 [BattleManager] Equipment data written to battle_equipment_data.txt
 Battle finished.
