@@ -47,5 +47,3 @@ if %NEED_REBUILD%==1 (
 ) else (
     echo %TARGET% is up to date, skipping build.
 )
-
-pause

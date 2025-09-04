@@ -62,23 +62,22 @@ public:
             return 3;
         }
         
-        // Final timing and summary
+        // Calculate number of batches (assuming configs are divided into batches)
+        int numBatches = (numBattleConfigs + 9) / 10; // Round up division for batches of 10
+        std::cout << "Batches: " << numBatches << std::endl;
+        
+        // Final timing
         auto endTime = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
         
-        std::cout << "\n=== Research Pipeline Execution Complete ===" << std::endl;
         std::cout << "Total execution time: ";
-        
-        if (duration.count() >= 60000) {
-            auto minutes = duration.count() / 60000;
-            auto seconds = (duration.count() % 60000) / 1000.0;
-            std::cout << minutes << "m " << std::fixed << std::setprecision(1) << seconds << "s";
-        } else if (duration.count() >= 1000) {
+        if (duration.count() >= 1000) {
             auto seconds = duration.count() / 1000.0;
             std::cout << std::fixed << std::setprecision(2) << seconds << " seconds";
         } else {
             std::cout << duration.count() << " milliseconds";
         }
+        std::cout << std::endl;
         
         return 0;
     }
@@ -86,16 +85,16 @@ public:
 private:
     bool executeElementGeneration() {
         
-        // Build Element.exe
-        std::string buildCmd = "cd " + Paths::ELEMENT_DIR + " && .\\build.bat";
+        // Build Element.exe (suppress output)
+        std::string buildCmd = "cd " + Paths::ELEMENT_DIR + " && .\\build.bat >nul 2>&1";
         if (std::system(buildCmd.c_str()) != 0) {
             std::cerr << "    ERROR: Element build failed!" << std::endl;
             return false;
         }
     
         
-        // Execute Element.exe to generate equipment and configurations
-        std::string execCmd = "cd " + Paths::ELEMENT_DIR + " && .\\Element.exe " + std::to_string(numBattleConfigs);
+        // Execute Element.exe to generate equipment and configurations (suppress output)
+        std::string execCmd = "cd " + Paths::ELEMENT_DIR + " && .\\Element.exe " + std::to_string(numBattleConfigs) + " >nul 2>&1";
         if (std::system(execCmd.c_str()) != 0) {
             std::cerr << "    ERROR: Element execution failed!" << std::endl;
             return false;
@@ -106,17 +105,19 @@ private:
     
     bool executeSampling() {
         
-        // Build SamplingController
-        std::string buildCmd = "cd " + Paths::SAMPLING_DIR + " && .\\build_sampling.bat";
-        if (std::system(buildCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: SamplingController build failed!" << std::endl;
+        // Build SamplingController (suppress output)
+        std::string buildCmd = "cd " + Paths::SAMPLING_DIR + " && .\\build_sampling.bat >nul 2>&1";
+        int buildResult = std::system(buildCmd.c_str());
+        if (buildResult != 0) {
+            std::cerr << "    ERROR: SamplingController build failed with exit code: " << buildResult << std::endl;
             return false;
         }
         
-        // Execute SamplingController to create batch configurations
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SamplingMain.exe";
-        if (std::system(execCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: SamplingController execution failed!" << std::endl;
+        // Execute SamplingController to create batch configurations (suppress output)
+        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SamplingMain.exe >nul 2>&1";
+        int execResult = std::system(execCmd.c_str());
+        if (execResult != 0) {
+            std::cerr << "    ERROR: SamplingController execution failed with exit code: " << execResult << std::endl;
             return false;
         }
         
@@ -124,24 +125,24 @@ private:
     }
     
     bool executeBatchSimulations() {
-        // Build Simulator
-        std::string buildCmd = "cd " + Paths::SIMULATOR_DIR + " && .\\build.bat";
+        // Build Simulator (suppress output)
+        std::string buildCmd = "cd " + Paths::SIMULATOR_DIR + " && .\\build.bat >nul 2>&1";
         if (std::system(buildCmd.c_str()) != 0) {
             std::cerr << "    ERROR: Simulator build failed!" << std::endl;
             return false;
         }
         
         
-        // Build SimpleBatchRunner
-        std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 SimpleBatchRunner.cpp -o SimpleBatchRunner.exe";
+        // Build SimpleBatchRunner (suppress output)
+        std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 SimpleBatchRunner.cpp -o SimpleBatchRunner.exe >nul 2>&1";
         if (std::system(buildRunnerCmd.c_str()) != 0) {
             std::cerr << "    ERROR: SimpleBatchRunner build failed!" << std::endl;
             return false;
         }
         
         
-        // Execute batch simulations
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SimpleBatchRunner.exe " + std::to_string(simulationsPerBatch);
+        // Execute batch simulations (suppress output)
+        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\SimpleBatchRunner.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
         if (std::system(execCmd.c_str()) != 0) {
             std::cerr << "    ERROR: Batch simulation execution failed!" << std::endl;
             return false;
@@ -152,15 +153,15 @@ private:
     
     bool executeTestSubjectAnalysis() {
         
-        // Build EquipmentAggregator to analyze the real TestSubject data from Equipment objects
-        std::string buildCmd = "cd " + Paths::ANALYSIS_DIR + " && g++ -std=c++17 EquipmentAggregator.cpp -o EquipmentAggregator.exe";
+        // Build EquipmentAggregator to analyze the real TestSubject data from Equipment objects (suppress output)
+        std::string buildCmd = "cd " + Paths::ANALYSIS_DIR + " && g++ -std=c++17 EquipmentAggregator.cpp -o EquipmentAggregator.exe >nul 2>&1";
         if (std::system(buildCmd.c_str()) != 0) {
             std::cerr << "    ERROR: EquipmentAggregator build failed!" << std::endl;
             return false;
         }
         
-        // Execute EquipmentAggregator to get real accumulated TestSubject statistics
-        std::string execCmd = "cd " + Paths::ANALYSIS_DIR + " && .\\EquipmentAggregator.exe";
+        // Execute EquipmentAggregator to get real accumulated TestSubject statistics (suppress output)
+        std::string execCmd = "cd " + Paths::ANALYSIS_DIR + " && .\\EquipmentAggregator.exe >nul 2>&1";
         if (std::system(execCmd.c_str()) != 0) {
             std::cerr << "    ERROR: TestSubject analysis execution failed!" << std::endl;
             return false;

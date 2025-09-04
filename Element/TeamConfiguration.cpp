@@ -184,44 +184,8 @@ void TeamConfiguration::printStats() const {
 }
 
 void TeamConfiguration::printFinalAnalysis() const {
-    std::cout << "EQUIPMENT_ANALYSIS_START" << std::endl;
-    std::cout << "Type,ID,WinRate,TotalWin,TotalLost,TotalDraw,UsageCount" << std::endl;
-    
-    // Sort weapons by win rate
-    std::vector<const SimpleWeapon*> sortedWeapons;
-    for (const auto& weapon : equipmentLoader.getWeapons()) {
-        if (weapon.UsageCount > 0) {
-            sortedWeapons.push_back(&weapon);
-        }
-    }
-    std::sort(sortedWeapons.begin(), sortedWeapons.end(), 
-              [](const auto* a, const auto* b) { return a->WinRate > b->WinRate; });
-    
-    for (const auto* weapon : sortedWeapons) {
-        std::cout << "Weapon," << weapon->GetID() << "," 
-                  << std::fixed << std::setprecision(0) << (weapon->WinRate * 100) << ","
-                  << weapon->TotalWin << "," << weapon->TotalLost << "," 
-                  << weapon->TotalDraw << "," << weapon->UsageCount << std::endl;
-    }
-    
-    // Sort armor by win rate
-    std::vector<const SimpleArmor*> sortedArmor;
-    for (const auto& armorItem : equipmentLoader.getArmor()) {
-        if (armorItem.UsageCount > 0) {
-            sortedArmor.push_back(&armorItem);
-        }
-    }
-    std::sort(sortedArmor.begin(), sortedArmor.end(), 
-              [](const auto* a, const auto* b) { return a->WinRate > b->WinRate; });
-    
-    for (const auto* armorItem : sortedArmor) {
-        std::cout << "Armor," << armorItem->GetID() << "," 
-                  << std::fixed << std::setprecision(0) << (armorItem->WinRate * 100) << ","
-                  << armorItem->TotalWin << "," << armorItem->TotalLost << "," 
-                  << armorItem->TotalDraw << "," << armorItem->UsageCount << std::endl;
-    }
-    
-    std::cout << "EQUIPMENT_ANALYSIS_END" << std::endl;
+    // Analysis output suppressed - data is still exported to CSV file
+    // This method is kept for compatibility but no longer prints to console
 }
 
 void TeamConfiguration::exportFinalAnalysis(const std::string& filename) const {
@@ -253,7 +217,7 @@ void TeamConfiguration::exportFinalAnalysis(const std::string& filename) const {
         }
     }
     
-    std::cout << "[TeamConfiguration] Final analysis exported to: " << filename << std::endl;
+    // File exported silently - no console message needed
 }
 
 void TeamConfiguration::resetAllResults() {

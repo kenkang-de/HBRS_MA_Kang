@@ -1,129 +1,274 @@
-[Simulator] Element data not found, falling back to CSV files
 [Simulator] Config loading failed, using random equipment
-[DEBUG] R0 W:BSW17(Shoot) A:BSA30 ATK:4 DEF:2 SPD:4 THR:4 HP:10
-[DEBUG] R1 W:BSW16(Killer's Spirit) A:BSA21 ATK:7 DEF:3 SPD:2 THR:6 HP:10
-[DEBUG] R2 W:BSW17(Shoot) A:BSA8 ATK:4 DEF:0 SPD:7 THR:3 HP:10
-[DEBUG] R3 W:BSW32(Focus Throw) A:BSA30 ATK:5 DEF:2 SPD:3 THR:4 HP:10
-[DEBUG] R4 W:BSW33(Magic Bolt) A:BSA14 ATK:-1 DEF:0 SPD:4 THR:0 HP:10
-[DEBUG] B0 W:BSW41(Bulkup) A:BSA38 ATK:1 DEF:0 SPD:1 THR:5 HP:12
-[DEBUG] B1 W:BSW25(Smoke Shot) A:BSA14 ATK:2 DEF:0 SPD:5 THR:0 HP:10
-[DEBUG] B2 W:BSW18(Killing Spree) A:BSA18 ATK:3 DEF:1 SPD:4 THR:1 HP:8
-[DEBUG] B3 W:BSW18(Killing Spree) A:BSA27 ATK:8 DEF:1 SPD:3 THR:1 HP:4
-[DEBUG] B4 W:BSW15(Taunt) A:BSA32 ATK:7 DEF:-1 SPD:1 THR:4 HP:10
+[DEBUG] R0 W:BSW41(Bulkup) A:BSA1 ATK:-1 DEF:0 SPD:5 THR:6 HP:10
+[DEBUG] R1 W:BSW40(Grace) A:BSA11 ATK:2 DEF:0 SPD:5 THR:6 HP:10
+[DEBUG] R2 W:BSW17(Shoot) A:BSA23 ATK:4 DEF:3 SPD:5 THR:3 HP:7
+[DEBUG] R3 W:BSW17(Shoot) A:BSA30 ATK:4 DEF:2 SPD:4 THR:4 HP:10
+[DEBUG] R4 W:BSW10(Reckless Attack) A:BSA40 ATK:6 DEF:4 SPD:1 THR:9 HP:12
+[DEBUG] B0 W:BSW37(Freeze) A:BSA31 ATK:1 DEF:4 SPD:1 THR:8 HP:10
+[DEBUG] B1 W:BSW23(All-Out Assault) A:BSA18 ATK:2 DEF:1 SPD:5 THR:2 HP:8
+[DEBUG] B2 W:BSW15(Taunt) A:BSA4 ATK:6 DEF:0 SPD:5 THR:6 HP:8
+[DEBUG] B3 W:BSW27(Tripple Shot) A:BSA37 ATK:2 DEF:4 SPD:2 THR:5 HP:10
+[DEBUG] B4 W:BSW9(Blitz Attack) A:BSA36 ATK:4 DEF:2 SPD:3 THR:5 HP:10
 
-[Tick 60] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 12)
-B0 took damage: 4 (defended)
-B0's Remaining Health: 8
-  -> B0 (magic) tick reset due to ranged attack!
-
-[Tick 61] 1 unit(s) acting
-Magic: B0 targeting B0 (HP: 8)
-[BOON] Applied BulkupSTART to B0 (Usage: 1)
+[Tick 12] 5 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B1 targeting R4 (HP: 12)
+[A10] B1 threat changed from 2 to 3
+[A04] B1 attack changed from 2 to 4
+R4 took damage: 0 (defended)
+R4's Remaining Health: 12
+Melee: B2 targeting R4 (HP: 12)
+R4 took damage: 2 (defended)
+R4's Remaining Health: 10
+[A10] B2 threat changed from 6 to 7
+[A04] B2 attack changed from 6 to 5
+Magic: R0 targeting R4 (HP: 10)
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
 [A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B0
-[AFTER-ACTION] Registered after-action for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
-[TEMP-BUFF] BulkupSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered BulkupSTART
+Magic: R1 targeting R4 (HP: 10)
+[HEAL] R4 healed for 2 HP (from 10 to 12/12)
+[A29] R1 healed R4 for 2 HP
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 2 HP
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
 
-[Tick 84] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 10)
-R1 took damage: 0 (defended)
-R1's Remaining Health: 10
+[Tick 15] 1 unit(s) acting
+Ranged: R3 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
 
-[Tick 105] 3 unit(s) acting
-Ranged: R0 targeting B0 (HP: 18)
-B0 took damage: 4 (defended)
-B0's Remaining Health: 14
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: B2 targeting R0 (HP: 10)
-R0 took damage: 1 (defended)
-R0's Remaining Health: 9
-Magic: R4 targeting B0 (HP: 14)
-B0 took damage: 5 (pierced)
-B0's Remaining Health: 9
+[Tick 20] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 12)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 9
 
-[Tick 106] 1 unit(s) acting
-Magic: B0 targeting B0 (HP: 9)
-[BOON] Refreshing existing BulkupSTART on B0
-[REFRESH] BulkupSTART duration refreshed, effect remains active
+[Tick 24] 5 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B1 targeting R4 (HP: 9)
+[A10] B1 threat changed from 3 to 4
+[A04] B1 attack changed from 4 to 6
+R4 took damage: 2 (defended)
+R4's Remaining Health: 7
+Melee: B2 targeting R4 (HP: 7)
+R4 took damage: 1 (defended)
+R4's Remaining Health: 6
+[A10] B2 threat changed from 7 to 8
+[A04] B2 attack changed from 5 to 4
+Magic: R0 targeting R4 (HP: 6)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
 [A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B0
-[AFTER-ACTION] Registered after-action for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 5)
-[TEMP-BUFF] BulkupSTART on B0 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B0 - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B0 triggered BulkupEND
-[BOON] BulkupSTART expired on B0 - cleaned up
+Magic: R1 targeting R4 (HP: 6)
+[HEAL] R4 healed for 2 HP (from 6 to 8/12)
+[A29] R1 healed R4 for 2 HP
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 2 HP
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
 
-[Tick 120] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
-B4 took damage: 5 (defended)
-B4's Remaining Health: 5
+[Tick 30] 2 unit(s) acting
+Ranged: R3 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B3 targeting R4 (HP: 8)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 8
+Ranged: B3 targeting R0 (HP: 10)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 8
+  -> R0 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R1 (HP: 10)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 8
+  -> R1 (magic) tick reset due to ranged attack!
 
-[Tick 140] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 5)
-B4 took damage: 8 (defended)
-B4's Remaining Health: 0
-Ranged: B3 targeting R0 (HP: 9)
-R0 took damage: 6 (defended)
-R0's Remaining Health: 3
+[Tick 35] 2 unit(s) acting
+Magic: R0 targeting R4 (HP: 8)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R4 (HP: 8)
+[HEAL] R4 healed for 2 HP (from 8 to 10/12)
+[A29] R1 healed R4 for 2 HP
+Magic: R1 targeting R0 (HP: 8)
+[HEAL] R0 healed for 2 HP (from 8 to 10/10)
+[A29] R1 healed R0 for 2 HP
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
 
-[Tick 168] 1 unit(s) acting
-Ranged: B1 targeting R0 (HP: 3)
-R0 took damage: 0 (defended)
-R0's Remaining Health: 3
+[Tick 36] 3 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B1 targeting R4 (HP: 10)
+[A10] B1 threat changed from 4 to 5
+[A04] B1 attack changed from 6 to 8
+R4 took damage: 4 (defended)
+R4's Remaining Health: 6
+Melee: B2 targeting R4 (HP: 6)
+R4 took damage: 0 (defended)
+R4's Remaining Health: 6
+[A10] B2 threat changed from 8 to 9
+[A04] B2 attack changed from 4 to 3
 
-[Tick 180] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 8)
-B2 took damage: 3 (defended)
-B2's Remaining Health: 5
+[Tick 40] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 6)
+R4 took damage: 3 (defended)
+R4's Remaining Health: 3
 
-[Tick 210] 4 unit(s) acting
-Ranged: R0 targeting B2 (HP: 5)
-B2 took damage: 3 (defended)
-B2's Remaining Health: 2
-Ranged: B2 targeting R3 (HP: 10)
-R3 took damage: 1 (defended)
-R3's Remaining Health: 9
-Melee: R1 targeting B2 (HP: 2)
-B2 took damage: 6 (defended)
+[Tick 45] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 8)
+B2 took damage: 4 (defended)
+B2's Remaining Health: 4
+
+[Tick 47] 2 unit(s) acting
+Magic: R0 targeting R4 (HP: 3)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R4 (HP: 3)
+[HEAL] R4 healed for 2 HP (from 3 to 5/12)
+[A29] R1 healed R4 for 2 HP
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 2 HP
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
+
+[Tick 48] 3 unit(s) acting
+Ranged: B1 targeting R4 (HP: 5)
+[A10] B1 threat changed from 5 to 6
+[A04] B1 attack changed from 8 to 10
+R4 took damage: 6 (defended)
+R4's Remaining Health: 0
+Ranged: R2 targeting B2 (HP: 4)
+B2 took damage: 4 (defended)
 B2's Remaining Health: 0
-[A04] R1 attack changed from 7 to 8
-[A15] R1 defense changed from 3 to 4
-Magic: R4 targeting B3 (HP: 4)
-B3 took damage: 5 (pierced)
-B3's Remaining Health: 0
 
-[Tick 240] 1 unit(s) acting
-Ranged: R2 targeting B1 (HP: 10)
-B1 took damage: 4 (defended)
-B1's Remaining Health: 6
+[Tick 59] 2 unit(s) acting
+Magic: R1 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R0 for 2 HP
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
+Magic: R1 targeting R2 (HP: 7)
+[HEAL] R2 healed for 0 HP (from 7 to 7/7)
+[A29] R1 healed R2 for 2 HP
+Magic: R0 targeting R0 (HP: 10)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[AFTER-ACTION] Registered after-action for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 6)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
 
-[Tick 252] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 9)
+[Tick 60] 6 unit(s) acting
+Ranged: R3 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B3 targeting R0 (HP: 20)
+R0 took damage: 2 (defended)
+R0's Remaining Health: 18
+  -> R0 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R1 (HP: 8)
+R1 took damage: 2 (defended)
+R1's Remaining Health: 6
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R3 (HP: 10)
 R3 took damage: 0 (defended)
-R3's Remaining Health: 9
+R3's Remaining Health: 10
+Ranged: B1 targeting R0 (HP: 18)
+[A10] B1 threat changed from 6 to 7
+[A04] B1 attack changed from 10 to 12
+R0 took damage: 12 (defended)
+R0's Remaining Health: 6
+  -> R0 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Melee: B4 targeting R0 (HP: 6)
+R0 took damage: 7 (defended)
+R0's Remaining Health: 0
 
-[Tick 280] 1 unit(s) acting
-Ranged: R3 targeting B1 (HP: 6)
-B1 took damage: 7 (defended)
-B1's Remaining Health: 0
-[DEBUG] LCM changed from 420 to 84 - rebuilding queue
-Battle Over! Red Team wins!
+[Tick 65] 1 unit(s) acting
+Magic: R1 targeting R3 (HP: 10)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[A29] R1 healed R3 for 2 HP
+Magic: R1 targeting R2 (HP: 7)
+[HEAL] R2 healed for 0 HP (from 7 to 7/7)
+[A29] R1 healed R2 for 2 HP
+
+[Tick 72] 2 unit(s) acting
+Ranged: B1 targeting R1 (HP: 6)
+[A10] B1 threat changed from 7 to 8
+[A04] B1 attack changed from 12 to 14
+R1 took damage: 14 (defended)
+R1's Remaining Health: 0
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+
+[Tick 75] 1 unit(s) acting
+Ranged: R3 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+
+[Tick 80] 1 unit(s) acting
+Melee: B4 targeting R3 (HP: 10)
+R3 took damage: 5 (defended)
+R3's Remaining Health: 5
+  -> R3 (ranged) delayed by 1 tick(s) due to 5/10 damage!
+
+[Tick 84] 2 unit(s) acting
+Ranged: R2 targeting B0 (HP: 10)
+B0 took damage: 0 (defended)
+B0's Remaining Health: 10
+Ranged: B1 targeting R3 (HP: 5)
+[A10] B1 threat changed from 8 to 9
+[A04] B1 attack changed from 14 to 16
+R3 took damage: 14 (defended)
+R3's Remaining Health: 0
+[DEBUG] LCM changed from 60 to 30 - rebuilding queue
+
+[Tick 90] 1 unit(s) acting
+Ranged: B3 targeting R2 (HP: 7)
+R2 took damage: 0 (defended)
+R2's Remaining Health: 7
+
+[Tick 96] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 7)
+[A10] B1 threat changed from 9 to 10
+[A04] B1 attack changed from 16 to 18
+R2 took damage: 15 (defended)
+R2's Remaining Health: 0
+Ranged: R2 targeting B1 (HP: 8)
+B1 took damage: 3 (defended)
+B1's Remaining Health: 5
+Battle Over! Blue Team wins!
 [DEBUG] Recording equipment stats for 10 units
-[DEBUG] Unit R0: W=BSW17 A=BSA30 Won=1 Draw=0
-[DEBUG] Unit R1: W=BSW16 A=BSA21 Won=1 Draw=0
-[DEBUG] Unit R2: W=BSW17 A=BSA8 Won=1 Draw=0
-[DEBUG] Unit R3: W=BSW32 A=BSA30 Won=1 Draw=0
-[DEBUG] Unit R4: W=BSW33 A=BSA14 Won=1 Draw=0
-[DEBUG] Unit B0: W=BSW41 A=BSA38 Won=0 Draw=0
-[DEBUG] Unit B1: W=BSW25 A=BSA14 Won=0 Draw=0
-[DEBUG] Unit B2: W=BSW18 A=BSA18 Won=0 Draw=0
-[DEBUG] Unit B3: W=BSW18 A=BSA27 Won=0 Draw=0
-[DEBUG] Unit B4: W=BSW15 A=BSA32 Won=0 Draw=0
+[DEBUG] Unit R0: W=BSW41 A=BSA1 Won=0 Draw=0
+[DEBUG] Unit R1: W=BSW40 A=BSA11 Won=0 Draw=0
+[DEBUG] Unit R2: W=BSW17 A=BSA23 Won=0 Draw=0
+[DEBUG] Unit R3: W=BSW17 A=BSA30 Won=0 Draw=0
+[DEBUG] Unit R4: W=BSW10 A=BSA40 Won=0 Draw=0
+[DEBUG] Unit B0: W=BSW37 A=BSA31 Won=1 Draw=0
+[DEBUG] Unit B1: W=BSW23 A=BSA18 Won=1 Draw=0
+[DEBUG] Unit B2: W=BSW15 A=BSA4 Won=1 Draw=0
+[DEBUG] Unit B3: W=BSW27 A=BSA37 Won=1 Draw=0
+[DEBUG] Unit B4: W=BSW9 A=BSA36 Won=1 Draw=0
 [BattleManager] Equipment data written to battle_equipment_data.txt
 Battle finished.

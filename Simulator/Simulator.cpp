@@ -6,11 +6,11 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
+#include "../Paths.h"
 #include "Unit.h"
 #include "UnitGenerator.h"
 #include "TurnManager.h"
 #include "EquipmentManager.h"
-#include "ElementBridge.h"
 #include "SharedEquipmentManager.h"
 #include "TestSubjectPersistence.h"
 #include "Team.h"
@@ -119,6 +119,7 @@ int main(int argc, char* argv[])
     
     // Variables to capture selected simulation output
     std::ostringstream selectedOutput;
+    std::ostringstream nullOutput; // For suppressing non-selected simulation output
     bool outputToFile = false;
     
     // Run multiple simulations
@@ -126,11 +127,20 @@ int main(int argc, char* argv[])
         // Determine if this is the selected simulation to output
         outputToFile = (sim + 1 == selectedSim);
         
-        // If this is the selected simulation, prepare to capture output
-        std::streambuf* coutBuf = nullptr;
+        // Redirect cout output - to selected stream for chosen sim, to null stream for others
+        std::streambuf* coutBuf = std::cout.rdbuf(); // Save original cout buffer
         if (outputToFile) {
-            coutBuf = std::cout.rdbuf(); // Save original cout buffer
-            std::cout.rdbuf(selectedOutput.rdbuf()); // Redirect cout to string stream
+            std::cout.rdbuf(selectedOutput.rdbuf()); // Redirect cout to string stream for selected sim
+        } else {
+            std::cout.rdbuf(nullOutput.rdbuf()); // Redirect cout to null stream for non-selected sims
+        }
+        
+        // Show progress for non-selected simulations
+        if (!outputToFile && numSimulations > 1) {
+            // Temporarily restore cout to show progress
+            std::cout.rdbuf(coutBuf);
+            std::cout << "Running simulation " << (sim + 1) << "/" << numSimulations << "..." << std::endl;
+            std::cout.rdbuf(nullOutput.rdbuf()); // Redirect back to null
         }
         
         // Reseed random generator for different results each run
@@ -139,20 +149,6 @@ int main(int argc, char* argv[])
         std::list<Unit> allUnits = GenerateUnits(10);
 
         auto actionMap = LoadActionsFromYAML("BattleActions.yaml");
-
-        // Load equipment from Element-generated files instead of CSV
-        bool elementDataLoaded = ElementBridge::loadEquipmentFromElementOutput(
-            "../Element/generated_weapons.csv",
-            "../Element/generated_armor.csv", 
-            actionMap
-        );
-        
-        // Fallback to original CSV if Element data not available
-        if (!elementDataLoaded) {
-            std::cout << "[Simulator] Element data not found, falling back to CSV files" << std::endl;
-            LoadArmorListFromCSV("Data/Armor_v1.csv");
-            LoadWeaponListFromCSV("Data/Weapon_v1.csv", actionMap);
-        }
 
         // Try to load from configuration, fallback to random if not available
         std::string configFile = "battle_configs.csv";
@@ -217,10 +213,8 @@ int main(int argc, char* argv[])
             }
         }
         
-        // If this was the selected simulation, restore cout buffer
-        if (outputToFile && coutBuf) {
-            std::cout.rdbuf(coutBuf);
-        }
+        // Restore cout buffer after each simulation
+        std::cout.rdbuf(coutBuf);
     }
     
     // Write the selected simulation output to file

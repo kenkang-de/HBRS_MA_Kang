@@ -54,11 +54,7 @@ int main(int argc, char* argv[]) {
         }
     }
     
-    // Print final analysis
-    std::cout << "\nFinal Analysis:" << std::endl;
-    teamConfig.printFinalAnalysis();
-    
-    // Export final results
+    // Export final results (without console output)
     teamConfig.exportFinalAnalysis("element_final_analysis.csv");
     
     std::cout << "\n=== Test Complete ===" << std::endl;
