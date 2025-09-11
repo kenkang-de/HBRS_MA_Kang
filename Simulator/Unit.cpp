@@ -39,45 +39,25 @@ const Stat& Unit::GetTotalStat() const {
 }
 
 void Unit::SetWeapon(const Weapon* w) {
-    // Subtract old weapon stats if any
     if (weapon) {
         totalStat -= weapon->GetStat();
     }
     weapon = w;
-    // Add new weapon stats if not null
     if (weapon) {
         totalStat += weapon->GetStat();
     }
-    // Update current HP to match new total HP
     currentHP = totalStat.GetHP();
 }
 
 void Unit::SetArmor(const Armor* a) {
-    // Subtract old armor stats if any
     if (armor) {
         totalStat -= armor->GetStat();
     }
     armor = a;
-    // Add new armor stats if not null
     if (armor) {
         totalStat += armor->GetStat();
     }
-    // Update current HP to match new total HP
     currentHP = totalStat.GetHP();
-}
-
-void Unit::UnEquipWeapon() {
-    if (weapon) {
-        totalStat -= weapon->GetStat();
-        weapon = nullptr;
-    }
-}
-
-void Unit::UnEquipArmor() {
-    if (armor) {
-        totalStat -= armor->GetStat();
-        armor = nullptr;
-    }
 }
 
 const Weapon* Unit::GetWeapon() const {
@@ -90,14 +70,13 @@ const Armor* Unit::GetArmor() const {
 
 void Unit::TakeDamage(int amount, bool defendable) {
     int finalDamage = amount;
+    
     if (defendable) {
         finalDamage = std::max(0, amount - totalStat.GetDefense());
     }
 
-    // Subtract damage from current HP
     currentHP = std::max(0, currentHP - finalDamage);
-    std::cout << Name << " took damage: " << finalDamage << (defendable ? " (defended)\n" : " (pierced)\n");
-    std::cout << Name << "'s Remaining Health: " << currentHP << std::endl;
+    std::cout << Name << " HP: "<< currentHP + finalDamage << " - " << finalDamage << " => " << currentHP << std::endl;
 }
 
 

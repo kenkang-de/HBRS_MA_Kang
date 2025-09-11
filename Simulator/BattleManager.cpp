@@ -29,15 +29,6 @@ void DelayUnitInBattleManager(Unit* unit, int delayAmount) {
     }
 } 
 
-// Global function for ActionLibrary to get unit interval
-int GetUnitIntervalFromBattleManager(Unit* unit) {
-    if (currentBattleManager) {
-        return currentBattleManager->GetUnitInterval(unit);
-    }
-    return 1; // Default fallback
-}
-
-
 BattleManager::BattleManager(Battlefield& bf) 
     : battlefield(bf), tickCount(0) {
     // Set global reference for ActionLibrary access
@@ -290,6 +281,14 @@ void BattleManager::StartBattle() {
 
         // Advance the tick
         turnManager.AdvanceTick();
+
+        // Reset all units' TickDelay to 0 after processing
+        //TODO: make unit resetter class and process it there
+        for (Unit* unit : allUnits) {
+            if (unit) {
+                unit->TickDelay = 0;
+            }
+        }
     }
 
     // Update equipment statistics after battle ends - write to simple file
@@ -369,11 +368,6 @@ void BattleManager::AddAfterAction(const BattleAction* battleAction, const Actio
 // Public method to access TurnManager DelayUnit functionality
 void BattleManager::DelayUnit(Unit* unit, int delayAmount) {
     turnManager.DelayUnit(unit, delayAmount);
-}
-
-// Public method to access TurnManager GetUnitInterval functionality
-int BattleManager::GetUnitInterval(Unit* unit) const {
-    return turnManager.GetUnitInterval(unit);
 }
 
 void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {

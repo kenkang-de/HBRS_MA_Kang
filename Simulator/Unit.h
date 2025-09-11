@@ -31,6 +31,9 @@ public:
     std::string ID;
     TeamColor team;
 
+    int Tickinterval;
+    int TickDelay;
+
     Unit(std::string name, std::string id);
     
     // Delete copy constructor and copy assignment operator
@@ -51,9 +54,6 @@ public:
 
     void SetWeapon(const Weapon* w);
     void SetArmor(const Armor* a);
-
-    void UnEquipWeapon();
-    void UnEquipArmor();
 
     const Weapon* GetWeapon() const;
     const Armor* GetArmor() const;

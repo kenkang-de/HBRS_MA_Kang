@@ -1,7 +1,7 @@
 #ifndef BATTLEACTIONLOADER_H
 #define BATTLEACTIONLOADER_H
 
-#include "BattleAction.h"
+#include "../Simulator/BattleAction.h"
 #include <unordered_map>
 #include <string>
 

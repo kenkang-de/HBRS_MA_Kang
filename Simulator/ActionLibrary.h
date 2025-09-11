@@ -36,8 +36,7 @@ private:
     static const std::unordered_map<std::string, ActionFn> actionMap;
 };
 
-// Global functions for BattleManager integration
-void AddAfterActionToBattleManager(std::shared_ptr<const BattleAction> action, const ActionContext& context);
+
 void DelayUnitInBattleManager(Unit* unit, int delayAmount);
 
 // Global functions for Boon system

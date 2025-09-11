@@ -38,6 +38,7 @@ void TurnManager::Initialize(const std::vector<Unit*>& units) {
         int speed = u->GetTotalStat().GetSpeed();
         if (speed > 0) {
             int interval = lcm / speed;
+            u->Tickinterval = interval;
             turnQueue.push({u, interval});
         }
         // Units with speed <= 0 are not scheduled at all
@@ -136,7 +137,7 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
     if (turnQueue.empty()) return unitsToAct;
 
     // Collect all units scheduled for the current tick
-    while (!turnQueue.empty() && turnQueue.top().nextTick == tick) {
+    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay == tick) {
         ScheduledAction top = turnQueue.top();
         
         // Only add alive units with positive speed to the action list
@@ -161,28 +162,8 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
 
 void TurnManager::DelayUnit(Unit* targetUnit, int delayTicks) {
     if (targetUnit == nullptr || delayTicks <= 0) return;
-    
-    // Create temporary storage for all scheduled actions
-    std::vector<ScheduledAction> allActions;
-    
-    // Extract all actions from the queue
-    while (!turnQueue.empty()) {
-        allActions.push_back(turnQueue.top());
-        turnQueue.pop();
-    }
-    
-    // Find and delay the target unit's next action
-    for (auto& action : allActions) {
-        if (action.unit == targetUnit) {
-            action.nextTick += delayTicks;
-            break; // Only delay the first (next) occurrence of this unit
-        }
-    }
-    
-    // Rebuild the queue with the modified actions
-    for (const auto& action : allActions) {
-        turnQueue.push(action);
-    }
+
+    targetUnit->TickDelay += delayTicks;  
 }
 
 void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
@@ -227,9 +208,4 @@ void TurnManager::RemoveDeadUnits(const std::vector<Unit*>& units) {
     }
 }
 
-int TurnManager::GetUnitInterval(Unit* unit) const {
-    if (unit == nullptr || unit->GetTotalStat().GetSpeed() <= 0) {
-        return 1; // Default fallback
-    }
-    return lcm / unit->GetTotalStat().GetSpeed();
-}
+

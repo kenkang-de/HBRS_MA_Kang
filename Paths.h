@@ -47,6 +47,17 @@ namespace Paths {
     
     // Test configuration
     const std::string TEST_BASE_NAME = "V1test";
+
+    const std::string MASTER_CONFIG = "master_config.txt";
+
+    //Weapon data
+    const std::string WEAPON_DATA_CSV = "Weapon_v1.csv";
+
+    //Armor data
+    const std::string ARMOR_DATA_CSV = "Armor_v1.csv";
+
+    //BattleAction data
+    const std::string BATTLE_ACTIONS_YAML = "BattleActions.yaml";
 }
 
 #endif // PATHS_H

@@ -1,9 +1,11 @@
+#include <algorithm>
+#include <iostream>
+
 #include "ActionLibrary.h"
 #include "Unit.h"
 #include "BoonAction.h"
 #include "TempBoonAction.h"
-#include <algorithm>
-#include <iostream>
+#include "GlobalAction.h"
 
 // Global registry for loaded BattleActions (set by BattleActionLoader)
 static std::unordered_map<std::string, BattleAction*> globalActionRegistry;
@@ -280,16 +282,8 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         std::string actionID = param;
         return [actionID](const ActionContext& ctx) {
             if (ctx.actor) {
-                // Look up the after-action by ID
                 auto afterAction = ActionLibrary::GetGlobalAction(actionID);
-                if (afterAction) {
-                    // Register the after-action to be executed later
-                    extern void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context);
-                    AddAfterActionToBattleManager(afterAction, ctx);
-                    std::cout << "[A18] Queuing after-action: " << actionID << " for " << ctx.actor->GetName() << std::endl;
-                } else {
-                    std::cout << "[A18] ERROR: After-action not found: " << actionID << std::endl;
-                }
+                GlobalAction::AddAfterAction(afterAction, ctx);
             }
         };
     }},
@@ -312,11 +306,8 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
            int delayAmount = std::stoi(param);
         return [delayAmount](const ActionContext& ctx) {
             if (ctx.target) {
-                // Get the unit's natural interval (how often it normally acts)
-                extern int GetUnitIntervalFromBattleManager(Unit* unit);
-                int unitInterval = GetUnitIntervalFromBattleManager(ctx.target);
-                int totalDelay = delayAmount * unitInterval;
-                
+                int totalDelay = delayAmount * ctx.target->Tickinterval;
+
                 extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
                 DelayUnitInBattleManager(ctx.target, totalDelay);
                 std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " intervals (" << totalDelay << " ticks)" << std::endl;

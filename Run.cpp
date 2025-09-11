@@ -5,116 +5,97 @@
 #include <iomanip>
 #include <cstdlib>
 #include <filesystem>
+#include <vector>
+
+#include "Element/ElementList.h"
+#include "Element/EquipmentLoader.h"
+#include "Element/BattleActionLoader.h"
 
 class NewMasterController {
 private:
     std::string configFile;
-    int numBattleConfigs;
-    int simulationsPerBatch;
-    bool verboseOutput;
+    int numBatches;
+    int teamsPerBatch;
+
+    ElementList elementList;
+    std::unordered_map<std::string, BattleAction> actionMap;
     
 public:
-    NewMasterController(const std::string& config = "master_config.txt") 
-        : configFile(config), numBattleConfigs(100), simulationsPerBatch(1), verboseOutput(true) {}
+    NewMasterController(const std::string& config) : configFile(config) {}
     
-    bool loadConfiguration() {
+    // Load configuration from config file
+    void LoadConfiguration() {
         std::ifstream file(configFile);
-        if (!file.is_open()) {
-            std::cout << "[Master] Config file not found, using defaults..." << std::endl;
-            std::cout << "[Master] Default: 100 battle configs (200 teams), 10 simulations per batch" << std::endl;
-            return true;
-        }
         
         std::string line;
+
         while (std::getline(file, line)) {
-            // Skip comments and empty lines
+
             if (line.empty() || line[0] == '#') continue;
-            
-            if (line.find("NUM_BATTLE_CONFIGS=") == 0) {
-                numBattleConfigs = std::stoi(line.substr(19));
-            } else if (line.find("SIMULATIONS_PER_BATCH=") == 0) {
-                simulationsPerBatch = std::stoi(line.substr(22));
-            } else if (line.find("VERBOSE_OUTPUT=") == 0) {
-                verboseOutput = (line.substr(15) == "true");
+
+            if (line.find("NUM_BATCHES=") == 0) {
+            numBatches = std::stoi(line.substr(12));
+
+            }else if (line.find("TEAMS_PER_BATCH=") == 0) {
+                teamsPerBatch = std::stoi(line.substr(16));
             }
         }
-        return true;
     }
     
-    int executeFullPipeline() {
+    void executeFullPipeline() {
         auto startTime = std::chrono::high_resolution_clock::now();
         
-        // Stage 1: Element Generation (Team Configuration)
-        if (!executeElementGeneration()) {
-            std::cerr << "ERROR: Element generation failed!" << std::endl;
-            return 1;
-        }
+        // Stage 1: Element Generation 
+        actionMap = LoadActionsFromYAML("Simulator" + Paths::BATTLE_ACTIONS_YAML);
+        executeElementGeneration();
         
-        // Stage 2: Sampling & Batch Creation
-        if (!executeSampling()) {
-            std::cerr << "ERROR: Sampling execution failed!" << std::endl;
-            return 2;
-        }
+        // // Stage 2: Sampling & Batch Creation
+        // if (!executeSampling()) {
+        //     std::cerr << "ERROR: Sampling execution failed!" << std::endl;
+        //     return 2;
+        // }
         
-        // Stage 3: Batch Simulation Execution
-        if (!executeBatchSimulations()) {
-            std::cerr << "ERROR: Batch simulation execution failed!" << std::endl;
-            return 3;
-        }
+        // // Stage 3: Batch Simulation Execution
+        // if (!executeBatchSimulations()) {
+        //     std::cerr << "ERROR: Batch simulation execution failed!" << std::endl;
+        //     return 3;
+        // }
         
-        // Calculate number of batches (assuming configs are divided into batches)
-        int numBatches = (numBattleConfigs + 9) / 10; // Round up division for batches of 10
-        std::cout << "Batches: " << numBatches << std::endl;
+        // // Calculate number of batches (assuming configs are divided into batches)
+        // int numBatches = (numBatches + 9) / 10; // Round up division for batches of 10
+        // std::cout << "Batches: " << numBatches << std::endl;
         
-        // Final timing
-        auto endTime = std::chrono::high_resolution_clock::now();
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
+        // // Final timing
+        // auto endTime = std::chrono::high_resolution_clock::now();
+        // auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
         
-        std::cout << "Total execution time: ";
-        if (duration.count() >= 1000) {
-            auto seconds = duration.count() / 1000.0;
-            std::cout << std::fixed << std::setprecision(2) << seconds << " seconds";
-        } else {
-            std::cout << duration.count() << " milliseconds";
-        }
-        std::cout << std::endl;
+        // std::cout << "Total execution time: ";
+        // if (duration.count() >= 1000) {
+        //     auto seconds = duration.count() / 1000.0;
+        //     std::cout << std::fixed << std::setprecision(2) << seconds << " seconds";
+        // } else {
+        //     std::cout << duration.count() << " milliseconds";
+        // }
+        // std::cout << std::endl;
         
-        return 0;
+        // return 0;
     }
     
 private:
-    bool executeElementGeneration() {
-        
-        // Build Element.exe (suppress output)
-        std::string buildCmd = "cd " + Paths::ELEMENT_DIR + " && .\\build.bat >nul 2>&1";
-        if (std::system(buildCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: Element build failed!" << std::endl;
-            return false;
-        }
-    
-        
-        // Execute Element.exe to generate equipment and configurations (suppress output)
-        std::string execCmd = "cd " + Paths::ELEMENT_DIR + " && .\\Element.exe " + std::to_string(numBattleConfigs) + " >nul 2>&1";
-        if (std::system(execCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: Element execution failed!" << std::endl;
-            return false;
-        }
-        
-        return true;
+
+    void executeElementGeneration() {
+        EquipmentLoader loader;
+        elementList = loader.InstantiateElements(actionMap);
     }
     
     bool executeSampling() {
         
-        // Build SamplingController (suppress output)
-        std::string buildCmd = "cd " + Paths::SAMPLING_DIR + " && .\\build_sampling.bat >nul 2>&1";
-        int buildResult = std::system(buildCmd.c_str());
-        if (buildResult != 0) {
-            std::cerr << "    ERROR: SamplingController build failed with exit code: " << buildResult << std::endl;
-            return false;
-        }
-        
-        // Execute Batch Creator to create batch configurations (suppress output)
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchCreator.exe >nul 2>&1";
+        // Execute Batch Creator to create batch configurations
+        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " ; .\\BatchCreator.exe" + 
+        std::to_string(numBatches) + " " +      // argv[1]
+        std::to_string(teamsPerBatch) + " " +   // argv[2] 
+        " >nul 2>&1";  
+
         int execResult = std::system(execCmd.c_str());
         if (execResult != 0) {
             std::cerr << "    ERROR: Batch Creator execution failed with exit code: " << execResult << std::endl;
@@ -142,11 +123,11 @@ private:
         
         
         // Execute batch simulations (suppress output)
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchExecutor.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
-        if (std::system(execCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: Batch simulation execution failed!" << std::endl;
-            return false;
-        }
+        // std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchExecutor.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
+        // if (std::system(execCmd.c_str()) != 0) {
+        //     std::cerr << "    ERROR: Batch simulation execution failed!" << std::endl;
+        //     return false;
+        // }
         
         return true;
     }
@@ -171,19 +152,12 @@ private:
     }
 };
 
-int main(int argc, char* argv[]) {
-    std::string configFile = "master_config.txt";
-    
-    if (argc > 1) {
-        configFile = argv[1];
-    }
-    
+int main() {
+    std::string configFile = Paths::MASTER_CONFIG; 
+
     NewMasterController controller(configFile);
     
-    if (!controller.loadConfiguration()) {
-        std::cerr << "Failed to load configuration!" << std::endl;
-        return 1;
-    }
+    controller.LoadConfiguration();
     
-    return controller.executeFullPipeline();
+    controller.executeFullPipeline();
 }

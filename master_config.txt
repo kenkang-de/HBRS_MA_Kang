@@ -1,28 +1,12 @@
 # MA Project Master Configuration
 # This file controls the entire pipeline execution
 
-# Total team configurations (200 teams divided into 20 batches of 10)
-NUM_BATTLE_CONFIGS=200
-
-# Number of batches (20 batches, 45 round-robin matches each)
-NUM_BATCHES=20
-
-# Teams per batch (10 teams per batch)
+# Teams per batch 
 TEAMS_PER_BATCH=10
 
-# Simulations per batch (45 round-robin matches per batch)  
+# Number of batches
+NUM_BATCHES=20
+
+# Simulations per batch (round-robin matches per batch)  
 SIMULATIONS_PER_BATCH=45
 
-# Target simulations per chromosome
-TARGET_SIMULATIONS=2000
-
-# Enable verbose output
-VERBOSE_OUTPUT=true
-
-# Element generation parameters
-EQUIPMENT_POOL_SIZE=20
-TARGET_POOL_SIZE=100
-
-# Analysis parameters
-MIN_STATISTICAL_SAMPLES=50
-CONFIDENCE_LEVEL=0.95
