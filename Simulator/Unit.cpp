@@ -1,12 +1,11 @@
+#include <iostream>
+#include <algorithm>
+
 #include "Unit.h"
 #include "BoonAction.h"
 #include "TempBoonAction.h"
 #include "ActionLibrary.h"
-#include <iostream>
-#include <algorithm>
-
-// Forward declaration for global function
-void AddAfterActionToBattleManager(const class BattleAction* action, const struct ActionContext& context);
+#include "GlobalAction.h"
 
 Unit::Unit(std::string name, std::string id)
     : Name(name), ID(id), 
@@ -70,7 +69,7 @@ const Armor* Unit::GetArmor() const {
 
 void Unit::TakeDamage(int amount, bool defendable) {
     int finalDamage = amount;
-    
+
     if (defendable) {
         finalDamage = std::max(0, amount - totalStat.GetDefense());
     }
@@ -163,7 +162,7 @@ void Unit::ApplyBoonsToAfterAction() {
         if (!boon->IsExpired()) {
             std::cout << "[DEBUG] Registering boon " << boon->GetEffectType() << " for " << Name << std::endl;
             // Register this boon in the after-action system
-            AddAfterActionToBattleManager(boon.get(), {this, this, {}, {}});
+            GlobalAction::AddAfterAction(boon.get(), {this, this, {}, {}});
         } else {
             std::cout << "[DEBUG] Skipping expired boon " << boon->GetEffectType() << " for " << Name << std::endl;
         }

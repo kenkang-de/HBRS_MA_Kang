@@ -101,8 +101,8 @@ void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath, const s
 
 ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string, BattleAction>& actionMap)
 {
-    LoadArmorListFromCSV(Paths::FromElement::DATA_DIR + Paths::ARMOR_DATA_CSV);
-    LoadWeaponListFromCSV(Paths::FromElement::DATA_DIR + Paths::WEAPON_DATA_CSV, actionMap);
+    LoadArmorListFromCSV(Paths::DATA_DIR + Paths::ARMOR_DATA_CSV);
+    LoadWeaponListFromCSV(Paths::DATA_DIR + Paths::WEAPON_DATA_CSV, actionMap);
 
     return EquipmentLoader::equipment;
 }

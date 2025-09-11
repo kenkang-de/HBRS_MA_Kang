@@ -307,9 +307,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         return [delayAmount](const ActionContext& ctx) {
             if (ctx.target) {
                 int totalDelay = delayAmount * ctx.target->Tickinterval;
-
-                extern void DelayUnitInBattleManager(Unit* unit, int delayAmount);
-                DelayUnitInBattleManager(ctx.target, totalDelay);
+                ctx.target->TickDelay += totalDelay;
                 std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " intervals (" << totalDelay << " ticks)" << std::endl;
             }
         };

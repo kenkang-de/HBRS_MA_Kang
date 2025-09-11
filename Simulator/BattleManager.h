@@ -24,8 +24,6 @@ public:
 
     void StartBattle();
     
-    // Static methods for after-action system
-    static void AddAfterAction(const BattleAction* battleAction, const ActionContext& context);
     void ProcessAfterActions(const std::vector<Unit*>& allUnits);
     
     // Boon management - now handled through Units

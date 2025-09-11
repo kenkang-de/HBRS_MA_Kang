@@ -47,9 +47,26 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling BoonAction.cpp...
+g++ -std=c++17 -I. -I.. -c BoonAction.cpp -o BoonAction.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile BoonAction.cpp
+    exit /b 1
+)
+
+echo Compiling TempBoonAction.cpp...
+g++ -std=c++17 -I. -I.. -c TempBoonAction.cpp -o TempBoonAction.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile TempBoonAction.cpp
+    exit /b 1
+)
+
 echo Compiling ActionLibrary.cpp...
 g++ -std=c++17 -I. -I.. -c ActionLibrary.cpp -o ActionLibrary.o
-
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile ActionLibrary.cpp
+    exit /b 1
+)
 
 echo Compiling BattleAction.cpp...
 g++ -std=c++17 -I. -I.. -I yaml-cpp/include -DYAML_CPP_STATIC_DEFINE -c BattleAction.cpp -o BattleAction.o
@@ -58,11 +75,11 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-REM Build main executable with minimal dependencies
+REM Build main executable with ALL required object files
 cd ..
 echo Linking Run.exe...
 
-g++ -std=c++17 -I. -IElement -ISimulator -ISimulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE Run.cpp Element/BattleActionLoader.o Element/BattleActionParser.o Element/EquipmentLoader.o Simulator/GlobalAction.o Simulator/ActionLibrary.o Simulator/BattleAction.o Simulator/Stat.o Simulator/Unit.o -LSimulator/yaml-cpp/mingw-build -lyaml-cpp -o Run.exe
+g++ -std=c++17 -I. -IElement -ISimulator -ISimulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE Run.cpp Element/BattleActionLoader.o Element/BattleActionParser.o Element/EquipmentLoader.o Simulator/GlobalAction.o Simulator/ActionLibrary.o Simulator/BattleAction.o Simulator/BoonAction.o Simulator/TempBoonAction.o Simulator/Stat.o Simulator/Unit.o -LSimulator/yaml-cpp/mingw-build -lyaml-cpp -o Run.exe
 
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Failed to build Run.exe

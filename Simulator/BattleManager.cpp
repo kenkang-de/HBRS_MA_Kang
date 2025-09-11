@@ -11,16 +11,8 @@
 #include "TargetManager.h" 
 #include "ActionLibrary.h"
 
-// Initialize static member
-std::vector<AfterActionEvent> BattleManager::afterActions;
-
 // Static reference for global access
 static BattleManager* currentBattleManager = nullptr;
-
-// Global function for ActionLibrary to call
-void AddAfterActionToBattleManager(const BattleAction* action, const ActionContext& context) {
-    BattleManager::AddAfterAction(action, context);
-}
 
 // Global function for ActionLibrary to call DelayUnit
 void DelayUnitInBattleManager(Unit* unit, int delayAmount) {
@@ -357,12 +349,6 @@ bool BattleManager::IsBattleOver(bool test) {
     }
     
     return false; // Battle continues
-}
-
-// Static methods for after-action system
-void BattleManager::AddAfterAction(const BattleAction* battleAction, const ActionContext& context) {
-    afterActions.emplace_back(battleAction, context);
-    std::cout << "[AFTER-ACTION] Registered after-action for " << context.actor->GetName() << std::endl;
 }
 
 // Public method to access TurnManager DelayUnit functionality

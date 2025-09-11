@@ -46,8 +46,10 @@ public:
         auto startTime = std::chrono::high_resolution_clock::now();
         
         // Stage 1: Element Generation 
-        actionMap = LoadActionsFromYAML("Simulator" + Paths::BATTLE_ACTIONS_YAML);
+        actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
         executeElementGeneration();
+
+        std::cout << actionMap.size() << " actions loaded." << std::endl;
         
         // // Stage 2: Sampling & Batch Creation
         // if (!executeSampling()) {
