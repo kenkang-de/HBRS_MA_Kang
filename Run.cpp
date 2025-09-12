@@ -10,6 +10,7 @@
 #include "Element/ElementList.h"
 #include "Element/EquipmentLoader.h"
 #include "Element/BattleActionLoader.h"
+#include "Element/UnitGenerator.h"
 
 class NewMasterController {
 private:
@@ -45,13 +46,13 @@ public:
     void executeFullPipeline() {
         auto startTime = std::chrono::high_resolution_clock::now();
         
-        // Stage 1: Element Generation 
+        // Stage 1: Action Loading & Instantiation, Element(Equipment) Loading & Instantiation, Unit Instantiation
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
         executeElementGeneration();
+        std::array<Unit, 10> AllUnits = GenerateUnits();
+        std::cout<<"Stage 1 Complete"<<std::endl;
 
-        std::cout << actionMap.size() << " actions loaded." << std::endl;
-        
-        // // Stage 2: Sampling & Batch Creation
+        // Stage 2: Sampling & Batch Creation
         // if (!executeSampling()) {
         //     std::cerr << "ERROR: Sampling execution failed!" << std::endl;
         //     return 2;

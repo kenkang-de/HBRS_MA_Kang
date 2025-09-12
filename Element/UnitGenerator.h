@@ -2,10 +2,10 @@
 #define UNITGEN_H
 
 #include "Unit.h"
-#include <list>
+#include <array>
 #include <iostream>
 
-std::list<Unit> GenerateUnits(int amount); 
+std::array<Unit,10> GenerateUnits(); 
 
 
 #endif

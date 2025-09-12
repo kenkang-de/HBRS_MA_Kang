@@ -24,6 +24,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling UnitGenerator.cpp...
+g++ -std=c++17 -I. -I.. -I../Simulator -c UnitGenerator.cpp -o UnitGenerator.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile UnitGenerator.cpp
+    exit /b 1
+)
+
 REM Build essential Simulator components
 cd ../Simulator
 echo Compiling Stat.cpp...
@@ -79,7 +86,7 @@ REM Build main executable with ALL required object files
 cd ..
 echo Linking Run.exe...
 
-g++ -std=c++17 -I. -IElement -ISimulator -ISimulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE Run.cpp Element/BattleActionLoader.o Element/BattleActionParser.o Element/EquipmentLoader.o Simulator/GlobalAction.o Simulator/ActionLibrary.o Simulator/BattleAction.o Simulator/BoonAction.o Simulator/TempBoonAction.o Simulator/Stat.o Simulator/Unit.o -LSimulator/yaml-cpp/mingw-build -lyaml-cpp -o Run.exe
+g++ -std=c++17 -I. -IElement -ISimulator -ISimulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE Run.cpp Element/BattleActionLoader.o Element/BattleActionParser.o Element/EquipmentLoader.o Element/UnitGenerator.o Simulator/GlobalAction.o Simulator/ActionLibrary.o Simulator/BattleAction.o Simulator/BoonAction.o Simulator/TempBoonAction.o Simulator/Stat.o Simulator/Unit.o -LSimulator/yaml-cpp/mingw-build -lyaml-cpp -o Run.exe
 
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Failed to build Run.exe

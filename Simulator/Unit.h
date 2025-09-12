@@ -28,13 +28,12 @@ private:
 
 public:
     std::string Name;
-    std::string ID;
     TeamColor team;
 
     int Tickinterval;
     int TickDelay;
 
-    Unit(std::string name, std::string id);
+    Unit();
     
     // Delete copy constructor and copy assignment operator
     Unit(const Unit&) = delete;

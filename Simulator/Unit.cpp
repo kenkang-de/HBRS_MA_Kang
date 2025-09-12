@@ -7,8 +7,8 @@
 #include "ActionLibrary.h"
 #include "GlobalAction.h"
 
-Unit::Unit(std::string name, std::string id)
-    : Name(name), ID(id), 
+Unit::Unit()
+    : Name(""),
       defaultStat(Stat()),
       totalStat(defaultStat),
       currentHP(0), // Initialize currentHP to 0, will be set when equipment is applied
