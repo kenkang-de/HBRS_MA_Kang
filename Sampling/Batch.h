@@ -1,14 +1,14 @@
 #ifndef BATCH_H
 #define BATCH_H
 
-#include "../Simulator/Weapon.h"
-#include "../Simulator/Armor.h"
-#include "../Simulator/Unit.h"
+#include <vector>
+#include <string>
 
-class Batch{
-public:
-    std::vector<Team> teams; 
+#include "SimulationTeamSetting.h"
+
+struct Batch{
     std::string batchId;
+    std::vector<SimulationTeamSetting> teams;
 };
 
 #endif

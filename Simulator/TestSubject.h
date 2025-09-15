@@ -23,6 +23,10 @@ public:
     int TotalLost;
     int TotalDraw;
     int UsageCount;
+
+    //Sampling
+    int SampleUsage;
+    std::vector<int> SamplePartnerIndexList;
     
     // Statistics methods
     void recordWin() {

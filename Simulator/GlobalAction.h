@@ -5,7 +5,7 @@
 #include <vector>
 
 #include "BattleAction.h"
-#include "GlobalAction.h"
+
 
 
 struct AfterActionEvent {

@@ -12,6 +12,8 @@
 #include "Element/BattleActionLoader.h"
 #include "Element/UnitGenerator.h"
 
+#include "Sampling/BatchCreator.h"
+
 class NewMasterController {
 private:
     std::string configFile;
@@ -53,11 +55,9 @@ public:
         std::cout<<"Stage 1 Complete"<<std::endl;
 
         // Stage 2: Sampling & Batch Creation
-        // if (!executeSampling()) {
-        //     std::cerr << "ERROR: Sampling execution failed!" << std::endl;
-        //     return 2;
-        // }
-        
+        BatchCreator batchCreator;
+        BatchConfig batchConfig = batchCreator.CreateBatchConfig(numBatches, teamsPerBatch, &elementList.weapons, &elementList.armors);
+        std::vector<Batch> batches = batchCreator.CreateBatches(batchConfig);
         // // Stage 3: Batch Simulation Execution
         // if (!executeBatchSimulations()) {
         //     std::cerr << "ERROR: Batch simulation execution failed!" << std::endl;
