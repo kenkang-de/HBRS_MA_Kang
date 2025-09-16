@@ -14,6 +14,8 @@
 
 #include "Sampling/BatchCreator.h"
 
+#include "Simulator/Simulator.h"
+
 class NewMasterController {
 private:
     std::string configFile;
@@ -50,19 +52,21 @@ public:
         
         // Stage 1: Action Loading & Instantiation, Element(Equipment) Loading & Instantiation, Unit Instantiation
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
-        executeElementGeneration();
-        std::array<Unit, 10> AllUnits = GenerateUnits();
+        EquipmentLoader loader;
+        elementList = loader.InstantiateElements(actionMap);
+        std::array<Unit, 10> battleUnits = GenerateUnits();
         std::cout<<"Stage 1 Complete"<<std::endl;
 
         // Stage 2: Sampling & Batch Creation
         BatchCreator batchCreator;
         BatchConfig batchConfig = batchCreator.CreateBatchConfig(numBatches, teamsPerBatch, &elementList.weapons, &elementList.armors);
         std::vector<Batch> batches = batchCreator.CreateBatches(batchConfig);
-        // // Stage 3: Batch Simulation Execution
-        // if (!executeBatchSimulations()) {
-        //     std::cerr << "ERROR: Batch simulation execution failed!" << std::endl;
-        //     return 3;
-        // }
+        std::cout<<"Stage 2 Complete"<<std::endl;
+
+        // Stage 3: Batch Simulation Execution
+        Simulator simulator(&elementList, &actionMap, &battleUnits);
+        simulator.SimulateBatches(&batches);
+
         
         // // Calculate number of batches (assuming configs are divided into batches)
         // int numBatches = (numBatches + 9) / 10; // Round up division for batches of 10
@@ -86,28 +90,6 @@ public:
     
 private:
 
-    void executeElementGeneration() {
-        EquipmentLoader loader;
-        elementList = loader.InstantiateElements(actionMap);
-    }
-    
-    bool executeSampling() {
-        
-        // Execute Batch Creator to create batch configurations
-        std::string execCmd = "cd " + Paths::SAMPLING_DIR + " ; .\\BatchCreator.exe" + 
-        std::to_string(numBatches) + " " +      // argv[1]
-        std::to_string(teamsPerBatch) + " " +   // argv[2] 
-        " >nul 2>&1";  
-
-        int execResult = std::system(execCmd.c_str());
-        if (execResult != 0) {
-            std::cerr << "    ERROR: Batch Creator execution failed with exit code: " << execResult << std::endl;
-            return false;
-        }
-        
-        return true;
-    }
-    
     bool executeBatchSimulations() {
         // Build Simulator (suppress output)
         std::string buildCmd = "cd " + Paths::SIMULATOR_DIR + " && .\\build.bat >nul 2>&1";

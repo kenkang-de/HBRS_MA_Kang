@@ -4,33 +4,27 @@
 #include <limits.h>
 #include <ctime>
 #include <fstream>
+#include <streambuf>  // Add this for stream redirection
 
+#include "../Log/LogSystem.h"
 #include "BattleManager.h"
 #include "Battlefield.h"
 #include "Constants.h"
 #include "TargetManager.h" 
 #include "ActionLibrary.h"
+#include "GlobalAction.h"
 
 // Static reference for global access
 static BattleManager* currentBattleManager = nullptr;
 
-// Global function for ActionLibrary to call DelayUnit
-void DelayUnitInBattleManager(Unit* unit, int delayAmount) {
-    if (currentBattleManager) {
-        currentBattleManager->DelayUnit(unit, delayAmount);
-    }
-} 
-
 BattleManager::BattleManager(Battlefield& bf) 
     : battlefield(bf), tickCount(0) {
-    // Set global reference for ActionLibrary access
+
     currentBattleManager = this;
     
-    // Get all units from both teams in the battlefield
     const std::array<Unit*, 5>& redUnits = battlefield.GetRedTeam()->GetUnits();
     const std::array<Unit*, 5>& blueUnits = battlefield.GetBlueTeam()->GetUnits();
     
-    // Combine into allUnits vector (total 10 units)
     allUnits.reserve(10);
     allUnits.insert(allUnits.end(), redUnits.begin(), redUnits.end());
     allUnits.insert(allUnits.end(), blueUnits.begin(), blueUnits.end());
@@ -46,11 +40,16 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
     float delayCalculation = damageRatio * DELAY_MULTIPLIER;
     int tickDelay = static_cast<int>(std::floor(delayCalculation));
     
-    return tickDelay; // No maximum cap, just return the calculated delay
+    return tickDelay;
 }
 
-void BattleManager::StartBattle() {
+void BattleManager::StartBattle(bool log, std::string batchID) {
     turnManager.Initialize(allUnits);
+
+    if(log) {
+        std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
+        LogSystem::StartLogging(logFilename);
+    }
 
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit*> rangedUnits;
@@ -62,9 +61,9 @@ void BattleManager::StartBattle() {
         std::vector<Unit*> units = turnManager.GetNextUnits();
 
         if (!units.empty()) {
-            std::cout << std::endl;
-            std::cout << "[Tick " << turnManager.GetCurrentTick() << "] " << units.size() << " unit(s) acting\n";
-            tickCount++;  // Increment tick counter when a tick actually occurs
+            LogSystem::Log("\n");
+            LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
+            tickCount++;  
         }
 
         // Separate ranged, melee, and magic units
@@ -115,9 +114,9 @@ void BattleManager::StartBattle() {
                 std::vector<Unit*> unitAllies, unitEnemies;
                 SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
-                // Execute the ranged action
-                std::cout << "Ranged: " << unit->GetName() << " targeting " << target->GetName() 
-                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                LogSystem::LogStream("Ranged: ", unit->GetName(), " targeting ", target->GetName(), 
+                                " (HP: ", target->GetCurrentHP(), ")");
+           
                 
                 int hpBeforeAttack = target->GetCurrentHP();
                 
@@ -125,7 +124,7 @@ void BattleManager::StartBattle() {
                 if (!unit->IsFrozen()) {
                     unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
-                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
                 }
                 
                 // Apply unit boons to after-action system
@@ -149,8 +148,8 @@ void BattleManager::StartBattle() {
                     
                     if (damageTaken > 0) {
                         turnManager.ResetMagicUnitTick(target);
-                        magicUnitsTickResetByRanged.insert(target);  // Track magic units reset by ranged
-                        std::cout << "  -> " << target->GetName() << " (magic) tick reset due to ranged attack!" << std::endl;
+                        magicUnitsTickResetByRanged.insert(target);
+                        LogSystem::LogStream("  -> ", target->GetName(), " (magic) tick reset due to ranged attack!");
                     }
                 }
             }
@@ -173,9 +172,12 @@ void BattleManager::StartBattle() {
                 std::vector<Unit*> unitAllies, unitEnemies;
                 SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
-                // Execute the melee action
-                std::cout << "Melee: " << unit->GetName() << " targeting " << target->GetName() 
-                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                if(log)
+                {
+                LogSystem::LogStream("Melee: ", unit->GetName(), " targeting ", target->GetName(), 
+                                    " (HP: ", target->GetCurrentHP(), ")");
+                }
+
                 
                 int hpBeforeAttack = target->GetCurrentHP();
                 int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
@@ -184,7 +186,7 @@ void BattleManager::StartBattle() {
                 if (!unit->IsFrozen()) {
                     unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
-                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
                 }
                 
                 // Apply unit boons to after-action system
@@ -205,8 +207,8 @@ void BattleManager::StartBattle() {
                     
                     if (delayAmount > 0) {
                         turnManager.DelayUnit(target, delayAmount);
-                        std::cout << "  -> " << target->GetName() << " (ranged) delayed by " << delayAmount 
-                                  << " tick(s) due to " << damageTaken << "/" << maxHP << " damage!" << std::endl;
+                        LogSystem::LogStream("  -> ", target->GetName(), " (ranged) delayed by ", delayAmount, 
+                                            " tick(s) due to ", damageTaken, "/", maxHP, " damage!");
                     }
                 }
                 
@@ -217,7 +219,7 @@ void BattleManager::StartBattle() {
                     
                     if (damageTaken > 0) {
                         turnManager.ResetMagicUnitTick(target);
-                        std::cout << "  -> " << target->GetName() << " (magic) tick reset due to melee attack!" << std::endl;
+                        LogSystem::LogStream("  -> ", target->GetName(), " (magic) tick reset due to melee attack!");
                     }
                 }
             }
@@ -240,15 +242,18 @@ void BattleManager::StartBattle() {
                 std::vector<Unit*> unitAllies, unitEnemies;
                 SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
-                // Execute the magic action
-                std::cout << "Magic: " << unit->GetName() << " targeting " << target->GetName() 
-                          << " (HP: " << target->GetCurrentHP() << ")" << std::endl;
+                if(log)
+                {
+                LogSystem::LogStream("Magic: ", unit->GetName(), " targeting ", target->GetName(), 
+                                    " (HP: ", target->GetCurrentHP(), ")");
+                }
+           
                 
                 // Check if unit is frozen - if so, skip the action but still apply boons
                 if (!unit->IsFrozen()) {
                     unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
                 } else {
-                    std::cout << "  -> " << unit->GetName() << " is frozen and cannot act!" << std::endl;
+                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
                 }
                 
                 // Apply unit boons to after-action system
@@ -281,6 +286,10 @@ void BattleManager::StartBattle() {
                 unit->TickDelay = 0;
             }
         }
+    }
+
+    if(log) {
+        LogSystem::StopLogging();
     }
 
     // Update equipment statistics after battle ends - write to simple file
@@ -358,8 +367,7 @@ void BattleManager::DelayUnit(Unit* unit, int delayAmount) {
 
 void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
     // Move all after-actions to be processed (clear the vector)
-    std::vector<AfterActionEvent> toProcess = std::move(afterActions);
-    afterActions.clear();
+    std::vector<AfterActionEvent> toProcess = std::move(GlobalAction::afterActions);
     
     // Process each after-action
     for (const auto& afterActionEvent : toProcess) {

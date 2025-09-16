@@ -14,7 +14,7 @@ private:
 
 public:
     // Constructor that creates teams from unit vectors
-    Battlefield(std::vector<Unit*>& teamRed, std::vector<Unit*>& teamBlue);
+Battlefield(std::array<Unit*,5> redTeamPtrs, std::array<Unit*,5> blueTeamPtrs);
     
     Team* GetRedTeam() { return &redTeam; }
     Team* GetBlueTeam() { return &blueTeam; }

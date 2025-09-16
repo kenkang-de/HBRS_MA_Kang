@@ -10,6 +10,9 @@ class ElementList
   public :
   std::vector<Weapon> weapons;
   std::vector<Armor> armors;  
+
+  Weapon* FindWeaponByID(std::string& weaponId);
+  Armor* FindArmorByID(std::string& armorId);
 };
 
 #endif 

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-Team::Team(TeamColor teamColor, std::vector<Unit*>& units) {
+Team::Team(TeamColor teamColor, std::array<Unit*,5> units) {
     SetTeamColor(teamColor);
     GenerateTeam(units);  // Now this will work with vector<Unit*>&
 }
@@ -61,9 +61,8 @@ bool Team::HasPlace() {
     return false;
 }
 
-void Team::GenerateTeam(std::vector<Unit*>& units)
+void Team::GenerateTeam(std::array<Unit*,5> units)
 {
-    // Add up to 5 units to the team
     for (size_t i = 0; i < units.size() && i < 5; ++i)
     {
         if (units[i] != nullptr) {

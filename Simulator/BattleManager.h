@@ -5,24 +5,14 @@
 #include "TurnManager.h"
 #include "Battlefield.h"
 #include "ActionLibrary.h"
+#include "../Paths.h"
 #include <vector>
-
-class BattleAction;
-
-// Structure to hold after-action events
-struct AfterActionEvent {
-    const BattleAction* battleAction;
-    ActionContext context;
-    
-    AfterActionEvent(const BattleAction* action, const ActionContext& ctx)
-        : battleAction(action), context(ctx) {}
-};
 
 class BattleManager {
 public:
     BattleManager(Battlefield& bf);
 
-    void StartBattle();
+    void StartBattle(bool log=false, std::string batchID="NONE");
     
     void ProcessAfterActions(const std::vector<Unit*>& allUnits);
     
@@ -36,9 +26,6 @@ private:
     Battlefield& battlefield;
     std::vector<Unit*> allUnits;
     TurnManager turnManager;
-    
-    // Static vector for after-action events
-    static std::vector<AfterActionEvent> afterActions;
 
     int currentTick = 0; 
     int CurrentTurn = 0;

@@ -17,12 +17,12 @@ private:
     void SetUnitTeamColor(Unit& unit);
 
 public:
-    Team(TeamColor teamColor, std::vector<Unit*>& units); 
+    Team(TeamColor teamColor, std::array<Unit*,5> units); 
     const std::array<Unit*, 5>& GetUnits() const;
 
     TeamColor GetTeamColor();
     void SetTeamColor(TeamColor teamColor);
-    void GenerateTeam(std::vector<Unit*>& units);
+    void GenerateTeam(std::array<Unit*,5> units);
     void AddUnit(Unit& newUnit);
     bool HasTeamLost();
     bool HasPlace();

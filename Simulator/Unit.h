@@ -43,6 +43,8 @@ public:
     Unit(Unit&&) = default;
     Unit& operator=(Unit&&) = default;
 
+    void ResetUnit();
+
     const std::string& GetName() const;
 
     Stat& GetDefaultStat();
@@ -78,6 +80,7 @@ public:
     bool HasBoon(const std::string& effectType) const;
     void ApplyBoonsToAfterAction(); // Called by BattleManager to register boons in after-actions
     void CleanupExpiredBoons();     // Remove boons with 0 usage
+    void ClearActiveBoons();
 };
 
 #endif

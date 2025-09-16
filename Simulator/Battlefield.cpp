@@ -1,9 +1,8 @@
 #include "Battlefield.h"
 #include "Unit.h"
 
-Battlefield::Battlefield(std::vector<Unit*>& teamRed, std::vector<Unit*>& teamBlue)
-    : redTeam(Red, teamRed), blueTeam(Blue, teamBlue) {
-    // Teams handle everything (naming, colors, etc.) in their constructors
+Battlefield::Battlefield(std::array<Unit*,5> redTeamPtrs, std::array<Unit*,5> blueTeamPtrs)
+    : redTeam(Red, redTeamPtrs), blueTeam(Blue, blueTeamPtrs) {
 }
 
 Team* Battlefield::ResultCheck() {

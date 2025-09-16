@@ -17,6 +17,19 @@ Unit::Unit()
       isFrozen(false) // Initialize isFrozen to false by default
        {}
 
+void Unit::ResetUnit()
+{
+    totalStat = Stat();
+    currentHP = GetDefaultStat().GetHP();
+    weapon = nullptr;
+    armor = nullptr;
+    ClearActiveBoons();
+    isFrozen = false;
+
+    Tickinterval=0;
+    TickDelay=0;
+}
+
 const std::string& Unit::GetName() const {
     return Name;
 }
@@ -184,5 +197,10 @@ void Unit::CleanupExpiredBoons() {
             ++it;
         }
     }
+}
+
+void Unit::ClearActiveBoons()
+{
+    activeBoons.clear();
 }
 

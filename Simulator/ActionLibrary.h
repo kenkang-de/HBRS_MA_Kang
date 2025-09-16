@@ -36,9 +36,6 @@ private:
     static const std::unordered_map<std::string, ActionFn> actionMap;
 };
 
-
-void DelayUnitInBattleManager(Unit* unit, int delayAmount);
-
 // Global functions for Boon system
 void AddBoonToUnit(Unit* target, std::unique_ptr<BoonAction> boon);
 bool HasBoonOnUnit(Unit* target, const std::string& effectType);

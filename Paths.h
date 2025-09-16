@@ -7,11 +7,17 @@
 namespace Paths {
     // Base directories (relative to project root)
     const std::string SIMULATOR_DIR = "Simulator/";
+    const std::string DATA_DIR = "Data/";
     const std::string ANALYSIS_DIR = "Analysis/";
     const std::string SAMPLING_DIR = "Sampling/";
     const std::string ELEMENT_DIR = "Element/";
     const std::string LOG_DIR = "Log/";
-    const std::string DATA_DIR = "Simulator/Data/";
+    
+    // Data files (CSV, YAML, etc.)
+    const std::string ARMOR_DATA_CSV = "Armor_v1.csv";
+    const std::string WEAPON_DATA_CSV = "Weapon_v1.csv";
+    const std::string BATTLE_ACTIONS_YAML = "BattleActions.yaml";
+    const std::string MASTER_CONFIG = "master_config.txt";
     
     // Specific log directories
     const std::string LOG_V1_DIR = LOG_DIR + "V1/";
@@ -34,6 +40,7 @@ namespace Paths {
     
     namespace FromSimulator {
         const std::string ELEMENT_DIR = "../" + Paths::ELEMENT_DIR;
+        const std::string BATTLELOG_DIR = "../" + Paths::LOG_V1_DIR;
     }
     
     namespace FromElement {
@@ -48,16 +55,6 @@ namespace Paths {
     // Test configuration
     const std::string TEST_BASE_NAME = "V1test";
 
-    const std::string MASTER_CONFIG = "master_config.txt";
-
-    //Weapon data
-    const std::string WEAPON_DATA_CSV = "Weapon_v1.csv";
-
-    //Armor data
-    const std::string ARMOR_DATA_CSV = "Armor_v1.csv";
-
-    //BattleAction data
-    const std::string BATTLE_ACTIONS_YAML = "BattleActions.yaml";
 }
 
 #endif // PATHS_H

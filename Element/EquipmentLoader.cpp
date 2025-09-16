@@ -104,5 +104,5 @@ ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::s
     LoadArmorListFromCSV(Paths::DATA_DIR + Paths::ARMOR_DATA_CSV);
     LoadWeaponListFromCSV(Paths::DATA_DIR + Paths::WEAPON_DATA_CSV, actionMap);
 
-    return EquipmentLoader::equipment;
+    return equipment;
 }

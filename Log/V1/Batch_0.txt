@@ -1,0 +1,111 @@
+
+[Tick 10] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+
+[Tick 12] 2 unit(s) acting
+Melee: R4 targeting B2 (HP: 10)
+Magic: R1 targeting B2 (HP: 10)
+Magic: R1 targeting B0 (HP: 11)
+Magic: R1 targeting B1 (HP: 10)
+
+[Tick 15] 1 unit(s) acting
+Ranged: R2 targeting B2 (HP: 8)
+
+[Tick 20] 3 unit(s) acting
+Ranged: B1 targeting R1 (HP: 10)
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B2 (HP: 8)
+Magic: R0 targeting R1 (HP: 3)
+
+[Tick 24] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 8)
+
+[Tick 25] 1 unit(s) acting
+Magic: R1 targeting B2 (HP: 8)
+Magic: R1 targeting B0 (HP: 9)
+Magic: R1 targeting B1 (HP: 8)
+
+[Tick 30] 4 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+Ranged: B4 targeting R1 (HP: 3)
+Ranged: R3 targeting B2 (HP: 6)
+Melee: B0 targeting R0 (HP: 8)
+  -> R0 (magic) tick reset due to melee attack!
+
+[Tick 32] 1 unit(s) acting
+Magic: R0 targeting R0 (HP: 5)
+
+[Tick 36] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 6)
+
+[Tick 40] 2 unit(s) acting
+Ranged: B1 targeting R0 (HP: 5)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 45] 1 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+
+[Tick 48] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 6)
+
+[Tick 50] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 60] 6 unit(s) acting
+Ranged: B1 targeting R4 (HP: 8)
+Ranged: R2 targeting B2 (HP: 6)
+Ranged: R3 targeting B2 (HP: 6)
+Ranged: B4 targeting R4 (HP: 1)
+Melee: B0 targeting R2 (HP: 8)
+
+[Tick 70] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 71] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 72] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 73] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 74] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 75] 2 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 76] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 77] 2 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 78] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 79] 2 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 80] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 5)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 81] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 82] 2 unit(s) acting
+Ranged: B1 targeting R3 (HP: 10)
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 83] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 6)
+
+[Tick 84] 2 unit(s) acting
+Ranged: B1 targeting R3 (HP: 1)
+Ranged: R3 targeting B2 (HP: 6)
+=== Battle Log Ended ===
