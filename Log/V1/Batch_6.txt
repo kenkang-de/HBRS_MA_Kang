@@ -1,0 +1,212 @@
+=== BATTLE START DEBUG ===
+Unit 0: R0 HP:10 Speed:1 Alive:Yes
+Unit 1: R1 HP:10 Speed:4 Alive:Yes
+Unit 2: R2 HP:10 Speed:4 Alive:Yes
+Unit 3: R3 HP:10 Speed:3 Alive:Yes
+Unit 4: R4 HP:8 Speed:3 Alive:Yes
+Unit 5: B0 HP:7 Speed:6 Alive:Yes
+Unit 6: B1 HP:11 Speed:6 Alive:Yes
+Unit 7: B2 HP:12 Speed:2 Alive:Yes
+Unit 8: B3 HP:10 Speed:1 Alive:Yes
+Unit 9: B4 HP:10 Speed:4 Alive:Yes
+==========================
+
+
+[Tick 2] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 10)
+R0 HP: 10 - 0 => 10
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Melee: B1 targeting R0 (HP: 10)
+R0 HP: 10 - 2 => 8
+  -> R0 (magic) tick reset due to melee attack!
+
+
+[Tick 3] 4 unit(s) acting
+Ranged: R2 targeting B2 (HP: 12)
+B2 HP: 12 - 1 => 11
+Melee: R1 targeting B2 (HP: 11)
+B2 HP: 11 - 0 => 11
+Melee: B4 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Magic: R0 targeting B2 (HP: 11)
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 4] 4 unit(s) acting
+Ranged: R3 targeting B2 (HP: 11)
+[A10] R3 threat changed from 6 to 7
+[A04] R3 attack changed from 3 to 5
+B2 HP: 11 - 3 => 8
+Ranged: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: R4 targeting B2 (HP: 8)
+B2 HP: 8 - 2 => 6
+Ranged: R4 targeting B3 (HP: 10)
+B3 HP: 10 - 2 => 8
+Ranged: R4 targeting B4 (HP: 10)
+B4 HP: 10 - 1 => 9
+Melee: B1 targeting R0 (HP: 8)
+R0 HP: 8 - 2 => 6
+  -> R0 (magic) tick reset due to melee attack!
+
+
+[Tick 5] 1 unit(s) acting
+Magic: R0 targeting B2 (HP: 6)
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 6] 6 unit(s) acting
+Ranged: R2 targeting B2 (HP: 6)
+B2 HP: 6 - 1 => 5
+Ranged: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Melee: R1 targeting B2 (HP: 5)
+B2 HP: 5 - 0 => 5
+Melee: B4 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: B2 targeting R0 (HP: 6)
+  -> B2 is frozen and cannot act!
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] FreezeSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered FreezeSTART
+Melee: B1 targeting R0 (HP: 6)
+R0 HP: 6 - 2 => 4
+  -> R0 (magic) tick reset due to melee attack!
+
+
+[Tick 7] 1 unit(s) acting
+Magic: R0 targeting B2 (HP: 5)
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 8] 4 unit(s) acting
+Ranged: B0 targeting R0 (HP: 4)
+R0 HP: 4 - 0 => 4
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: R3 targeting B2 (HP: 5)
+[A10] R3 threat changed from 7 to 8
+[A04] R3 attack changed from 5 to 7
+B2 HP: 5 - 5 => 0
+Ranged: R4 targeting B3 (HP: 8)
+B3 HP: 8 - 2 => 6
+Ranged: R4 targeting B4 (HP: 9)
+B4 HP: 9 - 1 => 8
+Melee: B1 targeting R0 (HP: 4)
+R0 HP: 4 - 2 => 2
+  -> R0 (magic) tick reset due to melee attack!
+
+
+[Tick 9] 4 unit(s) acting
+Ranged: R2 targeting B3 (HP: 6)
+B3 HP: 6 - 1 => 5
+Melee: B4 targeting R0 (HP: 2)
+R0 HP: 2 - 0 => 2
+Melee: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Magic: R0 targeting B3 (HP: 5)
+[BOON] Applied FreezeSTART to B3 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 10] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 2)
+R0 HP: 2 - 0 => 2
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Melee: B1 targeting R0 (HP: 2)
+R0 HP: 2 - 2 => 0
+
+
+[Tick 12] 8 unit(s) acting
+Ranged: R3 targeting B3 (HP: 5)
+[A10] R3 threat changed from 8 to 9
+[A04] R3 attack changed from 7 to 9
+B3 HP: 7 - 7 => 0
+Ranged: R4 targeting B4 (HP: 8)
+B4 HP: 8 - 1 => 7
+Ranged: R4 targeting B1 (HP: 11)
+B1 HP: 11 - 4 => 7
+Ranged: R4 targeting B0 (HP: 7)
+B0 HP: 7 - 4 => 3
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: B0 targeting R2 (HP: 10)
+R2 HP: 10 - 1 => 9
+Ranged: R2 targeting B4 (HP: 7)
+B4 HP: 7 - 0 => 7
+Melee: R1 targeting B4 (HP: 7)
+B4 HP: 7 - 0 => 7
+Melee: B1 targeting R3 (HP: 10)
+R3 HP: 10 - 1 => 9
+Melee: B4 targeting R3 (HP: 9)
+R3 HP: 9 - 0 => 9
+
+
+[Tick 14] 2 unit(s) acting
+Ranged: B0 targeting R3 (HP: 9)
+R3 HP: 9 - 0 => 9
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: B0 targeting R2 (HP: 9)
+R2 HP: 9 - 1 => 8
+Melee: B1 targeting R3 (HP: 9)
+R3 HP: 9 - 1 => 8
+
+
+[Tick 15] 3 unit(s) acting
+Ranged: R2 targeting B4 (HP: 7)
+B4 HP: 7 - 0 => 7
+Melee: R1 targeting B4 (HP: 7)
+B4 HP: 7 - 0 => 7
+Melee: B4 targeting R3 (HP: 8)
+R3 HP: 8 - 0 => 8
+
+
+[Tick 16] 4 unit(s) acting
+Ranged: R3 targeting B4 (HP: 7)
+[A10] R3 threat changed from 9 to 10
+[A04] R3 attack changed from 9 to 11
+B4 HP: 8 - 8 => 0
+Ranged: B0 targeting R3 (HP: 8)
+R3 HP: 8 - 0 => 8
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: B0 targeting R2 (HP: 8)
+R2 HP: 8 - 1 => 7
+Ranged: R4 targeting B1 (HP: 7)
+B1 HP: 7 - 4 => 3
+Ranged: R4 targeting B0 (HP: 3)
+B0 HP: 4 - 4 => 0
+Melee: B1 targeting R3 (HP: 8)
+R3 HP: 8 - 0 => 8
+
+
+[Tick 18] 3 unit(s) acting
+Ranged: R2 targeting B1 (HP: 3)
+B1 HP: 3 - 3 => 0
+Battle Over! Red Team wins!

@@ -1,104 +1,13 @@
 === BATTLE START DEBUG ===
 Unit 0: R0 HP:10 Speed:6 Alive:Yes
-Unit 1: R1 HP:10 Speed:2 Alive:Yes
-Unit 2: R2 HP:10 Speed:4 Alive:Yes
-Unit 3: R3 HP:12 Speed:5 Alive:Yes
-Unit 4: R4 HP:10 Speed:7 Alive:Yes
-Unit 5: B0 HP:11 Speed:4 Alive:Yes
-Unit 6: B1 HP:13 Speed:0 Alive:Yes
-Unit 7: B2 HP:10 Speed:4 Alive:Yes
-Unit 8: B3 HP:12 Speed:2 Alive:Yes
-Unit 9: B4 HP:12 Speed:2 Alive:Yes
+Unit 1: R1 HP:12 Speed:1 Alive:Yes
+Unit 2: R2 HP:10 Speed:3 Alive:Yes
+Unit 3: R3 HP:7 Speed:4 Alive:Yes
+Unit 4: R4 HP:8 Speed:5 Alive:Yes
+Unit 5: B0 HP:10 Speed:3 Alive:Yes
+Unit 6: B1 HP:10 Speed:7 Alive:Yes
+Unit 7: B2 HP:10 Speed:3 Alive:Yes
+Unit 8: B3 HP:10 Speed:2 Alive:Yes
+Unit 9: B4 HP:4 Speed:2 Alive:Yes
 ==========================
-
-
-[Tick 60] 1 unit(s) acting
-Melee: R4 targeting B1 (HP: 13)
-B1 HP: 13 - 2 => 11
-  -> B1 (magic) tick reset due to melee attack!
-
-
-[Tick 70] 1 unit(s) acting
-Ranged: R0 targeting B1 (HP: 11)
-B1 HP: 11 - 0 => 11
-Ranged: R0 targeting B4 (HP: 12)
-B4 HP: 12 - 0 => 12
-
-
-[Tick 84] 1 unit(s) acting
-Melee: R3 targeting B1 (HP: 11)
-B1 HP: 11 - 2 => 9
-  -> B1 (magic) tick reset due to melee attack!
-
-
-[Tick 105] 3 unit(s) acting
-Ranged: B0 targeting R1 (HP: 10)
-R1 HP: 10 - 2 => 8
-  -> R1 (magic) tick reset due to ranged attack!
-Melee: R2 targeting B1 (HP: 9)
-B1 HP: 9 - 5 => 4
-  -> B1 (magic) tick reset due to melee attack!
-Magic: B2 targeting B1 (HP: 4)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 107] 1 unit(s) acting
-Magic: R1 targeting B1 (HP: 4)
-[A33] B1 threat changed from 7 to 5
-Magic: R1 targeting B4 (HP: 12)
-[A33] B4 threat changed from 6 to 4
-Magic: R1 targeting B3 (HP: 12)
-[A33] B3 threat changed from 5 to 3
-
-
-[Tick 120] 1 unit(s) acting
-Melee: R4 targeting B1 (HP: 4)
-B1 HP: 4 - 2 => 2
-  -> B1 (magic) tick reset due to melee attack!
-
-
-[Tick 140] 1 unit(s) acting
-Ranged: R0 targeting B1 (HP: 2)
-B1 HP: 2 - 0 => 2
-Ranged: R0 targeting B0 (HP: 11)
-B0 HP: 11 - 0 => 11
-
-
-[Tick 168] 1 unit(s) acting
-Melee: R3 targeting B1 (HP: 2)
-B1 HP: 2 - 2 => 0
-
-
-[Tick 180] 1 unit(s) acting
-Melee: R4 targeting B0 (HP: 11)
-B0 HP: 11 - 2 => 9
-
-
-[Tick 210] 6 unit(s) acting
-Ranged: R0 targeting B0 (HP: 9)
-B0 HP: 9 - 0 => 9
-Ranged: R0 targeting B2 (HP: 10)
-B2 HP: 10 - 3 => 7
-  -> B2 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R1 (HP: 8)
-R1 HP: 8 - 2 => 6
-  -> R1 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R1 (HP: 6)
-R1 HP: 6 - 0 => 6
-[A20] R1 delayed by 1 intervals (210 ticks)
-Melee: R2 targeting B0 (HP: 9)
-B0 HP: 9 - 5 => 4
-Melee: B3 targeting R1 (HP: 6)
-R1 HP: 6 - 3 => 3
-[A10] B3 threat changed from 3 to 2
-  -> R1 (magic) tick reset due to melee attack!
-
-
-[Tick 422] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 4)
-[A33] B0 threat changed from 4 to 2
-Magic: R1 targeting B2 (HP: 7)
-[A33] B2 threat changed from 4 to 2
-Magic: R1 targeting B4 (HP: 12)
-[A33] B4 threat changed from 4 to 2
+Battle Over! Tick limit reached (50 ticks elapsed)

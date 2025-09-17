@@ -11,8 +11,8 @@ class ElementList
   std::vector<Weapon> weapons;
   std::vector<Armor> armors;  
 
-  Weapon* FindWeaponByID(std::string& weaponId);
-  Armor* FindArmorByID(std::string& armorId);
+  Weapon* FindWeaponByID(const std::string& weaponId);
+  Armor* FindArmorByID(const std::string& armorId);
 };
 
 #endif 

@@ -1,0 +1,13 @@
+=== BATTLE START DEBUG ===
+Unit 0: R0 HP:10 Speed:1 Alive:Yes
+Unit 1: R1 HP:10 Speed:3 Alive:Yes
+Unit 2: R2 HP:10 Speed:3 Alive:Yes
+Unit 3: R3 HP:12 Speed:4 Alive:Yes
+Unit 4: R4 HP:10 Speed:7 Alive:Yes
+Unit 5: B0 HP:12 Speed:3 Alive:Yes
+Unit 6: B1 HP:10 Speed:5 Alive:Yes
+Unit 7: B2 HP:10 Speed:4 Alive:Yes
+Unit 8: B3 HP:4 Speed:3 Alive:Yes
+Unit 9: B4 HP:12 Speed:0 Alive:Yes
+==========================
+Battle Over! Tick limit reached (50 ticks elapsed)

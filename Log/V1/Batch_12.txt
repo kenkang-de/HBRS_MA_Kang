@@ -1,0 +1,102 @@
+=== BATTLE START DEBUG ===
+Unit 0: R0 HP:10 Speed:1 Alive:Yes
+Unit 1: R1 HP:8 Speed:5 Alive:Yes
+Unit 2: R2 HP:10 Speed:6 Alive:Yes
+Unit 3: R3 HP:10 Speed:4 Alive:Yes
+Unit 4: R4 HP:10 Speed:1 Alive:Yes
+Unit 5: B0 HP:10 Speed:5 Alive:Yes
+Unit 6: B1 HP:13 Speed:0 Alive:Yes
+Unit 7: B2 HP:4 Speed:3 Alive:Yes
+Unit 8: B3 HP:12 Speed:4 Alive:Yes
+Unit 9: B4 HP:10 Speed:1 Alive:Yes
+==========================
+
+
+[Tick 10] 1 unit(s) acting
+Ranged: R2 targeting B1 (HP: 13)
+[A10] R2 threat changed from 3 to 4
+[A04] R2 attack changed from 2 to 4
+B1 HP: 13 - 1 => 12
+
+
+[Tick 12] 2 unit(s) acting
+Magic: R1 targeting B1 (HP: 12)
+[A34] B1 attack changed from 6 to 5
+Magic: R1 targeting B4 (HP: 10)
+[A34] B4 attack changed from 7 to 6
+Magic: B0 targeting R0 (HP: 10)
+R0 HP: 10 - 3 => 7
+Magic: B0 targeting R1 (HP: 8)
+R1 HP: 8 - 3 => 5
+
+
+[Tick 15] 2 unit(s) acting
+Melee: B3 targeting R0 (HP: 7)
+R0 HP: 7 - 7 => 0
+Magic: R3 targeting R1 (HP: 5)
+[A33] R1 threat changed from 6 to 8
+[A02] R1 defense changed from 0 to 1
+
+
+[Tick 20] 2 unit(s) acting
+Ranged: R2 targeting B1 (HP: 12)
+[A10] R2 threat changed from 4 to 5
+[A04] R2 attack changed from 4 to 6
+B1 HP: 12 - 3 => 9
+Melee: B2 targeting R1 (HP: 5)
+R1 HP: 7 - 7 => 0
+[A02] R1 defense changed from 1 to 0
+
+
+[Tick 24] 1 unit(s) acting
+Magic: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 3 => 7
+Magic: B0 targeting R2 (HP: 10)
+R2 HP: 10 - 3 => 7
+
+
+[Tick 30] 3 unit(s) acting
+Ranged: R2 targeting B1 (HP: 9)
+[A10] R2 threat changed from 5 to 6
+[A04] R2 attack changed from 6 to 8
+B1 HP: 9 - 5 => 4
+Melee: B3 targeting R4 (HP: 7)
+R4 HP: 7 - 6 => 1
+Magic: R3 targeting R4 (HP: 1)
+[A33] R4 threat changed from 6 to 8
+[A02] R4 defense changed from 2 to 3
+Magic: R3 targeting R2 (HP: 7)
+[A33] R2 threat changed from 6 to 8
+[A02] R2 defense changed from 0 to 1
+
+
+[Tick 36] 1 unit(s) acting
+Magic: B0 targeting R2 (HP: 7)
+R2 HP: 7 - 3 => 4
+Magic: B0 targeting R4 (HP: 1)
+R4 HP: 3 - 3 => 0
+
+
+[Tick 40] 2 unit(s) acting
+Ranged: R2 targeting B1 (HP: 4)
+[A10] R2 threat changed from 8 to 9
+[A04] R2 attack changed from 8 to 10
+B1 HP: 7 - 7 => 0
+Melee: B2 targeting R2 (HP: 4)
+R2 HP: 7 - 7 => 0
+[A02] R2 defense changed from 1 to 0
+
+
+[Tick 45] 2 unit(s) acting
+Melee: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 8 => 2
+  -> R3 (magic) tick reset due to melee attack!
+Magic: R3 targeting R3 (HP: 2)
+[A33] R3 threat changed from 4 to 6
+[A02] R3 defense changed from 0 to 1
+
+
+[Tick 48] 1 unit(s) acting
+Magic: B0 targeting R3 (HP: 2)
+R3 HP: 3 - 3 => 0
+Battle Over! Blue Team wins!

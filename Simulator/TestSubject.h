@@ -17,34 +17,34 @@ public:
     // Getters
     const std::string& GetID() const { return id; }
     
-    // Statistics
-    float WinRate;
-    int TotalWin;
-    int TotalLost;
-    int TotalDraw;
-    int UsageCount;
+    // Statistics - make them mutable so they can be modified from const methods
+    mutable float WinRate;
+    mutable int TotalWin;
+    mutable int TotalLost;
+    mutable int TotalDraw;
+    mutable int UsageCount;
 
     //Sampling
     int SampleUsage;
     // std::vector<int> SamplePartnerIndexList;
     
     // Statistics methods
-     void recordWin() {
+     void recordWin() const {
         TotalWin++;
         updateWinRate();
     }
     
-     void recordLoss() {
+     void recordLoss() const {
         TotalLost++;
         updateWinRate();
     }
     
-     void recordDraw() {
+     void recordDraw() const {
         TotalDraw++;
         updateWinRate();
     }
     
-     void incrementUsage() {
+     void incrementUsage() const {
         UsageCount++;
     }
     
@@ -57,7 +57,7 @@ public:
     }
 
 private:
-    void updateWinRate() {
+    void updateWinRate() const {
         int totalBattles = TotalWin + TotalLost + TotalDraw;
         if (totalBattles > 0) {
             WinRate = static_cast<float>(TotalWin) / totalBattles;

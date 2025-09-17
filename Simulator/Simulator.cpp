@@ -22,15 +22,19 @@ void Simulator::Init_Battlefield()
 
 void Simulator::SimulateBatches(std::vector<Batch>* batches)
 {
+std::cout<<"SimulateBatches: Starting with "<<batches->size()<<" batches"<<std::endl;
 //Iterate through batches, teams
 for(Batch& batch : *batches){
+    std::cout<<"Processing batch: "<<batch.batchId<<" with "<<batch.teams.size()<<" teams"<<std::endl;
     // Round-Robin Tournament: Each team plays against every other team
     for(int teamA = 0; teamA < batch.teams.size(); teamA++){
         for(int teamB = teamA + 1; teamB < batch.teams.size(); teamB++){
+            std::cout<<"Battle: Team "<<teamA<<" vs Team "<<teamB<<std::endl;
             //First battle of the batch will be logged, and saved to Log directory
             SimulateBattle(&batch.teams[teamA], &batch.teams[teamB], teamA==0 && teamB==1,batch.batchId);
-   
+            std::cout<<"Battle completed!"<<std::endl;
         }}}
+std::cout<<"SimulateBatches: All batches completed!"<<std::endl;
 }
 
 void Simulator::EquipTeam(int startIndex, SimulationTeamSetting* teamSetting)
@@ -55,12 +59,24 @@ void Simulator::EquipTeam(int startIndex, SimulationTeamSetting* teamSetting)
 
 void Simulator::SimulateBattle(SimulationTeamSetting* redTeamSetting, SimulationTeamSetting* blueTeamSetting, bool log, std::string batchID)
 {
-    // Equip both teams
-    EquipTeam(0, redTeamSetting);  
-    EquipTeam(UNITS_PER_TEAM, blueTeamSetting); 
+    std::cout<<"[SimulateBattle] Starting battle setup..."<<std::endl;
     
+    // Equip both teams
+    std::cout<<"[SimulateBattle] Equipping red team..."<<std::endl;
+    EquipTeam(0, redTeamSetting);  
+    std::cout<<"[SimulateBattle] Red team equipped"<<std::endl;
+    
+    std::cout<<"[SimulateBattle] Equipping blue team..."<<std::endl;
+    EquipTeam(UNITS_PER_TEAM, blueTeamSetting); 
+    std::cout<<"[SimulateBattle] Blue team equipped"<<std::endl;
+    
+    std::cout<<"[SimulateBattle] Creating BattleManager..."<<std::endl;
     BattleManager battleManager(*battlefield);
+    std::cout<<"[SimulateBattle] BattleManager created successfully"<<std::endl;
+    
+    std::cout<<"[SimulateBattle] Starting battle with log="<<(log?"true":"false")<<", batchID="<<batchID<<std::endl;
     battleManager.StartBattle(log,batchID);
+    std::cout<<"[SimulateBattle] Battle completed successfully!"<<std::endl;
 }
 
 

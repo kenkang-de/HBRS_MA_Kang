@@ -45,14 +45,20 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 }
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
+    std::cout<<"[BattleManager] StartBattle called with log="<<(log?"true":"false")<<", batchID="<<batchID<<std::endl;
 
+    std::cout<<"[BattleManager] Initializing turn manager..."<<std::endl;
     turnManager.Initialize(allUnits);
+    std::cout<<"[BattleManager] Turn manager initialized"<<std::endl;
 
     if(log) {
+        std::cout<<"[BattleManager] Starting logging to file..."<<std::endl;
         std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
         LogSystem::StartLogging(logFilename);
+        std::cout<<"[BattleManager] Logging started"<<std::endl;
     }
 
+    std::cout<<"[BattleManager] Checking unit states..."<<std::endl;
     // Debug: Check unit states before battle
     LogSystem::LogStream("=== BATTLE START DEBUG ===");
     for (int i = 0; i < allUnits.size(); i++) {
@@ -63,12 +69,14 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                            " Alive:", (unit->IsAlive() ? "Yes" : "No"));
     }
     LogSystem::LogStream("==========================");
+    std::cout<<"[BattleManager] Unit states checked"<<std::endl;
 
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit*> rangedUnits;
     std::vector<Unit*> meleeUnits;
     std::vector<Unit*> magicUnits;
 
+    std::cout<<"[BattleManager] Starting main battle loop..."<<std::endl;
     while (!IsBattleOver(false)) {
         // Get all units scheduled to act in the current tick
         std::vector<Unit*> units = turnManager.GetNextUnits();
@@ -76,8 +84,6 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         if (!units.empty()) {
             LogSystem::Log("\n");
             LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
-            //Tick Count meaning not the acutal Tick then, the tick Count to stop battle before it never ends. 
-            tickCount++;  
         }
         else
         {
@@ -292,10 +298,14 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         // Advance the tick
         turnManager.AdvanceTick();
     }
+    
+    std::cout<<"[BattleManager] Battle loop ended"<<std::endl;
+    std::cout<<"[BattleManager] Finalizing battle..."<<std::endl;
 
     if(log) {
         LogSystem::StopLogging();
     }
+    std::cout<<"[BattleManager] StartBattle method completed!"<<std::endl;
 }
 
 
@@ -315,9 +325,10 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 
 
 bool BattleManager::IsBattleOver(bool test) {
-    // Check if we've reached the tick limit (50 actual ticks that occurred)
-    if (tickCount >= TEST_TICK) {
-        LogSystem::LogStream("Battle Over! Tick limit reached (" , tickCount , " ticks occurred)");
+    // Check if we've reached the tick limit based on actual turn manager ticks
+    int currentTick = turnManager.GetCurrentTick();
+    if (currentTick >= TEST_TICK) {
+        LogSystem::LogStream("Battle Over! Tick limit reached (", currentTick, " ticks elapsed)");
         LogDrawResult();
         LogUsageCount();
         return true;
