@@ -1,7 +1,8 @@
 #include "BoonAction.h"
 #include "Unit.h"
 #include "ActionLibrary.h"
-#include <iostream>
+#include "../Log/LogSystem.h"
+
 
 BoonAction::BoonAction() : BattleAction(), usageNumber(0), maxUsage(0), effectType("") {}
 
@@ -14,8 +15,8 @@ void BoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>& al
     if (target) {
         ActionContext ctx{ actor, target, allies, enemies };
 
-        std::cout << "[BOON] " << effectType << " triggered on " << target->GetName() 
-                  << " (Usage: " << usageNumber << "/" << maxUsage << ")" << std::endl;
+        LogSystem::LogStream("[BOON] " , effectType , " triggered on " , target->GetName() 
+                  , " (Usage: " , usageNumber , "/" , maxUsage , ")" );
 
         // Execute all conditional actions for this boon
         if (!conditionalActions.empty()) {

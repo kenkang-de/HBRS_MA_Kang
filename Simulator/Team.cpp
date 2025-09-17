@@ -1,7 +1,10 @@
-#include "Team.h"
-#include "Unit.h"
 #include <iostream>
 #include <string>
+
+#include "Team.h"
+#include "Unit.h"
+#include "../Log/LogSystem.h"
+
 
 Team::Team(TeamColor teamColor, std::array<Unit*,5> units) {
     SetTeamColor(teamColor);
@@ -9,6 +12,10 @@ Team::Team(TeamColor teamColor, std::array<Unit*,5> units) {
 }
 
    const std::array<Unit*, 5>& Team::GetUnits() const {
+    return units;
+    }
+
+    std::array<Unit*, 5>& Team::GetUnits() {
     return units;
     }
 
@@ -31,15 +38,15 @@ void Team::AddUnit(Unit& newUnit) {
             newUnit.Name = prefix + std::to_string(i);
             
             // Debug output to show what each unit got
-            std::cout << "[DEBUG] " << newUnit.GetName() 
-                      << " W:" << (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetID() : "None") 
-                      << "(" << (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetAction().GetID() : "None") << ")"
-                      << " A:" << (newUnit.GetArmor() ? newUnit.GetArmor()->GetID() : "None")
-                      << " ATK:" << newUnit.GetTotalStat().GetAttack()
-                      << " DEF:" << newUnit.GetTotalStat().GetDefense()
-                      << " SPD:" << newUnit.GetTotalStat().GetSpeed() 
-                      << " THR:" << newUnit.GetTotalStat().GetThreat()
-                      << " HP:" << newUnit.GetTotalStat().GetHP() << std::endl;
+            LogSystem::LogStream("[DEBUG] " , newUnit.GetName() 
+                      , " W:" , (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetID() : "None") 
+                      , "(" , (newUnit.GetWeapon() ? newUnit.GetWeapon()->GetAction().GetID() : "None") , ")"
+                      , " A:" , (newUnit.GetArmor() ? newUnit.GetArmor()->GetID() : "None")
+                      , " ATK:" , newUnit.GetTotalStat().GetAttack()
+                      , " DEF:" , newUnit.GetTotalStat().GetDefense()
+                      , " SPD:" , newUnit.GetTotalStat().GetSpeed() 
+                      , " THR:" , newUnit.GetTotalStat().GetThreat()
+                      , " HP:" , newUnit.GetTotalStat().GetHP());
             
             return;
         }

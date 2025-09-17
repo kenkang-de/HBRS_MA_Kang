@@ -1,111 +1,104 @@
+=== BATTLE START DEBUG ===
+Unit 0: R0 HP:10 Speed:6 Alive:Yes
+Unit 1: R1 HP:10 Speed:2 Alive:Yes
+Unit 2: R2 HP:10 Speed:4 Alive:Yes
+Unit 3: R3 HP:12 Speed:5 Alive:Yes
+Unit 4: R4 HP:10 Speed:7 Alive:Yes
+Unit 5: B0 HP:11 Speed:4 Alive:Yes
+Unit 6: B1 HP:13 Speed:0 Alive:Yes
+Unit 7: B2 HP:10 Speed:4 Alive:Yes
+Unit 8: B3 HP:12 Speed:2 Alive:Yes
+Unit 9: B4 HP:12 Speed:2 Alive:Yes
+==========================
 
-[Tick 10] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 10)
 
-[Tick 12] 2 unit(s) acting
-Melee: R4 targeting B2 (HP: 10)
-Magic: R1 targeting B2 (HP: 10)
-Magic: R1 targeting B0 (HP: 11)
-Magic: R1 targeting B1 (HP: 10)
+[Tick 60] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 13)
+B1 HP: 13 - 2 => 11
+  -> B1 (magic) tick reset due to melee attack!
 
-[Tick 15] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 8)
-
-[Tick 20] 3 unit(s) acting
-Ranged: B1 targeting R1 (HP: 10)
-  -> R1 (magic) tick reset due to ranged attack!
-Ranged: R3 targeting B2 (HP: 8)
-Magic: R0 targeting R1 (HP: 3)
-
-[Tick 24] 1 unit(s) acting
-Melee: R4 targeting B2 (HP: 8)
-
-[Tick 25] 1 unit(s) acting
-Magic: R1 targeting B2 (HP: 8)
-Magic: R1 targeting B0 (HP: 9)
-Magic: R1 targeting B1 (HP: 8)
-
-[Tick 30] 4 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-Ranged: B4 targeting R1 (HP: 3)
-Ranged: R3 targeting B2 (HP: 6)
-Melee: B0 targeting R0 (HP: 8)
-  -> R0 (magic) tick reset due to melee attack!
-
-[Tick 32] 1 unit(s) acting
-Magic: R0 targeting R0 (HP: 5)
-
-[Tick 36] 1 unit(s) acting
-Melee: R4 targeting B2 (HP: 6)
-
-[Tick 40] 2 unit(s) acting
-Ranged: B1 targeting R0 (HP: 5)
-Ranged: R3 targeting B2 (HP: 6)
-
-[Tick 45] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-
-[Tick 48] 1 unit(s) acting
-Melee: R4 targeting B2 (HP: 6)
-
-[Tick 50] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
-
-[Tick 60] 6 unit(s) acting
-Ranged: B1 targeting R4 (HP: 8)
-Ranged: R2 targeting B2 (HP: 6)
-Ranged: R3 targeting B2 (HP: 6)
-Ranged: B4 targeting R4 (HP: 1)
-Melee: B0 targeting R2 (HP: 8)
 
 [Tick 70] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
+Ranged: R0 targeting B1 (HP: 11)
+B1 HP: 11 - 0 => 11
+Ranged: R0 targeting B4 (HP: 12)
+B4 HP: 12 - 0 => 12
 
-[Tick 71] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 72] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 84] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 11)
+B1 HP: 11 - 2 => 9
+  -> B1 (magic) tick reset due to melee attack!
 
-[Tick 73] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 74] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 105] 3 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 2 => 8
+  -> R1 (magic) tick reset due to ranged attack!
+Melee: R2 targeting B1 (HP: 9)
+B1 HP: 9 - 5 => 4
+  -> B1 (magic) tick reset due to melee attack!
+Magic: B2 targeting B1 (HP: 4)
+[BOON] Applied BulkupSTART to B1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
-[Tick 75] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 76] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 107] 1 unit(s) acting
+Magic: R1 targeting B1 (HP: 4)
+[A33] B1 threat changed from 7 to 5
+Magic: R1 targeting B4 (HP: 12)
+[A33] B4 threat changed from 6 to 4
+Magic: R1 targeting B3 (HP: 12)
+[A33] B3 threat changed from 5 to 3
 
-[Tick 77] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 78] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 120] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 4)
+B1 HP: 4 - 2 => 2
+  -> B1 (magic) tick reset due to melee attack!
 
-[Tick 79] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 80] 2 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 140] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 2)
+B1 HP: 2 - 0 => 2
+Ranged: R0 targeting B0 (HP: 11)
+B0 HP: 11 - 0 => 11
 
-[Tick 81] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 82] 2 unit(s) acting
-Ranged: B1 targeting R3 (HP: 10)
-Ranged: R3 targeting B2 (HP: 6)
+[Tick 168] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 2)
+B1 HP: 2 - 2 => 0
 
-[Tick 83] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 6)
 
-[Tick 84] 2 unit(s) acting
-Ranged: B1 targeting R3 (HP: 1)
-Ranged: R3 targeting B2 (HP: 6)
-=== Battle Log Ended ===
+[Tick 180] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 11)
+B0 HP: 11 - 2 => 9
+
+
+[Tick 210] 6 unit(s) acting
+Ranged: R0 targeting B0 (HP: 9)
+B0 HP: 9 - 0 => 9
+Ranged: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 3 => 7
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R1 (HP: 8)
+R1 HP: 8 - 2 => 6
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: B4 targeting R1 (HP: 6)
+R1 HP: 6 - 0 => 6
+[A20] R1 delayed by 1 intervals (210 ticks)
+Melee: R2 targeting B0 (HP: 9)
+B0 HP: 9 - 5 => 4
+Melee: B3 targeting R1 (HP: 6)
+R1 HP: 6 - 3 => 3
+[A10] B3 threat changed from 3 to 2
+  -> R1 (magic) tick reset due to melee attack!
+
+
+[Tick 422] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 4)
+[A33] B0 threat changed from 4 to 2
+Magic: R1 targeting B2 (HP: 7)
+[A33] B2 threat changed from 4 to 2
+Magic: R1 targeting B4 (HP: 12)
+[A33] B4 threat changed from 4 to 2

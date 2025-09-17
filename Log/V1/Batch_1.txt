@@ -1,0 +1,114 @@
+=== BATTLE START DEBUG ===
+Unit 0: R0 HP:8 Speed:7 Alive:Yes
+Unit 1: R1 HP:10 Speed:3 Alive:Yes
+Unit 2: R2 HP:10 Speed:3 Alive:Yes
+Unit 3: R3 HP:7 Speed:4 Alive:Yes
+Unit 4: R4 HP:12 Speed:2 Alive:Yes
+Unit 5: B0 HP:4 Speed:4 Alive:Yes
+Unit 6: B1 HP:10 Speed:1 Alive:Yes
+Unit 7: B2 HP:10 Speed:0 Alive:Yes
+Unit 8: B3 HP:6 Speed:3 Alive:Yes
+Unit 9: B4 HP:12 Speed:4 Alive:Yes
+==========================
+
+
+[Tick 12] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 4 => 6
+  -> B2 (magic) tick reset due to melee attack!
+
+
+[Tick 21] 3 unit(s) acting
+Ranged: B0 targeting R4 (HP: 12)
+R4 HP: 12 - 7 => 5
+  -> R4 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B2 (HP: 6)
+B2 HP: 6 - 4 => 2
+[A10] R3 threat changed from 4 to 3
+  -> B2 (magic) tick reset due to ranged attack!
+Melee: B4 targeting R4 (HP: 5)
+R4 HP: 5 - 1 => 4
+[A02] R4 defense changed from 2 to 1
+  -> R4 (magic) tick reset due to melee attack!
+
+
+[Tick 23] 1 unit(s) acting
+Magic: R4 targeting R1 (HP: 10)
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+[A29] R4 healed R1 for 2 HP
+Magic: R4 targeting R0 (HP: 8)
+[HEAL] R0 healed for 0 HP (from 8 to 8/8)
+[A29] R4 healed R0 for 2 HP
+Magic: R4 targeting R3 (HP: 7)
+[HEAL] R3 healed for 0 HP (from 7 to 7/7)
+[A29] R4 healed R3 for 2 HP
+
+
+[Tick 24] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 2)
+B2 HP: 4 - 4 => 0
+
+
+[Tick 28] 3 unit(s) acting
+Ranged: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 4 => 6
+Melee: R1 targeting B1 (HP: 6)
+B1 HP: 6 - 0 => 6
+[A06] B1 speed changed from 1 to 0
+Melee: B3 targeting R4 (HP: 4)
+R4 HP: 6 - 6 => 0
+R4 HP: 6 - 6 => 0
+
+
+[Tick 36] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 6)
+B1 HP: 6 - 2 => 4
+
+
+[Tick 42] 3 unit(s) acting
+Ranged: R3 targeting B1 (HP: 4)
+B1 HP: 4 - 2 => 2
+[A10] R3 threat changed from 3 to 2
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 8 => 2
+Melee: B4 targeting R1 (HP: 2)
+R1 HP: 2 - 1 => 1
+[A02] R1 defense changed from 2 to 1
+
+
+[Tick 48] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 2)
+B1 HP: 2 - 2 => 0
+
+
+[Tick 56] 3 unit(s) acting
+Ranged: R2 targeting B0 (HP: 4)
+B0 HP: 6 - 6 => 0
+Melee: B3 targeting R1 (HP: 1)
+R1 HP: 6 - 6 => 0
+R1 HP: 6 - 6 => 0
+
+
+[Tick 60] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 6)
+B3 HP: 6 - 4 => 2
+
+
+[Tick 63] 2 unit(s) acting
+Ranged: R3 targeting B3 (HP: 2)
+B3 HP: 4 - 4 => 0
+[A10] R3 threat changed from 2 to 1
+Melee: B4 targeting R0 (HP: 8)
+R0 HP: 8 - 3 => 5
+[A02] R0 defense changed from 0 to 0
+
+
+[Tick 72] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 12)
+B4 HP: 12 - 5 => 7
+
+
+[Tick 84] 4 unit(s) acting
+Ranged: R2 targeting B4 (HP: 7)
+B4 HP: 7 - 7 => 0
+Battle Over! Red Team wins!

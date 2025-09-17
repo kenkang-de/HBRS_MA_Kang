@@ -1,6 +1,8 @@
-#include "TurnManager.h"
 #include <numeric>
 #include <iostream>
+
+#include "TurnManager.h"
+#include "../Log/LogSystem.h"
 
 int TurnManager::GCD(int a, int b) {
     return b == 0 ? a : GCD(b, a % b);
@@ -60,7 +62,7 @@ void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
     
     // Only rebuild if LCM actually changed
     if (newLCM != lcm) {
-        std::cout << "[DEBUG] LCM changed from " << lcm << " to " << newLCM << " - rebuilding queue" << std::endl;
+        LogSystem::LogStream("[DEBUG] LCM changed from " , lcm , " to " , newLCM , " - rebuilding queue" );
         lcm = newLCM;
         RebuildQueue(units);
     }

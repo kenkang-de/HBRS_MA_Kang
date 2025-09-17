@@ -21,3 +21,8 @@ const BattleAction* GlobalAction::GetGlobalAction(const std::string& id) {
 void GlobalAction::AddAfterAction(const BattleAction* battleAction, const ActionContext& context) {
     afterActions.emplace_back(battleAction, context);
 }
+
+void GlobalAction::ClearAfterAction()
+{
+    afterActions.clear();
+}

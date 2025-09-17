@@ -2,7 +2,7 @@
 #define ARMOR_H
 
 #include <string>
-#include "Stat.h"
+#include "../Element/Stat.h"
 #include "TestSubject.h"
 
 class Armor : public TestSubject {
@@ -10,12 +10,10 @@ class Armor : public TestSubject {
     Stat stat;
 public:
     Armor(std::string id, std::string name, Stat stat) : TestSubject(id), name(name), stat(stat) {}
-
-    Armor() : TestSubject(""), name("Default Armor"), stat(Stat::Empty()) {} 
     
     const std::string& GetName() const { return name; }
     Stat& GetStat() { return stat; }
-const Stat& GetStat() const { return stat; }
+    const Stat& GetStat() const { return stat; }
 };
 
 #endif

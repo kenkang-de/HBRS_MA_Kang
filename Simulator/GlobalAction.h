@@ -24,6 +24,7 @@ class GlobalAction{
 
         static std::vector<AfterActionEvent> afterActions;
         static void AddAfterAction(const BattleAction* battleAction, const ActionContext& context);
+        static void ClearAfterAction();
 };
 
 #endif

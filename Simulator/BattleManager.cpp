@@ -20,6 +20,7 @@ static BattleManager* currentBattleManager = nullptr;
 BattleManager::BattleManager(Battlefield& bf) 
     : battlefield(bf), tickCount(0) {
 
+    GlobalAction::ClearAfterAction();
     currentBattleManager = this;
     
     const std::array<Unit*, 5>& redUnits = battlefield.GetRedTeam()->GetUnits();
@@ -44,12 +45,24 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 }
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
+
     turnManager.Initialize(allUnits);
 
     if(log) {
         std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
         LogSystem::StartLogging(logFilename);
     }
+
+    // Debug: Check unit states before battle
+    LogSystem::LogStream("=== BATTLE START DEBUG ===");
+    for (int i = 0; i < allUnits.size(); i++) {
+        Unit* unit = allUnits[i];
+        LogSystem::LogStream("Unit ", i, ": ", unit->GetName(), 
+                           " HP:", unit->GetCurrentHP(), 
+                           " Speed:", unit->GetTotalStat().GetSpeed(),
+                           " Alive:", (unit->IsAlive() ? "Yes" : "No"));
+    }
+    LogSystem::LogStream("==========================");
 
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit*> rangedUnits;
@@ -63,7 +76,13 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         if (!units.empty()) {
             LogSystem::Log("\n");
             LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
+            //Tick Count meaning not the acutal Tick then, the tick Count to stop battle before it never ends. 
             tickCount++;  
+        }
+        else
+        {
+            turnManager.AdvanceTick();
+            continue;
         }
 
         // Separate ranged, melee, and magic units
@@ -172,11 +191,8 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 std::vector<Unit*> unitAllies, unitEnemies;
                 SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
-                if(log)
-                {
                 LogSystem::LogStream("Melee: ", unit->GetName(), " targeting ", target->GetName(), 
                                     " (HP: ", target->GetCurrentHP(), ")");
-                }
 
                 
                 int hpBeforeAttack = target->GetCurrentHP();
@@ -242,11 +258,8 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 std::vector<Unit*> unitAllies, unitEnemies;
                 SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
                 
-                if(log)
-                {
                 LogSystem::LogStream("Magic: ", unit->GetName(), " targeting ", target->GetName(), 
                                     " (HP: ", target->GetCurrentHP(), ")");
-                }
            
                 
                 // Check if unit is frozen - if so, skip the action but still apply boons
@@ -278,51 +291,11 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
 
         // Advance the tick
         turnManager.AdvanceTick();
-
-        // Reset all units' TickDelay to 0 after processing
-        //TODO: make unit resetter class and process it there
-        for (Unit* unit : allUnits) {
-            if (unit) {
-                unit->TickDelay = 0;
-            }
-        }
     }
 
     if(log) {
         LogSystem::StopLogging();
     }
-
-    // Update equipment statistics after battle ends - write to simple file
-    {
-        Team* winner = battlefield.ResultCheck();
-        bool redWon = (winner && winner->GetTeamColor() == Red);
-        bool blueWon = (winner && winner->GetTeamColor() == Blue);
-        bool isDraw = !redWon && !blueWon;
-        
-        // Write equipment usage data to a simple file for RunTests to process
-        std::ofstream equipFile("battle_equipment_data.txt", std::ios::app);
-        std::cout << "[DEBUG] Recording equipment stats for " << allUnits.size() << " units" << std::endl;
-        for (Unit* unit : allUnits) {
-            if (!unit) continue;
-            
-            bool unitWon = (unit->team == Red && redWon) || (unit->team == Blue && blueWon);
-            
-            // Get equipment IDs and record usage - handle null pointers
-            const std::string weaponId = unit->GetWeapon() ? unit->GetWeapon()->GetID() : "None";
-            const std::string armorId = unit->GetArmor() ? unit->GetArmor()->GetID() : "None";
-            
-            std::cout << "[DEBUG] Unit " << unit->GetName() << ": W=" << weaponId << " A=" << armorId 
-                      << " Won=" << unitWon << " Draw=" << isDraw << std::endl;
-            
-            // Write to file: WeaponID,ArmorID,Won,Draw
-            equipFile << weaponId << "," << armorId << "," << (unitWon ? 1 : 0) << "," << (isDraw ? 1 : 0) << "\n";
-        }
-        equipFile.close();
-        
-        std::cout << "[BattleManager] Equipment data written to battle_equipment_data.txt" << std::endl;
-    }
-
-    std::cout << "Battle finished.\n";
 }
 
 
@@ -344,21 +317,59 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 bool BattleManager::IsBattleOver(bool test) {
     // Check if we've reached the tick limit (50 actual ticks that occurred)
     if (tickCount >= TEST_TICK) {
-        std::cout << "Battle Over! Tick limit reached (" << tickCount << " ticks occurred)" << std::endl;
+        LogSystem::LogStream("Battle Over! Tick limit reached (" , tickCount , " ticks occurred)");
+        LogDrawResult();
+        LogUsageCount();
         return true;
     }
     
     // Use battlefield to check for victory
-    Team* winner = battlefield.ResultCheck();
+    Team* winner = battlefield.GetWinnerTeam();
     if (winner != nullptr) {
         // Determine team name based on color
         std::string teamName = (winner->GetTeamColor() == Red) ? "Red Team" : "Blue Team";
-        std::cout << "Battle Over! " << teamName << " wins!" << std::endl;
+        LogSystem::LogStream("Battle Over! ", teamName, " wins!");
+        LogWinLoseResult();
+        LogUsageCount();
         return true;
     }
-    
     return false; // Battle continues
 }
+
+void BattleManager::LogDrawResult()
+{
+    for(Unit* unit: allUnits)
+    {
+        unit->GetWeapon()->recordDraw();
+        unit->GetArmor()->recordDraw();
+    }
+}
+
+void BattleManager::LogWinLoseResult()
+{
+Team* winnerTeam = battlefield.GetWinnerTeam();
+Team* loserTeam = battlefield.GetLoserTeam();
+
+for(Unit* unit: winnerTeam->GetUnits()){
+    unit->GetWeapon()->recordWin();
+    unit->GetArmor()->recordWin();
+}
+
+for(Unit* unit: loserTeam->GetUnits()){
+    unit->GetWeapon()->recordLoss();
+    unit->GetArmor()->recordLoss();
+}
+}
+
+void BattleManager::LogUsageCount()
+{
+    for(Unit* unit: allUnits){
+        unit->GetWeapon()->incrementUsage();
+        unit->GetArmor()->incrementUsage();
+    }
+}
+
+
 
 // Public method to access TurnManager DelayUnit functionality
 void BattleManager::DelayUnit(Unit* unit, int delayAmount) {
@@ -381,8 +392,8 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
         }
         
         if (target) {
-            std::cout << "[AFTER-ACTION] " << actor->GetName() << " performs after-action on " 
-                      << target->GetName() << " (threat: " << target->GetTotalStat().GetThreat() << ")" << std::endl;
+            LogSystem::LogStream("[AFTER-ACTION] " , actor->GetName() , " performs after-action on " 
+                      , target->GetName() , " (threat: " , target->GetTotalStat().GetThreat() , ")");
             
             // Create fresh ally/enemy lists for the after-action
             std::vector<Unit*> allies, enemies;
@@ -400,7 +411,7 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit*>& allUnits) {
             // Execute the battle action
             afterActionEvent.battleAction->Perform(actor, target, allies, enemies);
         } else {
-            std::cout << "[AFTER-ACTION] No valid target found for " << actor->GetName() << std::endl;
+            LogSystem::LogStream( "[AFTER-ACTION] No valid target found for " , actor->GetName());
         }
     }
 }

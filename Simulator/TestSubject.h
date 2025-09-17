@@ -26,25 +26,25 @@ public:
 
     //Sampling
     int SampleUsage;
-    std::vector<int> SamplePartnerIndexList;
+    // std::vector<int> SamplePartnerIndexList;
     
     // Statistics methods
-    void recordWin() {
+     void recordWin() {
         TotalWin++;
         updateWinRate();
     }
     
-    void recordLoss() {
+     void recordLoss() {
         TotalLost++;
         updateWinRate();
     }
     
-    void recordDraw() {
+     void recordDraw() {
         TotalDraw++;
         updateWinRate();
     }
     
-    void incrementUsage() {
+     void incrementUsage() {
         UsageCount++;
     }
     

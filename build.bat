@@ -1,28 +1,56 @@
 @echo off
-echo Building Run.exe with debug symbols...
+setlocal
 
-REM Set debug flags
-set COMPILE_FLAGS=-std=c++17 -g -O0
-set LINK_FLAGS=-std=c++17 -g -O0
+REM Check if debug mode is requested
+set DEBUG_MODE=0
+if /i "%1"=="debug" set DEBUG_MODE=1
 
-@echo off
-echo Building Run.exe with debug symbols...
+if %DEBUG_MODE%==1 (
+    echo Building in DEBUG mode...
+    set COMPILE_FLAGS=-std=c++17 -g -O0 -DDEBUG
+    set LINK_FLAGS=-std=c++17 -g -O0
+) else (
+    echo Building in RELEASE mode...
+    set COMPILE_FLAGS=-std=c++17 -O2 -DNDEBUG
+    set LINK_FLAGS=-std=c++17 -O2
+)
 
 REM Always build/rebuild Simulator library to ensure it's up to date
-echo Building Simulator library...
-call Simulator\build_simulator_lib.bat
+call Simulator\build_simulator_lib.bat %1
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to build Simulator library
     exit /b 1
 )
 
-REM Add -g for debug symbols and -O0 to disable optimizations
+cd Log
+echo Compiling LogSystem.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -c LogSystem.cpp -o LogSystem.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile LogSystem.cpp
+    exit /b 1
+)
+cd..
+
 REM Build Element components first
 cd Element
 echo Compiling BattleActionLoader.cpp...
 g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -I../Simulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE -c BattleActionLoader.cpp -o BattleActionLoader.o
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to compile BattleActionLoader.cpp
+    exit /b 1
+)
+
+echo Compiling Stat.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -I../Simulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE -c Stat.cpp -o Stat.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile Stat.cpp
+    exit /b 1
+)
+
+echo Compiling ElementList.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -I../Simulator/yaml-cpp/include -DYAML_CPP_STATIC_DEFINE -c ElementList.cpp -o ElementList.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile ElementList.cpp
     exit /b 1
 )
 
@@ -68,10 +96,13 @@ g++ %LINK_FLAGS% ^
     -ISimulator/yaml-cpp/include ^
     -DYAML_CPP_STATIC_DEFINE ^
     Run.cpp ^
+    Log/LogSystem.o ^
     Element/BattleActionLoader.o ^
     Element/BattleActionParser.o ^
     Element/EquipmentLoader.o ^
     Element/UnitGenerator.o ^
+    Element/ElementList.o ^
+    Element/Stat.o ^
     Sampling/BatchCreator.o ^
     -LSimulator ^
     -lsimulator ^
@@ -83,5 +114,10 @@ if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Failed to build Run.exe
     exit /b 1
 ) else (
-    echo Run.exe built successfully with debug symbols!
+    if %DEBUG_MODE%==1 (
+        echo Run.exe built successfully with DEBUG symbols!
+        echo Usage: gdb ./Run.exe
+    ) else (
+        echo Run.exe built successfully in RELEASE mode!
+    )
 )

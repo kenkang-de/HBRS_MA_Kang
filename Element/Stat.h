@@ -10,17 +10,17 @@ private:
     int Speed;
     int Threat;
 
-    static const int Default_Attack;
-    static const int Default_Defense;
-    static const int Default_Speed;
-    static const int Default_Hitpoint;
-    static const int Default_Threat;
+static const int Default_Attack;
+static const int Default_Defense;
+static const int Default_Speed;
+static const int Default_Hitpoint;
+static const int Default_Threat;
 
 public:
 static Stat Empty();
 
-Stat& operator+=(const Stat& other);
-Stat& operator-=(const Stat& other);
+Stat& operator+=(const Stat& other);  
+Stat& operator-=(const Stat& other);  
 
     Stat();
     ~Stat();

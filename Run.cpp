@@ -24,6 +24,7 @@ private:
 
     ElementList elementList;
     std::unordered_map<std::string, BattleAction> actionMap;
+    std::array<Unit, 10> battleUnits;
     
 public:
     NewMasterController(const std::string& config) : configFile(config) {}
@@ -54,7 +55,7 @@ public:
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
         EquipmentLoader loader;
         elementList = loader.InstantiateElements(actionMap);
-        std::array<Unit, 10> battleUnits = GenerateUnits();
+        battleUnits = GenerateUnits();
         std::cout<<"Stage 1 Complete"<<std::endl;
 
         // Stage 2: Sampling & Batch Creation
@@ -64,10 +65,14 @@ public:
         std::cout<<"Stage 2 Complete"<<std::endl;
 
         // Stage 3: Batch Simulation Execution
+        std::cout << "Creating Simulator..." << std::endl;
         Simulator simulator(&elementList, &actionMap, &battleUnits);
+        std::cout << "Simulator created, starting batch simulation..." << std::endl;
         simulator.SimulateBatches(&batches);
+        std::cout<<"Stage 3 Complete"<<std::endl;
 
         
+
         // // Calculate number of batches (assuming configs are divided into batches)
         // int numBatches = (numBatches + 9) / 10; // Round up division for batches of 10
         // std::cout << "Batches: " << numBatches << std::endl;
@@ -89,33 +94,6 @@ public:
     }
     
 private:
-
-    bool executeBatchSimulations() {
-        // Build Simulator (suppress output)
-        std::string buildCmd = "cd " + Paths::SIMULATOR_DIR + " && .\\build.bat >nul 2>&1";
-        if (std::system(buildCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: Simulator build failed!" << std::endl;
-            return false;
-        }
-        
-        
-        // Build Batch Executor (suppress output)
-        std::string buildRunnerCmd = "cd " + Paths::SAMPLING_DIR + " && g++ -std=c++17 BatchExecutor.cpp -o BatchExecutor.exe >nul 2>&1";
-        if (std::system(buildRunnerCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: Batch Executor build failed!" << std::endl;
-            return false;
-        }
-        
-        
-        // Execute batch simulations (suppress output)
-        // std::string execCmd = "cd " + Paths::SAMPLING_DIR + " && .\\BatchExecutor.exe " + std::to_string(simulationsPerBatch) + " >nul 2>&1";
-        // if (std::system(execCmd.c_str()) != 0) {
-        //     std::cerr << "    ERROR: Batch simulation execution failed!" << std::endl;
-        //     return false;
-        // }
-        
-        return true;
-    }
     
     bool executeTestSubjectAnalysis() {
         

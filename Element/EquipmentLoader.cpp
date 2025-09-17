@@ -9,7 +9,7 @@
 #include "ElementList.h"
 #include "EquipmentLoader.h"
 #include "../Simulator/BattleAction.h"
-#include "../Simulator/Stat.h"
+#include "Stat.h"
 #include "../Simulator/Weapon.h"  
 #include "../Simulator/Armor.h"   
 
@@ -58,7 +58,7 @@ void EquipmentLoader::LoadArmorListFromCSV(const std::string& filepath)
 }
 
 
-void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map<std::string, BattleAction>& actionMap)
+void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath,const std::unordered_map<std::string, BattleAction>& actionMap)
 {
     std::ifstream file(filepath);
     std::string line;
@@ -99,7 +99,7 @@ void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath, const s
     }
 }
 
-ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string, BattleAction>& actionMap)
+ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string,BattleAction>& actionMap)
 {
     LoadArmorListFromCSV(Paths::DATA_DIR + Paths::ARMOR_DATA_CSV);
     LoadWeaponListFromCSV(Paths::DATA_DIR + Paths::WEAPON_DATA_CSV, actionMap);

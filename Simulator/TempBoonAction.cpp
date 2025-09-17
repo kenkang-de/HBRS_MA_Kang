@@ -1,7 +1,9 @@
+#include <iostream>
+
 #include "TempBoonAction.h"
 #include "Unit.h"
 #include "ActionLibrary.h"
-#include <iostream>
+#include "../Log/LogSystem.h"
 
 TempBoonAction::TempBoonAction() : BoonAction(), hasBeenApplied(false), effectExecuted(false), removalEffectName("") {}
 
@@ -15,8 +17,8 @@ void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>
 
         if (!effectExecuted) {
             // Apply the buff effect only once
-            std::cout << "[TEMP-BUFF] " << GetEffectType() << " applied to " << target->GetName() 
-                      << " (Duration: " << GetUsageNumber() << " turns)" << std::endl;
+            LogSystem::LogStream( "[TEMP-BUFF] " , GetEffectType() , " applied to " , target->GetName() 
+                      , " (Duration: " , GetUsageNumber() , " turns)" );
 
             // Execute all conditional actions for this buff
             if (!conditionalActions.empty()) {
@@ -32,27 +34,27 @@ void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>
             MarkEffectExecuted();
         } else {
             // Count down duration and decrement usage for subsequent turns
-            std::cout << "[TEMP-BUFF] " << GetEffectType() << " on " << target->GetName() 
-                      << " (Remaining: " << (GetUsageNumber() - 1) << " turns)" << std::endl;
+            LogSystem::LogStream( "[TEMP-BUFF] " , GetEffectType() , " on " , target->GetName() 
+                      , " (Remaining: " , (GetUsageNumber() - 1) , " turns)" );
             
             // Only decrement usage after the first application
-            const_cast<TempBoonAction*>(this)->DecrementUsage();
+            DecrementUsage();
         }
         
         // Handle expiration (only check after potential decrement)
         if (effectExecuted && IsExpired()) {
-            std::cout << "[TEMP-BUFF] " << GetEffectType() << " expired on " << target->GetName();
+            LogSystem::LogStream( "[TEMP-BUFF] " , GetEffectType() , " expired on " , target->GetName());
             
             // Apply removal effect if specified
             if (!removalEffectName.empty()) {
-                std::cout << " - applying removal effect: " << removalEffectName << std::endl;
+                LogSystem::LogStream( " - applying removal effect: " , removalEffectName );
                 
                 // Use EXECUTE_EFFECT to apply removal BattleAction
                 ActionFn removalAction = ActionLibrary::GetAction("EXECUTE_EFFECT", removalEffectName);
                 ActionContext removalContext = {actor, target, allies, enemies};
                 removalAction(removalContext);
             } else {
-                std::cout << " - no removal effect specified" << std::endl;
+                LogSystem::LogStream( " - no removal effect specified" );
             }
             
             // Clean up expired boons

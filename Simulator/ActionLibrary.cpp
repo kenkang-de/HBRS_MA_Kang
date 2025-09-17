@@ -6,9 +6,7 @@
 #include "BoonAction.h"
 #include "TempBoonAction.h"
 #include "GlobalAction.h"
-
-// Global registry for loaded BattleActions (set by BattleActionLoader)
-static std::unordered_map<std::string, BattleAction*> globalActionRegistry;
+#include "../Log/LogSystem.h"
 
 const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap = {
 
@@ -105,7 +103,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
             int oldDefense = ctx.actor->GetTotalStat().GetDefense();
             ctx.actor->GetTotalStat().SetDefense(0);
             int newDefense = ctx.actor->GetTotalStat().GetDefense();
-            std::cout << "[A12] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
+            LogSystem::LogStream("[A12] ", ctx.actor->GetName(), " defense changed from ", oldDefense, " to ", newDefense);
         }
     }},
     //Leech damage 
@@ -154,7 +152,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
                 int oldAttack = ctx.target->GetTotalStat().GetAttack();
                 ctx.target->GetTotalStat().SetAttack(oldAttack - attackReduction);
                 int newAttack = ctx.target->GetTotalStat().GetAttack();
-                std::cout << "[A25] " << ctx.target->GetName() << " attack reduced from " << oldAttack << " to " << newAttack << " (damage: " << actualDamage << ", reduction: " << attackReduction << ")" << std::endl;
+                LogSystem::LogStream("[A25] ", ctx.target->GetName(), " attack reduced from ", oldAttack, " to ", newAttack, " (damage: ", actualDamage, ", reduction: ", attackReduction, ")");
             }
         }
     }},
@@ -188,7 +186,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldDefense = ctx.target->GetTotalStat().GetDefense();
                 ctx.target->GetTotalStat().SetDefense(oldDefense + value);
                 int newDefense = ctx.target->GetTotalStat().GetDefense();
-                std::cout << "[A02] " << ctx.target->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
+                LogSystem::LogStream("[A02] ", ctx.target->GetName(), " defense changed from ", oldDefense, " to ", newDefense);
             }
         };
     }},
@@ -208,7 +206,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldAttack = ctx.actor->GetTotalStat().GetAttack();
                 ctx.actor->GetTotalStat().SetAttack(oldAttack + value);
                 int newAttack = ctx.actor->GetTotalStat().GetAttack();
-                std::cout << "[A04] " << ctx.actor->GetName() << " attack changed from " << oldAttack << " to " << newAttack << std::endl;
+                LogSystem::LogStream("[A04] ", ctx.actor->GetName(), " attack changed from ", oldAttack, " to ", newAttack);
             }
         };
     }},
@@ -228,7 +226,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldSpeed = ctx.target->GetTotalStat().GetSpeed();
                 ctx.target->GetTotalStat().SetSpeed(oldSpeed + value);
                 int newSpeed = ctx.target->GetTotalStat().GetSpeed();
-                std::cout << "[A06] " << ctx.target->GetName() << " speed changed from " << oldSpeed << " to " << newSpeed << std::endl;
+                LogSystem::LogStream("[A06] ", ctx.target->GetName(), " speed changed from ", oldSpeed, " to ", newSpeed);
             }
         };
     }},
@@ -249,7 +247,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldThreat = ctx.actor->GetTotalStat().GetThreat();
                 ctx.actor->GetTotalStat().SetThreat(oldThreat + value);
                 int newThreat = ctx.actor->GetTotalStat().GetThreat();
-                std::cout << "[A10] " << ctx.actor->GetName() << " threat changed from " << oldThreat << " to " << newThreat << std::endl;
+                LogSystem::LogStream("[A10] ", ctx.actor->GetName(), " threat changed from ", oldThreat, " to ", newThreat);
             }
         };
     }},
@@ -272,7 +270,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldDefense = ctx.actor->GetTotalStat().GetDefense();
                 ctx.actor->GetTotalStat().SetDefense(oldDefense + value);
                 int newDefense = ctx.actor->GetTotalStat().GetDefense();
-                std::cout << "[A15] " << ctx.actor->GetName() << " defense changed from " << oldDefense << " to " << newDefense << std::endl;
+                LogSystem::LogStream("[A15] ", ctx.actor->GetName(), " defense changed from ", oldDefense, " to ", newDefense);
             }
         };
     }},
@@ -282,8 +280,13 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         std::string actionID = param;
         return [actionID](const ActionContext& ctx) {
             if (ctx.actor) {
-                auto afterAction = ActionLibrary::GetGlobalAction(actionID);
+            auto afterAction = GlobalAction::GetGlobalAction(actionID);
+            // ADD NULL CHECK HERE
+            if (afterAction) {
                 GlobalAction::AddAfterAction(afterAction, ctx);
+            } else {
+                std::cout<< "[ERROR] Failed to get global action: "+ actionID<< std::endl;
+            }
             }
         };
     }},
@@ -296,7 +299,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldSpeed = ctx.actor->GetTotalStat().GetSpeed();
                 ctx.actor->GetTotalStat().SetSpeed(oldSpeed + value);
                 int newSpeed = ctx.actor->GetTotalStat().GetSpeed();
-                std::cout << "[A19] " << ctx.actor->GetName() << " speed changed from " << oldSpeed << " to " << newSpeed << std::endl;
+                LogSystem::LogStream("[A19] ", ctx.actor->GetName(), " speed changed from ", oldSpeed, " to ", newSpeed);
             }
         };
     }},
@@ -308,7 +311,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             if (ctx.target) {
                 int totalDelay = delayAmount * ctx.target->Tickinterval;
                 ctx.target->TickDelay += totalDelay;
-                std::cout << "[A20] " << ctx.target->GetName() << " delayed by " << delayAmount << " intervals (" << totalDelay << " ticks)" << std::endl;
+                LogSystem::LogStream("[A20] ", ctx.target->GetName(), " delayed by ", delayAmount, " intervals (", totalDelay, " ticks)");
             }
         };
     }},
@@ -320,9 +323,9 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         
         return [effectName](const ActionContext& ctx) {
             // Get and execute the registered effect action directly
-            auto effectAction = ActionLibrary::GetGlobalAction(effectName);
+            auto effectAction = GlobalAction::GetGlobalAction(effectName);
             if (effectAction) {
-                std::cout << "[EXECUTE_EFFECT] " << ctx.actor->GetName() << " triggered " << effectName << std::endl;
+                LogSystem::LogStream("[EXECUTE_EFFECT] ", ctx.actor->GetName(), " triggered ", effectName);
                 effectAction->Perform(ctx.actor, ctx.target, ctx.allies, ctx.enemies);
             }
         };
@@ -337,9 +340,9 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         
         return [effectName, effectParam](const ActionContext& ctx) {
             // Get the registered effect action and create a parameterized version
-            auto effectAction = ActionLibrary::GetGlobalAction(effectName);
+            auto effectAction = GlobalAction::GetGlobalAction(effectName);
             if (effectAction) {
-                std::cout << "[EXECUTE_EFFECT_WITH_PARAM] " << ctx.actor->GetName() << " triggered " << effectName << "(" << effectParam << ")" << std::endl;
+                LogSystem::LogStream("[EXECUTE_EFFECT_WITH_PARAM] ", ctx.actor->GetName(), " triggered ", effectName, "(", effectParam, ")");
                 
                 // Create a temporary action context with the parameter
                 // For now, we'll use the ActionLibrary's parameterized actions directly
@@ -349,7 +352,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                     ActionFn paramAction = ActionLibrary::GetAction("A32", effectParam);
                     paramAction(ctx);
                 } catch (const std::exception& e) {
-                    std::cout << "[EXECUTE_EFFECT_WITH_PARAM] Error: " << e.what() << std::endl;
+                    LogSystem::LogStream("[EXECUTE_EFFECT_WITH_PARAM] Error: ", e.what());
                 }
             }
         };
@@ -364,7 +367,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 poisonBoon->AddConditionalAction("C00", "A03", "3"); // Deal 3 undefendable damage per turn
                 
                 AddBoonToUnit(ctx.target, std::move(poisonBoon));
-                std::cout << "[A26] " << ctx.actor->GetName() << " applied Poison to " << ctx.target->GetName() << " for " << usage << " uses" << std::endl;
+                LogSystem::LogStream("[A26] ", ctx.actor->GetName(), " applied Poison to ", ctx.target->GetName(), " for ", usage, " uses");
             }
         };
     }},
@@ -379,7 +382,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         return [effectName, usage](const ActionContext& ctx) {
             if (ctx.target) {
                 // Get the registered effect action from globalActionRegistry
-                auto effectAction = ActionLibrary::GetGlobalAction(effectName);
+                auto effectAction = GlobalAction::GetGlobalAction(effectName);
                 if (effectAction) {
                     // Create a boon that will execute the specified effect action
                     auto boon = std::make_unique<BoonAction>(effectName, effectName, usage);
@@ -388,10 +391,10 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                     boon->AddConditionalAction("C00", "EXECUTE_EFFECT", effectName);
                     
                     AddBoonToUnit(ctx.target, std::move(boon));
-                    std::cout << "[A28] " << ctx.actor->GetName() << " applied " << effectName << " to " << ctx.target->GetName() 
-                              << " (usage: " << usage << ")" << std::endl;
+                    LogSystem::LogStream("[A28] ", ctx.actor->GetName(), " applied ", effectName, " to ", ctx.target->GetName(), 
+                                        " (usage: ", usage, ")");
                 } else {
-                    std::cout << "[A28] ERROR: Effect action '" << effectName << "' not found in registry!" << std::endl;
+                    LogSystem::LogStream("[A28] ERROR: Effect action '", effectName, "' not found in registry!");
                 }
             }
         };
@@ -405,7 +408,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldHP = ctx.target->GetTotalStat().GetHP();
                 ctx.target->Heal(value);
                 int newHP = ctx.target->GetTotalStat().GetHP();
-                std::cout << "[A29] " << ctx.actor->GetName() << " healed " << ctx.target->GetName() << " for " << value << " HP" << std::endl;
+                LogSystem::LogStream("[A29] ", ctx.actor->GetName(), " healed ", ctx.target->GetName(), " for ", value, " HP");
             }
         };
     }},
@@ -418,7 +421,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     size_t comma2 = param.find(',', comma1 + 1);
     
     if (comma1 == std::string::npos || comma2 == std::string::npos) {
-        std::cout << "[A31 ERROR] Invalid parameter format: " << param << std::endl;
+        LogSystem::LogStream("[A31 ERROR] Invalid parameter format: ", param);
         return [](const ActionContext&) {};
     }
     
@@ -430,7 +433,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     try {
         duration = std::stoi(durationStr);
     } catch (const std::exception& e) {
-        std::cout << "[A31 ERROR] Failed to parse duration '" << durationStr << "': " << e.what() << std::endl;
+        LogSystem::LogStream("[A31 ERROR] Failed to parse duration '", durationStr, "': ", e.what());
         return [](const ActionContext&) {};
     }
     
@@ -443,7 +446,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
             tempBoon->AddConditionalAction("C00", "EXECUTE_EFFECT", startActionName);
             
             AddBoonToUnit(ctx.target, std::move(tempBoon));
-            std::cout << "[A31] Applied temporary buff " << startActionName << " for " << duration << " turns, removal: " << endActionName << std::endl;
+            LogSystem::LogStream("[A31] Applied temporary buff ", startActionName, " for ", duration, " turns, removal: ", endActionName);
         }
     };
 }},
@@ -466,7 +469,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldThreat = ctx.target->GetTotalStat().GetThreat();
                 ctx.target->GetTotalStat().SetThreat(oldThreat + value);
                 int newThreat = ctx.target->GetTotalStat().GetThreat();
-                std::cout << "[A33] " << ctx.target->GetName() << " threat changed from " << oldThreat << " to " << newThreat << std::endl;
+                LogSystem::LogStream("[A33] ", ctx.target->GetName(), " threat changed from ", oldThreat, " to ", newThreat);
             }
         };
     }},
@@ -479,7 +482,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                 int oldAttack = ctx.target->GetTotalStat().GetAttack();
                 ctx.target->GetTotalStat().SetAttack(oldAttack + value);
                 int newAttack = ctx.target->GetTotalStat().GetAttack();
-                std::cout << "[A34] " << ctx.target->GetName() << " attack changed from " << oldAttack << " to " << newAttack << std::endl;
+                LogSystem::LogStream("[A34] ", ctx.target->GetName(), " attack changed from ", oldAttack, " to ", newAttack);
             }
         };
     }},
@@ -513,16 +516,6 @@ ActionFn ActionLibrary::GetAction(const std::string& id, const std::string& para
     }
 
     throw std::runtime_error("No parameterized action for ID: " + id);
-}
-
-// Global action registry functions
-void ActionLibrary::RegisterGlobalAction(const std::string& id, BattleAction* action) {
-    globalActionRegistry[id] = action;
-}
-
-const BattleAction* ActionLibrary::GetGlobalAction(const std::string& id) {
-    auto it = globalActionRegistry.find(id);
-    return (it != globalActionRegistry.end()) ? it->second : nullptr;
 }
 
 // Global functions for boon system

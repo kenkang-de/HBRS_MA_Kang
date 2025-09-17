@@ -4,7 +4,8 @@
         {
             "label": "build-debug",
             "type": "shell",
-            "command": "${workspaceFolder}\\build_debug.bat",
+            "command": "${workspaceFolder}\\build.bat",
+            "args": ["debug"],
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -23,7 +24,7 @@
         {
             "label": "build-release",
             "type": "shell",
-            "command": "${workspaceFolder}\\build_pipeline.bat",
+            "command": "${workspaceFolder}\\build.bat",
             "group": "build",
             "presentation": {
                 "echo": true,

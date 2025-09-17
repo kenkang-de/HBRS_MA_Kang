@@ -19,7 +19,8 @@ Battlefield(std::array<Unit*,5> redTeamPtrs, std::array<Unit*,5> blueTeamPtrs);
     Team* GetRedTeam() { return &redTeam; }
     Team* GetBlueTeam() { return &blueTeam; }
     
-    Team* ResultCheck();
+    Team* GetWinnerTeam();
+    Team* GetLoserTeam();
 };
 
 #endif // BATTLEFIELD_HPP

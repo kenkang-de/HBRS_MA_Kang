@@ -32,6 +32,9 @@ private:
     int tickCount = 0;  // Counter for number of ticks that have occurred
 
     bool IsBattleOver(bool test);
+    void LogDrawResult();
+    void LogWinLoseResult();
+    void LogUsageCount();
     int CalculateDelayFromDamage(int damageTaken, int maxHP);
 
 void SplitAlliesAndEnemies(Unit* unit, const BattleAction& action, std::vector<Unit*>& allies, std::vector<Unit*>& enemies);

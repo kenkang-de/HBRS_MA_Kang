@@ -3,7 +3,7 @@
 
 #include "BattleAction.h"  
 #include <string>
-#include "Stat.h"
+#include "../Element/Stat.h"
 #include "TestSubject.h"
 
 class Weapon : public TestSubject {
@@ -14,8 +14,6 @@ class Weapon : public TestSubject {
 public:
     Weapon(std::string id, std::string name, Stat stat, const BattleAction& action)
         : TestSubject(id), name(name), stat(stat), action(action) {}
-
-    Weapon() : TestSubject(""), name("Default Weapon"), stat(Stat::Empty()), action() {}  
 
     const std::string& GetName() const { return name; }
     Stat& GetStat() { return stat; }

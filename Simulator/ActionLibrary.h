@@ -27,10 +27,6 @@ public:
     static ActionFn GetAction(const std::string& id);
     static ActionFn GetAction(const std::string& id, const std::string& param);
 
-    // Global action registry for A18 after-action system - using raw pointers for performance
-    static void RegisterGlobalAction(const std::string& id, BattleAction* action);
-    static const BattleAction* GetGlobalAction(const std::string& id);
-
 private:
     static const std::unordered_map<std::string, ConditionFn> conditionMap;
     static const std::unordered_map<std::string, ActionFn> actionMap;

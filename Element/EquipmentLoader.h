@@ -21,7 +21,7 @@ public:
     void LoadArmorListFromCSV(const std::string& filepath);
     void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map<std::string, BattleAction>& actionMap);
 
-    ElementList InstantiateElements(const std::unordered_map<std::string, BattleAction>& actionMap);
+    ElementList InstantiateElements(const std::unordered_map<std::string,BattleAction>& actionMap);
 };
 
 #endif 

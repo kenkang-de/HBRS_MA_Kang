@@ -22,7 +22,7 @@ public:
     const std::string& GetEffectType() const { return effectType; }
     
     // Usage management
-    void DecrementUsage() { if (usageNumber > 0) usageNumber--; }
+    void DecrementUsage() const { if (usageNumber > 0) usageNumber--; }
     bool IsExpired() const { return usageNumber <= 0; }
     
     // Reset usage (for reapplying same effect)

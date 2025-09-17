@@ -53,7 +53,7 @@ action.AddConditionalAction(condID, actID, param);
         actionMap[id] = action;
         
         // Register in global action registry for A18 after-action system
-        GlobalAction::RegisterGlobalAction(id, &actionMap[id]);
+       GlobalAction::RegisterGlobalAction(id, &actionMap[id]);
     }
 
     return actionMap;

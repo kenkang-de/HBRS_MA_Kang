@@ -3,6 +3,7 @@
 #include <cmath>
 #include <cstdlib>
 #include <iostream>
+#include <random>
 
 #include "Batch.h"
 #include "BatchCreator.h"
@@ -33,9 +34,13 @@ BatchConfig BatchCreator::CreateBatchConfig(int numBatches, int teamsPerBatch, s
     return config;
 }
 
+// Replace the function with this modern version
 int GetRandomEquipmentIndex(int equipmentCount)
 {
-return rand() % equipmentCount;
+    static std::random_device rd;
+    static std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0, equipmentCount - 1);
+    return dis(gen);
 }
 
 std::vector<Batch> BatchCreator::CreateBatches(BatchConfig batchConfig) {

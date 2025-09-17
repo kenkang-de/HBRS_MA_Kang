@@ -5,7 +5,7 @@
 #include <vector>
 #include <memory>
 
-#include "Stat.h"
+#include "../Element/Stat.h"
 #include "Weapon.h"
 #include "Armor.h"
 #include "Team.h"
@@ -18,8 +18,8 @@ private:
     Stat totalStat;
     int currentHP; // Current health points, separate from totalStat
 
-    const Weapon* weapon;
-    const Armor* armor;
+    Weapon* weapon;
+    Armor* armor;
     
     // Boon management
     std::vector<std::unique_ptr<BoonAction>> activeBoons;
@@ -35,9 +35,9 @@ public:
 
     Unit();
     
-    // Delete copy constructor and copy assignment operator
-    Unit(const Unit&) = delete;
-    Unit& operator=(const Unit&) = delete;
+    // Custom copy constructor and assignment operator to handle unique_ptr
+    Unit(const Unit& other);
+    Unit& operator=(const Unit& other);
     
     // Default move constructor and move assignment operator
     Unit(Unit&&) = default;
@@ -53,10 +53,12 @@ public:
     Stat& GetTotalStat();
     const Stat& GetTotalStat() const;
 
-    void SetWeapon(const Weapon* w);
-    void SetArmor(const Armor* a);
+    void SetWeapon(Weapon* w);
+    void SetArmor(Armor* a);
 
+    Weapon* GetWeapon();
     const Weapon* GetWeapon() const;
+    Armor* GetArmor();
     const Armor* GetArmor() const;
 
     void TakeDamage(int amount);

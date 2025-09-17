@@ -19,6 +19,7 @@ private:
 public:
     Team(TeamColor teamColor, std::array<Unit*,5> units); 
     const std::array<Unit*, 5>& GetUnits() const;
+    std::array<Unit*, 5>& GetUnits();  // Non-const version
 
     TeamColor GetTeamColor();
     void SetTeamColor(TeamColor teamColor);
