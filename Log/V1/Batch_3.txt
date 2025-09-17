@@ -1,34 +1,278 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:0 Alive:Yes
-Unit 1: R1 HP:10 Speed:3 Alive:Yes
-Unit 2: R2 HP:4 Speed:3 Alive:Yes
-Unit 3: R3 HP:10 Speed:1 Alive:Yes
-Unit 4: R4 HP:10 Speed:2 Alive:Yes
-Unit 5: B0 HP:12 Speed:3 Alive:Yes
-Unit 6: B1 HP:10 Speed:5 Alive:Yes
-Unit 7: B2 HP:12 Speed:3 Alive:Yes
-Unit 8: B3 HP:10 Speed:7 Alive:Yes
-Unit 9: B4 HP:10 Speed:5 Alive:Yes
+Unit 0: R0 HP:6 Speed:6 Alive:Yes
+Unit 1: R1 HP:8 Speed:5 Alive:Yes
+Unit 2: R2 HP:15 Speed:0 Alive:Yes
+Unit 3: R3 HP:10 Speed:0 Alive:Yes
+Unit 4: R4 HP:10 Speed:4 Alive:Yes
+Unit 5: B0 HP:12 Speed:2 Alive:Yes
+Unit 6: B1 HP:10 Speed:6 Alive:Yes
+Unit 7: B2 HP:8 Speed:5 Alive:Yes
+Unit 8: B3 HP:10 Speed:2 Alive:Yes
+Unit 9: B4 HP:10 Speed:0 Alive:Yes
 ==========================
 
 
-[Tick 30] 1 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
+[Tick 10] 2 unit(s) acting
+Melee: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 7 => 3
+  -> B4 (magic) tick reset due to melee attack!
+Melee: B1 targeting R3 (HP: 10)
 R3 HP: 10 - 0 => 10
 
 
-[Tick 42] 2 unit(s) acting
-Magic: B1 targeting B0 (HP: 12)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-[A29] B1 healed B0 for 2 HP
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-[A29] B1 healed B3 for 2 HP
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B1 healed B4 for 2 HP
-Magic: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 4 => 6
-Magic: B4 targeting R4 (HP: 10)
-R4 HP: 10 - 4 => 6
-Battle Over! Tick limit reached (50 ticks elapsed)
+[Tick 12] 2 unit(s) acting
+Ranged: R1 targeting B4 (HP: 3)
+B4 HP: 3 - 0 => 3
+[A20] B4 delayed by 1 intervals (0 ticks)
+Melee: B2 targeting R3 (HP: 10)
+R3 HP: 10 - 3 => 7
+  -> R3 (magic) tick reset due to melee attack!
+
+
+[Tick 15] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 3)
+B4 HP: 3 - 1 => 2
+[A19] R4 speed changed from 4 to 3
+  -> B4 (magic) tick reset due to ranged attack!
+
+
+[Tick 20] 2 unit(s) acting
+Melee: B1 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Melee: R0 targeting B4 (HP: 2)
+B4 HP: 7 - 7 => 0
+
+
+[Tick 24] 2 unit(s) acting
+Ranged: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 1 => 9
+[A20] B1 delayed by 1 intervals (10 ticks)
+Melee: B2 targeting R3 (HP: 7)
+R3 HP: 7 - 3 => 4
+  -> R3 (magic) tick reset due to melee attack!
+
+
+[Tick 35] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 40] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 45] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 50] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 55] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 60] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 65] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 70] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 75] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 80] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 85] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 90] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 95] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 100] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 105] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 110] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 115] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 120] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 125] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 130] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 135] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 140] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 145] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 150] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 155] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 160] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 165] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 170] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 175] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 180] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 185] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 190] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 195] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 200] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 205] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 210] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 215] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 220] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 225] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 230] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 235] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 240] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 245] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 250] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+
+
+[Tick 255] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 0 => 4
+Battle Over! Tick limit reached (0 ticks elapsed)

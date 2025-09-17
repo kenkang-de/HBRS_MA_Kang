@@ -1,101 +1,571 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:6 Alive:Yes
-Unit 1: R1 HP:6 Speed:3 Alive:Yes
-Unit 2: R2 HP:12 Speed:3 Alive:Yes
-Unit 3: R3 HP:10 Speed:2 Alive:Yes
-Unit 4: R4 HP:10 Speed:1 Alive:Yes
-Unit 5: B0 HP:10 Speed:1 Alive:Yes
-Unit 6: B1 HP:8 Speed:6 Alive:Yes
-Unit 7: B2 HP:14 Speed:2 Alive:Yes
-Unit 8: B3 HP:12 Speed:0 Alive:Yes
-Unit 9: B4 HP:7 Speed:6 Alive:Yes
+Unit 0: R0 HP:12 Speed:1 Alive:Yes
+Unit 1: R1 HP:10 Speed:5 Alive:Yes
+Unit 2: R2 HP:12 Speed:2 Alive:Yes
+Unit 3: R3 HP:10 Speed:4 Alive:Yes
+Unit 4: R4 HP:15 Speed:2 Alive:Yes
+Unit 5: B0 HP:10 Speed:2 Alive:Yes
+Unit 6: B1 HP:10 Speed:1 Alive:Yes
+Unit 7: B2 HP:12 Speed:2 Alive:Yes
+Unit 8: B3 HP:10 Speed:0 Alive:Yes
+Unit 9: B4 HP:10 Speed:4 Alive:Yes
 ==========================
 
 
-[Tick 1] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Melee: R0 targeting B0 (HP: 10)
-B0 HP: 10 - 7 => 3
-  -> B0 (magic) tick reset due to melee attack!
-Melee: B1 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
+[Tick 4] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
 
 
-[Tick 2] 6 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Melee: B1 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Melee: R0 targeting B0 (HP: 3)
-B0 HP: 7 - 7 => 0
-Magic: R2 targeting R3 (HP: 10)
-[BOON] Applied HasteSTART to R3 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 5 => 5
+[Tick 5] 2 unit(s) acting
+Melee: R3 targeting B1 (HP: 10)
+B1 HP: 10 - 6 => 4
+[A12] R3 defense changed from 9 to 0
+  -> B1 (magic) tick reset due to melee attack!
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 5 to 4
 
 
-[Tick 3] 5 unit(s) acting
-Ranged: R3 targeting B3 (HP: 12)
-[A10] R3 threat changed from 8 to 9
-[A04] R3 attack changed from 4 to 6
-B3 HP: 12 - 3 => 9
-[DEBUG] R3 processing 1 boons
-[DEBUG] Registering boon HasteSTART for R3
-[AFTER-ACTION] R3 performs after-action on R3 (threat: 9)
-[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
-[EXECUTE_EFFECT] R3 triggered HasteSTART
-[A19] R3 speed changed from 2 to 4
-[DEBUG] LCM changed from 6 to 12 - rebuilding queue
-  -> B3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 5)
-R3 HP: 5 - 0 => 5
-Melee: B2 targeting R3 (HP: 5)
-B2 HP: 14 - 2 => 12
-R3 HP: 5 - 1 => 4
-[A02] R3 defense changed from 5 to 4
-Melee: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-Melee: R0 targeting B3 (HP: 9)
-B3 HP: 9 - 9 => 0
+[Tick 8] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
 
 
-[Tick 4] 5 unit(s) acting
-Ranged: B4 targeting R3 (HP: 4)
-R3 HP: 4 - 1 => 3
-Melee: R1 targeting B2 (HP: 12)
-B2 HP: 12 - 9 => 3
-[A10] R1 threat changed from 3 to 2
-Melee: B1 targeting R3 (HP: 3)
-R3 HP: 3 - 0 => 3
-Melee: R0 targeting B2 (HP: 3)
-B2 HP: 13 - 13 => 0
-Magic: R2 targeting R3 (HP: 3)
-[BOON] Refreshing existing HasteSTART on R3
-[REFRESH] HasteSTART duration refreshed, effect remains active
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 10] 6 unit(s) acting
+Ranged: R4 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
+Ranged: R2 targeting B1 (HP: 4)
+B1 HP: 6 - 6 => 0
+[A19] R2 speed changed from 2 to 1
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 4 to 3
 
 
-[Tick 6] 5 unit(s) acting
-Ranged: R3 targeting B4 (HP: 7)
-[A10] R3 threat changed from 9 to 10
-[A04] R3 attack changed from 6 to 8
-B4 HP: 8 - 8 => 0
-[DEBUG] R3 processing 1 boons
-[DEBUG] Registering boon HasteSTART for R3
-[AFTER-ACTION] R3 performs after-action on R3 (threat: 10)
-[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
-[TEMP-BUFF] HasteSTART expired on R3
- - applying removal effect: HasteEND
-[EXECUTE_EFFECT] R3 triggered HasteEND
-[A19] R3 speed changed from 4 to 2
-[BOON] HasteSTART expired on R3 - cleaned up
-[DEBUG] LCM changed from 12 to 6 - rebuilding queue
-Ranged: B4 targeting R3 (HP: 3)
-R3 HP: 3 - 1 => 2
-Melee: B1 targeting R3 (HP: 2)
-R3 HP: 2 - 0 => 2
-Melee: R0 targeting B1 (HP: 8)
-B1 HP: 11 - 11 => 0
-Battle Over! Red Team wins!
+[Tick 12] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+
+
+[Tick 15] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 3 to 2
+
+
+[Tick 16] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+
+
+[Tick 20] 8 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 5 => 5
+[A19] R2 speed changed from 1 to 0
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 2 to 1
+
+
+[Tick 24] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 25] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 1 to 0
+
+
+[Tick 28] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 30] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART on R4 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R4
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R4 - cleaned up
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 32] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 35] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 36] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 40] 7 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 44] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 45] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 48] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 50] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART on R4 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R4
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R4 - cleaned up
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 52] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 55] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 56] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 60] 7 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 64] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 65] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 68] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 70] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART on R4 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R4
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R4 - cleaned up
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 72] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 75] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 76] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 80] 7 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 84] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 85] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 88] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 90] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART on R4 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R4
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R4 - cleaned up
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 92] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 95] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 96] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 100] 7 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 104] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 105] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 108] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 110] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART on R4 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R4
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R4 - cleaned up
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Applied FreezeSTART to R4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 112] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 115] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+
+
+[Tick 116] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 120] 7 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+  -> R4 is frozen and cannot act!
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 8)
+[TEMP-BUFF] FreezeSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered FreezeSTART
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Melee: B0 targeting R4 (HP: 15)
+R4 HP: 15 - 0 => 15
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Magic: B2 targeting R4 (HP: 15)
+[BOON] Refreshing existing FreezeSTART on R4
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 124] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+
+
+[Tick 125] 2 unit(s) acting
+Melee: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[A12] R3 defense changed from 0 to 0
+Magic: B4 targeting R4 (HP: 15)
+[A34] R4 attack changed from 0 to 0
+Magic: B4 targeting R0 (HP: 12)
+[A34] R0 attack changed from 0 to 0
+Battle Over! Tick limit reached (0 ticks elapsed)

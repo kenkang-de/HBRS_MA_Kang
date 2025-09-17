@@ -79,15 +79,16 @@ void Team::GenerateTeam(std::array<Unit*,5> units)
 }
 
 bool Team::HasTeamLost() {
-    int aliveCount = 0;
+    int aliveAndAbleToActCount = 0;
     
     for (size_t i = 0; i < units.size(); ++i) {
         if (units[i] != nullptr) {
-            if (units[i]->IsAlive()) {
-                aliveCount++;
+            // A unit can contribute to the team if it's alive AND has speed > 0
+            if (units[i]->IsAlive() && units[i]->GetTotalStat().GetSpeed() > 0) {
+                aliveAndAbleToActCount++;
             }
         }
     }
     
-    return aliveCount == 0; // Team lost if no units are alive
+    return aliveAndAbleToActCount == 0; // Team lost if no units can act
 }

@@ -72,7 +72,7 @@ public:
 
     void TakeDamage(int amount, bool defendable = true);
 
-    bool IsAlive() { return currentHP > 0; };
+    bool IsAlive() const { return currentHP > 0; };
     bool IsFrozen() const { return isFrozen; }
     void SetFrozen(bool frozen) { isFrozen = frozen; }
     void EnhanceHP(int amount);

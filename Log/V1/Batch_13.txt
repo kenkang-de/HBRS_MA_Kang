@@ -1,13 +1,148 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:7 Speed:5 Alive:Yes
-Unit 1: R1 HP:15 Speed:1 Alive:Yes
-Unit 2: R2 HP:10 Speed:2 Alive:Yes
-Unit 3: R3 HP:7 Speed:7 Alive:Yes
-Unit 4: R4 HP:8 Speed:4 Alive:Yes
-Unit 5: B0 HP:11 Speed:0 Alive:Yes
-Unit 6: B1 HP:10 Speed:4 Alive:Yes
-Unit 7: B2 HP:12 Speed:3 Alive:Yes
-Unit 8: B3 HP:8 Speed:5 Alive:Yes
-Unit 9: B4 HP:11 Speed:0 Alive:Yes
+Unit 0: R0 HP:10 Speed:1 Alive:Yes
+Unit 1: R1 HP:12 Speed:5 Alive:Yes
+Unit 2: R2 HP:10 Speed:7 Alive:Yes
+Unit 3: R3 HP:10 Speed:2 Alive:Yes
+Unit 4: R4 HP:8 Speed:2 Alive:Yes
+Unit 5: B0 HP:17 Speed:0 Alive:Yes
+Unit 6: B1 HP:12 Speed:4 Alive:Yes
+Unit 7: B2 HP:11 Speed:4 Alive:Yes
+Unit 8: B3 HP:10 Speed:3 Alive:Yes
+Unit 9: B4 HP:10 Speed:0 Alive:Yes
 ==========================
-Battle Over! Tick limit reached (50 ticks elapsed)
+
+
+[Tick 60] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 17)
+B0 HP: 17 - 7 => 10
+  -> B0 (magic) tick reset due to melee attack!
+
+
+[Tick 84] 1 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+
+
+[Tick 105] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 10)
+R2 HP: 10 - 3 => 7
+[A20] R2 delayed by 1 intervals (60 ticks)
+Magic: B2 targeting B0 (HP: 10)
+[A33] B0 threat changed from 11 to 13
+[A02] B0 defense changed from 5 to 6
+Magic: B2 targeting B4 (HP: 10)
+[A33] B4 threat changed from 11 to 13
+[A02] B4 defense changed from 5 to 6
+
+
+[Tick 180] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 10)
+B0 HP: 10 - 6 => 4
+  -> B0 (magic) tick reset due to melee attack!
+
+
+[Tick 210] 4 unit(s) acting
+Ranged: B1 targeting R2 (HP: 7)
+R2 HP: 7 - 3 => 4
+[A20] R2 delayed by 1 intervals (60 ticks)
+Melee: R4 targeting B0 (HP: 4)
+B0 HP: 4 - 1 => 3
+[HEAL] R4 healed for 0 HP (from 8 to 8/8)
+  -> B0 (magic) tick reset due to melee attack!
+Magic: R3 targeting R2 (HP: 4)
+[HEAL] R2 healed for 3 HP (from 4 to 7/10)
+[A29] R3 healed R2 for 3 HP
+Magic: R3 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R0 for 3 HP
+Magic: B2 targeting B0 (HP: 3)
+[A33] B0 threat changed from 13 to 15
+[A02] B0 defense changed from 6 to 7
+Magic: B2 targeting B4 (HP: 10)
+[A33] B4 threat changed from 13 to 15
+[A02] B4 defense changed from 6 to 7
+
+
+[Tick 300] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 3)
+B0 HP: 5 - 5 => 0
+
+
+[Tick 315] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 7)
+R2 HP: 7 - 3 => 4
+[A20] R2 delayed by 1 intervals (60 ticks)
+Magic: B2 targeting B4 (HP: 10)
+[A33] B4 threat changed from 15 to 17
+[A02] B4 defense changed from 7 to 8
+Magic: B2 targeting B2 (HP: 11)
+[A33] B2 threat changed from 6 to 8
+[A02] B2 defense changed from 1 to 2
+
+
+[Tick 420] 6 unit(s) acting
+Ranged: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 3 => 1
+[A20] R2 delayed by 1 intervals (60 ticks)
+Melee: R2 targeting B4 (HP: 10)
+B4 HP: 10 - 4 => 6
+  -> B4 (magic) tick reset due to melee attack!
+Melee: R4 targeting B4 (HP: 6)
+B4 HP: 6 - 0 => 6
+Magic: R3 targeting R2 (HP: 1)
+[HEAL] R2 healed for 3 HP (from 1 to 4/10)
+[A29] R3 healed R2 for 3 HP
+Magic: R3 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R0 for 3 HP
+Magic: B2 targeting B4 (HP: 6)
+[A33] B4 threat changed from 17 to 19
+[A02] B4 defense changed from 8 to 9
+Magic: B2 targeting B2 (HP: 11)
+[A33] B2 threat changed from 8 to 10
+[A02] B2 defense changed from 2 to 3
+Magic: R0 targeting B4 (HP: 6)
+B4 HP: 6 - 3 => 3
+Magic: R0 targeting B2 (HP: 11)
+B2 HP: 11 - 3 => 8
+Magic: R0 targeting B1 (HP: 12)
+B1 HP: 12 - 3 => 9
+
+
+[Tick 540] 1 unit(s) acting
+Melee: R2 targeting B4 (HP: 3)
+B4 HP: 3 - 3 => 0
+
+
+[Tick 600] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 8)
+B2 HP: 9 - 9 => 0
+
+
+[Tick 630] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 9)
+B1 HP: 9 - 6 => 3
+[HEAL] R4 healed for 0 HP (from 8 to 8/8)
+  -> B1 (ranged) delayed by 1 tick(s) due to 6/12 damage!
+Magic: R3 targeting R2 (HP: 4)
+[HEAL] R2 healed for 3 HP (from 4 to 7/10)
+[A29] R3 healed R2 for 3 HP
+Magic: R3 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R0 for 3 HP
+
+
+[Tick 660] 1 unit(s) acting
+Melee: R2 targeting B1 (HP: 3)
+B1 HP: 11 - 11 => 0
+
+
+[Tick 702] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 10)
+B3 HP: 10 - 3 => 7
+
+
+[Tick 720] 1 unit(s) acting
+Melee: R2 targeting B3 (HP: 7)
+B3 HP: 13 - 13 => 0
+Battle Over! Red Team wins!

@@ -31,7 +31,7 @@ private:
     int CurrentTurn = 0;
     int tickCount = 0;  // Counter for number of ticks that have occurred
 
-    bool IsBattleOver(bool test);
+    bool IsBattleOver(bool test,int tickCount);
     void LogDrawResult();
     void LogWinLoseResult();
     void LogUsageCount();

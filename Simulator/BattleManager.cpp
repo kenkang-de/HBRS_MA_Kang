@@ -46,6 +46,7 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
     turnManager.Initialize(allUnits);
+    tickCount =0;
 
     if(log) {
         std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
@@ -68,16 +69,25 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
     std::vector<Unit*> meleeUnits;
     std::vector<Unit*> magicUnits;
 
-    while (!IsBattleOver(false)) {
+    while (!IsBattleOver(false,tickCount)) {
         // Get all units scheduled to act in the current tick
         std::vector<Unit*> units = turnManager.GetNextUnits();
 
         if (!units.empty()) {
+
             LogSystem::Log("\n");
             LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
+            tickCount++;
         }
         else
         {
+            // Check if queue is empty and no units can act (battle should end)
+            if (!turnManager.HasActions()) {
+                LogSystem::LogStream("Battle Over! No more units can act (empty queue at tick ", turnManager.GetCurrentTick(), ")");
+                LogDrawResult();
+                LogUsageCount();
+                break;
+            }
             turnManager.AdvanceTick();
             continue;
         }
@@ -116,6 +126,9 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
 
         // PHASE 1: Execute ranged actions first
         for (Unit* unit : rangedUnits) {
+            // Check if unit is still alive before processing
+            if (!unit->IsAlive()) continue;
+            
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
             
@@ -149,6 +162,12 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 // Process any after-actions triggered
                 ProcessAfterActions(allUnits);
                 
+                // CRITICAL FIX: Check if the acting unit died during after-actions
+                if (!unit->IsAlive()) {
+                    LogSystem::LogStream("  -> ", unit->GetName(), " died during after-actions, stopping further actions");
+                    break; // Stop processing remaining targets for this unit
+                }
+                
                 // Check for speed changes and update turn queue if needed
                 turnManager.UpdateSpeedChanges(allUnits);
                 
@@ -175,7 +194,7 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         for (Unit* unit : meleeUnits) {
             // Melee units can act even if killed by other melee/magic units in same tick
             // Only skip if killed by ranged units in this tick or already dead before this tick
-            if (unitsKilledByRanged.count(unit) > 0) continue;
+            if (unitsKilledByRanged.count(unit) > 0 || !unit->IsAlive()) continue;
             
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
@@ -207,6 +226,12 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 
                 // Process any after-actions triggered
                 ProcessAfterActions(allUnits);
+                
+                // CRITICAL FIX: Check if the acting unit died during after-actions
+                if (!unit->IsAlive()) {
+                    LogSystem::LogStream("  -> ", unit->GetName(), " died during after-actions, stopping further actions");
+                    break; // Stop processing remaining targets for this unit
+                }
                 
                 // Check for speed changes and update turn queue if needed
                 turnManager.UpdateSpeedChanges(allUnits);
@@ -241,8 +266,8 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         // PHASE 3: Execute magic actions
         for (Unit* unit : magicUnits) {
             // Magic units can act even if killed by other melee/magic units in same tick
-            // Skip if killed by ranged units OR if tick was reset by ranged units in this tick
-            if (unitsKilledByRanged.count(unit) > 0 || magicUnitsTickResetByRanged.count(unit) > 0) continue;
+            // Skip if killed by ranged units OR if tick was reset by ranged units in this tick OR if already dead
+            if (unitsKilledByRanged.count(unit) > 0 || magicUnitsTickResetByRanged.count(unit) > 0 || !unit->IsAlive()) continue;
             
             std::vector<Unit*>& targets = allTargets[unit];
             if (targets.empty()) continue;
@@ -272,21 +297,19 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 // Process any after-actions triggered
                 ProcessAfterActions(allUnits);
                 
+                // CRITICAL FIX: Check if the acting unit died during after-actions (e.g., poison)
+                if (!unit->IsAlive()) {
+                    LogSystem::LogStream("  -> ", unit->GetName(), " died during after-actions, stopping further actions");
+                    break; // Stop processing remaining targets for this unit
+                }
+                
                 // Check for speed changes and update turn queue if needed
                 turnManager.UpdateSpeedChanges(allUnits);
             }
-            
-            // Process any after-actions triggered
-            ProcessAfterActions(allUnits);
-            
-            // Check for speed changes and update turn queue if needed
-            turnManager.UpdateSpeedChanges(allUnits);
+    
         }
+        turnManager.RemoveDeadUnits(allUnits);
 
-        // Update turn manager with any speed changes that occurred during this tick
-        turnManager.UpdateSpeedChanges(allUnits);
-
-        // Advance the tick
         turnManager.AdvanceTick();
     }
 
@@ -311,10 +334,9 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 }
 
 
-bool BattleManager::IsBattleOver(bool test) {
+bool BattleManager::IsBattleOver(bool test, int tickCount) {
     // Check if we've reached the tick limit based on actual turn manager ticks
-    int currentTick = turnManager.GetCurrentTick();
-    if (currentTick >= TEST_TICK) {
+    if (tickCount >= TEST_TICK) {
         LogSystem::LogStream("Battle Over! Tick limit reached (", currentTick, " ticks elapsed)");
         LogDrawResult();
         LogUsageCount();

@@ -58,10 +58,10 @@ if(weaponCount != armorCount){
 
 int equipmentCount = weaponCount;
 
-float unitWeaponRatio = std::trunc(unitCount / equipmentCount);
-int minSampleUsage = std::floor(unitWeaponRatio);
-float RatioToOne = unitWeaponRatio - 1;
-int maxSampleUsage = std::floor(unitWeaponRatio + RatioToOne);
+int baseUsage = unitCount / equipmentCount;
+int remainder = unitCount % equipmentCount;
+int minSampleUsage = baseUsage;
+int maxSampleUsage = baseUsage + (remainder > 0 ? 1 : 0);
 
 //Initialize Batch ID and team vectors.
 for(int batchIndex = 0; batchIndex < batchConfig.numBatches; batchIndex++) {

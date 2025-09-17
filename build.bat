@@ -84,6 +84,15 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+
+cd ../Analysis
+echo Compiling SubjectToCSV.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c TestSubjectToCSV.cpp -o TestSubjectToCSV.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile TestSubjectToCSV.cpp
+    exit /b 1
+)
+
 REM Build main executable with library
 cd ..
 echo Linking Run.exe...
@@ -104,6 +113,7 @@ g++ %LINK_FLAGS% ^
     Element/ElementList.o ^
     Element/Stat.o ^
     Sampling/BatchCreator.o ^
+    Analysis/TestSubjectToCSV.o ^
     -LSimulator ^
     -lsimulator ^
     -LSimulator/yaml-cpp/mingw-build ^

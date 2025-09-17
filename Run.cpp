@@ -16,6 +16,8 @@
 
 #include "Simulator/Simulator.h"
 
+#include "Analysis/TestSubjectToCSV.h"
+
 class NewMasterController {
 private:
     std::string configFile;
@@ -69,7 +71,18 @@ public:
         simulator.SimulateBatches(&batches);
         std::cout<<"Stage 3 Complete"<<std::endl;
 
-        
+        // Stage 4: Analysis
+        TestSubjectToCSV csvGenerator;
+        std::vector<TestSubject*> testSubjects;
+        for (Weapon& weapon : elementList.weapons) {
+            testSubjects.push_back(&weapon);
+        }
+        for (Armor& armor : elementList.armors) {
+            testSubjects.push_back(&armor);
+        }
+        csvGenerator.Convert(testSubjects);
+        std::cout<<"Stage 4 Complete"<<std::endl;
+
 
         // // Calculate number of batches (assuming configs are divided into batches)
         // int numBatches = (numBatches + 9) / 10; // Round up division for batches of 10

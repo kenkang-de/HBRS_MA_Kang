@@ -60,9 +60,8 @@ void TurnManager::UpdateSpeedChanges(const std::vector<Unit*>& units) {
     
     int newLCM = ComputeLCM(currentSpeeds);
     
-    // Only rebuild if LCM actually changed
+    // Always rebuild when LCM changes - this will remove speed 0 units
     if (newLCM != lcm) {
-        LogSystem::LogStream("[DEBUG] LCM changed from " , lcm , " to " , newLCM , " - rebuilding queue" );
         lcm = newLCM;
         RebuildQueue(units);
     }
@@ -80,28 +79,35 @@ void TurnManager::RebuildQueue(const std::vector<Unit*>& units) {
         ScheduledAction action = turnQueue.top();
         turnQueue.pop();
         
+        // ADD SPEED CHECK to prevent division by zero
         if (action.unit != nullptr && action.unit->IsAlive() && action.unit->GetTotalStat().GetSpeed() > 0) {
-            int oldInterval = oldLCM / action.unit->GetTotalStat().GetSpeed();
-            int newInterval = lcm / action.unit->GetTotalStat().GetSpeed();
-            int plannedTick = action.nextTick;
-            int ticksRemaining = plannedTick - tick;
+            int currentSpeed = action.unit->GetTotalStat().GetSpeed();
             
-            int newNextTick;
-            if (ticksRemaining > 0) {
-                // Scale the remaining time by LCM ratio
-                double lcmScale = (double)lcm / oldLCM;
-                int scaledRemaining = (int)(ticksRemaining * lcmScale);
-                newNextTick = tick + scaledRemaining;
-            } else {
-                // Unit was scheduled for current or past tick, use new interval
-                newNextTick = tick + newInterval;
+            // Double-check speed is still positive before division
+            if (currentSpeed > 0) {
+                int oldInterval = oldLCM / currentSpeed;
+                int newInterval = lcm / currentSpeed;
+                int plannedTick = action.nextTick;
+                int ticksRemaining = plannedTick - tick;
+                
+                int newNextTick;
+                if (ticksRemaining > 0) {
+                    // Scale the remaining time by LCM ratio
+                    double lcmScale = (double)lcm / oldLCM;
+                    int scaledRemaining = (int)(ticksRemaining * lcmScale);
+                    newNextTick = tick + scaledRemaining;
+                } else {
+                    // Unit was scheduled for current or past tick, use new interval
+                    newNextTick = tick + newInterval;
+                }
+                
+                newSchedule.push_back({action.unit, newNextTick});
             }
-            
-            newSchedule.push_back({action.unit, newNextTick});
+            // If speed became 0, skip this unit (don't reschedule)
         }
     }
     
-    // Add any units that weren't previously scheduled but are alive
+    // Add any units that weren't previously scheduled but are alive AND have positive speed
     for (Unit* unit : units) {
         if (unit && unit->IsAlive() && unit->GetTotalStat().GetSpeed() > 0) {
             // Check if this unit was already processed
@@ -114,8 +120,11 @@ void TurnManager::RebuildQueue(const std::vector<Unit*>& units) {
             }
             
             if (!alreadyScheduled) {
-                int newInterval = lcm / unit->GetTotalStat().GetSpeed();
-                newSchedule.push_back({unit, tick + newInterval});
+                int speed = unit->GetTotalStat().GetSpeed();
+                if (speed > 0) {  // Double-check before division
+                    int newInterval = lcm / speed;
+                    newSchedule.push_back({unit, tick + newInterval});
+                }
             }
         }
     }
@@ -136,25 +145,53 @@ bool TurnManager::HasActions() const {
 std::vector<Unit*> TurnManager::GetNextUnits() {
     std::vector<Unit*> unitsToAct;
 
-    if (turnQueue.empty()) return unitsToAct;
+    if (turnQueue.empty()) {
+        return unitsToAct;
+    }
+
+    // CRITICAL FIX: Clean up any actions scheduled for past ticks
+    std::vector<ScheduledAction> validActions;
+    while (!turnQueue.empty()) {
+        ScheduledAction action = turnQueue.top();
+        turnQueue.pop();
+        
+        // Only keep actions scheduled for current tick or future
+        if (action.nextTick + action.unit->TickDelay >= tick) {
+            validActions.push_back(action);
+        }
+    }
+    
+    // Rebuild queue with only valid actions
+    for (const auto& action : validActions) {
+        turnQueue.push(action);
+    }
+
+    if (turnQueue.empty()) {
+        return unitsToAct;
+    }
 
     // Collect all units scheduled for the current tick
-    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay == tick) {
+    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay <= tick) {
         ScheduledAction top = turnQueue.top();
-        
-        // Only add alive units with positive speed to the action list
-        if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
-            unitsToAct.push_back(top.unit);
-            // Record when this unit acted
-            lastActionTick[top.unit] = tick;
-        }
-        
         turnQueue.pop();
+        
+        // Only process units whose effective action time matches current tick
+        if (top.nextTick + top.unit->TickDelay == tick) {
+            // Only add alive units with positive speed to the action list
+            if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
+                unitsToAct.push_back(top.unit);
+                // Record when this unit acted
+                lastActionTick[top.unit] = tick;
+            }
 
-        // Reschedule the unit if it's valid, alive, AND has positive speed
-        if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
-            int interval = lcm / top.unit->GetTotalStat().GetSpeed();
-            turnQueue.push({top.unit, tick + interval});
+            // Reschedule the unit if it's valid, alive, AND has positive speed
+            if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
+                int interval = lcm / top.unit->GetTotalStat().GetSpeed();
+                // Reset TickDelay when rescheduling
+                top.unit->TickDelay = 0;
+                int nextTick = tick + interval;
+                turnQueue.push({top.unit, nextTick});
+            }
         }
         // Units with speed <= 0 are not rescheduled
     }
@@ -169,7 +206,30 @@ void TurnManager::DelayUnit(Unit* targetUnit, int delayTicks) {
 }
 
 void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
-    if (magicUnit == nullptr) return;
+    if (magicUnit == nullptr || !magicUnit->IsAlive()) return;
+    
+    int unitSpeed = magicUnit->GetTotalStat().GetSpeed();
+    
+    // Don't reset units with speed <= 0, just remove them from queue
+    if (unitSpeed <= 0) {
+        // Create temporary storage for all scheduled actions
+        std::vector<ScheduledAction> allActions;
+        
+        // Extract all actions from the queue
+        while (!turnQueue.empty()) {
+            allActions.push_back(turnQueue.top());
+            turnQueue.pop();
+        }
+        
+        // Rebuild the queue without the speed-0 unit
+        for (const auto& action : allActions) {
+            if (action.unit != magicUnit && action.unit != nullptr && action.unit->IsAlive() && action.unit->GetTotalStat().GetSpeed() > 0) {
+                turnQueue.push(action);
+            }
+        }
+        
+        return;
+    }
     
     // Create temporary storage for all scheduled actions
     std::vector<ScheduledAction> allActions;
@@ -182,19 +242,19 @@ void TurnManager::ResetMagicUnitTick(Unit* magicUnit) {
     
     // Find and reset the magic unit's next action tick
     for (auto& action : allActions) {
-        if (action.unit == magicUnit) {
-            // Reset to current tick + unit's speed
-            int speed = magicUnit->GetTotalStat().GetSpeed();
-            if (speed > 0) {
-                action.nextTick = tick + speed;
-            }
+        if (action.unit == magicUnit && magicUnit->IsAlive()) {
+            // FIXED: Use proper LCM-based interval instead of raw speed
+            int interval = lcm / unitSpeed;
+            action.nextTick = tick + interval;
             break; // Only reset the first (next) occurrence of this unit
         }
     }
     
-    // Rebuild the queue with the modified actions
+    // Rebuild the queue with the modified actions (only alive units with positive speed)
     for (const auto& action : allActions) {
-        turnQueue.push(action);
+        if (action.unit != nullptr && action.unit->IsAlive() && action.unit->GetTotalStat().GetSpeed() > 0) {
+            turnQueue.push(action);
+        }
     }
 }
 
@@ -207,6 +267,22 @@ void TurnManager::RemoveDeadUnits(const std::vector<Unit*>& units) {
         } else {
             ++it;
         }
+    }
+    std::vector<ScheduledAction> aliveActions;
+    
+    while (!turnQueue.empty()) {
+        ScheduledAction action = turnQueue.top();
+        turnQueue.pop();
+        
+        // Only keep actions for alive units
+        if (action.unit != nullptr && action.unit->IsAlive()) {
+            aliveActions.push_back(action);
+        }
+    }
+    
+    // Rebuild queue with only alive units
+    for (const auto& action : aliveActions) {
+        turnQueue.push(action);
     }
 }
 
