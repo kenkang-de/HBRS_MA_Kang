@@ -45,20 +45,13 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 }
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
-    std::cout<<"[BattleManager] StartBattle called with log="<<(log?"true":"false")<<", batchID="<<batchID<<std::endl;
-
-    std::cout<<"[BattleManager] Initializing turn manager..."<<std::endl;
     turnManager.Initialize(allUnits);
-    std::cout<<"[BattleManager] Turn manager initialized"<<std::endl;
 
     if(log) {
-        std::cout<<"[BattleManager] Starting logging to file..."<<std::endl;
         std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
         LogSystem::StartLogging(logFilename);
-        std::cout<<"[BattleManager] Logging started"<<std::endl;
     }
 
-    std::cout<<"[BattleManager] Checking unit states..."<<std::endl;
     // Debug: Check unit states before battle
     LogSystem::LogStream("=== BATTLE START DEBUG ===");
     for (int i = 0; i < allUnits.size(); i++) {
@@ -69,14 +62,12 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                            " Alive:", (unit->IsAlive() ? "Yes" : "No"));
     }
     LogSystem::LogStream("==========================");
-    std::cout<<"[BattleManager] Unit states checked"<<std::endl;
 
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit*> rangedUnits;
     std::vector<Unit*> meleeUnits;
     std::vector<Unit*> magicUnits;
 
-    std::cout<<"[BattleManager] Starting main battle loop..."<<std::endl;
     while (!IsBattleOver(false)) {
         // Get all units scheduled to act in the current tick
         std::vector<Unit*> units = turnManager.GetNextUnits();
@@ -298,14 +289,10 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         // Advance the tick
         turnManager.AdvanceTick();
     }
-    
-    std::cout<<"[BattleManager] Battle loop ended"<<std::endl;
-    std::cout<<"[BattleManager] Finalizing battle..."<<std::endl;
 
     if(log) {
         LogSystem::StopLogging();
     }
-    std::cout<<"[BattleManager] StartBattle method completed!"<<std::endl;
 }
 
 

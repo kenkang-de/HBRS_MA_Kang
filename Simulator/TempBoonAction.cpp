@@ -38,7 +38,7 @@ void TempBoonAction::Perform(Unit* actor, Unit* target, const std::vector<Unit*>
                       , " (Remaining: " , (GetUsageNumber() - 1) , " turns)" );
             
             // Only decrement usage after the first application
-            DecrementUsage();
+            const_cast<TempBoonAction*>(this)->DecrementUsage();
         }
         
         // Handle expiration (only check after potential decrement)

@@ -65,9 +65,7 @@ public:
         std::cout<<"Stage 2 Complete"<<std::endl;
 
         // Stage 3: Batch Simulation Execution
-        std::cout << "Creating Simulator..." << std::endl;
         Simulator simulator(&elementList, &actionMap, &battleUnits);
-        std::cout << "Simulator created, starting batch simulation..." << std::endl;
         simulator.SimulateBatches(&batches);
         std::cout<<"Stage 3 Complete"<<std::endl;
 
