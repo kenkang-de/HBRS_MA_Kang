@@ -12,7 +12,8 @@ Unit::Unit()
     : Name(""),
       defaultStat(Stat()),
       totalStat(defaultStat),
-      currentHP(0), // Initialize currentHP to 0, will be set when equipment is applied
+      // Initialize currentHP to 0, will be set when equipment is applied
+      currentHP(0), 
       weapon(nullptr),
       armor(nullptr),
       isFrozen(false), // Initialize isFrozen to false by default

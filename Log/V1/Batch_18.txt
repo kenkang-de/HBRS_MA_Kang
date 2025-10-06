@@ -1,235 +1,167 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:12 Speed:2 Alive:Yes
-Unit 1: R1 HP:13 Speed:2 Alive:Yes
-Unit 2: R2 HP:15 Speed:0 Alive:Yes
-Unit 3: R3 HP:10 Speed:3 Alive:Yes
-Unit 4: R4 HP:12 Speed:3 Alive:Yes
-Unit 5: B0 HP:12 Speed:2 Alive:Yes
-Unit 6: B1 HP:12 Speed:3 Alive:Yes
-Unit 7: B2 HP:6 Speed:4 Alive:Yes
-Unit 8: B3 HP:8 Speed:4 Alive:Yes
-Unit 9: B4 HP:15 Speed:2 Alive:Yes
+Unit 0: R0 HP:8 Speed:5 Alive:Yes
+Unit 1: R1 HP:7 Speed:4 Alive:Yes
+Unit 2: R2 HP:10 Speed:1 Alive:Yes
+Unit 3: R3 HP:10 Speed:2 Alive:Yes
+Unit 4: R4 HP:8 Speed:4 Alive:Yes
+Unit 5: B0 HP:10 Speed:4 Alive:Yes
+Unit 6: B1 HP:10 Speed:6 Alive:Yes
+Unit 7: B2 HP:10 Speed:4 Alive:Yes
+Unit 8: B3 HP:12 Speed:3 Alive:Yes
+Unit 9: B4 HP:10 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 3] 2 unit(s) acting
-Ranged: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Melee: B3 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[A10] B3 threat changed from 3 to 2
+[Tick 10] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 10)
+R2 HP: 10 - 1 => 9
+[A10] B1 threat changed from 6 to 5
+  -> R2 (magic) tick reset due to melee attack!
 
 
-[Tick 4] 3 unit(s) acting
-Ranged: R3 targeting B4 (HP: 15)
-B4 HP: 15 - 1 => 14
-Melee: B1 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[BOON] Applied Poison Effect to R2 (Usage: 3)
-[A28] B1 applied Poison Effect to R2 (usage: 3)
-Melee: R4 targeting B4 (HP: 14)
-B4 HP: 14 - 0 => 14
-[A10] R4 threat changed from 3 to 4
-[A04] R4 attack changed from 4 to 3
+[Tick 12] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 8 => 2
 
 
-[Tick 6] 6 unit(s) acting
-Ranged: B0 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Ranged: B4 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Ranged: R0 targeting B4 (HP: 14)
-B4 HP: 14 - 3 => 11
-Ranged: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Melee: B3 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[A10] B3 threat changed from 2 to 1
-Melee: R1 targeting B4 (HP: 11)
-B4 HP: 11 - 0 => 11
+[Tick 15] 4 unit(s) acting
+Ranged: B0 targeting R2 (HP: 9)
+R2 HP: 9 - 1 => 8
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R4 targeting B2 (HP: 2)
+B2 HP: 5 - 5 => 0
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
 
 
-[Tick 8] 3 unit(s) acting
-Ranged: R3 targeting B4 (HP: 11)
-B4 HP: 11 - 1 => 10
-Melee: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-[A10] R4 threat changed from 4 to 5
-[A04] R4 attack changed from 3 to 2
-Melee: B1 targeting R1 (HP: 13)
-R1 HP: 13 - 0 => 13
-[BOON] Applied Poison Effect to R1 (Usage: 3)
-[A28] B1 applied Poison Effect to R1 (usage: 3)
+[Tick 20] 3 unit(s) acting
+Ranged: B4 targeting R2 (HP: 8)
+R2 HP: 8 - 0 => 8
+Melee: B3 targeting R2 (HP: 8)
+R2 HP: 8 - 2 => 6
+  -> R2 (magic) tick reset due to melee attack!
+Melee: B1 targeting R2 (HP: 6)
+R2 HP: 6 - 1 => 5
+[A10] B1 threat changed from 5 to 4
+  -> R2 (magic) tick reset due to melee attack!
 
 
-[Tick 9] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 13)
-R1 HP: 13 - 2 => 11
-[A25] R1 attack reduced from 4 to 3 (damage: 2, reduction: 1)
-Melee: B3 targeting R1 (HP: 11)
-R1 HP: 11 - 1 => 10
-[A10] B3 threat changed from 1 to 0
+[Tick 24] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 5 => 5
+  -> B4 (ranged) delayed by 1 tick(s) due to 5/10 damage!
 
 
-[Tick 12] 9 unit(s) acting
-Ranged: B0 targeting R1 (HP: 10)
-R1 HP: 10 - 2 => 8
-Ranged: B2 targeting R1 (HP: 8)
-R1 HP: 8 - 2 => 6
-[A25] R1 attack reduced from 3 to 2 (damage: 2, reduction: 1)
-Ranged: B4 targeting R1 (HP: 6)
-R1 HP: 6 - 0 => 6
-Ranged: R3 targeting B4 (HP: 10)
-B4 HP: 10 - 1 => 9
-Ranged: R0 targeting B4 (HP: 9)
-B4 HP: 9 - 3 => 6
-Melee: R1 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 3)
-[BOON] Poison Effect triggered on R1 (Usage: 3/3)
-[EXECUTE_EFFECT] R1 triggered Poison Effect
-R1 HP: 6 - 5 => 1
-Melee: B1 targeting R1 (HP: 1)
-R1 HP: 1 - 0 => 1
-[BOON] Refreshing existing Poison Effect on R1
-[A28] B1 applied Poison Effect to R1 (usage: 3)
-Melee: B3 targeting R1 (HP: 1)
-R1 HP: 1 - 1 => 0
-[A10] B3 threat changed from 0 to 0
-Melee: R4 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-[A10] R4 threat changed from 5 to 6
-[A04] R4 attack changed from 2 to 1
-
-
-[Tick 15] 2 unit(s) acting
-Ranged: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Melee: B3 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[A10] B3 threat changed from 0 to 0
-
-
-[Tick 16] 3 unit(s) acting
-Ranged: R3 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
-Melee: B1 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
-Melee: R4 targeting B4 (HP: 5)
-B4 HP: 5 - 0 => 5
-[A10] R4 threat changed from 6 to 7
-[A04] R4 attack changed from 1 to 0
-
-
-[Tick 18] 5 unit(s) acting
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 5 => 7
-Ranged: B4 targeting R4 (HP: 7)
-R4 HP: 7 - 1 => 6
-Ranged: R0 targeting B4 (HP: 5)
-B4 HP: 5 - 3 => 2
-Ranged: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 5 => 1
-[A25] R4 attack reduced from 0 to 0 (damage: 5, reduction: 2)
-Melee: B3 targeting R4 (HP: 1)
-R4 HP: 4 - 4 => 0
-[A10] B3 threat changed from 0 to 0
-
-
-[Tick 20] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 2)
+[Tick 30] 5 unit(s) acting
+Ranged: R1 targeting B4 (HP: 5)
+B4 HP: 5 - 1 => 4
+Ranged: R4 targeting B4 (HP: 4)
+B4 HP: 4 - 2 => 2
+Ranged: B0 targeting R2 (HP: 5)
+R2 HP: 5 - 1 => 4
+  -> R2 (magic) tick reset due to ranged attack!
+Melee: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 1 => 3
+[A10] B1 threat changed from 4 to 3
+  -> R2 (magic) tick reset due to melee attack!
+Melee: R3 targeting B4 (HP: 2)
 B4 HP: 2 - 1 => 1
-Melee: B1 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
 
 
-[Tick 21] 2 unit(s) acting
-Ranged: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Melee: B3 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[A10] B3 threat changed from 0 to 0
+[Tick 36] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 8 => 2
 
 
-[Tick 24] 7 unit(s) acting
-Ranged: B4 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Ranged: R0 targeting B4 (HP: 1)
-B4 HP: 3 - 3 => 0
-Ranged: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Ranged: B0 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-Melee: B3 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[A10] B3 threat changed from 0 to 0
-Melee: B1 targeting R2 (HP: 15)
-R2 HP: 15 - 0 => 15
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
+[Tick 40] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 3)
+R2 HP: 3 - 1 => 2
+[A10] B1 threat changed from 3 to 2
+  -> R2 (magic) tick reset due to melee attack!
 
 
-[Tick 27] 2 unit(s) acting
-Ranged: B2 targeting R0 (HP: 12)
-R0 HP: 12 - 3 => 9
-[A25] R0 attack reduced from 5 to 4 (damage: 3, reduction: 1)
-Melee: B3 targeting R0 (HP: 9)
-R0 HP: 9 - 2 => 7
-[A10] B3 threat changed from 0 to 0
+[Tick 41] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 2)
+R2 HP: 2 - 0 => 2
 
 
-[Tick 28] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 12)
-B1 HP: 12 - 3 => 9
-Melee: B1 targeting R0 (HP: 7)
-R0 HP: 7 - 0 => 7
-[BOON] Applied Poison Effect to R0 (Usage: 3)
-[A28] B1 applied Poison Effect to R0 (usage: 3)
+[Tick 45] 3 unit(s) acting
+Ranged: R1 targeting B3 (HP: 12)
+B3 HP: 12 - 4 => 8
+Ranged: B0 targeting R2 (HP: 2)
+R2 HP: 2 - 1 => 1
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R4 targeting B3 (HP: 8)
+B3 HP: 8 - 5 => 3
 
 
-[Tick 30] 4 unit(s) acting
-Ranged: B2 targeting R0 (HP: 7)
-R0 HP: 7 - 3 => 4
-[A25] R0 attack reduced from 4 to 3 (damage: 3, reduction: 1)
-Ranged: R0 targeting B1 (HP: 9)
-B1 HP: 9 - 0 => 9
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 5)
-[BOON] Poison Effect triggered on R0 (Usage: 3/3)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 5 - 5 => 0
-  -> R0 died during after-actions, stopping further actions
+[Tick 48] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 3)
+B3 HP: 8 - 8 => 0
 
 
-[Tick 32] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 9)
-B1 HP: 9 - 3 => 6
+[Tick 50] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 1)
+R2 HP: 1 - 1 => 0
+[A10] B1 threat changed from 2 to 1
+
+
+[Tick 60] 6 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 1 => 9
+Ranged: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: R0 targeting B0 (HP: 9)
+B0 HP: 9 - 4 => 5
 Melee: B1 targeting R3 (HP: 10)
 R3 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to R3 (Usage: 3)
-[A28] B1 applied Poison Effect to R3 (usage: 3)
+[A10] B1 threat changed from 1 to 0
+Melee: R3 targeting B0 (HP: 5)
+B0 HP: 5 - 0 => 5
 
 
-[Tick 33] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 3 => 7
-[A25] R3 attack reduced from 3 to 2 (damage: 3, reduction: 1)
-Melee: B3 targeting R3 (HP: 7)
-R3 HP: 7 - 2 => 5
-[A10] B3 threat changed from 0 to 0
+[Tick 61] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
 
 
-[Tick 36] 5 unit(s) acting
-Ranged: B2 targeting R3 (HP: 5)
-R3 HP: 5 - 3 => 2
-[A25] R3 attack reduced from 2 to 1 (damage: 3, reduction: 1)
-Ranged: B0 targeting R3 (HP: 2)
-R3 HP: 3 - 3 => 0
-Battle Over! Blue Team wins!
+[Tick 70] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+[A10] B1 threat changed from 0 to 0
+
+
+[Tick 72] 1 unit(s) acting
+Melee: R0 targeting B0 (HP: 5)
+B0 HP: 5 - 4 => 1
+
+
+[Tick 75] 3 unit(s) acting
+Ranged: R1 targeting B0 (HP: 1)
+B0 HP: 1 - 0 => 1
+Ranged: R4 targeting B0 (HP: 1)
+B0 HP: 1 - 1 => 0
+
+
+[Tick 80] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+[A10] B1 threat changed from 0 to 0
+
+
+[Tick 81] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 84] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 2)
+B1 HP: 8 - 8 => 0
+
+
+[Tick 90] 3 unit(s) acting
+Ranged: R4 targeting B4 (HP: 1)
+B4 HP: 2 - 2 => 0
+Battle Over! Red Team wins!

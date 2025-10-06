@@ -5,9 +5,18 @@
 #include "../Element/Stat.h"
 #include "TestSubject.h"
 
+
+
 class Armor : public TestSubject {
     std::string name;
     Stat stat;
+
+    static enum ArmorType{
+    Light,
+    Medium,
+    Heavy};
+
+    ArmorType armorType;
 public:
     Armor(std::string id, std::string name, Stat stat) : TestSubject(id), name(name), stat(stat) {}
     

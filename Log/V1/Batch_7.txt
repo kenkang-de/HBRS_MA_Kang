@@ -1,140 +1,109 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:3 Alive:Yes
-Unit 1: R1 HP:10 Speed:1 Alive:Yes
-Unit 2: R2 HP:10 Speed:2 Alive:Yes
-Unit 3: R3 HP:14 Speed:5 Alive:Yes
-Unit 4: R4 HP:12 Speed:0 Alive:Yes
-Unit 5: B0 HP:10 Speed:4 Alive:Yes
-Unit 6: B1 HP:6 Speed:6 Alive:Yes
-Unit 7: B2 HP:6 Speed:5 Alive:Yes
+Unit 0: R0 HP:12 Speed:4 Alive:Yes
+Unit 1: R1 HP:10 Speed:4 Alive:Yes
+Unit 2: R2 HP:11 Speed:5 Alive:Yes
+Unit 3: R3 HP:11 Speed:5 Alive:Yes
+Unit 4: R4 HP:10 Speed:4 Alive:Yes
+Unit 5: B0 HP:8 Speed:2 Alive:Yes
+Unit 6: B1 HP:8 Speed:3 Alive:Yes
+Unit 7: B2 HP:7 Speed:5 Alive:Yes
 Unit 8: B3 HP:12 Speed:2 Alive:Yes
-Unit 9: B4 HP:9 Speed:6 Alive:Yes
+Unit 9: B4 HP:10 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 10] 2 unit(s) acting
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-
-
-[Tick 12] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
+[Tick 12] 3 unit(s) acting
+Ranged: B2 targeting R3 (HP: 11)
+R3 HP: 11 - 4 => 7
 Melee: R3 targeting B3 (HP: 12)
-R3 HP: 14 - 2 => 12
-B3 HP: 12 - 1 => 11
-[A02] B3 defense changed from 3 to 2
-  -> B3 (magic) tick reset due to melee attack!
+B3 HP: 12 - 3 => 9
+[A10] R3 threat changed from 6 to 5
+Magic: R2 targeting B3 (HP: 9)
+B3 HP: 9 - 5 => 4
 
 
-[Tick 15] 1 unit(s) acting
-Magic: B0 targeting B3 (HP: 11)
-[BOON] Applied ProtectSTART to B3 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 15] 3 unit(s) acting
+Ranged: R0 targeting B3 (HP: 4)
+B3 HP: 4 - 3 => 1
+[A19] R0 speed changed from 4 to 3
+Melee: R1 targeting B3 (HP: 1)
+B3 HP: 2 - 2 => 0
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+Magic: R4 targeting R1 (HP: 10)
+[A34] R1 attack changed from 5 to 7
 
 
-[Tick 20] 3 unit(s) acting
-Ranged: R0 targeting B3 (HP: 11)
-[A10] R0 threat changed from 3 to 4
-[A04] R0 attack changed from 5 to 7
-B3 HP: 11 - 5 => 6
-  -> B3 (magic) tick reset due to ranged attack!
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
+[Tick 20] 2 unit(s) acting
+Melee: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 1 => 9
+[BOON] Applied Poison Effect to R1 (Usage: 3)
+[A28] B4 applied Poison Effect to R1 (usage: 3)
+Magic: B1 targeting R1 (HP: 9)
+[BOON] Applied FreezeSTART to R1 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 24] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: R3 targeting B3 (HP: 6)
-R3 HP: 12 - 2 => 10
-B3 HP: 6 - 2 => 4
-[A02] B3 defense changed from 2 to 1
-  -> B3 (magic) tick reset due to melee attack!
+[Tick 24] 3 unit(s) acting
+Ranged: B2 targeting R1 (HP: 9)
+R1 HP: 9 - 4 => 5
+Melee: R3 targeting B0 (HP: 8)
+B0 HP: 8 - 5 => 3
+[A10] R3 threat changed from 5 to 4
+Magic: R2 targeting B0 (HP: 3)
+B0 HP: 5 - 5 => 0
 
 
-[Tick 30] 4 unit(s) acting
-Ranged: R2 targeting B3 (HP: 4)
-B3 HP: 5 - 5 => 0
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
+[Tick 30] 3 unit(s) acting
+Ranged: R0 targeting B1 (HP: 8)
+B1 HP: 8 - 5 => 3
+[A19] R0 speed changed from 3 to 2
+  -> B1 (magic) tick reset due to ranged attack!
+Melee: R1 targeting B1 (HP: 3)
+  -> R1 is frozen and cannot act!
+[DEBUG] R1 processing 2 boons
+[DEBUG] Registering boon Poison Effect for R1
+[DEBUG] Registering boon FreezeSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 5)
+[BOON] Poison Effect triggered on R1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 HP: 5 - 5 => 0
+[AFTER-ACTION] R1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] FreezeSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered FreezeSTART
+  -> R1 died during after-actions, stopping further actions
 
 
-[Tick 36] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: R3 targeting B0 (HP: 10)
-R3 HP: 10 - 2 => 8
-B0 HP: 10 - 5 => 5
-[A02] B0 defense changed from -1 to 0
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 36] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 10)
+R4 HP: 10 - 5 => 5
+  -> R4 (magic) tick reset due to ranged attack!
+Melee: R3 targeting B1 (HP: 3)
+B1 HP: 5 - 5 => 0
+[A10] R3 threat changed from 4 to 3
+Magic: R2 targeting B4 (HP: 10)
+B4 HP: 10 - 5 => 5
 
 
-[Tick 40] 3 unit(s) acting
-Ranged: R0 targeting B0 (HP: 5)
-[A10] R0 threat changed from 4 to 5
-[A04] R0 attack changed from 7 to 9
-B0 HP: 9 - 9 => 0
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
+[Tick 40] 1 unit(s) acting
+Melee: B4 targeting R4 (HP: 5)
+R4 HP: 5 - 2 => 3
+[BOON] Applied Poison Effect to R4 (Usage: 3)
+[A28] B4 applied Poison Effect to R4 (usage: 3)
+  -> R4 (magic) tick reset due to melee attack!
 
 
-[Tick 48] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: R3 targeting B2 (HP: 6)
-R3 HP: 8 - 2 => 6
-B2 HP: 6 - 4 => 2
-[A02] B2 defense changed from 0 to 0
-  -> B2 (ranged) delayed by 1 tick(s) due to 4/6 damage!
+[Tick 48] 3 unit(s) acting
+Ranged: B2 targeting R4 (HP: 3)
+R4 HP: 5 - 5 => 0
+Melee: R3 targeting B4 (HP: 5)
+B4 HP: 6 - 6 => 0
+[A10] R3 threat changed from 3 to 2
+Magic: R2 targeting B2 (HP: 7)
+B2 HP: 7 - 5 => 2
 
 
-[Tick 50] 2 unit(s) acting
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-
-
-[Tick 55] 3 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-
-
-[Tick 60] 5 unit(s) acting
-Ranged: R2 targeting B2 (HP: 2)
-B2 HP: 9 - 9 => 0
-Ranged: R0 targeting B4 (HP: 9)
-[A10] R0 threat changed from 5 to 6
-[A04] R0 attack changed from 9 to 11
-B4 HP: 11 - 11 => 0
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Magic: R1 targeting R4 (HP: 12)
-[BOON] Applied ProtectSTART to R4 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 65] 1 unit(s) acting
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-
-
-[Tick 70] 2 unit(s) acting
-Ranged: R0 targeting B1 (HP: 6)
-[A10] R0 threat changed from 6 to 7
-[A04] R0 attack changed from 11 to 13
-B1 HP: 13 - 13 => 0
+[Tick 50] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 2)
+B2 HP: 5 - 5 => 0
+[A19] R0 speed changed from 2 to 1
 Battle Over! Red Team wins!

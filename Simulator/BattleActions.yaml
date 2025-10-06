@@ -148,7 +148,7 @@
 - id: SpeedBoost
   targetNumber: 1
   self: false
-  targetType: ENEMY
+  targetType: ALLY
   actionType: RANGE
   actionIDs: ["C00_A19(1)"]
 
