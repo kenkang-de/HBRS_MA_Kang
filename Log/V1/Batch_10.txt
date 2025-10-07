@@ -1,526 +1,137 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:2 Alive:Yes
-Unit 1: R1 HP:12 Speed:2 Alive:Yes
-Unit 2: R2 HP:10 Speed:1 Alive:Yes
-Unit 3: R3 HP:12 Speed:2 Alive:Yes
-Unit 4: R4 HP:12 Speed:3 Alive:Yes
-Unit 5: B0 HP:12 Speed:1 Alive:Yes
-Unit 6: B1 HP:12 Speed:2 Alive:Yes
-Unit 7: B2 HP:8 Speed:5 Alive:Yes
-Unit 8: B3 HP:10 Speed:3 Alive:Yes
-Unit 9: B4 HP:7 Speed:2 Alive:Yes
+Unit 0: R0 HP:10 Speed:3 Alive:Yes
+Unit 1: R1 HP:13 Speed:3 Alive:Yes
+Unit 2: R2 HP:12 Speed:2 Alive:Yes
+Unit 3: R3 HP:11 Speed:1 Alive:Yes
+Unit 4: R4 HP:8 Speed:5 Alive:Yes
+Unit 5: B0 HP:10 Speed:3 Alive:Yes
+Unit 6: B1 HP:10 Speed:6 Alive:Yes
+Unit 7: B2 HP:7 Speed:3 Alive:Yes
+Unit 8: B3 HP:12 Speed:3 Alive:Yes
+Unit 9: B4 HP:10 Speed:4 Alive:Yes
 ==========================
 
 
-[Tick 6] 1 unit(s) acting
-Magic: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 3 => 7
-Magic: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 3 => 9
-Magic: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 3 => 9
-Magic: B2 targeting R1 (HP: 12)
-R1 HP: 12 - 3 => 9
-
-
-[Tick 10] 2 unit(s) acting
-Ranged: B3 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-[BOON] Applied Poison Effect to R2 (Usage: 2)
-[A28] B3 applied Poison Effect to R2 (usage: 2)
-Magic: R4 targeting R2 (HP: 7)
-[HEAL] R2 healed for 3 HP (from 7 to 10/10)
-[A29] R4 healed R2 for 5 HP
+[Tick 10] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 13)
+R1 HP: 13 - 0 => 13
+[BOON] Applied Poison Effect to R1 (Usage: 2)
+[A28] B1 applied Poison Effect to R1 (usage: 2)
 
 
 [Tick 12] 1 unit(s) acting
-Magic: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 3 => 7
-Magic: B2 targeting R3 (HP: 9)
-R3 HP: 9 - 3 => 6
-Magic: B2 targeting R4 (HP: 9)
-R4 HP: 9 - 3 => 6
-Magic: B2 targeting R1 (HP: 9)
-R1 HP: 9 - 3 => 6
+Ranged: R4 targeting B3 (HP: 12)
+B3 HP: 12 - 3 => 9
 
 
-[Tick 15] 5 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 10 - 10 => 0
-[A19] R1 speed changed from 2 to 1
-Ranged: B1 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-Ranged: B1 targeting R3 (HP: 6)
-R3 HP: 6 - 0 => 6
-Ranged: B1 targeting R4 (HP: 6)
-R4 HP: 6 - 1 => 5
-  -> R4 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-Magic: R3 targeting B0 (HP: 12)
-[A06] B0 speed changed from 1 to 0
-Magic: R3 targeting B1 (HP: 12)
-[A06] B1 speed changed from 2 to 1
+[Tick 15] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 13)
+R1 HP: 13 - 3 => 10
+[A19] B4 speed changed from 4 to 3
 
 
-[Tick 17] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 7)
-[HEAL] R2 healed for 3 HP (from 7 to 10/10)
-[A29] R4 healed R2 for 5 HP
-
-
-[Tick 19] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
-
-
-[Tick 20] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B3 applied Poison Effect to R2 (usage: 2)
-
-
-[Tick 21] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
-
-
-[Tick 22] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B3 applied Poison Effect to R2 (usage: 2)
-
-
-[Tick 23] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
+[Tick 20] 6 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 4 => 6
+Ranged: B1 targeting R1 (HP: 6)
+R1 HP: 6 - 0 => 6
+[BOON] Refreshing existing Poison Effect on R1
+[A28] B1 applied Poison Effect to R1 (usage: 2)
+Ranged: B3 targeting R1 (HP: 6)
+R1 HP: 6 - 0 => 6
+Melee: R0 targeting B3 (HP: 9)
+B3 HP: 9 - 5 => 4
+Melee: R1 targeting B3 (HP: 4)
+B3 HP: 4 - 4 => 0
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
+[BOON] Poison Effect triggered on R1 (Usage: 2/2)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 HP: 6 - 5 => 1
+Magic: B2 targeting B0 (HP: 10)
+[HEAL] B0 healed for 0 HP (from 10 to 10/10)
+[A29] B2 healed B0 for 3 HP
 
 
 [Tick 24] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B3 applied Poison Effect to R2 (usage: 2)
+Ranged: R4 targeting B2 (HP: 7)
+B2 HP: 7 - 2 => 5
+  -> B2 (magic) tick reset due to ranged attack!
 
 
 [Tick 25] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
-
-
-[Tick 26] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B3 applied Poison Effect to R2 (usage: 2)
-
-
-[Tick 27] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
-
-
-[Tick 28] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B3 applied Poison Effect to R2 (usage: 2)
-
-
-[Tick 29] 1 unit(s) acting
-Magic: R4 targeting R2 (HP: 10)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-[A29] R4 healed R2 for 5 HP
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
+[BOON] Refreshing existing Poison Effect on R1
+[A28] B1 applied Poison Effect to R1 (usage: 2)
 
 
 [Tick 30] 7 unit(s) acting
-Ranged: R1 targeting B0 (HP: 12)
-B0 HP: 12 - 7 => 5
-[A19] R1 speed changed from 1 to 0
-  -> B0 (magic) tick reset due to ranged attack!
-Ranged: R2 targeting B0 (HP: 5)
-B0 HP: 5 - 0 => 5
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 7)
-[BOON] Poison Effect triggered on R2 (Usage: 2/2)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 10 - 5 => 5
-Ranged: R2 targeting B1 (HP: 12)
-B1 HP: 12 - 0 => 12
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 7)
-[BOON] Poison Effect triggered on R2 (Usage: 1/2)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 5 - 5 => 0
-[BOON] Poison Effect expired on R2 - cleaned up
-  -> R2 died during after-actions, stopping further actions
-Ranged: R0 targeting B0 (HP: 5)
-B0 HP: 9 - 9 => 0
-[A19] R0 speed changed from 2 to 1
-Ranged: B1 targeting R3 (HP: 6)
-R3 HP: 6 - 0 => 6
-Ranged: B1 targeting R4 (HP: 5)
-R4 HP: 5 - 1 => 4
-  -> R4 (magic) tick reset due to ranged attack!
-Magic: R3 targeting B1 (HP: 12)
-[A06] B1 speed changed from 1 to 0
+Ranged: R4 targeting B2 (HP: 5)
+B2 HP: 5 - 2 => 3
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R1 (HP: 1)
+R1 HP: 4 - 4 => 0
+Ranged: B1 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[BOON] Applied Poison Effect to R2 (Usage: 2)
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Ranged: B4 targeting R2 (HP: 12)
+R2 HP: 12 - 4 => 8
+[A19] B4 speed changed from 3 to 2
+  -> R2 (magic) tick reset due to ranged attack!
+Melee: R0 targeting B2 (HP: 3)
+B2 HP: 4 - 4 => 0
 
 
-[Tick 32] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 6)
-R3 HP: 6 - 1 => 5
-[BOON] Applied Poison Effect to R3 (Usage: 2)
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 5)
-[HEAL] R3 healed for 5 HP (from 5 to 10/12)
-[A29] R4 healed R3 for 5 HP
+[Tick 35] 1 unit(s) acting
+Ranged: B1 targeting R2 (HP: 8)
+R2 HP: 8 - 0 => 8
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
 
 
-[Tick 33] 2 unit(s) acting
-Ranged: R0 targeting B1 (HP: 12)
-B1 HP: 12 - 8 => 4
-[A19] R0 speed changed from 1 to 0
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 2 => 8
-  -> R3 (magic) tick reset due to ranged attack!
+[Tick 36] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 5 => 5
 
 
-[Tick 34] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 8)
-R3 HP: 8 - 1 => 7
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 7)
-[HEAL] R3 healed for 5 HP (from 7 to 12/12)
-[A29] R4 healed R3 for 5 HP
+[Tick 40] 4 unit(s) acting
+Ranged: B4 targeting R2 (HP: 8)
+R2 HP: 8 - 4 => 4
+[A19] B4 speed changed from 2 to 1
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R2 (HP: 4)
+R2 HP: 4 - 4 => 0
+Melee: R0 targeting B0 (HP: 5)
+B0 HP: 7 - 7 => 0
 
 
-[Tick 36] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 38] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 39] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 40] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 42] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 44] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
+[Tick 42] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 10)
+B1 HP: 10 - 7 => 3
 
 
 [Tick 45] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
+Ranged: B1 targeting R3 (HP: 11)
+R3 HP: 11 - 1 => 10
+[BOON] Applied Poison Effect to R3 (Usage: 2)
+[A28] B1 applied Poison Effect to R3 (usage: 2)
 
 
-[Tick 46] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
+[Tick 48] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 3)
+B1 HP: 7 - 7 => 0
 
 
-[Tick 48] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
+[Tick 50] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 7 => 3
+  -> B4 (ranged) delayed by 1 tick(s) due to 7/10 damage!
 
 
-[Tick 50] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 51] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 52] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 54] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 56] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 57] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 58] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 60] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 62] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 63] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 64] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 66] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 68] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 69] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 70] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 72] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 74] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 75] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 2 => 10
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 76] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 78] 3 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B4 targeting R3 (HP: 11)
-R3 HP: 11 - 2 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R4 healed R3 for 5 HP
-
-
-[Tick 80] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
-[A29] R4 healed R3 for 5 HP
-Battle Over! Tick limit reached (0 ticks elapsed)
+[Tick 54] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 3)
+B4 HP: 3 - 3 => 0
+Battle Over! Red Team wins!

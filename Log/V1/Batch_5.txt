@@ -1,109 +1,131 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:12 Speed:3 Alive:Yes
-Unit 1: R1 HP:10 Speed:2 Alive:Yes
-Unit 2: R2 HP:10 Speed:5 Alive:Yes
-Unit 3: R3 HP:10 Speed:5 Alive:Yes
-Unit 4: R4 HP:12 Speed:3 Alive:Yes
-Unit 5: B0 HP:10 Speed:0 Alive:Yes
-Unit 6: B1 HP:10 Speed:4 Alive:Yes
-Unit 7: B2 HP:10 Speed:2 Alive:Yes
-Unit 8: B3 HP:10 Speed:3 Alive:Yes
-Unit 9: B4 HP:8 Speed:3 Alive:Yes
+Unit 0: R0 HP:10 Speed:5 Alive:Yes
+Unit 1: R1 HP:10 Speed:4 Alive:Yes
+Unit 2: R2 HP:11 Speed:4 Alive:Yes
+Unit 3: R3 HP:6 Speed:3 Alive:Yes
+Unit 4: R4 HP:8 Speed:4 Alive:Yes
+Unit 5: B0 HP:10 Speed:5 Alive:Yes
+Unit 6: B1 HP:10 Speed:7 Alive:Yes
+Unit 7: B2 HP:15 Speed:2 Alive:Yes
+Unit 8: B3 HP:10 Speed:6 Alive:Yes
+Unit 9: B4 HP:12 Speed:2 Alive:Yes
 ==========================
 
 
-[Tick 12] 2 unit(s) acting
-Melee: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 1 => 9
-Magic: R3 targeting B0 (HP: 9)
-B0 HP: 9 - 1 => 8
-Magic: R3 targeting B1 (HP: 10)
-B1 HP: 10 - 1 => 9
-
-
-[Tick 15] 1 unit(s) acting
-Melee: B1 targeting R1 (HP: 10)
-R1 HP: 10 - 7 => 3
-  -> R1 (ranged) delayed by 1 tick(s) due to 7/10 damage!
-
-
-[Tick 20] 4 unit(s) acting
-Ranged: B3 targeting R1 (HP: 3)
-R1 HP: 7 - 7 => 0
-[A19] B3 speed changed from 3 to 2
-Ranged: R0 targeting B0 (HP: 8)
-B0 HP: 8 - 0 => 8
-Magic: R4 targeting B0 (HP: 8)
-B0 HP: 8 - 2 => 6
-Magic: R4 targeting B1 (HP: 9)
-B1 HP: 9 - 2 => 7
-
-
-[Tick 24] 2 unit(s) acting
-Melee: R2 targeting B0 (HP: 6)
-B0 HP: 6 - 1 => 5
-Magic: R3 targeting B0 (HP: 5)
-B0 HP: 5 - 1 => 4
-Magic: R3 targeting B1 (HP: 7)
-B1 HP: 7 - 1 => 6
-
-
-[Tick 30] 2 unit(s) acting
-Melee: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 8 => 4
-  -> R4 (magic) tick reset due to melee attack!
-Magic: B2 targeting B0 (HP: 4)
-[HEAL] B0 healed for 5 HP (from 4 to 9/10)
-[A29] B2 healed B0 for 5 HP
-
-
-[Tick 36] 2 unit(s) acting
-Melee: R2 targeting B0 (HP: 9)
-B0 HP: 9 - 1 => 8
-Magic: R3 targeting B0 (HP: 8)
-B0 HP: 8 - 1 => 7
-Magic: R3 targeting B1 (HP: 6)
-B1 HP: 6 - 1 => 5
-
-
-[Tick 40] 3 unit(s) acting
-Ranged: B3 targeting R4 (HP: 4)
-R4 HP: 8 - 8 => 0
-[A19] B3 speed changed from 2 to 1
-Ranged: R0 targeting B0 (HP: 7)
-B0 HP: 7 - 0 => 7
-
-
-[Tick 45] 1 unit(s) acting
-Melee: B1 targeting R0 (HP: 12)
-R0 HP: 12 - 9 => 3
-  -> R0 (ranged) delayed by 1 tick(s) due to 9/12 damage!
-
-
-[Tick 48] 2 unit(s) acting
-Melee: R2 targeting B0 (HP: 7)
-B0 HP: 7 - 1 => 6
-Magic: R3 targeting B0 (HP: 6)
-B0 HP: 6 - 1 => 5
-Magic: R3 targeting B1 (HP: 5)
-B1 HP: 5 - 1 => 4
-
-
-[Tick 60] 4 unit(s) acting
-Melee: B4 targeting R0 (HP: 3)
-B4 HP: 8 - 3 => 5
-R0 HP: 6 - 6 => 0
-Melee: R2 targeting B0 (HP: 5)
-B0 HP: 5 - 1 => 4
-Melee: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 10 => 0
-Magic: B2 targeting B0 (HP: 4)
-[HEAL] B0 healed for 5 HP (from 4 to 9/10)
-[A29] B2 healed B0 for 5 HP
+[Tick 60] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 11)
+R2 HP: 11 - 9 => 2
+  -> R2 (magic) tick reset due to melee attack!
 
 
 [Tick 70] 1 unit(s) acting
-Ranged: B3 targeting R3 (HP: 10)
+Ranged: B3 targeting R2 (HP: 2)
+R2 HP: 3 - 3 => 0
+[AFTER-ACTION] B3 performs after-action on R0 (threat: 5)
+R0 HP: 10 - 4 => 6
+
+
+[Tick 84] 2 unit(s) acting
+Magic: R0 targeting R1 (HP: 10)
+[HEAL] R1 healed for 0 HP (from 10 to 10/10)
+[A29] R0 healed R1 for 2 HP
+Magic: R0 targeting R4 (HP: 8)
+[HEAL] R4 healed for 0 HP (from 8 to 8/8)
+[A29] R0 healed R4 for 2 HP
+Magic: R0 targeting R3 (HP: 6)
+[HEAL] R3 healed for 0 HP (from 6 to 6/6)
+[A29] R0 healed R3 for 2 HP
+Magic: B0 targeting B2 (HP: 15)
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 105] 2 unit(s) acting
+Melee: R1 targeting B2 (HP: 15)
+B2 HP: 15 - 6 => 9
+Magic: R4 targeting B2 (HP: 9)
+[A33] B2 threat changed from 8 to 6
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 6 to 4
+Magic: R4 targeting B1 (HP: 10)
+[A33] B1 threat changed from 6 to 4
+
+
+[Tick 120] 1 unit(s) acting
+Melee: B1 targeting R0 (HP: 6)
+R0 HP: 10 - 10 => 0
+
+
+[Tick 140] 2 unit(s) acting
+Ranged: B3 targeting R1 (HP: 10)
+R1 HP: 10 - 1 => 9
+Magic: R3 targeting R1 (HP: 9)
+[BOON] Applied HasteSTART to R1 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 168] 1 unit(s) acting
+Magic: B0 targeting B2 (HP: 9)
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 180] 1 unit(s) acting
+Melee: B1 targeting R1 (HP: 9)
+R1 HP: 9 - 7 => 2
+
+
+[Tick 210] 5 unit(s) acting
+Ranged: B3 targeting R1 (HP: 2)
+R1 HP: 2 - 1 => 1
+Melee: B2 targeting R1 (HP: 1)
+R1 HP: 3 - 3 => 0
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered ProtectSTART
+[A02] B2 defense changed from 3 to 6
+Magic: R4 targeting B2 (HP: 9)
+[A33] B2 threat changed from 6 to 4
+Magic: R4 targeting B4 (HP: 12)
+[A33] B4 threat changed from 5 to 3
+Magic: R4 targeting B0 (HP: 10)
+[A33] B0 threat changed from 4 to 2
+
+
+[Tick 240] 1 unit(s) acting
+Melee: B1 targeting R4 (HP: 8)
+R4 HP: 9 - 9 => 0
+
+
+[Tick 252] 1 unit(s) acting
+Magic: B0 targeting B1 (HP: 10)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 280] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 6)
+R3 HP: 6 - 4 => 2
+  -> R3 (magic) tick reset due to ranged attack!
+
+
+[Tick 294] 1 unit(s) acting
+Magic: B0 targeting B1 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 300] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
 R3 HP: 10 - 10 => 0
-[A19] B3 speed changed from 1 to 0
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 4)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 0 to 3
 Battle Over! Blue Team wins!

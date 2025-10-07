@@ -10,3 +10,10 @@ NUM_BATCHES=20
 # Simulations per batch (round-robin matches per batch)  
 SIMULATIONS_PER_BATCH=45
 
+#Strategy Ratio
+
+RATIO_BS=0.7
+
+RATIO_CS=0.3
+
+RATIO_SYS=0

@@ -11,6 +11,7 @@
 #include "Element/EquipmentLoader.h"
 #include "Element/BattleActionLoader.h"
 #include "Element/UnitGenerator.h"
+#include "Element/ArmorTypeInitializer.h"
 
 #include "Sampling/BatchCreator.h"
 
@@ -27,6 +28,12 @@ private:
     ElementList elementList;
     std::unordered_map<std::string, BattleAction> actionMap;
     std::array<Unit, 10> battleUnits;
+
+    //Ratio of strategies
+    //BS: Basic, CS: Counter, SYS: Synergistic
+    float StrategyRatio_BS;
+    float StrategyRatio_CS;
+    float StrategyRatio_SYS;
     
 public:
     NewMasterController(const std::string& config) : configFile(config) {}
@@ -39,15 +46,24 @@ public:
 
         while (std::getline(file, line)) {
 
-            if (line.empty() || line[0] == '#') continue;
+        if (line.empty() || line[0] == '#') continue;
 
-            if (line.find("NUM_BATCHES=") == 0) {
+        if (line.find("NUM_BATCHES=") == 0) {
             numBatches = std::stoi(line.substr(12));
 
-            }else if (line.find("TEAMS_PER_BATCH=") == 0) {
-                teamsPerBatch = std::stoi(line.substr(16));
-            }
+        } else if (line.find("TEAMS_PER_BATCH=") == 0) {
+            teamsPerBatch = std::stoi(line.substr(16));
+            
+        } else if (line.find("RATIO_BS=") == 0) {
+            StrategyRatio_BS = std::stof(line.substr(9));
+            
+        } else if (line.find("RATIO_CS=") == 0) {
+            StrategyRatio_CS = std::stof(line.substr(9));
+            
+        } else if (line.find("RATIO_SYS=") == 0) {
+            StrategyRatio_SYS = std::stof(line.substr(10));
         }
+    }
     }
     
     void executeFullPipeline() {
@@ -56,7 +72,13 @@ public:
         // Stage 1: Action Loading & Instantiation, Element(Equipment) Loading & Instantiation, Unit Instantiation
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
         EquipmentLoader loader;
+
         elementList = loader.InstantiateElements(actionMap);
+        
+        //Set armor elements ArmorType
+        ArmorTypeInitializer armorTypeInitializer(StrategyRatio_CS, &elementList.armors);
+        armorTypeInitializer.Init_ArmorList();
+
         battleUnits = GenerateUnits();
         std::cout<<"Stage 1 Complete"<<std::endl;
 
@@ -83,48 +105,9 @@ public:
         csvGenerator.Convert(testSubjects);
         std::cout<<"Stage 4 Complete"<<std::endl;
 
+    }  
+};  
 
-        // // Calculate number of batches (assuming configs are divided into batches)
-        // int numBatches = (numBatches + 9) / 10; // Round up division for batches of 10
-        // std::cout << "Batches: " << numBatches << std::endl;
-        
-        // // Final timing
-        // auto endTime = std::chrono::high_resolution_clock::now();
-        // auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
-        
-        // std::cout << "Total execution time: ";
-        // if (duration.count() >= 1000) {
-        //     auto seconds = duration.count() / 1000.0;
-        //     std::cout << std::fixed << std::setprecision(2) << seconds << " seconds";
-        // } else {
-        //     std::cout << duration.count() << " milliseconds";
-        // }
-        // std::cout << std::endl;
-        
-        // return 0;
-    }
-    
-private:
-    
-    bool executeTestSubjectAnalysis() {
-        
-        // Build EquipmentAggregator to analyze the real TestSubject data from Equipment objects (suppress output)
-        std::string buildCmd = "cd " + Paths::ANALYSIS_DIR + " && g++ -std=c++17 EquipmentAggregator.cpp -o EquipmentAggregator.exe >nul 2>&1";
-        if (std::system(buildCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: EquipmentAggregator build failed!" << std::endl;
-            return false;
-        }
-        
-        // Execute EquipmentAggregator to get real accumulated TestSubject statistics (suppress output)
-        std::string execCmd = "cd " + Paths::ANALYSIS_DIR + " && .\\EquipmentAggregator.exe >nul 2>&1";
-        if (std::system(execCmd.c_str()) != 0) {
-            std::cerr << "    ERROR: TestSubject analysis execution failed!" << std::endl;
-            return false;
-        }
-        
-        return true;
-    }
-};
 
 int main() {
     std::string configFile = Paths::MASTER_CONFIG; 
