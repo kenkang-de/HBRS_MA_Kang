@@ -11,7 +11,7 @@
 #include "Element/EquipmentLoader.h"
 #include "Element/BattleActionLoader.h"
 #include "Element/UnitGenerator.h"
-#include "Element/ArmorTypeInitializer.h"
+#include "Element/CounterTypeInitializer.h"
 
 #include "Sampling/BatchCreator.h"
 
@@ -75,9 +75,10 @@ public:
 
         elementList = loader.InstantiateElements(actionMap);
         
-        //Set armor elements ArmorType
-        ArmorTypeInitializer armorTypeInitializer(StrategyRatio_CS, &elementList.armors);
-        armorTypeInitializer.Init_ArmorList();
+        //Set armor, weapons elements CounterType
+        CounterTypeInitializer counterTypeInitializer(StrategyRatio_CS, &elementList.armors, &elementList.weapons);
+        counterTypeInitializer.Init_ArmorList();
+        counterTypeInitializer.Init_WeaponList();
 
         battleUnits = GenerateUnits();
         std::cout<<"Stage 1 Complete"<<std::endl;

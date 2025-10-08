@@ -75,10 +75,10 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-echo Compiling ArmorTypeInitializer.cpp...
-g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -c ArmorTypeInitializer.cpp -o ArmorTypeInitializer.o
+echo Compiling CounterTypeInitializer.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -c CounterTypeInitializer.cpp -o CounterTypeInitializer.o
 if %ERRORLEVEL% NEQ 0 (
-    echo Failed to compile ArmorTypeInitializer.cpp
+    echo Failed to compile CounterTypeInitializer.cpp
     exit /b 1
 )
 
@@ -119,7 +119,7 @@ g++ %LINK_FLAGS% ^
     Element/UnitGenerator.o ^
     Element/ElementList.o ^
     Element/Stat.o ^
-    Element/ArmorTypeInitializer.o ^
+    Element/CounterTypeInitializer.o ^
     Sampling/BatchCreator.o ^
     Analysis/TestSubjectToCSV.o ^
     -LSimulator ^

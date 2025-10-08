@@ -4,6 +4,7 @@
 #include "BattleAction.h"  
 #include <string>
 #include "../Element/Stat.h"
+#include "../Element/CounterTypeInitializer.h"
 #include "TestSubject.h"
 
 class Weapon : public TestSubject {
@@ -11,15 +12,19 @@ class Weapon : public TestSubject {
     Stat stat;
     BattleAction action; 
 
+    CounterType weaponType;
+
 public:
-    Weapon(std::string id, std::string name, Stat stat, const BattleAction& action)
-        : TestSubject(id), name(name), stat(stat), action(action) {}
+    Weapon(std::string id, std::string name, Stat stat, const BattleAction& action, CounterType _weaponType = CounterType::None)
+        : TestSubject(id), name(name), stat(stat), action(action), weaponType(_weaponType){}
 
     const std::string& GetName() const { return name; }
     Stat& GetStat() { return stat; }
     const Stat& GetStat() const { return stat; }
 
     const BattleAction& GetAction() const { return action; }
+    void SetWeaponType(CounterType _weaponType) {this->weaponType = _weaponType;}
+    CounterType GetArmorType() {return weaponType;}
 };
 
 #endif

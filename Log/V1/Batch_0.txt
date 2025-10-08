@@ -1,491 +1,175 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:4 Alive:Yes
-Unit 1: R1 HP:12 Speed:3 Alive:Yes
-Unit 2: R2 HP:8 Speed:3 Alive:Yes
-Unit 3: R3 HP:10 Speed:2 Alive:Yes
-Unit 4: R4 HP:15 Speed:2 Alive:Yes
-Unit 5: B0 HP:12 Speed:2 Alive:Yes
-Unit 6: B1 HP:12 Speed:5 Alive:Yes
-Unit 7: B2 HP:10 Speed:1 Alive:Yes
-Unit 8: B3 HP:10 Speed:6 Alive:Yes
-Unit 9: B4 HP:10 Speed:2 Alive:Yes
+Unit 0: R0 HP:13 Speed:0 Alive:Yes
+Unit 1: R1 HP:10 Speed:1 Alive:Yes
+Unit 2: R2 HP:10 Speed:7 Alive:Yes
+Unit 3: R3 HP:15 Speed:0 Alive:Yes
+Unit 4: R4 HP:12 Speed:3 Alive:Yes
+Unit 5: B0 HP:12 Speed:4 Alive:Yes
+Unit 6: B1 HP:8 Speed:4 Alive:Yes
+Unit 7: B2 HP:10 Speed:2 Alive:Yes
+Unit 8: B3 HP:6 Speed:4 Alive:Yes
+Unit 9: B4 HP:12 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 10] 1 unit(s) acting
-Melee: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-[A06] R4 speed changed from 2 to 1
-
-
 [Tick 12] 1 unit(s) acting
-Melee: B1 targeting R4 (HP: 15)
-R4 HP: 15 - 1 => 14
+Melee: R2 targeting B0 (HP: 12)
+B0 HP: 12 - 0 => 12
 
 
-[Tick 15] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 1 => 9
-[A20] B4 delayed by 1 intervals (30 ticks)
-  -> B4 (magic) tick reset due to ranged attack!
-
-
-[Tick 20] 3 unit(s) acting
-Ranged: R1 targeting B4 (HP: 9)
-[A10] R1 threat changed from 6 to 7
-[A04] R1 attack changed from 3 to 5
-B4 HP: 9 - 3 => 6
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: B3 targeting R4 (HP: 14)
-R4 HP: 14 - 0 => 14
-[A06] R4 speed changed from 1 to 0
-Magic: R2 targeting R4 (HP: 14)
-[BOON] Applied ProtectSTART to R4 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 21] 3 unit(s) acting
+Ranged: B3 targeting R3 (HP: 15)
+[A10] B3 threat changed from 2 to 3
+[A04] B3 attack changed from 6 to 8
+R3 HP: 15 - 3 => 12
+Melee: B0 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
+Magic: B1 targeting R3 (HP: 12)
+[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
 
 
 [Tick 24] 1 unit(s) acting
-Melee: B1 targeting R4 (HP: 14)
-R4 HP: 14 - 1 => 13
+Melee: R2 targeting B0 (HP: 12)
+B0 HP: 12 - 0 => 12
 
 
-[Tick 30] 4 unit(s) acting
-Ranged: B0 targeting R4 (HP: 13)
-R4 HP: 13 - 0 => 13
-Ranged: B0 targeting R1 (HP: 12)
-R1 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: R0 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
-[A20] B4 delayed by 1 intervals (30 ticks)
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: B3 targeting R4 (HP: 13)
-R4 HP: 13 - 0 => 13
-[A06] R4 speed changed from 0 to 0
+[Tick 28] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 12)
+B0 HP: 12 - 1 => 11
+[A10] R4 threat changed from 6 to 5
+Melee: B4 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
+[A10] B4 threat changed from 5 to 4
 
 
 [Tick 36] 1 unit(s) acting
-Melee: B1 targeting R4 (HP: 13)
-R4 HP: 13 - 1 => 12
+Melee: R2 targeting B0 (HP: 11)
+B0 HP: 11 - 0 => 11
 
 
-[Tick 40] 3 unit(s) acting
-Ranged: R1 targeting B4 (HP: 5)
-[A10] R1 threat changed from 7 to 8
-[A04] R1 attack changed from 5 to 7
-B4 HP: 5 - 5 => 0
-Melee: B3 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-[A06] R4 speed changed from 0 to 0
-Magic: R2 targeting R4 (HP: 12)
-[BOON] Refreshing existing ProtectSTART on R4
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 45] 1 unit(s) acting
-Ranged: R0 targeting B0 (HP: 12)
-B0 HP: 12 - 0 => 12
-[A20] B0 delayed by 1 intervals (30 ticks)
+[Tick 42] 4 unit(s) acting
+Ranged: B2 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
+Ranged: B2 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: B2 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+Ranged: B3 targeting R3 (HP: 12)
+[A10] B3 threat changed from 3 to 4
+[A04] B3 attack changed from 8 to 10
+R3 HP: 12 - 5 => 7
+Melee: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Magic: B1 targeting R3 (HP: 7)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
 
 
 [Tick 48] 1 unit(s) acting
-Melee: B1 targeting R1 (HP: 12)
-R1 HP: 12 - 3 => 9
+Melee: R2 targeting B0 (HP: 11)
+B0 HP: 11 - 0 => 11
 
 
-[Tick 50] 1 unit(s) acting
-Melee: B3 targeting R1 (HP: 9)
-R1 HP: 9 - 0 => 9
-[A06] R1 speed changed from 3 to 2
+[Tick 56] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 11)
+B0 HP: 11 - 1 => 10
+[A10] R4 threat changed from 5 to 4
+Melee: B4 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+[A10] B4 threat changed from 4 to 3
 
 
 [Tick 60] 1 unit(s) acting
-Ranged: B2 targeting R1 (HP: 9)
-R1 HP: 9 - 2 => 7
+Melee: R2 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
 
 
-[Tick 90] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 7)
-R1 HP: 7 - 0 => 7
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 9)
-R3 HP: 9 - 1 => 8
-  -> R3 (magic) tick reset due to ranged attack!
+[Tick 63] 3 unit(s) acting
+Ranged: B3 targeting R3 (HP: 7)
+[A10] B3 threat changed from 4 to 5
+[A04] B3 attack changed from 10 to 12
+R3 HP: 7 - 7 => 0
 
 
-[Tick 120] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 7)
-R1 HP: 7 - 2 => 5
-Ranged: B0 targeting R1 (HP: 5)
-R1 HP: 5 - 0 => 5
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 8)
-R3 HP: 8 - 1 => 7
-  -> R3 (magic) tick reset due to ranged attack!
+[Tick 72] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
 
 
-[Tick 150] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 5)
-R1 HP: 5 - 0 => 5
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 1 => 6
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 180] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 5)
-R1 HP: 5 - 2 => 3
-Ranged: B0 targeting R1 (HP: 3)
-R1 HP: 3 - 0 => 3
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 6)
-R3 HP: 6 - 1 => 5
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 210] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 3)
-R1 HP: 3 - 0 => 3
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 5)
-R3 HP: 5 - 1 => 4
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 240] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 3)
-R1 HP: 3 - 2 => 1
-Ranged: B0 targeting R1 (HP: 1)
-R1 HP: 1 - 0 => 1
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 4)
-R3 HP: 4 - 1 => 3
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 270] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 1)
-R1 HP: 1 - 0 => 1
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 3)
-R3 HP: 3 - 1 => 2
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 300] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 1)
-R1 HP: 2 - 2 => 0
-[AFTER-ACTION] B2 performs after-action on R4 (threat: 8)
-[A19] B2 speed changed from 1 to 2
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 2)
-R3 HP: 2 - 1 => 1
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 330] 1 unit(s) acting
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 1)
-R3 HP: 1 - 1 => 0
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 360] 2 unit(s) acting
+[Tick 84] 8 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 1 => 9
+[A10] R4 threat changed from 4 to 3
+Ranged: B3 targeting R1 (HP: 10)
+[A10] B3 threat changed from 5 to 6
+[A04] B3 attack changed from 12 to 14
+R1 HP: 10 - 10 => 0
+Ranged: B2 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 8)
-R2 HP: 8 - 1 => 7
-  -> R2 (magic) tick reset due to ranged attack!
+R4 HP: 12 - 1 => 11
+Melee: R2 targeting B0 (HP: 9)
+B0 HP: 9 - 0 => 9
 
 
-[Tick 390] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 7)
-R2 HP: 7 - 1 => 6
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 96] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 9)
+B0 HP: 9 - 0 => 9
 
 
-[Tick 420] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 6)
-R2 HP: 6 - 1 => 5
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 105] 3 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+[A10] B3 threat changed from 6 to 7
+[A04] B3 attack changed from 14 to 16
+R0 HP: 13 - 13 => 0
 
 
-[Tick 450] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 5)
-R2 HP: 5 - 1 => 4
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 108] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 9)
+B0 HP: 9 - 0 => 9
 
 
-[Tick 480] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 4)
-R2 HP: 4 - 1 => 3
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 112] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 9)
+B0 HP: 9 - 1 => 8
+[A10] R4 threat changed from 3 to 2
+Melee: B4 targeting R4 (HP: 11)
+R4 HP: 11 - 3 => 8
+[A10] B4 threat changed from 3 to 2
 
 
-[Tick 510] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 3)
-R2 HP: 3 - 1 => 2
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 120] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 8)
+B0 HP: 8 - 0 => 8
 
 
-[Tick 540] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 2)
-R2 HP: 2 - 1 => 1
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 126] 4 unit(s) acting
+Ranged: B2 targeting R2 (HP: 10)
+R2 HP: 10 - 4 => 6
+Ranged: B2 targeting R4 (HP: 8)
+R4 HP: 8 - 1 => 7
+Ranged: B3 targeting R2 (HP: 6)
+[A10] B3 threat changed from 7 to 8
+[A04] B3 attack changed from 16 to 18
+R2 HP: 19 - 19 => 0
+Melee: B0 targeting R4 (HP: 7)
+R4 HP: 7 - 6 => 1
+  -> R4 (ranged) delayed by 1 tick(s) due to 6/12 damage!
+Magic: B1 targeting R4 (HP: 1)
+[BOON] Applied Tetrodo Effect to R4 (Usage: 2)
+[A28] B1 applied Tetrodo Effect to R4 (usage: 2)
 
 
-[Tick 570] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: B0 targeting R2 (HP: 1)
-R2 HP: 1 - 1 => 0
-
-
-[Tick 600] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 630] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 660] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 690] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 720] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 750] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 780] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 810] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 840] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 870] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 900] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 930] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 960] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 990] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1020] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1050] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1080] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1110] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1140] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1170] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-
-
-[Tick 1200] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Battle Over! Tick limit reached (0 ticks elapsed)
+[Tick 141] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 6)
+B3 HP: 6 - 4 => 2
+[A10] R4 threat changed from 2 to 1
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 1)
+[BOON] Tetrodo Effect triggered on R4 (Usage: 2/2)
+[EXECUTE_EFFECT] R4 triggered Tetrodo Effect
+R4 HP: 5 - 5 => 0
+  -> R4 died during after-actions, stopping further actions
+Battle Over! Blue Team wins!
