@@ -13,6 +13,7 @@ class Weapon : public TestSubject {
     BattleAction action; 
 
     CounterType weaponType;
+    std::vector<std::string> unitSynergyIDs;
 
 public:
     Weapon(std::string id, std::string name, Stat stat, const BattleAction& action, CounterType _weaponType = CounterType::None)
@@ -24,7 +25,9 @@ public:
 
     const BattleAction& GetAction() const { return action; }
     void SetWeaponType(CounterType _weaponType) {this->weaponType = _weaponType;}
-    CounterType GetArmorType() {return weaponType;}
+    CounterType GetWeaponType() {return weaponType;}
+
+    std::vector<std::string>& GetUnitSynergyIDs() {return unitSynergyIDs;}
 };
 
 #endif

@@ -13,6 +13,7 @@ class Armor : public TestSubject {
     Stat stat;
  
     CounterType armorType;
+    std::vector<std::string> unitSynergyIDs;
 
 public:
     Armor(std::string id, std::string name, Stat stat, CounterType armorType = CounterType::None) : 
@@ -25,6 +26,7 @@ public:
     void SetArmorType(CounterType armorType) {this->armorType = armorType;}
     CounterType GetArmorType() {return armorType;}
 
+    std::vector<std::string>& GetUnitSynergyIDs() {return unitSynergyIDs;}
 };
 
 #endif

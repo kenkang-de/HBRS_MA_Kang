@@ -1,209 +1,96 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:7 Alive:Yes
-Unit 1: R1 HP:8 Speed:5 Alive:Yes
-Unit 2: R2 HP:10 Speed:4 Alive:Yes
-Unit 3: R3 HP:12 Speed:1 Alive:Yes
-Unit 4: R4 HP:12 Speed:3 Alive:Yes
-Unit 5: B0 HP:10 Speed:6 Alive:Yes
+Unit 0: R0 HP:10 Speed:5 Alive:Yes
+Unit 1: R1 HP:12 Speed:4 Alive:Yes
+Unit 2: R2 HP:10 Speed:3 Alive:Yes
+Unit 3: R3 HP:10 Speed:5 Alive:Yes
+Unit 4: R4 HP:10 Speed:2 Alive:Yes
+Unit 5: B0 HP:6 Speed:4 Alive:Yes
 Unit 6: B1 HP:10 Speed:6 Alive:Yes
-Unit 7: B2 HP:12 Speed:3 Alive:Yes
-Unit 8: B3 HP:8 Speed:5 Alive:Yes
-Unit 9: B4 HP:10 Speed:2 Alive:Yes
+Unit 7: B2 HP:13 Speed:2 Alive:Yes
+Unit 8: B3 HP:10 Speed:4 Alive:Yes
+Unit 9: B4 HP:10 Speed:6 Alive:Yes
 ==========================
 
 
-[Tick 60] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 70] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 12)
-R3 HP: 12 - 3 => 9
+[Tick 10] 2 unit(s) acting
+Ranged: B1 targeting R3 (HP: 10)
+R3 HP: 10 - 3 => 7
   -> R3 (magic) tick reset due to ranged attack!
-Melee: B1 targeting R3 (HP: 9)
-R3 HP: 9 - 2 => 7
-[A02] R3 defense changed from 2 to 1
-  -> R3 (magic) tick reset due to melee attack!
-
-
-[Tick 84] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 7)
-R3 HP: 7 - 4 => 3
-[A10] B3 threat changed from 1 to 0
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: R1 targeting B0 (HP: 10)
-B0 HP: 10 - 4 => 6
-
-
-[Tick 105] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 6)
-B0 HP: 10 - 10 => 0
-
-
-[Tick 120] 1 unit(s) acting
-Ranged: R0 targeting B1 (HP: 10)
-B1 HP: 10 - 3 => 7
-
-
-[Tick 140] 3 unit(s) acting
-Melee: R4 targeting B1 (HP: 7)
-B1 HP: 7 - 4 => 3
-[A06] B1 speed changed from 6 to 5
-Melee: B1 targeting R3 (HP: 3)
-R3 HP: 3 - 3 => 0
-[A02] R3 defense changed from 1 to 0
-Melee: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 5 => 7
-
-
-[Tick 168] 2 unit(s) acting
-Ranged: R1 targeting B1 (HP: 3)
-B1 HP: 5 - 5 => 0
-Ranged: B3 targeting R4 (HP: 7)
-R4 HP: 7 - 3 => 4
-[A10] B3 threat changed from 0 to 0
-
-
-[Tick 180] 1 unit(s) acting
-Ranged: R0 targeting B2 (HP: 12)
-B2 HP: 12 - 2 => 10
-
-
-[Tick 210] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 10)
-B2 HP: 10 - 7 => 3
-Ranged: B4 targeting R4 (HP: 4)
-R4 HP: 4 - 1 => 3
-[A20] R4 delayed by 1 intervals (140 ticks)
-
-
-[Tick 240] 1 unit(s) acting
-Ranged: R0 targeting B2 (HP: 3)
-B2 HP: 3 - 2 => 1
-
-
-[Tick 252] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 3)
-R4 HP: 3 - 3 => 0
-[A10] B3 threat changed from 0 to 0
-Ranged: R1 targeting B2 (HP: 1)
-B2 HP: 4 - 4 => 0
-
-
-[Tick 300] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 315] 1 unit(s) acting
-Ranged: R2 targeting B3 (HP: 8)
-B3 HP: 9 - 9 => 0
-
-
-[Tick 320] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 336] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 340] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 350] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 1 => 9
-
-
-[Tick 360] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-
-
-[Tick 364] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-
-
-[Tick 380] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-
-
-[Tick 385] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 9)
-B4 HP: 9 - 1 => 8
-
-
-[Tick 392] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-
-
-[Tick 400] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-
-
-[Tick 420] 4 unit(s) acting
-Ranged: B4 targeting R2 (HP: 10)
+Ranged: B1 targeting R1 (HP: 12)
+R1 HP: 12 - 0 => 12
+Ranged: B1 targeting R2 (HP: 10)
 R2 HP: 10 - 0 => 10
-[A20] R2 delayed by 1 intervals (105 ticks)
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 1 => 7
-Ranged: R0 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
-Ranged: R1 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
+Ranged: B4 targeting R3 (HP: 7)
+R3 HP: 9 - 9 => 0
 
 
-[Tick 440] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
+[Tick 12] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 13)
+B2 HP: 13 - 3 => 10
 
 
-[Tick 448] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
+[Tick 15] 3 unit(s) acting
+Ranged: B0 targeting R1 (HP: 12)
+R1 HP: 12 - 3 => 9
+Ranged: B0 targeting R2 (HP: 10)
+R2 HP: 10 - 4 => 6
+Ranged: B0 targeting R0 (HP: 10)
+R0 HP: 10 - 5 => 5
+Melee: B3 targeting R1 (HP: 9)
+R1 HP: 9 - 8 => 1
+[A12] B3 defense changed from 8 to 0
+Melee: R1 targeting B2 (HP: 10)
+B2 HP: 10 - 0 => 10
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R1 applied Poison Effect to B2 (usage: 3)
 
 
-[Tick 560] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 7)
-B4 HP: 7 - 1 => 6
+[Tick 20] 3 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 2 => 8
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
+Ranged: B1 targeting R2 (HP: 6)
+R2 HP: 6 - 0 => 6
+Ranged: B1 targeting R0 (HP: 5)
+R0 HP: 5 - 1 => 4
+Ranged: B4 targeting R1 (HP: 1)
+R1 HP: 5 - 5 => 0
 
 
-[Tick 595] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
+[Tick 24] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 10)
+B3 HP: 10 - 1 => 9
 
 
-[Tick 630] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 5)
-B4 HP: 5 - 1 => 4
+[Tick 30] 6 unit(s) acting
+Ranged: B2 targeting R2 (HP: 6)
+R2 HP: 6 - 1 => 5
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 4)
+[BOON] Poison Effect triggered on B2 (Usage: 3/3)
+[EXECUTE_EFFECT] B2 triggered Poison Effect
+B2 HP: 8 - 5 => 3
+Ranged: B1 targeting R2 (HP: 5)
+R2 HP: 5 - 0 => 5
+Ranged: B1 targeting R0 (HP: 4)
+R0 HP: 4 - 1 => 3
+Ranged: B1 targeting R4 (HP: 10)
+R4 HP: 10 - 1 => 9
+Ranged: B4 targeting R2 (HP: 5)
+R2 HP: 6 - 6 => 0
+Ranged: B0 targeting R0 (HP: 3)
+R0 HP: 5 - 5 => 0
+Ranged: B0 targeting R4 (HP: 9)
+R4 HP: 9 - 5 => 4
+Ranged: R4 targeting B3 (HP: 9)
+B3 HP: 9 - 4 => 5
 
 
-[Tick 665] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 4)
-B4 HP: 4 - 1 => 3
-
-
-[Tick 700] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 3)
-B4 HP: 3 - 1 => 2
-
-
-[Tick 735] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 2)
-B4 HP: 2 - 1 => 1
-
-
-[Tick 770] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 1)
-B4 HP: 1 - 1 => 0
-Battle Over! Red Team wins!
+[Tick 40] 2 unit(s) acting
+Ranged: B1 targeting R4 (HP: 4)
+R4 HP: 4 - 1 => 3
+Ranged: B4 targeting R4 (HP: 3)
+R4 HP: 7 - 7 => 0
+Battle Over! Blue Team wins!

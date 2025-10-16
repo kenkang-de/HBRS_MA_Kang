@@ -1,112 +1,72 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:15 Speed:2 Alive:Yes
-Unit 1: R1 HP:10 Speed:5 Alive:Yes
-Unit 2: R2 HP:13 Speed:1 Alive:Yes
-Unit 3: R3 HP:13 Speed:0 Alive:Yes
-Unit 4: R4 HP:10 Speed:0 Alive:Yes
-Unit 5: B0 HP:10 Speed:3 Alive:Yes
-Unit 6: B1 HP:10 Speed:3 Alive:Yes
+Unit 0: R0 HP:4 Speed:3 Alive:Yes
+Unit 1: R1 HP:12 Speed:1 Alive:Yes
+Unit 2: R2 HP:8 Speed:4 Alive:Yes
+Unit 3: R3 HP:8 Speed:3 Alive:Yes
+Unit 4: R4 HP:10 Speed:1 Alive:Yes
+Unit 5: B0 HP:8 Speed:6 Alive:Yes
+Unit 6: B1 HP:11 Speed:0 Alive:Yes
 Unit 7: B2 HP:10 Speed:3 Alive:Yes
-Unit 8: B3 HP:15 Speed:0 Alive:Yes
-Unit 9: B4 HP:10 Speed:5 Alive:Yes
+Unit 8: B3 HP:12 Speed:4 Alive:Yes
+Unit 9: B4 HP:7 Speed:6 Alive:Yes
 ==========================
 
 
-[Tick 6] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B2 (HP: 10)
-B2 HP: 10 - 5 => 5
+[Tick 2] 2 unit(s) acting
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 7 => 3
+[A19] B0 speed changed from 6 to 5
+Ranged: B4 targeting R4 (HP: 3)
+R4 HP: 7 - 7 => 0
+[A19] B4 speed changed from 6 to 5
 
 
-[Tick 10] 3 unit(s) acting
-Ranged: B2 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Melee: B1 targeting R3 (HP: 13)
-B1 HP: 10 - 3 => 7
-R3 HP: 13 - 0 => 13
-Magic: B0 targeting R3 (HP: 13)
-[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
-[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
+[Tick 3] 2 unit(s) acting
+Ranged: R2 targeting B1 (HP: 11)
+B1 HP: 11 - 0 => 11
+Ranged: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 0 => 10
+Ranged: R2 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+Melee: B3 targeting R1 (HP: 12)
+R1 HP: 12 - 2 => 10
+  -> R1 (magic) tick reset due to melee attack!
 
 
-[Tick 12] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B2 (HP: 5)
-B2 HP: 5 - 5 => 0
+[Tick 4] 5 unit(s) acting
+Ranged: R3 targeting B1 (HP: 11)
+B1 HP: 11 - 5 => 6
+  -> B1 (magic) tick reset due to ranged attack!
+Ranged: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 10 => 0
+[A19] B4 speed changed from 5 to 4
+Ranged: B2 targeting R0 (HP: 4)
+R0 HP: 4 - 4 => 0
+[A10] B2 threat changed from 6 to 5
 
 
-[Tick 15] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 15)
-B3 HP: 15 - 3 => 12
+[Tick 16] 2 unit(s) acting
+Ranged: B4 targeting R2 (HP: 8)
+R2 HP: 9 - 9 => 0
+[A19] B4 speed changed from 4 to 3
 
 
-[Tick 18] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B3 (HP: 12)
-B3 HP: 12 - 5 => 7
-
-
-[Tick 20] 2 unit(s) acting
-Melee: B1 targeting R3 (HP: 13)
-B1 HP: 7 - 3 => 4
-R3 HP: 13 - 0 => 13
-Magic: B0 targeting R3 (HP: 13)
-[BOON] Refreshing existing Tetrodo Effect on R3
-[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
+[Tick 18] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 8)
+R3 HP: 8 - 1 => 7
 
 
 [Tick 24] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B3 (HP: 7)
-B3 HP: 7 - 5 => 2
+Ranged: R3 targeting B1 (HP: 6)
+B1 HP: 6 - 5 => 1
+  -> B1 (magic) tick reset due to ranged attack!
+Ranged: B2 targeting R3 (HP: 7)
+R3 HP: 7 - 4 => 3
+[A10] B2 threat changed from 5 to 4
 
 
-[Tick 30] 6 unit(s) acting
-Ranged: R2 targeting B3 (HP: 2)
-B3 HP: 2 - 2 => 0
-[AFTER-ACTION] R2 performs after-action on B0 (threat: 3)
-B0 HP: 10 - 1 => 9
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Melee: B1 targeting R3 (HP: 13)
-B1 HP: 4 - 3 => 1
-R3 HP: 13 - 0 => 13
-Melee: R0 targeting B0 (HP: 9)
-B0 HP: 9 - 2 => 7
-  -> B0 (magic) tick reset due to melee attack!
-Magic: B0 targeting R3 (HP: 13)
-[BOON] Refreshing existing Tetrodo Effect on R3
-[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
-Magic: R1 targeting B0 (HP: 7)
-B0 HP: 7 - 5 => 2
-
-
-[Tick 36] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B0 (HP: 2)
-B0 HP: 5 - 5 => 0
-
-
-[Tick 40] 1 unit(s) acting
-Melee: B1 targeting R3 (HP: 13)
-B1 HP: 3 - 3 => 0
-R3 HP: 13 - 0 => 13
-  -> B1 died during after-actions, stopping further actions
-
-
-[Tick 42] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 13)
-R3 HP: 13 - 0 => 13
-Magic: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 5 => 5
-
-
-[Tick 45] 1 unit(s) acting
-Melee: R0 targeting B4 (HP: 5)
-B4 HP: 5 - 5 => 0
-Battle Over! Red Team wins!
+[Tick 28] 1 unit(s) acting
+Ranged: B0 targeting R3 (HP: 3)
+R3 HP: 9 - 9 => 0
+[A19] B0 speed changed from 5 to 4
+Battle Over! Blue Team wins!

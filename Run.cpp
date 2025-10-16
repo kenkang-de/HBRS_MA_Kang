@@ -12,6 +12,7 @@
 #include "Element/BattleActionLoader.h"
 #include "Element/UnitGenerator.h"
 #include "Element/CounterTypeInitializer.h"
+#include "Element/SynergyComponentInitializer.h"
 
 #include "Sampling/BatchCreator.h"
 
@@ -75,10 +76,15 @@ public:
 
         elementList = loader.InstantiateElements(actionMap);
         
-        //Set armor, weapons elements CounterType
+        //Set armor, weapons components CounterType
         CounterTypeInitializer counterTypeInitializer(StrategyRatio_CS, &elementList.armors, &elementList.weapons);
         counterTypeInitializer.Init_ArmorList();
         counterTypeInitializer.Init_WeaponList();
+
+        //Set armor, weapon components UnitSynergy(Synergy consists of a weapon and an armor)
+        SynergyComponentInitializer synergyComponentInitializer(StrategyRatio_SYS, &elementList.armors, &elementList.weapons);
+        synergyComponentInitializer.Init();
+
 
         battleUnits = GenerateUnits();
         std::cout<<"Stage 1 Complete"<<std::endl;
@@ -106,6 +112,9 @@ public:
         csvGenerator.Convert(testSubjects);
         std::cout<<"Stage 4 Complete"<<std::endl;
 
+auto endTime = std::chrono::high_resolution_clock::now();
+auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
+std::cout << "Total process time: " << duration.count() << " ms" << std::endl;
     }  
 };  
 

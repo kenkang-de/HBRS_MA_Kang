@@ -60,11 +60,11 @@ class CounterTypeInitializer
 
     CounterType GetValidCounterType(std::map<CounterType,int> usageCount);
 
-    CounterType GetLowestUsageArmorType();
+    CounterType GetLowestUsageCounterType(std::map<CounterType,int> usageCount);
 
-    CounterType GetRandomCounterType();
+    void PrintArmorUsageCounts();
 
-    bool AreAllUsageCountsSame(std::map<CounterType,int> usageCount);
+    void PrintWeaponUsageCounts();
 
 };
 

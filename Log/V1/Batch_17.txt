@@ -1,107 +1,131 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:12 Speed:2 Alive:Yes
-Unit 1: R1 HP:10 Speed:2 Alive:Yes
-Unit 2: R2 HP:12 Speed:3 Alive:Yes
-Unit 3: R3 HP:10 Speed:2 Alive:Yes
-Unit 4: R4 HP:10 Speed:4 Alive:Yes
-Unit 5: B0 HP:10 Speed:4 Alive:Yes
-Unit 6: B1 HP:10 Speed:5 Alive:Yes
-Unit 7: B2 HP:10 Speed:5 Alive:Yes
-Unit 8: B3 HP:10 Speed:5 Alive:Yes
+Unit 0: R0 HP:10 Speed:3 Alive:Yes
+Unit 1: R1 HP:12 Speed:2 Alive:Yes
+Unit 2: R2 HP:9 Speed:7 Alive:Yes
+Unit 3: R3 HP:10 Speed:1 Alive:Yes
+Unit 4: R4 HP:10 Speed:1 Alive:Yes
+Unit 5: B0 HP:12 Speed:1 Alive:Yes
+Unit 6: B1 HP:11 Speed:4 Alive:Yes
+Unit 7: B2 HP:12 Speed:3 Alive:Yes
+Unit 8: B3 HP:10 Speed:7 Alive:Yes
 Unit 9: B4 HP:10 Speed:2 Alive:Yes
 ==========================
 
 
-[Tick 12] 3 unit(s) acting
-Magic: B1 targeting R0 (HP: 12)
-R0 HP: 12 - 5 => 7
-Magic: B3 targeting B4 (HP: 10)
-[BOON] Applied BulkupSTART to B4 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B2 targeting R0 (HP: 7)
-R0 HP: 7 - 2 => 5
-Magic: B2 targeting R4 (HP: 10)
-R4 HP: 10 - 2 => 8
-Magic: B2 targeting R2 (HP: 12)
-R2 HP: 12 - 2 => 10
-Magic: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 2 => 8
-Magic: B2 targeting R1 (HP: 10)
-R1 HP: 10 - 2 => 8
+[Tick 12] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B2 (HP: 12)
+B2 HP: 12 - 3 => 9
 
 
-[Tick 15] 2 unit(s) acting
-Melee: B0 targeting R0 (HP: 5)
-R0 HP: 8 - 8 => 0
-Magic: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 3 => 7
-Magic: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 3 => 7
-Magic: R4 targeting B0 (HP: 10)
-B0 HP: 10 - 3 => 7
+[Tick 21] 1 unit(s) acting
+Magic: B1 targeting B2 (HP: 9)
+[A34] B2 attack changed from 3 to 5
 
 
-[Tick 20] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 7)
-B4 HP: 7 - 1 => 6
+[Tick 24] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B2 (HP: 9)
+B2 HP: 9 - 3 => 6
 
 
-[Tick 24] 3 unit(s) acting
-Magic: B1 targeting R4 (HP: 8)
-R4 HP: 8 - 5 => 3
-Magic: B3 targeting B4 (HP: 6)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B2 targeting R4 (HP: 3)
-R4 HP: 3 - 2 => 1
-Magic: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 2 => 8
-Magic: B2 targeting R3 (HP: 8)
-R3 HP: 8 - 2 => 6
-Magic: B2 targeting R1 (HP: 8)
-R1 HP: 8 - 2 => 6
+[Tick 28] 2 unit(s) acting
+Ranged: B2 targeting R4 (HP: 10)
+R4 HP: 10 - 4 => 6
+[BOON] Applied Poison Effect to R4 (Usage: 2)
+[A28] B2 applied Poison Effect to R4 (usage: 2)
+  -> R4 (magic) tick reset due to ranged attack!
+Magic: R0 targeting B2 (HP: 6)
+B2 HP: 6 - 5 => 1
 
 
-[Tick 30] 5 unit(s) acting
-Melee: B4 targeting R4 (HP: 1)
-R4 HP: 2 - 2 => 0
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B4 applied Poison Effect to R4 (usage: 3)
-[DEBUG] B4 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B4
-[AFTER-ACTION] B4 performs after-action on B4 (threat: 9)
-[TEMP-BUFF] BulkupSTART applied to B4 (Duration: 1 turns)
-[EXECUTE_EFFECT] B4 triggered BulkupSTART
-Melee: B0 targeting R2 (HP: 8)
-R2 HP: 10 - 10 => 0
-Magic: R1 targeting B4 (HP: 16)
-B4 HP: 16 - 5 => 11
-Magic: R3 targeting B4 (HP: 11)
-[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B4 (usage: 2)
+[Tick 36] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B2 (HP: 1)
+B2 HP: 3 - 3 => 0
 
 
-[Tick 36] 3 unit(s) acting
-Magic: B2 targeting R3 (HP: 6)
-R3 HP: 6 - 2 => 4
-Magic: B2 targeting R1 (HP: 6)
-R1 HP: 6 - 2 => 4
-Magic: B3 targeting B4 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, effect remains active
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B1 targeting R3 (HP: 4)
-R3 HP: 5 - 5 => 0
+[Tick 42] 3 unit(s) acting
+Ranged: R1 targeting B1 (HP: 11)
+B1 HP: 11 - 1 => 10
+  -> B1 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 1 => 9
+  -> B4 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B0 (HP: 12)
+B0 HP: 12 - 2 => 10
+  -> B0 (magic) tick reset due to ranged attack!
 
 
-[Tick 40] 3 unit(s) acting
-Magic: B2 targeting R1 (HP: 4)
-R1 HP: 4 - 2 => 2
-Magic: B1 targeting R1 (HP: 2)
-R1 HP: 5 - 5 => 0
-Magic: B3 targeting B4 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, effect remains active
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Battle Over! Blue Team wins!
+[Tick 48] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 6 => 4
+  -> B1 (magic) tick reset due to melee attack!
+
+
+[Tick 56] 1 unit(s) acting
+Magic: R0 targeting B1 (HP: 4)
+B1 HP: 5 - 5 => 0
+
+
+[Tick 60] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B4 (HP: 9)
+B4 HP: 9 - 6 => 3
+  -> B4 (magic) tick reset due to melee attack!
+
+
+[Tick 66] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B4 (HP: 3)
+B4 HP: 6 - 6 => 0
+
+
+[Tick 72] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B0 (HP: 10)
+B0 HP: 10 - 7 => 3
+  -> B0 (magic) tick reset due to melee attack!
+
+
+[Tick 78] 2 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Melee: R2 targeting B0 (HP: 3)
+B0 HP: 7 - 7 => 0
+
+
+[Tick 84] 5 unit(s) acting
+Ranged: B3 targeting R4 (HP: 6)
+R4 HP: 6 - 0 => 6
+[A20] R4 delayed by 1 intervals (84 ticks)
+Ranged: R1 targeting B3 (HP: 10)
+B3 HP: 10 - 2 => 8
+Melee: R2 targeting B3 (HP: 8)
+B3 HP: 8 - 7 => 1
+  -> B3 (ranged) delayed by 1 tick(s) due to 7/10 damage!
+Magic: R3 targeting R4 (HP: 6)
+[A33] R4 threat changed from 6 to 8
+[A02] R4 defense changed from 1 to 2
+Magic: R3 targeting R1 (HP: 12)
+[A33] R1 threat changed from 5 to 7
+[A02] R1 defense changed from 3 to 4
+Magic: R0 targeting B3 (HP: 1)
+B3 HP: 5 - 5 => 0
+Battle Over! Red Team wins!

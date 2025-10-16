@@ -4,7 +4,7 @@
 #include "Simulator.h"
 #include "Constants.h" 
 #include "BattleManager.h"
-
+#include "SynergyRule.h"
 
 void Simulator::Init_Battlefield()
 {
@@ -42,15 +42,20 @@ void Simulator::EquipTeam(int startIndex, SimulationTeamSetting* teamSetting)
 
         unit->ResetUnit();
         
-        Weapon* weapon = elementList->FindWeaponByID(unitSetting.weaponID);
-        if(weapon) {
-            unit->SetWeapon(weapon);
-        }
         Armor* armor = elementList->FindArmorByID(unitSetting.armorID);
         if(armor) {
             unit->SetArmor(armor);
         }
+
+        Weapon* weapon = elementList->FindWeaponByID(unitSetting.weaponID);
+        if(weapon) {
+            unit->SetWeapon(weapon);
+        }
+
+        SynergyRule::ApplyUnitSynergyMatch(unit);
     }
+//    SynergyRule::PrintTotalUnitSynergyApplied();
+
 }
 
 void Simulator::SimulateBattle(SimulationTeamSetting* redTeamSetting, SimulationTeamSetting* blueTeamSetting, bool log, std::string batchID)

@@ -66,7 +66,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
         if (ctx.actor && ctx.target && ctx.actor->GetWeapon()) {
             // Magic damage ignores defense
             bool defendable = (ctx.actor->GetWeapon()->GetAction().GetActionType() != ActionType::MAGIC);
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), defendable);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack(), defendable,ctx.actor);
         }
     }},
     //Deal Crit Damage
@@ -74,7 +74,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      if (ctx.actor && ctx.target && ctx.actor->GetWeapon()) {
             // Magic damage ignores defense
             bool defendable = (ctx.actor->GetWeapon()->GetAction().GetActionType() != ActionType::MAGIC);
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, defendable);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, defendable,ctx.actor);
         }
     }},
     //At Attack, 1/3 of current HP  of the actor is added to damage
@@ -82,19 +82,19 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
         if (ctx.actor && ctx.target) {
             // Use floating-point division then cast to int (truncates towards zero)
             int additionalDamage = static_cast<int>(ctx.actor->GetCurrentHP() / 3.0) ;
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + additionalDamage, true);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + additionalDamage, true,ctx.actor);
         }
     }},
     //Adds actor's Speed to damage and attack.
     { "A08", [](const ActionContext& ctx) {
         if (ctx.actor && ctx.target) {
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetSpeed(), true);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetSpeed(), true,ctx.actor);
         }
     }},
     //Adds actor's Defense to damage and attack.
     { "A11", [](const ActionContext& ctx) {
         if (ctx.actor && ctx.target) {
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetDefense(), true);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.actor->GetTotalStat().GetDefense(), true,ctx.actor);
         }
     }},
     //Delete Actor's Defense
@@ -117,7 +117,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     //Add Target's speed to damage and attack.
     { "A21", [](const ActionContext& ctx) {
         if (ctx.actor && ctx.target) {
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.target->GetTotalStat().GetSpeed(), true);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + ctx.target->GetTotalStat().GetSpeed(), true, ctx.actor);
         }
     }},
 
@@ -130,13 +130,13 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     //Deals doubled damage
     { "A23", [](const ActionContext& ctx) {
      if (ctx.actor && ctx.target) {
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, true);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack()*2, true, ctx.actor);
         }
     }},
     //Deals pierce damage (Actor's Attack - Target's speed)
     { "A24", [](const ActionContext& ctx) {
      if (ctx.actor && ctx.target) {
-            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetSpeed(), false);
+            ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetSpeed(), false,ctx.actor);
         }
     }},
     //lower's enemies attack by damage * 0.5 (needs to be used after damage dealing action)
@@ -195,7 +195,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.target)
-                ctx.target->TakeDamage(value, false);
+                ctx.target->TakeDamage(value, false,ctx.actor);
         };
     }},
        //Add to Actor's Attack
@@ -215,7 +215,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.actor)
-                ctx.actor->TakeDamage(value, false);
+                ctx.actor->TakeDamage(value, false,ctx.actor);
         };
     }},
         //Change Speed of a target
@@ -235,7 +235,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
         int value = std::stoi(param);
         return [value](const ActionContext& ctx) {
             if (ctx.target) {
-                ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + value, true);
+                ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() + value, true, ctx.actor);
             }
         };
     }},

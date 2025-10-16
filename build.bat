@@ -76,9 +76,16 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo Compiling CounterTypeInitializer.cpp...
-g++ %COMPILE_FLAGS% -I. -I.. -I../Simulator -c CounterTypeInitializer.cpp -o CounterTypeInitializer.o
+g++ %COMPILE_FLAGS% -I. -I.. -I../Element -c CounterTypeInitializer.cpp -o CounterTypeInitializer.o
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to compile CounterTypeInitializer.cpp
+    exit /b 1
+)
+
+echo Compiling SynergyComponentInitializer.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Element -c SynergyComponentInitializer.cpp -o SynergyComponentInitializer.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile SynergyComponentInitializer.cpp
     exit /b 1
 )
 
@@ -120,6 +127,7 @@ g++ %LINK_FLAGS% ^
     Element/ElementList.o ^
     Element/Stat.o ^
     Element/CounterTypeInitializer.o ^
+    Element/SynergyComponentInitializer.o ^
     Sampling/BatchCreator.o ^
     Analysis/TestSubjectToCSV.o ^
     -LSimulator ^

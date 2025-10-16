@@ -27,8 +27,10 @@ g++ %COMPILE_FLAGS% -I. -I.. -c BoonAction.cpp -o BoonAction.o
 g++ %COMPILE_FLAGS% -I. -I.. -c TempBoonAction.cpp -o TempBoonAction.o
 g++ %COMPILE_FLAGS% -I. -I.. -c GlobalAction.cpp -o GlobalAction.o
 g++ %COMPILE_FLAGS% -I. -I.. -c ActionLibrary.cpp -o ActionLibrary.o
+g++ %COMPILE_FLAGS% -I. -I.. -c CounterRule.cpp -o CounterRule.o
+g++ %COMPILE_FLAGS% -I. -I.. -c SynergyRule.cpp -o SynergyRule.o
 
-ar rcs libsimulator.a BattleAction.o Unit.o Battlefield.o BattleManager.o Team.o TargetManager.o TurnManager.o Simulator.o BoonAction.o TempBoonAction.o GlobalAction.o ActionLibrary.o
+ar rcs libsimulator.a BattleAction.o Unit.o Battlefield.o BattleManager.o Team.o TargetManager.o TurnManager.o Simulator.o BoonAction.o TempBoonAction.o GlobalAction.o ActionLibrary.o CounterRule.o SynergyRule.o
 cd..
 
 if %DEBUG_MODE%==1 (

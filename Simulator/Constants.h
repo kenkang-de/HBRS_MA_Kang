@@ -13,6 +13,9 @@ const int SIMULATION_COUNT = 100; // Number of simulations to run in batch testi
 // Delay calculation constants
 const float DELAY_MULTIPLIER = 2.0f; // Multiplier for damage-based delay calculation
 
+//Multiplier for the counter strategy calculation.
+const float MULTIPLIER_COUNTER = 1.5;
+const float MULTIPLIER_BASIC =1.0;
 
 
 #endif

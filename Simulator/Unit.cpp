@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <cmath>
 
 #include "Unit.h"
 #include "BoonAction.h"
@@ -7,6 +8,7 @@
 #include "ActionLibrary.h"
 #include "GlobalAction.h"
 #include "../Log/LogSystem.h"
+
 
 Unit::Unit()
     : Name(""),
@@ -123,12 +125,14 @@ const Armor* Unit::GetArmor() const {
     return armor;
 }
 
-void Unit::TakeDamage(int amount, bool defendable) {
+void Unit::TakeDamage(int amount, bool defendable, Unit* actor) {
     int finalDamage = amount;
 
     if (defendable) {
         finalDamage = std::max(0, amount - totalStat.GetDefense());
     }
+
+    finalDamage = finalDamage * std::round(GetCounterMultiplier(actor, this));
 
     currentHP = std::max(0, currentHP - finalDamage);
     LogSystem::LogStream(Name, " HP: ", currentHP + finalDamage, " - ", finalDamage, " => ", currentHP);
@@ -141,11 +145,6 @@ void Unit::Heal(int amount) {
     currentHP = std::min(maxHP, currentHP + amount);
     int actualHealing = currentHP - oldHP;
     LogSystem::LogStream("[HEAL] ", Name, " healed for ", actualHealing, " HP (from ", oldHP, " to ", currentHP, "/", maxHP, ")");
-}
-
-void Unit::ApplyBuff() {
-    // Example: boost speed by 1
-    totalStat.SetSpeed(totalStat.GetSpeed() + 1);
 }
 
 void Unit::ApplyDebuff() {

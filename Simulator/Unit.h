@@ -10,6 +10,7 @@
 #include "Armor.h"
 #include "Team.h"
 #include "BoonAction.h"
+#include "CounterRule.h"
 
 class Unit {
 private:
@@ -61,16 +62,14 @@ public:
     Armor* GetArmor();
     const Armor* GetArmor() const;
 
-    void TakeDamage(int amount);
     void Heal(int amount);
     int GetCurrentHP() const { return currentHP; }
     void SetCurrentHP(int hp) { currentHP = hp; }
     void InitializeCurrentHP() { currentHP = totalStat.GetHP(); } // Initialize currentHP to match totalStat HP
 
-    void ApplyBuff();     // Placeholder
     void ApplyDebuff();   // Placeholder
 
-    void TakeDamage(int amount, bool defendable = true);
+    void TakeDamage(int amount, bool defendable = true, Unit* actor = nullptr);
 
     bool IsAlive() const { return currentHP > 0; };
     bool IsFrozen() const { return isFrozen; }

@@ -1,121 +1,239 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:12 Speed:3 Alive:Yes
-Unit 1: R1 HP:12 Speed:1 Alive:Yes
-Unit 2: R2 HP:8 Speed:4 Alive:Yes
-Unit 3: R3 HP:10 Speed:6 Alive:Yes
-Unit 4: R4 HP:10 Speed:6 Alive:Yes
-Unit 5: B0 HP:10 Speed:0 Alive:Yes
-Unit 6: B1 HP:10 Speed:1 Alive:Yes
-Unit 7: B2 HP:10 Speed:6 Alive:Yes
-Unit 8: B3 HP:15 Speed:1 Alive:Yes
+Unit 0: R0 HP:12 Speed:1 Alive:Yes
+Unit 1: R1 HP:12 Speed:2 Alive:Yes
+Unit 2: R2 HP:10 Speed:2 Alive:Yes
+Unit 3: R3 HP:10 Speed:3 Alive:Yes
+Unit 4: R4 HP:15 Speed:1 Alive:Yes
+Unit 5: B0 HP:12 Speed:2 Alive:Yes
+Unit 6: B1 HP:10 Speed:5 Alive:Yes
+Unit 7: B2 HP:8 Speed:6 Alive:Yes
+Unit 8: B3 HP:15 Speed:2 Alive:Yes
 Unit 9: B4 HP:6 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 2] 3 unit(s) acting
-Ranged: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 5 => 5
-Melee: R3 targeting B2 (HP: 5)
-B2 HP: 5 - 4 => 1
-[A02] B2 defense changed from -1 to 0
+[Tick 5] 1 unit(s) acting
 Melee: B2 targeting R1 (HP: 12)
-R1 HP: 12 - 3 => 9
-[A10] B2 threat changed from 7 to 6
+R1 HP: 12 - 5 => 7
   -> R1 (magic) tick reset due to melee attack!
 
 
-[Tick 3] 1 unit(s) acting
-Magic: R2 targeting B2 (HP: 1)
-B2 HP: 1 - 1 => 0
-Magic: R2 targeting B3 (HP: 15)
-B3 HP: 15 - 1 => 14
+[Tick 6] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
 
 
-[Tick 4] 4 unit(s) acting
-Ranged: R4 targeting B3 (HP: 14)
-B3 HP: 14 - 2 => 12
-  -> B3 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 1 => 11
-B3 HP: 11 - 1 => 10
-  -> B3 (magic) tick reset due to melee attack!
-Melee: B4 targeting R1 (HP: 9)
-R1 HP: 9 - 6 => 3
-[HEAL] B4 healed for 0 HP (from 6 to 6/6)
+[Tick 10] 3 unit(s) acting
+Melee: B2 targeting R1 (HP: 7)
+R1 HP: 7 - 5 => 2
   -> R1 (magic) tick reset due to melee attack!
-Melee: R3 targeting B3 (HP: 10)
-B3 HP: 10 - 1 => 9
-[A02] B3 defense changed from 2 to 1
-  -> B3 (magic) tick reset due to melee attack!
+Magic: B4 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B4 healed B0 for 5 HP
+Magic: R3 targeting B0 (HP: 12)
+[BOON] Applied FreezeSTART to B0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 6] 3 unit(s) acting
-Ranged: R4 targeting B0 (HP: 10)
-B0 HP: 10 - 3 => 7
-  -> B0 (magic) tick reset due to ranged attack!
-Melee: R3 targeting B0 (HP: 7)
-B0 HP: 7 - 2 => 5
-[A02] B0 defense changed from 1 to 0
-  -> B0 (magic) tick reset due to melee attack!
-Magic: R2 targeting B0 (HP: 5)
-B0 HP: 5 - 1 => 4
-Magic: R2 targeting B3 (HP: 9)
-B3 HP: 9 - 1 => 8
+[Tick 12] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
 
 
-[Tick 8] 4 unit(s) acting
-Ranged: R4 targeting B0 (HP: 4)
-B0 HP: 4 - 4 => 0
-Melee: R0 targeting B3 (HP: 8)
-B3 HP: 8 - 2 => 6
-B3 HP: 6 - 2 => 4
-  -> B3 (magic) tick reset due to melee attack!
-Melee: B4 targeting R1 (HP: 3)
-R1 HP: 6 - 6 => 0
-[HEAL] B4 healed for 0 HP (from 6 to 6/6)
-Melee: R3 targeting B3 (HP: 4)
-B3 HP: 4 - 2 => 2
-[A02] B3 defense changed from 1 to 0
-  -> B3 (magic) tick reset due to melee attack!
+[Tick 15] 4 unit(s) acting
+Ranged: R2 targeting B0 (HP: 12)
+B0 HP: 12 - 2 => 10
+Ranged: B3 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+Melee: B0 targeting R1 (HP: 2)
+  -> B0 is frozen and cannot act!
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
+[TEMP-BUFF] FreezeSTART applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered FreezeSTART
+Melee: B2 targeting R0 (HP: 12)
+R0 HP: 12 - 5 => 7
 
 
-[Tick 9] 1 unit(s) acting
-Magic: R2 targeting B3 (HP: 2)
-B3 HP: 2 - 1 => 1
-Magic: R2 targeting B1 (HP: 10)
-B1 HP: 10 - 1 => 9
+[Tick 18] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 10)
+[HEAL] B0 healed for 2 HP (from 10 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
 
 
-[Tick 10] 2 unit(s) acting
-Ranged: R4 targeting B3 (HP: 1)
-B3 HP: 4 - 4 => 0
-Melee: R3 targeting B1 (HP: 9)
-B1 HP: 9 - 2 => 7
-[A02] B1 defense changed from 1 to 0
-  -> B1 (magic) tick reset due to melee attack!
+[Tick 20] 3 unit(s) acting
+Melee: B2 targeting R1 (HP: 2)
+R1 HP: 5 - 5 => 0
+Magic: R3 targeting B0 (HP: 12)
+[BOON] Refreshing existing FreezeSTART on B0
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B4 healed B0 for 5 HP
 
 
-[Tick 12] 5 unit(s) acting
-Ranged: R4 targeting B1 (HP: 7)
-B1 HP: 7 - 4 => 3
-  -> B1 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B1 (HP: 3)
-B1 HP: 3 - 3 => 0
-B1 HP: 3 - 3 => 0
-Melee: R3 targeting B4 (HP: 6)
-B4 HP: 6 - 3 => 3
-[A02] B4 defense changed from 0 to 0
-Melee: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 8 => 2
-[HEAL] B4 healed for 3 HP (from 3 to 6/6)
-Magic: R2 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
+[Tick 24] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
 
 
-[Tick 14] 2 unit(s) acting
-Ranged: R4 targeting B4 (HP: 5)
-B4 HP: 5 - 4 => 1
-Melee: R3 targeting B4 (HP: 1)
-B4 HP: 3 - 3 => 0
-[A02] B4 defense changed from 0 to 0
-Battle Over! Red Team wins!
+[Tick 25] 1 unit(s) acting
+Melee: B2 targeting R0 (HP: 7)
+R0 HP: 7 - 5 => 2
+
+
+[Tick 30] 9 unit(s) acting
+Ranged: B3 targeting R0 (HP: 2)
+R0 HP: 2 - 0 => 2
+Ranged: R2 targeting B0 (HP: 12)
+B0 HP: 12 - 2 => 10
+Melee: R0 targeting B0 (HP: 10)
+B0 HP: 10 - 2 => 8
+Melee: B2 targeting R0 (HP: 2)
+R0 HP: 5 - 5 => 0
+Magic: B4 targeting B0 (HP: 8)
+[HEAL] B0 healed for 4 HP (from 8 to 12/12)
+[A29] B4 healed B0 for 5 HP
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+Magic: R4 targeting B0 (HP: 12)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B0 (usage: 2)
+Magic: R3 targeting B0 (HP: 12)
+[BOON] Refreshing existing FreezeSTART on B0
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 35] 1 unit(s) acting
+Melee: B2 targeting R2 (HP: 10)
+R2 HP: 10 - 6 => 4
+  -> R2 (ranged) delayed by 1 tick(s) due to 6/10 damage!
+
+
+[Tick 36] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+
+
+[Tick 40] 3 unit(s) acting
+Melee: B2 targeting R2 (HP: 4)
+R2 HP: 6 - 6 => 0
+Magic: B4 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B4 healed B0 for 5 HP
+Magic: R3 targeting B0 (HP: 12)
+[BOON] Refreshing existing FreezeSTART on B0
+[REFRESH] FreezeSTART duration refreshed, effect remains active
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 42] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+
+
+[Tick 45] 3 unit(s) acting
+Ranged: B3 targeting R4 (HP: 15)
+R4 HP: 15 - 1 => 14
+  -> R4 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R4 (HP: 14)
+  -> B0 is frozen and cannot act!
+[DEBUG] B0 processing 2 boons
+[DEBUG] Registering boon FreezeSTART for B0
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
+[TEMP-BUFF] FreezeSTART on B0 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on B0
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on B0 - cleaned up
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 HP: 12 - 5 => 7
+Melee: B2 targeting R4 (HP: 14)
+R4 HP: 14 - 6 => 8
+  -> R4 (magic) tick reset due to melee attack!
+
+
+[Tick 48] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 7)
+[HEAL] B0 healed for 3 HP (from 7 to 10/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+
+
+[Tick 50] 3 unit(s) acting
+Melee: B2 targeting R4 (HP: 8)
+R4 HP: 8 - 6 => 2
+  -> R4 (magic) tick reset due to melee attack!
+Magic: R3 targeting B0 (HP: 10)
+[BOON] Applied FreezeSTART to B0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B4 targeting B0 (HP: 10)
+[HEAL] B0 healed for 2 HP (from 10 to 12/12)
+[A29] B4 healed B0 for 5 HP
+
+
+[Tick 54] 1 unit(s) acting
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+
+
+[Tick 55] 1 unit(s) acting
+Melee: B2 targeting R4 (HP: 2)
+R4 HP: 6 - 6 => 0
+
+
+[Tick 60] 6 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 3 => 7
+[A25] R3 attack reduced from -1 to 0 (damage: 3, reduction: 1)
+  -> R3 (magic) tick reset due to ranged attack!
+Melee: B2 targeting R3 (HP: 7)
+R3 HP: 8 - 8 => 0
+Magic: B4 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B4 healed B0 for 5 HP
+Magic: B1 targeting B0 (HP: 12)
+[HEAL] B0 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B0 for 3 HP
+Magic: B1 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B3 for 3 HP
+Battle Over! Blue Team wins!
