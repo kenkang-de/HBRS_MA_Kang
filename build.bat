@@ -107,6 +107,28 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling RMSE.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c RMSE.cpp -o RMSE.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile RMSE.cpp
+    exit /b 1
+)
+
+cd ../AutoBalancing
+echo Compiling Chromosome.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c Chromosome.cpp -o Chromosome.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile Chromosome.cpp
+    exit /b 1
+)
+
+echo Compiling GeneticBalancingProcessor.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c GeneticBalancingProcessor.cpp -o GeneticBalancingProcessor.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile GeneticBalancingProcessor.cpp
+    exit /b 1
+)
+
 REM Build main executable with library
 cd ..
 echo Linking Run.exe...
@@ -130,6 +152,9 @@ g++ %LINK_FLAGS% ^
     Element/SynergyComponentInitializer.o ^
     Sampling/BatchCreator.o ^
     Analysis/TestSubjectToCSV.o ^
+    Analysis/RMSE.o ^
+    AutoBalancing/Chromosome.o ^
+    AutoBalancing/GeneticBalancingProcessor.o ^
     -LSimulator ^
     -lsimulator ^
     -LSimulator/yaml-cpp/mingw-build ^

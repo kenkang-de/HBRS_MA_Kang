@@ -1,465 +1,334 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:1 Alive:Yes
-Unit 1: R1 HP:8 Speed:4 Alive:Yes
-Unit 2: R2 HP:12 Speed:0 Alive:Yes
-Unit 3: R3 HP:10 Speed:0 Alive:Yes
-Unit 4: R4 HP:10 Speed:4 Alive:Yes
-Unit 5: B0 HP:10 Speed:5 Alive:Yes
-Unit 6: B1 HP:10 Speed:5 Alive:Yes
-Unit 7: B2 HP:10 Speed:5 Alive:Yes
-Unit 8: B3 HP:12 Speed:1 Alive:Yes
-Unit 9: B4 HP:12 Speed:3 Alive:Yes
+Unit 0: R0 HP:10 Speed:4 Alive:Yes
+Unit 1: R1 HP:10 Speed:3 Alive:Yes
+Unit 2: R2 HP:10 Speed:5 Alive:Yes
+Unit 3: R3 HP:12 Speed:4 Alive:Yes
+Unit 4: R4 HP:7 Speed:4 Alive:Yes
+Unit 5: B0 HP:10 Speed:2 Alive:Yes
+Unit 6: B1 HP:8 Speed:3 Alive:Yes
+Unit 7: B2 HP:10 Speed:2 Alive:Yes
+Unit 8: B3 HP:11 Speed:6 Alive:Yes
+Unit 9: B4 HP:10 Speed:5 Alive:Yes
 ==========================
 
 
-[Tick 12] 3 unit(s) acting
-Ranged: B0 targeting R2 (HP: 12)
-R2 HP: 12 - 0 => 12
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 12)
-R2 HP: 12 - 1 => 11
-[A10] B2 threat changed from 4 to 3
-Magic: B1 targeting B3 (HP: 12)
-[BOON] Applied BulkupSTART to B3 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 10] 1 unit(s) acting
+Melee: B3 targeting R2 (HP: 10)
+R2 HP: 10 - 3 => 7
+[A06] R2 speed changed from 5 to 4
+  -> R2 (magic) tick reset due to melee attack!
 
 
-[Tick 15] 2 unit(s) acting
-Magic: R1 targeting R2 (HP: 11)
-[HEAL] R2 healed for 1 HP (from 11 to 12/12)
-[A29] R1 healed R2 for 3 HP
-Magic: R1 targeting R0 (HP: 10)
-[HEAL] R0 healed for 0 HP (from 10 to 10/10)
-[A29] R1 healed R0 for 3 HP
-Magic: R4 targeting B3 (HP: 12)
-B3 HP: 12 - 4 => 8
-Magic: R4 targeting B1 (HP: 10)
-B1 HP: 10 - 4 => 6
-Magic: R4 targeting B2 (HP: 10)
+[Tick 12] 1 unit(s) acting
+Magic: B4 targeting B3 (HP: 11)
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 15] 3 unit(s) acting
+Ranged: R4 targeting B3 (HP: 11)
+B3 HP: 11 - 2 => 9
+Ranged: R3 targeting B3 (HP: 9)
+[A10] R3 threat changed from 4 to 5
+[A04] R3 attack changed from 3 to 5
+B3 HP: 9 - 4 => 5
+Magic: R0 targeting R2 (HP: 7)
+[BOON] Applied HasteSTART to R2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 20] 3 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 1 => 4
+[BOON] Applied Poison Effect to B3 (Usage: 2)
+[A28] R1 applied Poison Effect to B3 (usage: 2)
+Melee: B3 targeting R2 (HP: 7)
+R2 HP: 7 - 3 => 4
+[A06] R2 speed changed from 4 to 3
+[DEBUG] B3 processing 2 boons
+[DEBUG] Registering boon ProtectSTART for B3
+[DEBUG] Registering boon Poison Effect for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered ProtectSTART
+[A02] B3 defense changed from 1 to 4
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 6)
+[BOON] Poison Effect triggered on B3 (Usage: 2/2)
+[EXECUTE_EFFECT] B3 triggered Poison Effect
+B3 HP: 5 - 5 => 0
+  -> B3 died during after-actions, stopping further actions
+
+
+[Tick 24] 1 unit(s) acting
+Magic: B4 targeting B4 (HP: 10)
+[BOON] Applied ProtectSTART to B4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to B4 (Duration: 1 turns)
+[EXECUTE_EFFECT] B4 triggered ProtectSTART
+[A02] B4 defense changed from -1 to 2
+
+
+[Tick 25] 1 unit(s) acting
+Magic: R2 targeting B4 (HP: 10)
+[A34] B4 attack changed from 0 to 0
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
+[TEMP-BUFF] HasteSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered HasteSTART
+[A19] R2 speed changed from 3 to 5
+Magic: R2 targeting B0 (HP: 10)
+[A34] B0 attack changed from 1 to 0
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
+[TEMP-BUFF] HasteSTART on R2 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R2
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R2 triggered HasteEND
+[A19] R2 speed changed from 5 to 3
+[BOON] HasteSTART expired on R2 - cleaned up
+
+
+[Tick 30] 5 unit(s) acting
+Ranged: R4 targeting B4 (HP: 10)
+B4 HP: 10 - 1 => 9
+  -> B4 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B4 (HP: 9)
+[A10] R3 threat changed from 5 to 6
+[A04] R3 attack changed from 5 to 7
+B4 HP: 9 - 5 => 4
+  -> B4 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R2 (HP: 4)
+R2 HP: 4 - 4 => 0
+Magic: B2 targeting R3 (HP: 12)
+R3 HP: 12 - 4 => 8
+Magic: R0 targeting R3 (HP: 8)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B0 targeting R3 (HP: 8)
+[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
+[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
+
+
+[Tick 40] 2 unit(s) acting
+Ranged: R1 targeting B4 (HP: 4)
+B4 HP: 4 - 0 => 4
+[BOON] Applied Poison Effect to B4 (Usage: 2)
+[A28] R1 applied Poison Effect to B4 (usage: 2)
+Magic: B1 targeting B4 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B4
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 42] 1 unit(s) acting
+Magic: B4 targeting B4 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on B4
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B4 processing 2 boons
+[DEBUG] Registering boon ProtectSTART for B4
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 6)
+[TEMP-BUFF] ProtectSTART on B4 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B4
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B4 triggered ProtectEND
+[A02] B4 defense changed from 2 to 0
+[BOON] ProtectSTART expired on B4 - cleaned up
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 6)
+[BOON] Poison Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 HP: 5 - 5 => 0
+  -> B4 died during after-actions, stopping further actions
+
+
+[Tick 45] 3 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+Ranged: R3 targeting B0 (HP: 10)
+[A10] R3 threat changed from 6 to 7
+[A04] R3 attack changed from 7 to 9
+B0 HP: 10 - 6 => 4
+[DEBUG] R3 processing 2 boons
+[DEBUG] Registering boon HasteSTART for R3
+[DEBUG] Registering boon Tetrodo Effect for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 7)
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+[A19] R3 speed changed from 4 to 6
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 7)
+[BOON] Tetrodo Effect triggered on R3 (Usage: 2/2)
+[EXECUTE_EFFECT] R3 triggered Tetrodo Effect
+R3 HP: 8 - 5 => 3
+  -> B0 (magic) tick reset due to ranged attack!
+Magic: R0 targeting R3 (HP: 3)
+[BOON] Refreshing existing HasteSTART on R3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 51] 1 unit(s) acting
+Magic: B0 targeting R3 (HP: 3)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
+
+
+[Tick 57] 1 unit(s) acting
+Magic: B0 targeting R3 (HP: 3)
+[BOON] Refreshing existing Tetrodo Effect on R3
+[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
+
+
+[Tick 60] 6 unit(s) acting
+Ranged: R1 targeting B0 (HP: 4)
+B0 HP: 4 - 0 => 4
+[BOON] Applied Poison Effect to B0 (Usage: 2)
+[A28] R1 applied Poison Effect to B0 (usage: 2)
+Ranged: R4 targeting B0 (HP: 4)
+B0 HP: 4 - 0 => 4
+Ranged: R3 targeting B0 (HP: 4)
+[A10] R3 threat changed from 7 to 8
+[A04] R3 attack changed from 9 to 11
+B0 HP: 8 - 8 => 0
+[DEBUG] R3 processing 2 boons
+[DEBUG] Registering boon HasteSTART for R3
+[DEBUG] Registering boon Tetrodo Effect for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 8)
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+[A19] R3 speed changed from 6 to 4
+[BOON] HasteSTART expired on R3 - cleaned up
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 8)
+[BOON] Tetrodo Effect triggered on R3 (Usage: 2/2)
+[EXECUTE_EFFECT] R3 triggered Tetrodo Effect
+R3 HP: 5 - 5 => 0
+  -> R3 died during after-actions, stopping further actions
+Magic: B1 targeting B1 (HP: 8)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered ProtectSTART
+[A02] B1 defense changed from 1 to 4
+Magic: B2 targeting R0 (HP: 10)
+R0 HP: 10 - 4 => 6
+
+
+[Tick 63] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 8)
+B1 HP: 8 - 0 => 8
+Magic: R0 targeting R0 (HP: 6)
+[BOON] Applied HasteSTART to R0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
+[TEMP-BUFF] HasteSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered HasteSTART
+[A19] R0 speed changed from 4 to 6
+
+
+[Tick 64] 2 unit(s) acting
+Ranged: R1 targeting B1 (HP: 8)
+B1 HP: 8 - 0 => 8
+[BOON] Applied Poison Effect to B1 (Usage: 2)
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+Magic: B1 targeting B1 (HP: 8)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B1 processing 2 boons
+[DEBUG] Registering boon ProtectSTART for B1
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[TEMP-BUFF] ProtectSTART on B1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B1
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] B1 triggered ProtectEND
+[A02] B1 defense changed from 4 to 1
+[BOON] ProtectSTART expired on B1 - cleaned up
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 3)
+[BOON] Poison Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
+B1 HP: 8 - 5 => 3
+
+
+[Tick 66] 3 unit(s) acting
+Ranged: R4 targeting B1 (HP: 3)
+B1 HP: 3 - 2 => 1
+  -> B1 (magic) tick reset due to ranged attack!
+Magic: R0 targeting R0 (HP: 6)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
+[TEMP-BUFF] HasteSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R0
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R0 triggered HasteEND
+[A19] R0 speed changed from 6 to 4
+[BOON] HasteSTART expired on R0 - cleaned up
+Magic: B2 targeting R0 (HP: 6)
+R0 HP: 6 - 4 => 2
+Magic: B2 targeting R1 (HP: 10)
+R1 HP: 10 - 4 => 6
+
+
+[Tick 68] 2 unit(s) acting
+Ranged: R1 targeting B1 (HP: 1)
+B1 HP: 1 - 1 => 0
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+Magic: R0 targeting R0 (HP: 2)
+[BOON] Applied HasteSTART to R0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
+[TEMP-BUFF] HasteSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered HasteSTART
+[A19] R0 speed changed from 4 to 6
+
+
+[Tick 69] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 10)
 B2 HP: 10 - 4 => 6
+  -> B2 (magic) tick reset due to ranged attack!
 
 
-[Tick 20] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 12)
-R2 HP: 12 - 1 => 11
-
-
-[Tick 24] 3 unit(s) acting
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 2 => 8
-[A20] R0 delayed by 1 intervals (60 ticks)
-  -> R0 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R0 (HP: 8)
-R0 HP: 8 - 5 => 3
-[A10] B2 threat changed from 3 to 2
-  -> R0 (magic) tick reset due to melee attack!
-Magic: B1 targeting B3 (HP: 8)
-[BOON] Refreshing existing BulkupSTART on B3
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 30] 2 unit(s) acting
-Magic: R4 targeting B3 (HP: 8)
-B3 HP: 8 - 4 => 4
-Magic: R4 targeting B1 (HP: 6)
-B1 HP: 6 - 4 => 2
-Magic: R4 targeting B4 (HP: 12)
-B4 HP: 12 - 4 => 8
-Magic: R1 targeting R0 (HP: 3)
-[HEAL] R0 healed for 3 HP (from 3 to 6/10)
-[A29] R1 healed R0 for 3 HP
-Magic: R1 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 36] 3 unit(s) acting
-Ranged: B0 targeting R0 (HP: 6)
-R0 HP: 6 - 2 => 4
-[A20] R0 delayed by 1 intervals (60 ticks)
-  -> R0 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R0 (HP: 4)
-R0 HP: 5 - 5 => 0
-[A10] B2 threat changed from 2 to 1
-Magic: B1 targeting B3 (HP: 4)
-[BOON] Refreshing existing BulkupSTART on B3
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 40] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 45] 2 unit(s) acting
-Magic: R1 targeting R4 (HP: 10)
-[HEAL] R4 healed for 0 HP (from 10 to 10/10)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R2 (HP: 11)
-[HEAL] R2 healed for 1 HP (from 11 to 12/12)
-[A29] R1 healed R2 for 3 HP
-Magic: R4 targeting B3 (HP: 4)
-B3 HP: 4 - 4 => 0
-Magic: R4 targeting B1 (HP: 2)
-B1 HP: 4 - 4 => 0
-Magic: R4 targeting B4 (HP: 8)
-B4 HP: 8 - 4 => 4
-
-
-[Tick 48] 2 unit(s) acting
-Ranged: B0 targeting R4 (HP: 10)
-R4 HP: 10 - 3 => 7
-[A20] R4 delayed by 1 intervals (15 ticks)
-  -> R4 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R4 (HP: 7)
-R4 HP: 7 - 6 => 1
-[A10] B2 threat changed from 1 to 0
-  -> R4 (magic) tick reset due to melee attack!
-
-
-[Tick 60] 4 unit(s) acting
-Ranged: B0 targeting R4 (HP: 1)
-R4 HP: 3 - 3 => 0
-[A20] R4 delayed by 1 intervals (15 ticks)
-Ranged: B4 targeting R2 (HP: 12)
-R2 HP: 12 - 1 => 11
-Melee: B2 targeting R2 (HP: 11)
-R2 HP: 11 - 1 => 10
-[A10] B2 threat changed from 0 to 0
-Magic: R1 targeting R2 (HP: 10)
-[HEAL] R2 healed for 2 HP (from 10 to 12/12)
-[A29] R1 healed R2 for 3 HP
-Magic: R1 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R1 healed R3 for 3 HP
+[Tick 71] 1 unit(s) acting
+Magic: R0 targeting R0 (HP: 2)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
+[TEMP-BUFF] HasteSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R0
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R0 triggered HasteEND
+[A19] R0 speed changed from 6 to 4
+[BOON] HasteSTART expired on R0 - cleaned up
 
 
 [Tick 72] 2 unit(s) acting
-Ranged: B0 targeting R1 (HP: 8)
-R1 HP: 8 - 0 => 8
-[A20] R1 delayed by 1 intervals (15 ticks)
-Melee: B2 targeting R1 (HP: 8)
-R1 HP: 8 - 3 => 5
-[A10] B2 threat changed from 0 to 0
-  -> R1 (magic) tick reset due to melee attack!
-
-
-[Tick 80] 1 unit(s) acting
-Ranged: B4 targeting R1 (HP: 5)
-R1 HP: 5 - 3 => 2
-  -> R1 (magic) tick reset due to ranged attack!
-
-
-[Tick 84] 2 unit(s) acting
-Ranged: B0 targeting R1 (HP: 2)
-R1 HP: 2 - 0 => 2
-[A20] R1 delayed by 1 intervals (15 ticks)
-Melee: B2 targeting R1 (HP: 2)
-R1 HP: 3 - 3 => 0
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 96] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 12)
-R2 HP: 12 - 0 => 12
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 12)
-R2 HP: 12 - 1 => 11
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 99] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 11)
-R2 HP: 11 - 0 => 11
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 11)
-R2 HP: 11 - 1 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 100] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 10)
-R2 HP: 10 - 1 => 9
-
-
-[Tick 102] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 9)
-R2 HP: 9 - 0 => 9
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 9)
-R2 HP: 9 - 1 => 8
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 105] 3 unit(s) acting
-Ranged: B4 targeting R2 (HP: 8)
-R2 HP: 8 - 1 => 7
-Ranged: B0 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 7)
-R2 HP: 7 - 1 => 6
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 108] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 6)
-R2 HP: 6 - 0 => 6
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 6)
-R2 HP: 6 - 1 => 5
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 110] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 5)
-R2 HP: 5 - 1 => 4
-
-
-[Tick 111] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 4)
-R2 HP: 4 - 0 => 4
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 4)
-R2 HP: 4 - 1 => 3
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 114] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 3)
-R2 HP: 3 - 0 => 3
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 3)
-R2 HP: 3 - 1 => 2
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 115] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 2)
-R2 HP: 2 - 1 => 1
-
-
-[Tick 117] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 1)
-R2 HP: 1 - 0 => 1
-[A20] R2 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R2 (HP: 1)
-R2 HP: 1 - 1 => 0
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 120] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 123] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 125] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 126] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 129] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 130] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 132] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 135] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 138] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 140] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 141] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 144] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 145] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 147] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 150] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 153] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 155] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 156] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 159] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 160] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 162] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 165] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 168] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 170] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-
-
-[Tick 171] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-
-
-[Tick 174] 2 unit(s) acting
-Ranged: B0 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A20] R3 delayed by 1 intervals (0 ticks)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 0 => 10
-[A10] B2 threat changed from 0 to 0
-Battle Over! Tick limit reached (0 ticks elapsed)
+Ranged: R4 targeting B2 (HP: 6)
+B2 HP: 6 - 4 => 2
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 2)
+B2 HP: 3 - 3 => 0
+[BOON] Applied Poison Effect to B2 (Usage: 2)
+[A28] R1 applied Poison Effect to B2 (usage: 2)
+Battle Over! Red Team wins!

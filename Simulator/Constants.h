@@ -17,5 +17,8 @@ const float DELAY_MULTIPLIER = 2.0f; // Multiplier for damage-based delay calcul
 const float MULTIPLIER_COUNTER = 1.5;
 const float MULTIPLIER_BASIC =1.0;
 
+//balancing target winrate
+const float TARGET_WINRATE=0.5;
+
 
 #endif

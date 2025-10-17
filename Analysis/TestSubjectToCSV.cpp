@@ -29,4 +29,5 @@ void TestSubjectToCSV::Convert(std::vector<TestSubject*> testSubjects)
     }
     
     csvFile.close();
+
 }

@@ -19,6 +19,10 @@
 #include "Simulator/Simulator.h"
 
 #include "Analysis/TestSubjectToCSV.h"
+#include "Analysis/RMSE.h"
+
+#include "AutoBalancing/Chromosome.h"
+#include "AutoBalancing/GeneticBalancingProcessor.h"
 
 class NewMasterController {
 private:
@@ -110,7 +114,15 @@ public:
             testSubjects.push_back(&armor);
         }
         csvGenerator.Convert(testSubjects);
+        std::cout<<"Root Mean Square Error: " << RMSE::Calculate(testSubjects) << std::endl;
+
         std::cout<<"Stage 4 Complete"<<std::endl;
+
+        //Stage 5: Autobalancing
+        GeneticBalancingProcessor balancer;
+        balancer.GenerateFirstChromosome(&elementList,testSubjects);
+        
+        std::cout<<"Stage 5 Complete"<<std::endl;
 
 auto endTime = std::chrono::high_resolution_clock::now();
 auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);

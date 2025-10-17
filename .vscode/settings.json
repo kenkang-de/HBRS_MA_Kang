@@ -80,6 +80,7 @@
         "valarray": "cpp",
         "variant": "cpp",
         "xhash": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "standarddeviation h": "cpp"
     }
 }
