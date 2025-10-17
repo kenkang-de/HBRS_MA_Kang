@@ -1,86 +1,93 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:6 Alive:Yes
-Unit 1: R1 HP:12 Speed:5 Alive:Yes
-Unit 2: R2 HP:15 Speed:1 Alive:Yes
-Unit 3: R3 HP:10 Speed:1 Alive:Yes
-Unit 4: R4 HP:6 Speed:3 Alive:Yes
-Unit 5: B0 HP:10 Speed:3 Alive:Yes
-Unit 6: B1 HP:12 Speed:4 Alive:Yes
-Unit 7: B2 HP:10 Speed:7 Alive:Yes
-Unit 8: B3 HP:11 Speed:3 Alive:Yes
-Unit 9: B4 HP:10 Speed:7 Alive:Yes
+Unit 0: R0 HP:10 Speed:5 Alive:Yes
+Unit 1: R1 HP:10 Speed:2 Alive:Yes
+Unit 2: R2 HP:10 Speed:2 Alive:Yes
+Unit 3: R3 HP:10 Speed:2 Alive:Yes
+Unit 4: R4 HP:10 Speed:2 Alive:Yes
+Unit 5: B0 HP:7 Speed:7 Alive:Yes
+Unit 6: B1 HP:10 Speed:2 Alive:Yes
+Unit 7: B2 HP:10 Speed:3 Alive:Yes
+Unit 8: B3 HP:10 Speed:2 Alive:Yes
+Unit 9: B4 HP:10 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 60] 2 unit(s) acting
-Melee: B2 targeting R2 (HP: 15)
-R2 HP: 15 - 7 => 8
-  -> R2 (magic) tick reset due to melee attack!
-Melee: B4 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
+[Tick 30] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 11 - 11 => 0
 
 
-[Tick 70] 1 unit(s) acting
-Magic: R0 targeting B0 (HP: 10)
-B0 HP: 10 - 3 => 7
-Magic: R0 targeting B1 (HP: 12)
-B1 HP: 12 - 3 => 9
+[Tick 42] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Ranged: R0 targeting B0 (HP: 7)
+B0 HP: 7 - 1 => 6
+
+
+[Tick 60] 1 unit(s) acting
+Melee: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 9 => 1
+  -> R4 (magic) tick reset due to melee attack!
+
+
+[Tick 70] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 1)
+R4 HP: 1 - 1 => 0
+[A19] B4 speed changed from 3 to 2
 
 
 [Tick 84] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 7)
-[A06] B0 speed changed from 3 to 2
-Magic: R1 targeting B1 (HP: 9)
-[A06] B1 speed changed from 4 to 3
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Ranged: R0 targeting B0 (HP: 6)
+B0 HP: 6 - 1 => 5
 
 
-[Tick 105] 1 unit(s) acting
-Magic: B1 targeting R2 (HP: 8)
-[A06] R2 speed changed from 1 to 0
-Magic: B1 targeting R1 (HP: 12)
-[A06] R1 speed changed from 5 to 4
+[Tick 90] 1 unit(s) acting
+Melee: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 8 => 2
+  -> R1 (ranged) delayed by 1 tick(s) due to 8/10 damage!
 
 
-[Tick 120] 2 unit(s) acting
-Melee: B4 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
-Melee: B2 targeting R2 (HP: 8)
-R2 HP: 8 - 7 => 1
-  -> R2 (magic) tick reset due to melee attack!
+[Tick 106] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 3 => 7
+  -> B1 (magic) tick reset due to ranged attack!
 
 
-[Tick 132] 2 unit(s) acting
-Melee: B4 targeting R2 (HP: 1)
-R2 HP: 1 - 0 => 1
-Melee: B2 targeting R2 (HP: 1)
-R2 HP: 7 - 7 => 0
+[Tick 120] 1 unit(s) acting
+Melee: B0 targeting R1 (HP: 2)
+R1 HP: 8 - 8 => 0
 
 
-[Tick 140] 4 unit(s) acting
-Ranged: B3 targeting R1 (HP: 12)
-R1 HP: 12 - 7 => 5
-  -> R1 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R1 (HP: 5)
-R1 HP: 6 - 6 => 0
-Ranged: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 6 => 4
-  -> R0 (magic) tick reset due to ranged attack!
-Ranged: R4 targeting B0 (HP: 7)
-B0 HP: 11 - 11 => 0
-[A19] R4 speed changed from 3 to 2
+[Tick 126] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 7)
+B1 HP: 7 - 0 => 7
+Ranged: R0 targeting B0 (HP: 5)
+B0 HP: 5 - 1 => 4
 
 
-[Tick 144] 2 unit(s) acting
-Melee: B2 targeting R0 (HP: 4)
-R0 HP: 14 - 14 => 0
-Melee: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 9 => 1
-  -> R3 (magic) tick reset due to melee attack!
+[Tick 140] 2 unit(s) acting
+Ranged: B2 targeting R2 (HP: 10)
+R2 HP: 10 - 4 => 6
+Ranged: B4 targeting R2 (HP: 6)
+R2 HP: 6 - 3 => 3
+[A19] B4 speed changed from 2 to 1
 
 
-[Tick 150] 2 unit(s) acting
-Melee: B2 targeting R3 (HP: 1)
-R3 HP: 13 - 13 => 0
-Melee: B4 targeting R4 (HP: 6)
-R4 HP: 7 - 7 => 0
+[Tick 150] 1 unit(s) acting
+Melee: B0 targeting R2 (HP: 3)
+R2 HP: 11 - 11 => 0
+
+
+[Tick 168] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 7)
+B1 HP: 7 - 0 => 7
+Ranged: R0 targeting B0 (HP: 4)
+B0 HP: 4 - 1 => 3
+
+
+[Tick 180] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 10)
+R0 HP: 12 - 12 => 0
 Battle Over! Blue Team wins!

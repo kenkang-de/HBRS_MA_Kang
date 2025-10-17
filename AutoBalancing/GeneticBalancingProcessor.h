@@ -23,8 +23,13 @@ static Chromosome* firstChromosome;
 
 static std::vector<Stat> firstStats;
 
+static float firstMagnitude;
+
 void GenerateFirstChromosome(ElementList *elementList, std::vector<TestSubject*> firstSubjects);
 
+int CalcStatMagnitude(std::vector<Stat> stats);
+
+float CosineSimilarity(std::vector<Stat> targetStats);
 
 };
 

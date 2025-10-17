@@ -19,6 +19,8 @@ public:
 
 std::vector<Stat> appliedStats;
 
+std::vector<float> averageWinrate;
+
 //First Chromosome
 Chromosome(float RMSE) :rootMeanSquareError(RMSE) {};
 

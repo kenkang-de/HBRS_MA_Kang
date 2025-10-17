@@ -1,360 +1,89 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:15 Speed:2 Alive:Yes
-Unit 1: R1 HP:4 Speed:3 Alive:Yes
-Unit 2: R2 HP:12 Speed:0 Alive:Yes
-Unit 3: R3 HP:12 Speed:1 Alive:Yes
-Unit 4: R4 HP:7 Speed:5 Alive:Yes
-Unit 5: B0 HP:19 Speed:1 Alive:Yes
-Unit 6: B1 HP:12 Speed:3 Alive:Yes
-Unit 7: B2 HP:10 Speed:0 Alive:Yes
-Unit 8: B3 HP:6 Speed:4 Alive:Yes
-Unit 9: B4 HP:10 Speed:7 Alive:Yes
+Unit 0: R0 HP:10 Speed:2 Alive:Yes
+Unit 1: R1 HP:10 Speed:5 Alive:Yes
+Unit 2: R2 HP:15 Speed:2 Alive:Yes
+Unit 3: R3 HP:11 Speed:0 Alive:Yes
+Unit 4: R4 HP:10 Speed:3 Alive:Yes
+Unit 5: B0 HP:10 Speed:5 Alive:Yes
+Unit 6: B1 HP:10 Speed:2 Alive:Yes
+Unit 7: B2 HP:8 Speed:2 Alive:Yes
+Unit 8: B3 HP:10 Speed:1 Alive:Yes
+Unit 9: B4 HP:10 Speed:2 Alive:Yes
 ==========================
 
 
-[Tick 60] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-[A20] R0 delayed by 1 intervals (210 ticks)
-
-
-[Tick 84] 1 unit(s) acting
-Ranged: R4 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-Ranged: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-
-
-[Tick 105] 1 unit(s) acting
-Melee: B3 targeting R0 (HP: 15)
-R0 HP: 15 - 4 => 11
-[A10] B3 threat changed from 2 to 1
-
-
-[Tick 120] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-[A20] R0 delayed by 1 intervals (210 ticks)
-
-
-[Tick 140] 2 unit(s) acting
-Melee: B1 targeting R0 (HP: 11)
-R0 HP: 11 - 1 => 10
-Magic: R1 targeting R0 (HP: 10)
-[HEAL] R0 healed for 5 HP (from 10 to 15/15)
-[A29] R1 healed R0 for 5 HP
-
-
-[Tick 168] 1 unit(s) acting
-Ranged: R4 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-Ranged: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-
-
-[Tick 180] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-[A20] R0 delayed by 1 intervals (210 ticks)
-
-
-[Tick 840] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Applied Poison Effect to B0 (Usage: 3)
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 1050] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 1260] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 1470] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 1680] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 1890] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 2100] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 2310] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 2520] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 2730] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 2940] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 3150] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 3360] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 3570] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 3780] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 3990] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 4200] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 4410] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 4620] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 4830] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 5040] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 5250] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 5460] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 5670] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 5880] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 6090] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 6300] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 6510] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 6720] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 6930] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 7140] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 7350] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 7560] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 7770] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 7980] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 8190] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 8400] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 8610] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 8820] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 9030] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 9240] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 9450] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-
-
-[Tick 9660] 1 unit(s) acting
-Melee: R0 targeting B0 (HP: 19)
-B0 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R0 applied Poison Effect to B0 (usage: 3)
-Battle Over! Tick limit reached (0 ticks elapsed)
+[Tick 6] 2 unit(s) acting
+Magic: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 3 => 7
+Magic: R1 targeting B2 (HP: 8)
+B2 HP: 8 - 3 => 5
+Magic: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 3 => 7
+Magic: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 3 => 7
+Magic: B0 targeting B0 (HP: 7)
+[A34] B0 attack changed from 0 to 2
+
+
+[Tick 10] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 7)
+B0 HP: 7 - 5 => 2
+  -> B0 (magic) tick reset due to ranged attack!
+
+
+[Tick 12] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 2)
+B0 HP: 3 - 3 => 0
+Magic: R1 targeting B2 (HP: 5)
+B2 HP: 5 - 3 => 2
+Magic: R1 targeting B4 (HP: 7)
+B4 HP: 7 - 3 => 4
+Magic: R1 targeting B1 (HP: 7)
+B1 HP: 7 - 3 => 4
+
+
+[Tick 15] 5 unit(s) acting
+Ranged: B1 targeting R1 (HP: 10)
+R1 HP: 10 - 6 => 4
+  -> R1 (magic) tick reset due to ranged attack!
+Melee: R0 targeting B2 (HP: 2)
+B2 HP: 4 - 4 => 0
+[A02] B2 defense changed from 1 to 0
+Melee: R2 targeting B4 (HP: 4)
+B4 HP: 4 - 0 => 4
+Melee: B4 targeting R1 (HP: 4)
+B4 HP: 4 - 3 => 1
+R1 HP: 8 - 8 => 0
+
+
+[Tick 20] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 1)
+B4 HP: 1 - 1 => 0
+
+
+[Tick 22] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 4)
+B1 HP: 4 - 2 => 2
+
+
+[Tick 24] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 10)
+B3 HP: 10 - 4 => 6
+
+
+[Tick 26] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 6)
+B3 HP: 6 - 4 => 2
+
+
+[Tick 28] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 2)
+B3 HP: 4 - 4 => 0
+
+
+[Tick 30] 4 unit(s) acting
+Ranged: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+Ranged: R4 targeting B1 (HP: 2)
+B1 HP: 2 - 2 => 0
+Battle Over! Red Team wins!

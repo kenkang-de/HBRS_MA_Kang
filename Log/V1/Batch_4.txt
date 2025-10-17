@@ -1,272 +1,100 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:10 Speed:6 Alive:Yes
-Unit 1: R1 HP:10 Speed:3 Alive:Yes
-Unit 2: R2 HP:10 Speed:1 Alive:Yes
-Unit 3: R3 HP:10 Speed:6 Alive:Yes
-Unit 4: R4 HP:8 Speed:7 Alive:Yes
-Unit 5: B0 HP:10 Speed:1 Alive:Yes
-Unit 6: B1 HP:12 Speed:0 Alive:Yes
-Unit 7: B2 HP:8 Speed:2 Alive:Yes
-Unit 8: B3 HP:10 Speed:3 Alive:Yes
-Unit 9: B4 HP:15 Speed:2 Alive:Yes
+Unit 0: R0 HP:6 Speed:4 Alive:Yes
+Unit 1: R1 HP:10 Speed:6 Alive:Yes
+Unit 2: R2 HP:10 Speed:5 Alive:Yes
+Unit 3: R3 HP:10 Speed:5 Alive:Yes
+Unit 4: R4 HP:10 Speed:2 Alive:Yes
+Unit 5: B0 HP:11 Speed:0 Alive:Yes
+Unit 6: B1 HP:10 Speed:5 Alive:Yes
+Unit 7: B2 HP:10 Speed:7 Alive:Yes
+Unit 8: B3 HP:6 Speed:3 Alive:Yes
+Unit 9: B4 HP:8 Speed:3 Alive:Yes
 ==========================
 
 
-[Tick 6] 1 unit(s) acting
-Melee: R4 targeting B4 (HP: 15)
-B4 HP: 15 - 0 => 15
+[Tick 60] 1 unit(s) acting
+Ranged: B2 targeting R2 (HP: 10)
+R2 HP: 10 - 4 => 6
+[A25] R2 attack reduced from 7 to 5 (damage: 4, reduction: 2)
 
 
-[Tick 7] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 15)
-B4 HP: 15 - 1 => 14
-[A10] R3 threat changed from 5 to 4
-Magic: R0 targeting B4 (HP: 14)
-B4 HP: 14 - 1 => 13
-Magic: R0 targeting B0 (HP: 10)
-B0 HP: 10 - 1 => 9
+[Tick 70] 1 unit(s) acting
+Melee: R1 targeting B0 (HP: 11)
+B0 HP: 11 - 2 => 9
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R1 applied Poison Effect to B0 (usage: 3)
+  -> B0 (magic) tick reset due to melee attack!
 
 
-[Tick 12] 1 unit(s) acting
-Melee: R4 targeting B4 (HP: 13)
-B4 HP: 13 - 0 => 13
+[Tick 84] 3 unit(s) acting
+Melee: R3 targeting B0 (HP: 9)
+B0 HP: 9 - 5 => 4
+[A02] B0 defense changed from 1 to 0
+  -> B0 (magic) tick reset due to melee attack!
+Melee: R2 targeting B0 (HP: 4)
+B0 HP: 5 - 5 => 0
+[A04] R2 attack changed from 5 to 6
+[A15] R2 defense changed from -2 to 0
+Magic: B1 targeting R2 (HP: 6)
+R2 HP: 6 - 5 => 1
 
 
-[Tick 14] 4 unit(s) acting
-Ranged: R3 targeting B4 (HP: 13)
-B4 HP: 13 - 1 => 12
-[A10] R3 threat changed from 4 to 3
-Ranged: R1 targeting B4 (HP: 12)
-B4 HP: 12 - 0 => 12
-Melee: B3 targeting R4 (HP: 8)
-R4 HP: 8 - 2 => 6
-Magic: R0 targeting B4 (HP: 12)
-B4 HP: 12 - 1 => 11
-Magic: R0 targeting B0 (HP: 9)
-B0 HP: 9 - 1 => 8
+[Tick 105] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 10 => 0
 
 
-[Tick 18] 1 unit(s) acting
-Melee: R4 targeting B4 (HP: 11)
-B4 HP: 11 - 0 => 11
+[Tick 140] 3 unit(s) acting
+Melee: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 4 => 6
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R1 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Melee: B4 targeting R2 (HP: 1)
+R2 HP: 6 - 6 => 0
+R2 HP: 6 - 6 => 0
+Magic: B3 targeting R4 (HP: 10)
+R4 HP: 10 - 5 => 5
 
 
-[Tick 21] 4 unit(s) acting
-Ranged: R3 targeting B4 (HP: 11)
-B4 HP: 11 - 1 => 10
-[A10] R3 threat changed from 3 to 2
-Melee: B4 targeting R4 (HP: 6)
-R4 HP: 6 - 4 => 2
-Magic: B2 targeting B4 (HP: 10)
-[A33] B4 threat changed from 10 to 12
-[A02] B4 defense changed from 5 to 6
-Magic: B2 targeting B0 (HP: 8)
-[A33] B0 threat changed from 7 to 9
-[A02] B0 defense changed from 4 to 5
-Magic: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 1 => 9
-Magic: R0 targeting B0 (HP: 8)
-B0 HP: 8 - 1 => 7
+[Tick 150] 1 unit(s) acting
+Melee: R1 targeting B1 (HP: 6)
+B1 HP: 6 - 4 => 2
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
 
 
-[Tick 24] 1 unit(s) acting
-Melee: R4 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
+[Tick 160] 3 unit(s) acting
+Melee: B4 targeting R4 (HP: 5)
+R4 HP: 5 - 3 => 2
+R4 HP: 3 - 3 => 0
+Melee: R1 targeting B1 (HP: 2)
+B1 HP: 4 - 4 => 0
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 3)
 
 
-[Tick 28] 4 unit(s) acting
-Ranged: R1 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-Ranged: R3 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-[A10] R3 threat changed from 2 to 1
-Melee: B3 targeting R4 (HP: 2)
-R4 HP: 2 - 2 => 0
-Magic: R0 targeting B4 (HP: 9)
-B4 HP: 9 - 1 => 8
-Magic: R0 targeting B0 (HP: 7)
-B0 HP: 7 - 1 => 6
+[Tick 168] 1 unit(s) acting
+Melee: R3 targeting B4 (HP: 8)
+B4 HP: 8 - 5 => 3
+[A02] B4 defense changed from 1 to 0
 
 
-[Tick 35] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-[A10] R3 threat changed from 1 to 0
-Magic: R0 targeting B4 (HP: 8)
-B4 HP: 8 - 1 => 7
-Magic: R0 targeting B0 (HP: 6)
-B0 HP: 6 - 1 => 5
+[Tick 170] 1 unit(s) acting
+Melee: R1 targeting B4 (HP: 3)
+B4 HP: 3 - 3 => 0
+[BOON] Applied Poison Effect to B4 (Usage: 3)
+[A28] R1 applied Poison Effect to B4 (usage: 3)
 
 
-[Tick 36] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 7)
-B4 HP: 7 - 1 => 6
-Magic: R0 targeting B0 (HP: 5)
-B0 HP: 5 - 1 => 4
-
-
-[Tick 37] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
-Magic: R0 targeting B0 (HP: 4)
-B0 HP: 4 - 1 => 3
-
-
-[Tick 38] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 5)
-B4 HP: 5 - 0 => 5
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 5)
-B4 HP: 5 - 1 => 4
-Magic: R0 targeting B0 (HP: 3)
-B0 HP: 3 - 1 => 2
-
-
-[Tick 39] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 4)
-B4 HP: 4 - 0 => 4
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 4)
-B4 HP: 4 - 1 => 3
-Magic: R0 targeting B0 (HP: 2)
-B0 HP: 2 - 1 => 1
-
-
-[Tick 40] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 3)
-B4 HP: 3 - 0 => 3
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 3)
-B4 HP: 3 - 1 => 2
-Magic: R0 targeting B0 (HP: 1)
-B0 HP: 1 - 1 => 0
-
-
-[Tick 41] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 2)
-B4 HP: 2 - 0 => 2
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B4 (HP: 2)
-B4 HP: 2 - 1 => 1
-Magic: R0 targeting B1 (HP: 12)
-B1 HP: 12 - 1 => 11
-
-
-[Tick 42] 7 unit(s) acting
-Ranged: R1 targeting B4 (HP: 1)
-B4 HP: 1 - 0 => 1
-Ranged: R3 targeting B4 (HP: 1)
-B4 HP: 1 - 0 => 1
-[A10] R3 threat changed from 0 to 0
-Melee: B4 targeting R2 (HP: 10)
-R2 HP: 10 - 2 => 8
-  -> R2 (magic) tick reset due to melee attack!
-Melee: B3 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
-Magic: R2 targeting R2 (HP: 8)
-[BOON] Applied ProtectSTART to R2 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 5)
-[TEMP-BUFF] ProtectSTART applied to R2 (Duration: 1 turns)
-[EXECUTE_EFFECT] R2 triggered ProtectSTART
-[A02] R2 defense changed from 2 to 5
-Magic: R0 targeting B4 (HP: 1)
-B4 HP: 1 - 1 => 0
-Magic: R0 targeting B1 (HP: 11)
-B1 HP: 11 - 1 => 10
-Magic: B2 targeting B1 (HP: 10)
-[A33] B1 threat changed from 7 to 9
-[A02] B1 defense changed from 3 to 4
-
-
-[Tick 43] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 10)
-B1 HP: 10 - 2 => 8
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B1 (HP: 8)
-B1 HP: 8 - 1 => 7
-Magic: R0 targeting B2 (HP: 8)
-B2 HP: 8 - 1 => 7
-
-
-[Tick 44] 4 unit(s) acting
-Ranged: R3 targeting B1 (HP: 7)
-B1 HP: 7 - 2 => 5
-[A10] R3 threat changed from 0 to 0
-Ranged: R1 targeting B1 (HP: 5)
-B1 HP: 5 - 0 => 5
-Melee: B3 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
-Magic: R0 targeting B1 (HP: 5)
-B1 HP: 5 - 1 => 4
-Magic: R0 targeting B2 (HP: 7)
-B2 HP: 7 - 1 => 6
-
-
-[Tick 45] 3 unit(s) acting
-Ranged: R3 targeting B1 (HP: 4)
-B1 HP: 4 - 2 => 2
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B1 (HP: 2)
-B1 HP: 2 - 1 => 1
-Magic: R0 targeting B2 (HP: 6)
-B2 HP: 6 - 1 => 5
-Magic: B2 targeting B1 (HP: 1)
-[A33] B1 threat changed from 9 to 11
-[A02] B1 defense changed from 4 to 5
-Magic: B2 targeting B2 (HP: 5)
-[A33] B2 threat changed from 3 to 5
-[A02] B2 defense changed from 1 to 2
-
-
-[Tick 46] 4 unit(s) acting
-Ranged: R3 targeting B1 (HP: 1)
-B1 HP: 1 - 1 => 0
-[A10] R3 threat changed from 0 to 0
-Ranged: R1 targeting B2 (HP: 5)
-B2 HP: 5 - 2 => 3
-  -> B2 (magic) tick reset due to ranged attack!
-Melee: B3 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
-Magic: R0 targeting B2 (HP: 3)
-B2 HP: 3 - 1 => 2
-Magic: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 1 => 11
-
-
-[Tick 47] 2 unit(s) acting
-Ranged: R3 targeting B2 (HP: 2)
-B2 HP: 4 - 4 => 0
-[A10] R3 threat changed from 0 to 0
-Magic: R0 targeting B3 (HP: 11)
-B3 HP: 11 - 1 => 10
-
-
-[Tick 48] 5 unit(s) acting
-Ranged: R1 targeting B3 (HP: 10)
-B3 HP: 10 - 4 => 6
-Ranged: R3 targeting B3 (HP: 6)
-B3 HP: 6 - 6 => 0
-[A10] R3 threat changed from 0 to 0
-Magic: R2 targeting R2 (HP: 8)
-[BOON] Refreshing existing ProtectSTART on R2
-[REFRESH] ProtectSTART duration refreshed, effect remains active
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 5)
-[TEMP-BUFF] ProtectSTART on R2 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on R2
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] R2 triggered ProtectEND
-[A02] R2 defense changed from 5 to 2
-[BOON] ProtectSTART expired on R2 - cleaned up
+[Tick 180] 3 unit(s) acting
+Melee: R3 targeting B3 (HP: 6)
+B3 HP: 6 - 5 => 1
+[A02] B3 defense changed from 1 to 0
+  -> B3 (magic) tick reset due to melee attack!
+Melee: R1 targeting B3 (HP: 1)
+B3 HP: 3 - 3 => 0
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R1 applied Poison Effect to B3 (usage: 3)
 Battle Over! Red Team wins!

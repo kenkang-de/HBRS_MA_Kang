@@ -1,100 +1,616 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:8 Speed:5 Alive:Yes
-Unit 1: R1 HP:6 Speed:3 Alive:Yes
-Unit 2: R2 HP:8 Speed:3 Alive:Yes
-Unit 3: R3 HP:10 Speed:4 Alive:Yes
-Unit 4: R4 HP:8 Speed:7 Alive:Yes
-Unit 5: B0 HP:10 Speed:4 Alive:Yes
-Unit 6: B1 HP:10 Speed:5 Alive:Yes
-Unit 7: B2 HP:6 Speed:3 Alive:Yes
-Unit 8: B3 HP:12 Speed:2 Alive:Yes
-Unit 9: B4 HP:7 Speed:5 Alive:Yes
+Unit 0: R0 HP:13 Speed:1 Alive:Yes
+Unit 1: R1 HP:4 Speed:2 Alive:Yes
+Unit 2: R2 HP:6 Speed:2 Alive:Yes
+Unit 3: R3 HP:7 Speed:4 Alive:Yes
+Unit 4: R4 HP:10 Speed:1 Alive:Yes
+Unit 5: B0 HP:15 Speed:1 Alive:Yes
+Unit 6: B1 HP:12 Speed:2 Alive:Yes
+Unit 7: B2 HP:12 Speed:1 Alive:Yes
+Unit 8: B3 HP:10 Speed:5 Alive:Yes
+Unit 9: B4 HP:9 Speed:6 Alive:Yes
 ==========================
 
 
-[Tick 60] 1 unit(s) acting
-Ranged: R4 targeting B0 (HP: 10)
-B0 HP: 10 - 4 => 6
+[Tick 10] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Applied Poison Effect to R0 (Usage: 2)
+[A28] B4 applied Poison Effect to R0 (usage: 2)
 
 
-[Tick 84] 3 unit(s) acting
-Ranged: B4 targeting R0 (HP: 8)
-R0 HP: 8 - 6 => 2
-Melee: R0 targeting B0 (HP: 6)
-R0 HP: 3 - 3 => 0
-B0 HP: 6 - 6 => 0
-  -> R0 died during after-actions, stopping further actions
+[Tick 12] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 15] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 20] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+
+
+[Tick 24] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 30] 5 unit(s) acting
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+Melee: R1 targeting B1 (HP: 12)
+R1 HP: 4 - 3 => 1
+B1 HP: 12 - 8 => 4
+  -> B1 (magic) tick reset due to melee attack!
+Magic: B1 targeting B2 (HP: 12)
+[HEAL] B2 healed for 0 HP (from 12 to 12/12)
+[A29] B1 healed B2 for 3 HP
+Magic: B1 targeting B0 (HP: 15)
+[HEAL] B0 healed for 0 HP (from 15 to 15/15)
+[A29] B1 healed B0 for 3 HP
+Magic: R2 targeting B1 (HP: 4)
+B1 HP: 4 - 3 => 1
+Magic: R2 targeting B2 (HP: 12)
+B2 HP: 12 - 3 => 9
+Magic: R2 targeting B0 (HP: 15)
+B0 HP: 15 - 3 => 12
+Magic: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 3 => 7
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 36] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 40] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+
+
+[Tick 45] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 48] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 50] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+
+
+[Tick 60] 10 unit(s) acting
+Ranged: B3 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+Ranged: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+Melee: R1 targeting B1 (HP: 1)
+R1 HP: 3 - 3 => 0
+B1 HP: 8 - 8 => 0
+  -> R1 died during after-actions, stopping further actions
+Magic: B0 targeting B2 (HP: 9)
+[HEAL] B2 healed for 3 HP (from 9 to 12/12)
+[A29] B0 healed B2 for 5 HP
+Magic: R0 targeting B2 (HP: 12)
+[A33] B2 threat changed from 7 to 5
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[BOON] Poison Effect triggered on R0 (Usage: 2/2)
+[EXECUTE_EFFECT] R0 triggered Poison Effect
+R0 HP: 13 - 5 => 8
+Magic: R0 targeting B0 (HP: 12)
+[A33] B0 threat changed from 6 to 4
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[BOON] Poison Effect triggered on R0 (Usage: 1/2)
+[EXECUTE_EFFECT] R0 triggered Poison Effect
+R0 HP: 8 - 5 => 3
+[BOON] Poison Effect expired on R0 - cleaned up
+Magic: R0 targeting B3 (HP: 7)
+[A33] B3 threat changed from 4 to 2
+Magic: B2 targeting B0 (HP: 12)
+[HEAL] B0 healed for 3 HP (from 12 to 15/15)
+[A29] B2 healed B0 for 5 HP
+Magic: R4 targeting R0 (HP: 3)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R3 targeting R0 (HP: 3)
+[HEAL] R0 healed for 2 HP (from 3 to 5/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+Magic: R2 targeting B2 (HP: 12)
+B2 HP: 12 - 3 => 9
+Magic: R2 targeting B0 (HP: 15)
+B0 HP: 15 - 3 => 12
+Magic: R2 targeting B3 (HP: 7)
+B3 HP: 7 - 3 => 4
+Magic: R2 targeting B4 (HP: 9)
+B4 HP: 9 - 3 => 6
+
+
+[Tick 70] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 5)
+R0 HP: 5 - 0 => 5
+[BOON] Applied Poison Effect to R0 (Usage: 2)
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+
+
+[Tick 72] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 5)
+R0 HP: 5 - 0 => 5
+
+
+[Tick 75] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 5)
+[HEAL] R0 healed for 2 HP (from 5 to 7/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 80] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+
+
+[Tick 84] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+
+
+[Tick 90] 3 unit(s) acting
+Ranged: B4 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+Magic: R3 targeting R0 (HP: 7)
+[HEAL] R0 healed for 2 HP (from 7 to 9/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+Magic: R2 targeting B2 (HP: 9)
+B2 HP: 9 - 3 => 6
+Magic: R2 targeting B0 (HP: 12)
+B0 HP: 12 - 3 => 9
+Magic: R2 targeting B3 (HP: 4)
+B3 HP: 4 - 3 => 1
+Magic: R2 targeting B4 (HP: 6)
+B4 HP: 6 - 3 => 3
+
+
+[Tick 96] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 9)
+R0 HP: 9 - 0 => 9
+
+
+[Tick 100] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 9)
+R0 HP: 9 - 0 => 9
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
 
 
 [Tick 105] 1 unit(s) acting
-Melee: R3 targeting B3 (HP: 12)
-B3 HP: 12 - 5 => 7
-  -> B3 (magic) tick reset due to melee attack!
+Magic: R3 targeting R0 (HP: 9)
+[HEAL] R0 healed for 2 HP (from 9 to 11/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 
 
-[Tick 120] 1 unit(s) acting
-Ranged: R4 targeting B3 (HP: 7)
-B3 HP: 7 - 6 => 1
-  -> B3 (magic) tick reset due to ranged attack!
+[Tick 108] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 11)
+R0 HP: 11 - 0 => 11
 
 
-[Tick 140] 3 unit(s) acting
-Melee: R1 targeting B3 (HP: 1)
-R1 HP: 6 - 3 => 3
-B3 HP: 10 - 10 => 0
-Magic: R2 targeting R3 (HP: 10)
-[A34] R3 attack changed from 2 to 4
-Magic: B2 targeting B1 (HP: 10)
-[BOON] Applied HasteSTART to B1 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 110] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 11)
+R0 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
 
 
-[Tick 168] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 3 => 7
-Magic: B1 targeting R3 (HP: 7)
-[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
-[A28] B1 applied Tetrodo Effect to R3 (usage: 2)
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon HasteSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 2)
-[TEMP-BUFF] HasteSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered HasteSTART
-[A19] B1 speed changed from 5 to 7
+[Tick 120] 8 unit(s) acting
+Ranged: B3 targeting R0 (HP: 11)
+R0 HP: 11 - 0 => 11
+Ranged: B4 targeting R0 (HP: 11)
+R0 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B4 applied Poison Effect to R0 (usage: 2)
+Magic: R0 targeting B2 (HP: 6)
+[A33] B2 threat changed from 5 to 3
+[DEBUG] R0 processing 2 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[DEBUG] Registering boon Poison Effect for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[TEMP-BUFF] BulkupSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered BulkupSTART
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[BOON] Poison Effect triggered on R0 (Usage: 2/2)
+[EXECUTE_EFFECT] R0 triggered Poison Effect
+R0 HP: 21 - 5 => 16
+Magic: R0 targeting B0 (HP: 9)
+[A33] B0 threat changed from 4 to 2
+[DEBUG] R0 processing 2 boons
+[DEBUG] Registering boon BulkupSTART for R0
+[DEBUG] Registering boon Poison Effect for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[TEMP-BUFF] BulkupSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R0
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R0 triggered BulkupEND
+[BOON] BulkupSTART expired on R0 - cleaned up
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 9)
+[BOON] Poison Effect triggered on R0 (Usage: 1/2)
+[EXECUTE_EFFECT] R0 triggered Poison Effect
+R0 HP: 6 - 5 => 1
+[BOON] Poison Effect expired on R0 - cleaned up
+Magic: R0 targeting B3 (HP: 1)
+[A33] B3 threat changed from 2 to 0
+Magic: R4 targeting R0 (HP: 1)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R3 targeting R0 (HP: 1)
+[HEAL] R0 healed for 2 HP (from 1 to 3/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+Magic: B0 targeting B2 (HP: 6)
+[HEAL] B2 healed for 5 HP (from 6 to 11/12)
+[A29] B0 healed B2 for 5 HP
+Magic: B2 targeting B0 (HP: 9)
+[HEAL] B0 healed for 5 HP (from 9 to 14/15)
+[A29] B2 healed B0 for 5 HP
+Magic: R2 targeting B2 (HP: 11)
+B2 HP: 11 - 3 => 8
+Magic: R2 targeting B0 (HP: 14)
+B0 HP: 14 - 3 => 11
+Magic: R2 targeting B3 (HP: 1)
+B3 HP: 3 - 3 => 0
+Magic: R2 targeting B4 (HP: 3)
+B4 HP: 3 - 3 => 0
 
 
-[Tick 180] 1 unit(s) acting
-Ranged: R4 targeting B1 (HP: 10)
-B1 HP: 10 - 9 => 1
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 135] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 3)
+[HEAL] R0 healed for 2 HP (from 3 to 5/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 
 
-[Tick 210] 1 unit(s) acting
-Melee: R3 targeting B1 (HP: 1)
-B1 HP: 10 - 10 => 0
-[DEBUG] R3 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R3
-[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
-[BOON] Tetrodo Effect triggered on R3 (Usage: 2/2)
-[EXECUTE_EFFECT] R3 triggered Tetrodo Effect
-R3 HP: 7 - 5 => 2
+[Tick 136] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 5)
+[HEAL] R0 healed for 2 HP (from 5 to 7/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 
 
-[Tick 240] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 6)
-B2 HP: 7 - 7 => 0
+[Tick 137] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 7)
+[HEAL] R0 healed for 2 HP (from 7 to 9/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 
 
-[Tick 252] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 2)
-R3 HP: 3 - 3 => 0
+[Tick 138] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 9)
+[HEAL] R0 healed for 2 HP (from 9 to 11/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 
 
-[Tick 280] 2 unit(s) acting
-Melee: R1 targeting B4 (HP: 7)
-R1 HP: 3 - 3 => 0
-B4 HP: 10 - 10 => 0
-  -> R1 died during after-actions, stopping further actions
-Magic: R2 targeting R4 (HP: 8)
-[A34] R4 attack changed from 5 to 7
+[Tick 139] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 11)
+[HEAL] R0 healed for 2 HP (from 11 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 140] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 141] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 142] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 143] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 144] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 145] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 146] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 147] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 148] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 149] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 150] 2 unit(s) acting
+Magic: R2 targeting B2 (HP: 8)
+B2 HP: 8 - 3 => 5
+Magic: R2 targeting B0 (HP: 11)
+B0 HP: 11 - 3 => 8
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 151] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 152] 2 unit(s) acting
+Magic: R2 targeting B2 (HP: 5)
+B2 HP: 5 - 3 => 2
+Magic: R2 targeting B0 (HP: 8)
+B0 HP: 8 - 3 => 5
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 153] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 154] 2 unit(s) acting
+Magic: R2 targeting B2 (HP: 2)
+B2 HP: 3 - 3 => 0
+Magic: R2 targeting B0 (HP: 5)
+B0 HP: 5 - 3 => 2
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 155] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
+
+
+[Tick 156] 2 unit(s) acting
+Magic: R2 targeting B0 (HP: 2)
+B0 HP: 3 - 3 => 0
+Magic: R3 targeting R0 (HP: 13)
+[HEAL] R0 healed for 0 HP (from 13 to 13/13)
+[A29] R3 healed R0 for 2 HP
+Magic: R3 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R3 healed R4 for 2 HP
+Magic: R3 targeting R2 (HP: 6)
+[HEAL] R2 healed for 0 HP (from 6 to 6/6)
+[A29] R3 healed R2 for 2 HP
 Battle Over! Red Team wins!
