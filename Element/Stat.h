@@ -22,6 +22,8 @@ static Stat Empty();
 Stat& operator+=(const Stat& other);  
 Stat& operator-=(const Stat& other);  
 
+Stat operator*(int scalar) const;
+
     Stat();
     ~Stat();
     Stat(int attack, int defense, int hitpoint, int speed, int threat);

@@ -1,82 +1,13 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:12 Speed:2 Alive:Yes
-Unit 1: R1 HP:12 Speed:3 Alive:Yes
-Unit 2: R2 HP:10 Speed:1 Alive:Yes
-Unit 3: R3 HP:10 Speed:4 Alive:Yes
-Unit 4: R4 HP:8 Speed:3 Alive:Yes
-Unit 5: B0 HP:10 Speed:5 Alive:Yes
-Unit 6: B1 HP:8 Speed:6 Alive:Yes
-Unit 7: B2 HP:10 Speed:3 Alive:Yes
-Unit 8: B3 HP:10 Speed:4 Alive:Yes
-Unit 9: B4 HP:4 Speed:2 Alive:Yes
+Unit 0: R0 HP:-1657422435 Speed:33597200 Alive:No
+Unit 1: R1 HP:-1657422429 Speed:33597198 Alive:No
+Unit 2: R2 HP:-1657422434 Speed:33597196 Alive:No
+Unit 3: R3 HP:-1657422435 Speed:33597197 Alive:No
+Unit 4: R4 HP:-1657422442 Speed:33597200 Alive:No
+Unit 5: B0 HP:-1657422436 Speed:33597202 Alive:No
+Unit 6: B1 HP:-1657422434 Speed:33597197 Alive:No
+Unit 7: B2 HP:-1657422437 Speed:33597200 Alive:No
+Unit 8: B3 HP:-1657422432 Speed:33597198 Alive:No
+Unit 9: B4 HP:-1657422442 Speed:33597200 Alive:No
 ==========================
-
-
-[Tick 10] 1 unit(s) acting
-Ranged: B1 targeting R0 (HP: 12)
-R0 HP: 12 - 3 => 9
-  -> R0 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R1 (HP: 12)
-R1 HP: 12 - 3 => 9
-Ranged: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 1 => 9
-  -> R2 (magic) tick reset due to ranged attack!
-
-
-[Tick 12] 1 unit(s) acting
-Melee: B0 targeting R0 (HP: 9)
-R0 HP: 9 - 5 => 4
-  -> R0 (magic) tick reset due to melee attack!
-
-
-[Tick 15] 2 unit(s) acting
-Melee: B3 targeting R0 (HP: 4)
-R0 HP: 5 - 5 => 0
-[A04] B3 attack changed from 5 to 6
-[A15] B3 defense changed from 0 to 1
-Melee: R3 targeting B2 (HP: 10)
-B2 HP: 10 - 4 => 6
-[A10] R3 threat changed from 5 to 6
-[A04] R3 attack changed from 6 to 5
-
-
-[Tick 20] 4 unit(s) acting
-Ranged: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 8 => 2
-Ranged: B1 targeting R3 (HP: 2)
-R3 HP: 3 - 3 => 0
-Ranged: B1 targeting R1 (HP: 9)
-R1 HP: 9 - 3 => 6
-Ranged: B1 targeting R2 (HP: 9)
-R2 HP: 9 - 1 => 8
-  -> R2 (magic) tick reset due to ranged attack!
-Melee: R1 targeting B2 (HP: 6)
-B2 HP: 6 - 1 => 5
-[BOON] Applied Poison Effect to B2 (Usage: 3)
-[A28] R1 applied Poison Effect to B2 (usage: 3)
-Melee: R4 targeting B2 (HP: 5)
-B2 HP: 5 - 4 => 1
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-
-
-[Tick 24] 1 unit(s) acting
-Melee: B0 targeting R1 (HP: 6)
-R1 HP: 6 - 5 => 1
-
-
-[Tick 30] 3 unit(s) acting
-Ranged: B1 targeting R1 (HP: 1)
-R1 HP: 3 - 3 => 0
-Ranged: B1 targeting R2 (HP: 8)
-R2 HP: 8 - 1 => 7
-  -> R2 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R4 (HP: 8)
-R4 HP: 8 - 3 => 5
-Melee: B4 targeting R2 (HP: 7)
-B4 HP: 4 - 3 => 1
-R2 HP: 10 - 10 => 0
-Melee: B3 targeting R4 (HP: 5)
-R4 HP: 6 - 6 => 0
-[A04] B3 attack changed from 6 to 7
-[A15] B3 defense changed from 1 to 2
 Battle Over! Blue Team wins!

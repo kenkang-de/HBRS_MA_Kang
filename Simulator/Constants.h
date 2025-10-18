@@ -20,5 +20,7 @@ const float MULTIPLIER_BASIC =1.0;
 //balancing target winrate
 const float TARGET_WINRATE=0.5;
 
+const float TARGET_THRESHOLD=0.05;
+
 
 #endif

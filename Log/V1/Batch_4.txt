@@ -1,100 +1,13 @@
 === BATTLE START DEBUG ===
-Unit 0: R0 HP:6 Speed:4 Alive:Yes
-Unit 1: R1 HP:10 Speed:6 Alive:Yes
-Unit 2: R2 HP:10 Speed:5 Alive:Yes
-Unit 3: R3 HP:10 Speed:5 Alive:Yes
-Unit 4: R4 HP:10 Speed:2 Alive:Yes
-Unit 5: B0 HP:11 Speed:0 Alive:Yes
-Unit 6: B1 HP:10 Speed:5 Alive:Yes
-Unit 7: B2 HP:10 Speed:7 Alive:Yes
-Unit 8: B3 HP:6 Speed:3 Alive:Yes
-Unit 9: B4 HP:8 Speed:3 Alive:Yes
+Unit 0: R0 HP:-1657422440 Speed:33597200 Alive:No
+Unit 1: R1 HP:-1657422436 Speed:33597200 Alive:No
+Unit 2: R2 HP:-1657422436 Speed:33597203 Alive:No
+Unit 3: R3 HP:-1657422438 Speed:33597200 Alive:No
+Unit 4: R4 HP:-1657422434 Speed:33597197 Alive:No
+Unit 5: B0 HP:-1657422436 Speed:33597202 Alive:No
+Unit 6: B1 HP:-1657422436 Speed:33597199 Alive:No
+Unit 7: B2 HP:-1657422436 Speed:33597198 Alive:No
+Unit 8: B3 HP:-1657422434 Speed:33597200 Alive:No
+Unit 9: B4 HP:-1657422436 Speed:33597202 Alive:No
 ==========================
-
-
-[Tick 60] 1 unit(s) acting
-Ranged: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 4 => 6
-[A25] R2 attack reduced from 7 to 5 (damage: 4, reduction: 2)
-
-
-[Tick 70] 1 unit(s) acting
-Melee: R1 targeting B0 (HP: 11)
-B0 HP: 11 - 2 => 9
-[BOON] Applied Poison Effect to B0 (Usage: 3)
-[A28] R1 applied Poison Effect to B0 (usage: 3)
-  -> B0 (magic) tick reset due to melee attack!
-
-
-[Tick 84] 3 unit(s) acting
-Melee: R3 targeting B0 (HP: 9)
-B0 HP: 9 - 5 => 4
-[A02] B0 defense changed from 1 to 0
-  -> B0 (magic) tick reset due to melee attack!
-Melee: R2 targeting B0 (HP: 4)
-B0 HP: 5 - 5 => 0
-[A04] R2 attack changed from 5 to 6
-[A15] R2 defense changed from -2 to 0
-Magic: B1 targeting R2 (HP: 6)
-R2 HP: 6 - 5 => 1
-
-
-[Tick 105] 1 unit(s) acting
-Ranged: R0 targeting B2 (HP: 10)
-B2 HP: 10 - 10 => 0
-
-
-[Tick 140] 3 unit(s) acting
-Melee: R1 targeting B1 (HP: 10)
-B1 HP: 10 - 4 => 6
-[BOON] Applied Poison Effect to B1 (Usage: 3)
-[A28] R1 applied Poison Effect to B1 (usage: 3)
-  -> B1 (magic) tick reset due to melee attack!
-Melee: B4 targeting R2 (HP: 1)
-R2 HP: 6 - 6 => 0
-R2 HP: 6 - 6 => 0
-Magic: B3 targeting R4 (HP: 10)
-R4 HP: 10 - 5 => 5
-
-
-[Tick 150] 1 unit(s) acting
-Melee: R1 targeting B1 (HP: 6)
-B1 HP: 6 - 4 => 2
-[BOON] Refreshing existing Poison Effect on B1
-[A28] R1 applied Poison Effect to B1 (usage: 3)
-  -> B1 (magic) tick reset due to melee attack!
-
-
-[Tick 160] 3 unit(s) acting
-Melee: B4 targeting R4 (HP: 5)
-R4 HP: 5 - 3 => 2
-R4 HP: 3 - 3 => 0
-Melee: R1 targeting B1 (HP: 2)
-B1 HP: 4 - 4 => 0
-[BOON] Refreshing existing Poison Effect on B1
-[A28] R1 applied Poison Effect to B1 (usage: 3)
-
-
-[Tick 168] 1 unit(s) acting
-Melee: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 5 => 3
-[A02] B4 defense changed from 1 to 0
-
-
-[Tick 170] 1 unit(s) acting
-Melee: R1 targeting B4 (HP: 3)
-B4 HP: 3 - 3 => 0
-[BOON] Applied Poison Effect to B4 (Usage: 3)
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-
-
-[Tick 180] 3 unit(s) acting
-Melee: R3 targeting B3 (HP: 6)
-B3 HP: 6 - 5 => 1
-[A02] B3 defense changed from 1 to 0
-  -> B3 (magic) tick reset due to melee attack!
-Melee: R1 targeting B3 (HP: 1)
-B3 HP: 3 - 3 => 0
-[BOON] Applied Poison Effect to B3 (Usage: 3)
-[A28] R1 applied Poison Effect to B3 (usage: 3)
-Battle Over! Red Team wins!
+Battle Over! Blue Team wins!

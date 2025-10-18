@@ -129,6 +129,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling BalancingLane.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLane.cpp -o BalancingLane.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile BalancingLane.cpp
+    exit /b 1
+)
+
 REM Build main executable with library
 cd ..
 echo Linking Run.exe...

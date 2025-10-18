@@ -31,6 +31,18 @@ Stat& Stat::operator-=(const Stat& other) {
     return *this;
 }
 
+
+Stat Stat::operator*(int scalar) const
+{
+    return Stat(
+        Attack * scalar,
+        Defense * scalar,
+        Hitpoint * scalar,
+        Speed * scalar,
+        Threat * scalar
+    );
+}
+
 Stat::Stat()
     : Attack(Default_Attack),
       Defense(Default_Defense),

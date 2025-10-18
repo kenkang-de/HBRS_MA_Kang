@@ -3,6 +3,8 @@
 
 #include <string>
 
+#include "../Element/Stat.h"
+
 class TestSubject {
 protected:
     std::string id;
@@ -26,7 +28,6 @@ public:
 
     //Sampling
     int SampleUsage;
-    // std::vector<int> SamplePartnerIndexList;
     
     // Statistics methods
      void recordWin() const {
@@ -55,6 +56,8 @@ public:
         TotalDraw = 0;
         UsageCount = 0;
     }
+
+    Stat* correctionStat;
 
 private:
     void updateWinRate() const {
