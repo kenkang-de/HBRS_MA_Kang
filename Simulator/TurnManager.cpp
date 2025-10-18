@@ -142,58 +142,47 @@ bool TurnManager::HasActions() const {
     return !turnQueue.empty();
 }
 
+int TurnManager::GetUnitInterval(Unit* unit){
+    return lcm/unit->GetTotalStat().GetSpeed();
+}
+
 std::vector<Unit*> TurnManager::GetNextUnits() {
+
     std::vector<Unit*> unitsToAct;
 
-    if (turnQueue.empty()) {
-        return unitsToAct;
-    }
+    if (turnQueue.empty()) 
+    return unitsToAct;
 
-    // CRITICAL FIX: Clean up any actions scheduled for past ticks
-    std::vector<ScheduledAction> validActions;
-    while (!turnQueue.empty()) {
-        ScheduledAction action = turnQueue.top();
+    //Clean up queue that might some actions actually not performed (due to some conditions)
+    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay < tick) 
         turnQueue.pop();
-        
-        // Only keep actions scheduled for current tick or future
-        if (action.nextTick + action.unit->TickDelay >= tick) {
-            validActions.push_back(action);
-        }
-    }
-    
-    // Rebuild queue with only valid actions
-    for (const auto& action : validActions) {
-        turnQueue.push(action);
-    }
-
-    if (turnQueue.empty()) {
-        return unitsToAct;
-    }
 
     // Collect all units scheduled for the current tick
-    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay <= tick) {
+    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay == tick) {
         ScheduledAction top = turnQueue.top();
         turnQueue.pop();
         
-        // Only process units whose effective action time matches current tick
-        if (top.nextTick + top.unit->TickDelay == tick) {
-            // Only add alive units with positive speed to the action list
             if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
                 unitsToAct.push_back(top.unit);
                 // Record when this unit acted
                 lastActionTick[top.unit] = tick;
-            }
 
-            // Reschedule the unit if it's valid, alive, AND has positive speed
-            if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
-                int interval = lcm / top.unit->GetTotalStat().GetSpeed();
-                // Reset TickDelay when rescheduling
+                int interval = GetUnitInterval(top.unit);
+                // TODO: Reset TickDelay when rescheduling? (is it?)
                 top.unit->TickDelay = 0;
                 int nextTick = tick + interval;
                 turnQueue.push({top.unit, nextTick});
             }
-        }
-        // Units with speed <= 0 are not rescheduled
+
+            // // Reschedule the unit if it's valid, alive, AND has positive speed
+            // if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
+            //     int interval = lcm / top.unit->GetTotalStat().GetSpeed();
+            //     // Reset TickDelay when rescheduling
+            //     top.unit->TickDelay = 0;
+            //     int nextTick = tick + interval;
+            //     turnQueue.push({top.unit, nextTick});
+            // }
+        
     }
 
     return unitsToAct;

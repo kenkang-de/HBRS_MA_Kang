@@ -1,13 +1,163 @@
-=== BATTLE START DEBUG ===
-Unit 0: R0 HP:-1657422436 Speed:33597199 Alive:No
-Unit 1: R1 HP:-1657422438 Speed:33597201 Alive:No
-Unit 2: R2 HP:-1657422435 Speed:33597198 Alive:No
-Unit 3: R3 HP:-1657422436 Speed:33597201 Alive:No
-Unit 4: R4 HP:-1657422436 Speed:33597202 Alive:No
-Unit 5: B0 HP:-1657422436 Speed:33597200 Alive:No
-Unit 6: B1 HP:-1657422431 Speed:33597197 Alive:No
-Unit 7: B2 HP:-1657422436 Speed:33597201 Alive:No
-Unit 8: B3 HP:-1657422436 Speed:33597201 Alive:No
-Unit 9: B4 HP:-1657422438 Speed:33597200 Alive:No
+Unit 0: R0 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW46](Protect) Armor: [BSA26]
+Unit 1: R1 Attack:3 Defense:-2 HP:10 Speed:6 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA9]
+Unit 2: R2 Attack:1 Defense:4 HP:12 Speed:1 Threat:9 Weapon: [BSW37](Freeze) Armor: [BSA40]
+Unit 3: R3 Attack:1 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW33](Magic Bolt) Armor: [BSA9]
+Unit 4: R4 Attack:3 Defense:0 HP:10 Speed:4 Threat:1 Weapon: [BSW17](Shoot) Armor: [BSA35]
+Unit 5: B0 Attack:-1 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA10]
+Unit 6: B1 Attack:1 Defense:1 HP:8 Speed:5 Threat:1 Weapon: [BSW21](Poison Arrow) Armor: [BSA18]
+Unit 7: B2 Attack:4 Defense:2 HP:10 Speed:3 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA30]
+Unit 8: B3 Attack:0 Defense:10 HP:12 Speed:3 Threat:4 Weapon: [BSW12](Final Attack) Armor: [BSA17]
+Unit 9: B4 Attack:-2 Defense:5 HP:15 Speed:0 Threat:10 Weapon: [BSW37](Freeze) Armor: [BSA48]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 10] 1 unit(s) acting
+Ranged: R1 targeting B4 (HP: 15)
+B4 HP: 15 - 0 => 15
+Ranged: R1 targeting B2 (HP: 10)
+B2 HP: 10 - 1 => 9
+
+
+[Tick 12] 3 unit(s) acting
+Ranged: B1 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[BOON] Applied Poison Effect to R2 (Usage: 2)
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: B0 targeting R2 (HP: 12)
+[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
+[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
+Magic: R3 targeting B4 (HP: 15)
+B4 HP: 15 - 5 => 10
+
+
+[Tick 15] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+
+
+[Tick 20] 3 unit(s) acting
+Ranged: B2 targeting R2 (HP: 12)
+R2 HP: 12 - 1 => 11
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Ranged: R1 targeting B2 (HP: 9)
+B2 HP: 9 - 1 => 8
+Melee: B3 targeting R2 (HP: 11)
+R2 HP: 11 - 6 => 5
+[A12] B3 defense changed from 10 to 0
+  -> R2 (magic) tick reset due to melee attack!
+
+
+[Tick 24] 3 unit(s) acting
+Ranged: B1 targeting R2 (HP: 5)
+R2 HP: 5 - 0 => 5
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: B0 targeting R2 (HP: 5)
+[BOON] Refreshing existing Tetrodo Effect on R2
+[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
+Magic: R3 targeting B4 (HP: 10)
+B4 HP: 10 - 5 => 5
+
+
+[Tick 30] 3 unit(s) acting
+Ranged: R1 targeting B4 (HP: 5)
+B4 HP: 5 - 0 => 5
+Ranged: R1 targeting B2 (HP: 8)
+B2 HP: 8 - 1 => 7
+Ranged: R4 targeting B4 (HP: 5)
+B4 HP: 5 - 0 => 5
+Magic: R0 targeting R2 (HP: 5)
+[BOON] Applied ProtectSTART to R2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 36] 3 unit(s) acting
+Ranged: B1 targeting R2 (HP: 5)
+R2 HP: 5 - 0 => 5
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: R3 targeting B4 (HP: 5)
+B4 HP: 5 - 5 => 0
+Magic: B0 targeting R2 (HP: 5)
+[BOON] Refreshing existing Tetrodo Effect on R2
+[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
+
+
+[Tick 40] 3 unit(s) acting
+Ranged: B2 targeting R2 (HP: 5)
+R2 HP: 5 - 1 => 4
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 7)
+B2 HP: 7 - 1 => 6
+Ranged: R1 targeting B3 (HP: 12)
+B3 HP: 12 - 3 => 9
+Melee: B3 targeting R2 (HP: 4)
+R2 HP: 4 - 0 => 4
+[A12] B3 defense changed from 0 to 0
+
+
+[Tick 45] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 6)
+B2 HP: 6 - 1 => 5
+
+
+[Tick 48] 3 unit(s) acting
+Ranged: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 0 => 4
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: B0 targeting R2 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on R2
+[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
+Magic: R3 targeting B2 (HP: 5)
+B2 HP: 5 - 5 => 0
+
+
+[Tick 50] 1 unit(s) acting
+Ranged: R1 targeting B3 (HP: 9)
+B3 HP: 9 - 3 => 6
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 3 => 7
+  -> B0 (magic) tick reset due to ranged attack!
+
+
+[Tick 60] 6 unit(s) acting
+Ranged: R4 targeting B3 (HP: 6)
+B3 HP: 6 - 3 => 3
+Ranged: R1 targeting B3 (HP: 3)
+B3 HP: 3 - 3 => 0
+Ranged: R1 targeting B0 (HP: 7)
+B0 HP: 7 - 3 => 4
+  -> B0 (magic) tick reset due to ranged attack!
+Ranged: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 0 => 4
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: R3 targeting B0 (HP: 4)
+B0 HP: 5 - 5 => 0
+Magic: R0 targeting R2 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on R2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 70] 1 unit(s) acting
+Ranged: R1 targeting B1 (HP: 8)
+B1 HP: 8 - 2 => 6
+
+
+[Tick 72] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 0 => 4
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B1 applied Poison Effect to R2 (usage: 2)
+Magic: R3 targeting B1 (HP: 6)
+B1 HP: 6 - 5 => 1
+
+
+[Tick 75] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 1)
+B1 HP: 2 - 2 => 0
+Battle Over! Red Team wins!

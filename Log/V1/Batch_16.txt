@@ -1,13 +1,463 @@
-=== BATTLE START DEBUG ===
-Unit 0: R0 HP:-1657422436 Speed:33597200 Alive:No
-Unit 1: R1 HP:-1657422436 Speed:33597201 Alive:No
-Unit 2: R2 HP:-1657422435 Speed:33597198 Alive:No
-Unit 3: R3 HP:-1657422436 Speed:33597199 Alive:No
-Unit 4: R4 HP:-1657422434 Speed:33597199 Alive:No
-Unit 5: B0 HP:-1657422436 Speed:33597201 Alive:No
-Unit 6: B1 HP:-1657422434 Speed:33597197 Alive:No
-Unit 7: B2 HP:-1657422436 Speed:33597199 Alive:No
-Unit 8: B3 HP:-1657422439 Speed:33597201 Alive:No
-Unit 9: B4 HP:-1657422431 Speed:33597198 Alive:No
+Unit 0: R0 Attack:3 Defense:4 HP:10 Speed:3 Threat:8 Weapon: [BSW13](Prep Attack) Armor: [BSA31]
+Unit 1: R1 Attack:1 Defense:1 HP:11 Speed:4 Threat:6 Weapon: [BSW46](Protect) Armor: [BSA13]
+Unit 2: R2 Attack:3 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW20](Blitz Shot) Armor: [BSA50]
+Unit 3: R3 Attack:4 Defense:5 HP:10 Speed:2 Threat:7 Weapon: [BSW25](Smoke Shot) Armor: [BSA45]
+Unit 4: R4 Attack:1 Defense:2 HP:12 Speed:1 Threat:7 Weapon: [BSW45](Fatigue) Armor: [BSA30]
+Unit 5: B0 Attack:5 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA8]
+Unit 6: B1 Attack:1 Defense:3 HP:12 Speed:2 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA21]
+Unit 7: B2 Attack:5 Defense:2 HP:15 Speed:1 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA49]
+Unit 8: B3 Attack:2 Defense:0 HP:10 Speed:6 Threat:0 Weapon: [BSW17](Shoot) Armor: [BSA14]
+Unit 9: B4 Attack:3 Defense:6 HP:10 Speed:3 Threat:7 Weapon: [BSW17](Shoot) Armor: [BSA42]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 2] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 10)
+R0 HP: 10 - 0 => 10
+Melee: B0 targeting R0 (HP: 10)
+R0 HP: 10 - 1 => 9
+
+
+[Tick 3] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 9)
+[BOON] Applied ProtectSTART to R0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 4] 4 unit(s) acting
+Ranged: B4 targeting R0 (HP: 9)
+R0 HP: 9 - 0 => 9
+Ranged: B3 targeting R0 (HP: 9)
+R0 HP: 9 - 0 => 9
+Melee: B0 targeting R0 (HP: 9)
+R0 HP: 9 - 1 => 8
+Melee: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 8)
+[TEMP-BUFF] ProtectSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered ProtectSTART
+[A02] R0 defense changed from 4 to 7
+
+
+[Tick 6] 6 unit(s) acting
+Ranged: R2 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Ranged: R3 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Ranged: B3 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Magic: R1 targeting R0 (HP: 8)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R0 (HP: 8)
+[A06] R0 speed changed from 3 to 2
+Magic: B1 targeting R3 (HP: 10)
+[A06] R3 speed changed from 2 to 1
+
+
+[Tick 8] 4 unit(s) acting
+Ranged: B4 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Ranged: B3 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Melee: R0 targeting B1 (HP: 12)
+B1 HP: 12 - 0 => 12
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 8)
+[TEMP-BUFF] ProtectSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R0 triggered ProtectEND
+[A02] R0 defense changed from 7 to 4
+[BOON] ProtectSTART expired on R0 - cleaned up
+
+
+[Tick 9] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 8)
+[BOON] Applied ProtectSTART to R0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 10] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 8)
+R0 HP: 8 - 0 => 8
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 1 => 7
+
+
+[Tick 12] 9 unit(s) acting
+Ranged: B4 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+Ranged: R3 targeting B1 (HP: 12)
+B1 HP: 12 - 1 => 11
+  -> B1 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B1 (HP: 11)
+B1 HP: 11 - 2 => 9
+  -> B1 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+Melee: B0 targeting R0 (HP: 7)
+R0 HP: 7 - 1 => 6
+Melee: B2 targeting R0 (HP: 6)
+R0 HP: 6 - 1 => 5
+R0 HP: 5 - 1 => 4
+Magic: R4 targeting B1 (HP: 9)
+[A06] B1 speed changed from 2 to 1
+Magic: R4 targeting B2 (HP: 15)
+[A06] B2 speed changed from 1 to 0
+Magic: R1 targeting R0 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 14] 3 unit(s) acting
+Ranged: B3 targeting R0 (HP: 4)
+R0 HP: 4 - 0 => 4
+Melee: R0 targeting B2 (HP: 15)
+B2 HP: 15 - 1 => 14
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 8)
+[TEMP-BUFF] ProtectSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered ProtectSTART
+[A02] R0 defense changed from 4 to 7
+Melee: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+
+
+[Tick 15] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 6)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 16] 3 unit(s) acting
+Ranged: B3 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Ranged: B4 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+
+
+[Tick 18] 5 unit(s) acting
+Ranged: R2 targeting B2 (HP: 14)
+B2 HP: 14 - 3 => 11
+Ranged: B3 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Magic: R1 targeting R0 (HP: 6)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: B1 targeting R0 (HP: 6)
+[A06] R0 speed changed from 2 to 1
+Magic: B1 targeting R3 (HP: 10)
+[A06] R3 speed changed from 1 to 0
+
+
+[Tick 20] 4 unit(s) acting
+Ranged: B4 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Ranged: B3 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: R0 targeting B2 (HP: 11)
+B2 HP: 11 - 1 => 10
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 8)
+[TEMP-BUFF] ProtectSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R0 triggered ProtectEND
+[A02] R0 defense changed from 7 to 4
+[BOON] ProtectSTART expired on R0 - cleaned up
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 1 => 7
+
+
+[Tick 21] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 7)
+[BOON] Applied ProtectSTART to R0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 22] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+Melee: B0 targeting R0 (HP: 7)
+R0 HP: 7 - 1 => 6
+
+
+[Tick 24] 6 unit(s) acting
+Ranged: B4 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Ranged: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 3 => 7
+Ranged: B3 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 1 => 5
+Magic: R4 targeting B2 (HP: 7)
+[A06] B2 speed changed from 0 to 0
+Magic: R4 targeting B0 (HP: 10)
+[A06] B0 speed changed from 6 to 5
+Magic: R1 targeting R0 (HP: 5)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 26] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 5)
+R0 HP: 5 - 0 => 5
+Melee: B0 targeting R0 (HP: 5)
+R0 HP: 5 - 1 => 4
+
+
+[Tick 27] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 4)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 28] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 4)
+R0 HP: 4 - 0 => 4
+
+
+[Tick 30] 2 unit(s) acting
+Ranged: R2 targeting B2 (HP: 7)
+B2 HP: 7 - 3 => 4
+Magic: B1 targeting R0 (HP: 4)
+[A06] R0 speed changed from 1 to 0
+Magic: B1 targeting R3 (HP: 10)
+[A06] R3 speed changed from 0 to 0
+
+
+[Tick 36] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 4)
+R0 HP: 4 - 0 => 4
+Magic: R4 targeting B2 (HP: 4)
+[A06] B2 speed changed from 0 to 0
+Magic: R4 targeting B0 (HP: 10)
+[A06] B0 speed changed from 5 to 4
+
+
+[Tick 38] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 4)
+R0 HP: 4 - 1 => 3
+
+
+[Tick 41] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 3)
+R0 HP: 3 - 1 => 2
+
+
+[Tick 42] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 2)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 44] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 2)
+R0 HP: 2 - 1 => 1
+
+
+[Tick 45] 1 unit(s) acting
+Magic: R1 targeting R0 (HP: 1)
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 46] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 1)
+R0 HP: 1 - 0 => 1
+
+
+[Tick 47] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 1)
+R0 HP: 1 - 1 => 0
+
+
+[Tick 48] 3 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Applied ProtectSTART to R3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 50] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 51] 1 unit(s) acting
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 52] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 53] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 54] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 56] 3 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 57] 1 unit(s) acting
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 58] 1 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 59] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 60] 4 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: R2 targeting B2 (HP: 4)
+B2 HP: 4 - 3 => 1
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 62] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 63] 1 unit(s) acting
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 64] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 65] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 66] 3 unit(s) acting
+Ranged: R2 targeting B2 (HP: 1)
+B2 HP: 3 - 3 => 0
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 68] 3 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 69] 1 unit(s) acting
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 70] 1 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 71] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+
+
+[Tick 72] 4 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Ranged: R2 targeting B0 (HP: 10)
+B0 HP: 10 - 5 => 5
+Magic: R1 targeting R3 (HP: 10)
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 74] 2 unit(s) acting
+Ranged: B3 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Melee: B0 targeting R3 (HP: 10)
+R3 HP: 10 - 0 => 10
+Battle Over! Tick limit reached (0 ticks elapsed)

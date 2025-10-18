@@ -53,14 +53,18 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         LogSystem::StartLogging(logFilename);
     }
 
-    // Debug: Check unit states before battle
-    LogSystem::LogStream("=== BATTLE START DEBUG ===");
     for (int i = 0; i < allUnits.size(); i++) {
         Unit* unit = allUnits[i];
         LogSystem::LogStream("Unit ", i, ": ", unit->GetName(), 
-                           " HP:", unit->GetCurrentHP(), 
+                           " Attack:", unit->GetTotalStat().GetAttack(),
+                           " Defense:", unit->GetTotalStat().GetDefense(),
+                           " HP:", unit->GetTotalStat().GetHP(), 
                            " Speed:", unit->GetTotalStat().GetSpeed(),
-                           " Alive:", (unit->IsAlive() ? "Yes" : "No"));
+                           " Threat:", unit->GetTotalStat().GetThreat(),
+                           " Weapon: [", unit->GetWeapon()->GetID(), "]",
+                           "(", unit->GetWeapon()->GetAction().GetID(), ")",
+                           " Armor: [", unit->GetArmor()->GetID(), "]"
+                           );
     }
     LogSystem::LogStream("==========================");
 

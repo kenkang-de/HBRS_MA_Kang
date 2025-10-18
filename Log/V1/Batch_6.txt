@@ -1,13 +1,133 @@
-=== BATTLE START DEBUG ===
-Unit 0: R0 HP:-1657422432 Speed:33597201 Alive:No
-Unit 1: R1 HP:-1657422436 Speed:33597199 Alive:No
-Unit 2: R2 HP:-1657422433 Speed:33597197 Alive:No
-Unit 3: R3 HP:-1657422438 Speed:33597201 Alive:No
-Unit 4: R4 HP:-1657422438 Speed:33597198 Alive:No
-Unit 5: B0 HP:-1657422438 Speed:33597199 Alive:No
-Unit 6: B1 HP:-1657422431 Speed:33597197 Alive:No
-Unit 7: B2 HP:-1657422438 Speed:33597200 Alive:No
-Unit 8: B3 HP:-1657422431 Speed:33597197 Alive:No
-Unit 9: B4 HP:-1657422436 Speed:33597201 Alive:No
+Unit 0: R0 Attack:4 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA21]
+Unit 1: R1 Attack:1 Defense:1 HP:10 Speed:0 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA43]
+Unit 2: R2 Attack:6 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW15](Taunt) Armor: [BSA49]
+Unit 3: R3 Attack:3 Defense:0 HP:8 Speed:5 Threat:1 Weapon: [BSW22](Delay Shot) Armor: [BSA15]
+Unit 4: R4 Attack:0 Defense:0 HP:9 Speed:5 Threat:4 Weapon: [BSW38](Healing Touch) Armor: [BSA7]
+Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA8]
+Unit 6: B1 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA20]
+Unit 7: B2 Attack:6 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW14](Leech Attack) Armor: [BSA9]
+Unit 8: B3 Attack:-2 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA22]
+Unit 9: B4 Attack:4 Defense:2 HP:15 Speed:2 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA49]
 ==========================
+
+
+[Tick 4] 4 unit(s) acting
+Ranged: R3 targeting B4 (HP: 15)
+B4 HP: 15 - 1 => 14
+[A20] B4 delayed by 1 intervals (10 ticks)
+Ranged: B1 targeting R1 (HP: 10)
+R1 HP: 10 - 1 => 9
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R4 targeting R1 (HP: 9)
+[HEAL] R1 healed for 1 HP (from 9 to 10/10)
+[A29] R4 healed R1 for 5 HP
+Magic: B0 targeting R1 (HP: 10)
+[BOON] Applied Tetrodo Effect to R1 (Usage: 2)
+[A28] B0 applied Tetrodo Effect to R1 (usage: 2)
+
+
+[Tick 5] 2 unit(s) acting
+Melee: B2 targeting R1 (HP: 10)
+R1 HP: 10 - 5 => 5
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+  -> R1 (magic) tick reset due to melee attack!
+Melee: R0 targeting B4 (HP: 14)
+B4 HP: 14 - 6 => 8
+
+
+[Tick 8] 4 unit(s) acting
+Ranged: R3 targeting B4 (HP: 8)
+B4 HP: 8 - 1 => 7
+[A20] B4 delayed by 1 intervals (10 ticks)
+Ranged: B1 targeting R1 (HP: 5)
+R1 HP: 5 - 1 => 4
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: B0 targeting R1 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on R1
+[A28] B0 applied Tetrodo Effect to R1 (usage: 2)
+Magic: R4 targeting R1 (HP: 4)
+[HEAL] R1 healed for 5 HP (from 4 to 9/10)
+[A29] R4 healed R1 for 5 HP
+
+
+[Tick 30] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 9)
+R1 HP: 9 - 3 => 6
+  -> R1 (magic) tick reset due to ranged attack!
+
+
+[Tick 40] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 6)
+R1 HP: 6 - 3 => 3
+  -> R1 (magic) tick reset due to ranged attack!
+
+
+[Tick 50] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 3)
+R1 HP: 3 - 3 => 0
+
+
+[Tick 60] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 15)
+R2 HP: 15 - 2 => 13
+
+
+[Tick 70] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 13)
+R2 HP: 13 - 2 => 11
+
+
+[Tick 80] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 11)
+R2 HP: 11 - 2 => 9
+
+
+[Tick 90] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 9)
+R2 HP: 9 - 2 => 7
+
+
+[Tick 100] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 7)
+R2 HP: 7 - 2 => 5
+
+
+[Tick 110] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 5)
+R2 HP: 5 - 2 => 3
+
+
+[Tick 120] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 3)
+R2 HP: 3 - 2 => 1
+
+
+[Tick 130] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 1)
+R2 HP: 2 - 2 => 0
+
+
+[Tick 140] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 12)
+R0 HP: 12 - 5 => 7
+
+
+[Tick 150] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 7)
+R0 HP: 7 - 5 => 2
+
+
+[Tick 160] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 2)
+R0 HP: 5 - 5 => 0
+
+
+[Tick 170] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 9)
+R4 HP: 9 - 9 => 0
+
+
+[Tick 180] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 8)
+R3 HP: 9 - 9 => 0
 Battle Over! Blue Team wins!

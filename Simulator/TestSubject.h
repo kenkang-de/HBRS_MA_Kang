@@ -57,7 +57,7 @@ public:
         UsageCount = 0;
     }
 
-    Stat* correctionStat;
+    Stat* correctionStat=nullptr;
 
 private:
     void updateWinRate() const {
