@@ -20,7 +20,7 @@ public:
     TestSubject(id), name(name), stat(stat), armorType(armorType) {}
     
     const std::string& GetName() const { return name; }
-    Stat& GetStat() { return stat; }
+    Stat& GetStat() override{ return stat; }
     const Stat& GetStat() const { return stat; }
 
     void SetArmorType(CounterType armorType) {this->armorType = armorType;}

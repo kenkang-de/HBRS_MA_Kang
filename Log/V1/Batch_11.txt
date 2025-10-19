@@ -1,291 +1,261 @@
-Unit 0: R0 Attack:3 Defense:9 HP:10 Speed:1 Threat:5 Weapon: [BSW12](Final Attack) Armor: [BSA32]
-Unit 1: R1 Attack:5 Defense:3 HP:7 Speed:3 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA23]
-Unit 2: R2 Attack:3 Defense:4 HP:10 Speed:1 Threat:9 Weapon: [BSW35](Chain Lightning) Armor: [BSA37]
-Unit 3: R3 Attack:4 Defense:1 HP:10 Speed:3 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA33]
-Unit 4: R4 Attack:5 Defense:2 HP:10 Speed:1 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA36]
-Unit 5: B0 Attack:4 Defense:-2 HP:10 Speed:8 Threat:4 Weapon: [BSW3](Thrust) Armor: [BSA3]
-Unit 6: B1 Attack:2 Defense:3 HP:13 Speed:2 Threat:6 Weapon: [BSW26](Double Shot) Armor: [BSA47]
-Unit 7: B2 Attack:0 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA7]
-Unit 8: B3 Attack:3 Defense:1 HP:7 Speed:5 Threat:0 Weapon: [BSW32](Focus Throw) Armor: [BSA19]
-Unit 9: B4 Attack:1 Defense:5 HP:10 Speed:1 Threat:7 Weapon: [BSW33](Magic Bolt) Armor: [BSA45]
+Unit 0: R0 Attack:4 Defense:-2 HP:10 Speed:5 Threat:4 Weapon: [BSW17](Shoot) Armor: [BSA9]
+Unit 1: R1 Attack:0 Defense:0 HP:9 Speed:2 Threat:6 Weapon: [BSW47](Cheer) Armor: [BSA7]
+Unit 2: R2 Attack:0 Defense:11 HP:12 Speed:0 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA20]
+Unit 3: R3 Attack:8 Defense:-1 HP:10 Speed:-1 Threat:7 Weapon: [BSW16](Killer's Spirit) Armor: [BSA32]
+Unit 4: R4 Attack:1 Defense:1 HP:12 Speed:1 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA20]
+Unit 5: B0 Attack:5 Defense:2 HP:12 Speed:1 Threat:7 Weapon: [BSW11](Fade Attack) Armor: [BSA24]
+Unit 6: B1 Attack:1 Defense:1 HP:10 Speed:-1 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA43]
+Unit 7: B2 Attack:6 Defense:2 HP:12 Speed:0 Threat:8 Weapon: [BSW16](Killer's Spirit) Armor: [BSA24]
+Unit 8: B3 Attack:6 Defense:3 HP:12 Speed:-1 Threat:9 Weapon: [BSW11](Fade Attack) Armor: [BSA44]
+Unit 9: B4 Attack:3 Defense:0 HP:6 Speed:1 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA16]
 ==========================
 
 
+[Tick 2] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 12)
+B3 HP: 12 - 1 => 11
+
+
+[Tick 4] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 11)
+B3 HP: 11 - 1 => 10
+
+
+[Tick 5] 1 unit(s) acting
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 0 to 2
+
+
+[Tick 6] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 10)
+B3 HP: 10 - 1 => 9
+
+
+[Tick 8] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 9)
+B3 HP: 9 - 1 => 8
+
+
+[Tick 10] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 8)
+B3 HP: 8 - 0 => 8
+Ranged: R4 targeting B2 (HP: 12)
+B2 HP: 12 - 0 => 12
+Ranged: R4 targeting B0 (HP: 12)
+B0 HP: 12 - 0 => 12
+Ranged: R0 targeting B3 (HP: 8)
+B3 HP: 8 - 1 => 7
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[A10] B0 threat changed from 7 to 6
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 2 to 4
+Magic: B4 targeting R2 (HP: 12)
+[BOON] Applied FreezeSTART to R2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 12] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 7)
+B3 HP: 7 - 1 => 6
+
+
+[Tick 14] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 6)
+B3 HP: 6 - 1 => 5
+
+
 [Tick 15] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 4 to 6
+
+
+[Tick 16] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 5)
+B3 HP: 5 - 1 => 4
+
+
+[Tick 18] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 4)
+B3 HP: 4 - 1 => 3
+
+
+[Tick 20] 5 unit(s) acting
+Ranged: R4 targeting B3 (HP: 3)
+B3 HP: 3 - 0 => 3
+Ranged: R4 targeting B2 (HP: 12)
+B2 HP: 12 - 0 => 12
+Ranged: R4 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Ranged: R0 targeting B3 (HP: 3)
+B3 HP: 3 - 1 => 2
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[A10] B0 threat changed from 6 to 5
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 6 to 8
+Magic: B4 targeting R2 (HP: 12)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 22] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 2)
+B3 HP: 2 - 1 => 1
 
 
 [Tick 24] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+Ranged: R0 targeting B3 (HP: 1)
+B3 HP: 1 - 1 => 0
 
 
-[Tick 30] 2 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Applied FreezeSTART to R2 (Usage: 1)
+[Tick 25] 1 unit(s) acting
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 8 to 10
+
+
+[Tick 26] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 12)
+B2 HP: 12 - 2 => 10
+
+
+[Tick 28] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 2 => 8
+
+
+[Tick 30] 5 unit(s) acting
+Ranged: R4 targeting B2 (HP: 8)
+B2 HP: 8 - 0 => 8
+Ranged: R4 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Ranged: R4 targeting B0 (HP: 12)
+B0 HP: 12 - 0 => 12
+Ranged: R0 targeting B2 (HP: 8)
+B2 HP: 8 - 2 => 6
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[A10] B0 threat changed from 5 to 4
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 10 to 12
+Magic: B4 targeting R2 (HP: 12)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
 [A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 40] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 10)
-B4 HP: 10 - 2 => 8
+[Tick 32] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 6)
+B2 HP: 6 - 2 => 4
+
+
+[Tick 34] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 4)
+B2 HP: 4 - 2 => 2
+
+
+[Tick 35] 1 unit(s) acting
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 12 to 14
+
+
+[Tick 36] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 2)
+B2 HP: 2 - 2 => 0
+
+
+[Tick 38] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 3 => 7
+  -> B1 (magic) tick reset due to ranged attack!
+
+
+[Tick 40] 5 unit(s) acting
+Ranged: R4 targeting B1 (HP: 7)
+B1 HP: 7 - 0 => 7
+Ranged: R4 targeting B0 (HP: 12)
+B0 HP: 12 - 0 => 12
+Ranged: R4 targeting B4 (HP: 6)
+B4 HP: 6 - 1 => 5
   -> B4 (magic) tick reset due to ranged attack!
-Melee: R1 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
+Ranged: R0 targeting B1 (HP: 7)
+B1 HP: 7 - 3 => 4
+  -> B1 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[A10] B0 threat changed from 4 to 3
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 14 to 16
+
+
+[Tick 42] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 4)
+B1 HP: 4 - 3 => 1
+  -> B1 (magic) tick reset due to ranged attack!
+
+
+[Tick 44] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 1)
+B1 HP: 3 - 3 => 0
 
 
 [Tick 45] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 16 to 18
+
+
+[Tick 46] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 5)
+B4 HP: 5 - 4 => 1
+  -> B4 (magic) tick reset due to ranged attack!
 
 
 [Tick 48] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+Ranged: R0 targeting B4 (HP: 1)
+B4 HP: 4 - 4 => 0
 
 
-[Tick 60] 3 unit(s) acting
-Ranged: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Ranged: B1 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 50] 4 unit(s) acting
+Ranged: R0 targeting B0 (HP: 12)
+B0 HP: 12 - 2 => 10
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 0 => 12
+[A10] B0 threat changed from 3 to 2
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 18 to 20
 
 
-[Tick 72] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+[Tick 52] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 10)
+B0 HP: 10 - 2 => 8
 
 
-[Tick 75] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+[Tick 54] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 8)
+B0 HP: 8 - 2 => 6
 
 
-[Tick 80] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 2 => 6
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: R1 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-B4 HP: 6 - 0 => 6
+[Tick 55] 1 unit(s) acting
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 20 to 22
 
 
-[Tick 90] 2 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 56] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 6)
+B0 HP: 6 - 2 => 4
 
 
-[Tick 96] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
+[Tick 58] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 4)
+B0 HP: 4 - 2 => 2
 
 
-[Tick 105] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 120] 9 unit(s) acting
-Ranged: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Ranged: B1 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
-Ranged: R3 targeting B4 (HP: 6)
-B4 HP: 6 - 2 => 4
-  -> B4 (magic) tick reset due to ranged attack!
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Melee: R0 targeting B4 (HP: 4)
-B4 HP: 7 - 7 => 0
-[A12] R0 defense changed from 9 to 0
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: R2 targeting B1 (HP: 13)
-  -> R2 is frozen and cannot act!
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 9)
-[TEMP-BUFF] FreezeSTART applied to R2 (Duration: 1 turns)
-[EXECUTE_EFFECT] R2 triggered FreezeSTART
-Magic: R2 targeting B0 (HP: 10)
-  -> R2 is frozen and cannot act!
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 9)
-[TEMP-BUFF] FreezeSTART on R2 (Remaining: 0 turns)
-[TEMP-BUFF] FreezeSTART expired on R2
- - applying removal effect: FreezeEnd
-[BOON] FreezeSTART expired on R2 - cleaned up
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Applied FreezeSTART to R2 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 135] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 144] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 150] 2 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 160] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 13)
-B1 HP: 13 - 4 => 9
-Melee: R1 targeting B1 (HP: 9)
-B1 HP: 9 - 2 => 7
-
-
-[Tick 165] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 168] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 180] 3 unit(s) acting
-Ranged: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Ranged: B1 targeting R0 (HP: 10)
-R0 HP: 10 - 2 => 8
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 192] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 195] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 200] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 7)
-B1 HP: 7 - 4 => 3
-Melee: R1 targeting B1 (HP: 3)
-B1 HP: 3 - 2 => 1
-B1 HP: 2 - 2 => 0
-
-
-[Tick 210] 2 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 216] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 225] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 240] 8 unit(s) acting
-Ranged: R3 targeting B0 (HP: 10)
-B0 HP: 10 - 9 => 1
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-Melee: R1 targeting B0 (HP: 1)
-B0 HP: 7 - 7 => 0
-B0 HP: 7 - 7 => 0
-Melee: R0 targeting B2 (HP: 9)
-B2 HP: 9 - 3 => 6
-[A12] R0 defense changed from 0 to 0
-  -> B2 (magic) tick reset due to melee attack!
-Melee: R4 targeting B2 (HP: 6)
-B2 HP: 6 - 5 => 1
-[A10] R4 threat changed from 5 to 6
-[A04] R4 attack changed from 5 to 4
-  -> B2 (magic) tick reset due to melee attack!
-Magic: R2 targeting B2 (HP: 1)
-  -> R2 is frozen and cannot act!
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 9)
-[TEMP-BUFF] FreezeSTART applied to R2 (Duration: 1 turns)
-[EXECUTE_EFFECT] R2 triggered FreezeSTART
-Magic: R2 targeting B3 (HP: 7)
-  -> R2 is frozen and cannot act!
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon FreezeSTART for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 9)
-[TEMP-BUFF] FreezeSTART on R2 (Remaining: 0 turns)
-[TEMP-BUFF] FreezeSTART expired on R2
- - applying removal effect: FreezeEnd
-[BOON] FreezeSTART expired on R2 - cleaned up
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Applied FreezeSTART to R2 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 255] 1 unit(s) acting
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 264] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 270] 1 unit(s) acting
-Magic: B2 targeting R2 (HP: 10)
-[BOON] Refreshing existing FreezeSTART on R2
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 276] 1 unit(s) acting
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 0 => 10
-
-
-[Tick 280] 2 unit(s) acting
-Ranged: R3 targeting B2 (HP: 1)
-B2 HP: 7 - 7 => 0
-Melee: R1 targeting B3 (HP: 7)
-B3 HP: 7 - 4 => 3
-B3 HP: 4 - 4 => 0
+[Tick 60] 4 unit(s) acting
+Ranged: R0 targeting B0 (HP: 2)
+B0 HP: 2 - 2 => 0
+Magic: R1 targeting R2 (HP: 12)
+[A34] R2 attack changed from 22 to 24
 Battle Over! Red Team wins!

@@ -81,6 +81,8 @@
         "variant": "cpp",
         "xhash": "cpp",
         "xtree": "cpp",
-        "standarddeviation h": "cpp"
+        "standarddeviation h": "cpp",
+        "ranges": "cpp",
+        "span": "cpp"
     }
 }

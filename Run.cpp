@@ -121,7 +121,7 @@ public:
         //Stage 5: Autobalancing
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList,testSubjects);
-        balancer.RunAutoBalancing();
+        balancer.RunAutoBalancing(&simulator, &batches);
         
         std::cout<<"Stage 5 Complete"<<std::endl;
 

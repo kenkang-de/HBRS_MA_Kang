@@ -22,5 +22,7 @@ const float TARGET_WINRATE=0.5;
 
 const float TARGET_THRESHOLD=0.05;
 
+const int MAXGENERATION=100;
+
 
 #endif

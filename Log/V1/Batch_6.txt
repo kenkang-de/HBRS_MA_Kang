@@ -1,133 +1,544 @@
-Unit 0: R0 Attack:4 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA21]
-Unit 1: R1 Attack:1 Defense:1 HP:10 Speed:0 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA43]
-Unit 2: R2 Attack:6 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW15](Taunt) Armor: [BSA49]
-Unit 3: R3 Attack:3 Defense:0 HP:8 Speed:5 Threat:1 Weapon: [BSW22](Delay Shot) Armor: [BSA15]
-Unit 4: R4 Attack:0 Defense:0 HP:9 Speed:5 Threat:4 Weapon: [BSW38](Healing Touch) Armor: [BSA7]
-Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA8]
-Unit 6: B1 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA20]
-Unit 7: B2 Attack:6 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW14](Leech Attack) Armor: [BSA9]
-Unit 8: B3 Attack:-2 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA22]
-Unit 9: B4 Attack:4 Defense:2 HP:15 Speed:2 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA49]
+Unit 0: R0 Attack:5 Defense:5 HP:10 Speed:-1 Threat:9 Weapon: [BSW18](Killing Spree) Armor: [BSA45]
+Unit 1: R1 Attack:4 Defense:3 HP:13 Speed:0 Threat:10 Weapon: [BSW9](Blitz Attack) Armor: [BSA47]
+Unit 2: R2 Attack:-1 Defense:1 HP:12 Speed:1 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA20]
+Unit 3: R3 Attack:1 Defense:1 HP:7 Speed:2 Threat:2 Weapon: [BSW34](Wind Blade) Armor: [BSA19]
+Unit 4: R4 Attack:7 Defense:4 HP:10 Speed:-1 Threat:11 Weapon: [BSW16](Killer's Spirit) Armor: [BSA31]
+Unit 5: B0 Attack:4 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW32](Focus Throw) Armor: [BSA41]
+Unit 6: B1 Attack:0 Defense:5 HP:15 Speed:0 Threat:11 Weapon: [BSW31](Wrist Shot) Armor: [BSA48]
+Unit 7: B2 Attack:0 Defense:5 HP:15 Speed:0 Threat:10 Weapon: [BSW26](Double Shot) Armor: [BSA48]
+Unit 8: B3 Attack:0 Defense:2 HP:12 Speed:0 Threat:7 Weapon: [BSW37](Freeze) Armor: [BSA24]
+Unit 9: B4 Attack:4 Defense:0 HP:9 Speed:4 Threat:5 Weapon: [BSW29](Camo Throw) Armor: [BSA7]
 ==========================
 
 
+[Tick 1] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 5 to 4
+
+
+[Tick 2] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 4 to 3
+Magic: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 1 => 14
+Magic: R3 targeting B2 (HP: 15)
+B2 HP: 15 - 1 => 14
+
+
+[Tick 3] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 3 to 2
+
+
 [Tick 4] 4 unit(s) acting
-Ranged: R3 targeting B4 (HP: 15)
-B4 HP: 15 - 1 => 14
-[A20] B4 delayed by 1 intervals (10 ticks)
-Ranged: B1 targeting R1 (HP: 10)
-R1 HP: 10 - 1 => 9
-  -> R1 (magic) tick reset due to ranged attack!
-Magic: R4 targeting R1 (HP: 9)
-[HEAL] R1 healed for 1 HP (from 9 to 10/10)
-[A29] R4 healed R1 for 5 HP
-Magic: B0 targeting R1 (HP: 10)
-[BOON] Applied Tetrodo Effect to R1 (Usage: 2)
-[A28] B0 applied Tetrodo Effect to R1 (usage: 2)
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 2 to 1
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 14)
+B1 HP: 14 - 1 => 13
+Magic: R3 targeting B2 (HP: 14)
+B2 HP: 14 - 1 => 13
 
 
-[Tick 5] 2 unit(s) acting
-Melee: B2 targeting R1 (HP: 10)
-R1 HP: 10 - 5 => 5
-[HEAL] B2 healed for 0 HP (from 10 to 10/10)
-  -> R1 (magic) tick reset due to melee attack!
-Melee: R0 targeting B4 (HP: 14)
-B4 HP: 14 - 6 => 8
+[Tick 5] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 1 to 0
+
+
+[Tick 6] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 13)
+B1 HP: 13 - 1 => 12
+Magic: R3 targeting B2 (HP: 13)
+B2 HP: 13 - 1 => 12
+
+
+[Tick 7] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
 [Tick 8] 4 unit(s) acting
-Ranged: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 1 => 7
-[A20] B4 delayed by 1 intervals (10 ticks)
-Ranged: B1 targeting R1 (HP: 5)
-R1 HP: 5 - 1 => 4
-  -> R1 (magic) tick reset due to ranged attack!
-Magic: B0 targeting R1 (HP: 4)
-[BOON] Refreshing existing Tetrodo Effect on R1
-[A28] B0 applied Tetrodo Effect to R1 (usage: 2)
-Magic: R4 targeting R1 (HP: 4)
-[HEAL] R1 healed for 5 HP (from 4 to 9/10)
-[A29] R4 healed R1 for 5 HP
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 12)
+B1 HP: 12 - 1 => 11
+Magic: R3 targeting B2 (HP: 12)
+B2 HP: 12 - 1 => 11
 
 
-[Tick 30] 1 unit(s) acting
-Ranged: B4 targeting R1 (HP: 9)
-R1 HP: 9 - 3 => 6
-  -> R1 (magic) tick reset due to ranged attack!
+[Tick 9] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 40] 1 unit(s) acting
-Ranged: B4 targeting R1 (HP: 6)
-R1 HP: 6 - 3 => 3
-  -> R1 (magic) tick reset due to ranged attack!
+[Tick 10] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 11)
+B1 HP: 11 - 1 => 10
+Magic: R3 targeting B2 (HP: 11)
+B2 HP: 11 - 1 => 10
 
 
-[Tick 50] 1 unit(s) acting
-Ranged: B4 targeting R1 (HP: 3)
-R1 HP: 3 - 3 => 0
+[Tick 11] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 60] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 15)
-R2 HP: 15 - 2 => 13
+[Tick 12] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 10)
+B1 HP: 10 - 1 => 9
+Magic: R3 targeting B2 (HP: 10)
+B2 HP: 10 - 1 => 9
 
 
-[Tick 70] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 13)
-R2 HP: 13 - 2 => 11
+[Tick 13] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 80] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 11)
-R2 HP: 11 - 2 => 9
+[Tick 14] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 9)
+B1 HP: 9 - 1 => 8
+Magic: R3 targeting B2 (HP: 9)
+B2 HP: 9 - 1 => 8
 
 
-[Tick 90] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 9)
-R2 HP: 9 - 2 => 7
+[Tick 15] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 100] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 2 => 5
+[Tick 16] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 8)
+B1 HP: 8 - 1 => 7
+Magic: R3 targeting B2 (HP: 8)
+B2 HP: 8 - 1 => 7
 
 
-[Tick 110] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 5)
-R2 HP: 5 - 2 => 3
+[Tick 17] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 120] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 3)
-R2 HP: 3 - 2 => 1
+[Tick 18] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 7)
+B1 HP: 7 - 1 => 6
+Magic: R3 targeting B2 (HP: 7)
+B2 HP: 7 - 1 => 6
 
 
-[Tick 130] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 1)
-R2 HP: 2 - 2 => 0
+[Tick 19] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 140] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 12)
-R0 HP: 12 - 5 => 7
+[Tick 20] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 6)
+B1 HP: 6 - 1 => 5
+Magic: R3 targeting B2 (HP: 6)
+B2 HP: 6 - 1 => 5
 
 
-[Tick 150] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 7)
-R0 HP: 7 - 5 => 2
+[Tick 21] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 160] 1 unit(s) acting
-Ranged: B4 targeting R0 (HP: 2)
-R0 HP: 5 - 5 => 0
+[Tick 22] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 5)
+B1 HP: 5 - 1 => 4
+Magic: R3 targeting B2 (HP: 5)
+B2 HP: 5 - 1 => 4
 
 
-[Tick 170] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 9)
-R4 HP: 9 - 9 => 0
+[Tick 23] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
 
 
-[Tick 180] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 8)
-R3 HP: 9 - 9 => 0
-Battle Over! Blue Team wins!
+[Tick 24] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 4)
+B1 HP: 4 - 1 => 3
+Magic: R3 targeting B2 (HP: 4)
+B2 HP: 4 - 1 => 3
+
+
+[Tick 25] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 26] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 3)
+B1 HP: 3 - 1 => 2
+Magic: R3 targeting B2 (HP: 3)
+B2 HP: 3 - 1 => 2
+
+
+[Tick 27] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 28] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B1 (HP: 2)
+B1 HP: 2 - 1 => 1
+Magic: R3 targeting B2 (HP: 2)
+B2 HP: 2 - 1 => 1
+
+
+[Tick 29] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 30] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B1 (HP: 1)
+B1 HP: 1 - 1 => 0
+Magic: R3 targeting B2 (HP: 1)
+B2 HP: 1 - 1 => 0
+
+
+[Tick 31] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 32] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B0 (HP: 12)
+B0 HP: 12 - 1 => 11
+Magic: R3 targeting B3 (HP: 12)
+B3 HP: 12 - 1 => 11
+
+
+[Tick 33] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 34] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B0 (HP: 11)
+B0 HP: 11 - 1 => 10
+Magic: R3 targeting B3 (HP: 11)
+B3 HP: 11 - 1 => 10
+
+
+[Tick 35] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 36] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B0 (HP: 10)
+B0 HP: 10 - 1 => 9
+Magic: R3 targeting B3 (HP: 10)
+B3 HP: 10 - 1 => 9
+
+
+[Tick 37] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 38] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B0 (HP: 9)
+B0 HP: 9 - 1 => 8
+Magic: R3 targeting B3 (HP: 9)
+B3 HP: 9 - 1 => 8
+
+
+[Tick 39] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 40] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B0 (HP: 8)
+B0 HP: 8 - 1 => 7
+Magic: R3 targeting B3 (HP: 8)
+B3 HP: 8 - 1 => 7
+
+
+[Tick 41] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 42] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B0 (HP: 7)
+B0 HP: 7 - 1 => 6
+Magic: R3 targeting B3 (HP: 7)
+B3 HP: 7 - 1 => 6
+
+
+[Tick 43] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 44] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B0 (HP: 6)
+B0 HP: 6 - 1 => 5
+Magic: R3 targeting B3 (HP: 6)
+B3 HP: 6 - 1 => 5
+
+
+[Tick 45] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 46] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B0 (HP: 5)
+B0 HP: 5 - 1 => 4
+Magic: R3 targeting B3 (HP: 5)
+B3 HP: 5 - 1 => 4
+
+
+[Tick 47] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 48] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Magic: R2 targeting R4 (HP: 10)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R4 for 2 HP
+Magic: R2 targeting R1 (HP: 13)
+[HEAL] R1 healed for 0 HP (from 13 to 13/13)
+[A29] R2 healed R1 for 2 HP
+Magic: R2 targeting R0 (HP: 10)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+[A29] R2 healed R0 for 2 HP
+Magic: R3 targeting B0 (HP: 4)
+B0 HP: 4 - 1 => 3
+Magic: R3 targeting B3 (HP: 4)
+B3 HP: 4 - 1 => 3
+
+
+[Tick 49] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+
+
+[Tick 50] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+[A10] B4 threat changed from 0 to 0
+Magic: R3 targeting B0 (HP: 3)
+B0 HP: 3 - 1 => 2
+Magic: R3 targeting B3 (HP: 3)
+B3 HP: 3 - 1 => 2
+Battle Over! Tick limit reached (0 ticks elapsed)

@@ -7,6 +7,8 @@ std::vector<Stat> GeneticBalancingProcessor::firstStats;
 
 float GeneticBalancingProcessor::firstMagnitude;
 
+int GeneticBalancingProcessor::Generation=1;
+
 
 //[ORDER] always weapon first!
 void GeneticBalancingProcessor::GenerateFirstChromosome(ElementList *elementList, std::vector<TestSubject*> firstSubjects)
@@ -35,6 +37,8 @@ GeneticBalancingProcessor::firstChromosome->averageWinrate = GetAverageWinrate(f
 GeneticBalancingProcessor::firstChromosome->appliedStats = EmptyStats(stats.size());
 }
 
+
+// Only for the first chromosome
 int GeneticBalancingProcessor::CalcStatMagnitude(std::vector<Stat> stats)
 {
     int magnitude = 0;
@@ -70,7 +74,12 @@ int targetMagnitude=0;
                      firstStats[i].GetSpeed()  * target_SPD + 
                      firstStats[i].GetThreat()  * target_THR;
 
-        targetMagnitude += target_ATK * target_ATK + target_DEF * target_DEF + target_HP * target_HP + target_SPD * target_SPD + target_THR * target_THR;
+        targetMagnitude += 
+        target_ATK * target_ATK + 
+        target_DEF * target_DEF + 
+        target_HP * target_HP + 
+        target_SPD * target_SPD + 
+        target_THR * target_THR;
     }
 
     float mag_float = std::sqrt(static_cast<float>(targetMagnitude));
@@ -92,11 +101,11 @@ for(int i=0; i< ChromosomeRules_Beta.size(); i++)
 }
 }
 
-std::vector<float> GeneticBalancingProcessor::GetAverageWinrate(std::vector<TestSubject*> firstSubjects)
+std::vector<float> GeneticBalancingProcessor::GetAverageWinrate(std::vector<TestSubject*> testSubjects)
 {
     //WEAPON -> ARMOR
 std::vector<float> winRate;
-for(TestSubject* testSubject : firstSubjects)
+for(TestSubject* testSubject : testSubjects)
 {
 winRate.push_back(testSubject->WinRate);
 }
@@ -117,7 +126,7 @@ void GeneticBalancingProcessor::Init_AlphaBetaChromosome()
     std::vector<Stat> appliedStat;
     if(lane.GetChromosomeType() == CHROMOSOMETYPE::ALPHA)
         appliedStat = CreateAppliedStats_ALPHA(firstChromosome, lane.adjustment);
-    else
+    else // BETA
         appliedStat = CreateAppliedStats_BETA(firstChromosome, lane.adjustment); 
 
     chromosome->appliedStats = appliedStat;
@@ -139,6 +148,7 @@ int GeneticBalancingProcessor::BuffOrNerf(float winRate)
     }
 }
 
+// Get vector of emptied Stats. 
 std::vector<Stat> GeneticBalancingProcessor::EmptyStats(int componentAmount)
 {
     std::vector<Stat> stats;
@@ -152,7 +162,7 @@ std::vector<Stat> GeneticBalancingProcessor::EmptyStats(int componentAmount)
     return stats;
 }
 
-//only for alpha, first for only initial
+// only for ALPHA
 std::vector<Stat> GeneticBalancingProcessor::CreateAppliedStats_ALPHA(Chromosome* chromosome, const Stat* ruleStat)
 {
     std::vector<Stat> appliedStats = EmptyStats(chromosome->averageWinrate.size());
@@ -167,7 +177,7 @@ std::vector<Stat> GeneticBalancingProcessor::CreateAppliedStats_ALPHA(Chromosome
 
     return appliedStats;
 }
-//only for beta 
+// only for BETA
 std::vector<Stat> GeneticBalancingProcessor::CreateAppliedStats_BETA(Chromosome* chromosome, const Stat* ruleStat)
 {
     std::vector<Stat> appliedStats = EmptyStats(chromosome->averageWinrate.size());
@@ -182,10 +192,78 @@ std::vector<Stat> GeneticBalancingProcessor::CreateAppliedStats_BETA(Chromosome*
     return appliedStats;
 }
 
-
-void GeneticBalancingProcessor::RunAutoBalancing()
+// Get Stats from testsubjects and return vector of Stats that are added with applied Stats.
+std::vector<Stat> GeneticBalancingProcessor::GetCorrectedStats(std::vector<TestSubject*> mergedTestSubjects)
 {
+    std::vector<Stat> correctedStats;
+
+    for(TestSubject* testSubject: mergedTestSubjects){
+        Stat correctedStat = testSubject->GetStat();
+        correctedStat += *(testSubject->correctionStat);
+        correctedStats.push_back(correctedStat);
+    }
+
+    return correctedStats;
+}
+
+
+void GeneticBalancingProcessor::RunAutoBalancing(Simulator* simulator, std::vector<Batch>* batches)
+{
+    // Initialization
     GenerateBalancingLane();
     Init_AlphaBetaChromosome();
+
+    // First Generation Setting
+    for(BalancingLane& lane: lanes)
+    {
+        // Simulate lane
+        simulator->SimulateBatches(batches, lane.GetChromosome());
+        // Get Testsubjects from the simulator
+        std::vector<TestSubject*> mergedTestSubjects = MergeToTestSubject(
+                simulator->GetElementList()->getWeapons(),  
+                simulator->GetElementList()->getArmors()   
+        );
+        // Get Testsubjects win-rate and set it in chromosome
+        lane.GetChromosome()->averageWinrate = GetAverageWinrate(mergedTestSubjects);
+        // Calculate and set Chromosome's Root Mean Square Error
+        lane.GetChromosome()->Set_RMSE(RMSE::Calculate(mergedTestSubjects));
+        // Calculate degree of change and set to it's chromosome
+        float degreeOfChange = CosineSimilarity(GetCorrectedStats(mergedTestSubjects));
+        lane.GetChromosome()->Set_DegreeOfChange(degreeOfChange);
+        // Set fitness of Chromosome
+        lane.GetChromosome()->Set_Fitness();
+    }
+    //Mutation
+
+
+    // Generation progression
+    while(Generation < MAXGENERATION
+    //SecondCondition
+    )
+    {
+    Generation++;
+    }
+
 }
+
+std::vector<TestSubject*> GeneticBalancingProcessor::MergeToTestSubject(
+    std::vector<Weapon>& weapons,   
+    std::vector<Armor>& armors)     
+{
+    std::vector<TestSubject*> mergedSubjects;
+    mergedSubjects.reserve(weapons.size() + armors.size());
+
+    for(Weapon& weapon : weapons)  
+    {
+        mergedSubjects.push_back(&weapon);  
+    }
+
+    for(Armor& armor : armors)
+    {
+        mergedSubjects.push_back(&armor);
+    }
+    
+    return mergedSubjects;  
+}
+
 

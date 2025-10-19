@@ -33,6 +33,21 @@ for(Batch& batch : *batches){
         //
 }
 
+void Simulator::SimulateBatches(std::vector<Batch>* batches, Chromosome* chromosome)
+{
+chromosome->ApplyStatToComponents(elementList);
+
+//Iterate through batches, teams
+for(Batch& batch : *batches){
+    // Round-Robin Tournament: Each team plays against every other team
+    for(int teamA = 0; teamA < batch.teams.size(); teamA++){
+        for(int teamB = teamA + 1; teamB < batch.teams.size(); teamB++){
+            //First battle of the batch will be logged, and saved to Log directory
+            SimulateBattle(&batch.teams[teamA], &batch.teams[teamB],teamA==0 && teamB==1,batch.batchId);
+        }}}
+        //
+}
+
 void Simulator::EquipTeam(int startIndex, SimulationTeamSetting* teamSetting)
 {
     for(int i = 0; i < UNITS_PER_TEAM; i++)

@@ -4,6 +4,9 @@
 #include <vector>
 
 #include "../Element/Stat.h"
+#include "../Element/ElementList.h"
+
+#include "../Simulator/TestSubject.h"
 
 class Chromosome
 {
@@ -13,7 +16,7 @@ float rootMeanSquareError;
 
 float degreeOfChange;
 
-float Fitness;
+float fitness;
 
 public:
 
@@ -25,6 +28,14 @@ std::vector<float> averageWinrate;
 Chromosome(float RMSE) :rootMeanSquareError(RMSE) {};
 
 Chromosome(std::vector<Stat> _appliedStats) : appliedStats(_appliedStats) {};
+
+void ApplyStatToComponents(ElementList* componentList);
+
+void Set_RMSE(float RMSE) {rootMeanSquareError = RMSE;}
+
+void Set_DegreeOfChange(float value) {degreeOfChange = value;}
+
+void Set_Fitness() {fitness = rootMeanSquareError + degreeOfChange;}
 
 };
 

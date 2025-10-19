@@ -59,6 +59,8 @@ public:
 
     Stat* correctionStat=nullptr;
 
+    virtual Stat& GetStat() = 0;
+
 private:
     void updateWinRate() const {
         int totalBattles = TotalWin + TotalLost + TotalDraw;
