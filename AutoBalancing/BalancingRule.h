@@ -4,8 +4,9 @@
 #include <array>
 
 #include "../Element/Stat.h"
+#include "../Simulator/Constants.h"
 
-const std::array<Stat,5> ChromosomeRules_Alpha= {{
+const std::array<Stat,ALPHA_NUM> ChromosomeRules_Alpha= {{
     Stat(1, 0, 0, 0, 0),
     Stat(0, 1, 0, 0, 0),
     Stat(0, 0, 1, 0, 0),
@@ -13,7 +14,7 @@ const std::array<Stat,5> ChromosomeRules_Alpha= {{
     Stat(0, 0, 0, 0, 1)
 }};
 
-const std::array<Stat,20> ChromosomeRules_Beta= {{
+const std::array<Stat,BETA_NUM> ChromosomeRules_Beta= {{
     //Attack 
     Stat(1, -1, 0, 0, 0),
     Stat(1, 0, -1, 0, 0),

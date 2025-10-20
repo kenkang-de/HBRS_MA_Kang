@@ -30,7 +30,16 @@ Stat& Stat::operator-=(const Stat& other) {
     Threat  -= other.Threat;
     return *this;
 }
-
+Stat Stat::operator+(const Stat& other) const
+{
+    return Stat(
+        Attack + other.Attack,
+        Defense + other.Defense,
+        Hitpoint + other.Hitpoint,
+        Speed + other.Speed,
+        Threat + other.Threat
+    );
+}
 
 Stat Stat::operator*(int scalar) const
 {

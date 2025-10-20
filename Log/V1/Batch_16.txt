@@ -1,128 +1,274 @@
-Unit 0: R0 Attack:6 Defense:2 HP:10 Speed:-1 Threat:8 Weapon: [BSW10](Reckless Attack) Armor: [BSA30]
-Unit 1: R1 Attack:5 Defense:2 HP:19 Speed:-1 Threat:7 Weapon: [BSW4](Berserk) Armor: [BSA49]
-Unit 2: R2 Attack:3 Defense:2 HP:10 Speed:2 Threat:5 Weapon: [BSW17](Shoot) Armor: [BSA36]
-Unit 3: R3 Attack:7 Defense:0 HP:6 Speed:2 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA16]
-Unit 4: R4 Attack:2 Defense:3 HP:13 Speed:0 Threat:10 Weapon: [BSW6](Achilles' heel) Armor: [BSA47]
-Unit 5: B0 Attack:-1 Defense:0 HP:12 Speed:2 Threat:5 Weapon: [BSW38](Healing Touch) Armor: [BSA17]
-Unit 6: B1 Attack:5 Defense:0 HP:10 Speed:0 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA29]
-Unit 7: B2 Attack:4 Defense:0 HP:8 Speed:5 Threat:7 Weapon: [BSW23](All-Out Assault) Armor: [BSA4]
-Unit 8: B3 Attack:4 Defense:3 HP:16 Speed:0 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA41]
-Unit 9: B4 Attack:2 Defense:-1 HP:10 Speed:-1 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA32]
+Unit 0: R0 Attack:3 Defense:1 HP:10 Speed:8 Threat:1 Weapon: [BSW26](Double Shot) Armor: [BSA8]
+Unit 1: R1 Attack:5 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW11](Fade Attack) Armor: [BSA36]
+Unit 2: R2 Attack:-2 Defense:6 HP:15 Speed:2 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA48]
+Unit 3: R3 Attack:-1 Defense:3 HP:7 Speed:6 Threat:-2 Weapon: [BSW36](Tetrodo) Armor: [BSA19]
+Unit 4: R4 Attack:2 Defense:1 HP:7 Speed:7 Threat:-1 Weapon: [BSW23](All-Out Assault) Armor: [BSA19]
+Unit 5: B0 Attack:-2 Defense:5 HP:10 Speed:4 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA22]
+Unit 6: B1 Attack:4 Defense:3 HP:10 Speed:5 Threat:4 Weapon: [BSW23](All-Out Assault) Armor: [BSA28]
+Unit 7: B2 Attack:-1 Defense:3 HP:7 Speed:5 Threat:0 Weapon: [BSW37](Freeze) Armor: [BSA19]
+Unit 8: B3 Attack:1 Defense:5 HP:12 Speed:3 Threat:7 Weapon: [BSW47](Cheer) Armor: [BSA40]
+Unit 9: B4 Attack:1 Defense:3 HP:10 Speed:2 Threat:3 Weapon: [BSW37](Freeze) Armor: [BSA43]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Ranged: B2 targeting R4 (HP: 13)
-[A10] B2 threat changed from 7 to 8
-[A04] B2 attack changed from 4 to 6
-R4 HP: 13 - 3 => 10
+[Tick 105] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
 
 
-[Tick 4] 1 unit(s) acting
-Ranged: B2 targeting R4 (HP: 10)
-[A10] B2 threat changed from 8 to 9
-[A04] B2 attack changed from 6 to 8
-R4 HP: 10 - 5 => 5
+[Tick 120] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 12)
+[A10] R4 threat changed from -1 to 0
+[A04] R4 attack changed from 2 to 4
+B3 HP: 12 - 0 => 12
 
 
-[Tick 5] 3 unit(s) acting
-Ranged: R2 targeting B2 (HP: 8)
-B2 HP: 8 - 3 => 5
-Melee: R3 targeting B2 (HP: 5)
-B2 HP: 7 - 7 => 0
-[A02] B2 defense changed from 0 to 0
-Magic: B0 targeting B3 (HP: 16)
-[HEAL] B3 healed for 0 HP (from 16 to 16/16)
-[A29] B0 healed B3 for 5 HP
+[Tick 140] 1 unit(s) acting
+Magic: R3 targeting B3 (HP: 12)
+[BOON] Applied Tetrodo Effect to B3 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
 
 
-[Tick 10] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 16)
-B3 HP: 16 - 0 => 16
-Melee: R3 targeting B3 (HP: 16)
-B3 HP: 16 - 4 => 12
-[A02] B3 defense changed from 3 to 2
+[Tick 168] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 15)
+[A10] B1 threat changed from 4 to 5
+[A04] B1 attack changed from 4 to 6
+R2 HP: 15 - 0 => 15
+Magic: B2 targeting R2 (HP: 15)
+[BOON] Applied FreezeSTART to R2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 210] 3 unit(s) acting
+Ranged: R0 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Melee: R1 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+[A10] R1 threat changed from 3 to 2
 Magic: B0 targeting B3 (HP: 12)
-[HEAL] B3 healed for 4 HP (from 12 to 16/16)
-[A29] B0 healed B3 for 5 HP
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 11] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 16)
-B3 HP: 16 - 1 => 15
-Melee: R3 targeting B3 (HP: 15)
-B3 HP: 15 - 5 => 10
-[A02] B3 defense changed from 2 to 1
-Magic: B0 targeting B3 (HP: 10)
-[HEAL] B3 healed for 5 HP (from 10 to 15/16)
-[A29] B0 healed B3 for 5 HP
+[Tick 240] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 12)
+[A10] R4 threat changed from 0 to 1
+[A04] R4 attack changed from 4 to 6
+B3 HP: 12 - 1 => 11
+  -> B3 (magic) tick reset due to ranged attack!
 
 
-[Tick 12] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 15)
-B3 HP: 15 - 2 => 13
-Melee: R3 targeting B3 (HP: 13)
-B3 HP: 13 - 6 => 7
-[A02] B3 defense changed from 1 to 0
-Magic: B0 targeting B3 (HP: 7)
-[HEAL] B3 healed for 5 HP (from 7 to 12/16)
-[A29] B0 healed B3 for 5 HP
+[Tick 280] 1 unit(s) acting
+Magic: R3 targeting B3 (HP: 11)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
 
 
-[Tick 13] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 3 => 9
-Melee: R3 targeting B3 (HP: 9)
-B3 HP: 9 - 7 => 2
-[A02] B3 defense changed from 0 to 0
-Magic: B0 targeting B3 (HP: 2)
-[HEAL] B3 healed for 5 HP (from 2 to 7/16)
-[A29] B0 healed B3 for 5 HP
+[Tick 315] 1 unit(s) acting
+Ranged: R0 targeting B3 (HP: 11)
+B3 HP: 11 - 0 => 11
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
 
 
-[Tick 14] 3 unit(s) acting
-Ranged: R2 targeting B3 (HP: 7)
-B3 HP: 7 - 3 => 4
-Melee: R3 targeting B3 (HP: 4)
-B3 HP: 7 - 7 => 0
-[A02] B3 defense changed from 0 to 0
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[A29] B0 healed B4 for 5 HP
+[Tick 336] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 15)
+[A10] B1 threat changed from 5 to 6
+[A04] B1 attack changed from 6 to 8
+R2 HP: 15 - 2 => 13
+  -> R2 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R2 (HP: 13)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 15] 3 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 4 => 6
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: R3 targeting B4 (HP: 6)
-B4 HP: 8 - 8 => 0
-[A02] B4 defense changed from -1 to 0
-Magic: B0 targeting B1 (HP: 10)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-[A29] B0 healed B1 for 5 HP
+[Tick 360] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 11)
+[A10] R4 threat changed from 1 to 2
+[A04] R4 attack changed from 6 to 8
+B3 HP: 11 - 3 => 8
+  -> B3 (magic) tick reset due to ranged attack!
 
 
-[Tick 16] 3 unit(s) acting
-Ranged: R2 targeting B0 (HP: 12)
-B0 HP: 12 - 3 => 9
-  -> B0 (magic) tick reset due to ranged attack!
-Melee: R3 targeting B0 (HP: 9)
-B0 HP: 9 - 7 => 2
-[A02] B0 defense changed from 0 to 0
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 420] 5 unit(s) acting
+Ranged: R0 targeting B3 (HP: 8)
+B3 HP: 8 - 0 => 8
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Melee: R1 targeting B3 (HP: 8)
+B3 HP: 8 - 0 => 8
+[A10] R1 threat changed from 2 to 1
+Magic: R3 targeting B3 (HP: 8)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
+Magic: B4 targeting R2 (HP: 13)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B0 targeting B3 (HP: 8)
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 17] 3 unit(s) acting
-Ranged: R2 targeting B0 (HP: 2)
-B0 HP: 3 - 3 => 0
-Melee: R3 targeting B1 (HP: 10)
-B1 HP: 10 - 7 => 3
-[A02] B1 defense changed from 0 to 0
-  -> B1 (ranged) delayed by 1 tick(s) due to 7/10 damage!
+[Tick 480] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 8)
+[A10] R4 threat changed from 2 to 3
+[A04] R4 attack changed from 8 to 10
+B3 HP: 8 - 5 => 3
+  -> B3 (magic) tick reset due to ranged attack!
 
 
-[Tick 18] 2 unit(s) acting
-Ranged: R2 targeting B1 (HP: 3)
-B1 HP: 3 - 3 => 0
+[Tick 504] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 13)
+[A10] B1 threat changed from 6 to 7
+[A04] B1 attack changed from 8 to 10
+R2 HP: 13 - 4 => 9
+  -> R2 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R2 (HP: 9)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 525] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Ranged: R0 targeting B3 (HP: 3)
+B3 HP: 3 - 0 => 3
+
+
+[Tick 560] 1 unit(s) acting
+Magic: R3 targeting B1 (HP: 10)
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 600] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 10)
+[A10] R4 threat changed from 3 to 4
+[A04] R4 attack changed from 10 to 12
+B1 HP: 10 - 9 => 1
+
+
+[Tick 630] 3 unit(s) acting
+Ranged: R0 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
+Ranged: R0 targeting B3 (HP: 3)
+B3 HP: 3 - 0 => 3
+Melee: R1 targeting B1 (HP: 1)
+B1 HP: 2 - 2 => 0
+[A10] R1 threat changed from 1 to 0
+Magic: B0 targeting B3 (HP: 3)
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 672] 1 unit(s) acting
+Magic: B2 targeting R2 (HP: 9)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 700] 1 unit(s) acting
+Magic: R3 targeting B3 (HP: 3)
+[BOON] Refreshing existing Tetrodo Effect on B3
+[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
+
+
+[Tick 720] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 3)
+[A10] R4 threat changed from 4 to 5
+[A04] R4 attack changed from 12 to 14
+B3 HP: 9 - 9 => 0
+
+
+[Tick 735] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+
+
+[Tick 840] 7 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+[A10] R4 threat changed from 5 to 6
+[A04] R4 attack changed from 14 to 16
+B0 HP: 11 - 11 => 0
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: B4 targeting R2 (HP: 9)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: B2 targeting R2 (HP: 9)
+[BOON] Refreshing existing FreezeSTART on R2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 924] 1 unit(s) acting
+Magic: R2 targeting B4 (HP: 10)
+  -> R2 is frozen and cannot act!
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 11)
+[TEMP-BUFF] FreezeSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered FreezeSTART
+Magic: R2 targeting B2 (HP: 7)
+  -> R2 is frozen and cannot act!
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 11)
+[TEMP-BUFF] FreezeSTART on R2 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R2
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R2 - cleaned up
+
+
+[Tick 945] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Ranged: R0 targeting B2 (HP: 7)
+B2 HP: 7 - 0 => 7
+
+
+[Tick 960] 1 unit(s) acting
+Ranged: R4 targeting B4 (HP: 10)
+[A10] R4 threat changed from 6 to 7
+[A04] R4 attack changed from 16 to 18
+B4 HP: 15 - 15 => 0
+
+
+[Tick 980] 1 unit(s) acting
+Magic: R3 targeting B2 (HP: 7)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B2 (usage: 2)
+
+
+[Tick 1008] 1 unit(s) acting
+Magic: B2 targeting R2 (HP: 9)
+[BOON] Applied FreezeSTART to R2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 0)
+[BOON] Tetrodo Effect triggered on B2 (Usage: 2/2)
+[EXECUTE_EFFECT] B2 triggered Tetrodo Effect
+B2 HP: 7 - 5 => 2
+
+
+[Tick 1050] 2 unit(s) acting
+Ranged: R0 targeting B2 (HP: 2)
+B2 HP: 2 - 0 => 2
+Melee: R1 targeting B2 (HP: 2)
+B2 HP: 2 - 2 => 0
+[A10] R1 threat changed from 0 to 0
 Battle Over! Red Team wins!

@@ -21,7 +21,7 @@ static Stat Empty();
 
 Stat& operator+=(const Stat& other);  
 Stat& operator-=(const Stat& other);  
-
+Stat operator+(const Stat& other) const; 
 Stat operator*(int scalar) const;
 
     Stat();

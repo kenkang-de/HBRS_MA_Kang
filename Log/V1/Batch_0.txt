@@ -1,190 +1,459 @@
-Unit 0: R0 Attack:5 Defense:-2 HP:10 Speed:3 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA9]
-Unit 1: R1 Attack:0 Defense:5 HP:15 Speed:0 Threat:12 Weapon: [BSW13](Prep Attack) Armor: [BSA48]
-Unit 2: R2 Attack:2 Defense:13 HP:10 Speed:-1 Threat:10 Weapon: [BSW12](Final Attack) Armor: [BSA28]
-Unit 3: R3 Attack:1 Defense:3 HP:10 Speed:0 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA21]
-Unit 4: R4 Attack:1 Defense:3 HP:12 Speed:-2 Threat:9 Weapon: [BSW43](Vow) Armor: [BSA44]
-Unit 5: B0 Attack:2 Defense:2 HP:12 Speed:2 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA24]
-Unit 6: B1 Attack:6 Defense:2 HP:15 Speed:-2 Threat:8 Weapon: [BSW15](Taunt) Armor: [BSA49]
-Unit 7: B2 Attack:3 Defense:1 HP:12 Speed:1 Threat:4 Weapon: [BSW28](Heavy Shot) Armor: [BSA20]
-Unit 8: B3 Attack:5 Defense:-2 HP:10 Speed:3 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA9]
-Unit 9: B4 Attack:3 Defense:0 HP:6 Speed:1 Threat:4 Weapon: [BSW46](Protect) Armor: [BSA16]
+Unit 0: R0 Attack:3 Defense:2 HP:10 Speed:7 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA10]
+Unit 1: R1 Attack:4 Defense:1 HP:10 Speed:7 Threat:4 Weapon: [BSW14](Leech Attack) Armor: [BSA1]
+Unit 2: R2 Attack:1 Defense:2 HP:10 Speed:3 Threat:2 Weapon: [BSW42](Haste) Armor: [BSA29]
+Unit 3: R3 Attack:1 Defense:4 HP:12 Speed:3 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA39]
+Unit 4: R4 Attack:1 Defense:2 HP:11 Speed:7 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA13]
+Unit 5: B0 Attack:2 Defense:3 HP:11 Speed:3 Threat:4 Weapon: [BSW38](Healing Touch) Armor: [BSA46]
+Unit 6: B1 Attack:4 Defense:0 HP:11 Speed:9 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA13]
+Unit 7: B2 Attack:0 Defense:4 HP:10 Speed:3 Threat:3 Weapon: [BSW50](Corrosion) Armor: [BSA36]
+Unit 8: B3 Attack:3 Defense:1 HP:10 Speed:5 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA29]
+Unit 9: B4 Attack:-2 Defense:7 HP:15 Speed:3 Threat:8 Weapon: [BSW38](Healing Touch) Armor: [BSA48]
 ==========================
 
 
-[Tick 2] 2 unit(s) acting
-Ranged: R0 targeting B1 (HP: 15)
-B1 HP: 15 - 7 => 8
-Ranged: B3 targeting R1 (HP: 15)
-R1 HP: 15 - 5 => 10
+[Tick 35] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
 
 
-[Tick 3] 1 unit(s) acting
-Melee: B0 targeting R1 (HP: 10)
-R1 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to R1 (Usage: 3)
-[A28] B0 applied Poison Effect to R1 (usage: 3)
+[Tick 45] 3 unit(s) acting
+Ranged: R0 targeting B4 (HP: 15)
+B4 HP: 15 - 0 => 15
+[A19] R0 speed changed from 7 to 6
+Melee: R1 targeting B4 (HP: 15)
+B4 HP: 15 - 0 => 15
+Magic: R4 targeting B4 (HP: 15)
+[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
 
 
-[Tick 4] 2 unit(s) acting
-Ranged: B3 targeting R1 (HP: 10)
-R1 HP: 10 - 5 => 5
-Ranged: R0 targeting B1 (HP: 8)
-B1 HP: 8 - 7 => 1
+[Tick 63] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
+[BOON] Applied Poison Effect to R3 (Usage: 3)
+[A28] B3 applied Poison Effect to R3 (usage: 3)
 
 
-[Tick 6] 5 unit(s) acting
-Ranged: B2 targeting R1 (HP: 5)
-R1 HP: 5 - 1 => 4
-[A19] B2 speed changed from 1 to 0
-Ranged: R0 targeting B1 (HP: 1)
-B1 HP: 7 - 7 => 0
-Ranged: B3 targeting R1 (HP: 4)
-R1 HP: 5 - 5 => 0
-Magic: B4 targeting B0 (HP: 12)
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 70] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 12)
+R3 HP: 12 - 0 => 12
 
 
-[Tick 8] 2 unit(s) acting
-Ranged: R0 targeting B0 (HP: 12)
-B0 HP: 12 - 3 => 9
-Ranged: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 6 => 4
+[Tick 90] 3 unit(s) acting
+Ranged: R0 targeting B4 (HP: 15)
+B4 HP: 15 - 0 => 15
+[A19] R0 speed changed from 6 to 5
+Melee: R1 targeting B4 (HP: 15)
+B4 HP: 15 - 0 => 15
+Magic: R4 targeting B4 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
 
 
-[Tick 9] 1 unit(s) acting
-Melee: B0 targeting R2 (HP: 4)
-R2 HP: 4 - 0 => 4
-[BOON] Applied Poison Effect to R2 (Usage: 3)
-[A28] B0 applied Poison Effect to R2 (usage: 3)
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
-[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered ProtectSTART
-[A02] B0 defense changed from 2 to 5
-
-
-[Tick 10] 2 unit(s) acting
-Ranged: B3 targeting R2 (HP: 4)
-R2 HP: 6 - 6 => 0
-Ranged: R0 targeting B0 (HP: 9)
-B0 HP: 9 - 3 => 6
-
-
-[Tick 12] 4 unit(s) acting
-Ranged: R0 targeting B0 (HP: 6)
-B0 HP: 6 - 3 => 3
-Ranged: B3 targeting R4 (HP: 12)
-R4 HP: 12 - 7 => 5
-  -> R4 (magic) tick reset due to ranged attack!
-Melee: B0 targeting R4 (HP: 5)
-R4 HP: 5 - 0 => 5
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B0 applied Poison Effect to R4 (usage: 3)
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
-[TEMP-BUFF] ProtectSTART on B0 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on B0
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] B0 triggered ProtectEND
-[A02] B0 defense changed from 5 to 2
-[BOON] ProtectSTART expired on B0 - cleaned up
-Magic: B4 targeting B0 (HP: 3)
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 14] 2 unit(s) acting
-Ranged: R0 targeting B0 (HP: 3)
-B0 HP: 3 - 3 => 0
-Ranged: B3 targeting R4 (HP: 5)
-R4 HP: 7 - 7 => 0
-
-
-[Tick 16] 2 unit(s) acting
-Ranged: R0 targeting B2 (HP: 12)
-B2 HP: 12 - 9 => 3
-Ranged: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 7 => 3
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 17] 2 unit(s) acting
-Ranged: R0 targeting B2 (HP: 3)
-B2 HP: 9 - 9 => 0
-Ranged: B3 targeting R3 (HP: 3)
-R3 HP: 7 - 7 => 0
-
-
-[Tick 18] 3 unit(s) acting
-Ranged: R0 targeting B3 (HP: 10)
-B3 HP: 10 - 2 => 8
-Ranged: B3 targeting R0 (HP: 10)
-R0 HP: 10 - 2 => 8
-Magic: B4 targeting B3 (HP: 8)
-[BOON] Applied ProtectSTART to B3 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 19] 2 unit(s) acting
-Ranged: R0 targeting B3 (HP: 8)
-B3 HP: 8 - 2 => 6
-Ranged: B3 targeting R0 (HP: 8)
-R0 HP: 8 - 2 => 6
-[DEBUG] B3 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B3
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 4)
-[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
-[EXECUTE_EFFECT] B3 triggered ProtectSTART
-[A02] B3 defense changed from -2 to 1
-
-
-[Tick 20] 2 unit(s) acting
-Ranged: R0 targeting B3 (HP: 6)
-B3 HP: 6 - 2 => 4
-Ranged: B3 targeting R0 (HP: 6)
-R0 HP: 6 - 2 => 4
-[DEBUG] B3 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B3
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 4)
-[TEMP-BUFF] ProtectSTART on B3 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on B3
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] B3 triggered ProtectEND
-[A02] B3 defense changed from 1 to 0
-[BOON] ProtectSTART expired on B3 - cleaned up
-
-
-[Tick 21] 3 unit(s) acting
-Ranged: R0 targeting B3 (HP: 4)
-B3 HP: 4 - 2 => 2
-Ranged: B3 targeting R0 (HP: 4)
-R0 HP: 4 - 2 => 2
-Magic: B4 targeting B4 (HP: 6)
-[BOON] Applied ProtectSTART to B4 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 105] 5 unit(s) acting
+Magic: B0 targeting B4 (HP: 15)
+[HEAL] B4 healed for 0 HP (from 15 to 15/15)
+[A29] B0 healed B4 for 5 HP
+Magic: R3 targeting R3 (HP: 12)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R3 processing 2 boons
+[DEBUG] Registering boon Poison Effect for R3
+[DEBUG] Registering boon BulkupSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[BOON] Poison Effect triggered on R3 (Usage: 3/3)
+[EXECUTE_EFFECT] R3 triggered Poison Effect
+R3 HP: 12 - 5 => 7
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+Magic: R2 targeting R3 (HP: 17)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B2 targeting R3 (HP: 17)
+[A34] R3 attack changed from 1 to 0
+Magic: B2 targeting R1 (HP: 10)
+[A34] R1 attack changed from 4 to 3
+Magic: B4 targeting B0 (HP: 11)
+[HEAL] B0 healed for 0 HP (from 11 to 11/11)
+[A29] B4 healed B0 for 5 HP
 [DEBUG] B4 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B4
-[AFTER-ACTION] B4 performs after-action on B4 (threat: 4)
-[TEMP-BUFF] ProtectSTART applied to B4 (Duration: 1 turns)
-[EXECUTE_EFFECT] B4 triggered ProtectSTART
-[A02] B4 defense changed from 0 to 3
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 8)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 HP: 15 - 5 => 10
 
 
-[Tick 22] 2 unit(s) acting
-Ranged: R0 targeting B3 (HP: 2)
-B3 HP: 2 - 2 => 0
+[Tick 140] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
 
 
-[Tick 23] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 6)
-B4 HP: 6 - 4 => 2
-  -> B4 (magic) tick reset due to ranged attack!
+[Tick 175] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
 
 
-[Tick 24] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 2)
-B4 HP: 4 - 4 => 0
-Battle Over! Red Team wins!
+[Tick 180] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 189] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B3 applied Poison Effect to R3 (usage: 3)
+
+
+[Tick 195] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[A19] R0 speed changed from 5 to 4
+
+
+[Tick 210] 6 unit(s) acting
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
+Magic: B4 targeting B0 (HP: 11)
+[HEAL] B0 healed for 0 HP (from 11 to 11/11)
+[A29] B4 healed B0 for 5 HP
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 8)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 HP: 10 - 5 => 5
+Magic: R3 targeting R3 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R3
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R3 processing 3 boons
+[DEBUG] Registering boon Poison Effect for R3
+[DEBUG] Registering boon BulkupSTART for R3
+[DEBUG] Registering boon HasteSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[BOON] Poison Effect triggered on R3 (Usage: 3/3)
+[EXECUTE_EFFECT] R3 triggered Poison Effect
+R3 HP: 17 - 5 => 12
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+[BOON] BulkupSTART expired on R3 - cleaned up
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+[A19] R3 speed changed from 3 to 5
+Magic: R2 targeting R3 (HP: 2)
+[BOON] Refreshing existing HasteSTART on R3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B0 targeting B4 (HP: 5)
+[HEAL] B4 healed for 5 HP (from 5 to 10/15)
+[A29] B0 healed B4 for 5 HP
+Magic: B2 targeting R3 (HP: 2)
+[A34] R3 attack changed from 0 to 0
+Magic: B2 targeting R1 (HP: 10)
+[A34] R1 attack changed from 3 to 2
+
+
+[Tick 225] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 252] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B3 applied Poison Effect to R3 (usage: 3)
+
+
+[Tick 258] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[A19] R0 speed changed from 4 to 3
+
+
+[Tick 350] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 385] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 405] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 420] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 450] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 455] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 490] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 495] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 504] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B3 applied Poison Effect to R3 (usage: 3)
+
+
+[Tick 525] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 540] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 560] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 567] 1 unit(s) acting
+Melee: B3 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B3 applied Poison Effect to R3 (usage: 3)
+
+
+[Tick 573] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[A19] R0 speed changed from 3 to 2
+
+
+[Tick 585] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 595] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+
+
+[Tick 630] 6 unit(s) acting
+Melee: B3 targeting R3 (HP: 2)
+R3 HP: 2 - 0 => 2
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B3 applied Poison Effect to R3 (usage: 3)
+Magic: R3 targeting R3 (HP: 2)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R3 processing 3 boons
+[DEBUG] Registering boon Poison Effect for R3
+[DEBUG] Registering boon HasteSTART for R3
+[DEBUG] Registering boon BulkupSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 5)
+[BOON] Poison Effect triggered on R3 (Usage: 3/3)
+[EXECUTE_EFFECT] R3 triggered Poison Effect
+R3 HP: 5 - 5 => 0
+[AFTER-ACTION] R3 performs after-action on R1 (threat: 4)
+[TEMP-BUFF] HasteSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R1
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+[A19] R3 speed changed from 5 to 3
+[BOON] HasteSTART expired on R3 - cleaned up
+[AFTER-ACTION] R3 performs after-action on R1 (threat: 4)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+  -> R3 died during after-actions, stopping further actions
+Magic: B2 targeting R1 (HP: 20)
+[A34] R1 attack changed from 2 to 1
+Magic: B0 targeting B4 (HP: 10)
+[HEAL] B4 healed for 5 HP (from 10 to 15/15)
+[A29] B0 healed B4 for 5 HP
+Magic: B4 targeting B0 (HP: 11)
+[HEAL] B0 healed for 0 HP (from 11 to 11/11)
+[A29] B4 healed B0 for 5 HP
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 8)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 HP: 15 - 5 => 10
+
+
+[Tick 665] 1 unit(s) acting
+Melee: B1 targeting R1 (HP: 20)
+R1 HP: 20 - 7 => 13
+
+
+[Tick 675] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 678] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[A19] R0 speed changed from 2 to 1
+
+
+[Tick 735] 1 unit(s) acting
+Melee: B1 targeting R1 (HP: 13)
+R1 HP: 13 - 7 => 6
+
+
+[Tick 756] 1 unit(s) acting
+Melee: B3 targeting R1 (HP: 6)
+R1 HP: 6 - 2 => 4
+[BOON] Applied Poison Effect to R1 (Usage: 3)
+[A28] B3 applied Poison Effect to R1 (usage: 3)
+
+
+[Tick 765] 2 unit(s) acting
+Melee: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 4)
+[BOON] Poison Effect triggered on R1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 HP: 5 - 5 => 0
+  -> R1 died during after-actions, stopping further actions
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 770] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 10)
+R2 HP: 10 - 6 => 4
+  -> R2 (magic) tick reset due to melee attack!
+
+
+[Tick 805] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 4)
+R2 HP: 6 - 6 => 0
+
+
+[Tick 810] 1 unit(s) acting
+Magic: R4 targeting B4 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B4
+[A28] R4 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 819] 1 unit(s) acting
+Melee: B3 targeting R4 (HP: 11)
+R4 HP: 11 - 1 => 10
+[BOON] Applied Poison Effect to R4 (Usage: 3)
+[A28] B3 applied Poison Effect to R4 (usage: 3)
+  -> R4 (magic) tick reset due to melee attack!
+
+
+[Tick 840] 4 unit(s) acting
+Melee: B1 targeting R4 (HP: 10)
+R4 HP: 10 - 6 => 4
+  -> R4 (magic) tick reset due to melee attack!
+Magic: B0 targeting B4 (HP: 10)
+[HEAL] B4 healed for 5 HP (from 10 to 15/15)
+[A29] B0 healed B4 for 5 HP
+Magic: B2 targeting R4 (HP: 4)
+[A34] R4 attack changed from 1 to 0
+Magic: B2 targeting R0 (HP: 10)
+[A34] R0 attack changed from 3 to 2
+Magic: B4 targeting B0 (HP: 11)
+[HEAL] B0 healed for 0 HP (from 11 to 11/11)
+[A29] B4 healed B0 for 5 HP
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 8)
+[BOON] Tetrodo Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Tetrodo Effect
+B4 HP: 15 - 5 => 10
+
+
+[Tick 875] 1 unit(s) acting
+Melee: B1 targeting R4 (HP: 4)
+R4 HP: 6 - 6 => 0
+
+
+[Tick 882] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 10)
+R0 HP: 10 - 1 => 9
+[BOON] Applied Poison Effect to R0 (Usage: 3)
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+
+
+[Tick 891] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 9)
+R0 HP: 9 - 1 => 8
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+
+
+[Tick 900] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 8)
+R0 HP: 8 - 1 => 7
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+
+
+[Tick 909] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 7)
+R0 HP: 7 - 1 => 6
+[BOON] Refreshing existing Poison Effect on R0
+[A28] B3 applied Poison Effect to R0 (usage: 3)
+
+
+[Tick 910] 1 unit(s) acting
+Melee: B1 targeting R0 (HP: 6)
+R0 HP: 6 - 6 => 0
+Battle Over! Blue Team wins!

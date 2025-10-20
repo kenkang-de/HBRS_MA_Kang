@@ -18,6 +18,10 @@ const float MULTIPLIER_COUNTER = 1.5;
 const float MULTIPLIER_BASIC =1.0;
 
 //balancing target winrate
+const int ALPHA_NUM=5;
+
+const int BETA_NUM=20;
+
 const float TARGET_WINRATE=0.5;
 
 const float TARGET_THRESHOLD=0.05;

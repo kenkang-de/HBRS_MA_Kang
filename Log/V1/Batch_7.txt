@@ -1,946 +1,159 @@
-Unit 0: R0 Attack:3 Defense:0 HP:12 Speed:1 Threat:6 Weapon: [BSW31](Wrist Shot) Armor: [BSA38]
-Unit 1: R1 Attack:4 Defense:1 HP:8 Speed:2 Threat:5 Weapon: [BSW7](Poison Attack) Armor: [BSA25]
-Unit 2: R2 Attack:-1 Defense:0 HP:10 Speed:2 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA10]
-Unit 3: R3 Attack:4 Defense:3 HP:12 Speed:-1 Threat:7 Weapon: [BSW19](Momentum) Armor: [BSA41]
-Unit 4: R4 Attack:0 Defense:11 HP:12 Speed:0 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA20]
-Unit 5: B0 Attack:1 Defense:-2 HP:10 Speed:2 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA9]
-Unit 6: B1 Attack:6 Defense:0 HP:10 Speed:0 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA29]
-Unit 7: B2 Attack:6 Defense:-2 HP:10 Speed:2 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA9]
-Unit 8: B3 Attack:3 Defense:2 HP:12 Speed:2 Threat:6 Weapon: [BSW23](All-Out Assault) Armor: [BSA24]
-Unit 9: B4 Attack:5 Defense:4 HP:19 Speed:-1 Threat:9 Weapon: [BSW4](Berserk) Armor: [BSA50]
+Unit 0: R0 Attack:1 Defense:3 HP:10 Speed:4 Threat:4 Weapon: [BSW39](Healing Link) Armor: [BSA30]
+Unit 1: R1 Attack:3 Defense:5 HP:10 Speed:3 Threat:5 Weapon: [BSW34](Wind Blade) Armor: [BSA45]
+Unit 2: R2 Attack:2 Defense:1 HP:12 Speed:5 Threat:3 Weapon: [BSW35](Chain Lightning) Armor: [BSA17]
+Unit 3: R3 Attack:1 Defense:3 HP:7 Speed:7 Threat:0 Weapon: [BSW6](Achilles' heel) Armor: [BSA19]
+Unit 4: R4 Attack:4 Defense:0 HP:10 Speed:7 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA6]
+Unit 5: B0 Attack:7 Defense:0 HP:8 Speed:4 Threat:1 Weapon: [BSW10](Reckless Attack) Armor: [BSA25]
+Unit 6: B1 Attack:1 Defense:5 HP:12 Speed:3 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA40]
+Unit 7: B2 Attack:6 Defense:1 HP:10 Speed:4 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA32]
+Unit 8: B3 Attack:2 Defense:14 HP:10 Speed:4 Threat:4 Weapon: [BSW12](Final Attack) Armor: [BSA21]
+Unit 9: B4 Attack:7 Defense:1 HP:4 Speed:6 Threat:-1 Weapon: [BSW25](Smoke Shot) Armor: [BSA27]
 ==========================
 
 
-[Tick 1] 5 unit(s) acting
-Ranged: B3 targeting R3 (HP: 12)
-[A10] B3 threat changed from 6 to 7
-[A04] B3 attack changed from 3 to 5
-R3 HP: 12 - 2 => 10
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Applied Poison Effect to B4 (Usage: 3)
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 10 - 3 => 7
-[HEAL] B2 healed for 0 HP (from 10 to 10/10)
-Magic: R2 targeting R3 (HP: 7)
-[BOON] Applied HasteSTART to R3 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Applied BulkupSTART to B4 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 60] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 12)
+B1 HP: 12 - 3 => 9
+[A19] R4 speed changed from 7 to 6
+  -> B1 (magic) tick reset due to ranged attack!
+Melee: R3 targeting B1 (HP: 9)
+B1 HP: 9 - 0 => 9
+[A06] B1 speed changed from 3 to 2
 
 
-[Tick 2] 6 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Ranged: B3 targeting R3 (HP: 7)
-[A10] B3 threat changed from 7 to 8
-[A04] B3 attack changed from 5 to 7
+[Tick 70] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 2 => 8
+  -> R1 (magic) tick reset due to ranged attack!
+
+
+[Tick 84] 1 unit(s) acting
+Magic: R2 targeting B1 (HP: 9)
+B1 HP: 9 - 2 => 7
+Magic: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 2 => 8
+Magic: R2 targeting B0 (HP: 8)
+B0 HP: 8 - 2 => 6
+
+
+[Tick 105] 4 unit(s) acting
+Ranged: B2 targeting R0 (HP: 10)
+R0 HP: 10 - 9 => 1
+[A19] B2 speed changed from 4 to 3
+  -> R0 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R0 (HP: 1)
+B0 HP: 6 - 3 => 3
+R0 HP: 7 - 7 => 0
+
+
+[Tick 120] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 7)
+B1 HP: 7 - 3 => 4
+[A19] R4 speed changed from 6 to 5
+  -> B1 (magic) tick reset due to ranged attack!
+Melee: R3 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
+[A06] B1 speed changed from 2 to 1
+
+
+[Tick 140] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 12)
+R2 HP: 12 - 6 => 6
+  -> R2 (magic) tick reset due to ranged attack!
+
+
+[Tick 180] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
+[A06] B1 speed changed from 1 to 0
+
+
+[Tick 190] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 4)
+B1 HP: 4 - 3 => 1
+[A19] R4 speed changed from 5 to 4
+  -> B1 (magic) tick reset due to ranged attack!
+
+
+[Tick 210] 5 unit(s) acting
+Ranged: B2 targeting R2 (HP: 6)
+R2 HP: 11 - 11 => 0
+[A19] B2 speed changed from 3 to 2
+Melee: B3 targeting R1 (HP: 8)
+R1 HP: 11 - 11 => 0
+[A12] B3 defense changed from 14 to 0
+
+
+[Tick 240] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
+[A06] B1 speed changed from 0 to 0
+
+
+[Tick 252] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
+[A06] B1 speed changed from 0 to 0
+
+
+[Tick 264] 1 unit(s) acting
+Melee: R3 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
+[A06] B1 speed changed from 0 to 0
+
+
+[Tick 274] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 1)
+B1 HP: 3 - 3 => 0
+[A19] R4 speed changed from 4 to 3
+
+
+[Tick 276] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 8)
+B3 HP: 8 - 1 => 7
+[A06] B3 speed changed from 4 to 3
+
+
+[Tick 280] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 7)
 R3 HP: 7 - 4 => 3
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R3 (HP: 3)
-R3 HP: 3 - 3 => 0
-[HEAL] B2 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 3] 5 unit(s) acting
-Ranged: B3 targeting R4 (HP: 12)
-[A10] B3 threat changed from 8 to 9
-[A04] B3 attack changed from 7 to 9
-R4 HP: 12 - 0 => 12
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Magic: R2 targeting R4 (HP: 12)
-[BOON] Applied HasteSTART to R4 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 288] 1 unit(s) acting
+Melee: R3 targeting B3 (HP: 7)
+B3 HP: 7 - 1 => 6
+[A06] B3 speed changed from 3 to 2
 
 
-[Tick 4] 6 unit(s) acting
-Ranged: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 1 => 11
-Ranged: B3 targeting R4 (HP: 12)
-[A10] B3 threat changed from 9 to 10
-[A04] B3 attack changed from 9 to 11
-R4 HP: 12 - 0 => 12
-Melee: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 0 => 12
-Melee: R1 targeting B3 (HP: 11)
-B3 HP: 11 - 2 => 9
-[BOON] Applied Poison Effect to B3 (Usage: 3)
-[A28] R1 applied Poison Effect to B3 (usage: 3)
-Magic: B0 targeting B3 (HP: 9)
-[BOON] Applied BulkupSTART to B3 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 12)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 294] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 3)
+R3 HP: 4 - 4 => 0
 
 
-[Tick 5] 5 unit(s) acting
-Ranged: B3 targeting R4 (HP: 12)
-[A10] B3 threat changed from 10 to 11
-[A04] B3 attack changed from 11 to 13
-R4 HP: 12 - 2 => 10
-[DEBUG] B3 processing 2 boons
-[DEBUG] Registering boon Poison Effect for B3
-[DEBUG] Registering boon BulkupSTART for B3
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 11)
-[BOON] Poison Effect triggered on B3 (Usage: 3/3)
-[EXECUTE_EFFECT] B3 triggered Poison Effect
-B3 HP: 9 - 5 => 4
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 11)
-[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
-[EXECUTE_EFFECT] B3 triggered BulkupSTART
-Melee: R1 targeting B3 (HP: 14)
-B3 HP: 14 - 2 => 12
-[BOON] Refreshing existing Poison Effect on B3
-[A28] R1 applied Poison Effect to B3 (usage: 3)
-Melee: B2 targeting R4 (HP: 10)
-R4 HP: 10 - 0 => 10
-Magic: B0 targeting B3 (HP: 12)
-[BOON] Refreshing existing BulkupSTART on B3
-[REFRESH] BulkupSTART duration refreshed, effect remains active
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 10)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 295] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 6)
+B3 HP: 8 - 8 => 0
+[A19] R4 speed changed from 3 to 2
 
 
-[Tick 6] 6 unit(s) acting
-Ranged: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 1 => 11
-Ranged: B3 targeting R4 (HP: 10)
-[A10] B3 threat changed from 11 to 12
-[A04] B3 attack changed from 13 to 15
-R4 HP: 10 - 4 => 6
-[DEBUG] B3 processing 2 boons
-[DEBUG] Registering boon Poison Effect for B3
-[DEBUG] Registering boon BulkupSTART for B3
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 12)
-[BOON] Poison Effect triggered on B3 (Usage: 3/3)
-[EXECUTE_EFFECT] B3 triggered Poison Effect
-B3 HP: 11 - 5 => 6
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 12)
-[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B3
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B3 triggered BulkupEND
-[BOON] BulkupSTART expired on B3 - cleaned up
-  -> B3 died during after-actions, stopping further actions
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 299] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 3)
+B0 HP: 8 - 8 => 0
+[A19] R4 speed changed from 2 to 1
 
 
-[Tick 7] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[Tick 305] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 10)
+B2 HP: 10 - 7 => 3
+[A19] R4 speed changed from 1 to 0
 
 
-[Tick 8] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 308] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 7 => 3
 
 
-[Tick 9] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 10] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 11] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 12] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 13] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 14] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 15] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 16] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 17] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 18] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 19] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 20] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 21] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 22] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 23] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 24] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 25] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 26] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 27] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 28] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 29] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 30] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 31] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 32] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 33] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 34] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 35] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 36] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 37] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 38] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 39] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 40] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 41] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 42] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 43] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 44] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 45] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 46] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 47] 4 unit(s) acting
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-
-
-[Tick 48] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 49] 4 unit(s) acting
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 50] 5 unit(s) acting
-Ranged: R0 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-Melee: R1 targeting B4 (HP: 19)
-B4 HP: 19 - 0 => 19
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R1 applied Poison Effect to B4 (usage: 3)
-Melee: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 0 => 6
-Magic: B0 targeting B4 (HP: 19)
-[BOON] Refreshing existing BulkupSTART on B4
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 6)
-[BOON] Refreshing existing HasteSTART on R4
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-Battle Over! Tick limit reached (0 ticks elapsed)
+[Tick 309] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 3)
+R4 HP: 7 - 7 => 0
+Battle Over! Blue Team wins!

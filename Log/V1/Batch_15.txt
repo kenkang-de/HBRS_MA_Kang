@@ -1,413 +1,478 @@
-Unit 0: R0 Attack:3 Defense:0 HP:6 Speed:2 Threat:4 Weapon: [BSW40](Grace) Armor: [BSA16]
-Unit 1: R1 Attack:2 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW25](Smoke Shot) Armor: [BSA1]
-Unit 2: R2 Attack:2 Defense:0 HP:10 Speed:2 Threat:10 Weapon: [BSW49](Earthquake) Armor: [BSA11]
-Unit 3: R3 Attack:3 Defense:4 HP:10 Speed:1 Threat:7 Weapon: [BSW25](Smoke Shot) Armor: [BSA37]
-Unit 4: R4 Attack:2 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA7]
-Unit 5: B0 Attack:5 Defense:2 HP:10 Speed:-1 Threat:7 Weapon: [BSW10](Reckless Attack) Armor: [BSA36]
-Unit 6: B1 Attack:-1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW47](Cheer) Armor: [BSA17]
-Unit 7: B2 Attack:0 Defense:6 HP:10 Speed:-2 Threat:11 Weapon: [BSW41](Bulkup) Armor: [BSA42]
-Unit 8: B3 Attack:5 Defense:3 HP:7 Speed:2 Threat:7 Weapon: [BSW9](Blitz Attack) Armor: [BSA23]
-Unit 9: B4 Attack:3 Defense:4 HP:12 Speed:0 Threat:9 Weapon: [BSW34](Wind Blade) Armor: [BSA40]
+Unit 0: R0 Attack:-2 Defense:7 HP:15 Speed:3 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA48]
+Unit 1: R1 Attack:5 Defense:4 HP:12 Speed:4 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA44]
+Unit 2: R2 Attack:3 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW6](Achilles' heel) Armor: [BSA43]
+Unit 3: R3 Attack:4 Defense:2 HP:4 Speed:4 Threat:1 Weapon: [BSW42](Haste) Armor: [BSA27]
+Unit 4: R4 Attack:1 Defense:6 HP:12 Speed:2 Threat:8 Weapon: [BSW45](Fatigue) Armor: [BSA45]
+Unit 5: B0 Attack:1 Defense:4 HP:12 Speed:3 Threat:5 Weapon: [BSW50](Corrosion) Armor: [BSA39]
+Unit 6: B1 Attack:4 Defense:2 HP:10 Speed:5 Threat:3 Weapon: [BSW22](Delay Shot) Armor: [BSA33]
+Unit 7: B2 Attack:-1 Defense:1 HP:10 Speed:5 Threat:0 Weapon: [BSW37](Freeze) Armor: [BSA14]
+Unit 8: B3 Attack:4 Defense:6 HP:15 Speed:2 Threat:9 Weapon: [BSW16](Killer's Spirit) Armor: [BSA48]
+Unit 9: B4 Attack:5 Defense:0 HP:10 Speed:5 Threat:0 Weapon: [BSW25](Smoke Shot) Armor: [BSA32]
 ==========================
 
 
-[Tick 4] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-
-
-[Tick 5] 1 unit(s) acting
-Ranged: R4 targeting B4 (HP: 12)
-B4 HP: 12 - 2 => 10
-  -> B4 (magic) tick reset due to ranged attack!
-
-
-[Tick 8] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 10] 4 unit(s) acting
-Ranged: R4 targeting B0 (HP: 10)
-B0 HP: 10 - 4 => 6
-Melee: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 7 => 3
-  -> R2 (magic) tick reset due to melee attack!
-Magic: R2 targeting B0 (HP: 6)
-B0 HP: 6 - 2 => 4
-Magic: R2 targeting B3 (HP: 7)
-B3 HP: 7 - 2 => 5
-Magic: R2 targeting B1 (HP: 12)
-B1 HP: 12 - 2 => 10
-Magic: R2 targeting B2 (HP: 10)
-B2 HP: 10 - 2 => 8
-Magic: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 2 => 8
-Magic: R0 targeting R2 (HP: 3)
-[HEAL] R2 healed for 2 HP (from 3 to 5/10)
-[A29] R0 healed R2 for 2 HP
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-
-
-[Tick 12] 1 unit(s) acting
-Ranged: R1 targeting B0 (HP: 4)
-B0 HP: 4 - 0 => 4
-
-
-[Tick 15] 1 unit(s) acting
-Ranged: R4 targeting B3 (HP: 5)
-B3 HP: 5 - 3 => 2
-
-
-[Tick 16] 1 unit(s) acting
-Ranged: R1 targeting B3 (HP: 2)
-B3 HP: 2 - 0 => 2
-
-
-[Tick 20] 7 unit(s) acting
-Ranged: R3 targeting B0 (HP: 4)
-B0 HP: 4 - 1 => 3
-Ranged: R4 targeting B0 (HP: 3)
-B0 HP: 4 - 4 => 0
-Melee: B3 targeting R2 (HP: 5)
-R2 HP: 7 - 7 => 0
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 24] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 10)
-B1 HP: 10 - 2 => 8
-  -> B1 (magic) tick reset due to ranged attack!
-
-
-[Tick 25] 1 unit(s) acting
-Ranged: R4 targeting B1 (HP: 8)
-B1 HP: 8 - 6 => 2
-  -> B1 (magic) tick reset due to ranged attack!
-
-
-[Tick 28] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 2)
-B1 HP: 2 - 2 => 0
-
-
-[Tick 30] 3 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Melee: B3 targeting R3 (HP: 10)
-R3 HP: 10 - 3 => 7
-Magic: R0 targeting R3 (HP: 7)
-[HEAL] R3 healed for 2 HP (from 7 to 9/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 32] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 35] 1 unit(s) acting
-Ranged: R4 targeting B4 (HP: 8)
-B4 HP: 8 - 2 => 6
-  -> B4 (magic) tick reset due to ranged attack!
-
-
-[Tick 36] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-
-
-[Tick 40] 5 unit(s) acting
-Ranged: R1 targeting B3 (HP: 2)
-B3 HP: 2 - 0 => 2
-Ranged: R3 targeting B3 (HP: 2)
-B3 HP: 2 - 0 => 2
-Ranged: R4 targeting B3 (HP: 2)
-B3 HP: 3 - 3 => 0
-Magic: R0 targeting R3 (HP: 9)
-[HEAL] R3 healed for 1 HP (from 9 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 44] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 6)
-B4 HP: 6 - 0 => 6
-
-
-[Tick 45] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 48] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 50] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 52] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 55] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 56] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 60] 4 unit(s) acting
-Ranged: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 64] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 65] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 68] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 70] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 72] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 75] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 76] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 80] 4 unit(s) acting
-Ranged: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 84] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 85] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 88] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 90] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 92] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 95] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 96] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 100] 4 unit(s) acting
-Ranged: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 104] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 105] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 108] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 110] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 112] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 115] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 116] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 120] 4 unit(s) acting
-Ranged: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 10)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R3 for 2 HP
-Magic: R0 targeting R1 (HP: 10)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-[A29] R0 healed R1 for 2 HP
-Magic: R0 targeting R4 (HP: 9)
-[HEAL] R4 healed for 0 HP (from 9 to 9/9)
-[A29] R0 healed R4 for 2 HP
-
-
-[Tick 124] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 125] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
+[Tick 12] 3 unit(s) acting
+Ranged: B1 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+[A20] R0 delayed by 1 intervals (20 ticks)
+Ranged: B4 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Magic: B2 targeting R0 (HP: 15)
+[BOON] Applied FreezeSTART to R0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 15] 3 unit(s) acting
+Melee: R1 targeting B3 (HP: 15)
+B3 HP: 15 - 0 => 15
+Melee: R2 targeting B3 (HP: 15)
+B3 HP: 15 - 0 => 15
+[A06] B3 speed changed from 2 to 1
+Magic: R3 targeting R4 (HP: 12)
+[BOON] Applied HasteSTART to R4 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 40] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 1)
+[TEMP-BUFF] FreezeSTART applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered FreezeSTART
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+[DEBUG] R0 processing 1 boons
+[DEBUG] Registering boon FreezeSTART for R0
+[AFTER-ACTION] R0 performs after-action on R0 (threat: 1)
+[TEMP-BUFF] FreezeSTART on R0 (Remaining: 0 turns)
+[TEMP-BUFF] FreezeSTART expired on R0
+ - applying removal effect: FreezeEnd
+[BOON] FreezeSTART expired on R0 - cleaned up
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 60] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 80] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 100] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 120] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 140] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 160] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 180] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 200] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 220] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 240] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 260] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 280] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 300] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 320] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 340] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 360] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 380] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 400] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 420] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 440] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 460] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 480] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 500] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 520] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 540] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 560] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 580] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 600] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 620] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 640] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 660] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 680] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 700] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 720] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 740] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 760] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 780] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 800] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 820] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 840] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 860] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 880] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 900] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 920] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 940] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 960] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
+
+
+[Tick 980] 1 unit(s) acting
+Magic: R0 targeting R4 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R1 (HP: 12)
+  -> R0 is frozen and cannot act!
+Magic: R0 targeting R2 (HP: 10)
+  -> R0 is frozen and cannot act!
 Battle Over! Tick limit reached (0 ticks elapsed)

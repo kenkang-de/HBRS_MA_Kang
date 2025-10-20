@@ -162,6 +162,7 @@ g++ %LINK_FLAGS% ^
     Analysis/RMSE.o ^
     AutoBalancing/Chromosome.o ^
     AutoBalancing/GeneticBalancingProcessor.o ^
+    AutoBalancing/BalancingLane.o ^
     -LSimulator ^
     -lsimulator ^
     -LSimulator/yaml-cpp/mingw-build ^
