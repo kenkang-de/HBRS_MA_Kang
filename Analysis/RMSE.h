@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <cmath>
+#include <algorithm>
 
 #include "../Simulator/TestSubject.h"
 #include "../Simulator/Constants.h"

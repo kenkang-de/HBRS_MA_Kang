@@ -83,12 +83,17 @@ int targetMagnitude=0;
     }
 
     float mag_float = std::sqrt(static_cast<float>(targetMagnitude));
+    float cosineChange = static_cast<float>(dotProduct) / (firstMagnitude * mag_float);
+    float inverse = 1.0f - cosineChange;
 
-    return static_cast<float>(dotProduct) / (firstMagnitude * mag_float);
+    return inverse;
 }
 
 void GeneticBalancingProcessor::GenerateBalancingLane()
 {
+ lanes.reserve(ALPHA_NUM + BETA_NUM + 1); // 1 for the mutation. 1 for the reallocation.
+
+
 for(int i=0; i< ChromosomeRules_Alpha.size(); i++)
 {
     BalancingLane lane = BalancingLane(&ChromosomeRules_Alpha[i], CHROMOSOMETYPE::ALPHA);
@@ -245,11 +250,11 @@ return std::vector<BalancingLane*>(alphaLanes.begin(), alphaLanes.end());
 
 std::vector<BalancingLane*> GeneticBalancingProcessor::GetBetaLanes()
 {
-std::array<BalancingLane*,BETA_NUM> betaLanes;
-for(int i=ALPHA_NUM; i<BETA_NUM; i++)
-betaLanes[i]= &lanes[ALPHA_NUM+i];
-
-return std::vector<BalancingLane*>(betaLanes.begin(), betaLanes.end());
+    std::array<BalancingLane*,BETA_NUM> betaLanes;
+    for(int i=0; i<BETA_NUM; i++)  
+        betaLanes[i]= &lanes[ALPHA_NUM+i]; 
+    
+    return std::vector<BalancingLane*>(betaLanes.begin(), betaLanes.end());
 }
 
 
@@ -363,7 +368,7 @@ Chromosome* GeneticBalancingProcessor::GetLowestFitnessChromosome(std::vector<Ch
 std::vector<Chromosome*> GeneticBalancingProcessor::GetAllChromosomesFromLanes()
 {
     std::vector<Chromosome*> allChromosome;
-    allChromosome.reserve(lanes.size());
+
     for(BalancingLane& lane: lanes)
     {
         allChromosome.push_back(lane.GetChromosome());
@@ -373,33 +378,47 @@ std::vector<Chromosome*> GeneticBalancingProcessor::GetAllChromosomesFromLanes()
 
 void GeneticBalancingProcessor::DeleteChromosomeAndLane(Chromosome* chromosome)
 {
-  BalancingLane* recessiveLane = chromosome->Get_BalancingLane();
-
-  recessiveLane->SetChromosome(nullptr);
-  chromosome->Set_BalancingLane(nullptr);
-
-  lanes.erase(std::remove_if(lanes.begin(), lanes.end(),
-    [recessiveLane](const BalancingLane& lane) { return &lane == recessiveLane; }), 
-    lanes.end());
-  
-  delete chromosome;
-
+    // Find the lane that contains this chromosome
+    auto it = std::find_if(lanes.begin(), lanes.end(),
+        [chromosome](BalancingLane& lane) { 
+            return lane.GetChromosome() == chromosome; 
+        });
+    
+    if (it != lanes.end()) {
+        // Break the links
+        it->SetChromosome(nullptr);
+        chromosome->Set_BalancingLane(nullptr);
+        
+        // Erase by iterator 
+        lanes.erase(it);
+    }
+    
+    delete chromosome;
 }
 
 void GeneticBalancingProcessor::ReplaceRecessiveChromosome(Chromosome* recessive, Chromosome* mutant)
 {
     BalancingLane* mutantLane = mutant->Get_BalancingLane();
-    mutant->Set_BalancingLane(nullptr);
-
     BalancingLane* recessiveLane = recessive->Get_BalancingLane();
+
+    auto it = std::find_if(lanes.begin(), lanes.end(),
+        [mutantLane](BalancingLane& lane) { 
+            return &lane == mutantLane;  // Compare lane addresses directly
+        });
+
+    // Break old links
+    mutant->Set_BalancingLane(nullptr);
     recessiveLane->SetChromosome(nullptr);
 
+    // Transfer the adjustment and establish new links
     recessiveLane->adjustment = mutantLane->adjustment;
     recessiveLane->SetChromosome(mutant);
+    mutant->Set_BalancingLane(recessiveLane);
 
-    lanes.erase(std::remove_if(lanes.begin(), lanes.end(),
-    [mutantLane](const BalancingLane& lane) { return &lane == mutantLane; }), 
-    lanes.end());
+    // Remove the mutant lane (found before we changed links)
+    if (it != lanes.end()) {
+        lanes.erase(it);
+    }
 
     delete recessive;
 }
@@ -439,12 +458,16 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator* simulator, std::vect
     for(BalancingLane& lane: lanes)
     SimulateChromosome(simulator,batches,lane.GetChromosome(),mergedTestSubjects);
     
+    // Generation progression
+    while(Generation < MAXGENERATION &&
+    // If the highest fitness score among all lanes has reached the threshold
+    GetHighestFitnessChromosome(GetAllChromosomesFromLanes())->Get_Fitness() <= FITNESS_MAX-FITNESS_THRESHOLD){
     //Mutation
     std::array<Chromosome*,2> parentCandidates = ParentTournament();
     Chromosome* mutantChromosome = PopulateMutation(parentCandidates);
     //Simulate Mutation
     SimulateChromosome(simulator,batches,mutantChromosome,mergedTestSubjects);
-
+    //Selection
     Chromosome* recessiveChromosome = GetLowestFitnessChromosome(GetAllChromosomesFromLanes()); 
 
     if(recessiveChromosome == mutantChromosome)
@@ -452,22 +475,10 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator* simulator, std::vect
     else
     ReplaceRecessiveChromosome(recessiveChromosome, mutantChromosome);
 
+    std::cout<<"Generation: " <<Generation<<std::endl;
 
-
-
-    // // Generation progression
-    // while(Generation < MAXGENERATION
-    // //SecondCondition
-    // )
-    // {
-    // Chromosome* recessiveChromosome = GetLowestFitnessChromosome(GetAllChromosomesFromLanes()); 
-
-    // if(recessiveChromosome == mutantChromosome)
-    // DeleteChromosomeAndLane(recessiveChromosome);
-
-    // Generation++;
-    // }
-
+    Generation++;
+    }
 }
 
 std::vector<TestSubject*> GeneticBalancingProcessor::MergeToTestSubject(

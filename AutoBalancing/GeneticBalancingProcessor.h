@@ -36,8 +36,6 @@ static float firstMagnitude;
 
 static int Generation;
 
-
-
 std::vector<BalancingLane> lanes; 
 BalancingLane mutationLane;
 
