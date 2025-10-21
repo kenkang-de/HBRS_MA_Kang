@@ -1,331 +1,97 @@
-Unit 0: R0 Attack:7 Defense:1 HP:6 Speed:4 Threat:1 Weapon: [BSW13](Prep Attack) Armor: [BSA26]
-Unit 1: R1 Attack:1 Defense:1 HP:7 Speed:4 Threat:0 Weapon: [BSW39](Healing Link) Armor: [BSA19]
-Unit 2: R2 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA5]
-Unit 3: R3 Attack:1 Defense:1 HP:12 Speed:3 Threat:2 Weapon: [BSW38](Healing Touch) Armor: [BSA20]
-Unit 4: R4 Attack:4 Defense:12 HP:15 Speed:0 Threat:5 Weapon: [BSW12](Final Attack) Armor: [BSA49]
-Unit 5: B0 Attack:4 Defense:3 HP:13 Speed:2 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA47]
-Unit 6: B1 Attack:2 Defense:0 HP:12 Speed:1 Threat:2 Weapon: [BSW45](Fatigue) Armor: [BSA35]
-Unit 7: B2 Attack:3 Defense:0 HP:8 Speed:5 Threat:4 Weapon: [BSW47](Cheer) Armor: [BSA4]
-Unit 8: B3 Attack:3 Defense:1 HP:8 Speed:5 Threat:0 Weapon: [BSW31](Wrist Shot) Armor: [BSA18]
-Unit 9: B4 Attack:6 Defense:3 HP:10 Speed:3 Threat:4 Weapon: [BSW26](Double Shot) Armor: [BSA34]
+Unit 0: R0 Attack:15 Defense:4 HP:15 Speed:-3 Threat:6 Weapon: [BSW28](Heavy Shot) Armor: [BSA50]
+Unit 1: R1 Attack:18 Defense:1 HP:4 Speed:-1 Threat:2 Weapon: [BSW5](Overpower) Armor: [BSA27]
+Unit 2: R2 Attack:13 Defense:-1 HP:10 Speed:1 Threat:8 Weapon: [BSW35](Chain Lightning) Armor: [BSA2]
+Unit 3: R3 Attack:13 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA1]
+Unit 4: R4 Attack:15 Defense:0 HP:16 Speed:-2 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA38]
+Unit 5: B0 Attack:12 Defense:0 HP:10 Speed:0 Threat:6 Weapon: [BSW46](Protect) Armor: [BSA11]
+Unit 6: B1 Attack:13 Defense:0 HP:12 Speed:1 Threat:1 Weapon: [BSW32](Focus Throw) Armor: [BSA17]
+Unit 7: B2 Attack:10 Defense:1 HP:10 Speed:3 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA12]
+Unit 8: B3 Attack:11 Defense:0 HP:10 Speed:1 Threat:7 Weapon: [BSW45](Fatigue) Armor: [BSA4]
+Unit 9: B4 Attack:13 Defense:1 HP:8 Speed:0 Threat:1 Weapon: [BSW30](Fire Arrow) Armor: [BSA18]
 ==========================
 
 
+[Tick 1] 1 unit(s) acting
+Magic: B2 targeting B3 (HP: 10)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 2] 1 unit(s) acting
+Magic: B2 targeting B3 (HP: 10)
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 3] 5 unit(s) acting
+Ranged: B1 targeting R2 (HP: 10)
+R2 HP: 16 - 16 => 0
+Ranged: R3 targeting B3 (HP: 10)
+B3 HP: 13 - 13 => 0
+[AFTER-ACTION] R3 performs after-action on B0 (threat: 6)
+[A19] R3 speed changed from 1 to 2
+Magic: B2 targeting B4 (HP: 8)
+[BOON] Applied HasteSTART to B4 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 4] 1 unit(s) acting
+Magic: B2 targeting B0 (HP: 10)
+[BOON] Applied HasteSTART to B0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 6] 3 unit(s) acting
+Ranged: B1 targeting R0 (HP: 15)
+R0 HP: 15 - 11 => 4
+Ranged: R3 targeting B0 (HP: 10)
+B0 HP: 13 - 13 => 0
+[AFTER-ACTION] R3 performs after-action on B2 (threat: 5)
+[A19] R3 speed changed from 2 to 3
+Magic: B2 targeting B2 (HP: 10)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 5)
+[TEMP-BUFF] HasteSTART applied to B2 (Duration: 1 turns)
+[EXECUTE_EFFECT] B2 triggered HasteSTART
+[A19] B2 speed changed from 3 to 5
+
+
+[Tick 8] 1 unit(s) acting
+Magic: B2 targeting B2 (HP: 10)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] B2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 5)
+[TEMP-BUFF] HasteSTART on B2 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B2
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B2 triggered HasteEND
+[A19] B2 speed changed from 5 to 3
+[BOON] HasteSTART expired on B2 - cleaned up
+
+
+[Tick 9] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 HP: 12 - 12 => 0
+[AFTER-ACTION] R3 performs after-action on B1 (threat: 1)
+[A19] R3 speed changed from 3 to 4
+
+
 [Tick 10] 1 unit(s) acting
-Magic: R2 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R2 healed R4 for 2 HP
-Magic: R2 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R2 healed R3 for 2 HP
-Magic: R2 targeting R0 (HP: 6)
-[HEAL] R0 healed for 0 HP (from 6 to 6/6)
-[A29] R2 healed R0 for 2 HP
+Ranged: R3 targeting B1 (HP: 12)
+B1 HP: 13 - 13 => 0
+[AFTER-ACTION] R3 performs after-action on B4 (threat: 1)
+[A19] R3 speed changed from 4 to 5
 
 
-[Tick 12] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Magic: B2 targeting B0 (HP: 13)
-[A34] B0 attack changed from 4 to 6
-
-
-[Tick 15] 2 unit(s) acting
-Melee: R0 targeting B0 (HP: 13)
-B0 HP: 13 - 4 => 9
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R2 (HP: 7)
-[HEAL] R2 healed for 0 HP (from 7 to 7/7)
-[A29] R1 healed R2 for 3 HP
-
-
-[Tick 20] 3 unit(s) acting
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 6 => 1
-  -> R2 (magic) tick reset due to ranged attack!
-Magic: R3 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R3 healed R4 for 5 HP
-
-
-[Tick 24] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Magic: B2 targeting B0 (HP: 9)
-[A34] B0 attack changed from 6 to 8
-
-
-[Tick 30] 4 unit(s) acting
-Melee: B0 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B0 applied Poison Effect to R4 (usage: 3)
-Melee: R0 targeting B0 (HP: 9)
-B0 HP: 9 - 4 => 5
-Magic: R2 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R2 healed R4 for 2 HP
-Magic: R2 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R2 healed R3 for 2 HP
-Magic: R2 targeting R0 (HP: 6)
-[HEAL] R0 healed for 0 HP (from 6 to 6/6)
-[A29] R2 healed R0 for 2 HP
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R2 (HP: 1)
-[HEAL] R2 healed for 3 HP (from 1 to 4/7)
-[A29] R1 healed R2 for 3 HP
-
-
-[Tick 36] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Magic: B2 targeting B0 (HP: 5)
-[A34] B0 attack changed from 8 to 10
-
-
-[Tick 40] 3 unit(s) acting
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R2 (HP: 4)
-R2 HP: 6 - 6 => 0
-Magic: R3 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R3 healed R4 for 5 HP
-
-
-[Tick 45] 2 unit(s) acting
-Melee: R0 targeting B0 (HP: 5)
-B0 HP: 5 - 4 => 1
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 48] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Magic: B2 targeting B0 (HP: 1)
-[A34] B0 attack changed from 10 to 12
-
-
-[Tick 60] 8 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 5 => 7
-  -> R3 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B0 (HP: 1)
-B0 HP: 4 - 4 => 0
-Magic: B1 targeting R4 (HP: 15)
-[A06] R4 speed changed from 0 to 0
-Magic: B1 targeting R3 (HP: 7)
-[A06] R3 speed changed from 3 to 2
-Magic: B2 targeting B2 (HP: 8)
-[A34] B2 attack changed from 3 to 5
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 7)
-[HEAL] R3 healed for 3 HP (from 7 to 10/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 72] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Magic: B2 targeting B2 (HP: 8)
-[A34] B2 attack changed from 5 to 7
-
-
-[Tick 75] 2 unit(s) acting
-Melee: R0 targeting B2 (HP: 8)
-B2 HP: 8 - 7 => 1
-  -> B2 (magic) tick reset due to melee attack!
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 10)
-[HEAL] R3 healed for 2 HP (from 10 to 12/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 80] 2 unit(s) acting
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R3 (HP: 12)
-R3 HP: 12 - 5 => 7
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 84] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 87] 1 unit(s) acting
-Magic: B2 targeting B2 (HP: 1)
-[A34] B2 attack changed from 7 to 9
-
-
-[Tick 90] 2 unit(s) acting
-Melee: R0 targeting B2 (HP: 1)
-B2 HP: 7 - 7 => 0
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 7)
-[HEAL] R3 healed for 3 HP (from 7 to 10/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 96] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 100] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 5 => 5
-  -> R3 (magic) tick reset due to ranged attack!
-
-
-[Tick 105] 2 unit(s) acting
-Melee: R0 targeting B4 (HP: 10)
-B4 HP: 10 - 4 => 6
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 5)
-[HEAL] R3 healed for 3 HP (from 5 to 8/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 108] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 120] 5 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Ranged: B4 targeting R3 (HP: 8)
-R3 HP: 8 - 5 => 3
-  -> R3 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B4 (HP: 6)
-B4 HP: 6 - 4 => 2
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 3)
-[HEAL] R3 healed for 3 HP (from 3 to 6/12)
-[A29] R1 healed R3 for 3 HP
-Magic: B1 targeting R4 (HP: 15)
-[A06] R4 speed changed from 0 to 0
-Magic: B1 targeting R3 (HP: 6)
-[A06] R3 speed changed from 2 to 1
-
-
-[Tick 132] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 135] 2 unit(s) acting
-Melee: R0 targeting B4 (HP: 2)
-B4 HP: 4 - 4 => 0
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 6)
-[HEAL] R3 healed for 3 HP (from 6 to 9/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 144] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 148] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 150] 3 unit(s) acting
-Melee: R0 targeting B1 (HP: 12)
-B1 HP: 12 - 7 => 5
-  -> B1 (magic) tick reset due to melee attack!
-Magic: R3 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R3 healed R4 for 5 HP
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 9)
-[HEAL] R3 healed for 3 HP (from 9 to 12/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 152] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 155] 2 unit(s) acting
-Melee: R0 targeting B1 (HP: 5)
-B1 HP: 7 - 7 => 0
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 156] 1 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-
-
-[Tick 160] 3 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Melee: R0 targeting B3 (HP: 8)
-B3 HP: 8 - 6 => 2
-  -> B3 (ranged) delayed by 1 tick(s) due to 6/8 damage!
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R1 healed R3 for 3 HP
-
-
-[Tick 165] 3 unit(s) acting
-Ranged: B3 targeting R4 (HP: 15)
-R4 HP: 15 - 0 => 15
-Melee: R0 targeting B3 (HP: 2)
-B3 HP: 6 - 6 => 0
-Magic: R1 targeting R4 (HP: 15)
-[HEAL] R4 healed for 0 HP (from 15 to 15/15)
-[A29] R1 healed R4 for 3 HP
-Magic: R1 targeting R3 (HP: 12)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
-[A29] R1 healed R3 for 3 HP
+[Tick 11] 1 unit(s) acting
+Ranged: R3 targeting B4 (HP: 8)
+B4 HP: 12 - 12 => 0
+[AFTER-ACTION] No valid target found for R3
 Battle Over! Red Team wins!

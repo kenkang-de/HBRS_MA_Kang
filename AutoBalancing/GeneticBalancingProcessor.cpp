@@ -301,6 +301,32 @@ std::array<Chromosome*,2> GeneticBalancingProcessor::ParentTournament()
     return parentChromosomes;
 }
 
+std::array<Chromosome*,2> GeneticBalancingProcessor::GetDominantParent()
+{
+    std::array<Chromosome*,2> parentChromosomes;
+
+    // ALPHA - Get all alpha chromosomes
+    std::vector<Chromosome*> alphaCandidateVector;
+    for(BalancingLane* lane: GetAlphaLanes())
+    {
+        alphaCandidateVector.push_back(lane->GetChromosome());
+    }
+    Chromosome* alphaParent = GetHighestFitnessChromosome(alphaCandidateVector);
+
+    // BETA - Get all beta chromosomes
+    std::vector<Chromosome*> betaCandidateVector;
+    for(BalancingLane* lane: GetBetaLanes())
+    {
+        betaCandidateVector.push_back(lane->GetChromosome());
+    }
+    Chromosome* betaParent = GetHighestFitnessChromosome(betaCandidateVector);
+
+    parentChromosomes[0] = alphaParent;
+    parentChromosomes[1] = betaParent;
+
+    return parentChromosomes;
+}
+
 Chromosome* GeneticBalancingProcessor::PopulateMutation(std::array<Chromosome*,2> parentChromosomes)
 {
     // Merge values for 
@@ -472,7 +498,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator* simulator, std::vect
     // If the highest fitness score among all lanes has reached the threshold
     GetHighestFitnessChromosome(GetAllChromosomesFromLanes())->Get_Fitness() <= FITNESS_MAX-FITNESS_THRESHOLD){
     //Mutation
-    std::array<Chromosome*,2> parentCandidates = ParentTournament();
+    std::array<Chromosome*,2> parentCandidates = GetDominantParent();
     Chromosome* mutantChromosome = PopulateMutation(parentCandidates);
     //Simulate Mutation
     SimulateChromosome(simulator,batches,mutantChromosome,mergedTestSubjects);

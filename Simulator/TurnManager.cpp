@@ -12,9 +12,24 @@ int TurnManager::ComputeLCM(const std::vector<int>& speeds) {
     if (speeds.empty()) return 1;
     
     int result = speeds[0];
+    const int MAX_LCM = 100000; // Cap to prevent computational explosion
+    
     for (size_t i = 1; i < speeds.size(); ++i) {
         if (speeds[i] <= 0) continue; // Skip invalid speeds
-        result = result * speeds[i] / GCD(result, speeds[i]);
+        
+        int gcd = GCD(result, speeds[i]);
+        
+        // Check for potential overflow before computing
+        if (result > MAX_LCM / speeds[i] * gcd) {
+            return MAX_LCM; // Return capped value to prevent overflow
+        }
+        
+        result = result * speeds[i] / gcd;
+        
+        // Cap the result to prevent runaway growth
+        if (result > MAX_LCM) {
+            return MAX_LCM;
+        }
     }
     return result;
 }
@@ -23,8 +38,8 @@ void TurnManager::Initialize(const std::vector<Unit*>& units) {
     std::vector<int> speeds;
     for (Unit* u : units) {
         int speed = u->GetTotalStat().GetSpeed();
-        // Only include units with positive speed in calculations
-        if (speed > 0) {
+        // Only include units with positive speed in calculations, and cap max speed to prevent LCM explosion
+        if (speed > 0 && speed <= 1000) { // Cap individual speeds
             speeds.push_back(speed);
         }
     }
@@ -34,6 +49,7 @@ void TurnManager::Initialize(const std::vector<Unit*>& units) {
     tick = 0;
 
     while (!turnQueue.empty()) turnQueue.pop();
+    lastActionTick.clear(); // CRITICAL: Clear previous battle data
 
     // Only schedule units with positive speed
     for (Unit* u : units) {
@@ -153,36 +169,54 @@ std::vector<Unit*> TurnManager::GetNextUnits() {
     if (turnQueue.empty()) 
     return unitsToAct;
 
-    //Clean up queue that might some actions actually not performed (due to some conditions)
-    while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay < tick) 
-        turnQueue.pop();
+    // SAFETY CHECK: If queue gets too large, something is wrong - force cleanup
+    if (turnQueue.size() > 1000) {
+        Reset(); // Nuclear option: reset everything to prevent runaway growth
+        return unitsToAct;
+    }
+
+    //Clean up queue that might have actions for dead units or past ticks
+    while (!turnQueue.empty()) {
+        const ScheduledAction& top = turnQueue.top();
+        // Remove if: past tick, dead unit, or zero speed unit
+        if (top.nextTick + (top.unit ? top.unit->TickDelay : 0) < tick || 
+            top.unit == nullptr || 
+            !top.unit->IsAlive() || 
+            top.unit->GetTotalStat().GetSpeed() <= 0) {
+            
+            // Clean up tracking for removed units
+            if (top.unit != nullptr && (!top.unit->IsAlive() || top.unit->GetTotalStat().GetSpeed() <= 0)) {
+                lastActionTick.erase(top.unit);
+            }
+            
+            turnQueue.pop();
+        } else {
+            break; // Found valid action, stop cleaning
+        }
+    }
 
     // Collect all units scheduled for the current tick
     while (!turnQueue.empty() && turnQueue.top().nextTick + turnQueue.top().unit->TickDelay == tick) {
         ScheduledAction top = turnQueue.top();
         turnQueue.pop();
         
-            if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
-                unitsToAct.push_back(top.unit);
-                // Record when this unit acted
-                lastActionTick[top.unit] = tick;
+        // Only process and reschedule ALIVE units with positive speed
+        if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
+            unitsToAct.push_back(top.unit);
+            // Record when this unit acted
+            lastActionTick[top.unit] = tick;
 
-                int interval = GetUnitInterval(top.unit);
-                // TODO: Reset TickDelay when rescheduling? (is it?)
-                top.unit->TickDelay = 0;
-                int nextTick = tick + interval;
-                turnQueue.push({top.unit, nextTick});
+            int interval = GetUnitInterval(top.unit);
+            // Reset TickDelay when rescheduling
+            top.unit->TickDelay = 0;
+            int nextTick = tick + interval;
+            turnQueue.push({top.unit, nextTick});
+        } else {
+            // Dead unit or zero speed - remove from tracking
+            if (top.unit != nullptr) {
+                lastActionTick.erase(top.unit);
             }
-
-            // // Reschedule the unit if it's valid, alive, AND has positive speed
-            // if (top.unit != nullptr && top.unit->IsAlive() && top.unit->GetTotalStat().GetSpeed() > 0) {
-            //     int interval = lcm / top.unit->GetTotalStat().GetSpeed();
-            //     // Reset TickDelay when rescheduling
-            //     top.unit->TickDelay = 0;
-            //     int nextTick = tick + interval;
-            //     turnQueue.push({top.unit, nextTick});
-            // }
-        
+        }
     }
 
     return unitsToAct;
@@ -275,4 +309,11 @@ void TurnManager::RemoveDeadUnits(const std::vector<Unit*>& units) {
     }
 }
 
-
+void TurnManager::Reset() {
+    tick = 0;
+    lcm = 1;
+    while (!turnQueue.empty()) {
+        turnQueue.pop();
+    }
+    lastActionTick.clear();
+}

@@ -84,5 +84,9 @@
         "standarddeviation h": "cpp",
         "ranges": "cpp",
         "span": "cpp"
-    }
+    },
+        "editor.formatOnSave": true,
+    "C_Cpp.formatting": "clangFormat",
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+
 }

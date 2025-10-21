@@ -26,3 +26,8 @@ void GlobalAction::ClearAfterAction()
 {
     afterActions.clear();
 }
+
+void GlobalAction::ClearGlobalRegistry()
+{
+    globalActionRegistry.clear();
+}

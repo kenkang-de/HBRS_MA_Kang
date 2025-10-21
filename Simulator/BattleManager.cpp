@@ -31,6 +31,19 @@ BattleManager::BattleManager(Battlefield& bf)
     allUnits.insert(allUnits.end(), blueUnits.begin(), blueUnits.end());
 }
 
+BattleManager::~BattleManager() {
+    // Clear static reference to prevent dangling pointer
+    if (currentBattleManager == this) {
+        currentBattleManager = nullptr;
+    }
+    
+    // Clean up all resources
+    turnManager.Reset();  // Clean up before destruction
+    GlobalAction::ClearAfterAction();  // Clear after actions
+    // NOTE: Don't clear GlobalRegistry - it contains persistent global actions
+    allUnits.clear();     // Clear unit pointers
+}
+
 int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
     // Only apply delay if damage was actually taken
     if (damageTaken <= 0) return 0;
@@ -340,8 +353,8 @@ void BattleManager::SplitAlliesAndEnemies(Unit* unit, const BattleAction& action
 
 bool BattleManager::IsBattleOver(bool test, int tickCount) {
     // Check if we've reached the tick limit based on actual turn manager ticks
-    if (tickCount >= TEST_TICK) {
-        LogSystem::LogStream("Battle Over! Tick limit reached (", currentTick, " ticks elapsed)");
+    if (tickCount >= TEST_TICK || turnManager.GetCurrentTick() >= 200) { // Double safety check
+        LogSystem::LogStream("Battle Over! Tick limit reached (", turnManager.GetCurrentTick(), " ticks elapsed)");
         LogDrawResult();
         LogUsageCount();
         return true;

@@ -28,6 +28,8 @@ public:
     void RemoveDeadUnits(const std::vector<Unit*>& units); // Clean up dead units from tracking
     int GetUnitInterval(Unit* unit); //181025USED
 
+    void Reset();
+
 private:
     int tick = 0;
     int lcm = 1;

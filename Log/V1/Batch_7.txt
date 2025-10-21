@@ -1,53 +1,361 @@
-Unit 0: R0 Attack:7 Defense:0 HP:11 Speed:6 Threat:2 Weapon: [BSW4](Berserk) Armor: [BSA5]
-Unit 1: R1 Attack:3 Defense:3 HP:10 Speed:2 Threat:3 Weapon: [BSW43](Vow) Armor: [BSA21]
-Unit 2: R2 Attack:5 Defense:0 HP:10 Speed:1 Threat:3 Weapon: [BSW35](Chain Lightning) Armor: [BSA35]
-Unit 3: R3 Attack:8 Defense:2 HP:10 Speed:1 Threat:4 Weapon: [BSW14](Leech Attack) Armor: [BSA30]
-Unit 4: R4 Attack:9 Defense:1 HP:10 Speed:0 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA43]
-Unit 5: B0 Attack:7 Defense:2 HP:12 Speed:2 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA39]
-Unit 6: B1 Attack:3 Defense:3 HP:10 Speed:2 Threat:3 Weapon: [BSW37](Freeze) Armor: [BSA21]
-Unit 7: B2 Attack:3 Defense:1 HP:12 Speed:0 Threat:4 Weapon: [BSW45](Fatigue) Armor: [BSA43]
-Unit 8: B3 Attack:4 Defense:1 HP:12 Speed:2 Threat:4 Weapon: [BSW35](Chain Lightning) Armor: [BSA20]
-Unit 9: B4 Attack:7 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW9](Blitz Attack) Armor: [BSA8]
+Unit 0: R0 Attack:10 Defense:3 HP:13 Speed:-3 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA47]
+Unit 1: R1 Attack:8 Defense:5 HP:15 Speed:-3 Threat:10 Weapon: [BSW40](Grace) Armor: [BSA48]
+Unit 2: R2 Attack:12 Defense:1 HP:11 Speed:-3 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA46]
+Unit 3: R3 Attack:8 Defense:3 HP:12 Speed:-2 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA22]
+Unit 4: R4 Attack:14 Defense:4 HP:12 Speed:-3 Threat:11 Weapon: [BSW35](Chain Lightning) Armor: [BSA40]
+Unit 5: B0 Attack:12 Defense:5 HP:10 Speed:-3 Threat:7 Weapon: [BSW30](Fire Arrow) Armor: [BSA45]
+Unit 6: B1 Attack:15 Defense:4 HP:12 Speed:-3 Threat:7 Weapon: [BSW19](Momentum) Armor: [BSA40]
+Unit 7: B2 Attack:10 Defense:3 HP:13 Speed:-3 Threat:8 Weapon: [BSW39](Healing Link) Armor: [BSA47]
+Unit 8: B3 Attack:18 Defense:1 HP:4 Speed:0 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA27]
+Unit 9: B4 Attack:11 Defense:0 HP:8 Speed:4 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA4]
 ==========================
 
 
-[Tick 1] 2 unit(s) acting
-Melee: R0 targeting B0 (HP: 12)
-R0 HP: 11 - 2 => 9
-B0 HP: 12 - 5 => 7
-[A02] B0 defense changed from 2 to 1
-Melee: B4 targeting R3 (HP: 10)
-R3 HP: 11 - 11 => 0
+[Tick 1] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Applied HasteSTART to B2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 2] 2 unit(s) acting
-Melee: R0 targeting B0 (HP: 7)
-R0 HP: 9 - 2 => 7
-B0 HP: 7 - 6 => 1
-[A02] B0 defense changed from 1 to 0
-Melee: B4 targeting R4 (HP: 10)
-R4 HP: 12 - 12 => 0
+[Tick 2] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 3] 6 unit(s) acting
-Melee: R0 targeting B0 (HP: 1)
-R0 HP: 7 - 2 => 5
-B0 HP: 7 - 7 => 0
-[A02] B0 defense changed from 0 to 0
-Melee: B4 targeting R1 (HP: 10)
-R1 HP: 10 - 10 => 0
-Magic: B3 targeting R2 (HP: 10)
-R2 HP: 10 - 4 => 6
-Magic: B3 targeting R0 (HP: 5)
-R0 HP: 5 - 4 => 1
+[Tick 3] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 4] 2 unit(s) acting
-Melee: R0 targeting B2 (HP: 12)
-R0 HP: 2 - 2 => 0
-B2 HP: 12 - 6 => 6
-[A02] B2 defense changed from 1 to 0
-  -> R0 died during after-actions, stopping further actions
-Melee: B4 targeting R2 (HP: 6)
-R2 HP: 13 - 13 => 0
-Battle Over! Blue Team wins!
+[Tick 4] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 5] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 6] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 7] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 8] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 9] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 10] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 11] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 12] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 13] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 14] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 15] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 16] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 17] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 18] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 19] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 20] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 21] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 22] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 23] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 24] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 25] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 26] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 27] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 28] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 29] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 30] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 31] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 32] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 33] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 34] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 35] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 36] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 37] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 38] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 39] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 40] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 41] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 42] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 43] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 44] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 45] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 46] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 47] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 48] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 49] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 50] 1 unit(s) acting
+Magic: B4 targeting B2 (HP: 13)
+[BOON] Refreshing existing HasteSTART on B2
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Battle Over! Tick limit reached (51 ticks elapsed)

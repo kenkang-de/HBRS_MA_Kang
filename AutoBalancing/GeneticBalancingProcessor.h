@@ -67,6 +67,7 @@ std::vector<BalancingLane*> GetBetaLanes();
 std::array<Chromosome*,2> Pick2RandomLanes(std::vector<BalancingLane*> lanes);
 
 std::array<Chromosome*,2> ParentTournament();
+std::array<Chromosome*,2> GetDominantParent();
 Chromosome* PopulateMutation(std::array<Chromosome*,2> parentChromosomes);
 
 Chromosome* GetHighestFitnessChromosome(std::vector<Chromosome*> chromosomes);

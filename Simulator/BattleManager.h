@@ -5,12 +5,14 @@
 #include "TurnManager.h"
 #include "Battlefield.h"
 #include "ActionLibrary.h"
+#include "GlobalAction.h"
 #include "../Paths.h"
 #include <vector>
 
 class BattleManager {
 public:
     BattleManager(Battlefield& bf);
+    ~BattleManager(); // Declaration only
 
     void StartBattle(bool log=false, std::string batchID="NONE");
     

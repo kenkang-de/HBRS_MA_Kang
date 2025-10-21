@@ -25,10 +25,6 @@
 #include "AutoBalancing/Chromosome.h"
 #include "AutoBalancing/GeneticBalancingProcessor.h"
 
-#define _CRTDBG_MAP_ALLOC
-#include <stdlib.h>
-#include <crtdbg.h>
-
 class NewMasterController {
 private:
     std::string configFile;
@@ -142,16 +138,6 @@ std::cout << "Total process time: " << duration.count() << " ms" << std::endl;
 
 
 int main() {
-#ifdef _DEBUG
-    std::cout << "DEBUG MODE ACTIVE" << std::endl;
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
-    _CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDOUT);
-#else
-    std::cout << "RELEASE MODE - No memory leak detection" << std::endl;
-#endif
-
-
     std::string configFile = Paths::MASTER_CONFIG; 
 
     NewMasterController controller(configFile);
@@ -159,16 +145,5 @@ int main() {
     controller.LoadConfiguration();
     
     controller.executeFullPipeline();
-
-#ifdef _DEBUG
-    std::cout << "\n=== Memory Leak Check ===" << std::endl;
-    if (_CrtDumpMemoryLeaks()) {
-        std::cout << "Memory leaks detected!" << std::endl;
-    } else {
-        std::cout << "No memory leaks detected." << std::endl;
-    }
-#endif
-
-return 0;
 
 }

@@ -1,74 +1,53 @@
-Unit 0: R0 Attack:4 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW49](Earthquake) Armor: [BSA33]
-Unit 1: R1 Attack:9 Defense:1 HP:10 Speed:1 Threat:4 Weapon: [BSW15](Taunt) Armor: [BSA33]
-Unit 2: R2 Attack:2 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA36]
-Unit 3: R3 Attack:4 Defense:1 HP:10 Speed:1 Threat:4 Weapon: [BSW46](Protect) Armor: [BSA33]
-Unit 4: R4 Attack:5 Defense:1 HP:16 Speed:3 Threat:1 Weapon: [BSW4](Berserk) Armor: [BSA20]
-Unit 5: B0 Attack:7 Defense:-2 HP:10 Speed:5 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA9]
-Unit 6: B1 Attack:5 Defense:5 HP:10 Speed:2 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA45]
-Unit 7: B2 Attack:6 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA50]
-Unit 8: B3 Attack:2 Defense:-1 HP:10 Speed:4 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA6]
-Unit 9: B4 Attack:5 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW35](Chain Lightning) Armor: [BSA7]
+Unit 0: R0 Attack:13 Defense:6 HP:10 Speed:-4 Threat:11 Weapon: [BSW35](Chain Lightning) Armor: [BSA42]
+Unit 1: R1 Attack:15 Defense:2 HP:12 Speed:-1 Threat:7 Weapon: [BSW9](Blitz Attack) Armor: [BSA39]
+Unit 2: R2 Attack:16 Defense:4 HP:15 Speed:-2 Threat:7 Weapon: [BSW29](Camo Throw) Armor: [BSA50]
+Unit 3: R3 Attack:17 Defense:1 HP:10 Speed:-4 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA43]
+Unit 4: R4 Attack:13 Defense:5 HP:15 Speed:-4 Threat:10 Weapon: [BSW15](Taunt) Armor: [BSA48]
+Unit 5: B0 Attack:16 Defense:1 HP:11 Speed:-3 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA46]
+Unit 6: B1 Attack:11 Defense:1 HP:10 Speed:-4 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA43]
+Unit 7: B2 Attack:13 Defense:1 HP:7 Speed:1 Threat:0 Weapon: [BSW32](Focus Throw) Armor: [BSA19]
+Unit 8: B3 Attack:14 Defense:2 HP:12 Speed:-1 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA30]
+Unit 9: B4 Attack:12 Defense:3 HP:12 Speed:-1 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA41]
 ==========================
 
 
-[Tick 12] 1 unit(s) acting
-Melee: B0 targeting R0 (HP: 10)
-R0 HP: 10 - 6 => 4
-R0 HP: 6 - 6 => 0
+[Tick 1] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 10)
+R0 HP: 10 - 9 => 1
+  -> R0 (magic) tick reset due to ranged attack!
 
 
-[Tick 15] 2 unit(s) acting
-Magic: B3 targeting B1 (HP: 10)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B4 targeting R1 (HP: 10)
-R1 HP: 10 - 5 => 5
-Magic: B4 targeting R3 (HP: 10)
-R3 HP: 10 - 5 => 5
-Magic: B4 targeting R2 (HP: 10)
-R2 HP: 10 - 5 => 5
+[Tick 2] 1 unit(s) acting
+Ranged: B2 targeting R0 (HP: 1)
+R0 HP: 9 - 9 => 0
 
 
-[Tick 20] 1 unit(s) acting
-Melee: R4 targeting B1 (HP: 10)
-R4 HP: 16 - 2 => 14
-B1 HP: 10 - 0 => 10
-[A02] B1 defense changed from 5 to 4
+[Tick 3] 1 unit(s) acting
+Ranged: B2 targeting R4 (HP: 15)
+R4 HP: 15 - 10 => 5
 
 
-[Tick 24] 1 unit(s) acting
-Melee: B0 targeting R1 (HP: 5)
-R1 HP: 6 - 6 => 0
-R1 HP: 6 - 6 => 0
+[Tick 4] 1 unit(s) acting
+Ranged: B2 targeting R4 (HP: 5)
+R4 HP: 10 - 10 => 0
 
 
-[Tick 30] 5 unit(s) acting
-Ranged: B2 targeting R3 (HP: 5)
-R3 HP: 6 - 6 => 0
-Melee: B1 targeting R2 (HP: 5)
-R2 HP: 5 - 3 => 2
-[A06] R2 speed changed from 2 to 1
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 7)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-  -> R2 (magic) tick reset due to melee attack!
-Magic: B3 targeting B1 (HP: 20)
-[BOON] Refreshing existing BulkupSTART on B1
-[REFRESH] BulkupSTART duration refreshed, effect remains active
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R2 targeting R4 (HP: 14)
-[HEAL] R4 healed for 2 HP (from 14 to 16/16)
-[A29] R2 healed R4 for 2 HP
-Magic: B4 targeting R2 (HP: 2)
-R2 HP: 5 - 5 => 0
-Magic: B4 targeting R4 (HP: 16)
-R4 HP: 16 - 5 => 11
+[Tick 5] 1 unit(s) acting
+Ranged: B2 targeting R1 (HP: 12)
+R1 HP: 13 - 13 => 0
 
 
-[Tick 36] 1 unit(s) acting
-Melee: B0 targeting R4 (HP: 11)
-R4 HP: 11 - 6 => 5
-R4 HP: 6 - 6 => 0
+[Tick 6] 1 unit(s) acting
+Ranged: B2 targeting R2 (HP: 15)
+R2 HP: 15 - 11 => 4
+
+
+[Tick 7] 1 unit(s) acting
+Ranged: B2 targeting R2 (HP: 4)
+R2 HP: 11 - 11 => 0
+
+
+[Tick 8] 1 unit(s) acting
+Ranged: B2 targeting R3 (HP: 10)
+R3 HP: 14 - 14 => 0
 Battle Over! Blue Team wins!
