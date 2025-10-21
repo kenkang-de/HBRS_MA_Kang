@@ -1,75 +1,106 @@
-Unit 0: R0 Attack:36 Defense:-11 HP:10 Speed:3 Threat:-14 Weapon: [BSW4](Berserk) Armor: [BSA25]
-Unit 1: R1 Attack:69 Defense:-12 HP:12 Speed:5 Threat:-6 Weapon: [BSW49](Earthquake) Armor: [BSA1]
-Unit 2: R2 Attack:15 Defense:-9 HP:6 Speed:3 Threat:-14 Weapon: [BSW28](Heavy Shot) Armor: [BSA21]
-Unit 3: R3 Attack:52 Defense:-13 HP:10 Speed:7 Threat:-9 Weapon: [BSW7](Poison Attack) Armor: [BSA2]
-Unit 4: R4 Attack:31 Defense:-9 HP:8 Speed:3 Threat:-11 Weapon: [BSW38](Healing Touch) Armor: [BSA21]
-Unit 5: B0 Attack:72 Defense:-12 HP:14 Speed:6 Threat:-13 Weapon: [BSW17](Shoot) Armor: [BSA17]
-Unit 6: B1 Attack:31 Defense:-12 HP:8 Speed:5 Threat:-14 Weapon: [BSW34](Wind Blade) Armor: [BSA10]
-Unit 7: B2 Attack:74 Defense:-11 HP:10 Speed:4 Threat:-11 Weapon: [BSW7](Poison Attack) Armor: [BSA25]
-Unit 8: B3 Attack:69 Defense:-11 HP:10 Speed:4 Threat:-11 Weapon: [BSW40](Grace) Armor: [BSA18]
-Unit 9: B4 Attack:34 Defense:-12 HP:8 Speed:5 Threat:-12 Weapon: [BSW11](Fade Attack) Armor: [BSA10]
+Unit 0: R0 Attack:3 Defense:0 HP:8 Speed:2 Threat:2 Weapon: [BSW38](Healing Touch) Armor: [BSA15]
+Unit 1: R1 Attack:5 Defense:0 HP:10 Speed:0 Threat:2 Weapon: [BSW34](Wind Blade) Armor: [BSA29]
+Unit 2: R2 Attack:3 Defense:1 HP:8 Speed:3 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA18]
+Unit 3: R3 Attack:5 Defense:4 HP:12 Speed:1 Threat:8 Weapon: [BSW31](Wrist Shot) Armor: [BSA40]
+Unit 4: R4 Attack:5 Defense:3 HP:15 Speed:0 Threat:8 Weapon: [BSW8](Charge Attack) Armor: [BSA47]
+Unit 5: B0 Attack:8 Defense:-2 HP:10 Speed:4 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA3]
+Unit 6: B1 Attack:1 Defense:1 HP:7 Speed:2 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA19]
+Unit 7: B2 Attack:6 Defense:3 HP:13 Speed:-1 Threat:6 Weapon: [BSW18](Killing Spree) Armor: [BSA47]
+Unit 8: B3 Attack:7 Defense:4 HP:10 Speed:0 Threat:7 Weapon: [BSW2](Chop) Armor: [BSA31]
+Unit 9: B4 Attack:3 Defense:1 HP:11 Speed:3 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA13]
 ==========================
 
 
-[Tick 60] 1 unit(s) acting
-Melee: R3 targeting B2 (HP: 10)
-B2 HP: 63 - 63 => 0
-[BOON] Applied Poison Effect to B2 (Usage: 3)
-[A28] R3 applied Poison Effect to B2 (usage: 3)
+[Tick 3] 1 unit(s) acting
+Melee: B0 targeting R3 (HP: 12)
+R3 HP: 12 - 4 => 8
+[A10] B0 threat changed from 6 to 5
 
 
-[Tick 70] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 12)
-R1 HP: 84 - 84 => 0
+[Tick 4] 2 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+Magic: B4 targeting R3 (HP: 8)
+R3 HP: 8 - 5 => 3
 
 
-[Tick 84] 2 unit(s) acting
-Melee: B4 targeting R3 (HP: 10)
-R3 HP: 47 - 47 => 0
-[A10] B4 threat changed from -12 to 0
-Magic: B1 targeting R4 (HP: 8)
-R4 HP: 31 - 31 => 0
-Magic: B1 targeting R0 (HP: 10)
-R0 HP: 31 - 31 => 0
+[Tick 6] 3 unit(s) acting
+Melee: B0 targeting R3 (HP: 3)
+R3 HP: 4 - 4 => 0
+[A10] B0 threat changed from 5 to 4
+Magic: B1 targeting R4 (HP: 15)
+[A33] R4 threat changed from 8 to 6
+Magic: B1 targeting R0 (HP: 8)
+[A33] R0 threat changed from 2 to 0
+Magic: B1 targeting R1 (HP: 10)
+[A33] R1 threat changed from 2 to 0
+Magic: R0 targeting R4 (HP: 15)
+[HEAL] R4 healed for 0 HP (from 15 to 15/15)
+[A29] R0 healed R4 for 5 HP
 
 
-[Tick 105] 1 unit(s) acting
-Magic: B3 targeting B4 (HP: 8)
-[HEAL] B4 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B4 for 2 HP
-Magic: B3 targeting B0 (HP: 14)
-[HEAL] B0 healed for 0 HP (from 14 to 14/14)
-[A29] B3 healed B0 for 2 HP
-Magic: B3 targeting B1 (HP: 8)
-[HEAL] B1 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B1 for 2 HP
+[Tick 8] 2 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+Magic: B4 targeting R4 (HP: 15)
+R4 HP: 15 - 5 => 10
 
 
-[Tick 120] 1 unit(s) acting
-Magic: B3 targeting B4 (HP: 8)
-[HEAL] B4 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B4 for 2 HP
-Magic: B3 targeting B0 (HP: 14)
-[HEAL] B0 healed for 0 HP (from 14 to 14/14)
-[A29] B3 healed B0 for 2 HP
-Magic: B3 targeting B1 (HP: 8)
-[HEAL] B1 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B1 for 2 HP
+[Tick 9] 1 unit(s) acting
+Melee: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 5 => 5
+[A10] B0 threat changed from 4 to 3
 
 
-[Tick 135] 1 unit(s) acting
-Magic: B3 targeting B4 (HP: 8)
-[HEAL] B4 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B4 for 2 HP
-Magic: B3 targeting B0 (HP: 14)
-[HEAL] B0 healed for 0 HP (from 14 to 14/14)
-[A29] B3 healed B0 for 2 HP
-Magic: B3 targeting B1 (HP: 8)
-[HEAL] B1 healed for 0 HP (from 8 to 8/8)
-[A29] B3 healed B1 for 2 HP
+[Tick 12] 5 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+Melee: B0 targeting R4 (HP: 5)
+R4 HP: 5 - 5 => 0
+[A10] B0 threat changed from 3 to 2
+Magic: B4 targeting R2 (HP: 8)
+R2 HP: 8 - 5 => 3
+Magic: R0 targeting R2 (HP: 3)
+[HEAL] R2 healed for 5 HP (from 3 to 8/8)
+[A29] R0 healed R2 for 5 HP
+Magic: B1 targeting R2 (HP: 8)
+[A33] R2 threat changed from 2 to 0
+Magic: B1 targeting R0 (HP: 8)
+[A33] R0 threat changed from 0 to 0
+Magic: B1 targeting R1 (HP: 10)
+[A33] R1 threat changed from 0 to 0
 
 
-[Tick 140] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 6)
-R2 HP: 81 - 81 => 0
+[Tick 15] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 8 - 8 => 0
+[A10] B0 threat changed from 2 to 1
+
+
+[Tick 16] 2 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+Magic: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 5 => 5
+
+
+[Tick 18] 2 unit(s) acting
+Melee: B0 targeting R1 (HP: 5)
+R1 HP: 8 - 8 => 0
+[A10] B0 threat changed from 1 to 0
+Magic: B1 targeting R2 (HP: 8)
+[A33] R2 threat changed from 0 to 0
+
+
+[Tick 20] 2 unit(s) acting
+Ranged: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 0 => 10
+Magic: B4 targeting R2 (HP: 8)
+R2 HP: 8 - 5 => 3
+
+
+[Tick 21] 1 unit(s) acting
+Melee: B0 targeting R2 (HP: 3)
+R2 HP: 7 - 7 => 0
+[A10] B0 threat changed from 0 to 0
 Battle Over! Blue Team wins!

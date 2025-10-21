@@ -1,39 +1,54 @@
-Unit 0: R0 Attack:17 Defense:-11 HP:0 Speed:5 Threat:-16 Weapon: [BSW3](Thrust) Armor: [BSA27]
-Unit 1: R1 Attack:15 Defense:-8 HP:15 Speed:1 Threat:-10 Weapon: [BSW4](Berserk) Armor: [BSA50]
-Unit 2: R2 Attack:32 Defense:-11 HP:6 Speed:6 Threat:-15 Weapon: [BSW3](Thrust) Armor: [BSA18]
-Unit 3: R3 Attack:34 Defense:-10 HP:8 Speed:3 Threat:-13 Weapon: [BSW32](Focus Throw) Armor: [BSA36]
-Unit 4: R4 Attack:73 Defense:-9 HP:12 Speed:3 Threat:-7 Weapon: [BSW13](Prep Attack) Armor: [BSA28]
-Unit 5: B0 Attack:14 Defense:-6 HP:6 Speed:1 Threat:-9 Weapon: [BSW5](Overpower) Armor: [BSA42]
-Unit 6: B1 Attack:72 Defense:-13 HP:12 Speed:1 Threat:-10 Weapon: [BSW50](Corrosion) Armor: [BSA32]
-Unit 7: B2 Attack:37 Defense:-11 HP:4 Speed:4 Threat:-13 Weapon: [BSW8](Charge Attack) Armor: [BSA27]
-Unit 8: B3 Attack:37 Defense:-11 HP:4 Speed:3 Threat:-15 Weapon: [BSW28](Heavy Shot) Armor: [BSA26]
-Unit 9: B4 Attack:51 Defense:-11 HP:12 Speed:3 Threat:-13 Weapon: [BSW34](Wind Blade) Armor: [BSA20]
+Unit 0: R0 Attack:5 Defense:-1 HP:12 Speed:4 Threat:4 Weapon: [BSW8](Charge Attack) Armor: [BSA6]
+Unit 1: R1 Attack:8 Defense:1 HP:4 Speed:2 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA27]
+Unit 2: R2 Attack:7 Defense:0 HP:12 Speed:1 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA38]
+Unit 3: R3 Attack:4 Defense:1 HP:8 Speed:1 Threat:1 Weapon: [BSW33](Magic Bolt) Armor: [BSA25]
+Unit 4: R4 Attack:12 Defense:1 HP:4 Speed:0 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA27]
+Unit 5: B0 Attack:3 Defense:0 HP:7 Speed:3 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA5]
+Unit 6: B1 Attack:5 Defense:2 HP:10 Speed:1 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA30]
+Unit 7: B2 Attack:4 Defense:2 HP:10 Speed:1 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA36]
+Unit 8: B3 Attack:9 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW8](Charge Attack) Armor: [BSA27]
+Unit 9: B4 Attack:8 Defense:0 HP:10 Speed:3 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA11]
 ==========================
 
 
-[Tick 10] 1 unit(s) acting
-Melee: R2 targeting B0 (HP: 6)
-B0 HP: 70 - 70 => 0
+[Tick 3] 1 unit(s) acting
+Melee: R0 targeting B0 (HP: 7)
+B0 HP: 9 - 9 => 0
 
 
-[Tick 15] 1 unit(s) acting
-Melee: B2 targeting R4 (HP: 12)
-R4 HP: 47 - 47 => 0
+[Tick 4] 1 unit(s) acting
+Melee: B4 targeting R0 (HP: 12)
+R0 HP: 12 - 9 => 3
+R0 HP: 9 - 9 => 0
 
 
-[Tick 18] 1 unit(s) acting
-Melee: B2 targeting R1 (HP: 15)
-R1 HP: 46 - 46 => 0
+[Tick 6] 2 unit(s) acting
+Ranged: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 8 => 2
+[A25] B4 attack reduced from 8 to 4 (damage: 8, reduction: 4)
+Melee: B3 targeting R4 (HP: 4)
+R4 HP: 10 - 10 => 0
 
 
-[Tick 20] 4 unit(s) acting
-Ranged: R3 targeting B1 (HP: 12)
-B1 HP: 49 - 49 => 0
-Ranged: B3 targeting R3 (HP: 8)
-R3 HP: 84 - 84 => 0
-[A19] B3 speed changed from 3 to 2
-Melee: R2 targeting B2 (HP: 4)
-B2 HP: 75 - 75 => 0
-Magic: B4 targeting R2 (HP: 6)
-R2 HP: 51 - 51 => 0
+[Tick 8] 1 unit(s) acting
+Melee: B4 targeting R2 (HP: 12)
+R2 HP: 12 - 4 => 8
+
+
+[Tick 9] 2 unit(s) acting
+Ranged: R1 targeting B4 (HP: 2)
+B4 HP: 8 - 8 => 0
+[A25] B4 attack reduced from 4 to 0 (damage: 8, reduction: 4)
+Melee: B3 targeting R2 (HP: 8)
+R2 HP: 11 - 11 => 0
+
+
+[Tick 12] 5 unit(s) acting
+Ranged: B2 targeting R1 (HP: 4)
+R1 HP: 4 - 3 => 1
+[A20] R1 delayed by 1 intervals (6 ticks)
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 5 - 5 => 0
+Melee: B3 targeting R3 (HP: 8)
+R3 HP: 10 - 10 => 0
 Battle Over! Blue Team wins!

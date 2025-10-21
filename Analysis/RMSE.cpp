@@ -18,5 +18,5 @@ float RMSE::Calculate(std::vector<TestSubject*> testSubjects)
 
     // Clamp and round
     normalized = std::clamp(normalized, 0.0f, 1.0f);
-    return std::round(normalized * 100.0f) / 100.0f;
+    return std::round(normalized * 1000.0f) / 1000.0f;
 }

@@ -9,6 +9,7 @@
 #include "Chromosome.h"
 #include "BalancingRule.h"
 #include "BalancingLane.h"
+#include "BalancingLog.h"
 
 #include "../Element/ElementList.h"
 

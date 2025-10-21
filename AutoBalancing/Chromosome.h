@@ -36,6 +36,8 @@ Chromosome(std::vector<Stat> _appliedStats) : appliedStats(_appliedStats) {};
 void ApplyStatToComponents(ElementList* componentList);
 
 float Get_Fitness() {return fitness;}
+float Get_MRSE() {return rootMeanSquareError;}
+float Get_DOG() {return degreeOfChange;}
 BalancingLane* Get_BalancingLane() {return balancingLane;}
 
 void Set_RMSE(float RMSE) {rootMeanSquareError = RMSE;}

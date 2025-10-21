@@ -28,12 +28,6 @@ class BalancingLane
         adjustment(_adjustment), chromosomeType(_chromosomeType), chromosome(nullptr), ownsAdjustment(false)
     {};
 
-    // Copy constructor
-    BalancingLane(const BalancingLane& other) : 
-        adjustment(other.adjustment), chromosomeType(other.chromosomeType), 
-        chromosome(other.chromosome), ownsAdjustment(false) // Don't copy ownership
-    {};
-
     // Assignment operator
     BalancingLane& operator=(const BalancingLane& other) {
         if (this != &other) {

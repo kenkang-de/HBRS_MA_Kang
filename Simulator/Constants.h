@@ -30,7 +30,7 @@ const float FITNESS_THRESHOLD=0.05f;
 
 const float FITNESS_MAX =2.0f;
 
-const int MAXGENERATION=100;
+const int MAXGENERATION=30;
 
 
 #endif

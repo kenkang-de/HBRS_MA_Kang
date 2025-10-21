@@ -1,45 +1,74 @@
-Unit 0: R0 Attack:32 Defense:-12 HP:10 Speed:6 Threat:-12 Weapon: [BSW8](Charge Attack) Armor: [BSA10]
-Unit 1: R1 Attack:13 Defense:-9 HP:6 Speed:3 Threat:-14 Weapon: [BSW27](Tripple Shot) Armor: [BSA21]
-Unit 2: R2 Attack:56 Defense:-9 HP:7 Speed:2 Threat:-10 Weapon: [BSW15](Taunt) Armor: [BSA23]
-Unit 3: R3 Attack:55 Defense:-11 HP:12 Speed:2 Threat:-10 Weapon: [BSW16](Killer's Spirit) Armor: [BSA20]
-Unit 4: R4 Attack:31 Defense:-12 HP:8 Speed:6 Threat:-14 Weapon: [BSW21](Poison Arrow) Armor: [BSA10]
-Unit 5: B0 Attack:16 Defense:-8 HP:8 Speed:2 Threat:-8 Weapon: [BSW11](Fade Attack) Armor: [BSA40]
-Unit 6: B1 Attack:35 Defense:-10 HP:8 Speed:3 Threat:-12 Weapon: [BSW32](Focus Throw) Armor: [BSA30]
-Unit 7: B2 Attack:53 Defense:-12 HP:10 Speed:4 Threat:-14 Weapon: [BSW2](Chop) Armor: [BSA14]
-Unit 8: B3 Attack:53 Defense:-11 HP:10 Speed:6 Threat:-12 Weapon: [BSW25](Smoke Shot) Armor: [BSA12]
-Unit 9: B4 Attack:73 Defense:-9 HP:12 Speed:3 Threat:-8 Weapon: [BSW22](Delay Shot) Armor: [BSA28]
+Unit 0: R0 Attack:4 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW49](Earthquake) Armor: [BSA33]
+Unit 1: R1 Attack:9 Defense:1 HP:10 Speed:1 Threat:4 Weapon: [BSW15](Taunt) Armor: [BSA33]
+Unit 2: R2 Attack:2 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA36]
+Unit 3: R3 Attack:4 Defense:1 HP:10 Speed:1 Threat:4 Weapon: [BSW46](Protect) Armor: [BSA33]
+Unit 4: R4 Attack:5 Defense:1 HP:16 Speed:3 Threat:1 Weapon: [BSW4](Berserk) Armor: [BSA20]
+Unit 5: B0 Attack:7 Defense:-2 HP:10 Speed:5 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA9]
+Unit 6: B1 Attack:5 Defense:5 HP:10 Speed:2 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA45]
+Unit 7: B2 Attack:6 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA50]
+Unit 8: B3 Attack:2 Defense:-1 HP:10 Speed:4 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA6]
+Unit 9: B4 Attack:5 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW35](Chain Lightning) Armor: [BSA7]
 ==========================
 
 
-[Tick 2] 3 unit(s) acting
-Ranged: R4 targeting B0 (HP: 8)
-B0 HP: 39 - 39 => 0
-[BOON] Applied Poison Effect to B0 (Usage: 2)
-[A28] R4 applied Poison Effect to B0 (usage: 2)
-Ranged: B3 targeting R2 (HP: 7)
-R2 HP: 62 - 62 => 0
-Melee: R0 targeting B4 (HP: 12)
-B4 HP: 44 - 44 => 0
+[Tick 12] 1 unit(s) acting
+Melee: B0 targeting R0 (HP: 10)
+R0 HP: 10 - 6 => 4
+R0 HP: 6 - 6 => 0
 
 
-[Tick 3] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 12)
-R3 HP: 64 - 64 => 0
-[A02] R3 defense changed from -11 to 0
+[Tick 15] 2 unit(s) acting
+Magic: B3 targeting B1 (HP: 10)
+[BOON] Applied BulkupSTART to B1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 5 => 5
+Magic: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 5 => 5
+Magic: B4 targeting R2 (HP: 10)
+R2 HP: 10 - 5 => 5
 
 
-[Tick 4] 5 unit(s) acting
-Ranged: B3 targeting R0 (HP: 10)
-R0 HP: 65 - 65 => 0
-Ranged: B1 targeting R1 (HP: 6)
-R1 HP: 46 - 46 => 0
-Ranged: R4 targeting B1 (HP: 8)
-B1 HP: 41 - 41 => 0
-[BOON] Applied Poison Effect to B1 (Usage: 2)
-[A28] R4 applied Poison Effect to B1 (usage: 2)
+[Tick 20] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 10)
+R4 HP: 16 - 2 => 14
+B1 HP: 10 - 0 => 10
+[A02] B1 defense changed from 5 to 4
 
 
-[Tick 6] 3 unit(s) acting
-Ranged: B3 targeting R4 (HP: 8)
-R4 HP: 65 - 65 => 0
+[Tick 24] 1 unit(s) acting
+Melee: B0 targeting R1 (HP: 5)
+R1 HP: 6 - 6 => 0
+R1 HP: 6 - 6 => 0
+
+
+[Tick 30] 5 unit(s) acting
+Ranged: B2 targeting R3 (HP: 5)
+R3 HP: 6 - 6 => 0
+Melee: B1 targeting R2 (HP: 5)
+R2 HP: 5 - 3 => 2
+[A06] R2 speed changed from 2 to 1
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
+[EXECUTE_EFFECT] B1 triggered BulkupSTART
+  -> R2 (magic) tick reset due to melee attack!
+Magic: B3 targeting B1 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on B1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R2 targeting R4 (HP: 14)
+[HEAL] R4 healed for 2 HP (from 14 to 16/16)
+[A29] R2 healed R4 for 2 HP
+Magic: B4 targeting R2 (HP: 2)
+R2 HP: 5 - 5 => 0
+Magic: B4 targeting R4 (HP: 16)
+R4 HP: 16 - 5 => 11
+
+
+[Tick 36] 1 unit(s) acting
+Melee: B0 targeting R4 (HP: 11)
+R4 HP: 11 - 6 => 5
+R4 HP: 6 - 6 => 0
 Battle Over! Blue Team wins!

@@ -114,6 +114,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling BalancingLogToCSV.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLogToCSV.cpp -o BalancingLogToCSV.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile BalancingLogToCSV.cpp
+    exit /b 1
+)
+
 cd ../AutoBalancing
 echo Compiling Chromosome.cpp...
 g++ %COMPILE_FLAGS% -I. -I.. -c Chromosome.cpp -o Chromosome.o
@@ -133,6 +140,13 @@ echo Compiling BalancingLane.cpp...
 g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLane.cpp -o BalancingLane.o
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to compile BalancingLane.cpp
+    exit /b 1
+)
+
+echo Compiling BalancingLog.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLog.cpp -o BalancingLog.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile BalancingLog.cpp
     exit /b 1
 )
 
@@ -160,9 +174,11 @@ g++ %LINK_FLAGS% ^
     Sampling/BatchCreator.o ^
     Analysis/TestSubjectToCSV.o ^
     Analysis/RMSE.o ^
+    Analysis/BalancingLogToCSV.o ^
     AutoBalancing/Chromosome.o ^
     AutoBalancing/GeneticBalancingProcessor.o ^
     AutoBalancing/BalancingLane.o ^
+    AutoBalancing/BalancingLog.o ^
     -LSimulator ^
     -lsimulator ^
     -LSimulator/yaml-cpp/mingw-build ^

@@ -1,54 +1,84 @@
-Unit 0: R0 Attack:12 Defense:2 HP:8 Speed:1 Threat:-7 Weapon: [BSW12](Final Attack) Armor: [BSA40]
-Unit 1: R1 Attack:14 Defense:-12 HP:6 Speed:7 Threat:-14 Weapon: [BSW3](Thrust) Armor: [BSA8]
-Unit 2: R2 Attack:71 Defense:-10 HP:19 Speed:0 Threat:-7 Weapon: [BSW45](Fatigue) Armor: [BSA49]
-Unit 3: R3 Attack:54 Defense:-11 HP:10 Speed:2 Threat:-11 Weapon: [BSW23](All-Out Assault) Armor: [BSA43]
-Unit 4: R4 Attack:55 Defense:-10 HP:10 Speed:2 Threat:-11 Weapon: [BSW30](Fire Arrow) Armor: [BSA30]
-Unit 5: B0 Attack:51 Defense:-12 HP:12 Speed:4 Threat:-9 Weapon: [BSW45](Fatigue) Armor: [BSA8]
-Unit 6: B1 Attack:69 Defense:-11 HP:9 Speed:3 Threat:-12 Weapon: [BSW50](Corrosion) Armor: [BSA19]
-Unit 7: B2 Attack:70 Defense:-13 HP:14 Speed:4 Threat:-9 Weapon: [BSW45](Fatigue) Armor: [BSA6]
-Unit 8: B3 Attack:30 Defense:-9 HP:11 Speed:0 Threat:-5 Weapon: [BSW48](Meteor) Armor: [BSA47]
-Unit 9: B4 Attack:33 Defense:-8 HP:13 Speed:2 Threat:-10 Weapon: [BSW20](Blitz Shot) Armor: [BSA50]
+Unit 0: R0 Attack:7 Defense:-2 HP:10 Speed:3 Threat:2 Weapon: [BSW30](Fire Arrow) Armor: [BSA9]
+Unit 1: R1 Attack:4 Defense:0 HP:10 Speed:0 Threat:1 Weapon: [BSW34](Wind Blade) Armor: [BSA35]
+Unit 2: R2 Attack:9 Defense:0 HP:6 Speed:1 Threat:0 Weapon: [BSW19](Momentum) Armor: [BSA16]
+Unit 3: R3 Attack:2 Defense:3 HP:12 Speed:0 Threat:5 Weapon: [BSW36](Tetrodo) Armor: [BSA41]
+Unit 4: R4 Attack:6 Defense:1 HP:11 Speed:4 Threat:5 Weapon: [BSW23](All-Out Assault) Armor: [BSA13]
+Unit 5: B0 Attack:8 Defense:3 HP:10 Speed:0 Threat:6 Weapon: [BSW28](Heavy Shot) Armor: [BSA34]
+Unit 6: B1 Attack:1 Defense:0 HP:12 Speed:1 Threat:6 Weapon: [BSW48](Meteor) Armor: [BSA17]
+Unit 7: B2 Attack:2 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA12]
+Unit 8: B3 Attack:3 Defense:4 HP:15 Speed:-1 Threat:8 Weapon: [BSW39](Healing Link) Armor: [BSA50]
+Unit 9: B4 Attack:3 Defense:13 HP:13 Speed:-2 Threat:9 Weapon: [BSW12](Final Attack) Armor: [BSA47]
 ==========================
 
 
-[Tick 12] 1 unit(s) acting
-Melee: R1 targeting B3 (HP: 11)
-B3 HP: 37 - 37 => 0
-
-
-[Tick 21] 2 unit(s) acting
-Magic: B2 targeting R0 (HP: 8)
-[A06] R0 speed changed from 1 to 0
-Magic: B2 targeting R2 (HP: 19)
-[A06] R2 speed changed from 0 to 0
-Magic: B0 targeting R3 (HP: 10)
-[A06] R3 speed changed from 2 to 1
-Magic: B0 targeting R4 (HP: 10)
-[A06] R4 speed changed from 2 to 1
-
-
-[Tick 24] 1 unit(s) acting
-Melee: R1 targeting B0 (HP: 12)
-B0 HP: 40 - 40 => 0
-
-
-[Tick 28] 1 unit(s) acting
-Magic: B1 targeting R0 (HP: 8)
-[A34] R0 attack changed from 12 to 11
-Magic: B1 targeting R2 (HP: 19)
-[A34] R2 attack changed from 71 to 70
-
-
-[Tick 36] 1 unit(s) acting
-Melee: R1 targeting B2 (HP: 14)
-B2 HP: 41 - 41 => 0
-
-
-[Tick 42] 3 unit(s) acting
+[Tick 3] 1 unit(s) acting
 Ranged: R4 targeting B4 (HP: 13)
-B4 HP: 53 - 53 => 0
-Ranged: R3 targeting B1 (HP: 9)
-[A10] R3 threat changed from -11 to 0
-[A04] R3 attack changed from 54 to 56
-B1 HP: 67 - 67 => 0
+[A10] R4 threat changed from 5 to 6
+[A04] R4 attack changed from 6 to 8
+B4 HP: 13 - 0 => 13
+
+
+[Tick 4] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 13)
+B4 HP: 13 - 9 => 4
+
+
+[Tick 6] 2 unit(s) acting
+Ranged: R4 targeting B4 (HP: 4)
+[A10] R4 threat changed from 6 to 7
+[A04] R4 attack changed from 8 to 10
+B4 HP: 4 - 0 => 4
+Magic: B2 targeting B4 (HP: 4)
+[BOON] Applied ProtectSTART to B4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 8] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 4)
+B4 HP: 9 - 9 => 0
+
+
+[Tick 9] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 15)
+[A10] R4 threat changed from 7 to 8
+[A04] R4 attack changed from 10 to 12
+B3 HP: 15 - 8 => 7
+  -> B3 (magic) tick reset due to ranged attack!
+
+
+[Tick 12] 5 unit(s) acting
+Ranged: R0 targeting B3 (HP: 7)
+B3 HP: 8 - 8 => 0
+Ranged: R4 targeting B0 (HP: 10)
+[A10] R4 threat changed from 8 to 9
+[A04] R4 attack changed from 12 to 14
+B0 HP: 11 - 11 => 0
+Magic: B1 targeting R4 (HP: 11)
+R4 HP: 11 - 3 => 8
+Magic: B1 targeting R3 (HP: 12)
+R3 HP: 12 - 3 => 9
+Magic: B1 targeting R0 (HP: 10)
+R0 HP: 10 - 3 => 7
+Magic: B1 targeting R1 (HP: 10)
+R1 HP: 10 - 3 => 7
+
+
+[Tick 15] 1 unit(s) acting
+Ranged: R4 targeting B1 (HP: 12)
+[A10] R4 threat changed from 9 to 10
+[A04] R4 attack changed from 14 to 16
+B1 HP: 16 - 16 => 0
+
+
+[Tick 16] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 5 => 5
+  -> B2 (magic) tick reset due to ranged attack!
+
+
+[Tick 18] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 5)
+[A10] R4 threat changed from 10 to 11
+[A04] R4 attack changed from 16 to 18
+B2 HP: 17 - 17 => 0
 Battle Over! Red Team wins!

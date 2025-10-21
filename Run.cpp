@@ -20,9 +20,14 @@
 
 #include "Analysis/TestSubjectToCSV.h"
 #include "Analysis/RMSE.h"
+#include "Analysis/BalancingLogToCSV.h"
 
 #include "AutoBalancing/Chromosome.h"
 #include "AutoBalancing/GeneticBalancingProcessor.h"
+
+#define _CRTDBG_MAP_ALLOC
+#include <stdlib.h>
+#include <crtdbg.h>
 
 class NewMasterController {
 private:
@@ -116,6 +121,7 @@ public:
         //Stage 4: Autobalancing
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList,testSubjects);
+        BalancingLog::InitializeLogs(MAXGENERATION);
         balancer.RunAutoBalancing(&simulator, &batches);
         
         std::cout<<"Stage 4 Complete"<<std::endl;
@@ -123,6 +129,8 @@ public:
         // Stage 5: Analysis
         TestSubjectToCSV csvGenerator;
         csvGenerator.Convert(testSubjects);
+
+        BalancingLogToCSV::Convert();
 
         std::cout<<"Stage 5 Complete"<<std::endl;
 
@@ -134,6 +142,16 @@ std::cout << "Total process time: " << duration.count() << " ms" << std::endl;
 
 
 int main() {
+#ifdef _DEBUG
+    std::cout << "DEBUG MODE ACTIVE" << std::endl;
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+    _CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
+    _CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDOUT);
+#else
+    std::cout << "RELEASE MODE - No memory leak detection" << std::endl;
+#endif
+
+
     std::string configFile = Paths::MASTER_CONFIG; 
 
     NewMasterController controller(configFile);
@@ -141,4 +159,16 @@ int main() {
     controller.LoadConfiguration();
     
     controller.executeFullPipeline();
+
+#ifdef _DEBUG
+    std::cout << "\n=== Memory Leak Check ===" << std::endl;
+    if (_CrtDumpMemoryLeaks()) {
+        std::cout << "Memory leaks detected!" << std::endl;
+    } else {
+        std::cout << "No memory leaks detected." << std::endl;
+    }
+#endif
+
+return 0;
+
 }

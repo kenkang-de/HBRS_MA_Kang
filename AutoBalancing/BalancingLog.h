@@ -12,7 +12,12 @@ public:
 
 static std::vector<std::vector<std::string>> BalancingLogs;
 
-BalancingLog(int generation, float mRSE, float dOG, float fitness) 
+static void InitializeLogs(int maxGenerations) {
+    BalancingLogs.clear();
+    BalancingLogs.resize(maxGenerations);
+}
+
+BalancingLog(int generation, float fitness, float mRSE, float dOG) 
 {
     std::string log = std::to_string(fitness) + " (" + std::to_string(mRSE) + " + " + std::to_string(dOG) + ")";
     BalancingLogs[generation-1].push_back(log);

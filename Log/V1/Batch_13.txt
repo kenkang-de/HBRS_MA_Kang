@@ -1,49 +1,72 @@
-Unit 0: R0 Attack:34 Defense:-12 HP:6 Speed:5 Threat:-16 Weapon: [BSW25](Smoke Shot) Armor: [BSA15]
-Unit 1: R1 Attack:68 Defense:-7 HP:17 Speed:0 Threat:-4 Weapon: [BSW46](Protect) Armor: [BSA48]
-Unit 2: R2 Attack:14 Defense:-8 HP:10 Speed:3 Threat:-8 Weapon: [BSW8](Charge Attack) Armor: [BSA40]
-Unit 3: R3 Attack:13 Defense:-9 HP:8 Speed:1 Threat:-8 Weapon: [BSW35](Chain Lightning) Armor: [BSA41]
-Unit 4: R4 Attack:35 Defense:-12 HP:6 Speed:6 Threat:-11 Weapon: [BSW2](Chop) Armor: [BSA4]
-Unit 5: B0 Attack:55 Defense:-12 HP:10 Speed:1 Threat:-13 Weapon: [BSW19](Momentum) Armor: [BSA29]
-Unit 6: B1 Attack:36 Defense:-11 HP:6 Speed:4 Threat:-15 Weapon: [BSW32](Focus Throw) Armor: [BSA25]
-Unit 7: B2 Attack:55 Defense:-14 HP:10 Speed:5 Threat:-11 Weapon: [BSW19](Momentum) Armor: [BSA3]
-Unit 8: B3 Attack:32 Defense:-12 HP:10 Speed:6 Threat:-12 Weapon: [BSW8](Charge Attack) Armor: [BSA10]
-Unit 9: B4 Attack:56 Defense:-13 HP:10 Speed:3 Threat:-11 Weapon: [BSW9](Blitz Attack) Armor: [BSA32]
+Unit 0: R0 Attack:8 Defense:-1 HP:10 Speed:0 Threat:2 Weapon: [BSW30](Fire Arrow) Armor: [BSA32]
+Unit 1: R1 Attack:6 Defense:2 HP:10 Speed:1 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA36]
+Unit 2: R2 Attack:5 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW7](Poison Attack) Armor: [BSA9]
+Unit 3: R3 Attack:3 Defense:0 HP:7 Speed:4 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA5]
+Unit 4: R4 Attack:6 Defense:-1 HP:10 Speed:1 Threat:2 Weapon: [BSW20](Blitz Shot) Armor: [BSA32]
+Unit 5: B0 Attack:3 Defense:0 HP:7 Speed:3 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA5]
+Unit 6: B1 Attack:4 Defense:1 HP:8 Speed:1 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA25]
+Unit 7: B2 Attack:4 Defense:2 HP:12 Speed:2 Threat:3 Weapon: [BSW20](Blitz Shot) Armor: [BSA24]
+Unit 8: B3 Attack:9 Defense:-1 HP:10 Speed:-1 Threat:4 Weapon: [BSW10](Reckless Attack) Armor: [BSA32]
+Unit 9: B4 Attack:2 Defense:2 HP:10 Speed:0 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA36]
 ==========================
 
 
+[Tick 3] 2 unit(s) acting
+Melee: R2 targeting B0 (HP: 7)
+B0 HP: 7 - 5 => 2
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R2 applied Poison Effect to B0 (usage: 3)
+  -> B0 (magic) tick reset due to melee attack!
+Magic: R3 targeting B0 (HP: 2)
+B0 HP: 5 - 5 => 0
+
+
+[Tick 6] 3 unit(s) acting
+Ranged: B2 targeting R2 (HP: 10)
+R2 HP: 10 - 8 => 2
+Melee: R2 targeting B3 (HP: 10)
+B3 HP: 10 - 6 => 4
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R2 applied Poison Effect to B3 (usage: 3)
+Magic: R3 targeting B3 (HP: 4)
+B3 HP: 5 - 5 => 0
+
+
+[Tick 7] 2 unit(s) acting
+Melee: R2 targeting B1 (HP: 8)
+B1 HP: 8 - 4 => 4
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting B1 (HP: 4)
+B1 HP: 5 - 5 => 0
+
+
+[Tick 8] 3 unit(s) acting
+Ranged: B2 targeting R2 (HP: 2)
+R2 HP: 8 - 8 => 0
+Magic: R3 targeting B2 (HP: 12)
+B2 HP: 12 - 5 => 7
+
+
+[Tick 9] 1 unit(s) acting
+Magic: R3 targeting B2 (HP: 7)
+B2 HP: 7 - 5 => 2
+
+
 [Tick 10] 2 unit(s) acting
-Melee: R4 targeting B2 (HP: 10)
-B2 HP: 49 - 49 => 0
-[A02] B2 defense changed from -14 to 0
-Melee: B3 targeting R1 (HP: 17)
-R1 HP: 42 - 42 => 0
+Ranged: B2 targeting R1 (HP: 10)
+R1 HP: 10 - 4 => 6
+Magic: R3 targeting B2 (HP: 2)
+B2 HP: 5 - 5 => 0
 
 
-[Tick 12] 1 unit(s) acting
-Ranged: R0 targeting B4 (HP: 10)
-B4 HP: 47 - 47 => 0
+[Tick 11] 1 unit(s) acting
+Magic: R3 targeting B4 (HP: 10)
+B4 HP: 10 - 5 => 5
 
 
-[Tick 15] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 10)
-R2 HP: 46 - 46 => 0
-
-
-[Tick 20] 2 unit(s) acting
-Melee: R4 targeting B3 (HP: 10)
-B3 HP: 47 - 47 => 0
-[A02] B3 defense changed from -12 to 0
-
-
-[Tick 24] 1 unit(s) acting
-Ranged: R0 targeting B0 (HP: 10)
-B0 HP: 46 - 46 => 0
-
-
-[Tick 30] 2 unit(s) acting
-Ranged: B1 targeting R3 (HP: 8)
-R3 HP: 47 - 47 => 0
-Melee: R4 targeting B1 (HP: 6)
-B1 HP: 46 - 46 => 0
-[A02] B1 defense changed from -11 to 0
+[Tick 12] 3 unit(s) acting
+Ranged: R4 targeting B4 (HP: 5)
+B4 HP: 5 - 5 => 0
 Battle Over! Red Team wins!
