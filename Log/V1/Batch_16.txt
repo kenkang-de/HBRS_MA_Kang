@@ -1,12 +1,39 @@
-Unit 0: R0 Attack:342 Defense:-13 HP:-392 Speed:-18 Threat:233 Weapon: [BSW32](Focus Throw) Armor: [BSA43]
-Unit 1: R1 Attack:416 Defense:-14 HP:-390 Speed:-19 Threat:293 Weapon: [BSW15](Taunt) Armor: [BSA38]
-Unit 2: R2 Attack:410 Defense:-14 HP:-392 Speed:-19 Threat:291 Weapon: [BSW42](Haste) Armor: [BSA35]
-Unit 3: R3 Attack:267 Defense:-14 HP:-392 Speed:-17 Threat:174 Weapon: [BSW20](Blitz Shot) Armor: [BSA29]
-Unit 4: R4 Attack:264 Defense:-15 HP:-392 Speed:-14 Threat:176 Weapon: [BSW33](Magic Bolt) Armor: [BSA2]
-Unit 5: B0 Attack:414 Defense:-11 HP:-392 Speed:-17 Threat:296 Weapon: [BSW7](Poison Attack) Armor: [BSA34]
-Unit 6: B1 Attack:412 Defense:-14 HP:-393 Speed:-14 Threat:292 Weapon: [BSW7](Poison Attack) Armor: [BSA7]
-Unit 7: B2 Attack:338 Defense:-13 HP:-391 Speed:-16 Threat:236 Weapon: [BSW41](Bulkup) Armor: [BSA13]
-Unit 8: B3 Attack:265 Defense:-16 HP:-392 Speed:-14 Threat:176 Weapon: [BSW33](Magic Bolt) Armor: [BSA3]
-Unit 9: B4 Attack:413 Defense:-11 HP:-395 Speed:-16 Threat:293 Weapon: [BSW6](Achilles' heel) Armor: [BSA23]
+Unit 0: R0 Attack:17 Defense:-11 HP:0 Speed:5 Threat:-16 Weapon: [BSW3](Thrust) Armor: [BSA27]
+Unit 1: R1 Attack:15 Defense:-8 HP:15 Speed:1 Threat:-10 Weapon: [BSW4](Berserk) Armor: [BSA50]
+Unit 2: R2 Attack:32 Defense:-11 HP:6 Speed:6 Threat:-15 Weapon: [BSW3](Thrust) Armor: [BSA18]
+Unit 3: R3 Attack:34 Defense:-10 HP:8 Speed:3 Threat:-13 Weapon: [BSW32](Focus Throw) Armor: [BSA36]
+Unit 4: R4 Attack:73 Defense:-9 HP:12 Speed:3 Threat:-7 Weapon: [BSW13](Prep Attack) Armor: [BSA28]
+Unit 5: B0 Attack:14 Defense:-6 HP:6 Speed:1 Threat:-9 Weapon: [BSW5](Overpower) Armor: [BSA42]
+Unit 6: B1 Attack:72 Defense:-13 HP:12 Speed:1 Threat:-10 Weapon: [BSW50](Corrosion) Armor: [BSA32]
+Unit 7: B2 Attack:37 Defense:-11 HP:4 Speed:4 Threat:-13 Weapon: [BSW8](Charge Attack) Armor: [BSA27]
+Unit 8: B3 Attack:37 Defense:-11 HP:4 Speed:3 Threat:-15 Weapon: [BSW28](Heavy Shot) Armor: [BSA26]
+Unit 9: B4 Attack:51 Defense:-11 HP:12 Speed:3 Threat:-13 Weapon: [BSW34](Wind Blade) Armor: [BSA20]
 ==========================
+
+
+[Tick 10] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 6)
+B0 HP: 70 - 70 => 0
+
+
+[Tick 15] 1 unit(s) acting
+Melee: B2 targeting R4 (HP: 12)
+R4 HP: 47 - 47 => 0
+
+
+[Tick 18] 1 unit(s) acting
+Melee: B2 targeting R1 (HP: 15)
+R1 HP: 46 - 46 => 0
+
+
+[Tick 20] 4 unit(s) acting
+Ranged: R3 targeting B1 (HP: 12)
+B1 HP: 49 - 49 => 0
+Ranged: B3 targeting R3 (HP: 8)
+R3 HP: 84 - 84 => 0
+[A19] B3 speed changed from 3 to 2
+Melee: R2 targeting B2 (HP: 4)
+B2 HP: 75 - 75 => 0
+Magic: B4 targeting R2 (HP: 6)
+R2 HP: 51 - 51 => 0
 Battle Over! Blue Team wins!

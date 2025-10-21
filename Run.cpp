@@ -104,8 +104,7 @@ public:
         simulator.SimulateBatches(&batches);
         std::cout<<"Stage 3 Complete"<<std::endl;
 
-        // Stage 4: Analysis
-        TestSubjectToCSV csvGenerator;
+        // Init_TestSubject
         std::vector<TestSubject*> testSubjects;
         for (Weapon& weapon : elementList.weapons) {
             testSubjects.push_back(&weapon);
@@ -113,16 +112,18 @@ public:
         for (Armor& armor : elementList.armors) {
             testSubjects.push_back(&armor);
         }
-        csvGenerator.Convert(testSubjects);
-        std::cout<<"Root Mean Square Error: " << RMSE::Calculate(testSubjects) << std::endl;
 
-        std::cout<<"Stage 4 Complete"<<std::endl;
-
-        //Stage 5: Autobalancing
+        //Stage 4: Autobalancing
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList,testSubjects);
         balancer.RunAutoBalancing(&simulator, &batches);
         
+        std::cout<<"Stage 4 Complete"<<std::endl;
+
+        // Stage 5: Analysis
+        TestSubjectToCSV csvGenerator;
+        csvGenerator.Convert(testSubjects);
+
         std::cout<<"Stage 5 Complete"<<std::endl;
 
 auto endTime = std::chrono::high_resolution_clock::now();

@@ -1,12 +1,54 @@
-Unit 0: R0 Attack:340 Defense:-14 HP:-392 Speed:-15 Threat:233 Weapon: [BSW27](Tripple Shot) Armor: [BSA8]
-Unit 1: R1 Attack:265 Defense:-14 HP:-394 Speed:-17 Threat:177 Weapon: [BSW48](Meteor) Armor: [BSA15]
-Unit 2: R2 Attack:343 Defense:-13 HP:-396 Speed:-16 Threat:233 Weapon: [BSW24](Boost Acuity) Armor: [BSA26]
-Unit 3: R3 Attack:415 Defense:-14 HP:-393 Speed:-16 Threat:292 Weapon: [BSW15](Taunt) Armor: [BSA7]
-Unit 4: R4 Attack:413 Defense:-14 HP:-392 Speed:-13 Threat:292 Weapon: [BSW1](Slash) Armor: [BSA1]
-Unit 5: B0 Attack:270 Defense:-13 HP:-391 Speed:-15 Threat:178 Weapon: [BSW11](Fade Attack) Armor: [BSA13]
-Unit 6: B1 Attack:410 Defense:-12 HP:-390 Speed:-18 Threat:293 Weapon: [BSW46](Protect) Armor: [BSA24]
-Unit 7: B2 Attack:267 Defense:-12 HP:-390 Speed:-17 Threat:177 Weapon: [BSW20](Blitz Shot) Armor: [BSA39]
-Unit 8: B3 Attack:411 Defense:-14 HP:-392 Speed:-19 Threat:292 Weapon: [BSW43](Vow) Armor: [BSA29]
-Unit 9: B4 Attack:411 Defense:-12 HP:-388 Speed:-19 Threat:296 Weapon: [BSW45](Fatigue) Armor: [BSA39]
+Unit 0: R0 Attack:50 Defense:-1 HP:7 Speed:3 Threat:-12 Weapon: [BSW12](Final Attack) Armor: [BSA19]
+Unit 1: R1 Attack:53 Defense:-9 HP:12 Speed:2 Threat:-10 Weapon: [BSW21](Poison Arrow) Armor: [BSA44]
+Unit 2: R2 Attack:72 Defense:-13 HP:12 Speed:2 Threat:-10 Weapon: [BSW38](Healing Touch) Armor: [BSA32]
+Unit 3: R3 Attack:71 Defense:-9 HP:14 Speed:0 Threat:-7 Weapon: [BSW46](Protect) Armor: [BSA44]
+Unit 4: R4 Attack:52 Defense:-11 HP:7 Speed:5 Threat:-15 Weapon: [BSW25](Smoke Shot) Armor: [BSA19]
+Unit 5: B0 Attack:72 Defense:-13 HP:12 Speed:1 Threat:-10 Weapon: [BSW43](Vow) Armor: [BSA32]
+Unit 6: B1 Attack:71 Defense:-11 HP:13 Speed:4 Threat:-8 Weapon: [BSW43](Vow) Armor: [BSA13]
+Unit 7: B2 Attack:75 Defense:-10 HP:17 Speed:2 Threat:-10 Weapon: [BSW1](Slash) Armor: [BSA49]
+Unit 8: B3 Attack:71 Defense:-12 HP:9 Speed:5 Threat:-9 Weapon: [BSW37](Freeze) Armor: [BSA5]
+Unit 9: B4 Attack:55 Defense:-11 HP:8 Speed:4 Threat:-14 Weapon: [BSW25](Smoke Shot) Armor: [BSA25]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 12] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 13)
+B1 HP: 63 - 63 => 0
+Magic: B3 targeting R3 (HP: 14)
+[BOON] Applied FreezeSTART to R3 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 15] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 14)
+R3 HP: 64 - 64 => 0
+
+
+[Tick 20] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 9)
+B3 HP: 61 - 61 => 0
+[A12] R0 defense changed from -1 to 0
+
+
+[Tick 24] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 12)
+B0 HP: 65 - 65 => 0
+
+
+[Tick 30] 4 unit(s) acting
+Ranged: B4 targeting R1 (HP: 12)
+R1 HP: 64 - 64 => 0
+Melee: B2 targeting R2 (HP: 12)
+R2 HP: 88 - 88 => 0
+
+
+[Tick 36] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 17)
+B2 HP: 62 - 62 => 0
+
+
+[Tick 40] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 8)
+B4 HP: 61 - 61 => 0
+[A12] R0 defense changed from 0 to 0
+Battle Over! Red Team wins!

@@ -1,12 +1,44 @@
-Unit 0: R0 Attack:267 Defense:-16 HP:-392 Speed:-13 Threat:176 Weapon: [BSW20](Blitz Shot) Armor: [BSA3]
-Unit 1: R1 Attack:338 Defense:-13 HP:-391 Speed:-15 Threat:236 Weapon: [BSW39](Healing Link) Armor: [BSA13]
-Unit 2: R2 Attack:410 Defense:-12 HP:-392 Speed:-19 Threat:296 Weapon: [BSW48](Meteor) Armor: [BSA36]
-Unit 3: R3 Attack:411 Defense:-14 HP:-392 Speed:-19 Threat:292 Weapon: [BSW37](Freeze) Armor: [BSA29]
-Unit 4: R4 Attack:416 Defense:-14 HP:-390 Speed:-19 Threat:293 Weapon: [BSW15](Taunt) Armor: [BSA38]
-Unit 5: B0 Attack:411 Defense:-16 HP:-392 Speed:-14 Threat:294 Weapon: [BSW39](Healing Link) Armor: [BSA3]
-Unit 6: B1 Attack:409 Defense:-14 HP:-392 Speed:-14 Threat:294 Weapon: [BSW38](Healing Touch) Armor: [BSA1]
-Unit 7: B2 Attack:266 Defense:-13 HP:-395 Speed:-15 Threat:173 Weapon: [BSW23](All-Out Assault) Armor: [BSA19]
-Unit 8: B3 Attack:270 Defense:-13 HP:-392 Speed:-18 Threat:177 Weapon: [BSW5](Overpower) Armor: [BSA33]
-Unit 9: B4 Attack:267 Defense:-15 HP:-392 Speed:-13 Threat:177 Weapon: [BSW23](All-Out Assault) Armor: [BSA2]
+Unit 0: R0 Attack:15 Defense:-7 HP:6 Speed:0 Threat:-10 Weapon: [BSW19](Momentum) Armor: [BSA45]
+Unit 1: R1 Attack:51 Defense:-12 HP:10 Speed:5 Threat:-12 Weapon: [BSW36](Tetrodo) Armor: [BSA8]
+Unit 2: R2 Attack:51 Defense:-12 HP:10 Speed:4 Threat:-8 Weapon: [BSW49](Earthquake) Armor: [BSA8]
+Unit 3: R3 Attack:72 Defense:-11 HP:12 Speed:1 Threat:-8 Weapon: [BSW37](Freeze) Armor: [BSA33]
+Unit 4: R4 Attack:68 Defense:-9 HP:12 Speed:3 Threat:-11 Weapon: [BSW36](Tetrodo) Armor: [BSA22]
+Unit 5: B0 Attack:48 Defense:-7 HP:15 Speed:0 Threat:-2 Weapon: [BSW48](Meteor) Armor: [BSA48]
+Unit 6: B1 Attack:55 Defense:-12 HP:12 Speed:2 Threat:-12 Weapon: [BSW30](Fire Arrow) Armor: [BSA38]
+Unit 7: B2 Attack:75 Defense:-13 HP:12 Speed:4 Threat:-10 Weapon: [BSW10](Reckless Attack) Armor: [BSA6]
+Unit 8: B3 Attack:35 Defense:-11 HP:8 Speed:4 Threat:-12 Weapon: [BSW3](Thrust) Armor: [BSA33]
+Unit 9: B4 Attack:33 Defense:-8 HP:10 Speed:3 Threat:-9 Weapon: [BSW26](Double Shot) Armor: [BSA40]
 ==========================
+
+
+[Tick 12] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 15)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R1 applied Tetrodo Effect to B0 (usage: 2)
+
+
+[Tick 15] 3 unit(s) acting
+Melee: B2 targeting R2 (HP: 10)
+B2 HP: 12 - 3 => 9
+R2 HP: 90 - 90 => 0
+Melee: B3 targeting R3 (HP: 12)
+R3 HP: 81 - 81 => 0
+
+
+[Tick 20] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 6)
+R0 HP: 40 - 40 => 0
+Ranged: B4 targeting R4 (HP: 12)
+R4 HP: 42 - 42 => 0
+
+
+[Tick 24] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B0
+[A28] R1 applied Tetrodo Effect to B0 (usage: 2)
+
+
+[Tick 30] 3 unit(s) acting
+Ranged: B1 targeting R1 (HP: 10)
+R1 HP: 50 - 50 => 0
 Battle Over! Blue Team wins!

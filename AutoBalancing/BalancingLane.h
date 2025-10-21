@@ -57,6 +57,7 @@ class BalancingLane
     CHROMOSOMETYPE GetChromosomeType() { return chromosomeType; }
 
     bool GetOwnAdjustment() {return ownsAdjustment;}
+    void SetOwnAdjustment(bool value) {ownsAdjustment = value;}
 
  
 };

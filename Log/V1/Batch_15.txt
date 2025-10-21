@@ -1,12 +1,54 @@
-Unit 0: R0 Attack:195 Defense:-16 HP:-390 Speed:-14 Threat:118 Weapon: [BSW8](Charge Attack) Armor: [BSA9]
-Unit 1: R1 Attack:410 Defense:-14 HP:-393 Speed:-16 Threat:292 Weapon: [BSW41](Bulkup) Armor: [BSA7]
-Unit 2: R2 Attack:270 Defense:-13 HP:-392 Speed:-18 Threat:177 Weapon: [BSW5](Overpower) Armor: [BSA33]
-Unit 3: R3 Attack:338 Defense:-9 HP:-392 Speed:-20 Threat:239 Weapon: [BSW43](Vow) Armor: [BSA45]
-Unit 4: R4 Attack:265 Defense:-14 HP:-392 Speed:-18 Threat:174 Weapon: [BSW33](Magic Bolt) Armor: [BSA29]
-Unit 5: B0 Attack:268 Defense:-14 HP:-394 Speed:-14 Threat:172 Weapon: [BSW3](Thrust) Armor: [BSA15]
-Unit 6: B1 Attack:341 Defense:-16 HP:-392 Speed:-14 Threat:232 Weapon: [BSW25](Smoke Shot) Armor: [BSA9]
-Unit 7: B2 Attack:339 Defense:-9 HP:-387 Speed:-19 Threat:238 Weapon: [BSW30](Fire Arrow) Armor: [BSA48]
-Unit 8: B3 Attack:416 Defense:-13 HP:-391 Speed:-18 Threat:293 Weapon: [BSW29](Camo Throw) Armor: [BSA46]
-Unit 9: B4 Attack:340 Defense:-13 HP:-392 Speed:-13 Threat:233 Weapon: [BSW17](Shoot) Armor: [BSA12]
+Unit 0: R0 Attack:71 Defense:-10 HP:17 Speed:1 Threat:-10 Weapon: [BSW36](Tetrodo) Armor: [BSA49]
+Unit 1: R1 Attack:55 Defense:-11 HP:10 Speed:2 Threat:-11 Weapon: [BSW29](Camo Throw) Armor: [BSA43]
+Unit 2: R2 Attack:35 Defense:-12 HP:10 Speed:6 Threat:-10 Weapon: [BSW8](Charge Attack) Armor: [BSA11]
+Unit 3: R3 Attack:57 Defense:-11 HP:6 Speed:4 Threat:-14 Weapon: [BSW1](Slash) Armor: [BSA26]
+Unit 4: R4 Attack:35 Defense:-14 HP:8 Speed:4 Threat:-14 Weapon: [BSW19](Momentum) Armor: [BSA9]
+Unit 5: B0 Attack:51 Defense:-8 HP:15 Speed:0 Threat:-7 Weapon: [BSW46](Protect) Armor: [BSA50]
+Unit 6: B1 Attack:35 Defense:-12 HP:4 Speed:5 Threat:-14 Weapon: [BSW13](Prep Attack) Armor: [BSA16]
+Unit 7: B2 Attack:13 Defense:-11 HP:2 Speed:3 Threat:-16 Weapon: [BSW33](Magic Bolt) Armor: [BSA26]
+Unit 8: B3 Attack:33 Defense:-12 HP:6 Speed:5 Threat:-15 Weapon: [BSW31](Wrist Shot) Armor: [BSA15]
+Unit 9: B4 Attack:11 Defense:-9 HP:6 Speed:2 Threat:-9 Weapon: [BSW48](Meteor) Armor: [BSA21]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 10] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 15)
+B0 HP: 46 - 46 => 0
+
+
+[Tick 12] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 17)
+R0 HP: 43 - 43 => 0
+[A25] R0 attack reduced from 71 to 50 (damage: 43, reduction: 21)
+Melee: B1 targeting R2 (HP: 10)
+R2 HP: 47 - 47 => 0
+
+
+[Tick 15] 2 unit(s) acting
+Ranged: R4 targeting B4 (HP: 6)
+B4 HP: 44 - 44 => 0
+[AFTER-ACTION] R4 performs after-action on B1 (threat: -14)
+[A19] R4 speed changed from 4 to 5
+Melee: R3 targeting B1 (HP: 4)
+B1 HP: 69 - 69 => 0
+
+
+[Tick 20] 1 unit(s) acting
+Magic: B2 targeting R1 (HP: 10)
+R1 HP: 10 - 5 => 5
+
+
+[Tick 24] 1 unit(s) acting
+Ranged: B3 targeting R1 (HP: 5)
+R1 HP: 44 - 44 => 0
+[A25] R1 attack reduced from 55 to 33 (damage: 44, reduction: 22)
+
+
+[Tick 30] 2 unit(s) acting
+Ranged: R4 targeting B3 (HP: 6)
+B3 HP: 47 - 47 => 0
+[AFTER-ACTION] R4 performs after-action on B2 (threat: -16)
+[A19] R4 speed changed from 5 to 6
+Melee: R3 targeting B2 (HP: 2)
+B2 HP: 68 - 68 => 0
+Battle Over! Red Team wins!

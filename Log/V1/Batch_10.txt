@@ -1,12 +1,56 @@
-Unit 0: R0 Attack:342 Defense:-10 HP:-392 Speed:-18 Threat:237 Weapon: [BSW2](Chop) Armor: [BSA31]
-Unit 1: R1 Attack:340 Defense:-11 HP:-392 Speed:-17 Threat:235 Weapon: [BSW11](Fade Attack) Armor: [BSA22]
-Unit 2: R2 Attack:270 Defense:-14 HP:-394 Speed:-17 Threat:174 Weapon: [BSW15](Taunt) Armor: [BSA15]
-Unit 3: R3 Attack:342 Defense:-13 HP:-392 Speed:-16 Threat:234 Weapon: [BSW17](Shoot) Armor: [BSA33]
-Unit 4: R4 Attack:410 Defense:-11 HP:-390 Speed:-18 Threat:295 Weapon: [BSW39](Healing Link) Armor: [BSA41]
-Unit 5: B0 Attack:413 Defense:-12 HP:-390 Speed:-16 Threat:291 Weapon: [BSW25](Smoke Shot) Armor: [BSA24]
-Unit 6: B1 Attack:121 Defense:-14 HP:-394 Speed:-15 Threat:56 Weapon: [BSW20](Blitz Shot) Armor: [BSA15]
-Unit 7: B2 Attack:415 Defense:-10 HP:-392 Speed:-19 Threat:295 Weapon: [BSW10](Reckless Attack) Armor: [BSA37]
-Unit 8: B3 Attack:264 Defense:-8 HP:-392 Speed:-19 Threat:181 Weapon: [BSW38](Healing Touch) Armor: [BSA42]
-Unit 9: B4 Attack:342 Defense:-13 HP:-391 Speed:-18 Threat:236 Weapon: [BSW24](Boost Acuity) Armor: [BSA46]
+Unit 0: R0 Attack:51 Defense:-8 HP:15 Speed:0 Threat:-7 Weapon: [BSW47](Cheer) Armor: [BSA50]
+Unit 1: R1 Attack:31 Defense:-9 HP:8 Speed:2 Threat:-11 Weapon: [BSW33](Magic Bolt) Armor: [BSA28]
+Unit 2: R2 Attack:51 Defense:-12 HP:10 Speed:5 Threat:-10 Weapon: [BSW38](Healing Touch) Armor: [BSA8]
+Unit 3: R3 Attack:76 Defense:-10 HP:17 Speed:0 Threat:-8 Weapon: [BSW14](Leech Attack) Armor: [BSA49]
+Unit 4: R4 Attack:-3 Defense:-12 HP:4 Speed:4 Threat:-17 Weapon: [BSW4](Berserk) Armor: [BSA16]
+Unit 5: B0 Attack:-5 Defense:-8 HP:4 Speed:3 Threat:-12 Weapon: [BSW32](Focus Throw) Armor: [BSA31]
+Unit 6: B1 Attack:56 Defense:-11 HP:4 Speed:4 Threat:-12 Weapon: [BSW13](Prep Attack) Armor: [BSA27]
+Unit 7: B2 Attack:70 Defense:-12 HP:12 Speed:2 Threat:-11 Weapon: [BSW38](Healing Touch) Armor: [BSA35]
+Unit 8: B3 Attack:50 Defense:-2 HP:10 Speed:5 Threat:-8 Weapon: [BSW12](Final Attack) Armor: [BSA1]
+Unit 9: B4 Attack:56 Defense:-12 HP:8 Speed:3 Threat:-13 Weapon: [BSW10](Reckless Attack) Armor: [BSA15]
 ==========================
+
+
+[Tick 12] 2 unit(s) acting
+Melee: B3 targeting R0 (HP: 15)
+R0 HP: 56 - 56 => 0
+[A12] B3 defense changed from -2 to 0
+Magic: R2 targeting R3 (HP: 17)
+[HEAL] R3 healed for 0 HP (from 17 to 17/17)
+[A29] R2 healed R3 for 5 HP
+
+
+[Tick 15] 2 unit(s) acting
+Melee: R4 targeting B3 (HP: 10)
+R4 HP: 4 - 2 => 2
+B3 HP: 10 - 0 => 10
+[A02] B3 defense changed from 0 to 0
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 66 - 66 => 0
+
+
+[Tick 20] 2 unit(s) acting
+Ranged: B0 targeting R2 (HP: 10)
+R2 HP: 10 - 9 => 1
+  -> R2 (magic) tick reset due to ranged attack!
+Melee: B4 targeting R2 (HP: 1)
+B4 HP: 8 - 3 => 5
+R2 HP: 71 - 71 => 0
+
+
+[Tick 24] 1 unit(s) acting
+Melee: B3 targeting R1 (HP: 8)
+R1 HP: 59 - 59 => 0
+[A12] B3 defense changed from 0 to 0
+
+
+[Tick 30] 3 unit(s) acting
+Melee: R4 targeting B3 (HP: 10)
+R4 HP: 2 - 2 => 0
+B3 HP: 10 - 0 => 10
+[A02] B3 defense changed from 0 to 0
+  -> R4 died during after-actions, stopping further actions
+Magic: B2 targeting B3 (HP: 10)
+[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[A29] B2 healed B3 for 5 HP
 Battle Over! Blue Team wins!

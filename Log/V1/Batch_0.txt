@@ -1,12 +1,69 @@
-Unit 0: R0 Attack:341 Defense:-12 HP:-388 Speed:-18 Threat:234 Weapon: [BSW4](Berserk) Armor: [BSA36]
-Unit 1: R1 Attack:340 Defense:-14 HP:-392 Speed:-14 Threat:235 Weapon: [BSW7](Poison Attack) Armor: [BSA8]
-Unit 2: R2 Attack:121 Defense:-14 HP:-394 Speed:-15 Threat:56 Weapon: [BSW20](Blitz Shot) Armor: [BSA15]
-Unit 3: R3 Attack:339 Defense:-11 HP:-392 Speed:-16 Threat:233 Weapon: [BSW32](Focus Throw) Armor: [BSA22]
-Unit 4: R4 Attack:409 Defense:-13 HP:-390 Speed:-17 Threat:292 Weapon: [BSW38](Healing Touch) Armor: [BSA20]
-Unit 5: B0 Attack:341 Defense:-13 HP:-392 Speed:-17 Threat:236 Weapon: [BSW6](Achilles' heel) Armor: [BSA33]
-Unit 6: B1 Attack:340 Defense:-13 HP:-390 Speed:-16 Threat:232 Weapon: [BSW4](Berserk) Armor: [BSA18]
-Unit 7: B2 Attack:411 Defense:-13 HP:-394 Speed:-16 Threat:289 Weapon: [BSW27](Tripple Shot) Armor: [BSA18]
-Unit 8: B3 Attack:415 Defense:-11 HP:-395 Speed:-18 Threat:291 Weapon: [BSW19](Momentum) Armor: [BSA23]
-Unit 9: B4 Attack:413 Defense:-14 HP:-390 Speed:-17 Threat:292 Weapon: [BSW31](Wrist Shot) Armor: [BSA38]
+Unit 0: R0 Attack:53 Defense:-12 HP:10 Speed:6 Threat:-11 Weapon: [BSW28](Heavy Shot) Armor: [BSA1]
+Unit 1: R1 Attack:71 Defense:-9 HP:12 Speed:2 Threat:-6 Weapon: [BSW44](Exposure) Armor: [BSA28]
+Unit 2: R2 Attack:74 Defense:-11 HP:9 Speed:3 Threat:-12 Weapon: [BSW14](Leech Attack) Armor: [BSA19]
+Unit 3: R3 Attack:75 Defense:-10 HP:12 Speed:1 Threat:-9 Weapon: [BSW10](Reckless Attack) Armor: [BSA36]
+Unit 4: R4 Attack:32 Defense:-9 HP:11 Speed:2 Threat:-9 Weapon: [BSW31](Wrist Shot) Armor: [BSA47]
+Unit 5: B0 Attack:56 Defense:-9 HP:10 Speed:2 Threat:-9 Weapon: [BSW28](Heavy Shot) Armor: [BSA34]
+Unit 6: B1 Attack:55 Defense:-12 HP:7 Speed:6 Threat:-12 Weapon: [BSW30](Fire Arrow) Armor: [BSA5]
+Unit 7: B2 Attack:50 Defense:-13 HP:10 Speed:6 Threat:-9 Weapon: [BSW39](Healing Link) Armor: [BSA2]
+Unit 8: B3 Attack:71 Defense:-12 HP:9 Speed:5 Threat:-9 Weapon: [BSW46](Protect) Armor: [BSA5]
+Unit 9: B4 Attack:72 Defense:-7 HP:17 Speed:2 Threat:-6 Weapon: [BSW1](Slash) Armor: [BSA48]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 5] 3 unit(s) acting
+Ranged: R0 targeting B4 (HP: 17)
+B4 HP: 113 - 113 => 0
+[A19] R0 speed changed from 6 to 5
+Ranged: B1 targeting R1 (HP: 12)
+R1 HP: 53 - 53 => 0
+Magic: B2 targeting B0 (HP: 10)
+[HEAL] B0 healed for 0 HP (from 10 to 10/10)
+[A29] B2 healed B0 for 3 HP
+Magic: B2 targeting B3 (HP: 9)
+[HEAL] B3 healed for 0 HP (from 9 to 9/9)
+[A29] B2 healed B3 for 3 HP
+
+
+[Tick 6] 1 unit(s) acting
+Magic: B3 targeting B0 (HP: 10)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 10] 4 unit(s) acting
+Ranged: B1 targeting R3 (HP: 12)
+R3 HP: 54 - 54 => 0
+Ranged: R0 targeting B0 (HP: 10)
+B0 HP: 115 - 115 => 0
+[A19] R0 speed changed from 5 to 4
+Melee: R2 targeting B2 (HP: 10)
+B2 HP: 87 - 87 => 0
+[HEAL] R2 healed for 0 HP (from 9 to 9/9)
+
+
+[Tick 12] 1 unit(s) acting
+Magic: B3 targeting B3 (HP: 9)
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: -9)
+[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered ProtectSTART
+[A02] B3 defense changed from -12 to 0
+
+
+[Tick 15] 2 unit(s) acting
+Ranged: R4 targeting B3 (HP: 9)
+B3 HP: 32 - 32 => 0
+[A25] B3 attack reduced from 71 to 55 (damage: 32, reduction: 16)
+Ranged: B1 targeting R4 (HP: 11)
+R4 HP: 53 - 53 => 0
+
+
+[Tick 16] 1 unit(s) acting
+Ranged: R0 targeting B1 (HP: 7)
+B1 HP: 118 - 118 => 0
+[A19] R0 speed changed from 4 to 3
+Battle Over! Red Team wins!

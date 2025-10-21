@@ -315,6 +315,7 @@ Chromosome* GeneticBalancingProcessor::PopulateMutation(std::array<Chromosome*,2
     const Stat* mergedAdjustment = new Stat(alphaAdjustment + betaAdjustment);
 
     BalancingLane mutationLane(mergedAdjustment, CHROMOSOMETYPE::ALPHA);
+    mutationLane.SetOwnAdjustment(true);
     lanes.push_back(mutationLane);
 
     //Chromosome
@@ -409,6 +410,10 @@ void GeneticBalancingProcessor::ReplaceRecessiveChromosome(Chromosome* recessive
     // Break old links
     mutant->Set_BalancingLane(nullptr);
     recessiveLane->SetChromosome(nullptr);
+
+    if (recessiveLane->GetOwnAdjustment()) {
+    delete recessiveLane->adjustment;  
+    }
 
     // Transfer the adjustment and establish new links
     recessiveLane->adjustment = mutantLane->adjustment;

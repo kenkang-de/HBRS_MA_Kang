@@ -1,12 +1,45 @@
-Unit 0: R0 Attack:409 Defense:-14 HP:-390 Speed:-17 Threat:291 Weapon: [BSW47](Cheer) Armor: [BSA17]
-Unit 1: R1 Attack:195 Defense:-13 HP:-398 Speed:-17 Threat:115 Weapon: [BSW36](Tetrodo) Armor: [BSA27]
-Unit 2: R2 Attack:415 Defense:-11 HP:-390 Speed:-19 Threat:293 Weapon: [BSW30](Fire Arrow) Armor: [BSA44]
-Unit 3: R3 Attack:417 Defense:-15 HP:-392 Speed:-19 Threat:292 Weapon: [BSW15](Taunt) Armor: [BSA32]
-Unit 4: R4 Attack:342 Defense:-16 HP:-392 Speed:-13 Threat:234 Weapon: [BSW32](Focus Throw) Armor: [BSA3]
-Unit 5: B0 Attack:338 Defense:-14 HP:-390 Speed:-18 Threat:233 Weapon: [BSW36](Tetrodo) Armor: [BSA38]
-Unit 6: B1 Attack:409 Defense:-14 HP:-392 Speed:-15 Threat:294 Weapon: [BSW43](Vow) Armor: [BSA1]
-Unit 7: B2 Attack:341 Defense:-10 HP:-392 Speed:-18 Threat:236 Weapon: [BSW2](Chop) Armor: [BSA37]
-Unit 8: B3 Attack:415 Defense:-13 HP:-394 Speed:-15 Threat:289 Weapon: [BSW17](Shoot) Armor: [BSA25]
-Unit 9: B4 Attack:266 Defense:-14 HP:-392 Speed:-17 Threat:176 Weapon: [BSW35](Chain Lightning) Armor: [BSA14]
+Unit 0: R0 Attack:35 Defense:-11 HP:9 Speed:5 Threat:-11 Weapon: [BSW5](Overpower) Armor: [BSA13]
+Unit 1: R1 Attack:15 Defense:-8 HP:6 Speed:3 Threat:-10 Weapon: [BSW29](Camo Throw) Armor: [BSA31]
+Unit 2: R2 Attack:31 Defense:-7 HP:8 Speed:0 Threat:-5 Weapon: [BSW49](Earthquake) Armor: [BSA45]
+Unit 3: R3 Attack:13 Defense:-8 HP:8 Speed:3 Threat:-10 Weapon: [BSW21](Poison Arrow) Armor: [BSA40]
+Unit 4: R4 Attack:14 Defense:-12 HP:4 Speed:3 Threat:-13 Weapon: [BSW35](Chain Lightning) Armor: [BSA15]
+Unit 5: B0 Attack:51 Defense:-12 HP:10 Speed:5 Threat:-12 Weapon: [BSW36](Tetrodo) Armor: [BSA8]
+Unit 6: B1 Attack:72 Defense:-9 HP:12 Speed:2 Threat:-6 Weapon: [BSW40](Grace) Armor: [BSA34]
+Unit 7: B2 Attack:71 Defense:-9 HP:14 Speed:1 Threat:-9 Weapon: [BSW36](Tetrodo) Armor: [BSA44]
+Unit 8: B3 Attack:15 Defense:-14 HP:10 Speed:5 Threat:-14 Weapon: [BSW4](Berserk) Armor: [BSA9]
+Unit 9: B4 Attack:-5 Defense:-7 HP:8 Speed:1 Threat:-10 Weapon: [BSW4](Berserk) Armor: [BSA45]
 ==========================
-Battle Over! Blue Team wins!
+
+
+[Tick 6] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 12)
+B1 HP: 44 - 44 => 0
+B1 HP: 44 - 44 => 0
+Melee: B3 targeting R2 (HP: 8)
+B3 HP: 10 - 2 => 8
+R2 HP: 22 - 22 => 0
+[A02] R2 defense changed from -7 to 0
+Magic: B0 targeting R1 (HP: 6)
+[BOON] Applied Tetrodo Effect to R1 (Usage: 2)
+[A28] B0 applied Tetrodo Effect to R1 (usage: 2)
+
+
+[Tick 10] 3 unit(s) acting
+Ranged: R3 targeting B2 (HP: 14)
+B2 HP: 22 - 22 => 0
+[BOON] Applied Poison Effect to B2 (Usage: 2)
+[A28] R3 applied Poison Effect to B2 (usage: 2)
+Ranged: R1 targeting B4 (HP: 8)
+B4 HP: 22 - 22 => 0
+[A10] R1 threat changed from -10 to 0
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 0)
+[BOON] Tetrodo Effect triggered on R1 (Usage: 2/2)
+[EXECUTE_EFFECT] R1 triggered Tetrodo Effect
+R1 HP: 6 - 5 => 1
+Magic: R4 targeting B0 (HP: 10)
+B0 HP: 14 - 14 => 0
+Magic: R4 targeting B3 (HP: 8)
+B3 HP: 14 - 14 => 0
+Battle Over! Red Team wins!
