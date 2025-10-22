@@ -1,76 +1,79 @@
-Unit 0: R0 Attack:16 Defense:0 HP:20 Speed:2 Threat:11 Weapon: [BSW10](Reckless Attack) Armor: [BSA8]
-Unit 1: R1 Attack:14 Defense:-1 HP:20 Speed:0 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA32]
-Unit 2: R2 Attack:16 Defense:1 HP:20 Speed:0 Threat:10 Weapon: [BSW28](Heavy Shot) Armor: [BSA33]
-Unit 3: R3 Attack:15 Defense:3 HP:21 Speed:1 Threat:10 Weapon: [BSW4](Berserk) Armor: [BSA23]
-Unit 4: R4 Attack:14 Defense:0 HP:18 Speed:4 Threat:6 Weapon: [BSW17](Shoot) Armor: [BSA15]
-Unit 5: B0 Attack:13 Defense:0 HP:20 Speed:4 Threat:11 Weapon: [BSW7](Poison Attack) Armor: [BSA8]
-Unit 6: B1 Attack:9 Defense:0 HP:22 Speed:1 Threat:11 Weapon: [BSW49](Earthquake) Armor: [BSA17]
-Unit 7: B2 Attack:19 Defense:0 HP:17 Speed:5 Threat:10 Weapon: [BSW29](Camo Throw) Armor: [BSA5]
-Unit 8: B3 Attack:15 Defense:-2 HP:20 Speed:5 Threat:10 Weapon: [BSW1](Slash) Armor: [BSA3]
-Unit 9: B4 Attack:9 Defense:0 HP:20 Speed:2 Threat:6 Weapon: [BSW36](Tetrodo) Armor: [BSA14]
+Unit 0: R0 Attack:9 Defense:4 HP:14 Speed:2 Threat:9 Weapon: [BSW4](Berserk) Armor: [BSA31]
+Unit 1: R1 Attack:8 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW25](Smoke Shot) Armor: [BSA9]
+Unit 2: R2 Attack:6 Defense:3 HP:13 Speed:2 Threat:9 Weapon: [BSW31](Wrist Shot) Armor: [BSA47]
+Unit 3: R3 Attack:3 Defense:0 HP:12 Speed:3 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA17]
+Unit 4: R4 Attack:5 Defense:0 HP:7 Speed:6 Threat:5 Weapon: [BSW36](Tetrodo) Armor: [BSA5]
+Unit 5: B0 Attack:5 Defense:11 HP:10 Speed:4 Threat:8 Weapon: [BSW12](Final Attack) Armor: [BSA12]
+Unit 6: B1 Attack:8 Defense:0 HP:12 Speed:3 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA17]
+Unit 7: B2 Attack:4 Defense:-1 HP:10 Speed:4 Threat:6 Weapon: [BSW47](Cheer) Armor: [BSA6]
+Unit 8: B3 Attack:7 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW26](Double Shot) Armor: [BSA9]
+Unit 9: B4 Attack:7 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW18](Killing Spree) Armor: [BSA17]
 ==========================
 
 
-[Tick 4] 2 unit(s) acting
-Ranged: B2 targeting R0 (HP: 20)
-R0 HP: 20 - 19 => 1
-[A10] B2 threat changed from 10 to 9
-Melee: B3 targeting R0 (HP: 1)
-R0 HP: 15 - 15 => 0
+[Tick 2] 3 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 0 => 10
+Ranged: B3 targeting R0 (HP: 14)
+R0 HP: 14 - 3 => 11
+Ranged: B3 targeting R2 (HP: 13)
+R2 HP: 13 - 4 => 9
+Magic: R4 targeting B0 (HP: 10)
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B0 (usage: 2)
 
 
-[Tick 5] 2 unit(s) acting
-Ranged: R4 targeting B0 (HP: 20)
-B0 HP: 20 - 14 => 6
-Melee: B0 targeting R2 (HP: 20)
-R2 HP: 20 - 12 => 8
-[BOON] Applied Poison Effect to R2 (Usage: 3)
-[A28] B0 applied Poison Effect to R2 (usage: 3)
-  -> R2 (ranged) delayed by 1 tick(s) due to 12/20 damage!
+[Tick 3] 3 unit(s) acting
+Ranged: B4 targeting R0 (HP: 11)
+R0 HP: 11 - 3 => 8
+Melee: B0 targeting R0 (HP: 8)
+R0 HP: 12 - 12 => 0
+[A12] B0 defense changed from 11 to 0
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 HP: 10 - 5 => 5
+Magic: B2 targeting B2 (HP: 10)
+[A34] B2 attack changed from 4 to 6
 
 
-[Tick 8] 2 unit(s) acting
-Ranged: B2 targeting R2 (HP: 8)
-R2 HP: 18 - 18 => 0
-[A10] B2 threat changed from 9 to 8
-Melee: B3 targeting R3 (HP: 21)
-R3 HP: 21 - 12 => 9
+[Tick 4] 5 unit(s) acting
+Ranged: B3 targeting R2 (HP: 9)
+R2 HP: 9 - 4 => 5
+Ranged: B3 targeting R3 (HP: 12)
+R3 HP: 12 - 7 => 5
+  -> R3 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 10)
+B2 HP: 10 - 9 => 1
+  -> B2 (magic) tick reset due to ranged attack!
+Melee: B1 targeting R2 (HP: 5)
+B1 HP: 12 - 3 => 9
+R2 HP: 8 - 8 => 0
+Magic: R4 targeting B2 (HP: 1)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R4 applied Tetrodo Effect to B2 (usage: 2)
 
 
-[Tick 10] 3 unit(s) acting
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 14 - 14 => 0
-Magic: B4 targeting R1 (HP: 20)
-[BOON] Applied Tetrodo Effect to R1 (Usage: 2)
-[A28] B4 applied Tetrodo Effect to R1 (usage: 2)
-
-
-[Tick 12] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 9)
-R3 HP: 16 - 16 => 0
-[A10] B2 threat changed from 8 to 7
-Melee: B3 targeting R1 (HP: 20)
-R1 HP: 20 - 16 => 4
-  -> R1 (ranged) delayed by 1 tick(s) due to 16/20 damage!
-
-
-[Tick 15] 1 unit(s) acting
-Ranged: R4 targeting B1 (HP: 22)
-B1 HP: 22 - 14 => 8
-  -> B1 (magic) tick reset due to ranged attack!
-
-
-[Tick 16] 2 unit(s) acting
-Ranged: B2 targeting R1 (HP: 4)
-R1 HP: 20 - 20 => 0
-[A10] B2 threat changed from 7 to 6
-Melee: B3 targeting R4 (HP: 18)
-R4 HP: 18 - 15 => 3
-  -> R4 (ranged) delayed by 1 tick(s) due to 15/18 damage!
-
-
-[Tick 20] 3 unit(s) acting
-Ranged: B2 targeting R4 (HP: 3)
-R4 HP: 19 - 19 => 0
-[A10] B2 threat changed from 6 to 5
+[Tick 6] 5 unit(s) acting
+Ranged: B4 targeting R3 (HP: 5)
+R3 HP: 7 - 7 => 0
+[AFTER-ACTION] B4 performs after-action on R4 (threat: 5)
+R4 HP: 7 - 7 => 0
+Ranged: B3 targeting R1 (HP: 10)
+R1 HP: 10 - 9 => 1
+Ranged: R1 targeting B2 (HP: 1)
+B2 HP: 9 - 9 => 0
+Melee: B0 targeting R1 (HP: 1)
+R1 HP: 7 - 7 => 0
+[A12] B0 defense changed from 0 to 0
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 0)
+[BOON] Tetrodo Effect triggered on B0 (Usage: 1/2)
+[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
+B0 HP: 5 - 5 => 0
+[BOON] Tetrodo Effect expired on B0 - cleaned up
+  -> B0 died during after-actions, stopping further actions
 Battle Over! Blue Team wins!

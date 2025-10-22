@@ -73,10 +73,11 @@ float GeneticBalancingProcessor::CosineSimilarity(std::vector<Stat> targetStats)
     }
 
     float mag_float = std::sqrt(static_cast<float>(targetMagnitude));
-    float cosineChange = static_cast<float>(dotProduct) / (firstMagnitude * mag_float);
-    float inverse = 1.0f - cosineChange;
+    float cosineSimilarity =
+        static_cast<float>(dotProduct) / (std::sqrt(static_cast<float>(firstMagnitude)) * mag_float);
+    float similarityScore = (cosineSimilarity + 1.0f) / 2.0f;
 
-    return std::round(inverse * 1000.0f) / 1000.0f;
+    return std::round(similarityScore * 1000.0f) / 1000.0f;
 }
 
 std::vector<float> GeneticBalancingProcessor::GetAverageWinrate(std::vector<TestSubject *> testSubjects) {

@@ -1,75 +1,52 @@
-Unit 0: R0 Attack:17 Defense:4 HP:20 Speed:-1 Threat:15 Weapon: [BSW16](Killer's Spirit) Armor: [BSA31]
-Unit 1: R1 Attack:14 Defense:3 HP:20 Speed:2 Threat:11 Weapon: [BSW24](Boost Acuity) Armor: [BSA21]
-Unit 2: R2 Attack:15 Defense:0 HP:24 Speed:3 Threat:10 Weapon: [BSW4](Berserk) Armor: [BSA8]
-Unit 3: R3 Attack:15 Defense:3 HP:24 Speed:1 Threat:10 Weapon: [BSW4](Berserk) Armor: [BSA21]
-Unit 4: R4 Attack:17 Defense:4 HP:22 Speed:-1 Threat:16 Weapon: [BSW16](Killer's Spirit) Armor: [BSA40]
-Unit 5: B0 Attack:14 Defense:2 HP:20 Speed:-1 Threat:14 Weapon: [BSW35](Chain Lightning) Armor: [BSA30]
-Unit 6: B1 Attack:12 Defense:3 HP:22 Speed:1 Threat:12 Weapon: [BSW31](Wrist Shot) Armor: [BSA41]
-Unit 7: B2 Attack:15 Defense:2 HP:20 Speed:-1 Threat:10 Weapon: [BSW19](Momentum) Armor: [BSA30]
-Unit 8: B3 Attack:13 Defense:3 HP:22 Speed:1 Threat:12 Weapon: [BSW23](All-Out Assault) Armor: [BSA41]
-Unit 9: B4 Attack:13 Defense:1 HP:18 Speed:2 Threat:8 Weapon: [BSW2](Chop) Armor: [BSA18]
+Unit 0: R0 Attack:7 Defense:-2 HP:10 Speed:7 Threat:7 Weapon: [BSW31](Wrist Shot) Armor: [BSA3]
+Unit 1: R1 Attack:5 Defense:0 HP:8 Speed:5 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA4]
+Unit 2: R2 Attack:10 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW30](Fire Arrow) Armor: [BSA25]
+Unit 3: R3 Attack:7 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW32](Focus Throw) Armor: [BSA18]
+Unit 4: R4 Attack:9 Defense:3 HP:12 Speed:2 Threat:7 Weapon: [BSW1](Slash) Armor: [BSA44]
+Unit 5: B0 Attack:8 Defense:4 HP:14 Speed:2 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA37]
+Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:4 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA9]
+Unit 7: B2 Attack:11 Defense:2 HP:10 Speed:1 Threat:9 Weapon: [BSW16](Killer's Spirit) Armor: [BSA30]
+Unit 8: B3 Attack:9 Defense:0 HP:8 Speed:5 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA15]
+Unit 9: B4 Attack:7 Defense:3 HP:12 Speed:1 Threat:11 Weapon: [BSW35](Chain Lightning) Armor: [BSA41]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Melee: R2 targeting B0 (HP: 20)
-R2 HP: 24 - 2 => 22
-B0 HP: 20 - 13 => 7
-[A02] B0 defense changed from 2 to 1
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 60] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 12)
+B4 HP: 12 - 4 => 8
+[A25] B4 attack reduced from 7 to 5 (damage: 4, reduction: 2)
+  -> B4 (magic) tick reset due to ranged attack!
 
 
-[Tick 3] 2 unit(s) acting
-Ranged: R1 targeting B0 (HP: 7)
-B0 HP: 12 - 12 => 0
-Melee: B4 targeting R4 (HP: 22)
-R4 HP: 22 - 9 => 13
-[A02] R4 defense changed from 4 to 3
+[Tick 84] 3 unit(s) acting
+Ranged: R3 targeting B4 (HP: 8)
+B4 HP: 8 - 6 => 2
+  -> B4 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R1 (HP: 8)
+R1 HP: 11 - 11 => 0
 
 
-[Tick 4] 1 unit(s) acting
-Melee: R2 targeting B1 (HP: 22)
-R2 HP: 22 - 2 => 20
-B1 HP: 22 - 12 => 10
-[A02] B1 defense changed from 3 to 2
-  -> B1 (ranged) delayed by 1 tick(s) due to 12/22 damage!
+[Tick 105] 1 unit(s) acting
+Magic: B1 targeting R0 (HP: 10)
+[A34] R0 attack changed from 7 to 6
+Magic: B1 targeting R4 (HP: 12)
+[A34] R4 attack changed from 9 to 8
 
 
-[Tick 6] 3 unit(s) acting
-Ranged: R1 targeting B1 (HP: 10)
-B1 HP: 13 - 13 => 0
-Melee: R2 targeting B3 (HP: 22)
-R2 HP: 20 - 2 => 18
-B3 HP: 22 - 12 => 10
-[A02] B3 defense changed from 3 to 2
-  -> B3 (ranged) delayed by 1 tick(s) due to 12/22 damage!
-Melee: R3 targeting B3 (HP: 10)
-R3 HP: 24 - 2 => 22
-B3 HP: 13 - 13 => 0
-[A02] B3 defense changed from 2 to 1
+[Tick 120] 1 unit(s) acting
+Ranged: R0 targeting B4 (HP: 2)
+B4 HP: 3 - 3 => 0
+[A25] B4 attack reduced from 5 to 4 (damage: 3, reduction: 1)
 
 
-[Tick 8] 1 unit(s) acting
-Melee: R2 targeting B2 (HP: 20)
-R2 HP: 18 - 2 => 16
-B2 HP: 20 - 13 => 7
-[A02] B2 defense changed from 2 to 1
-  -> B2 (ranged) delayed by 1 tick(s) due to 13/20 damage!
+[Tick 140] 1 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 9 => 1
 
 
-[Tick 9] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 7)
-B2 HP: 12 - 12 => 0
-
-
-[Tick 10] 1 unit(s) acting
-Melee: R2 targeting B4 (HP: 18)
-R2 HP: 16 - 2 => 14
-B4 HP: 18 - 14 => 4
-[A02] B4 defense changed from 1 to 0
-
-
-[Tick 12] 3 unit(s) acting
-Ranged: R1 targeting B4 (HP: 4)
-B4 HP: 16 - 16 => 0
-Battle Over! Red Team wins!
+[Tick 168] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 10)
+R0 HP: 13 - 13 => 0
+Ranged: R3 targeting B2 (HP: 1)
+B2 HP: 7 - 7 => 0
+Battle Over! Tick limit reached (200 ticks elapsed)

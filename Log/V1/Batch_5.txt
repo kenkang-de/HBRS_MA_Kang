@@ -1,73 +1,61 @@
-Unit 0: R0 Attack:13 Defense:3 HP:20 Speed:2 Threat:9 Weapon: [BSW20](Blitz Shot) Armor: [BSA21]
-Unit 1: R1 Attack:13 Defense:0 HP:20 Speed:1 Threat:8 Weapon: [BSW23](All-Out Assault) Armor: [BSA35]
-Unit 2: R2 Attack:11 Defense:-2 HP:20 Speed:4 Threat:12 Weapon: [BSW40](Grace) Armor: [BSA3]
-Unit 3: R3 Attack:11 Defense:5 HP:20 Speed:-2 Threat:15 Weapon: [BSW46](Protect) Armor: [BSA45]
-Unit 4: R4 Attack:12 Defense:1 HP:20 Speed:4 Threat:10 Weapon: [BSW31](Wrist Shot) Armor: [BSA12]
-Unit 5: B0 Attack:13 Defense:1 HP:18 Speed:2 Threat:8 Weapon: [BSW5](Overpower) Armor: [BSA18]
-Unit 6: B1 Attack:11 Defense:0 HP:20 Speed:4 Threat:10 Weapon: [BSW27](Tripple Shot) Armor: [BSA1]
-Unit 7: B2 Attack:13 Defense:3 HP:17 Speed:1 Threat:9 Weapon: [BSW27](Tripple Shot) Armor: [BSA23]
-Unit 8: B3 Attack:10 Defense:3 HP:25 Speed:-2 Threat:15 Weapon: [BSW45](Fatigue) Armor: [BSA47]
-Unit 9: B4 Attack:13 Defense:0 HP:17 Speed:5 Threat:11 Weapon: [BSW7](Poison Attack) Armor: [BSA5]
+Unit 0: R0 Attack:4 Defense:-1 HP:12 Speed:5 Threat:9 Weapon: [BSW45](Fatigue) Armor: [BSA2]
+Unit 1: R1 Attack:7 Defense:0 HP:10 Speed:4 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA14]
+Unit 2: R2 Attack:6 Defense:0 HP:10 Speed:4 Threat:8 Weapon: [BSW37](Freeze) Armor: [BSA11]
+Unit 3: R3 Attack:4 Defense:1 HP:10 Speed:7 Threat:7 Weapon: [BSW38](Healing Touch) Armor: [BSA12]
+Unit 4: R4 Attack:3 Defense:0 HP:10 Speed:4 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA10]
+Unit 5: B0 Attack:8 Defense:6 HP:10 Speed:2 Threat:11 Weapon: [BSW9](Blitz Attack) Armor: [BSA42]
+Unit 6: B1 Attack:7 Defense:1 HP:10 Speed:6 Threat:7 Weapon: [BSW24](Boost Acuity) Armor: [BSA12]
+Unit 7: B2 Attack:6 Defense:1 HP:10 Speed:1 Threat:8 Weapon: [BSW50](Corrosion) Armor: [BSA33]
+Unit 8: B3 Attack:3 Defense:1 HP:8 Speed:3 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA18]
+Unit 9: B4 Attack:9 Defense:0 HP:6 Speed:5 Threat:2 Weapon: [BSW21](Poison Arrow) Armor: [BSA16]
 ==========================
 
 
-[Tick 4] 1 unit(s) acting
-Melee: B4 targeting R3 (HP: 20)
-R3 HP: 20 - 8 => 12
-[BOON] Applied Poison Effect to R3 (Usage: 3)
-[A28] B4 applied Poison Effect to R3 (usage: 3)
-  -> R3 (magic) tick reset due to melee attack!
+[Tick 60] 1 unit(s) acting
+Magic: R3 targeting R0 (HP: 12)
+[HEAL] R0 healed for 0 HP (from 12 to 12/12)
+[A29] R3 healed R0 for 5 HP
 
 
-[Tick 5] 3 unit(s) acting
-Ranged: B1 targeting R3 (HP: 12)
-R3 HP: 12 - 6 => 6
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R2 (HP: 20)
-R2 HP: 20 - 13 => 7
+[Tick 70] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 12)
+R0 HP: 13 - 13 => 0
+
+
+[Tick 84] 1 unit(s) acting
+Ranged: B4 targeting R2 (HP: 10)
+R2 HP: 10 - 9 => 1
+[BOON] Applied Poison Effect to R2 (Usage: 2)
+[A28] B4 applied Poison Effect to R2 (usage: 2)
   -> R2 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R4 (HP: 20)
-R4 HP: 20 - 10 => 10
-Ranged: R4 targeting B3 (HP: 25)
-B3 HP: 25 - 9 => 16
-[A25] B3 attack reduced from 10 to 6 (damage: 9, reduction: 4)
-  -> B3 (magic) tick reset due to ranged attack!
 
 
-[Tick 8] 1 unit(s) acting
-Melee: B4 targeting R3 (HP: 6)
-R3 HP: 8 - 8 => 0
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B4 applied Poison Effect to R3 (usage: 3)
+[Tick 105] 2 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 1 => 9
+Magic: R4 targeting R2 (HP: 1)
+[BOON] Applied BulkupSTART to R2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 10] 5 unit(s) acting
-Ranged: R0 targeting B3 (HP: 16)
-B3 HP: 16 - 12 => 4
-  -> B3 (magic) tick reset due to ranged attack!
-Ranged: R4 targeting B3 (HP: 4)
-B3 HP: 9 - 9 => 0
-[A25] B3 attack reduced from 6 to 2 (damage: 9, reduction: 4)
-Ranged: B1 targeting R2 (HP: 7)
-R2 HP: 13 - 13 => 0
-Ranged: B1 targeting R4 (HP: 10)
-R4 HP: 10 - 10 => 0
-Ranged: B1 targeting R0 (HP: 20)
-R0 HP: 20 - 8 => 12
-Melee: B0 targeting R0 (HP: 12)
-R0 HP: 12 - 10 => 2
-R0 HP: 10 - 10 => 0
+[Tick 120] 1 unit(s) acting
+Magic: R3 targeting R2 (HP: 1)
+[HEAL] R2 healed for 5 HP (from 1 to 6/10)
+[A29] R3 healed R2 for 5 HP
 
 
-[Tick 12] 1 unit(s) acting
-Melee: B4 targeting R1 (HP: 20)
-R1 HP: 20 - 13 => 7
-[BOON] Applied Poison Effect to R1 (Usage: 3)
-[A28] B4 applied Poison Effect to R1 (usage: 3)
-  -> R1 (ranged) delayed by 1 tick(s) due to 13/20 damage!
+[Tick 140] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 6)
+R2 HP: 11 - 11 => 0
+Magic: B3 targeting B0 (HP: 9)
+[BOON] Applied BulkupSTART to B0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 15] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 7)
-R1 HP: 11 - 11 => 0
-Battle Over! Blue Team wins!
+[Tick 168] 1 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 8 => 2
+[BOON] Applied Poison Effect to R3 (Usage: 2)
+[A28] B4 applied Poison Effect to R3 (usage: 2)
+  -> R3 (magic) tick reset due to ranged attack!
+Battle Over! Tick limit reached (200 ticks elapsed)

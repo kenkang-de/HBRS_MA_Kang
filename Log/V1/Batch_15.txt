@@ -1,88 +1,89 @@
-Unit 0: R0 Attack:15 Defense:4 HP:20 Speed:1 Threat:12 Weapon: [BSW1](Slash) Armor: [BSA31]
-Unit 1: R1 Attack:14 Defense:0 HP:20 Speed:3 Threat:10 Weapon: [BSW11](Fade Attack) Armor: [BSA10]
-Unit 2: R2 Attack:15 Defense:0 HP:16 Speed:3 Threat:7 Weapon: [BSW31](Wrist Shot) Armor: [BSA16]
-Unit 3: R3 Attack:8 Defense:3 HP:20 Speed:0 Threat:11 Weapon: [BSW37](Freeze) Armor: [BSA22]
-Unit 4: R4 Attack:15 Defense:1 HP:20 Speed:-1 Threat:9 Weapon: [BSW18](Killing Spree) Armor: [BSA43]
-Unit 5: B0 Attack:16 Defense:2 HP:25 Speed:-2 Threat:12 Weapon: [BSW10](Reckless Attack) Armor: [BSA49]
-Unit 6: B1 Attack:14 Defense:2 HP:25 Speed:0 Threat:12 Weapon: [BSW24](Boost Acuity) Armor: [BSA49]
-Unit 7: B2 Attack:16 Defense:-2 HP:20 Speed:4 Threat:10 Weapon: [BSW13](Prep Attack) Armor: [BSA9]
-Unit 8: B3 Attack:11 Defense:3 HP:22 Speed:2 Threat:11 Weapon: [BSW8](Charge Attack) Armor: [BSA22]
-Unit 9: B4 Attack:12 Defense:1 HP:17 Speed:1 Threat:10 Weapon: [BSW35](Chain Lightning) Armor: [BSA19]
+Unit 0: R0 Attack:6 Defense:3 HP:13 Speed:1 Threat:8 Weapon: [BSW34](Wind Blade) Armor: [BSA47]
+Unit 1: R1 Attack:7 Defense:4 HP:15 Speed:2 Threat:8 Weapon: [BSW20](Blitz Shot) Armor: [BSA50]
+Unit 2: R2 Attack:5 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW36](Tetrodo) Armor: [BSA44]
+Unit 3: R3 Attack:3 Defense:1 HP:7 Speed:3 Threat:4 Weapon: [BSW50](Corrosion) Armor: [BSA19]
+Unit 4: R4 Attack:8 Defense:-1 HP:10 Speed:2 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA32]
+Unit 5: B0 Attack:7 Defense:2 HP:10 Speed:3 Threat:8 Weapon: [BSW7](Poison Attack) Armor: [BSA30]
+Unit 6: B1 Attack:8 Defense:-2 HP:10 Speed:7 Threat:4 Weapon: [BSW17](Shoot) Armor: [BSA9]
+Unit 7: B2 Attack:13 Defense:1 HP:6 Speed:2 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA26]
+Unit 8: B3 Attack:8 Defense:3 HP:9 Speed:4 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA23]
+Unit 9: B4 Attack:6 Defense:1 HP:7 Speed:6 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA19]
 ==========================
 
 
-[Tick 3] 1 unit(s) acting
-Melee: B2 targeting R0 (HP: 20)
-R0 HP: 20 - 12 => 8
+[Tick 12] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 5 => 8
+  -> R0 (magic) tick reset due to ranged attack!
 
 
-[Tick 4] 2 unit(s) acting
-Ranged: R2 targeting B0 (HP: 25)
-B0 HP: 25 - 13 => 12
-[A25] B0 attack reduced from 16 to 10 (damage: 13, reduction: 6)
-Melee: R1 targeting B0 (HP: 12)
-B0 HP: 12 - 12 => 0
-[A10] R1 threat changed from 10 to 9
+[Tick 14] 1 unit(s) acting
+Ranged: B4 targeting R0 (HP: 8)
+R0 HP: 8 - 3 => 5
+  -> R0 (magic) tick reset due to ranged attack!
 
 
-[Tick 6] 2 unit(s) acting
-Melee: B2 targeting R0 (HP: 8)
-R0 HP: 12 - 12 => 0
-Melee: B3 targeting R3 (HP: 20)
-R3 HP: 20 - 15 => 5
-  -> R3 (magic) tick reset due to melee attack!
+[Tick 21] 1 unit(s) acting
+Melee: B3 targeting R0 (HP: 5)
+R0 HP: 8 - 8 => 0
 
 
-[Tick 8] 2 unit(s) acting
-Ranged: R2 targeting B1 (HP: 25)
-B1 HP: 25 - 13 => 12
-[A25] B1 attack reduced from 14 to 8 (damage: 13, reduction: 6)
-Melee: R1 targeting B1 (HP: 12)
-B1 HP: 12 - 12 => 0
-[A10] R1 threat changed from 9 to 8
+[Tick 24] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 15)
+R1 HP: 15 - 4 => 11
 
 
-[Tick 9] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 5)
-R3 HP: 13 - 13 => 0
+[Tick 28] 3 unit(s) acting
+Ranged: B4 targeting R1 (HP: 11)
+R1 HP: 11 - 2 => 9
+Melee: B0 targeting R1 (HP: 9)
+R1 HP: 9 - 3 => 6
+[BOON] Applied Poison Effect to R1 (Usage: 3)
+[A28] B0 applied Poison Effect to R1 (usage: 3)
+Magic: R3 targeting B0 (HP: 10)
+[A34] B0 attack changed from 7 to 6
+Magic: R3 targeting B3 (HP: 9)
+[A34] B3 attack changed from 8 to 7
 
 
-[Tick 12] 5 unit(s) acting
-Ranged: R2 targeting B3 (HP: 22)
-B3 HP: 22 - 12 => 10
-[A25] B3 attack reduced from 11 to 5 (damage: 12, reduction: 6)
-Melee: R1 targeting B3 (HP: 10)
-B3 HP: 11 - 11 => 0
-[A10] R1 threat changed from 8 to 7
-Melee: B2 targeting R4 (HP: 20)
-R4 HP: 20 - 15 => 5
-  -> R4 (ranged) delayed by 1 tick(s) due to 15/20 damage!
-Magic: B4 targeting R1 (HP: 20)
-R1 HP: 20 - 12 => 8
-Magic: B4 targeting R2 (HP: 16)
-R2 HP: 16 - 12 => 4
+[Tick 36] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 6)
+R1 HP: 6 - 4 => 2
 
 
-[Tick 15] 1 unit(s) acting
-Melee: B2 targeting R4 (HP: 5)
-R4 HP: 15 - 15 => 0
+[Tick 42] 5 unit(s) acting
+Ranged: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 7 => 3
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 8)
+[BOON] Poison Effect triggered on R1 (Usage: 3/3)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 HP: 5 - 5 => 0
+  -> R1 died during after-actions, stopping further actions
+Melee: B2 targeting R2 (HP: 12)
+R2 HP: 12 - 10 => 2
+  -> R2 (magic) tick reset due to melee attack!
+Melee: B3 targeting R2 (HP: 2)
+R2 HP: 7 - 7 => 0
+Magic: R4 targeting B0 (HP: 3)
+B0 HP: 8 - 8 => 0
+Magic: R4 targeting B3 (HP: 9)
+B3 HP: 9 - 8 => 1
 
 
-[Tick 16] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 20)
-B2 HP: 20 - 17 => 3
-[A25] B2 attack reduced from 16 to 8 (damage: 17, reduction: 8)
-Melee: R1 targeting B2 (HP: 3)
-B2 HP: 16 - 16 => 0
-[A10] R1 threat changed from 7 to 6
+[Tick 48] 1 unit(s) acting
+Ranged: B1 targeting R3 (HP: 7)
+R3 HP: 7 - 7 => 0
 
 
-[Tick 20] 2 unit(s) acting
-Ranged: R2 targeting B4 (HP: 17)
-B4 HP: 17 - 14 => 3
-[A25] B4 attack reduced from 12 to 5 (damage: 14, reduction: 7)
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: R1 targeting B4 (HP: 3)
-B4 HP: 13 - 13 => 0
-[A10] R1 threat changed from 6 to 5
-Battle Over! Red Team wins!
+[Tick 56] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 10)
+R4 HP: 10 - 7 => 3
+  -> R4 (magic) tick reset due to ranged attack!
+
+
+[Tick 60] 1 unit(s) acting
+Ranged: B1 targeting R4 (HP: 3)
+R4 HP: 9 - 9 => 0
+Battle Over! Blue Team wins!

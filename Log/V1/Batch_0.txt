@@ -1,109 +1,56 @@
-Unit 0: R0 Attack:11 Defense:1 HP:21 Speed:3 Threat:10 Weapon: [BSW33](Magic Bolt) Armor: [BSA13]
-Unit 1: R1 Attack:16 Defense:1 HP:18 Speed:0 Threat:7 Weapon: [BSW19](Momentum) Armor: [BSA25]
-Unit 2: R2 Attack:10 Defense:2 HP:22 Speed:0 Threat:11 Weapon: [BSW43](Vow) Armor: [BSA24]
-Unit 3: R3 Attack:11 Defense:0 HP:17 Speed:4 Threat:9 Weapon: [BSW36](Tetrodo) Armor: [BSA5]
-Unit 4: R4 Attack:11 Defense:5 HP:25 Speed:0 Threat:15 Weapon: [BSW23](All-Out Assault) Armor: [BSA48]
-Unit 5: B0 Attack:11 Defense:4 HP:22 Speed:2 Threat:15 Weapon: [BSW42](Haste) Armor: [BSA40]
-Unit 6: B1 Attack:13 Defense:0 HP:17 Speed:5 Threat:10 Weapon: [BSW31](Wrist Shot) Armor: [BSA5]
-Unit 7: B2 Attack:15 Defense:1 HP:18 Speed:3 Threat:7 Weapon: [BSW17](Shoot) Armor: [BSA25]
-Unit 8: B3 Attack:13 Defense:-1 HP:20 Speed:4 Threat:10 Weapon: [BSW24](Boost Acuity) Armor: [BSA6]
-Unit 9: B4 Attack:15 Defense:0 HP:20 Speed:-1 Threat:9 Weapon: [BSW14](Leech Attack) Armor: [BSA35]
+Unit 0: R0 Attack:5 Defense:-2 HP:10 Speed:5 Threat:8 Weapon: [BSW37](Freeze) Armor: [BSA3]
+Unit 1: R1 Attack:5 Defense:5 HP:10 Speed:0 Threat:13 Weapon: [BSW49](Earthquake) Armor: [BSA45]
+Unit 2: R2 Attack:8 Defense:1 HP:10 Speed:3 Threat:7 Weapon: [BSW22](Delay Shot) Armor: [BSA33]
+Unit 3: R3 Attack:8 Defense:1 HP:11 Speed:2 Threat:8 Weapon: [BSW7](Poison Attack) Armor: [BSA46]
+Unit 4: R4 Attack:7 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW1](Slash) Armor: [BSA1]
+Unit 5: B0 Attack:9 Defense:0 HP:12 Speed:2 Threat:6 Weapon: [BSW2](Chop) Armor: [BSA38]
+Unit 6: B1 Attack:5 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW37](Freeze) Armor: [BSA8]
+Unit 7: B2 Attack:7 Defense:4 HP:10 Speed:2 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA31]
+Unit 8: B3 Attack:5 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW50](Corrosion) Armor: [BSA8]
+Unit 9: B4 Attack:9 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA43]
 ==========================
 
 
-[Tick 12] 1 unit(s) acting
-Ranged: B1 targeting R4 (HP: 25)
-R4 HP: 25 - 8 => 17
-[A25] R4 attack reduced from 11 to 7 (damage: 8, reduction: 4)
+[Tick 60] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 10)
+B2 HP: 10 - 3 => 7
 
 
-[Tick 15] 2 unit(s) acting
-Ranged: B3 targeting R4 (HP: 17)
-R4 HP: 17 - 8 => 9
-Magic: R3 targeting B0 (HP: 22)
-[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B0 (usage: 2)
+[Tick 84] 1 unit(s) acting
+Magic: R0 targeting B2 (HP: 7)
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 20] 2 unit(s) acting
-Ranged: B2 targeting R4 (HP: 9)
-R4 HP: 10 - 10 => 0
-Magic: R0 targeting B0 (HP: 22)
-B0 HP: 22 - 5 => 17
+[Tick 105] 2 unit(s) acting
+Magic: B3 targeting R1 (HP: 10)
+[A34] R1 attack changed from 5 to 4
+Magic: B3 targeting R0 (HP: 10)
+[A34] R0 attack changed from 5 to 4
+Magic: B1 targeting R1 (HP: 10)
+[BOON] Applied FreezeSTART to R1 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 24] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 22)
-R2 HP: 22 - 11 => 11
-[A25] R2 attack reduced from 10 to 5 (damage: 11, reduction: 5)
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 120] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 7)
+B2 HP: 7 - 3 => 4
 
 
-[Tick 30] 3 unit(s) acting
-Ranged: B3 targeting R2 (HP: 11)
-R2 HP: 11 - 11 => 0
-Magic: R3 targeting B0 (HP: 17)
-[BOON] Refreshing existing Tetrodo Effect on B0
-[A28] R3 applied Tetrodo Effect to B0 (usage: 2)
-Magic: B0 targeting B0 (HP: 17)
-[BOON] Applied HasteSTART to B0 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-[DEBUG] B0 processing 2 boons
-[DEBUG] Registering boon Tetrodo Effect for B0
-[DEBUG] Registering boon HasteSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 15)
-[BOON] Tetrodo Effect triggered on B0 (Usage: 2/2)
-[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
-B0 HP: 17 - 5 => 12
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 15)
-[TEMP-BUFF] HasteSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered HasteSTART
-[A19] B0 speed changed from 2 to 4
+[Tick 140] 1 unit(s) acting
+Ranged: R2 targeting B2 (HP: 4)
+B2 HP: 4 - 4 => 0
+[A20] B2 delayed by 1 intervals (210 ticks)
 
 
-[Tick 36] 1 unit(s) acting
-Ranged: B1 targeting R0 (HP: 21)
-R0 HP: 21 - 12 => 9
-[A25] R0 attack reduced from 11 to 5 (damage: 12, reduction: 6)
-  -> R0 (magic) tick reset due to ranged attack!
+[Tick 168] 1 unit(s) acting
+Magic: R0 targeting B1 (HP: 10)
+[BOON] Applied FreezeSTART to B1 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 40] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 9)
-R0 HP: 14 - 14 => 0
-
-
-[Tick 45] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 17)
-R3 HP: 17 - 17 => 0
-
-
-[Tick 48] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 18)
-R1 HP: 18 - 12 => 6
-[A25] R1 attack reduced from 16 to 10 (damage: 12, reduction: 6)
-
-
-[Tick 60] 4 unit(s) acting
-Ranged: B2 targeting R1 (HP: 6)
-R1 HP: 14 - 14 => 0
-Magic: B0 targeting B0 (HP: 12)
-[BOON] Refreshing existing HasteSTART on B0
-[REFRESH] HasteSTART duration refreshed, effect remains active
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-[DEBUG] B0 processing 2 boons
-[DEBUG] Registering boon Tetrodo Effect for B0
-[DEBUG] Registering boon HasteSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 15)
-[BOON] Tetrodo Effect triggered on B0 (Usage: 1/2)
-[EXECUTE_EFFECT] B0 triggered Tetrodo Effect
-B0 HP: 12 - 5 => 7
-[BOON] Tetrodo Effect expired on B0 - cleaned up
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 15)
-[TEMP-BUFF] HasteSTART on B0 (Remaining: 0 turns)
-[TEMP-BUFF] HasteSTART expired on B0
- - applying removal effect: HasteEND
-[EXECUTE_EFFECT] B0 triggered HasteEND
-[A19] B0 speed changed from 4 to 2
-[BOON] HasteSTART expired on B0 - cleaned up
-Battle Over! Blue Team wins!
+[Tick 180] 1 unit(s) acting
+Melee: R4 targeting B1 (HP: 10)
+B1 HP: 10 - 7 => 3
+  -> B1 (magic) tick reset due to melee attack!
+Battle Over! Tick limit reached (200 ticks elapsed)
