@@ -1,107 +1,192 @@
-Unit 0: R0 Attack:8 Defense:5 HP:10 Speed:-4 Threat:9 Weapon: [BSW37](Freeze) Armor: [BSA45]
-Unit 1: R1 Attack:19 Defense:1 HP:4 Speed:0 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA27]
-Unit 2: R2 Attack:13 Defense:-2 HP:10 Speed:3 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA3]
-Unit 3: R3 Attack:12 Defense:5 HP:15 Speed:-3 Threat:8 Weapon: [BSW18](Killing Spree) Armor: [BSA48]
-Unit 4: R4 Attack:8 Defense:3 HP:10 Speed:-3 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA28]
-Unit 5: B0 Attack:10 Defense:10 HP:10 Speed:0 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA11]
-Unit 6: B1 Attack:14 Defense:3 HP:12 Speed:-3 Threat:5 Weapon: [BSW19](Momentum) Armor: [BSA41]
-Unit 7: B2 Attack:6 Defense:0 HP:9 Speed:2 Threat:2 Weapon: [BSW20](Blitz Shot) Armor: [BSA7]
-Unit 8: B3 Attack:10 Defense:3 HP:13 Speed:-3 Threat:9 Weapon: [BSW44](Exposure) Armor: [BSA47]
-Unit 9: B4 Attack:8 Defense:3 HP:10 Speed:-2 Threat:7 Weapon: [BSW39](Healing Link) Armor: [BSA28]
+Unit 0: R0 Attack:15 Defense:4 HP:22 Speed:1 Threat:15 Weapon: [BSW9](Blitz Attack) Armor: [BSA40]
+Unit 1: R1 Attack:13 Defense:3 HP:20 Speed:0 Threat:11 Weapon: [BSW34](Wind Blade) Armor: [BSA28]
+Unit 2: R2 Attack:15 Defense:4 HP:20 Speed:-1 Threat:13 Weapon: [BSW15](Taunt) Armor: [BSA37]
+Unit 3: R3 Attack:14 Defense:1 HP:21 Speed:2 Threat:14 Weapon: [BSW35](Chain Lightning) Armor: [BSA13]
+Unit 4: R4 Attack:15 Defense:3 HP:20 Speed:1 Threat:11 Weapon: [BSW32](Focus Throw) Armor: [BSA28]
+Unit 5: B0 Attack:14 Defense:1 HP:14 Speed:0 Threat:12 Weapon: [BSW48](Meteor) Armor: [BSA27]
+Unit 6: B1 Attack:16 Defense:2 HP:25 Speed:-2 Threat:12 Weapon: [BSW14](Leech Attack) Armor: [BSA49]
+Unit 7: B2 Attack:19 Defense:3 HP:22 Speed:0 Threat:12 Weapon: [BSW29](Camo Throw) Armor: [BSA44]
+Unit 8: B3 Attack:11 Defense:-2 HP:20 Speed:4 Threat:12 Weapon: [BSW40](Grace) Armor: [BSA3]
+Unit 9: B4 Attack:12 Defense:-1 HP:20 Speed:4 Threat:9 Weapon: [BSW31](Wrist Shot) Armor: [BSA6]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Ranged: R2 targeting B3 (HP: 13)
-B3 HP: 13 - 10 => 3
-[BOON] Applied Poison Effect to B3 (Usage: 2)
-[A28] R2 applied Poison Effect to B3 (usage: 2)
-  -> B3 (magic) tick reset due to ranged attack!
+[Tick 1] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 22)
+R0 HP: 22 - 8 => 14
+[A25] R0 attack reduced from 15 to 11 (damage: 8, reduction: 4)
+Magic: B3 targeting B0 (HP: 14)
+[HEAL] B0 healed for 0 HP (from 14 to 14/14)
+[A29] B3 healed B0 for 2 HP
+Magic: B3 targeting B1 (HP: 25)
+[HEAL] B1 healed for 0 HP (from 25 to 25/25)
+[A29] B3 healed B1 for 2 HP
+Magic: B3 targeting B2 (HP: 22)
+[HEAL] B2 healed for 0 HP (from 22 to 22/22)
+[A29] B3 healed B2 for 2 HP
 
 
-[Tick 3] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 10)
-R0 HP: 10 - 3 => 7
-  -> R0 (magic) tick reset due to ranged attack!
+[Tick 2] 3 unit(s) acting
+Ranged: B4 targeting R0 (HP: 14)
+R0 HP: 14 - 8 => 6
+[A25] R0 attack reduced from 11 to 7 (damage: 8, reduction: 4)
+Magic: R3 targeting B0 (HP: 14)
+B0 HP: 14 - 14 => 0
+Magic: R3 targeting B1 (HP: 25)
+B1 HP: 25 - 14 => 11
+Magic: R3 targeting B2 (HP: 22)
+B2 HP: 22 - 14 => 8
+Magic: B3 targeting B1 (HP: 11)
+[HEAL] B1 healed for 2 HP (from 11 to 13/25)
+[A29] B3 healed B1 for 2 HP
+Magic: B3 targeting B2 (HP: 8)
+[HEAL] B2 healed for 2 HP (from 8 to 10/22)
+[A29] B3 healed B2 for 2 HP
 
 
-[Tick 4] 1 unit(s) acting
-Ranged: R2 targeting B3 (HP: 3)
-B3 HP: 10 - 10 => 0
-[BOON] Refreshing existing Poison Effect on B3
-[A28] R2 applied Poison Effect to B3 (usage: 2)
+[Tick 3] 2 unit(s) acting
+Ranged: B4 targeting R0 (HP: 6)
+R0 HP: 8 - 8 => 0
+[A25] R0 attack reduced from 7 to 3 (damage: 8, reduction: 4)
+Magic: B3 targeting B1 (HP: 13)
+[HEAL] B1 healed for 2 HP (from 13 to 15/25)
+[A29] B3 healed B1 for 2 HP
+Magic: B3 targeting B2 (HP: 10)
+[HEAL] B2 healed for 2 HP (from 10 to 12/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
+
+
+[Tick 4] 4 unit(s) acting
+Ranged: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 15 => 0
+Ranged: B4 targeting R3 (HP: 21)
+R3 HP: 21 - 11 => 10
+[A25] R3 attack reduced from 14 to 9 (damage: 11, reduction: 5)
+  -> R3 (magic) tick reset due to ranged attack!
+Magic: B3 targeting B2 (HP: 12)
+[HEAL] B2 healed for 2 HP (from 12 to 14/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
+
+
+[Tick 5] 2 unit(s) acting
+Ranged: B4 targeting R3 (HP: 10)
+R3 HP: 11 - 11 => 0
+[A25] R3 attack reduced from 9 to 4 (damage: 11, reduction: 5)
+Magic: B3 targeting B2 (HP: 14)
+[HEAL] B2 healed for 2 HP (from 14 to 16/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
 [Tick 6] 2 unit(s) acting
-Ranged: B2 targeting R0 (HP: 7)
-R0 HP: 7 - 3 => 4
-  -> R0 (magic) tick reset due to ranged attack!
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 3 => 7
-[BOON] Applied Poison Effect to B0 (Usage: 2)
-[A28] R2 applied Poison Effect to B0 (usage: 2)
+Ranged: B4 targeting R2 (HP: 20)
+R2 HP: 20 - 8 => 12
+[A25] R2 attack reduced from 15 to 11 (damage: 8, reduction: 4)
+Magic: B3 targeting B2 (HP: 16)
+[HEAL] B2 healed for 2 HP (from 16 to 18/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 8] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 7)
-B0 HP: 7 - 3 => 4
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R2 applied Poison Effect to B0 (usage: 2)
+[Tick 7] 2 unit(s) acting
+Ranged: B4 targeting R2 (HP: 12)
+R2 HP: 12 - 8 => 4
+[A25] R2 attack reduced from 11 to 7 (damage: 8, reduction: 4)
+Magic: B3 targeting B2 (HP: 18)
+[HEAL] B2 healed for 2 HP (from 18 to 20/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 9] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 4)
-R0 HP: 4 - 3 => 1
-  -> R0 (magic) tick reset due to ranged attack!
+[Tick 8] 3 unit(s) acting
+Ranged: R4 targeting B2 (HP: 20)
+B2 HP: 20 - 14 => 6
+Ranged: B4 targeting R2 (HP: 4)
+R2 HP: 8 - 8 => 0
+[A25] R2 attack reduced from 7 to 3 (damage: 8, reduction: 4)
+Magic: B3 targeting B2 (HP: 6)
+[HEAL] B2 healed for 2 HP (from 6 to 8/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 10] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 4)
-B0 HP: 4 - 3 => 1
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R2 applied Poison Effect to B0 (usage: 2)
+[Tick 9] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 20)
+R1 HP: 20 - 9 => 11
+[A25] R1 attack reduced from 13 to 9 (damage: 9, reduction: 4)
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: B3 targeting B2 (HP: 8)
+[HEAL] B2 healed for 2 HP (from 8 to 10/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 12] 2 unit(s) acting
-Ranged: B2 targeting R0 (HP: 1)
-R0 HP: 3 - 3 => 0
-Ranged: R2 targeting B0 (HP: 1)
-B0 HP: 3 - 3 => 0
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R2 applied Poison Effect to B0 (usage: 2)
+[Tick 10] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 11)
+R1 HP: 11 - 9 => 2
+[A25] R1 attack reduced from 9 to 5 (damage: 9, reduction: 4)
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: B3 targeting B2 (HP: 10)
+[HEAL] B2 healed for 2 HP (from 10 to 12/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 14] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 10 => 0
-[BOON] Applied Poison Effect to B4 (Usage: 2)
-[A28] R2 applied Poison Effect to B4 (usage: 2)
+[Tick 11] 2 unit(s) acting
+Ranged: B4 targeting R1 (HP: 2)
+R1 HP: 9 - 9 => 0
+[A25] R1 attack reduced from 5 to 1 (damage: 9, reduction: 4)
+Magic: B3 targeting B2 (HP: 12)
+[HEAL] B2 healed for 2 HP (from 12 to 14/22)
+[A29] B3 healed B2 for 2 HP
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 15] 1 unit(s) acting
-Ranged: B2 targeting R3 (HP: 15)
-R3 HP: 15 - 3 => 12
+[Tick 12] 3 unit(s) acting
+Ranged: R4 targeting B2 (HP: 14)
+B2 HP: 14 - 14 => 0
+Ranged: B4 targeting R4 (HP: 20)
+R4 HP: 20 - 9 => 11
+[A25] R4 attack reduced from 15 to 11 (damage: 9, reduction: 4)
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 16] 1 unit(s) acting
-Ranged: R2 targeting B1 (HP: 12)
-B1 HP: 12 - 10 => 2
-[BOON] Applied Poison Effect to B1 (Usage: 2)
-[A28] R2 applied Poison Effect to B1 (usage: 2)
+[Tick 13] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 11)
+R4 HP: 11 - 9 => 2
+[A25] R4 attack reduced from 11 to 7 (damage: 9, reduction: 4)
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
 
 
-[Tick 18] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 3 => 9
-Ranged: R2 targeting B1 (HP: 2)
-B1 HP: 10 - 10 => 0
-[BOON] Refreshing existing Poison Effect on B1
-[A28] R2 applied Poison Effect to B1 (usage: 2)
-
-
-[Tick 20] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 9)
-B2 HP: 13 - 13 => 0
-[BOON] Applied Poison Effect to B2 (Usage: 2)
-[A28] R2 applied Poison Effect to B2 (usage: 2)
-Battle Over! Red Team wins!
+[Tick 14] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 2)
+R4 HP: 9 - 9 => 0
+[A25] R4 attack reduced from 7 to 3 (damage: 9, reduction: 4)
+Magic: B3 targeting B4 (HP: 20)
+[HEAL] B4 healed for 0 HP (from 20 to 20/20)
+[A29] B3 healed B4 for 2 HP
+Battle Over! Blue Team wins!

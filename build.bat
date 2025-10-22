@@ -136,10 +136,17 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-echo Compiling BalancingLane.cpp...
-g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLane.cpp -o BalancingLane.o
+echo Compiling Crossover.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c Crossover.cpp -o Crossover.o
 if %ERRORLEVEL% NEQ 0 (
-    echo Failed to compile BalancingLane.cpp
+    echo Failed to compile Crossover.cpp
+    exit /b 1
+)
+
+echo Compiling Mutation.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c Mutation.cpp -o Mutation.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile Mutation.cpp
     exit /b 1
 )
 
@@ -147,6 +154,13 @@ echo Compiling BalancingLog.cpp...
 g++ %COMPILE_FLAGS% -I. -I.. -c BalancingLog.cpp -o BalancingLog.o
 if %ERRORLEVEL% NEQ 0 (
     echo Failed to compile BalancingLog.cpp
+    exit /b 1
+)
+
+echo Compiling BalancingRule.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c BalancingRule.cpp -o BalancingRule.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile BalancingRule.cpp
     exit /b 1
 )
 
@@ -177,8 +191,10 @@ g++ %LINK_FLAGS% ^
     Analysis/BalancingLogToCSV.o ^
     AutoBalancing/Chromosome.o ^
     AutoBalancing/GeneticBalancingProcessor.o ^
-    AutoBalancing/BalancingLane.o ^
+    AutoBalancing/Crossover.o ^
+    AutoBalancing/Mutation.o ^
     AutoBalancing/BalancingLog.o ^
+    AutoBalancing/BalancingRule.o ^
     -LSimulator ^
     -lsimulator ^
     -LSimulator/yaml-cpp/mingw-build ^

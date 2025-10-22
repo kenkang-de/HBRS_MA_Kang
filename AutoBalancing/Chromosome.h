@@ -3,48 +3,74 @@
 
 #include <vector>
 
-#include "BalancingLane.h"
-
-#include "../Element/Stat.h"
 #include "../Element/ElementList.h"
+#include "../Element/Stat.h"
 
 #include "../Simulator/TestSubject.h"
 
-class Chromosome
-{
-private: 
+class Chromosome {
+  private:
+    float rootMeanSquareError;
 
-float rootMeanSquareError;
+    float degreeOfChange;
 
-float degreeOfChange;
+    float fitness;
 
-float fitness;
+    bool isAppliedAll;
 
-BalancingLane* balancingLane;
+    bool survived = false;
 
-public:
+  public:
+    // Applied all at once
+    Stat appliedStat_ALL;
+    // Applied individually
+    std::vector<Stat> appliedStat_INDIVIDUAL;
 
-std::vector<Stat> appliedStats;
+    std::vector<float> averageWinrates;
 
-std::vector<float> averageWinrate;
+    Chromosome() {};
+    // First Chromosome
+    Chromosome(float RMSE) : rootMeanSquareError(RMSE) {};
+    // Applied all at once
+    Chromosome(Stat _appliedStat_ALL) : appliedStat_ALL(_appliedStat_ALL) {
+        isAppliedAll = true;
+    }
+    // Applied individually
+    Chromosome(std::vector<Stat> _appliedStat_INDIVIDUAL) : appliedStat_INDIVIDUAL(_appliedStat_INDIVIDUAL) {
+        isAppliedAll = false;
+    }
 
-//First Chromosome
-Chromosome(float RMSE) :rootMeanSquareError(RMSE) {};
+    void ApplyStatToComponents(ElementList *componentList);
 
-Chromosome(std::vector<Stat> _appliedStats) : appliedStats(_appliedStats) {};
+    float Get_Fitness() {
+        return fitness;
+    }
+    float Get_MRSE() {
+        return rootMeanSquareError;
+    }
+    float Get_DOG() {
+        return degreeOfChange;
+    }
 
-void ApplyStatToComponents(ElementList* componentList);
+    void Set_RMSE(float RMSE) {
+        rootMeanSquareError = RMSE;
+    }
+    void Set_DegreeOfChange(float value) {
+        degreeOfChange = value;
+    }
+    void Set_Fitness() {
+        fitness = rootMeanSquareError + degreeOfChange;
+    }
+    bool Get_Survived() {
+        return survived;
+    }
+    void Set_Survived(bool value) {
+        survived = value;
+    }
 
-float Get_Fitness() {return fitness;}
-float Get_MRSE() {return rootMeanSquareError;}
-float Get_DOG() {return degreeOfChange;}
-BalancingLane* Get_BalancingLane() {return balancingLane;}
-
-void Set_RMSE(float RMSE) {rootMeanSquareError = RMSE;}
-void Set_DegreeOfChange(float value) {degreeOfChange = value;}
-void Set_Fitness() {fitness = rootMeanSquareError + degreeOfChange;}
-void Set_BalancingLane(BalancingLane* balancingLaneptr) {balancingLane = balancingLaneptr;}
-
+    bool IsAppliedAll() {
+        return isAppliedAll;
+    }
 };
 
 #endif

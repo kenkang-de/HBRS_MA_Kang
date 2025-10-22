@@ -1,87 +1,70 @@
 #ifndef GENETIC_BALANCING_PROCESSOR_H
 #define GENETIC_BALANCING_PROCESSOR_H
 
-#include <iostream>
+#include <algorithm>
 #include <array>
+#include <iostream>
 #include <random>
-#include <algorithm> 
 
-#include "Chromosome.h"
-#include "BalancingRule.h"
-#include "BalancingLane.h"
 #include "BalancingLog.h"
+#include "BalancingRule.h"
+#include "Chromosome.h"
 
 #include "../Element/ElementList.h"
 
 #include "../Sampling/Batch.h"
 
-#include "../Simulator/Weapon.h"
 #include "../Simulator/Armor.h"
-#include "../Simulator/TestSubject.h"
 #include "../Simulator/Constants.h"
 #include "../Simulator/Simulator.h"
+#include "../Simulator/TestSubject.h"
+#include "../Simulator/Weapon.h"
 
 #include "../Analysis/RMSE.h"
 
+class GeneticBalancingProcessor {
 
+  public:
+    static Chromosome *firstChromosome;
 
-class GeneticBalancingProcessor
-{
+    static std::vector<Stat> firstStats;
 
-public: 
-static Chromosome* firstChromosome; 
+    static float firstMagnitude;
 
-static std::vector<Stat> firstStats;
+    static int Generation;
 
-static float firstMagnitude;
+    std::vector<Chromosome *> currentGenChromosomeList;
 
-static int Generation;
+    std::vector<Chromosome *> nextGenChromosomeList;
 
-std::vector<BalancingLane> lanes; 
-BalancingLane mutationLane;
+    void GenerateFirstChromosome(ElementList *elementList, std::vector<TestSubject *> firstSubjects);
 
-void GenerateFirstChromosome(ElementList *elementList, std::vector<TestSubject*> firstSubjects);
-void GenerateBalancingLane();
+    int CalcStatMagnitude(std::vector<Stat> stats);
+    float CosineSimilarity(std::vector<Stat> targetStats);
 
-int CalcStatMagnitude(std::vector<Stat> stats);
-float CosineSimilarity(std::vector<Stat> targetStats);
+    std::vector<float> GetAverageWinrate(std::vector<TestSubject *> testSubjects);
 
-std::vector<Stat> MergeAppliedStatLists(std::vector<Stat>& statList1, std::vector<Stat>& statList2);
-std::vector<float> MergeAverageWinrate(std::vector<float> winRates1, std::vector<float> winRates2);
-std::vector<float> GetAverageWinrate(std::vector<TestSubject*> testSubjects);
+    std::vector<Chromosome *> Instantiate_FirstGenChromosomes();
 
-void Init_AlphaBetaChromosome();
+    std::vector<Stat> EmptyStats(int componentAmount);
+    std::vector<TestSubject *> CimbineToTestSubject(std::vector<Weapon> &weapons, std::vector<Armor> &armors);
 
-std::vector<Stat> EmptyStats(int componentAmount);
+    int BuffOrNerf(float winRate);
 
-std::vector<Stat> CreateAppliedStats_ALPHA(Chromosome* chromosome, const Stat* ruleStat);
-std::vector<Stat> CreateAppliedStats_BETA(Chromosome* chromosome, const Stat* ruleStat);
+    std::vector<Stat> GetCorrectedStats(std::vector<TestSubject *> mergedTestSubjects);
 
-int BuffOrNerf(float winRate);
+    std::array<Chromosome *, 2> Pick2RandomLanes(std::vector<Chromosome *> chromosomeList);
 
-std::vector<Stat> GetCorrectedStats(std::vector<TestSubject*> mergedTestSubjects);
+    std::array<Chromosome *, 2> ParentTournament(std::vector<Chromosome *> ParentTournament);
 
-std::vector<BalancingLane*> GetAlphaLanes();
-std::vector<BalancingLane*> GetBetaLanes();
+    Chromosome *GetHighestFitnessChromosome(std::vector<Chromosome *> chromosomes);
+    Chromosome *GetHighestFitnessChromosome(std::array<Chromosome *, 2> &chromosomes);
+    Chromosome *GetLowestFitnessChromosome(std::vector<Chromosome *> chromosomes);
+    Chromosome *GetLowestFitnessChromosome(std::array<Chromosome *, 2> &chromosomes);
 
-std::array<Chromosome*,2> Pick2RandomLanes(std::vector<BalancingLane*> lanes);
-
-std::array<Chromosome*,2> ParentTournament();
-std::array<Chromosome*,2> GetDominantParent();
-Chromosome* PopulateMutation(std::array<Chromosome*,2> parentChromosomes);
-
-Chromosome* GetHighestFitnessChromosome(std::vector<Chromosome*> chromosomes);
-Chromosome* GetLowestFitnessChromosome(std::vector<Chromosome*> chromosomes);
-
-std::vector<Chromosome*> GetAllChromosomesFromLanes();
-void DeleteChromosomeAndLane(Chromosome* chromosome);
-void ReplaceRecessiveChromosome(Chromosome* recessive, Chromosome* newChromosome);
-
-void SimulateChromosome(Simulator* simulator, std::vector<Batch>* batches, Chromosome* chromosome,std::vector<TestSubject*> mergedTestSubjects);
-void RunAutoBalancing(Simulator* simulator, std::vector<Batch>* batches);
-
-std::vector<TestSubject*> MergeToTestSubject(std::vector<Weapon>& weapons,std::vector<Armor>& armors);     
-
+    void SimulateChromosome(Simulator *simulator, std::vector<Batch> *batches, Chromosome *chromosome,
+                            std::vector<TestSubject *> mergedTestSubjects);
+    void RunAutoBalancing(Simulator *simulator, std::vector<Batch> *batches);
 };
 
 #endif

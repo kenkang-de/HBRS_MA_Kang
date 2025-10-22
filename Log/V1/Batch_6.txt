@@ -1,52 +1,118 @@
-Unit 0: R0 Attack:14 Defense:2 HP:10 Speed:-2 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA36]
-Unit 1: R1 Attack:15 Defense:4 HP:10 Speed:-1 Threat:8 Weapon: [BSW9](Blitz Attack) Armor: [BSA31]
-Unit 2: R2 Attack:15 Defense:0 HP:8 Speed:0 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA15]
-Unit 3: R3 Attack:13 Defense:3 HP:14 Speed:-1 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA41]
-Unit 4: R4 Attack:16 Defense:2 HP:12 Speed:-3 Threat:7 Weapon: [BSW14](Leech Attack) Armor: [BSA39]
-Unit 5: B0 Attack:13 Defense:2 HP:15 Speed:-2 Threat:4 Weapon: [BSW26](Double Shot) Armor: [BSA49]
-Unit 6: B1 Attack:15 Defense:4 HP:10 Speed:-1 Threat:6 Weapon: [BSW1](Slash) Armor: [BSA31]
-Unit 7: B2 Attack:13 Defense:-1 HP:10 Speed:3 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA2]
-Unit 8: B3 Attack:15 Defense:1 HP:6 Speed:0 Threat:1 Weapon: [BSW21](Poison Arrow) Armor: [BSA26]
-Unit 9: B4 Attack:13 Defense:0 HP:10 Speed:2 Threat:5 Weapon: [BSW2](Chop) Armor: [BSA1]
+Unit 0: R0 Attack:12 Defense:1 HP:21 Speed:-2 Threat:12 Weapon: [BSW46](Protect) Armor: [BSA46]
+Unit 1: R1 Attack:12 Defense:3 HP:22 Speed:0 Threat:11 Weapon: [BSW27](Tripple Shot) Armor: [BSA41]
+Unit 2: R2 Attack:10 Defense:1 HP:20 Speed:5 Threat:11 Weapon: [BSW42](Haste) Armor: [BSA12]
+Unit 3: R3 Attack:11 Defense:-2 HP:20 Speed:3 Threat:12 Weapon: [BSW41](Bulkup) Armor: [BSA3]
+Unit 4: R4 Attack:14 Defense:0 HP:22 Speed:-1 Threat:13 Weapon: [BSW35](Chain Lightning) Armor: [BSA38]
+Unit 5: B0 Attack:10 Defense:3 HP:20 Speed:2 Threat:9 Weapon: [BSW20](Blitz Shot) Armor: [BSA22]
+Unit 6: B1 Attack:14 Defense:0 HP:19 Speed:3 Threat:8 Weapon: [BSW30](Fire Arrow) Armor: [BSA7]
+Unit 7: B2 Attack:10 Defense:1 HP:20 Speed:3 Threat:9 Weapon: [BSW33](Magic Bolt) Armor: [BSA12]
+Unit 8: B3 Attack:12 Defense:-1 HP:20 Speed:-1 Threat:10 Weapon: [BSW37](Freeze) Armor: [BSA32]
+Unit 9: B4 Attack:13 Defense:0 HP:18 Speed:4 Threat:10 Weapon: [BSW34](Wind Blade) Armor: [BSA4]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Ranged: B2 targeting R1 (HP: 10)
-R1 HP: 10 - 8 => 2
+[Tick 12] 1 unit(s) acting
+Magic: R2 targeting R4 (HP: 22)
+[BOON] Applied HasteSTART to R4 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 3] 1 unit(s) acting
-Melee: B4 targeting R1 (HP: 2)
-R1 HP: 9 - 9 => 0
-[A02] R1 defense changed from 4 to 3
+[Tick 15] 1 unit(s) acting
+Magic: B4 targeting R4 (HP: 22)
+R4 HP: 22 - 13 => 9
+Magic: B4 targeting R0 (HP: 21)
+R0 HP: 21 - 13 => 8
 
 
-[Tick 4] 1 unit(s) acting
-Ranged: B2 targeting R3 (HP: 14)
-R3 HP: 14 - 9 => 5
+[Tick 20] 3 unit(s) acting
+Ranged: B1 targeting R4 (HP: 9)
+R4 HP: 15 - 15 => 0
+Magic: B2 targeting R0 (HP: 8)
+R0 HP: 8 - 5 => 3
+Magic: R3 targeting R3 (HP: 20)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 12)
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
 
 
-[Tick 6] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 5)
-R3 HP: 9 - 9 => 0
-Melee: B4 targeting R4 (HP: 12)
-R4 HP: 12 - 11 => 1
-[A02] R4 defense changed from 2 to 1
+[Tick 24] 1 unit(s) acting
+Magic: R2 targeting R0 (HP: 3)
+[BOON] Applied HasteSTART to R0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 8] 1 unit(s) acting
-Ranged: B2 targeting R4 (HP: 1)
-R4 HP: 9 - 9 => 0
-
-
-[Tick 9] 1 unit(s) acting
-Melee: B4 targeting R0 (HP: 10)
+[Tick 30] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 3)
 R0 HP: 11 - 11 => 0
-[A02] R0 defense changed from 2 to 1
+Magic: B4 targeting R3 (HP: 30)
+R3 HP: 30 - 13 => 17
+Magic: B4 targeting R1 (HP: 22)
+R1 HP: 22 - 13 => 9
 
 
-[Tick 10] 1 unit(s) acting
-Ranged: B2 targeting R2 (HP: 8)
+[Tick 36] 1 unit(s) acting
+Magic: R2 targeting R3 (HP: 17)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 40] 3 unit(s) acting
+Ranged: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 11 => 6
+  -> R3 (magic) tick reset due to ranged attack!
+Magic: B2 targeting R1 (HP: 9)
+R1 HP: 9 - 5 => 4
+
+
+[Tick 45] 1 unit(s) acting
+Magic: B4 targeting R3 (HP: 6)
+R3 HP: 13 - 13 => 0
+Magic: B4 targeting R1 (HP: 4)
+R1 HP: 13 - 13 => 0
+
+
+[Tick 48] 1 unit(s) acting
+Magic: R2 targeting R2 (HP: 20)
+[BOON] Applied HasteSTART to R2 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 11)
+[TEMP-BUFF] HasteSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered HasteSTART
+[A19] R2 speed changed from 5 to 7
+
+
+[Tick 60] 5 unit(s) acting
+Ranged: B0 targeting R2 (HP: 20)
+R2 HP: 20 - 11 => 9
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: B1 targeting R2 (HP: 9)
+R2 HP: 9 - 7 => 2
+  -> R2 (magic) tick reset due to ranged attack!
+
+
+[Tick 72] 1 unit(s) acting
+Magic: R2 targeting R2 (HP: 2)
+[BOON] Refreshing existing HasteSTART on R2
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon HasteSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 11)
+[TEMP-BUFF] HasteSTART on R2 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R2
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R2 triggered HasteEND
+[A19] R2 speed changed from 7 to 5
+[BOON] HasteSTART expired on R2 - cleaned up
+
+
+[Tick 81] 1 unit(s) acting
+Magic: B4 targeting R2 (HP: 2)
 R2 HP: 13 - 13 => 0
 Battle Over! Blue Team wins!
