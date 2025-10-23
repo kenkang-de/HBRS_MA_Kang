@@ -239,12 +239,15 @@ void GeneticBalancingProcessor::SimulateChromosome(Simulator *simulator, std::ve
     chromosome->Set_Fitness();
 }
 
-void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vector<Batch> *batches) {
+void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig) {
     // Initialization
     // First Generation Setting
     currentGenChromosomeList.reserve(INDIVIDUALS_PER_GENERATION);
     nextGenChromosomeList.reserve(INDIVIDUALS_PER_GENERATION);
     currentGenChromosomeList = Instantiate_FirstGenChromosomes();
+
+    BatchCreator batchCreator;
+    std::vector<Batch> batches = batchCreator.CreateBatches(*batchConfig);
 
     // Get Testsubjects from the simulator
     std::vector<TestSubject *> combinedTestSubjects =
@@ -252,7 +255,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
 
     // Simulate first generation Chromosomes
     for (Chromosome *firstGenchromosome : currentGenChromosomeList) {
-        SimulateChromosome(simulator, batches, firstGenchromosome, combinedTestSubjects);
+        SimulateChromosome(simulator, &batches, firstGenchromosome, combinedTestSubjects);
         BalancingLog(Generation, firstGenchromosome->Get_Fitness(), firstGenchromosome->Get_MRSE(),
                      firstGenchromosome->Get_DOG());
     }
@@ -273,6 +276,10 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
         Chromosome *eliteChromosome = GetHighestFitnessChromosome(currentGenChromosomeList);
         Chromosome *eliteCopy = new Chromosome(eliteChromosome->appliedStat_INDIVIDUAL);
         eliteCopy->averageWinrates = eliteChromosome->averageWinrates;
+
+        eliteCopy->Set_RMSE(eliteChromosome->Get_MRSE() * RMSE_WEIGHT);
+        eliteCopy->Set_DegreeOfChange(eliteChromosome->Get_DOG() / DOC_WEIGHT);
+        eliteCopy->Set_Fitness();
 
         nextGenChromosomeList.push_back(eliteCopy);
 
@@ -314,9 +321,11 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
         // Mutation
         Mutation::GaussianMutation(nextGenChromosomeList);
 
+        batches = batchCreator.CreateBatches(*batchConfig);
+
         // Simulate NextGenerations
         for (Chromosome *nextGenChromosome : nextGenChromosomeList) {
-            SimulateChromosome(simulator, batches, nextGenChromosome, combinedTestSubjects);
+            SimulateChromosome(simulator, &batches, nextGenChromosome, combinedTestSubjects);
             BalancingLog(Generation + 1, nextGenChromosome->Get_Fitness(), nextGenChromosome->Get_MRSE(),
                          nextGenChromosome->Get_DOG());
         }

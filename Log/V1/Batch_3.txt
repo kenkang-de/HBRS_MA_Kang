@@ -1,225 +1,84 @@
-Unit 0: R0 Attack:-8 Defense:10 HP:11 Speed:-13 Threat:38 Weapon: [BSW16](Killer's Spirit) Armor: [BSA13]
-Unit 1: R1 Attack:-19 Defense:9 HP:4 Speed:8 Threat:1 Weapon: [BSW48](Meteor) Armor: [BSA4]
-Unit 2: R2 Attack:-16 Defense:-2 HP:-1 Speed:-26 Threat:25 Weapon: [BSW1](Slash) Armor: [BSA41]
-Unit 3: R3 Attack:-11 Defense:40 HP:-12 Speed:7 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA21]
-Unit 4: R4 Attack:-5 Defense:7 HP:-5 Speed:-5 Threat:16 Weapon: [BSW25](Smoke Shot) Armor: [BSA11]
-Unit 5: B0 Attack:8 Defense:6 HP:33 Speed:18 Threat:27 Weapon: [BSW19](Momentum) Armor: [BSA24]
-Unit 6: B1 Attack:6 Defense:19 HP:-9 Speed:12 Threat:0 Weapon: [BSW25](Smoke Shot) Armor: [BSA27]
-Unit 7: B2 Attack:-8 Defense:5 HP:9 Speed:7 Threat:13 Weapon: [BSW28](Heavy Shot) Armor: [BSA19]
-Unit 8: B3 Attack:-27 Defense:1 HP:-1 Speed:8 Threat:11 Weapon: [BSW17](Shoot) Armor: [BSA19]
-Unit 9: B4 Attack:-35 Defense:2 HP:2 Speed:-21 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA4]
+Unit 0: R0 Attack:9 Defense:7 HP:0 Speed:-3 Threat:11 Weapon: [BSW15](Taunt) Armor: [BSA6]
+Unit 1: R1 Attack:3 Defense:0 HP:1 Speed:1 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA13]
+Unit 2: R2 Attack:8 Defense:1 HP:0 Speed:-4 Threat:5 Weapon: [BSW16](Killer's Spirit) Armor: [BSA3]
+Unit 3: R3 Attack:5 Defense:-4 HP:-2 Speed:-10 Threat:8 Weapon: [BSW18](Killing Spree) Armor: [BSA8]
+Unit 4: R4 Attack:0 Defense:7 HP:10 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA14]
+Unit 5: B0 Attack:8 Defense:2 HP:3 Speed:2 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA18]
+Unit 6: B1 Attack:9 Defense:7 HP:0 Speed:-3 Threat:11 Weapon: [BSW15](Taunt) Armor: [BSA14]
+Unit 7: B2 Attack:0 Defense:7 HP:10 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA6]
+Unit 8: B3 Attack:5 Defense:-4 HP:-2 Speed:-10 Threat:8 Weapon: [BSW18](Killing Spree) Armor: [BSA9]
+Unit 9: B4 Attack:13 Defense:10 HP:1 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA17]
 ==========================
 
 
-[Tick 28] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 56] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 63] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 33)
-B0 HP: 33 - 3 => 30
-Magic: R1 targeting B2 (HP: 9)
-B2 HP: 9 - 3 => 6
-Magic: R1 targeting B4 (HP: 2)
-B4 HP: 3 - 3 => 0
-
-
-[Tick 72] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-[A19] B2 speed changed from 7 to 6
-
-
-[Tick 84] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 88] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 92] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 96] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 100] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 104] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 108] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 112] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 116] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 120] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 124] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 126] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 30)
-B0 HP: 30 - 3 => 27
-Magic: R1 targeting B2 (HP: 6)
-B2 HP: 6 - 3 => 3
-
-
-[Tick 128] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 132] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 135] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 27)
-B0 HP: 27 - 3 => 24
-Magic: R1 targeting B2 (HP: 3)
-B2 HP: 3 - 3 => 0
-
-
-[Tick 136] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 140] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 144] 2 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-Magic: R1 targeting B0 (HP: 24)
-B0 HP: 24 - 3 => 21
-
-
-[Tick 148] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 152] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 153] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 21)
-B0 HP: 21 - 3 => 18
-
-
-[Tick 156] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 160] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 162] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 18)
-B0 HP: 18 - 3 => 15
-
-
-[Tick 164] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 168] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 171] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 15)
-B0 HP: 15 - 3 => 12
-
-
-[Tick 172] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 176] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 180] 2 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-Magic: R1 targeting B0 (HP: 12)
-B0 HP: 12 - 3 => 9
-
-
-[Tick 184] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 188] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 189] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 9)
-B0 HP: 9 - 3 => 6
-
-
-[Tick 192] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 196] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 11)
-R0 HP: 11 - 0 => 11
-
-
-[Tick 198] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 6)
-B0 HP: 6 - 3 => 3
-Battle Over! Tick limit reached (200 ticks elapsed)
+[Tick 3] 1 unit(s) acting
+Ranged: B4 targeting R1 (HP: 1)
+R1 HP: 13 - 13 => 0
+[AFTER-ACTION] B4 performs after-action on R4 (threat: 2)
+[A19] B4 speed changed from 4 to 5
+
+
+[Tick 4] 2 unit(s) acting
+Magic: R4 targeting R4 (HP: 10)
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered BulkupSTART
+Magic: B2 targeting B4 (HP: 1)
+[BOON] Applied BulkupSTART to B4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 6] 2 unit(s) acting
+Ranged: B4 targeting R4 (HP: 20)
+R4 HP: 20 - 6 => 14
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 4)
+[TEMP-BUFF] BulkupSTART applied to B4 (Duration: 1 turns)
+[EXECUTE_EFFECT] B4 triggered BulkupSTART
+  -> R4 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R4 (HP: 14)
+R4 HP: 14 - 1 => 13
+  -> R4 (magic) tick reset due to melee attack!
+
+
+[Tick 12] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 13)
+R4 HP: 13 - 6 => 7
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 4)
+[TEMP-BUFF] BulkupSTART on B4 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B4
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B4 triggered BulkupEND
+[BOON] BulkupSTART expired on B4 - cleaned up
+  -> R4 (magic) tick reset due to ranged attack!
+
+
+[Tick 14] 1 unit(s) acting
+Magic: B2 targeting B4 (HP: 1)
+[BOON] Applied BulkupSTART to B4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 18] 1 unit(s) acting
+Ranged: B4 targeting R4 (HP: 7)
+R4 HP: 7 - 6 => 1
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 4)
+[TEMP-BUFF] BulkupSTART applied to B4 (Duration: 1 turns)
+[EXECUTE_EFFECT] B4 triggered BulkupSTART
+  -> R4 (magic) tick reset due to ranged attack!
+
+
+[Tick 21] 1 unit(s) acting
+Melee: B0 targeting R4 (HP: 1)
+R4 HP: 1 - 1 => 0
+R4 HP: 1 - 1 => 0
+Battle Over! Blue Team wins!

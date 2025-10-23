@@ -1,51 +1,21 @@
 ﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
-BSW1,Sword,,4,0,-2,0,0,Slash
-BSW2,Axe,,4,0,-3,1,0,Chop
-BSW3,Sword,,3,0,-1,0,0,Thrust
-BSW4,Spear,,4,0,-3,1,4,Berserk
 BSW5,Axe,,4,0,-3,1,0,Overpower
 BSW6,Spear,,2,0,-2,2,0,Achilles' heel
 BSW7,Sword,,2,0,-2,2,0,Poison Attack
 BSW8,Spear,,3,0,-2,2,2,Charge Attack
 BSW9,Mace,,4,0,-2,2,0,Blitz Attack
-BSW10,Halberd,,5,0,-4,2,0,Reckless Attack
-BSW11,Mace,,5,0,-3,2,0,Fade Attack
-BSW12,Spear,,1,10,-4,3,0,Final Attack
-BSW13,Mace,,2,0,-2,2,0,Prep Attack
-BSW14,Halberd,,5,0,-4,2,0,Leech Attack
 BSW15,Sword,,5,0,-4,2,0,Taunt
 BSW16,Halberd,,6,0,-4,3,0,Killer's Spirit
 BSW17,Bow,,3,0,-1,0,0,Shoot
 BSW18,Crossbow,,4,0,-3,0,0,Killing Spree
 BSW19,Crossbow,,4,0,-4,0,0,Momentum
-BSW20,Bow,,2,0,-2,0,0,Blitz Shot
-BSW21,Crossbow,,2,0,-2,0,0,Poison Arrow
-BSW22,Bow,,2,0,-2,1,0,Delay Shot
-BSW23,Dagger,,3,0,-2,1,0,All-Out Assault
-BSW24,Dagger,,3,0,-2,2,0,Boost Acuity
-BSW25,Crossbow,,3,0,-2,0,0,Smoke Shot
 BSW26,Bow,,2,0,-2,0,0,Double Shot
 BSW27,Bow,,2,0,-3,0,0,Tripple Shot
 BSW28,Crossbow,,4,0,-3,0,0,Heavy Shot
-BSW29,Dagger,,4,0,-2,1,0,Camo Throw
+BSW29,Dagger,,8,0,-2,1,0,Camo Throw
 BSW30,Bow,,4,0,-3,0,0,Fire Arrow
-BSW31,Bow,,2,0,-2,1,0,Wrist Shot
-BSW32,Dagger,,4,0,-2,0,0,Focus Throw
-BSW33,Wand,,0,0,-3,0,0,Magic Bolt
-BSW34,Wand,,2,0,-3,0,0,Wind Blade
-BSW35,Staff,,3,0,-4,4,0,Chain Lightning
-BSW36,Staff,,0,0,-3,0,0,Tetrodo
 BSW37,Staff,,0,0,-4,2,0,Freeze
-BSW38,Staff,,0,0,-3,2,0,Healing Touch
+BSW38,Staff,,0,0,-1,2,0,Healing Touch
 BSW39,Wand,,0,0,-3,2,0,Healing Link
 BSW40,Staff,,0,0,-3,2,0,Grace
 BSW41,Charm,,0,0,-4,2,0,Bulkup
-BSW42,Charm,,0,0,-4,2,0,Haste
-BSW43,Charm,,0,0,-4,2,0,Vow
-BSW44,Wand,,0,0,-3,3,0,Exposure
-BSW45,Wand,,0,0,-4,3,2,Fatigue
-BSW46,Charm,,0,0,-4,2,0,Protect
-BSW47,Charm,,0,0,-4,2,0,Cheer
-BSW48,Staff,,0,0,-4,5,0,Meteor
-BSW49,Staff,,0,0,-4,4,0,Earthquake
-BSW50,Wand,,0,0,-4,2,0,Corrosion

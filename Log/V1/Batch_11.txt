@@ -1,65 +1,17 @@
-Unit 0: R0 Attack:6 Defense:25 HP:-19 Speed:-2 Threat:27 Weapon: [BSW25](Smoke Shot) Armor: [BSA41]
-Unit 1: R1 Attack:3 Defense:3 HP:-6 Speed:-8 Threat:-19 Weapon: [BSW26](Double Shot) Armor: [BSA29]
-Unit 2: R2 Attack:-7 Defense:3 HP:11 Speed:-6 Threat:6 Weapon: [BSW36](Tetrodo) Armor: [BSA7]
-Unit 3: R3 Attack:0 Defense:2 HP:13 Speed:11 Threat:14 Weapon: [BSW48](Meteor) Armor: [BSA8]
-Unit 4: R4 Attack:11 Defense:17 HP:-29 Speed:-2 Threat:5 Weapon: [BSW27](Tripple Shot) Armor: [BSA7]
-Unit 5: B0 Attack:-21 Defense:-8 HP:26 Speed:-4 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA49]
-Unit 6: B1 Attack:24 Defense:-31 HP:-10 Speed:16 Threat:9 Weapon: [BSW34](Wind Blade) Armor: [BSA47]
-Unit 7: B2 Attack:-9 Defense:11 HP:-12 Speed:22 Threat:-3 Weapon: [BSW49](Earthquake) Armor: [BSA7]
-Unit 8: B3 Attack:-23 Defense:-11 HP:-6 Speed:-23 Threat:15 Weapon: [BSW39](Healing Link) Armor: [BSA39]
-Unit 9: B4 Attack:-11 Defense:29 HP:12 Speed:-31 Threat:13 Weapon: [BSW47](Cheer) Armor: [BSA29]
+Unit 0: R0 Attack:4 Defense:8 HP:0 Speed:1 Threat:2 Weapon: [BSW40](Grace) Armor: [BSA4]
+Unit 1: R1 Attack:5 Defense:0 HP:0 Speed:-3 Threat:2 Weapon: [BSW39](Healing Link) Armor: [BSA13]
+Unit 2: R2 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA20]
+Unit 3: R3 Attack:10 Defense:2 HP:0 Speed:-2 Threat:2 Weapon: [BSW9](Blitz Attack) Armor: [BSA3]
+Unit 4: R4 Attack:2 Defense:8 HP:-7 Speed:-9 Threat:-1 Weapon: [BSW37](Freeze) Armor: [BSA6]
+Unit 5: B0 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA12]
+Unit 6: B1 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA7]
+Unit 7: B2 Attack:5 Defense:0 HP:0 Speed:-3 Threat:2 Weapon: [BSW39](Healing Link) Armor: [BSA17]
+Unit 8: B3 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA20]
+Unit 9: B4 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA6]
 ==========================
 
 
-[Tick 16] 1 unit(s) acting
-Magic: R3 targeting B4 (HP: 12)
-B4 HP: 12 - 3 => 9
-Magic: R3 targeting B0 (HP: 26)
-B0 HP: 26 - 3 => 23
-
-
-[Tick 32] 1 unit(s) acting
-Magic: R3 targeting B4 (HP: 9)
-B4 HP: 9 - 3 => 6
-Magic: R3 targeting B0 (HP: 23)
-B0 HP: 23 - 3 => 20
-
-
-[Tick 33] 1 unit(s) acting
-Magic: R3 targeting B4 (HP: 6)
-B4 HP: 6 - 3 => 3
-Magic: R3 targeting B0 (HP: 20)
-B0 HP: 20 - 3 => 17
-
-
-[Tick 34] 1 unit(s) acting
-Magic: R3 targeting B4 (HP: 3)
-B4 HP: 3 - 3 => 0
-Magic: R3 targeting B0 (HP: 17)
-B0 HP: 17 - 3 => 14
-
-
-[Tick 35] 1 unit(s) acting
-Magic: R3 targeting B0 (HP: 14)
-B0 HP: 14 - 3 => 11
-
-
-[Tick 36] 1 unit(s) acting
-Magic: R3 targeting B0 (HP: 11)
-B0 HP: 11 - 3 => 8
-
-
-[Tick 37] 1 unit(s) acting
-Magic: R3 targeting B0 (HP: 8)
-B0 HP: 8 - 3 => 5
-
-
-[Tick 38] 1 unit(s) acting
-Magic: R3 targeting B0 (HP: 5)
-B0 HP: 5 - 3 => 2
-
-
-[Tick 39] 1 unit(s) acting
-Magic: R3 targeting B0 (HP: 2)
-B0 HP: 3 - 3 => 0
-Battle Over! Red Team wins!
+[Tick 1] 3 unit(s) acting
+Ranged: B0 targeting R2 (HP: 3)
+R2 HP: 8 - 8 => 0
+Battle Over! Blue Team wins!

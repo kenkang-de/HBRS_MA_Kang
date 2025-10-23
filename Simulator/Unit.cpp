@@ -79,7 +79,7 @@ const Stat &Unit::GetTotalStat() const {
 void Unit::SetWeapon(Weapon *w) {
     weapon = w;
     if (weapon) {
-        totalStat += weapon->GetStat();
+        totalStat = weapon->GetStat();
         // for balancing
         if (weapon->correctionStat != nullptr)
             totalStat += *(weapon->correctionStat);
@@ -90,7 +90,7 @@ void Unit::SetWeapon(Weapon *w) {
 void Unit::SetArmor(Armor *a) {
     armor = a;
     if (armor) {
-        totalStat += armor->GetStat();
+        totalStat = armor->GetStat();
         // for balancing
         if (armor->correctionStat != nullptr)
             totalStat += *(armor->correctionStat);

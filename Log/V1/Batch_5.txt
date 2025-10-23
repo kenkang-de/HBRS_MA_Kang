@@ -1,35 +1,628 @@
-Unit 0: R0 Attack:-12 Defense:-3 HP:-24 Speed:-24 Threat:6 Weapon: [BSW22](Delay Shot) Armor: [BSA14]
-Unit 1: R1 Attack:33 Defense:-16 HP:4 Speed:24 Threat:-3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
-Unit 2: R2 Attack:16 Defense:16 HP:22 Speed:16 Threat:34 Weapon: [BSW12](Final Attack) Armor: [BSA38]
-Unit 3: R3 Attack:9 Defense:22 HP:21 Speed:3 Threat:7 Weapon: [BSW5](Overpower) Armor: [BSA13]
-Unit 4: R4 Attack:-18 Defense:0 HP:-25 Speed:27 Threat:-15 Weapon: [BSW20](Blitz Shot) Armor: [BSA6]
-Unit 5: B0 Attack:8 Defense:-31 HP:4 Speed:-33 Threat:31 Weapon: [BSW29](Camo Throw) Armor: [BSA9]
-Unit 6: B1 Attack:14 Defense:-21 HP:6 Speed:9 Threat:2 Weapon: [BSW19](Momentum) Armor: [BSA25]
-Unit 7: B2 Attack:13 Defense:25 HP:-17 Speed:-27 Threat:14 Weapon: [BSW9](Blitz Attack) Armor: [BSA26]
-Unit 8: B3 Attack:21 Defense:17 HP:16 Speed:9 Threat:-2 Weapon: [BSW5](Overpower) Armor: [BSA46]
-Unit 9: B4 Attack:3 Defense:4 HP:6 Speed:-26 Threat:-11 Weapon: [BSW15](Taunt) Armor: [BSA44]
+Unit 0: R0 Attack:3 Defense:0 HP:1 Speed:1 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA17]
+Unit 1: R1 Attack:0 Defense:7 HP:10 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA17]
+Unit 2: R2 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA12]
+Unit 3: R3 Attack:0 Defense:7 HP:10 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA2]
+Unit 4: R4 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA5]
+Unit 5: B0 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA11]
+Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA16]
+Unit 7: B2 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA17]
+Unit 8: B3 Attack:4 Defense:8 HP:0 Speed:1 Threat:2 Weapon: [BSW40](Grace) Armor: [BSA2]
+Unit 9: B4 Attack:9 Defense:0 HP:0 Speed:-1 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA3]
 ==========================
 
 
-[Tick 18] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 4)
-B0 HP: 33 - 33 => 0
-Magic: R1 targeting B1 (HP: 6)
-B1 HP: 33 - 33 => 0
+[Tick 2] 2 unit(s) acting
+Magic: R1 targeting R4 (HP: 10)
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R3 targeting R4 (HP: 10)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 27] 1 unit(s) acting
-Melee: R2 targeting B3 (HP: 16)
-B3 HP: 16 - 15 => 1
-[A12] R2 defense changed from 16 to 0
+[Tick 3] 1 unit(s) acting
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 10 => 0
 
 
-[Tick 36] 2 unit(s) acting
-Melee: R2 targeting B3 (HP: 1)
-B3 HP: 1 - 0 => 1
-[A12] R2 defense changed from 0 to 0
-Magic: R1 targeting B3 (HP: 1)
-B3 HP: 33 - 33 => 0
-Magic: R1 targeting B4 (HP: 6)
-B4 HP: 33 - 33 => 0
+[Tick 4] 2 unit(s) acting
+Magic: R3 targeting R0 (HP: 1)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R0 (HP: 1)
+[BOON] Refreshing existing BulkupSTART on R0
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 6] 5 unit(s) acting
+Ranged: B0 targeting R0 (HP: 1)
+R0 HP: 10 - 10 => 0
+Melee: R2 targeting B0 (HP: 1)
+B0 HP: 1 - 0 => 1
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R2 applied Poison Effect to B0 (usage: 3)
+Magic: R1 targeting R1 (HP: 10)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+Magic: R3 targeting R1 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 8] 2 unit(s) acting
+Magic: R1 targeting R1 (HP: 20)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+Magic: R3 targeting R1 (HP: 10)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 9] 1 unit(s) acting
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 3 => 7
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 8)
+[BOON] Poison Effect triggered on B0 (Usage: 3/3)
+[EXECUTE_EFFECT] B0 triggered Poison Effect
+B0 HP: 5 - 5 => 0
+  -> B0 died during after-actions, stopping further actions
+
+
+[Tick 10] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 12] 3 unit(s) acting
+Melee: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 2 => 8
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 13] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 14] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 15] 3 unit(s) acting
+Melee: R2 targeting B1 (HP: 8)
+B1 HP: 8 - 2 => 6
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 16] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 17] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 18] 3 unit(s) acting
+Melee: R2 targeting B1 (HP: 6)
+B1 HP: 6 - 2 => 4
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 19] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 20] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 21] 3 unit(s) acting
+Melee: R2 targeting B1 (HP: 4)
+B1 HP: 4 - 2 => 2
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 22] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 23] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 24] 3 unit(s) acting
+Melee: R2 targeting B1 (HP: 2)
+B1 HP: 2 - 2 => 0
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R2 applied Poison Effect to B1 (usage: 3)
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 25] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 26] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 27] 3 unit(s) acting
+Melee: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 2 => 8
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 28] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 29] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 30] 3 unit(s) acting
+Melee: R2 targeting B2 (HP: 8)
+B2 HP: 8 - 2 => 6
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 31] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 32] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 33] 3 unit(s) acting
+Melee: R2 targeting B2 (HP: 6)
+B2 HP: 6 - 2 => 4
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 34] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 35] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 36] 3 unit(s) acting
+Melee: R2 targeting B2 (HP: 4)
+B2 HP: 4 - 2 => 2
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+  -> B2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 37] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
+
+
+[Tick 38] 2 unit(s) acting
+Magic: R3 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 17)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R1
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R1 triggered BulkupEND
+[BOON] BulkupSTART expired on R1 - cleaned up
+
+
+[Tick 39] 3 unit(s) acting
+Melee: R2 targeting B2 (HP: 2)
+B2 HP: 2 - 2 => 0
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R2 applied Poison Effect to B2 (usage: 3)
+Magic: R3 targeting R1 (HP: 7)
+[BOON] Applied BulkupSTART to R1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R1 targeting R1 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 2)
+[TEMP-BUFF] BulkupSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered BulkupSTART
 Battle Over! Red Team wins!

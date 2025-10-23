@@ -1,12 +1,42 @@
-Unit 0: R0 Attack:11 Defense:-13 HP:11 Speed:9 Threat:1 Weapon: [BSW2](Chop) Armor: [BSA37]
-Unit 1: R1 Attack:-31 Defense:12 HP:-8 Speed:17 Threat:-2 Weapon: [BSW49](Earthquake) Armor: [BSA19]
-Unit 2: R2 Attack:-16 Defense:27 HP:0 Speed:-16 Threat:33 Weapon: [BSW22](Delay Shot) Armor: [BSA13]
-Unit 3: R3 Attack:-29 Defense:-20 HP:2 Speed:-17 Threat:-6 Weapon: [BSW40](Grace) Armor: [BSA11]
-Unit 4: R4 Attack:5 Defense:0 HP:10 Speed:14 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA10]
-Unit 5: B0 Attack:23 Defense:26 HP:-5 Speed:-5 Threat:17 Weapon: [BSW9](Blitz Attack) Armor: [BSA46]
-Unit 6: B1 Attack:24 Defense:16 HP:42 Speed:10 Threat:31 Weapon: [BSW32](Focus Throw) Armor: [BSA24]
-Unit 7: B2 Attack:5 Defense:-9 HP:0 Speed:-14 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA9]
-Unit 8: B3 Attack:-5 Defense:16 HP:31 Speed:-27 Threat:-12 Weapon: [BSW24](Boost Acuity) Armor: [BSA32]
-Unit 9: B4 Attack:-22 Defense:1 HP:-23 Speed:17 Threat:-26 Weapon: [BSW50](Corrosion) Armor: [BSA6]
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA10]
+Unit 1: R1 Attack:2 Defense:7 HP:0 Speed:0 Threat:0 Weapon: [BSW26](Double Shot) Armor: [BSA2]
+Unit 2: R2 Attack:13 Defense:10 HP:1 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA15]
+Unit 3: R3 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA20]
+Unit 4: R4 Attack:8 Defense:2 HP:3 Speed:2 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA12]
+Unit 5: B0 Attack:4 Defense:8 HP:0 Speed:1 Threat:2 Weapon: [BSW40](Grace) Armor: [BSA8]
+Unit 6: B1 Attack:13 Defense:10 HP:1 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA7]
+Unit 7: B2 Attack:1 Defense:0 HP:10 Speed:0 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA4]
+Unit 8: B3 Attack:6 Defense:-4 HP:9 Speed:5 Threat:-10 Weapon: [BSW30](Fire Arrow) Armor: [BSA4]
+Unit 9: B4 Attack:3 Defense:0 HP:1 Speed:1 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA9]
 ==========================
-Battle Over! Tick limit reached (200 ticks elapsed)
+
+
+[Tick 4] 1 unit(s) acting
+Ranged: B3 targeting R3 (HP: 1)
+R3 HP: 4 - 4 => 0
+
+
+[Tick 5] 2 unit(s) acting
+Ranged: R2 targeting B1 (HP: 1)
+B1 HP: 3 - 3 => 0
+[AFTER-ACTION] R2 performs after-action on B2 (threat: 3)
+[A19] R2 speed changed from 4 to 5
+
+
+[Tick 8] 1 unit(s) acting
+Ranged: B3 targeting R2 (HP: 1)
+R2 HP: 1 - 1 => 0
+
+
+[Tick 10] 2 unit(s) acting
+Ranged: B3 targeting R0 (HP: 10)
+R0 HP: 12 - 12 => 0
+Melee: R4 targeting B2 (HP: 10)
+B2 HP: 10 - 8 => 2
+B2 HP: 8 - 8 => 0
+
+
+[Tick 12] 1 unit(s) acting
+Ranged: B3 targeting R4 (HP: 3)
+R4 HP: 4 - 4 => 0
+Battle Over! Blue Team wins!

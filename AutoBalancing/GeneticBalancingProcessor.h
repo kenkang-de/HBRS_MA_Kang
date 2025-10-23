@@ -13,6 +13,7 @@
 #include "../Element/ElementList.h"
 
 #include "../Sampling/Batch.h"
+#include "../Sampling/BatchCreator.h"
 
 #include "../Simulator/Armor.h"
 #include "../Simulator/Constants.h"
@@ -64,7 +65,7 @@ class GeneticBalancingProcessor {
 
     void SimulateChromosome(Simulator *simulator, std::vector<Batch> *batches, Chromosome *chromosome,
                             std::vector<TestSubject *> mergedTestSubjects);
-    void RunAutoBalancing(Simulator *simulator, std::vector<Batch> *batches);
+    void RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig);
 };
 
 #endif

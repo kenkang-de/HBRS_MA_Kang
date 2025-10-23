@@ -1,33 +1,35 @@
-Unit 0: R0 Attack:-8 Defense:-14 HP:-8 Speed:-3 Threat:23 Weapon: [BSW7](Poison Attack) Armor: [BSA19]
-Unit 1: R1 Attack:30 Defense:-11 HP:19 Speed:35 Threat:14 Weapon: [BSW34](Wind Blade) Armor: [BSA38]
-Unit 2: R2 Attack:22 Defense:6 HP:24 Speed:1 Threat:24 Weapon: [BSW32](Focus Throw) Armor: [BSA46]
-Unit 3: R3 Attack:6 Defense:-27 HP:-14 Speed:13 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA18]
-Unit 4: R4 Attack:-8 Defense:11 HP:-15 Speed:-16 Threat:14 Weapon: [BSW27](Tripple Shot) Armor: [BSA40]
-Unit 5: B0 Attack:13 Defense:5 HP:34 Speed:-25 Threat:26 Weapon: [BSW32](Focus Throw) Armor: [BSA28]
-Unit 6: B1 Attack:-1 Defense:-6 HP:5 Speed:-11 Threat:22 Weapon: [BSW16](Killer's Spirit) Armor: [BSA10]
-Unit 7: B2 Attack:20 Defense:0 HP:16 Speed:5 Threat:19 Weapon: [BSW2](Chop) Armor: [BSA10]
-Unit 8: B3 Attack:-15 Defense:-6 HP:1 Speed:-14 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA4]
-Unit 9: B4 Attack:-7 Defense:-9 HP:6 Speed:-10 Threat:0 Weapon: [BSW38](Healing Touch) Armor: [BSA40]
+Unit 0: R0 Attack:8 Defense:0 HP:2 Speed:7 Threat:2 Weapon: [BSW8](Charge Attack) Armor: [BSA16]
+Unit 1: R1 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA10]
+Unit 2: R2 Attack:9 Defense:0 HP:0 Speed:-1 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
+Unit 3: R3 Attack:8 Defense:1 HP:0 Speed:-4 Threat:5 Weapon: [BSW16](Killer's Spirit) Armor: [BSA17]
+Unit 4: R4 Attack:6 Defense:-4 HP:9 Speed:5 Threat:-10 Weapon: [BSW30](Fire Arrow) Armor: [BSA1]
+Unit 5: B0 Attack:9 Defense:0 HP:0 Speed:-1 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
+Unit 6: B1 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA1]
+Unit 7: B2 Attack:4 Defense:8 HP:0 Speed:1 Threat:2 Weapon: [BSW40](Grace) Armor: [BSA6]
+Unit 8: B3 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA14]
+Unit 9: B4 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA9]
 ==========================
 
 
-[Tick 13] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 34)
-B0 HP: 34 - 30 => 4
-Magic: R1 targeting B1 (HP: 5)
-B1 HP: 30 - 30 => 0
+[Tick 10] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
 
 
-[Tick 26] 1 unit(s) acting
-Magic: R1 targeting B0 (HP: 4)
-B0 HP: 30 - 30 => 0
-Magic: R1 targeting B2 (HP: 16)
-B2 HP: 30 - 30 => 0
+[Tick 14] 3 unit(s) acting
+Ranged: R4 targeting B1 (HP: 1)
+B1 HP: 4 - 4 => 0
+Ranged: B3 targeting R1 (HP: 3)
+R1 HP: 9 - 9 => 0
+[A10] B3 threat changed from 8 to 7
 
 
-[Tick 27] 1 unit(s) acting
-Magic: R1 targeting B3 (HP: 1)
-B3 HP: 30 - 30 => 0
-Magic: R1 targeting B4 (HP: 6)
-B4 HP: 30 - 30 => 0
+[Tick 20] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 3)
+B3 HP: 3 - 3 => 0
+
+
+[Tick 25] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 3)
+B4 HP: 8 - 8 => 0
 Battle Over! Red Team wins!

@@ -1,28 +1,60 @@
-Unit 0: R0 Attack:-6 Defense:-28 HP:2 Speed:-1 Threat:5 Weapon: [BSW7](Poison Attack) Armor: [BSA37]
-Unit 1: R1 Attack:20 Defense:-7 HP:4 Speed:1 Threat:2 Weapon: [BSW37](Freeze) Armor: [BSA3]
-Unit 2: R2 Attack:-22 Defense:-2 HP:-10 Speed:-20 Threat:-16 Weapon: [BSW39](Healing Link) Armor: [BSA12]
-Unit 3: R3 Attack:0 Defense:24 HP:-12 Speed:-18 Threat:-6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
-Unit 4: R4 Attack:-16 Defense:-3 HP:-5 Speed:-2 Threat:-2 Weapon: [BSW19](Momentum) Armor: [BSA12]
-Unit 5: B0 Attack:3 Defense:8 HP:14 Speed:-8 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA10]
-Unit 6: B1 Attack:-2 Defense:-10 HP:8 Speed:16 Threat:-7 Weapon: [BSW17](Shoot) Armor: [BSA15]
-Unit 7: B2 Attack:-34 Defense:8 HP:14 Speed:22 Threat:6 Weapon: [BSW17](Shoot) Armor: [BSA2]
-Unit 8: B3 Attack:29 Defense:27 HP:8 Speed:24 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA33]
-Unit 9: B4 Attack:-8 Defense:-33 HP:-6 Speed:-16 Threat:15 Weapon: [BSW37](Freeze) Armor: [BSA18]
+Unit 0: R0 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA17]
+Unit 1: R1 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA5]
+Unit 2: R2 Attack:9 Defense:7 HP:0 Speed:-3 Threat:11 Weapon: [BSW15](Taunt) Armor: [BSA3]
+Unit 3: R3 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA1]
+Unit 4: R4 Attack:13 Defense:10 HP:1 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA14]
+Unit 5: B0 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA13]
+Unit 6: B1 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA3]
+Unit 7: B2 Attack:6 Defense:-4 HP:9 Speed:5 Threat:-10 Weapon: [BSW30](Fire Arrow) Armor: [BSA19]
+Unit 8: B3 Attack:5 Defense:-4 HP:-2 Speed:-10 Threat:8 Weapon: [BSW18](Killing Spree) Armor: [BSA12]
+Unit 9: B4 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA2]
 ==========================
 
 
-[Tick 22] 1 unit(s) acting
-Melee: B3 targeting R0 (HP: 2)
-R0 HP: 57 - 57 => 0
-[A06] R0 speed changed from -1 to 0
+[Tick 4] 4 unit(s) acting
+Ranged: B0 targeting R0 (HP: 1)
+R0 HP: 1 - 0 => 1
+Ranged: B0 targeting R3 (HP: 1)
+R3 HP: 1 - 0 => 1
+Ranged: B0 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
+Ranged: B1 targeting R0 (HP: 1)
+R0 HP: 1 - 0 => 1
+Ranged: B1 targeting R3 (HP: 1)
+R3 HP: 1 - 0 => 1
+Ranged: B1 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
+Ranged: B2 targeting R0 (HP: 1)
+R0 HP: 4 - 4 => 0
+Ranged: B4 targeting R3 (HP: 1)
+R3 HP: 1 - 0 => 1
+Ranged: B4 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
 
 
-[Tick 24] 1 unit(s) acting
-Ranged: B2 targeting R1 (HP: 4)
-R1 HP: 4 - 0 => 4
+[Tick 5] 1 unit(s) acting
+Ranged: R4 targeting B0 (HP: 6)
+B0 HP: 13 - 13 => 0
+[AFTER-ACTION] R4 performs after-action on B1 (threat: 0)
+[A19] R4 speed changed from 4 to 5
 
 
-[Tick 33] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 4)
-R1 HP: 5 - 5 => 0
+[Tick 8] 3 unit(s) acting
+Ranged: B4 targeting R3 (HP: 1)
+R3 HP: 1 - 0 => 1
+Ranged: B4 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
+Ranged: B4 targeting R1 (HP: 3)
+R1 HP: 8 - 8 => 0
+Ranged: B2 targeting R3 (HP: 1)
+R3 HP: 4 - 4 => 0
+Ranged: B1 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
+
+
+[Tick 10] 4 unit(s) acting
+Ranged: B4 targeting R4 (HP: 1)
+R4 HP: 1 - 0 => 1
+Ranged: B2 targeting R4 (HP: 1)
+R4 HP: 1 - 1 => 0
 Battle Over! Blue Team wins!
