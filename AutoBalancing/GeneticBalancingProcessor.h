@@ -47,7 +47,7 @@ class GeneticBalancingProcessor {
     std::vector<Chromosome *> Instantiate_FirstGenChromosomes();
 
     std::vector<Stat> EmptyStats(int componentAmount);
-    std::vector<TestSubject *> CimbineToTestSubject(std::vector<Weapon> &weapons, std::vector<Armor> &armors);
+    std::vector<TestSubject *> CombineToTestSubject(std::vector<Weapon> &weapons, std::vector<Armor> &armors);
 
     int BuffOrNerf(float winRate);
 

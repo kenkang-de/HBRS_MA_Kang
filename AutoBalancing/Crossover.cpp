@@ -5,47 +5,55 @@ std::array<Chromosome *, 2> Crossover::SinglePointCrossOver(std::array<Chromosom
     static std::random_device rd;
     static std::mt19937 gen(rd());
 
-    Stat &stat1 = parentChromosome[0]->appliedStat_ALL;
-    Stat &stat2 = parentChromosome[1]->appliedStat_ALL;
+    Chromosome *child1 = nullptr;
+    Chromosome *child2 = nullptr;
 
-    // Single-point crossover on stat components (5 components: Attack, Defense, HP, Speed, Threat)
-    std::uniform_int_distribution<int> dist(1, 4); // Crossover points 1-4 (between 5 components)
-    int crossoverPoint = dist(gen);
+    if (parentChromosome[0]->IsAppliedAll()) {
+        // Original version: single stat crossover with component-level crossover
+        Stat stat1 = parentChromosome[0]->appliedStat_ALL;
+        Stat stat2 = parentChromosome[1]->appliedStat_ALL;
 
-    // Create temporary copies to perform swap
-    Stat tempStat1 = stat1;
-    Stat tempStat2 = stat2;
+        // Create stat component arrays for cleaner crossover
+        int components1[] = {stat1.GetAttack(), stat1.GetDefense(), stat1.GetHP(), stat1.GetSpeed(), stat1.GetThreat()};
+        int components2[] = {stat2.GetAttack(), stat2.GetDefense(), stat2.GetHP(), stat2.GetSpeed(), stat2.GetThreat()};
 
-    // Perform crossover based on component position
-    switch (crossoverPoint) {
-    case 1: // After Attack
-        stat1 = Stat(tempStat1.GetAttack(), tempStat2.GetDefense(), tempStat2.GetHP(), tempStat2.GetSpeed(),
-                     tempStat2.GetThreat());
-        stat2 = Stat(tempStat2.GetAttack(), tempStat1.GetDefense(), tempStat1.GetHP(), tempStat1.GetSpeed(),
-                     tempStat1.GetThreat());
-        break;
-    case 2: // After Defense
-        stat1 = Stat(tempStat1.GetAttack(), tempStat1.GetDefense(), tempStat2.GetHP(), tempStat2.GetSpeed(),
-                     tempStat2.GetThreat());
-        stat2 = Stat(tempStat2.GetAttack(), tempStat2.GetDefense(), tempStat1.GetHP(), tempStat1.GetSpeed(),
-                     tempStat1.GetThreat());
-        break;
-    case 3: // After HP
-        stat1 = Stat(tempStat1.GetAttack(), tempStat1.GetDefense(), tempStat1.GetHP(), tempStat2.GetSpeed(),
-                     tempStat2.GetThreat());
-        stat2 = Stat(tempStat2.GetAttack(), tempStat2.GetDefense(), tempStat2.GetHP(), tempStat1.GetSpeed(),
-                     tempStat1.GetThreat());
-        break;
-    case 4: // After Speed
-        stat1 = Stat(tempStat1.GetAttack(), tempStat1.GetDefense(), tempStat1.GetHP(), tempStat1.GetSpeed(),
-                     tempStat2.GetThreat());
-        stat2 = Stat(tempStat2.GetAttack(), tempStat2.GetDefense(), tempStat2.GetHP(), tempStat2.GetSpeed(),
-                     tempStat1.GetThreat());
-        break;
+        // Single-point crossover on components
+        std::uniform_int_distribution<int> dist(1, 4);
+        int crossoverPoint = dist(gen);
+
+        // Swap components after crossover point
+        for (int i = crossoverPoint; i < 5; ++i) {
+            std::swap(components1[i], components2[i]);
+        }
+
+        // Create new stats from crossed components
+        Stat childStat1(components1[0], components1[1], components1[2], components1[3], components1[4]);
+        Stat childStat2(components2[0], components2[1], components2[2], components2[3], components2[4]);
+
+        child1 = new Chromosome(childStat1);
+        child2 = new Chromosome(childStat2);
+    } else {
+        // New version: individual stats crossover
+        std::vector<Stat> &stats1 = parentChromosome[0]->appliedStat_INDIVIDUAL;
+        std::vector<Stat> &stats2 = parentChromosome[1]->appliedStat_INDIVIDUAL;
+
+        // Single-point crossover on the vector of stats
+        std::uniform_int_distribution<int> dist(1, stats1.size() - 1); // Crossover points 1 to size-1
+        int crossoverPoint = dist(gen);
+
+        // Create copies for crossover
+        std::vector<Stat> childStats1 = stats1;
+        std::vector<Stat> childStats2 = stats2;
+
+        // Perform single-point crossover: swap elements after crossover point
+        for (size_t i = crossoverPoint; i < stats1.size(); ++i) {
+            childStats1[i] = stats2[i];
+            childStats2[i] = stats1[i];
+        }
+
+        child1 = new Chromosome(childStats1);
+        child2 = new Chromosome(childStats2);
     }
-
-    Chromosome *child1 = new Chromosome(stat1);
-    Chromosome *child2 = new Chromosome(stat2);
 
     std::array<Chromosome *, 2> result = {child1, child2};
     return result;

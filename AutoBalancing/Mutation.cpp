@@ -12,7 +12,17 @@ void Mutation::GaussianMutation(std::vector<Chromosome *> chromosomeList) {
     // Iterate through all chromosomes
     for (Chromosome *chromosome : chromosomeList) {
         if (mutationProb(gen) < MUTATION_PROBABILITY) {
-            MutateStatObject(chromosome->appliedStat_ALL);
+            if (chromosome->IsAppliedAll()) {
+                // Original version: mutate single stat
+                MutateStatObject(chromosome->appliedStat_ALL);
+            } else {
+                // New version: mutate individual stats
+                for (Stat &stat : chromosome->appliedStat_INDIVIDUAL) {
+                    if (mutationProb(gen) < MUTATION_PROBABILITY) {
+                        MutateStatObject(stat);
+                    }
+                }
+            }
         }
     }
 }

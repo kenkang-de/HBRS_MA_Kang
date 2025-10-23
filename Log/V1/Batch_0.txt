@@ -1,56 +1,74 @@
-Unit 0: R0 Attack:5 Defense:-2 HP:10 Speed:5 Threat:8 Weapon: [BSW37](Freeze) Armor: [BSA3]
-Unit 1: R1 Attack:5 Defense:5 HP:10 Speed:0 Threat:13 Weapon: [BSW49](Earthquake) Armor: [BSA45]
-Unit 2: R2 Attack:8 Defense:1 HP:10 Speed:3 Threat:7 Weapon: [BSW22](Delay Shot) Armor: [BSA33]
-Unit 3: R3 Attack:8 Defense:1 HP:11 Speed:2 Threat:8 Weapon: [BSW7](Poison Attack) Armor: [BSA46]
-Unit 4: R4 Attack:7 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW1](Slash) Armor: [BSA1]
-Unit 5: B0 Attack:9 Defense:0 HP:12 Speed:2 Threat:6 Weapon: [BSW2](Chop) Armor: [BSA38]
-Unit 6: B1 Attack:5 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW37](Freeze) Armor: [BSA8]
-Unit 7: B2 Attack:7 Defense:4 HP:10 Speed:2 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA31]
-Unit 8: B3 Attack:5 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW50](Corrosion) Armor: [BSA8]
-Unit 9: B4 Attack:9 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA43]
+Unit 0: R0 Attack:10 Defense:11 HP:13 Speed:3 Threat:11 Weapon: [BSW43](Vow) Armor: [BSA22]
+Unit 1: R1 Attack:17 Defense:10 HP:8 Speed:0 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA47]
+Unit 2: R2 Attack:21 Defense:15 HP:17 Speed:14 Threat:15 Weapon: [BSW2](Chop) Armor: [BSA47]
+Unit 3: R3 Attack:20 Defense:8 HP:15 Speed:5 Threat:13 Weapon: [BSW19](Momentum) Armor: [BSA3]
+Unit 4: R4 Attack:5 Defense:14 HP:13 Speed:10 Threat:6 Weapon: [BSW25](Smoke Shot) Armor: [BSA2]
+Unit 5: B0 Attack:7 Defense:3 HP:10 Speed:2 Threat:13 Weapon: [BSW15](Taunt) Armor: [BSA28]
+Unit 6: B1 Attack:-4 Defense:-2 HP:12 Speed:-8 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA37]
+Unit 7: B2 Attack:13 Defense:9 HP:23 Speed:2 Threat:3 Weapon: [BSW32](Focus Throw) Armor: [BSA43]
+Unit 8: B3 Attack:-1 Defense:-8 HP:17 Speed:7 Threat:10 Weapon: [BSW22](Delay Shot) Armor: [BSA9]
+Unit 9: B4 Attack:6 Defense:2 HP:3 Speed:-6 Threat:-1 Weapon: [BSW49](Earthquake) Armor: [BSA26]
 ==========================
 
 
+[Tick 15] 1 unit(s) acting
+Melee: R2 targeting B0 (HP: 10)
+B0 HP: 18 - 18 => 0
+[A02] B0 defense changed from 3 to 2
+
+
+[Tick 21] 1 unit(s) acting
+Ranged: R4 targeting B3 (HP: 17)
+B3 HP: 17 - 13 => 4
+
+
+[Tick 30] 2 unit(s) acting
+Ranged: B3 targeting R2 (HP: 17)
+R2 HP: 17 - 0 => 17
+[A20] R2 delayed by 1 intervals (15 ticks)
+Melee: R2 targeting B3 (HP: 4)
+B3 HP: 29 - 29 => 0
+[A02] B3 defense changed from -8 to 0
+
+
+[Tick 42] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 12)
+B1 HP: 12 - 7 => 5
+Ranged: R3 targeting B1 (HP: 5)
+B1 HP: 22 - 22 => 0
+[AFTER-ACTION] R3 performs after-action on B2 (threat: 3)
+[A19] R3 speed changed from 5 to 6
+
+
 [Tick 60] 1 unit(s) acting
-Melee: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 3 => 7
+Melee: R2 targeting B2 (HP: 23)
+B2 HP: 23 - 12 => 11
+[A02] B2 defense changed from 9 to 8
+  -> B2 (ranged) delayed by 1 tick(s) due to 12/23 damage!
 
 
-[Tick 84] 1 unit(s) acting
-Magic: R0 targeting B2 (HP: 7)
-[BOON] Applied FreezeSTART to B2 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 63] 1 unit(s) acting
+Ranged: R4 targeting B2 (HP: 11)
+B2 HP: 11 - 0 => 11
 
 
-[Tick 105] 2 unit(s) acting
-Magic: B3 targeting R1 (HP: 10)
-[A34] R1 attack changed from 5 to 4
-Magic: B3 targeting R0 (HP: 10)
-[A34] R0 attack changed from 5 to 4
-Magic: B1 targeting R1 (HP: 10)
-[BOON] Applied FreezeSTART to R1 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 70] 1 unit(s) acting
+Magic: R0 targeting R2 (HP: 17)
+[A33] R2 threat changed from 15 to 17
+[A02] R2 defense changed from 15 to 16
+Magic: R0 targeting R3 (HP: 15)
+[A33] R3 threat changed from 13 to 15
+[A02] R3 defense changed from 8 to 9
 
 
-[Tick 120] 1 unit(s) acting
-Melee: R4 targeting B2 (HP: 7)
-B2 HP: 7 - 3 => 4
+[Tick 75] 1 unit(s) acting
+Melee: R2 targeting B2 (HP: 11)
+B2 HP: 13 - 13 => 0
+[A02] B2 defense changed from 8 to 7
 
 
-[Tick 140] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 4)
-B2 HP: 4 - 4 => 0
-[A20] B2 delayed by 1 intervals (210 ticks)
-
-
-[Tick 168] 1 unit(s) acting
-Magic: R0 targeting B1 (HP: 10)
-[BOON] Applied FreezeSTART to B1 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-
-
-[Tick 180] 1 unit(s) acting
-Melee: R4 targeting B1 (HP: 10)
-B1 HP: 10 - 7 => 3
-  -> B1 (magic) tick reset due to melee attack!
-Battle Over! Tick limit reached (200 ticks elapsed)
+[Tick 84] 2 unit(s) acting
+Ranged: R3 targeting B4 (HP: 3)
+B4 HP: 18 - 18 => 0
+[AFTER-ACTION] No valid target found for R3
+Battle Over! Red Team wins!

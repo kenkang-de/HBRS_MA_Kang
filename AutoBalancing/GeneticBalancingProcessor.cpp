@@ -33,7 +33,7 @@ void GeneticBalancingProcessor::GenerateFirstChromosome(ElementList *elementList
     GeneticBalancingProcessor::firstChromosome->averageWinrates = GetAverageWinrate(firstSubjects);
 
     // vector<Stat> filled with zero Stats.
-    GeneticBalancingProcessor::firstChromosome->appliedStat_ALL = Stat(0, 0, 0, 0, 0);
+    GeneticBalancingProcessor::firstChromosome->appliedStat_INDIVIDUAL = EmptyStats(stats.size());
 }
 
 // Only for the first chromosome
@@ -94,7 +94,7 @@ std::vector<Chromosome *> GeneticBalancingProcessor::Instantiate_FirstGenChromos
     firstGenChromosomes.reserve(INDIVIDUALS_PER_GENERATION);
 
     for (int i = 0; i < INDIVIDUALS_PER_GENERATION; i++) {
-        Chromosome *newChromosome = new Chromosome(BalancingRule::GenerateRamdomAppliedStat());
+        Chromosome *newChromosome = new Chromosome(BalancingRule::GenerateRamdomAppliedStats(firstStats.size()));
         firstGenChromosomes.push_back(newChromosome);
     }
 
@@ -123,7 +123,7 @@ std::vector<Stat> GeneticBalancingProcessor::EmptyStats(int componentAmount) {
     return stats;
 }
 
-std::vector<TestSubject *> GeneticBalancingProcessor::CimbineToTestSubject(std::vector<Weapon> &weapons,
+std::vector<TestSubject *> GeneticBalancingProcessor::CombineToTestSubject(std::vector<Weapon> &weapons,
                                                                            std::vector<Armor> &armors) {
     std::vector<TestSubject *> mergedSubjects;
     mergedSubjects.reserve(weapons.size() + armors.size());
@@ -248,7 +248,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
 
     // Get Testsubjects from the simulator
     std::vector<TestSubject *> combinedTestSubjects =
-        CimbineToTestSubject(simulator->GetElementList()->getWeapons(), simulator->GetElementList()->getArmors());
+        CombineToTestSubject(simulator->GetElementList()->getWeapons(), simulator->GetElementList()->getArmors());
 
     // Simulate first generation Chromosomes
     for (Chromosome *firstGenchromosome : currentGenChromosomeList) {
@@ -271,7 +271,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
 
         // Elite Chromosome (does not have offspring, progress to next generation)
         Chromosome *eliteChromosome = GetHighestFitnessChromosome(currentGenChromosomeList);
-        Chromosome *eliteCopy = new Chromosome(eliteChromosome->appliedStat_ALL);
+        Chromosome *eliteCopy = new Chromosome(eliteChromosome->appliedStat_INDIVIDUAL);
         eliteCopy->averageWinrates = eliteChromosome->averageWinrates;
 
         nextGenChromosomeList.push_back(eliteCopy);
@@ -296,13 +296,13 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, std::vect
                 }
             } else {
                 Chromosome *highest = GetHighestFitnessChromosome(parentCandidates);
-                Chromosome *highestCopy = new Chromosome(highest->appliedStat_ALL);
+                Chromosome *highestCopy = new Chromosome(highest->appliedStat_INDIVIDUAL);
                 highestCopy->averageWinrates = highest->averageWinrates;
                 nextGenChromosomeList.push_back(highestCopy);
 
                 if (nextGenChromosomeList.size() < INDIVIDUALS_PER_GENERATION) {
                     Chromosome *lowest = GetLowestFitnessChromosome(parentCandidates);
-                    Chromosome *lowestCopy = new Chromosome(lowest->appliedStat_ALL);
+                    Chromosome *lowestCopy = new Chromosome(lowest->appliedStat_INDIVIDUAL);
                     lowestCopy->averageWinrates = lowest->averageWinrates;
                     nextGenChromosomeList.push_back(lowestCopy);
                 }

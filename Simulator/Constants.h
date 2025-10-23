@@ -18,9 +18,9 @@ const float MULTIPLIER_BASIC = 1.0f;
 
 // BALANCING
 
-const int APPLIEDSTAT_RANGE = 15;
+const int APPLIEDSTAT_RANGE = 10;
 
-const int INDIVIDUALS_PER_GENERATION = 30;
+const int INDIVIDUALS_PER_GENERATION = 50;
 
 const float CROSSOVER_PROBABILITY = 0.9f;
 const float MUTATION_PROBABILITY = 0.1f;
@@ -30,8 +30,10 @@ const float TARGET_WINRATE = 0.5f;
 const float TARGET_THRESHOLD = 0.05f;
 
 const float FITNESS_THRESHOLD = 0.05f;
-const float FITNESS_MAX = 2.0f;
+const float FITNESS_MAX = 1.0f;
+const float RMSE_WEIGHT = 0.9f;
+const float DOC_WEIGHT = 0.1f;
 
-const int MAXGENERATION = 100;
+const int MAXGENERATION = 50;
 
 #endif

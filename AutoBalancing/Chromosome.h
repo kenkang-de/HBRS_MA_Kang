@@ -6,6 +6,7 @@
 #include "../Element/ElementList.h"
 #include "../Element/Stat.h"
 
+#include "../Simulator/Constants.h"
 #include "../Simulator/TestSubject.h"
 
 class Chromosome {
@@ -59,7 +60,7 @@ class Chromosome {
         degreeOfChange = value;
     }
     void Set_Fitness() {
-        fitness = rootMeanSquareError + degreeOfChange;
+        fitness = rootMeanSquareError * RMSE_WEIGHT + degreeOfChange * DOC_WEIGHT;
     }
     bool Get_Survived() {
         return survived;
