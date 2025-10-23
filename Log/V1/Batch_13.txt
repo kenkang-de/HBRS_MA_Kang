@@ -1,275 +1,33 @@
-Unit 0: R0 Attack:-4 Defense:-2 HP:11 Speed:-6 Threat:14 Weapon: [BSW13](Prep Attack) Armor: [BSA12]
-Unit 1: R1 Attack:13 Defense:-1 HP:24 Speed:-4 Threat:2 Weapon: [BSW44](Exposure) Armor: [BSA14]
-Unit 2: R2 Attack:6 Defense:-1 HP:5 Speed:3 Threat:-3 Weapon: [BSW28](Heavy Shot) Armor: [BSA16]
-Unit 3: R3 Attack:-5 Defense:-2 HP:15 Speed:11 Threat:16 Weapon: [BSW40](Grace) Armor: [BSA2]
-Unit 4: R4 Attack:17 Defense:3 HP:0 Speed:-12 Threat:-3 Weapon: [BSW49](Earthquake) Armor: [BSA15]
-Unit 5: B0 Attack:7 Defense:4 HP:20 Speed:-4 Threat:11 Weapon: [BSW44](Exposure) Armor: [BSA25]
-Unit 6: B1 Attack:21 Defense:-8 HP:22 Speed:1 Threat:0 Weapon: [BSW19](Momentum) Armor: [BSA18]
-Unit 7: B2 Attack:1 Defense:10 HP:16 Speed:-4 Threat:-3 Weapon: [BSW28](Heavy Shot) Armor: [BSA36]
-Unit 8: B3 Attack:-8 Defense:9 HP:17 Speed:-7 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA37]
-Unit 9: B4 Attack:16 Defense:11 HP:10 Speed:-6 Threat:-7 Weapon: [BSW44](Exposure) Armor: [BSA5]
+Unit 0: R0 Attack:-8 Defense:-14 HP:-8 Speed:-3 Threat:23 Weapon: [BSW7](Poison Attack) Armor: [BSA19]
+Unit 1: R1 Attack:30 Defense:-11 HP:19 Speed:35 Threat:14 Weapon: [BSW34](Wind Blade) Armor: [BSA38]
+Unit 2: R2 Attack:22 Defense:6 HP:24 Speed:1 Threat:24 Weapon: [BSW32](Focus Throw) Armor: [BSA46]
+Unit 3: R3 Attack:6 Defense:-27 HP:-14 Speed:13 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA18]
+Unit 4: R4 Attack:-8 Defense:11 HP:-15 Speed:-16 Threat:14 Weapon: [BSW27](Tripple Shot) Armor: [BSA40]
+Unit 5: B0 Attack:13 Defense:5 HP:34 Speed:-25 Threat:26 Weapon: [BSW32](Focus Throw) Armor: [BSA28]
+Unit 6: B1 Attack:-1 Defense:-6 HP:5 Speed:-11 Threat:22 Weapon: [BSW16](Killer's Spirit) Armor: [BSA10]
+Unit 7: B2 Attack:20 Defense:0 HP:16 Speed:5 Threat:19 Weapon: [BSW2](Chop) Armor: [BSA10]
+Unit 8: B3 Attack:-15 Defense:-6 HP:1 Speed:-14 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA4]
+Unit 9: B4 Attack:-7 Defense:-9 HP:6 Speed:-10 Threat:0 Weapon: [BSW38](Healing Touch) Armor: [BSA40]
 ==========================
 
 
-[Tick 3] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 6] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 9] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 11] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 20)
-B0 HP: 20 - 8 => 12
-[A19] R2 speed changed from 3 to 2
-  -> B0 (magic) tick reset due to ranged attack!
-
-
-[Tick 12] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 14] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 16] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 18] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 20] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 22] 2 unit(s) acting
-Ranged: R2 targeting B0 (HP: 12)
-B0 HP: 12 - 8 => 4
-[A19] R2 speed changed from 2 to 1
-  -> B0 (magic) tick reset due to ranged attack!
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 24] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 25] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
+[Tick 13] 1 unit(s) acting
+Magic: R1 targeting B0 (HP: 34)
+B0 HP: 34 - 30 => 4
+Magic: R1 targeting B1 (HP: 5)
+B1 HP: 30 - 30 => 0
 
 
 [Tick 26] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
+Magic: R1 targeting B0 (HP: 4)
+B0 HP: 30 - 30 => 0
+Magic: R1 targeting B2 (HP: 16)
+B2 HP: 30 - 30 => 0
 
 
 [Tick 27] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 28] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 29] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 30] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 31] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 32] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[HEAL] R0 healed for 0 HP (from 11 to 11/11)
-[A29] R3 healed R0 for 2 HP
-Magic: R3 targeting R1 (HP: 24)
-[HEAL] R1 healed for 0 HP (from 24 to 24/24)
-[A29] R3 healed R1 for 2 HP
-Magic: R3 targeting R2 (HP: 5)
-[HEAL] R2 healed for 0 HP (from 5 to 5/5)
-[A29] R3 healed R2 for 2 HP
-
-
-[Tick 33] 3 unit(s) acting
-Ranged: R2 targeting B0 (HP: 4)
-B0 HP: 8 - 8 => 0
-[A19] R2 speed changed from 1 to 0
-Ranged: B1 targeting R3 (HP: 15)
-R3 HP: 23 - 23 => 0
-[AFTER-ACTION] B1 performs after-action on R0 (threat: 14)
-[A19] B1 speed changed from 1 to 2
-
-
-[Tick 44] 1 unit(s) acting
-Ranged: B1 targeting R0 (HP: 11)
-R0 HP: 23 - 23 => 0
-[AFTER-ACTION] B1 performs after-action on R1 (threat: 2)
-[A19] B1 speed changed from 2 to 3
-
-
-[Tick 45] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 24)
-R1 HP: 24 - 22 => 2
-  -> R1 (magic) tick reset due to ranged attack!
-
-
-[Tick 46] 1 unit(s) acting
-Ranged: B1 targeting R1 (HP: 2)
-R1 HP: 22 - 22 => 0
-[AFTER-ACTION] B1 performs after-action on R2 (threat: -3)
-[A19] B1 speed changed from 3 to 4
-
-
-[Tick 47] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-R2 HP: 22 - 22 => 0
-[AFTER-ACTION] No valid target found for B1
-Battle Over! Blue Team wins!
+Magic: R1 targeting B3 (HP: 1)
+B3 HP: 30 - 30 => 0
+Magic: R1 targeting B4 (HP: 6)
+B4 HP: 30 - 30 => 0
+Battle Over! Red Team wins!

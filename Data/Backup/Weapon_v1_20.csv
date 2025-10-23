@@ -1,0 +1,21 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
+BSW5,Axe,,4,0,-3,1,0,Overpower
+BSW6,Spear,,2,0,-2,2,0,Achilles' heel
+BSW7,Sword,,2,0,-2,2,0,Poison Attack
+BSW8,Spear,,3,0,-2,2,2,Charge Attack
+BSW9,Mace,,4,0,-2,2,0,Blitz Attack
+BSW15,Sword,,5,0,-4,2,0,Taunt
+BSW16,Halberd,,6,0,-4,3,0,Killer's Spirit
+BSW17,Bow,,3,0,-1,0,0,Shoot
+BSW18,Crossbow,,4,0,-3,0,0,Killing Spree
+BSW19,Crossbow,,4,0,-4,0,0,Momentum
+BSW26,Bow,,2,0,-2,0,0,Double Shot
+BSW27,Bow,,2,0,-3,0,0,Tripple Shot
+BSW28,Crossbow,,4,0,-3,0,0,Heavy Shot
+BSW29,Dagger,,8,0,-2,1,0,Camo Throw
+BSW30,Bow,,4,0,-3,0,0,Fire Arrow
+BSW37,Staff,,0,0,-4,2,0,Freeze
+BSW38,Staff,,0,0,-1,2,0,Healing Touch
+BSW39,Wand,,0,0,-3,2,0,Healing Link
+BSW40,Staff,,0,0,-3,2,0,Grace
+BSW41,Charm,,0,0,-4,2,0,Bulkup

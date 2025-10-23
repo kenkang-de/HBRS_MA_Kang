@@ -1,74 +1,25 @@
-Unit 0: R0 Attack:10 Defense:11 HP:13 Speed:3 Threat:11 Weapon: [BSW43](Vow) Armor: [BSA22]
-Unit 1: R1 Attack:17 Defense:10 HP:8 Speed:0 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA47]
-Unit 2: R2 Attack:21 Defense:15 HP:17 Speed:14 Threat:15 Weapon: [BSW2](Chop) Armor: [BSA47]
-Unit 3: R3 Attack:20 Defense:8 HP:15 Speed:5 Threat:13 Weapon: [BSW19](Momentum) Armor: [BSA3]
-Unit 4: R4 Attack:5 Defense:14 HP:13 Speed:10 Threat:6 Weapon: [BSW25](Smoke Shot) Armor: [BSA2]
-Unit 5: B0 Attack:7 Defense:3 HP:10 Speed:2 Threat:13 Weapon: [BSW15](Taunt) Armor: [BSA28]
-Unit 6: B1 Attack:-4 Defense:-2 HP:12 Speed:-8 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA37]
-Unit 7: B2 Attack:13 Defense:9 HP:23 Speed:2 Threat:3 Weapon: [BSW32](Focus Throw) Armor: [BSA43]
-Unit 8: B3 Attack:-1 Defense:-8 HP:17 Speed:7 Threat:10 Weapon: [BSW22](Delay Shot) Armor: [BSA9]
-Unit 9: B4 Attack:6 Defense:2 HP:3 Speed:-6 Threat:-1 Weapon: [BSW49](Earthquake) Armor: [BSA26]
+Unit 0: R0 Attack:24 Defense:-29 HP:23 Speed:9 Threat:5 Weapon: [BSW19](Momentum) Armor: [BSA16]
+Unit 1: R1 Attack:2 Defense:-1 HP:14 Speed:-9 Threat:-11 Weapon: [BSW38](Healing Touch) Armor: [BSA8]
+Unit 2: R2 Attack:-2 Defense:-5 HP:2 Speed:-23 Threat:-7 Weapon: [BSW15](Taunt) Armor: [BSA12]
+Unit 3: R3 Attack:23 Defense:-8 HP:-6 Speed:-12 Threat:20 Weapon: [BSW14](Leech Attack) Armor: [BSA46]
+Unit 4: R4 Attack:-22 Defense:-2 HP:-8 Speed:4 Threat:36 Weapon: [BSW23](All-Out Assault) Armor: [BSA1]
+Unit 5: B0 Attack:-17 Defense:12 HP:9 Speed:-25 Threat:-15 Weapon: [BSW38](Healing Touch) Armor: [BSA29]
+Unit 6: B1 Attack:-9 Defense:-12 HP:0 Speed:-18 Threat:30 Weapon: [BSW16](Killer's Spirit) Armor: [BSA40]
+Unit 7: B2 Attack:9 Defense:-29 HP:24 Speed:-31 Threat:18 Weapon: [BSW29](Camo Throw) Armor: [BSA11]
+Unit 8: B3 Attack:-34 Defense:-3 HP:-2 Speed:-5 Threat:31 Weapon: [BSW1](Slash) Armor: [BSA17]
+Unit 9: B4 Attack:-6 Defense:4 HP:-3 Speed:16 Threat:-2 Weapon: [BSW40](Grace) Armor: [BSA3]
 ==========================
 
 
-[Tick 15] 1 unit(s) acting
-Melee: R2 targeting B0 (HP: 10)
-B0 HP: 18 - 18 => 0
-[A02] B0 defense changed from 3 to 2
+[Tick 16] 1 unit(s) acting
+Ranged: R0 targeting B2 (HP: 24)
+B2 HP: 53 - 53 => 0
+[AFTER-ACTION] R0 performs after-action on B0 (threat: -15)
+[A19] R0 speed changed from 9 to 10
 
 
-[Tick 21] 1 unit(s) acting
-Ranged: R4 targeting B3 (HP: 17)
-B3 HP: 17 - 13 => 4
-
-
-[Tick 30] 2 unit(s) acting
-Ranged: B3 targeting R2 (HP: 17)
-R2 HP: 17 - 0 => 17
-[A20] R2 delayed by 1 intervals (15 ticks)
-Melee: R2 targeting B3 (HP: 4)
-B3 HP: 29 - 29 => 0
-[A02] B3 defense changed from -8 to 0
-
-
-[Tick 42] 2 unit(s) acting
-Ranged: R4 targeting B1 (HP: 12)
-B1 HP: 12 - 7 => 5
-Ranged: R3 targeting B1 (HP: 5)
-B1 HP: 22 - 22 => 0
-[AFTER-ACTION] R3 performs after-action on B2 (threat: 3)
-[A19] R3 speed changed from 5 to 6
-
-
-[Tick 60] 1 unit(s) acting
-Melee: R2 targeting B2 (HP: 23)
-B2 HP: 23 - 12 => 11
-[A02] B2 defense changed from 9 to 8
-  -> B2 (ranged) delayed by 1 tick(s) due to 12/23 damage!
-
-
-[Tick 63] 1 unit(s) acting
-Ranged: R4 targeting B2 (HP: 11)
-B2 HP: 11 - 0 => 11
-
-
-[Tick 70] 1 unit(s) acting
-Magic: R0 targeting R2 (HP: 17)
-[A33] R2 threat changed from 15 to 17
-[A02] R2 defense changed from 15 to 16
-Magic: R0 targeting R3 (HP: 15)
-[A33] R3 threat changed from 13 to 15
-[A02] R3 defense changed from 8 to 9
-
-
-[Tick 75] 1 unit(s) acting
-Melee: R2 targeting B2 (HP: 11)
-B2 HP: 13 - 13 => 0
-[A02] B2 defense changed from 8 to 7
-
-
-[Tick 84] 2 unit(s) acting
-Ranged: R3 targeting B4 (HP: 3)
-B4 HP: 18 - 18 => 0
-[AFTER-ACTION] No valid target found for R3
+[Tick 32] 1 unit(s) acting
+Ranged: R0 targeting B0 (HP: 9)
+B0 HP: 12 - 12 => 0
+[AFTER-ACTION] No valid target found for R0
 Battle Over! Red Team wins!

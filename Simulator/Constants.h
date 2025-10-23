@@ -29,7 +29,7 @@ const float MUTATION_SIGMA = 1.2f;
 const float TARGET_WINRATE = 0.5f;
 const float TARGET_THRESHOLD = 0.05f;
 
-const float FITNESS_THRESHOLD = 0.05f;
+const float FITNESS_THRESHOLD = 0.1f;
 const float FITNESS_MAX = 1.0f;
 const float RMSE_WEIGHT = 0.9f;
 const float DOC_WEIGHT = 0.1f;

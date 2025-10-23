@@ -1,45 +1,12 @@
-Unit 0: R0 Attack:-4 Defense:-2 HP:2 Speed:-7 Threat:11 Weapon: [BSW6](Achilles' heel) Armor: [BSA11]
-Unit 1: R1 Attack:11 Defense:-11 HP:10 Speed:3 Threat:1 Weapon: [BSW15](Taunt) Armor: [BSA32]
-Unit 2: R2 Attack:21 Defense:8 HP:2 Speed:4 Threat:0 Weapon: [BSW35](Chain Lightning) Armor: [BSA5]
-Unit 3: R3 Attack:13 Defense:-7 HP:2 Speed:5 Threat:5 Weapon: [BSW21](Poison Arrow) Armor: [BSA29]
-Unit 4: R4 Attack:6 Defense:-8 HP:15 Speed:-8 Threat:17 Weapon: [BSW49](Earthquake) Armor: [BSA49]
-Unit 5: B0 Attack:7 Defense:-2 HP:1 Speed:11 Threat:14 Weapon: [BSW33](Magic Bolt) Armor: [BSA17]
-Unit 6: B1 Attack:7 Defense:7 HP:9 Speed:0 Threat:-17 Weapon: [BSW5](Overpower) Armor: [BSA26]
-Unit 7: B2 Attack:3 Defense:8 HP:2 Speed:2 Threat:-7 Weapon: [BSW50](Corrosion) Armor: [BSA5]
-Unit 8: B3 Attack:3 Defense:5 HP:23 Speed:-6 Threat:19 Weapon: [BSW47](Cheer) Armor: [BSA31]
-Unit 9: B4 Attack:14 Defense:-1 HP:26 Speed:11 Threat:8 Weapon: [BSW8](Charge Attack) Armor: [BSA6]
+Unit 0: R0 Attack:35 Defense:0 HP:4 Speed:19 Threat:-13 Weapon: [BSW4](Berserk) Armor: [BSA42]
+Unit 1: R1 Attack:-7 Defense:3 HP:11 Speed:-6 Threat:6 Weapon: [BSW36](Tetrodo) Armor: [BSA7]
+Unit 2: R2 Attack:0 Defense:5 HP:1 Speed:3 Threat:25 Weapon: [BSW48](Meteor) Armor: [BSA41]
+Unit 3: R3 Attack:3 Defense:1 HP:10 Speed:-11 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA35]
+Unit 4: R4 Attack:-18 Defense:18 HP:10 Speed:20 Threat:13 Weapon: [BSW12](Final Attack) Armor: [BSA2]
+Unit 5: B0 Attack:-12 Defense:31 HP:-5 Speed:-6 Threat:-1 Weapon: [BSW12](Final Attack) Armor: [BSA44]
+Unit 6: B1 Attack:9 Defense:1 HP:1 Speed:7 Threat:19 Weapon: [BSW2](Chop) Armor: [BSA19]
+Unit 7: B2 Attack:15 Defense:-15 HP:10 Speed:17 Threat:-5 Weapon: [BSW34](Wind Blade) Armor: [BSA8]
+Unit 8: B3 Attack:3 Defense:-11 HP:23 Speed:-15 Threat:-26 Weapon: [BSW30](Fire Arrow) Armor: [BSA4]
+Unit 9: B4 Attack:8 Defense:-13 HP:21 Speed:-12 Threat:3 Weapon: [BSW46](Protect) Armor: [BSA11]
 ==========================
-
-
-[Tick 60] 2 unit(s) acting
-Melee: B4 targeting R4 (HP: 15)
-R4 HP: 30 - 30 => 0
-Magic: B0 targeting R0 (HP: 2)
-R0 HP: 5 - 5 => 0
-
-
-[Tick 120] 2 unit(s) acting
-Melee: B4 targeting R3 (HP: 2)
-R3 HP: 29 - 29 => 0
-Magic: B0 targeting R1 (HP: 10)
-R1 HP: 10 - 5 => 5
-
-
-[Tick 165] 1 unit(s) acting
-Magic: R2 targeting B3 (HP: 23)
-B3 HP: 23 - 21 => 2
-Magic: R2 targeting B0 (HP: 1)
-B0 HP: 21 - 21 => 0
-Magic: R2 targeting B4 (HP: 26)
-B4 HP: 26 - 21 => 5
-
-
-[Tick 180] 1 unit(s) acting
-Melee: B4 targeting R1 (HP: 5)
-R1 HP: 26 - 26 => 0
-
-
-[Tick 192] 1 unit(s) acting
-Melee: B4 targeting R2 (HP: 2)
-R2 HP: 7 - 7 => 0
-Battle Over! Blue Team wins!
+Battle Over! Tick limit reached (200 ticks elapsed)

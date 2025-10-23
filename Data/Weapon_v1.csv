@@ -11,7 +11,7 @@ BSW9,Mace,,4,0,-2,2,0,Blitz Attack
 BSW10,Halberd,,5,0,-4,2,0,Reckless Attack
 BSW11,Mace,,5,0,-3,2,0,Fade Attack
 BSW12,Spear,,1,10,-4,3,0,Final Attack
-BSW13,Mace,,5,0,-2,2,0,Prep Attack
+BSW13,Mace,,2,0,-2,2,0,Prep Attack
 BSW14,Halberd,,5,0,-4,2,0,Leech Attack
 BSW15,Sword,,5,0,-4,2,0,Taunt
 BSW16,Halberd,,6,0,-4,3,0,Killer's Spirit
@@ -27,7 +27,7 @@ BSW25,Crossbow,,3,0,-2,0,0,Smoke Shot
 BSW26,Bow,,2,0,-2,0,0,Double Shot
 BSW27,Bow,,2,0,-3,0,0,Tripple Shot
 BSW28,Crossbow,,4,0,-3,0,0,Heavy Shot
-BSW29,Dagger,,8,0,-2,1,0,Camo Throw
+BSW29,Dagger,,4,0,-2,1,0,Camo Throw
 BSW30,Bow,,4,0,-3,0,0,Fire Arrow
 BSW31,Bow,,2,0,-2,1,0,Wrist Shot
 BSW32,Dagger,,4,0,-2,0,0,Focus Throw
@@ -36,11 +36,11 @@ BSW34,Wand,,2,0,-3,0,0,Wind Blade
 BSW35,Staff,,3,0,-4,4,0,Chain Lightning
 BSW36,Staff,,0,0,-3,0,0,Tetrodo
 BSW37,Staff,,0,0,-4,2,0,Freeze
-BSW38,Staff,,0,0,-1,2,0,Healing Touch
+BSW38,Staff,,0,0,-3,2,0,Healing Touch
 BSW39,Wand,,0,0,-3,2,0,Healing Link
 BSW40,Staff,,0,0,-3,2,0,Grace
 BSW41,Charm,,0,0,-4,2,0,Bulkup
-BSW42,Charm,,0,0,-1,2,0,Haste
+BSW42,Charm,,0,0,-4,2,0,Haste
 BSW43,Charm,,0,0,-4,2,0,Vow
 BSW44,Wand,,0,0,-3,3,0,Exposure
 BSW45,Wand,,0,0,-4,3,2,Fatigue

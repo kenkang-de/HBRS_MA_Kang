@@ -54,13 +54,13 @@ class Chromosome {
     }
 
     void Set_RMSE(float RMSE) {
-        rootMeanSquareError = RMSE;
+        rootMeanSquareError = RMSE * RMSE_WEIGHT;
     }
     void Set_DegreeOfChange(float value) {
-        degreeOfChange = value;
+        degreeOfChange = value * DOC_WEIGHT;
     }
     void Set_Fitness() {
-        fitness = rootMeanSquareError * RMSE_WEIGHT + degreeOfChange * DOC_WEIGHT;
+        fitness = rootMeanSquareError + degreeOfChange;
     }
     bool Get_Survived() {
         return survived;

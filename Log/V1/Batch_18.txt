@@ -1,74 +1,22 @@
-Unit 0: R0 Attack:8 Defense:3 HP:8 Speed:-6 Threat:10 Weapon: [BSW27](Tripple Shot) Armor: [BSA16]
-Unit 1: R1 Attack:2 Defense:8 HP:21 Speed:9 Threat:11 Weapon: [BSW8](Charge Attack) Armor: [BSA40]
-Unit 2: R2 Attack:13 Defense:-2 HP:9 Speed:-2 Threat:9 Weapon: [BSW13](Prep Attack) Armor: [BSA6]
-Unit 3: R3 Attack:11 Defense:9 HP:27 Speed:1 Threat:-7 Weapon: [BSW17](Shoot) Armor: [BSA4]
-Unit 4: R4 Attack:1 Defense:5 HP:1 Speed:-1 Threat:13 Weapon: [BSW33](Magic Bolt) Armor: [BSA11]
-Unit 5: B0 Attack:21 Defense:13 HP:15 Speed:6 Threat:12 Weapon: [BSW18](Killing Spree) Armor: [BSA47]
-Unit 6: B1 Attack:8 Defense:0 HP:5 Speed:-12 Threat:1 Weapon: [BSW39](Healing Link) Armor: [BSA11]
-Unit 7: B2 Attack:-12 Defense:-9 HP:10 Speed:-2 Threat:14 Weapon: [BSW6](Achilles' heel) Armor: [BSA12]
-Unit 8: B3 Attack:4 Defense:-9 HP:6 Speed:0 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA10]
-Unit 9: B4 Attack:10 Defense:4 HP:22 Speed:7 Threat:0 Weapon: [BSW17](Shoot) Armor: [BSA6]
+Unit 0: R0 Attack:8 Defense:-10 HP:14 Speed:21 Threat:-9 Weapon: [BSW44](Exposure) Armor: [BSA10]
+Unit 1: R1 Attack:-9 Defense:-5 HP:-23 Speed:-1 Threat:1 Weapon: [BSW8](Charge Attack) Armor: [BSA19]
+Unit 2: R2 Attack:24 Defense:16 HP:42 Speed:10 Threat:31 Weapon: [BSW32](Focus Throw) Armor: [BSA24]
+Unit 3: R3 Attack:-27 Defense:-13 HP:-8 Speed:-7 Threat:5 Weapon: [BSW40](Grace) Armor: [BSA40]
+Unit 4: R4 Attack:17 Defense:-5 HP:23 Speed:-3 Threat:17 Weapon: [BSW32](Focus Throw) Armor: [BSA10]
+Unit 5: B0 Attack:-12 Defense:12 HP:-9 Speed:7 Threat:-9 Weapon: [BSW10](Reckless Attack) Armor: [BSA12]
+Unit 6: B1 Attack:-10 Defense:-15 HP:0 Speed:13 Threat:20 Weapon: [BSW10](Reckless Attack) Armor: [BSA18]
+Unit 7: B2 Attack:-30 Defense:-15 HP:-5 Speed:-2 Threat:37 Weapon: [BSW23](All-Out Assault) Armor: [BSA39]
+Unit 8: B3 Attack:-15 Defense:17 HP:8 Speed:-17 Threat:-10 Weapon: [BSW24](Boost Acuity) Armor: [BSA4]
+Unit 9: B4 Attack:33 Defense:11 HP:16 Speed:21 Threat:20 Weapon: [BSW2](Chop) Armor: [BSA3]
 ==========================
 
 
-[Tick 14] 1 unit(s) acting
-Melee: R1 targeting B2 (HP: 10)
-B2 HP: 18 - 18 => 0
-
-
-[Tick 18] 1 unit(s) acting
-Ranged: B4 targeting R4 (HP: 1)
-R4 HP: 5 - 5 => 0
-
-
-[Tick 21] 1 unit(s) acting
-Ranged: B0 targeting R1 (HP: 21)
-R1 HP: 21 - 13 => 8
-
-
-[Tick 28] 1 unit(s) acting
-Melee: R1 targeting B0 (HP: 15)
-B0 HP: 15 - 0 => 15
-
-
-[Tick 36] 1 unit(s) acting
-Ranged: B4 targeting R1 (HP: 8)
-R1 HP: 8 - 2 => 6
-
-
-[Tick 42] 2 unit(s) acting
-Ranged: B0 targeting R1 (HP: 6)
-R1 HP: 13 - 13 => 0
-[AFTER-ACTION] B0 performs after-action on R0 (threat: 10)
-R0 HP: 18 - 18 => 0
-
-
-[Tick 54] 1 unit(s) acting
-Ranged: B4 targeting R2 (HP: 9)
-R2 HP: 12 - 12 => 0
-
-
-[Tick 60] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 27)
-R3 HP: 27 - 1 => 26
-
-
-[Tick 63] 1 unit(s) acting
-Ranged: B0 targeting R3 (HP: 26)
-R3 HP: 26 - 12 => 14
-
-
-[Tick 66] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 14)
-R3 HP: 14 - 1 => 13
-
-
-[Tick 70] 1 unit(s) acting
-Ranged: B0 targeting R3 (HP: 13)
-R3 HP: 13 - 12 => 1
-
-
-[Tick 72] 1 unit(s) acting
-Ranged: B4 targeting R3 (HP: 1)
-R3 HP: 1 - 1 => 0
-Battle Over! Blue Team wins!
+[Tick 130] 2 unit(s) acting
+Melee: B4 targeting R2 (HP: 42)
+R2 HP: 42 - 17 => 25
+[A02] R2 defense changed from 16 to 15
+Magic: R0 targeting B4 (HP: 16)
+[A33] B4 threat changed from 20 to 18
+Magic: R0 targeting B3 (HP: 8)
+[A33] B3 threat changed from -10 to 0
+Battle Over! Tick limit reached (200 ticks elapsed)
