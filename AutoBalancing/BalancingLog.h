@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#include "../Simulator/Constants.h"
+#include "../Constants.h"
 
 class BalancingLog {
   public:

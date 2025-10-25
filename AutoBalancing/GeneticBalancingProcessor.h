@@ -15,8 +15,8 @@
 #include "../Sampling/Batch.h"
 #include "../Sampling/BatchCreator.h"
 
+#include "../Constants.h"
 #include "../Simulator/Armor.h"
-#include "../Simulator/Constants.h"
 #include "../Simulator/Simulator.h"
 #include "../Simulator/TestSubject.h"
 #include "../Simulator/Weapon.h"

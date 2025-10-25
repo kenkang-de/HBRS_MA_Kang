@@ -6,7 +6,7 @@
 #include "../Element/ElementList.h"
 #include "../Element/Stat.h"
 
-#include "../Simulator/Constants.h"
+#include "../Constants.h"
 #include "../Simulator/TestSubject.h"
 
 class Chromosome {

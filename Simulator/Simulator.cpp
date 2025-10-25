@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 
+#include "../Constants.h"
 #include "BattleManager.h"
-#include "Constants.h"
 #include "Simulator.h"
 #include "SynergyRule.h"
 

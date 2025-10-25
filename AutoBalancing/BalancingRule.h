@@ -5,8 +5,8 @@
 #include <random>
 #include <vector>
 
+#include "../Constants.h"
 #include "../Element/Stat.h"
-#include "../Simulator/Constants.h"
 
 class BalancingRule {
   private:

@@ -1,18 +1,16 @@
 #ifndef STANDARD_DEVIATION_H
 #define STANDARD_DEVIATION_H
 
-#include <vector>
-#include <cmath>
 #include <algorithm>
+#include <cmath>
+#include <vector>
 
+#include "../Constants.h"
 #include "../Simulator/TestSubject.h"
-#include "../Simulator/Constants.h"
 
-class RMSE
-{
-    public:
-
-    static float Calculate(std::vector<TestSubject*> testSubjects);
+class RMSE {
+  public:
+    static float Calculate(std::vector<TestSubject *> testSubjects);
 };
 
 #endif

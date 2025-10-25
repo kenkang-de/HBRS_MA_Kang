@@ -1,5 +1,4 @@
 #include "BalancingRule.h"
-#include "../Simulator/Constants.h"
 
 std::random_device BalancingRule::rd;
 std::mt19937 BalancingRule::gen(BalancingRule::rd());
@@ -11,7 +10,7 @@ std::vector<Stat> BalancingRule::GenerateRamdomAppliedStats(int amount) {
 
     for (int i = 0; i < amount; i++) {
         int randAttack = dist(gen);
-        int randDefense = dist(gen);
+        int randDefense = static_cast<int>(dist(gen) * 0.5f);
         int randHP = dist(gen);
         int randSpeed = static_cast<int>(dist(gen) * 0.2f);
         int randThreat = dist(gen);
@@ -25,7 +24,7 @@ std::vector<Stat> BalancingRule::GenerateRamdomAppliedStats(int amount) {
 Stat BalancingRule::GenerateRamdomAppliedStat() {
 
     int randAttack = dist(gen);
-    int randDefense = dist(gen);
+    int randDefense = static_cast<int>(dist(gen) * 0.5f);
     int randHP = dist(gen);
     int randSpeed = static_cast<int>(dist(gen) * 0.2f);
     int randThreat = dist(gen);

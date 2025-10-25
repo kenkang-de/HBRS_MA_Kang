@@ -6,11 +6,11 @@
 #include <set>
 #include <streambuf> // Add this for stream redirection
 
+#include "../Constants.h"
 #include "../Log/LogSystem.h"
 #include "ActionLibrary.h"
 #include "BattleManager.h"
 #include "Battlefield.h"
-#include "Constants.h"
 #include "GlobalAction.h"
 #include "TargetManager.h"
 
