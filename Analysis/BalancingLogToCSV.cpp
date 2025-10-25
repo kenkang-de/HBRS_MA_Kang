@@ -1,20 +1,27 @@
 #include "BalancingLogToCSV.h"
+#include "../Constants.h"
+#include "../Paths.h"
 #include <algorithm>
+#include <filesystem>
 #include <fstream>
 #include <iostream>
 
 void BalancingLogToCSV::Convert() {
-    // Generate unique filename
+    // Create directory if it doesn't exist
+    std::string outputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
+    std::filesystem::create_directories(outputDir);
+
+    // Generate unique filename in the specified directory
     std::string baseFilename = "BalancingLogResults";
     std::string extension = ".csv";
-    std::string filename = baseFilename + extension;
+    std::string filename = outputDir + baseFilename + extension;
 
     // Check if file exists and generate unique name
     int counter = 1;
     std::ifstream testFile(filename);
     while (testFile.good()) {
         testFile.close();
-        filename = baseFilename + "_" + std::to_string(counter) + extension;
+        filename = outputDir + baseFilename + "_" + std::to_string(counter) + extension;
         testFile.open(filename);
         counter++;
     }
@@ -73,6 +80,30 @@ void BalancingLogToCSV::Convert() {
         }
         csvFile << std::endl;
     }
+
+    // Add constants section at the end
+    csvFile << std::endl; // Empty line separator
+    csvFile << "Configuration Constants" << std::endl;
+    csvFile << "UNITS_PER_TEAM," << UNITS_PER_TEAM << std::endl;
+    csvFile << "TEST_TICK," << TEST_TICK << std::endl;
+    csvFile << "SIMULATION_COUNT," << SIMULATION_COUNT << std::endl;
+    csvFile << "DELAY_MULTIPLIER," << DELAY_MULTIPLIER << std::endl;
+    csvFile << "MULTIPLIER_COUNTER," << MULTIPLIER_COUNTER << std::endl;
+    csvFile << "MULTIPLIER_BASIC," << MULTIPLIER_BASIC << std::endl;
+    csvFile << "DEFENSE_RATIO," << DEFENSE_RATIO << std::endl;
+    csvFile << "SPEED_RATIO," << SPEED_RATIO << std::endl;
+    csvFile << "APPLIEDSTAT_RANGE," << APPLIEDSTAT_RANGE << std::endl;
+    csvFile << "INDIVIDUALS_PER_GENERATION," << INDIVIDUALS_PER_GENERATION << std::endl;
+    csvFile << "CROSSOVER_PROBABILITY," << CROSSOVER_PROBABILITY << std::endl;
+    csvFile << "MUTATION_PROBABILITY," << MUTATION_PROBABILITY << std::endl;
+    csvFile << "MUTATION_SIGMA," << MUTATION_SIGMA << std::endl;
+    csvFile << "TARGET_WINRATE," << TARGET_WINRATE << std::endl;
+    csvFile << "TARGET_THRESHOLD," << TARGET_THRESHOLD << std::endl;
+    csvFile << "FITNESS_THRESHOLD," << FITNESS_THRESHOLD << std::endl;
+    csvFile << "FITNESS_MAX," << FITNESS_MAX << std::endl;
+    csvFile << "RMSE_WEIGHT," << RMSE_WEIGHT << std::endl;
+    csvFile << "DOC_WEIGHT," << DOC_WEIGHT << std::endl;
+    csvFile << "MAXGENERATION," << MAXGENERATION << std::endl;
 
     csvFile.close();
     std::cout << "BalancingLog CSV file created successfully: " << filename << std::endl;

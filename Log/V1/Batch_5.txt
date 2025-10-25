@@ -1,147 +1,210 @@
-Unit 0: R0 Attack:3 Defense:-1 HP:10 Speed:7 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA6]
-Unit 1: R1 Attack:6 Defense:2 HP:10 Speed:1 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA30]
-Unit 2: R2 Attack:4 Defense:2 HP:12 Speed:4 Threat:4 Weapon: [BSW29](Camo Throw) Armor: [BSA24]
-Unit 3: R3 Attack:3 Defense:1 HP:8 Speed:4 Threat:2 Weapon: [BSW2](Chop) Armor: [BSA18]
-Unit 4: R4 Attack:1 Defense:2 HP:10 Speed:1 Threat:8 Weapon: [BSW49](Earthquake) Armor: [BSA30]
-Unit 5: B0 Attack:4 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA11]
-Unit 6: B1 Attack:2 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA25]
-Unit 7: B2 Attack:3 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW34](Wind Blade) Armor: [BSA50]
-Unit 8: B3 Attack:1 Defense:4 HP:12 Speed:1 Threat:9 Weapon: [BSW46](Protect) Armor: [BSA40]
-Unit 9: B4 Attack:3 Defense:3 HP:7 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA23]
+Unit 0: R0 Attack:7 Defense:1 HP:6 Speed:4 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA26]
+Unit 1: R1 Attack:-2 Defense:5 HP:15 Speed:0 Threat:10 Weapon: [BSW50](Corrosion) Armor: [BSA48]
+Unit 2: R2 Attack:1 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA5]
+Unit 3: R3 Attack:2 Defense:0 HP:10 Speed:6 Threat:2 Weapon: [BSW25](Smoke Shot) Armor: [BSA10]
+Unit 4: R4 Attack:7 Defense:1 HP:6 Speed:4 Threat:3 Weapon: [BSW8](Charge Attack) Armor: [BSA27]
+Unit 5: B0 Attack:5 Defense:3 HP:12 Speed:2 Threat:6 Weapon: [BSW29](Camo Throw) Armor: [BSA44]
+Unit 6: B1 Attack:4 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW25](Smoke Shot) Armor: [BSA8]
+Unit 7: B2 Attack:2 Defense:3 HP:13 Speed:2 Threat:7 Weapon: [BSW22](Delay Shot) Armor: [BSA47]
+Unit 8: B3 Attack:5 Defense:0 HP:8 Speed:6 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA4]
+Unit 9: B4 Attack:6 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW14](Leech Attack) Armor: [BSA21]
 ==========================
 
 
-[Tick 12] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
+[Tick 2] 4 unit(s) acting
+Ranged: B1 targeting R1 (HP: 15)
+R1 HP: 15 - 0 => 15
+Ranged: R3 targeting B2 (HP: 13)
+B2 HP: 13 - 0 => 13
+Ranged: B3 targeting R1 (HP: 15)
+R1 HP: 15 - 5 => 10
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B2 (HP: 13)
+B2 HP: 13 - 1 => 12
 
 
-[Tick 14] 1 unit(s) acting
-Ranged: B0 targeting R4 (HP: 10)
-R4 HP: 10 - 8 => 2
-  -> R4 (magic) tick reset due to ranged attack!
+[Tick 3] 2 unit(s) acting
+Melee: R4 targeting B0 (HP: 12)
+B0 HP: 12 - 5 => 7
+Melee: R0 targeting B0 (HP: 7)
+B0 HP: 7 - 4 => 3
 
 
-[Tick 21] 3 unit(s) acting
-Ranged: B4 targeting R4 (HP: 2)
-R4 HP: 2 - 1 => 1
-[BOON] Applied Poison Effect to R4 (Usage: 2)
-[A28] B4 applied Poison Effect to R4 (usage: 2)
-  -> R4 (magic) tick reset due to ranged attack!
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Melee: R3 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
+[Tick 4] 4 unit(s) acting
+Ranged: B1 targeting R1 (HP: 10)
+R1 HP: 10 - 0 => 10
+Ranged: R3 targeting B0 (HP: 3)
+B0 HP: 3 - 0 => 3
+Ranged: B3 targeting R1 (HP: 10)
+R1 HP: 10 - 5 => 5
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B0 (HP: 3)
+B0 HP: 3 - 1 => 2
 
 
-[Tick 24] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
+[Tick 6] 9 unit(s) acting
+Ranged: B3 targeting R2 (HP: 7)
+R2 HP: 7 - -1 => 8
+Ranged: B2 targeting R2 (HP: 8)
+R2 HP: 8 - 2 => 6
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: R3 targeting B4 (HP: 10)
+B4 HP: 10 - 0 => 10
+Ranged: B0 targeting R4 (HP: 6)
+R4 HP: 6 - 4 => 2
+Ranged: B1 targeting R4 (HP: 2)
+R4 HP: 3 - 3 => 0
+Melee: R0 targeting B4 (HP: 10)
+B4 HP: 10 - 4 => 6
+Melee: B4 targeting R3 (HP: 10)
+R3 HP: 10 - 6 => 4
+[HEAL] B4 healed for 4 HP (from 6 to 10/10)
+  -> R3 (ranged) delayed by 1 tick(s) due to 6/10 damage!
 
 
-[Tick 28] 2 unit(s) acting
-Ranged: B0 targeting R4 (HP: 1)
-R4 HP: 8 - 8 => 0
-Magic: B1 targeting B3 (HP: 12)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-Magic: B1 targeting B2 (HP: 15)
-[HEAL] B2 healed for 0 HP (from 15 to 15/15)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
+[Tick 9] 3 unit(s) acting
+Ranged: R3 targeting B2 (HP: 12)
+B2 HP: 12 - 0 => 12
+Melee: R0 targeting B2 (HP: 12)
+B2 HP: 12 - 4 => 8
+Magic: R2 targeting B2 (HP: 8)
+B2 HP: 8 - 1 => 7
 
 
-[Tick 36] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
+[Tick 10] 2 unit(s) acting
+Ranged: B1 targeting R2 (HP: 6)
+R2 HP: 6 - 4 => 2
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: B3 targeting R2 (HP: 2)
+R2 HP: 2 - -1 => 3
+
+
+[Tick 13] 2 unit(s) acting
+Ranged: R3 targeting B3 (HP: 8)
+B3 HP: 8 - 2 => 6
+Magic: R2 targeting B3 (HP: 6)
+B3 HP: 6 - 1 => 5
+
+
+[Tick 14] 2 unit(s) acting
+Ranged: B3 targeting R2 (HP: 3)
+R2 HP: 3 - -1 => 4
+Ranged: B1 targeting R3 (HP: 4)
+R3 HP: 4 - 4 => 0
+
+
+[Tick 15] 2 unit(s) acting
+Melee: R0 targeting B3 (HP: 5)
+B3 HP: 7 - 7 => 0
+Magic: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 1 => 9
+
+
+[Tick 16] 1 unit(s) acting
+Ranged: B1 targeting R2 (HP: 4)
+R2 HP: 4 - 4 => 0
+
+
+[Tick 18] 5 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 HP: 6 - 1 => 5
+Ranged: B1 targeting R0 (HP: 5)
+R0 HP: 5 - 3 => 2
+Ranged: B0 targeting R0 (HP: 2)
+R0 HP: 4 - 4 => 0
+Melee: B4 targeting R1 (HP: 5)
+R1 HP: 5 - 1 => 4
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+  -> R1 (magic) tick reset due to melee attack!
+
+
+[Tick 20] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 4)
+R1 HP: 4 - 0 => 4
+
+
+[Tick 22] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 4)
+R1 HP: 4 - 0 => 4
+
+
+[Tick 24] 4 unit(s) acting
+Ranged: B1 targeting R1 (HP: 4)
+R1 HP: 4 - 0 => 4
+Ranged: B0 targeting R1 (HP: 4)
+R1 HP: 4 - 0 => 4
+Ranged: B2 targeting R1 (HP: 4)
+R1 HP: 4 - 0 => 4
+Melee: B4 targeting R1 (HP: 4)
+R1 HP: 4 - 1 => 3
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+  -> R1 (magic) tick reset due to melee attack!
+
+
+[Tick 26] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 3)
+R1 HP: 3 - 0 => 3
+
+
+[Tick 28] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 3)
+R1 HP: 3 - 0 => 3
+
+
+[Tick 30] 4 unit(s) acting
+Ranged: B2 targeting R1 (HP: 3)
+R1 HP: 3 - 0 => 3
+Ranged: B1 targeting R1 (HP: 3)
+R1 HP: 3 - 0 => 3
+Ranged: B0 targeting R1 (HP: 3)
+R1 HP: 3 - 0 => 3
+Melee: B4 targeting R1 (HP: 3)
+R1 HP: 3 - 1 => 2
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+  -> R1 (magic) tick reset due to melee attack!
+
+
+[Tick 32] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+
+
+[Tick 34] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+
+
+[Tick 36] 4 unit(s) acting
+Ranged: B0 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+Ranged: B1 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+Ranged: B2 targeting R1 (HP: 2)
+R1 HP: 2 - 0 => 2
+Melee: B4 targeting R1 (HP: 2)
+R1 HP: 2 - 1 => 1
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+  -> R1 (magic) tick reset due to melee attack!
+
+
+[Tick 38] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
+
+
+[Tick 40] 1 unit(s) acting
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
 
 
 [Tick 42] 4 unit(s) acting
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Ranged: B4 targeting R1 (HP: 10)
-R1 HP: 10 - 1 => 9
-[BOON] Applied Poison Effect to R1 (Usage: 2)
-[A28] B4 applied Poison Effect to R1 (usage: 2)
-Ranged: B0 targeting R1 (HP: 9)
-R1 HP: 9 - 8 => 1
-Melee: R3 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-
-
-[Tick 48] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-
-
-[Tick 56] 2 unit(s) acting
+Ranged: B1 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
 Ranged: B0 targeting R1 (HP: 1)
-R1 HP: 8 - 8 => 0
-Magic: B1 targeting B3 (HP: 12)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-Magic: B1 targeting B2 (HP: 15)
-[HEAL] B2 healed for 0 HP (from 15 to 15/15)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 60] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-
-
-[Tick 63] 3 unit(s) acting
-Ranged: B4 targeting R0 (HP: 10)
-R0 HP: 10 - 4 => 6
-[BOON] Applied Poison Effect to R0 (Usage: 2)
-[A28] B4 applied Poison Effect to R0 (usage: 2)
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Melee: R3 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-
-
-[Tick 70] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 6)
-R0 HP: 11 - 11 => 0
-
-
-[Tick 84] 7 unit(s) acting
-Ranged: B4 targeting R3 (HP: 8)
-R3 HP: 8 - 2 => 6
-[BOON] Applied Poison Effect to R3 (Usage: 2)
-[A28] B4 applied Poison Effect to R3 (usage: 2)
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Ranged: B0 targeting R3 (HP: 6)
-R3 HP: 9 - 9 => 0
-Magic: B2 targeting R2 (HP: 12)
-R2 HP: 12 - 3 => 9
-Magic: B1 targeting B3 (HP: 12)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-Magic: B1 targeting B2 (HP: 15)
-[HEAL] B2 healed for 0 HP (from 15 to 15/15)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B3 targeting B3 (HP: 12)
-[BOON] Applied ProtectSTART to B3 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[DEBUG] B3 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B3
-[AFTER-ACTION] B3 performs after-action on B3 (threat: 9)
-[TEMP-BUFF] ProtectSTART applied to B3 (Duration: 1 turns)
-[EXECUTE_EFFECT] B3 triggered ProtectSTART
-
-
-[Tick 98] 1 unit(s) acting
-Ranged: B0 targeting R2 (HP: 9)
-R2 HP: 9 - 8 => 1
-
-
-[Tick 105] 2 unit(s) acting
-Ranged: R2 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Ranged: B4 targeting R2 (HP: 1)
-R2 HP: 1 - 1 => 0
-[BOON] Applied Poison Effect to R2 (Usage: 2)
-[A28] B4 applied Poison Effect to R2 (usage: 2)
+R1 HP: 1 - 0 => 1
+Ranged: B2 targeting R1 (HP: 1)
+R1 HP: 1 - 0 => 1
+Melee: B4 targeting R1 (HP: 1)
+R1 HP: 1 - 1 => 0
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
 Battle Over! Blue Team wins!
