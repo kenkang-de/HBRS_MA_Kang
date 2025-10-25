@@ -4,36 +4,36 @@
 class Unit;
 class BattleAction;
 class BoonAction;
+#include <functional>
+#include <memory>
 #include <string>
 #include <unordered_map>
-#include <functional>
 #include <vector>
-#include <memory>
 
 struct ActionContext {
-    Unit* actor;
-    Unit* target;
-    const std::vector<Unit*>& allies;
-    const std::vector<Unit*>& enemies;
+    Unit *actor;
+    Unit *target;
+    const std::vector<Unit *> &allies;
+    const std::vector<Unit *> &enemies;
 };
 
-using ConditionFn = std::function<bool(const ActionContext&)>;
-using ActionFn = std::function<void(const ActionContext&)>;
+using ConditionFn = std::function<bool(const ActionContext &)>;
+using ActionFn = std::function<void(const ActionContext &)>;
 
 class ActionLibrary {
-public:
-    static ConditionFn GetCondition(const std::string& id);
+  public:
+    static ConditionFn GetCondition(const std::string &id);
 
-    static ActionFn GetAction(const std::string& id);
-    static ActionFn GetAction(const std::string& id, const std::string& param);
+    static ActionFn GetAction(const std::string &id);
+    static ActionFn GetAction(const std::string &id, const std::string &param);
 
-private:
+  private:
     static const std::unordered_map<std::string, ConditionFn> conditionMap;
     static const std::unordered_map<std::string, ActionFn> actionMap;
 };
 
 // Global functions for Boon system
-void AddBoonToUnit(Unit* target, std::unique_ptr<BoonAction> boon);
-bool HasBoonOnUnit(Unit* target, const std::string& effectType);
+void AddBoonToUnit(Unit *target, std::unique_ptr<BoonAction> boon);
+bool HasBoonOnUnit(Unit *target, const std::string &effectType);
 
 #endif

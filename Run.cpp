@@ -116,6 +116,10 @@ class NewMasterController {
             testSubjects.push_back(&armor);
         }
 
+        // Log first Simulated batch
+        TestSubjectToCSV csvGenerator;
+        csvGenerator.Convert(testSubjects);
+
         // Stage 4: Autobalancing
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList, testSubjects);
@@ -125,9 +129,6 @@ class NewMasterController {
         std::cout << "Stage 4 Complete" << std::endl;
 
         // Stage 5: Analysis
-        TestSubjectToCSV csvGenerator;
-        csvGenerator.Convert(testSubjects);
-
         BalancingLogToCSV::Convert();
 
         std::cout << "Stage 5 Complete" << std::endl;

@@ -17,7 +17,7 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C00_A02(-1)"]
+  actionIDs: ["C00_A00", "C00_A02"]
 
 - id: Shoot
   targetNumber: 1
@@ -31,14 +31,14 @@
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A03(5)"]
+  actionIDs: ["C00_A03"]
 
 - id: RageAttack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A04(1)", "C00_A00", "C00_A05(1)"]
+  actionIDs: ["C00_A04", "C00_A00", "C00_A05"]
 
 - id: Overpower
   targetNumber: 1
@@ -52,14 +52,14 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A05(2)", "C00_A00", "C00_A02(-1)"]
+  actionIDs: ["C00_A05", "C00_A00", "C00_A02"]
 
 - id: Achilles' heel
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C00_A06(-1)"]
+  actionIDs: ["C00_A00", "C00_A06"]
 
 - id: Charge Attack
   targetNumber: 1
@@ -80,14 +80,14 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A05(3)", "C00_A09(3)"] 
+  actionIDs: ["C00_A05", "C00_A09"] 
 
 - id: Fade Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C00_A10(-1)"] 
+  actionIDs: ["C00_A00", "C00_A10"] 
 
 - id: Final Attack
   targetNumber: 1
@@ -101,7 +101,7 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A13(3)", "C00_A00"]
+  actionIDs: ["C00_A13", "C00_A00"]
 
 - id: Leech Attack
   targetNumber: 1
@@ -115,14 +115,14 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C04_A10(1)", "C04_A04(-1)"]
+  actionIDs: ["C00_A00", "C04_A10", "C04_A04"]
 
 - id: Killer's Spirit
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00","C05_A04(1)", "C05_A15(1)"]
+  actionIDs: ["C00_A00","C05_A04", "C05_A15"]
 
 - id: Killing Spree
   targetNumber: 1
@@ -150,7 +150,7 @@
   self: false
   targetType: ALLY
   actionType: RANGE
-  actionIDs: ["C00_A19(1)"]
+  actionIDs: ["C00_A19"]
 
 - id: Blitz Shot
   targetNumber: 1
@@ -164,14 +164,14 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A00","C00_A20(1)"]  
+  actionIDs: ["C00_A00","C00_A20"]  
 
 - id: All-Out Assault
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A10(1)", "C00_A04(2)","C00_A00"]  
+  actionIDs: ["C00_A10", "C00_A04","C00_A00"]  
 
 - id: Boost Acuity
   targetNumber: 1
@@ -192,14 +192,14 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A23", "C00_A19(-1)"]   
+  actionIDs: ["C00_A23", "C00_A19"]   
 
 - id: Camo Throw
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A00", "C00_A10(-1)"]   
+  actionIDs: ["C00_A00", "C00_A10"]   
 
 - id: Fire Arrow
   targetNumber: 1
@@ -220,7 +220,7 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C01_A09(2)", "C02_A00"]
+  actionIDs: ["C01_A09", "C02_A00"]
 
 - id: Poison Attack
   targetNumber: 1
@@ -234,14 +234,14 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A03(5)"]
+  actionIDs: ["C00_A03"]
 
 - id: Healing Touch
   targetNumber: 1
   self: false
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A29(5)"]
+  actionIDs: ["C00_A29"]
 
 - id: Poison Arrow
   targetNumber: 1
@@ -290,21 +290,21 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A03(5)"]
+  actionIDs: ["C00_A03"]
 
 - id: Healing Link
   targetNumber: 2
   self: false
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A29(3)"]
+  actionIDs: ["C00_A29"]
 
 - id: Grace
   targetNumber: 3
   self: false
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A29(2)"]  
+  actionIDs: ["C00_A29"]  
 
 - id: Freeze
   targetNumber: 1
@@ -318,7 +318,7 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: []    
+  actionIDs: ["C00_A30"]    
 
 - id: FreezeEND
   targetNumber: 1
@@ -332,7 +332,7 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A32(-10)"]   
+  actionIDs: ["C00_A36"]   
 
 - id: Bulkup
   targetNumber: 1
@@ -346,14 +346,14 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A32(10)"]         
+  actionIDs: ["C00_A32"]         
 
 - id: BulkupEND
   targetNumber: 1
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A32(-10)"]   
+  actionIDs: ["C00_A32"]   
 
 - id: Haste
   targetNumber: 1
@@ -367,35 +367,35 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A19(2)"]     
+  actionIDs: ["C00_A19"]     
 
 - id: HasteEND
   targetNumber: 1
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A19(-2)"]  
+  actionIDs: ["C00_A37"]  
 
 - id: Vow
   targetNumber: 2
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A33(2)", "C00_A02(1)"]  
+  actionIDs: ["C00_A33", "C00_A02"]  
 
 - id: Exposure
   targetNumber: 3
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A33(-2)"]  
+  actionIDs: ["C00_A33"]  
 
 - id: Fatigue
   targetNumber: 2
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A06(-1)"]    
+  actionIDs: ["C00_A06"]    
 
 - id: Protect
   targetNumber: 1
@@ -409,39 +409,39 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A02(3)"]     
+  actionIDs: ["C00_A02"]     
 
 - id: ProtectEND
   targetNumber: 1
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A02(-3)"]  
+  actionIDs: ["C00_A38"]  
 
 - id: Cheer
   targetNumber: 1
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A34(2)"]
+  actionIDs: ["C00_A34"]
 
 - id: Meteor
   targetNumber: 4
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A03(3)"]
+  actionIDs: ["C00_A03"]
 
 - id: Earthquake
   targetNumber: 5
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A03(2)"]   
+  actionIDs: ["C00_A03"]   
 
 - id: Corrosion
   targetNumber: 2
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A34(-1)"]   
+  actionIDs: ["C00_A34"]   

@@ -17,7 +17,7 @@
 // Static reference for global access
 static BattleManager *currentBattleManager = nullptr;
 
-BattleManager::BattleManager(Battlefield &bf) : battlefield(bf), tickCount(0) {
+BattleManager::BattleManager(Battlefield &bf) : battlefield(bf) {
 
     GlobalAction::ClearAfterAction();
     currentBattleManager = this;
@@ -31,15 +31,11 @@ BattleManager::BattleManager(Battlefield &bf) : battlefield(bf), tickCount(0) {
 }
 
 BattleManager::~BattleManager() {
-    // Clear static reference to prevent dangling pointer
     if (currentBattleManager == this) {
         currentBattleManager = nullptr;
     }
+    GlobalAction::ClearAfterAction();
 
-    // Clean up all resources
-    turnManager.Reset();              // Clean up before destruction
-    GlobalAction::ClearAfterAction(); // Clear after actions
-    // NOTE: Don't clear GlobalRegistry - it contains persistent global actions
     allUnits.clear(); // Clear unit pointers
 }
 
@@ -59,7 +55,6 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
     turnManager.Initialize(allUnits);
-    tickCount = 0;
 
     if (log) {
         std::string logFilename = Paths::LOG_V1_DIR + batchID + ".txt";
@@ -81,18 +76,16 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
     std::vector<Unit *> meleeUnits;
     std::vector<Unit *> magicUnits;
 
-    while (!IsBattleOver(false, tickCount)) {
+    while (!IsBattleOver()) {
         // Get all units scheduled to act in the current tick
         std::vector<Unit *> units = turnManager.GetNextUnits();
 
         if (!units.empty()) {
-
             LogSystem::Log("\n");
             LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
-            tickCount++;
         } else {
             // Check if queue is empty and no units can act (battle should end)
-            if (!turnManager.HasActions()) {
+            if (!turnManager.CanContinue(allUnits)) {
                 LogSystem::LogStream("Battle Over! No more units can act (empty queue at tick ",
                                      turnManager.GetCurrentTick(), ")");
                 LogDrawResult();
@@ -358,9 +351,8 @@ void BattleManager::SplitAlliesAndEnemies(Unit *unit, const BattleAction &action
     }
 }
 
-bool BattleManager::IsBattleOver(bool test, int tickCount) {
-    // Check if we've reached the tick limit based on actual turn manager ticks
-    if (tickCount >= TEST_TICK || turnManager.GetCurrentTick() >= 200) { // Double safety check
+bool BattleManager::IsBattleOver() {
+    if (turnManager.GetCurrentTick() >= 500) {
         LogSystem::LogStream("Battle Over! Tick limit reached (", turnManager.GetCurrentTick(), " ticks elapsed)");
         LogDrawResult();
         LogUsageCount();

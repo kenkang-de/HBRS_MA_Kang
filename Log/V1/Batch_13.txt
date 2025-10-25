@@ -1,35 +1,134 @@
-Unit 0: R0 Attack:8 Defense:0 HP:2 Speed:7 Threat:2 Weapon: [BSW8](Charge Attack) Armor: [BSA16]
-Unit 1: R1 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA10]
-Unit 2: R2 Attack:9 Defense:0 HP:0 Speed:-1 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
-Unit 3: R3 Attack:8 Defense:1 HP:0 Speed:-4 Threat:5 Weapon: [BSW16](Killer's Spirit) Armor: [BSA17]
-Unit 4: R4 Attack:6 Defense:-4 HP:9 Speed:5 Threat:-10 Weapon: [BSW30](Fire Arrow) Armor: [BSA1]
-Unit 5: B0 Attack:9 Defense:0 HP:0 Speed:-1 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
-Unit 6: B1 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA1]
-Unit 7: B2 Attack:4 Defense:8 HP:0 Speed:1 Threat:2 Weapon: [BSW40](Grace) Armor: [BSA6]
-Unit 8: B3 Attack:14 Defense:5 HP:3 Speed:5 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA14]
-Unit 9: B4 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA9]
+Unit 0: R0 Attack:0 Defense:3 HP:14 Speed:1 Threat:8 Weapon: [BSW45](Fatigue) Armor: [BSA41]
+Unit 1: R1 Attack:3 Defense:2 HP:15 Speed:2 Threat:5 Weapon: [BSW31](Wrist Shot) Armor: [BSA49]
+Unit 2: R2 Attack:1 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW6](Achilles' heel) Armor: [BSA18]
+Unit 3: R3 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA16]
+Unit 4: R4 Attack:4 Defense:6 HP:10 Speed:1 Threat:7 Weapon: [BSW28](Heavy Shot) Armor: [BSA42]
+Unit 5: B0 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA20]
+Unit 6: B1 Attack:6 Defense:3 HP:10 Speed:3 Threat:8 Weapon: [BSW9](Blitz Attack) Armor: [BSA34]
+Unit 7: B2 Attack:4 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW18](Killing Spree) Armor: [BSA36]
+Unit 8: B3 Attack:2 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA33]
+Unit 9: B4 Attack:5 Defense:0 HP:12 Speed:2 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA38]
 ==========================
 
 
-[Tick 10] 1 unit(s) acting
-Melee: R0 targeting B1 (HP: 1)
-B1 HP: 1 - 0 => 1
+[Tick 6] 2 unit(s) acting
+Melee: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Melee: B0 targeting R0 (HP: 14)
+R0 HP: 14 - 0 => 14
 
 
-[Tick 14] 3 unit(s) acting
-Ranged: R4 targeting B1 (HP: 1)
-B1 HP: 4 - 4 => 0
-Ranged: B3 targeting R1 (HP: 3)
-R1 HP: 9 - 9 => 0
-[A10] B3 threat changed from 8 to 7
+[Tick 10] 2 unit(s) acting
+Melee: B1 targeting R0 (HP: 14)
+R0 HP: 14 - 8 => 6
+  -> R0 (magic) tick reset due to melee attack!
+Magic: R3 targeting R0 (HP: 6)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 12] 2 unit(s) acting
+Melee: B0 targeting R0 (HP: 6)
+R0 HP: 6 - 0 => 6
+Melee: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+
+
+[Tick 15] 3 unit(s) acting
+Ranged: B2 targeting R0 (HP: 6)
+R0 HP: 6 - 1 => 5
+  -> R0 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Melee: B4 targeting R0 (HP: 5)
+R0 HP: 5 - 2 => 3
+R0 HP: 3 - 2 => 1
+  -> R0 (magic) tick reset due to melee attack!
+
+
+[Tick 16] 1 unit(s) acting
+Melee: B1 targeting R0 (HP: 1)
+R0 HP: 10 - 10 => 0
+
+
+[Tick 18] 2 unit(s) acting
+Melee: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+Melee: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
 
 
 [Tick 20] 1 unit(s) acting
-Melee: R0 targeting B3 (HP: 3)
-B3 HP: 3 - 3 => 0
+Magic: R3 targeting R4 (HP: 10)
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 25] 1 unit(s) acting
-Melee: R0 targeting B4 (HP: 3)
-B4 HP: 8 - 8 => 0
-Battle Over! Red Team wins!
+[Tick 30] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 10)
+B1 HP: 10 - 5 => 5
+[DEBUG] R4 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R4
+[AFTER-ACTION] R4 performs after-action on R4 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R4 (Duration: 1 turns)
+[EXECUTE_EFFECT] R4 triggered BulkupSTART
+Magic: B3 targeting R4 (HP: 14)
+Magic: B3 targeting R1 (HP: 15)
+
+
+[Tick 46] 1 unit(s) acting
+Melee: B1 targeting R4 (HP: 14)
+R4 HP: 14 - 9 => 5
+  -> R4 (ranged) delayed by 1 tick(s) due to 9/14 damage!
+
+
+[Tick 50] 1 unit(s) acting
+Magic: R3 targeting R4 (HP: 5)
+[BOON] Refreshing existing BulkupSTART on R4
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 56] 1 unit(s) acting
+Melee: B1 targeting R4 (HP: 5)
+R4 HP: 9 - 9 => 0
+
+
+[Tick 60] 2 unit(s) acting
+Melee: R2 targeting B1 (HP: 5)
+B1 HP: 5 - 0 => 5
+Melee: B0 targeting R1 (HP: 15)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 66] 1 unit(s) acting
+Melee: B1 targeting R1 (HP: 15)
+R1 HP: 15 - 15 => 0
+
+
+[Tick 78] 2 unit(s) acting
+Melee: B0 targeting R2 (HP: 8)
+R2 HP: 8 - 3 => 5
+Melee: R2 targeting B1 (HP: 5)
+B1 HP: 5 - 0 => 5
+
+
+[Tick 80] 1 unit(s) acting
+Magic: R3 targeting R2 (HP: 5)
+[BOON] Applied BulkupSTART to R2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 96] 1 unit(s) acting
+Melee: B1 targeting R2 (HP: 5)
+R2 HP: 18 - 18 => 0
+
+
+[Tick 120] 3 unit(s) acting
+Ranged: B2 targeting R3 (HP: 6)
+R3 HP: 6 - 4 => 2
+  -> R3 (magic) tick reset due to ranged attack!
+Melee: B4 targeting R3 (HP: 2)
+R3 HP: 5 - 5 => 0
+R3 HP: 5 - 5 => 0
+Battle Over! Blue Team wins!

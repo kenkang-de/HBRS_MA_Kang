@@ -20,7 +20,7 @@ const float MULTIPLIER_BASIC = 1.0f;
 
 const int APPLIEDSTAT_RANGE = 10;
 
-const int INDIVIDUALS_PER_GENERATION = 50;
+const int INDIVIDUALS_PER_GENERATION = 100;
 
 const float CROSSOVER_PROBABILITY = 0.9f;
 const float MUTATION_PROBABILITY = 0.1f;
@@ -34,6 +34,6 @@ const float FITNESS_MAX = 1.0f;
 const float RMSE_WEIGHT = 0.9f;
 const float DOC_WEIGHT = 0.1f;
 
-const int MAXGENERATION = 50;
+const int MAXGENERATION = 100;
 
 #endif

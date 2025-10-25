@@ -10,12 +10,9 @@
 #include "Unit.h"
 
 Unit::Unit()
-    : Name(""), defaultStat(Stat()), totalStat(defaultStat),
-      // Initialize currentHP to 0, will be set when equipment is applied
-      currentHP(0), weapon(nullptr), armor(nullptr), isFrozen(false), // Initialize isFrozen to false by default
-      Tickinterval(0), TickDelay(0) {}
+    : Name(""), defaultStat(Stat()), totalStat(defaultStat), currentHP(0), weapon(nullptr), armor(nullptr),
+      isFrozen(false), Tickinterval(1), TickDelay(0) {}
 
-// Custom copy constructor - don't copy activeBoons (start fresh)
 Unit::Unit(const Unit &other)
     : Name(other.Name), defaultStat(other.defaultStat), totalStat(other.totalStat), currentHP(other.currentHP),
       weapon(other.weapon), armor(other.armor), isFrozen(other.isFrozen), team(other.team),
@@ -52,7 +49,7 @@ void Unit::ResetUnit() {
     ClearActiveBoons();
     isFrozen = false;
 
-    Tickinterval = 0;
+    Tickinterval = 1;
     TickDelay = 0;
 }
 
@@ -79,10 +76,12 @@ const Stat &Unit::GetTotalStat() const {
 void Unit::SetWeapon(Weapon *w) {
     weapon = w;
     if (weapon) {
-        totalStat = weapon->GetStat();
+        // totalStat = weapon->GetStat();
         // for balancing
         if (weapon->correctionStat != nullptr)
             totalStat += *(weapon->correctionStat);
+        else
+            totalStat += weapon->GetStat();
     }
     currentHP = totalStat.GetHP();
 }
@@ -90,10 +89,12 @@ void Unit::SetWeapon(Weapon *w) {
 void Unit::SetArmor(Armor *a) {
     armor = a;
     if (armor) {
-        totalStat = armor->GetStat();
+        // totalStat = armor->GetStat();
         // for balancing
         if (armor->correctionStat != nullptr)
             totalStat += *(armor->correctionStat);
+        else
+            totalStat += armor->GetStat();
     }
     currentHP = totalStat.GetHP();
 }

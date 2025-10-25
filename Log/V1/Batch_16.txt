@@ -1,60 +1,150 @@
-Unit 0: R0 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA17]
-Unit 1: R1 Attack:2 Defense:0 HP:3 Speed:1 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA5]
-Unit 2: R2 Attack:9 Defense:7 HP:0 Speed:-3 Threat:11 Weapon: [BSW15](Taunt) Armor: [BSA3]
-Unit 3: R3 Attack:10 Defense:8 HP:1 Speed:2 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA1]
-Unit 4: R4 Attack:13 Defense:10 HP:1 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA14]
-Unit 5: B0 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA13]
-Unit 6: B1 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA3]
-Unit 7: B2 Attack:6 Defense:-4 HP:9 Speed:5 Threat:-10 Weapon: [BSW30](Fire Arrow) Armor: [BSA19]
-Unit 8: B3 Attack:5 Defense:-4 HP:-2 Speed:-10 Threat:8 Weapon: [BSW18](Killing Spree) Armor: [BSA12]
-Unit 9: B4 Attack:8 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA2]
+Unit 0: R0 Attack:3 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW26](Double Shot) Armor: [BSA50]
+Unit 1: R1 Attack:5 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW32](Focus Throw) Armor: [BSA40]
+Unit 2: R2 Attack:1 Defense:4 HP:15 Speed:1 Threat:8 Weapon: [BSW39](Healing Link) Armor: [BSA50]
+Unit 3: R3 Attack:4 Defense:1 HP:4 Speed:3 Threat:3 Weapon: [BSW39](Healing Link) Armor: [BSA27]
+Unit 4: R4 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
+Unit 5: B0 Attack:3 Defense:3 HP:7 Speed:4 Threat:4 Weapon: [BSW31](Wrist Shot) Armor: [BSA23]
+Unit 6: B1 Attack:4 Defense:2 HP:12 Speed:3 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA30]
+Unit 7: B2 Attack:4 Defense:6 HP:14 Speed:1 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA42]
+Unit 8: B3 Attack:5 Defense:3 HP:12 Speed:0 Threat:5 Weapon: [BSW19](Momentum) Armor: [BSA44]
+Unit 9: B4 Attack:2 Defense:5 HP:15 Speed:2 Threat:10 Weapon: [BSW9](Blitz Attack) Armor: [BSA48]
 ==========================
 
 
-[Tick 4] 4 unit(s) acting
-Ranged: B0 targeting R0 (HP: 1)
-R0 HP: 1 - 0 => 1
-Ranged: B0 targeting R3 (HP: 1)
-R3 HP: 1 - 0 => 1
-Ranged: B0 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
-Ranged: B1 targeting R0 (HP: 1)
-R0 HP: 1 - 0 => 1
-Ranged: B1 targeting R3 (HP: 1)
-R3 HP: 1 - 0 => 1
-Ranged: B1 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
-Ranged: B2 targeting R0 (HP: 1)
-R0 HP: 4 - 4 => 0
-Ranged: B4 targeting R3 (HP: 1)
-R3 HP: 1 - 0 => 1
-Ranged: B4 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
+[Tick 12] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 15)
+R4 HP: 7 - 0 => 7
+B4 HP: 15 - 7 => 8
 
 
-[Tick 5] 1 unit(s) acting
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 13 - 13 => 0
-[AFTER-ACTION] R4 performs after-action on B1 (threat: 0)
-[A19] R4 speed changed from 4 to 5
+[Tick 15] 1 unit(s) acting
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
 
 
-[Tick 8] 3 unit(s) acting
-Ranged: B4 targeting R3 (HP: 1)
-R3 HP: 1 - 0 => 1
-Ranged: B4 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
-Ranged: B4 targeting R1 (HP: 3)
-R1 HP: 8 - 8 => 0
-Ranged: B2 targeting R3 (HP: 1)
-R3 HP: 4 - 4 => 0
-Ranged: B1 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
+[Tick 20] 3 unit(s) acting
+Ranged: R1 targeting B4 (HP: 8)
+B4 HP: 8 - 0 => 8
+Melee: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 3 => 12
+  -> R2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R2 (HP: 12)
+[HEAL] R2 healed for 3 HP (from 12 to 15/15)
+Magic: R3 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
 
 
-[Tick 10] 4 unit(s) acting
-Ranged: B4 targeting R4 (HP: 1)
-R4 HP: 1 - 0 => 1
-Ranged: B2 targeting R4 (HP: 1)
-R4 HP: 1 - 1 => 0
-Battle Over! Blue Team wins!
+[Tick 24] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 8)
+R4 HP: 7 - 0 => 7
+B4 HP: 8 - 7 => 1
+
+
+[Tick 30] 3 unit(s) acting
+Ranged: R0 targeting B4 (HP: 1)
+B4 HP: 1 - 0 => 1
+Ranged: R0 targeting B2 (HP: 14)
+B2 HP: 14 - 0 => 14
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+Melee: B4 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+
+
+[Tick 36] 1 unit(s) acting
+Melee: R4 targeting B4 (HP: 1)
+R4 HP: 7 - 0 => 7
+B4 HP: 7 - 7 => 0
+
+
+[Tick 40] 3 unit(s) acting
+Ranged: R1 targeting B2 (HP: 14)
+B2 HP: 14 - 0 => 14
+Melee: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 3 => 12
+  -> R2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R2 (HP: 12)
+[HEAL] R2 healed for 3 HP (from 12 to 15/15)
+Magic: R3 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+
+
+[Tick 45] 1 unit(s) acting
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+
+
+[Tick 48] 1 unit(s) acting
+Melee: R4 targeting B2 (HP: 14)
+R4 HP: 7 - 0 => 7
+B2 HP: 14 - 7 => 7
+
+
+[Tick 60] 6 unit(s) acting
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+Ranged: R1 targeting B2 (HP: 7)
+B2 HP: 7 - 0 => 7
+Melee: R4 targeting B2 (HP: 7)
+R4 HP: 7 - 0 => 7
+B2 HP: 7 - 7 => 0
+Melee: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 3 => 12
+  -> R2 (magic) tick reset due to melee attack!
+Magic: R3 targeting R2 (HP: 12)
+[HEAL] R2 healed for 3 HP (from 12 to 15/15)
+Magic: R3 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+
+
+[Tick 120] 7 unit(s) acting
+Ranged: R0 targeting B1 (HP: 12)
+B1 HP: 12 - 1 => 11
+Ranged: R0 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+Ranged: R1 targeting B1 (HP: 11)
+B1 HP: 11 - 6 => 5
+Melee: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 1 => 14
+  -> R2 (magic) tick reset due to melee attack!
+Melee: R4 targeting B1 (HP: 5)
+R4 HP: 7 - 0 => 7
+B1 HP: 7 - 7 => 0
+Magic: R2 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+Magic: R2 targeting R0 (HP: 15)
+[HEAL] R0 healed for 0 HP (from 15 to 15/15)
+Magic: R3 targeting R2 (HP: 14)
+[HEAL] R2 healed for 1 HP (from 14 to 15/15)
+Magic: R3 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+
+
+[Tick 132] 1 unit(s) acting
+Melee: R4 targeting B3 (HP: 12)
+R4 HP: 7 - 0 => 7
+B3 HP: 12 - 7 => 5
+  -> B3 (ranged) delayed by 1 tick(s) due to 7/12 damage!
+
+
+[Tick 135] 1 unit(s) acting
+Ranged: B0 targeting R2 (HP: 15)
+R2 HP: 15 - 0 => 15
+
+
+[Tick 140] 2 unit(s) acting
+Ranged: R1 targeting B3 (HP: 5)
+B3 HP: 6 - 6 => 0
+Magic: R3 targeting R2 (HP: 15)
+[HEAL] R2 healed for 0 HP (from 15 to 15/15)
+Magic: R3 targeting R1 (HP: 12)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+
+
+[Tick 144] 1 unit(s) acting
+Melee: R4 targeting B0 (HP: 7)
+R4 HP: 7 - 0 => 7
+B0 HP: 7 - 7 => 0
+Battle Over! Red Team wins!
