@@ -239,7 +239,8 @@ void GeneticBalancingProcessor::SimulateChromosome(Simulator *simulator, std::ve
     chromosome->Set_Fitness();
 }
 
-void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig) {
+void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig,
+                                                 std::vector<Batch> batches) {
     // Initialization
     // First Generation Setting
     currentGenChromosomeList.reserve(INDIVIDUALS_PER_GENERATION);
@@ -247,7 +248,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
     currentGenChromosomeList = Instantiate_FirstGenChromosomes();
 
     BatchCreator batchCreator;
-    std::vector<Batch> batches = batchCreator.CreateBatches(*batchConfig);
+    // std::vector<Batch> batches = batchCreator.CreateBatches(*batchConfig);
 
     // Get Testsubjects from the simulator
     std::vector<TestSubject *> combinedTestSubjects =
@@ -268,18 +269,9 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
 
         std::cout << "[Generation:" << Generation << "]" << std::endl;
 
-        for (Chromosome *currentGenChromosome : currentGenChromosomeList) {
-            currentGenChromosome->Set_Survived(false);
-        }
-
         // Elite Chromosome (does not have offspring, progress to next generation)
         Chromosome *eliteChromosome = GetHighestFitnessChromosome(currentGenChromosomeList);
-        Chromosome *eliteCopy = new Chromosome(eliteChromosome->appliedStat_INDIVIDUAL);
-        eliteCopy->averageWinrates = eliteChromosome->averageWinrates;
-
-        eliteCopy->Set_RMSE(eliteChromosome->Get_MRSE() * RMSE_WEIGHT);
-        eliteCopy->Set_DegreeOfChange(eliteChromosome->Get_DOG() / DOC_WEIGHT);
-        eliteCopy->Set_Fitness();
+        Chromosome *eliteCopy = new Chromosome(eliteChromosome);
 
         nextGenChromosomeList.push_back(eliteCopy);
 
@@ -321,7 +313,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
         // Mutation
         Mutation::GaussianMutation(nextGenChromosomeList);
 
-        batches = batchCreator.CreateBatches(*batchConfig);
+        // batches = batchCreator.CreateBatches(*batchConfig);
 
         // Simulate NextGenerations
         for (Chromosome *nextGenChromosome : nextGenChromosomeList) {

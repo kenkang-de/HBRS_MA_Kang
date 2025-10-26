@@ -65,7 +65,7 @@ class GeneticBalancingProcessor {
 
     void SimulateChromosome(Simulator *simulator, std::vector<Batch> *batches, Chromosome *chromosome,
                             std::vector<TestSubject *> mergedTestSubjects);
-    void RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig);
+    void RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig, std::vector<Batch> batches);
 };
 
 #endif

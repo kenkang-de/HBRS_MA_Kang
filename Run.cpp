@@ -124,7 +124,7 @@ class NewMasterController {
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList, testSubjects);
         BalancingLog::InitializeLogs(MAXGENERATION);
-        balancer.RunAutoBalancing(&simulator, &batchConfig);
+        balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
 
         std::cout << "Stage 4 Complete" << std::endl;
 

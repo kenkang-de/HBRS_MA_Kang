@@ -1,151 +1,62 @@
-Unit 0: R0 Attack:6 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW2](Chop) Armor: [BSA33]
-Unit 1: R1 Attack:1 Defense:3 HP:9 Speed:2 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA23]
-Unit 2: R2 Attack:1 Defense:3 HP:10 Speed:1 Threat:7 Weapon: [BSW37](Freeze) Armor: [BSA28]
-Unit 3: R3 Attack:4 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW24](Boost Acuity) Armor: [BSA9]
-Unit 4: R4 Attack:4 Defense:2 HP:12 Speed:3 Threat:3 Weapon: [BSW18](Killing Spree) Armor: [BSA24]
-Unit 5: B0 Attack:5 Defense:4 HP:12 Speed:2 Threat:7 Weapon: [BSW30](Fire Arrow) Armor: [BSA40]
-Unit 6: B1 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA16]
-Unit 7: B2 Attack:6 Defense:0 HP:10 Speed:4 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA8]
-Unit 8: B3 Attack:4 Defense:4 HP:10 Speed:3 Threat:6 Weapon: [BSW25](Smoke Shot) Armor: [BSA31]
-Unit 9: B4 Attack:2 Defense:0 HP:10 Speed:3 Threat:3 Weapon: [BSW7](Poison Attack) Armor: [BSA35]
+Unit 0: R0 Attack:1 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA18]
+Unit 1: R1 Attack:5 Defense:-1 HP:10 Speed:4 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA32]
+Unit 2: R2 Attack:4 Defense:3 HP:10 Speed:2 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA22]
+Unit 3: R3 Attack:4 Defense:-2 HP:10 Speed:6 Threat:3 Weapon: [BSW23](All-Out Assault) Armor: [BSA9]
+Unit 4: R4 Attack:1 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW37](Freeze) Armor: [BSA15]
+Unit 5: B0 Attack:4 Defense:3 HP:10 Speed:3 Threat:7 Weapon: [BSW24](Boost Acuity) Armor: [BSA28]
+Unit 6: B1 Attack:3 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA8]
+Unit 7: B2 Attack:6 Defense:1 HP:12 Speed:3 Threat:2 Weapon: [BSW4](Berserk) Armor: [BSA25]
+Unit 8: B3 Attack:1 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW41](Bulkup) Armor: [BSA15]
+Unit 9: B4 Attack:4 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA38]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Ranged: R3 targeting B0 (HP: 12)
-B0 HP: 12 - 2 => 10
-
-
-[Tick 3] 1 unit(s) acting
-Melee: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 3 => 7
-  -> R2 (magic) tick reset due to melee attack!
-
-
-[Tick 4] 5 unit(s) acting
-Ranged: R4 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
+[Tick 10] 2 unit(s) acting
 Ranged: R3 targeting B0 (HP: 10)
-B0 HP: 10 - 2 => 8
-Ranged: B3 targeting R2 (HP: 7)
-R2 HP: 7 - 1 => 6
-  -> R2 (magic) tick reset due to ranged attack!
-Melee: B4 targeting R2 (HP: 6)
-R2 HP: 6 - 0 => 6
-[BOON] Applied Poison Effect to R2 (Usage: 3)
-[A28] B4 applied Poison Effect to R2 (usage: 3)
-Magic: B1 targeting B0 (HP: 8)
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+B0 HP: 13 - 13 => 0
+Ranged: B1 targeting R2 (HP: 10)
+R2 HP: 10 - 0 => 10
+Ranged: B1 targeting R0 (HP: 8)
+R0 HP: 8 - 2 => 6
 
 
-[Tick 6] 5 unit(s) acting
-Ranged: R3 targeting B0 (HP: 8)
-B0 HP: 8 - 2 => 6
-Ranged: B0 targeting R1 (HP: 9)
-R1 HP: 9 - 3 => 6
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
-[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered ProtectSTART
-  -> R1 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R1 (HP: 6)
-R1 HP: 13 - 13 => 0
-Melee: R0 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
+[Tick 12] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 1 => 9
 
 
-[Tick 8] 5 unit(s) acting
-Ranged: B3 targeting R0 (HP: 10)
-R0 HP: 10 - 3 => 7
-Ranged: R3 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-Melee: B4 targeting R0 (HP: 7)
-R0 HP: 7 - 1 => 6
-[BOON] Applied Poison Effect to R0 (Usage: 3)
-[A28] B4 applied Poison Effect to R0 (usage: 3)
-Magic: B1 targeting B0 (HP: 6)
-[BOON] Refreshing existing ProtectSTART on B0
-[REFRESH] ProtectSTART duration refreshed, effect remains active
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 15] 2 unit(s) acting
+Ranged: B4 targeting R2 (HP: 10)
+R2 HP: 10 - 1 => 9
+Melee: R1 targeting B1 (HP: 9)
+B1 HP: 10 - 10 => 0
 
 
-[Tick 9] 1 unit(s) acting
-Melee: B2 targeting R0 (HP: 6)
-R0 HP: 25 - 25 => 0
+[Tick 20] 4 unit(s) acting
+Ranged: R3 targeting B4 (HP: 12)
+B4 HP: 28 - 28 => 0
+Melee: B2 targeting R2 (HP: 9)
+B2 HP: 12 - 1 => 11
+R2 HP: 9 - 3 => 6
+Magic: B3 targeting B2 (HP: 11)
+[BOON] Applied BulkupSTART to B2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Magic: R4 targeting B2 (HP: 11)
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 10] 1 unit(s) acting
-Ranged: R3 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
+[Tick 24] 1 unit(s) acting
+Melee: R0 targeting B2 (HP: 11)
+B2 HP: 11 - 0 => 11
 
 
-[Tick 12] 7 unit(s) acting
-Ranged: B0 targeting R2 (HP: 6)
-R2 HP: 6 - 4 => 2
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
-[TEMP-BUFF] ProtectSTART on B0 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on B0
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] B0 triggered ProtectEND
-[BOON] ProtectSTART expired on B0 - cleaned up
-  -> R2 (magic) tick reset due to ranged attack!
-Ranged: R3 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-Ranged: B3 targeting R2 (HP: 2)
-R2 HP: 2 - 1 => 1
-  -> R2 (magic) tick reset due to ranged attack!
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-Melee: B4 targeting R2 (HP: 1)
-R2 HP: 1 - 0 => 1
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B4 applied Poison Effect to R2 (usage: 3)
-Melee: B2 targeting R2 (HP: 1)
-R2 HP: 33 - 33 => 0
-Magic: B1 targeting B0 (HP: 6)
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 14] 1 unit(s) acting
-Ranged: R3 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-
-
-[Tick 15] 1 unit(s) acting
-Melee: B2 targeting R3 (HP: 10)
-R3 HP: 48 - 48 => 0
-
-
-[Tick 16] 4 unit(s) acting
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 6 - 0 => 6
-Ranged: B3 targeting R4 (HP: 12)
-R4 HP: 12 - 2 => 10
-Melee: B4 targeting R4 (HP: 10)
-R4 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B4 applied Poison Effect to R4 (usage: 3)
-Magic: B1 targeting B0 (HP: 6)
-[BOON] Refreshing existing ProtectSTART on B0
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-
-
-[Tick 18] 2 unit(s) acting
-Ranged: B0 targeting R4 (HP: 10)
-R4 HP: 10 - 2 => 8
-[DEBUG] B0 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for B0
-[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
-[TEMP-BUFF] ProtectSTART applied to B0 (Duration: 1 turns)
-[EXECUTE_EFFECT] B0 triggered ProtectSTART
-Melee: B2 targeting R4 (HP: 8)
-R4 HP: 54 - 54 => 0
-Battle Over! Blue Team wins!
+[Tick 30] 3 unit(s) acting
+Ranged: R3 targeting B2 (HP: 11)
+B2 HP: 39 - 39 => 0
+Melee: R2 targeting B3 (HP: 8)
+B3 HP: 8 - 4 => 4
+  -> B3 (magic) tick reset due to melee attack!
+Melee: R1 targeting B3 (HP: 4)
+B3 HP: 10 - 10 => 0
+Battle Over! Red Team wins!

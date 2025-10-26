@@ -9,8 +9,10 @@ void Mutation::GaussianMutation(std::vector<Chromosome *> chromosomeList) {
     static std::mt19937 gen(rd());
     static std::uniform_real_distribution<float> mutationProb(0.0f, 1.0f);
 
-    // Iterate through all chromosomes
-    for (Chromosome *chromosome : chromosomeList) {
+    // Iterate through all chromosomes except the first one (elite chromosome)
+    // Elites are exempt from both crossover and mutation.
+    for (size_t i = 1; i < chromosomeList.size(); ++i) {
+        Chromosome *chromosome = chromosomeList[i];
         if (mutationProb(gen) < MUTATION_PROBABILITY) {
             if (chromosome->IsAppliedAll()) {
                 // Original version: mutate single stat

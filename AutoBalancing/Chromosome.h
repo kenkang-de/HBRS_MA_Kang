@@ -19,8 +19,6 @@ class Chromosome {
 
     bool isAppliedAll;
 
-    bool survived = false;
-
   public:
     // Applied all at once
     Stat appliedStat_ALL;
@@ -40,6 +38,11 @@ class Chromosome {
     Chromosome(std::vector<Stat> _appliedStat_INDIVIDUAL) : appliedStat_INDIVIDUAL(_appliedStat_INDIVIDUAL) {
         isAppliedAll = false;
     }
+
+    Chromosome(Chromosome *other)
+        : appliedStat_INDIVIDUAL(other->appliedStat_INDIVIDUAL), averageWinrates(other->averageWinrates),
+          rootMeanSquareError(other->rootMeanSquareError), degreeOfChange(other->degreeOfChange),
+          fitness(other->fitness), isAppliedAll(other->isAppliedAll) {}
 
     void ApplyStatToComponents(ElementList *componentList);
 
@@ -61,12 +64,6 @@ class Chromosome {
     }
     void Set_Fitness() {
         fitness = rootMeanSquareError + degreeOfChange;
-    }
-    bool Get_Survived() {
-        return survived;
-    }
-    void Set_Survived(bool value) {
-        survived = value;
     }
 
     bool IsAppliedAll() {

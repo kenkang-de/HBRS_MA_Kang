@@ -1,180 +1,873 @@
-Unit 0: R0 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW43](Vow) Armor: [BSA1]
-Unit 1: R1 Attack:4 Defense:0 HP:9 Speed:5 Threat:2 Weapon: [BSW28](Heavy Shot) Armor: [BSA7]
-Unit 2: R2 Attack:3 Defense:6 HP:10 Speed:3 Threat:7 Weapon: [BSW17](Shoot) Armor: [BSA42]
-Unit 3: R3 Attack:1 Defense:0 HP:12 Speed:4 Threat:1 Weapon: [BSW27](Tripple Shot) Armor: [BSA17]
-Unit 4: R4 Attack:6 Defense:1 HP:10 Speed:2 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA33]
-Unit 5: B0 Attack:6 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW10](Reckless Attack) Armor: [BSA50]
-Unit 6: B1 Attack:2 Defense:2 HP:12 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA24]
-Unit 7: B2 Attack:4 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW28](Heavy Shot) Armor: [BSA2]
-Unit 8: B3 Attack:5 Defense:0 HP:12 Speed:2 Threat:3 Weapon: [BSW18](Killing Spree) Armor: [BSA38]
-Unit 9: B4 Attack:5 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW10](Reckless Attack) Armor: [BSA7]
+Unit 0: R0 Attack:5 Defense:3 HP:7 Speed:4 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA23]
+Unit 1: R1 Attack:3 Defense:4 HP:10 Speed:4 Threat:5 Weapon: [BSW3](Thrust) Armor: [BSA37]
+Unit 2: R2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA9]
+Unit 3: R3 Attack:3 Defense:4 HP:12 Speed:3 Threat:9 Weapon: [BSW13](Prep Attack) Armor: [BSA40]
+Unit 4: R4 Attack:8 Defense:1 HP:4 Speed:3 Threat:2 Weapon: [BSW2](Chop) Armor: [BSA27]
+Unit 5: B0 Attack:-1 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW33](Magic Bolt) Armor: [BSA10]
+Unit 6: B1 Attack:0 Defense:5 HP:15 Speed:2 Threat:10 Weapon: [BSW6](Achilles' heel) Armor: [BSA48]
+Unit 7: B2 Attack:1 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW40](Grace) Armor: [BSA21]
+Unit 8: B3 Attack:4 Defense:4 HP:15 Speed:0 Threat:10 Weapon: [BSW35](Chain Lightning) Armor: [BSA50]
+Unit 9: B4 Attack:4 Defense:1 HP:11 Speed:1 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA46]
 ==========================
 
 
-[Tick 10] 1 unit(s) acting
-Ranged: B2 targeting R2 (HP: 10)
-R2 HP: 10 - 2 => 8
-
-
 [Tick 12] 2 unit(s) acting
-Ranged: R1 targeting B0 (HP: 15)
-B0 HP: 15 - 4 => 11
-Magic: R0 targeting R2 (HP: 8)
-Magic: R0 targeting R0 (HP: 10)
+Magic: B0 targeting R3 (HP: 12)
+R3 HP: 12 - -1 => 13
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
 
 
-[Tick 15] 3 unit(s) acting
-Ranged: R3 targeting B0 (HP: 11)
-B0 HP: 11 - 0 => 11
-Ranged: R3 targeting B2 (HP: 10)
-B2 HP: 10 - 2 => 8
-Ranged: R3 targeting B4 (HP: 9)
-B4 HP: 9 - 1 => 8
-Ranged: B1 targeting R2 (HP: 8)
-R2 HP: 8 - 0 => 8
-[BOON] Applied Poison Effect to R2 (Usage: 2)
-[A28] B1 applied Poison Effect to R2 (usage: 2)
-Melee: B4 targeting R2 (HP: 8)
-B4 HP: 8 - 0 => 8
-R2 HP: 8 - 6 => 2
-  -> R2 (ranged) delayed by 1 tick(s) due to 6/10 damage!
+[Tick 15] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
 
 
-[Tick 21] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 11)
-B0 HP: 11 - 0 => 11
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
-[BOON] Poison Effect triggered on R2 (Usage: 2/2)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 3 - 3 => 0
-  -> R2 died during after-actions, stopping further actions
+[Tick 20] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 3 => 12
+Magic: B2 targeting B1 (HP: 12)
+[HEAL] B1 healed for 1 HP (from 12 to 13/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
 
 
-[Tick 30] 2 unit(s) acting
-Ranged: R4 targeting B0 (HP: 11)
-B0 HP: 11 - 8 => 3
-Ranged: B3 targeting R0 (HP: 10)
-R0 HP: 10 - 0 => 10
+[Tick 24] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 13)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 13)
+R3 HP: 13 - -1 => 14
 
 
-[Tick 80] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 10)
-R0 HP: 10 - 3 => 7
-  -> R0 (magic) tick reset due to ranged attack!
+[Tick 30] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Melee: R1 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Melee: B1 targeting R3 (HP: 14)
+R3 HP: 14 - 0 => 14
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 13 - 0 => 13
 
 
-[Tick 120] 5 unit(s) acting
-Ranged: R3 targeting B0 (HP: 3)
-B0 HP: 3 - 0 => 3
-Ranged: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 2 => 6
-Ranged: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 1 => 7
-Ranged: B1 targeting R0 (HP: 7)
-R0 HP: 7 - 0 => 7
-[BOON] Applied Poison Effect to R0 (Usage: 2)
-[A28] B1 applied Poison Effect to R0 (usage: 2)
-Ranged: R1 targeting B0 (HP: 3)
-B0 HP: 4 - 4 => 0
-Melee: B4 targeting R0 (HP: 7)
-B4 HP: 7 - 0 => 7
-R0 HP: 7 - 6 => 1
-  -> R0 (magic) tick reset due to melee attack!
-Magic: R0 targeting R0 (HP: 1)
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
-[BOON] Poison Effect triggered on R0 (Usage: 2/2)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 1 - -1 => 2
-Magic: R0 targeting R4 (HP: 10)
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 4)
-[BOON] Poison Effect triggered on R0 (Usage: 1/2)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 2 - -1 => 3
-[BOON] Poison Effect expired on R0 - cleaned up
+[Tick 36] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 13)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 14)
+R3 HP: 14 - -1 => 15
 
 
-[Tick 140] 1 unit(s) acting
-Ranged: B2 targeting R0 (HP: 3)
-R0 HP: 3 - 0 => 3
+[Tick 40] 3 unit(s) acting
+Melee: R4 targeting B1 (HP: 13)
+B1 HP: 13 - 1 => 12
+Melee: R3 targeting B1 (HP: 12)
+B1 HP: 12 - 0 => 12
+Magic: B2 targeting B1 (HP: 12)
+[HEAL] B1 healed for 1 HP (from 12 to 13/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
 
 
-[Tick 144] 1 unit(s) acting
-Ranged: R1 targeting B2 (HP: 6)
-B2 HP: 9 - 9 => 0
+[Tick 45] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Melee: R0 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+
+
+[Tick 48] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 13)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 15)
+R3 HP: 15 - -1 => 16
+
+
+[Tick 60] 8 unit(s) acting
+Melee: B1 targeting R3 (HP: 16)
+R3 HP: 16 - 0 => 16
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 13 - 0 => 13
+Melee: R1 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Melee: R0 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Melee: R4 targeting B1 (HP: 13)
+B1 HP: 13 - 0 => 13
+Magic: B2 targeting B1 (HP: 13)
+[HEAL] B1 healed for 1 HP (from 13 to 14/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: R2 targeting B1 (HP: 14)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
+Magic: B4 targeting R3 (HP: 17)
+R3 HP: 17 - 4 => 13
+Magic: B4 targeting R1 (HP: 10)
+R1 HP: 10 - 4 => 6
+
+
+[Tick 72] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 13)
+R3 HP: 13 - -1 => 14
+Magic: R2 targeting B1 (HP: 14)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 75] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 14)
+B1 HP: 14 - 0 => 14
+Melee: R0 targeting B1 (HP: 14)
+B1 HP: 14 - 0 => 14
+
+
+[Tick 80] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 14)
+B1 HP: 14 - 0 => 14
+Magic: B2 targeting B1 (HP: 14)
+[HEAL] B1 healed for 1 HP (from 14 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 84] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 14)
+R3 HP: 14 - -1 => 15
+
+
+[Tick 90] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 15)
+R3 HP: 15 - 0 => 15
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 96] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 15)
+R3 HP: 15 - -1 => 16
+
+
+[Tick 100] 3 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 105] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 108] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
+
+
+[Tick 120] 8 unit(s) acting
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B4 targeting R3 (HP: 17)
+R3 HP: 17 - 4 => 13
+Magic: B4 targeting R1 (HP: 6)
+R1 HP: 6 - 4 => 2
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: B0 targeting R3 (HP: 13)
+R3 HP: 13 - -1 => 14
+
+
+[Tick 132] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 14)
+R3 HP: 14 - -1 => 15
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 135] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 140] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 144] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 15)
+R3 HP: 15 - -1 => 16
+
+
+[Tick 150] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 16)
+R3 HP: 16 - 0 => 16
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 156] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
+
+
+[Tick 160] 3 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 165] 2 unit(s) acting
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
 
 
 [Tick 168] 2 unit(s) acting
-Ranged: R1 targeting B4 (HP: 7)
-B4 HP: 8 - 8 => 0
-Magic: R0 targeting R0 (HP: 3)
-Magic: R0 targeting R4 (HP: 10)
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 17)
+R3 HP: 17 - -1 => 18
 
 
-[Tick 195] 2 unit(s) acting
-Ranged: B1 targeting R0 (HP: 3)
-R0 HP: 3 - 0 => 3
-[BOON] Applied Poison Effect to R0 (Usage: 2)
-[A28] B1 applied Poison Effect to R0 (usage: 2)
-Ranged: R3 targeting B1 (HP: 12)
-B1 HP: 12 - 0 => 12
-Ranged: R3 targeting B3 (HP: 12)
-B3 HP: 12 - 1 => 11
+[Tick 180] 8 unit(s) acting
+Melee: B1 targeting R3 (HP: 18)
+R3 HP: 18 - 0 => 18
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B4 targeting R3 (HP: 18)
+R3 HP: 18 - 4 => 14
+Magic: B4 targeting R1 (HP: 2)
+R1 HP: 4 - 4 => 0
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 14)
+R3 HP: 14 - -1 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 192] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 15)
+R3 HP: 15 - -1 => 16
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 195] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 200] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
 
 
 [Tick 204] 2 unit(s) acting
-Ranged: R1 targeting B1 (HP: 12)
-B1 HP: 12 - 6 => 6
-Magic: R0 targeting R0 (HP: 3)
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 2)
-[BOON] Poison Effect triggered on R0 (Usage: 2/2)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 3 - -1 => 4
-Magic: R0 targeting R1 (HP: 9)
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 2)
-[BOON] Poison Effect triggered on R0 (Usage: 1/2)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 4 - -1 => 5
-[BOON] Poison Effect expired on R0 - cleaned up
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
 
 
-[Tick 240] 6 unit(s) acting
-Ranged: R4 targeting B1 (HP: 6)
-B1 HP: 6 - 2 => 4
-Ranged: R1 targeting B1 (HP: 4)
-B1 HP: 6 - 6 => 0
-Ranged: R3 targeting B3 (HP: 11)
-B3 HP: 11 - 1 => 10
-Ranged: B3 targeting R0 (HP: 5)
-R0 HP: 5 - 0 => 5
-Magic: R0 targeting R0 (HP: 5)
-Magic: R0 targeting R4 (HP: 10)
+[Tick 210] 2 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 17)
+R3 HP: 17 - 0 => 17
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+
+
+[Tick 216] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 17)
+R3 HP: 17 - -1 => 18
+
+
+[Tick 220] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 225] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 228] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 18)
+R3 HP: 18 - -1 => 19
+
+
+[Tick 240] 7 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 19)
+R3 HP: 19 - 0 => 19
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Magic: B4 targeting R3 (HP: 19)
+R3 HP: 19 - 4 => 15
+Magic: B4 targeting R0 (HP: 7)
+R0 HP: 7 - 4 => 3
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: B0 targeting R3 (HP: 15)
+R3 HP: 15 - -1 => 16
+
+
+[Tick 252] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 255] 1 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 260] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 264] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 17)
+R3 HP: 17 - -1 => 18
+
+
+[Tick 270] 2 unit(s) acting
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 18)
+R3 HP: 18 - 0 => 18
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
 
 
 [Tick 276] 2 unit(s) acting
-Ranged: R1 targeting B3 (HP: 10)
-B3 HP: 10 - 8 => 2
-Magic: R0 targeting R0 (HP: 5)
-Magic: R0 targeting R1 (HP: 9)
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 18)
+R3 HP: 18 - -1 => 19
+
+
+[Tick 280] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
 
 
 [Tick 285] 1 unit(s) acting
-Ranged: R3 targeting B3 (HP: 2)
-B3 HP: 2 - 1 => 1
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+
+
+[Tick 288] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 19)
+R3 HP: 19 - -1 => 20
+
+
+[Tick 300] 7 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R0 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: B1 targeting R3 (HP: 20)
+R3 HP: 20 - 0 => 20
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: B4 targeting R3 (HP: 20)
+R3 HP: 20 - 4 => 16
+Magic: B4 targeting R0 (HP: 3)
+R0 HP: 4 - 4 => 0
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 16)
+R3 HP: 16 - -1 => 17
 
 
 [Tick 312] 2 unit(s) acting
-Ranged: R1 targeting B3 (HP: 1)
-B3 HP: 8 - 8 => 0
-Magic: R0 targeting R3 (HP: 12)
-Magic: R0 targeting R4 (HP: 10)
-Battle Over! Red Team wins!
+Magic: B0 targeting R3 (HP: 17)
+R3 HP: 17 - -1 => 18
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 320] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 324] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 18)
+R3 HP: 18 - -1 => 19
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 330] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 19)
+R3 HP: 19 - 0 => 19
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+
+
+[Tick 336] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 19)
+R3 HP: 19 - -1 => 20
+
+
+[Tick 340] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 348] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 20)
+R3 HP: 20 - -1 => 21
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 360] 6 unit(s) acting
+Melee: B1 targeting R3 (HP: 21)
+R3 HP: 21 - 0 => 21
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B0 targeting R3 (HP: 21)
+R3 HP: 21 - -1 => 22
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B4 targeting R3 (HP: 22)
+R3 HP: 22 - 4 => 18
+Magic: B4 targeting R2 (HP: 10)
+R2 HP: 10 - 4 => 6
+
+
+[Tick 372] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 18)
+R3 HP: 18 - -1 => 19
+
+
+[Tick 380] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 384] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 19)
+R3 HP: 19 - -1 => 20
+
+
+[Tick 390] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 20)
+R3 HP: 20 - 0 => 20
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+
+
+[Tick 396] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 20)
+R3 HP: 20 - -1 => 21
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 400] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 408] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 21)
+R3 HP: 21 - -1 => 22
+
+
+[Tick 420] 6 unit(s) acting
+Melee: B1 targeting R3 (HP: 22)
+R3 HP: 22 - 0 => 22
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: B0 targeting R3 (HP: 22)
+R3 HP: 22 - -1 => 23
+Magic: B4 targeting R3 (HP: 23)
+R3 HP: 23 - 4 => 19
+Magic: B4 targeting R2 (HP: 6)
+R2 HP: 6 - 4 => 2
+
+
+[Tick 432] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 19)
+R3 HP: 19 - -1 => 20
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 440] 2 unit(s) acting
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 444] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 20)
+R3 HP: 20 - -1 => 21
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 450] 1 unit(s) acting
+Melee: B1 targeting R3 (HP: 21)
+R3 HP: 21 - 0 => 21
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+
+
+[Tick 456] 2 unit(s) acting
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B0 targeting R3 (HP: 21)
+R3 HP: 21 - -1 => 22
+
+
+[Tick 460] 3 unit(s) acting
+Melee: R3 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+
+
+[Tick 468] 2 unit(s) acting
+Magic: B0 targeting R3 (HP: 22)
+R3 HP: 22 - -1 => 23
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 480] 6 unit(s) acting
+Melee: B1 targeting R3 (HP: 23)
+R3 HP: 23 - 0 => 23
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 10)
+[BOON] Tetrodo Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Tetrodo Effect
+B1 HP: 15 - 0 => 15
+Melee: R4 targeting B1 (HP: 15)
+B1 HP: 15 - 0 => 15
+Magic: B0 targeting R3 (HP: 23)
+R3 HP: 23 - -1 => 24
+Magic: B2 targeting B1 (HP: 15)
+[HEAL] B1 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B3 (HP: 15)
+[HEAL] B3 healed for 0 HP (from 15 to 15/15)
+Magic: B2 targeting B4 (HP: 11)
+[HEAL] B4 healed for 0 HP (from 11 to 11/11)
+Magic: R2 targeting B1 (HP: 15)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R2 applied Tetrodo Effect to B1 (usage: 2)
+Magic: B4 targeting R3 (HP: 24)
+R3 HP: 24 - 4 => 20
+Magic: B4 targeting R2 (HP: 2)
+R2 HP: 4 - 4 => 0
+
+
+[Tick 492] 1 unit(s) acting
+Magic: B0 targeting R3 (HP: 20)
+R3 HP: 20 - -1 => 21
+Battle Over! Tick limit reached (500 ticks elapsed)
