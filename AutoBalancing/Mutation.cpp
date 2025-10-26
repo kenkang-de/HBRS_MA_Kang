@@ -11,7 +11,7 @@ void Mutation::GaussianMutation(std::vector<Chromosome *> chromosomeList) {
 
     // Iterate through all chromosomes except the first one (elite chromosome)
     // Elites are exempt from both crossover and mutation.
-    for (size_t i = 1; i < chromosomeList.size(); ++i) {
+    for (size_t i = ELITES_PER_GENERATION; i < chromosomeList.size(); ++i) {
         Chromosome *chromosome = chromosomeList[i];
         if (mutationProb(gen) < MUTATION_PROBABILITY) {
             if (chromosome->IsAppliedAll()) {

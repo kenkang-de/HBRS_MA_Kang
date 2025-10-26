@@ -1,227 +1,81 @@
-Unit 0: R0 Attack:1 Defense:4 HP:15 Speed:0 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA50]
-Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW41](Bulkup) Armor: [BSA29]
-Unit 2: R2 Attack:2 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA1]
-Unit 3: R3 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA3]
-Unit 4: R4 Attack:5 Defense:2 HP:12 Speed:2 Threat:5 Weapon: [BSW18](Killing Spree) Armor: [BSA39]
-Unit 5: B0 Attack:1 Defense:1 HP:11 Speed:4 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA13]
-Unit 6: B1 Attack:1 Defense:0 HP:7 Speed:5 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA5]
-Unit 7: B2 Attack:6 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA35]
-Unit 8: B3 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW47](Cheer) Armor: [BSA38]
-Unit 9: B4 Attack:0 Defense:4 HP:10 Speed:1 Threat:7 Weapon: [BSW47](Cheer) Armor: [BSA37]
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA1]
+Unit 1: R1 Attack:6 Defense:1 HP:11 Speed:0 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA46]
+Unit 2: R2 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA50]
+Unit 3: R3 Attack:1 Defense:3 HP:10 Speed:3 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA21]
+Unit 4: R4 Attack:4 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW23](All-Out Assault) Armor: [BSA5]
+Unit 5: B0 Attack:2 Defense:3 HP:13 Speed:2 Threat:8 Weapon: [BSW6](Achilles' heel) Armor: [BSA47]
+Unit 6: B1 Attack:2 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA36]
+Unit 7: B2 Attack:1 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW36](Tetrodo) Armor: [BSA50]
+Unit 8: B3 Attack:2 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW38](Healing Touch) Armor: [BSA46]
+Unit 9: B4 Attack:0 Defense:4 HP:10 Speed:2 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA37]
 ==========================
 
 
-[Tick 20] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 11)
-B0 HP: 11 - 5 => 6
-  -> B0 (magic) tick reset due to ranged attack!
+[Tick 6] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 13)
+B0 HP: 13 - 8 => 5
+Melee: R0 targeting B0 (HP: 5)
+B0 HP: 5 - 0 => 5
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R0 applied Poison Effect to B0 (usage: 3)
 
 
-[Tick 28] 2 unit(s) acting
-Magic: R3 targeting R0 (HP: 15)
-[BOON] Applied BulkupSTART to R0 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B1 targeting R0 (HP: 15)
-R0 HP: 15 - 1 => 14
-Magic: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 1 => 9
-Magic: B1 targeting R3 (HP: 10)
-R3 HP: 10 - 1 => 9
-Magic: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 1 => 11
-
-
-[Tick 70] 2 unit(s) acting
-Ranged: R4 targeting B0 (HP: 6)
-B0 HP: 6 - 4 => 2
-  -> B0 (magic) tick reset due to ranged attack!
-
-
-[Tick 80] 1 unit(s) acting
-Ranged: R2 targeting B0 (HP: 2)
-B0 HP: 5 - 5 => 0
-
-
-[Tick 84] 2 unit(s) acting
-Magic: B1 targeting R0 (HP: 14)
-R0 HP: 14 - 1 => 13
-Magic: B1 targeting R2 (HP: 9)
-R2 HP: 9 - 1 => 8
-Magic: B1 targeting R3 (HP: 9)
-R3 HP: 9 - 1 => 8
-Magic: B1 targeting R4 (HP: 11)
-R4 HP: 11 - 1 => 10
-Magic: R3 targeting R0 (HP: 13)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 100] 1 unit(s) acting
-Ranged: R2 targeting B1 (HP: 7)
-B1 HP: 7 - 7 => 0
-
-
-[Tick 112] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 13)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 120] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
+[Tick 12] 2 unit(s) acting
+Ranged: R4 targeting B0 (HP: 5)
+B0 HP: 15 - 15 => 0
+Melee: R0 targeting B4 (HP: 10)
 B4 HP: 10 - 0 => 10
+[BOON] Applied Poison Effect to B4 (Usage: 3)
+[A28] R0 applied Poison Effect to B4 (usage: 3)
 
 
-[Tick 140] 7 unit(s) acting
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
+[Tick 14] 1 unit(s) acting
+Magic: R3 targeting B4 (HP: 10)
+[BOON] Applied Tetrodo Effect to B4 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B4 (usage: 2)
+
+
+[Tick 18] 2 unit(s) acting
 Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 1 => 9
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R0 (HP: 13)
-R0 HP: 13 - 2 => 11
-  -> R0 (magic) tick reset due to melee attack!
-Magic: R3 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R1 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B3 targeting B4 (HP: 9)
+B4 HP: 21 - 21 => 0
+Melee: R0 targeting B2 (HP: 15)
+B2 HP: 15 - 0 => 15
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R0 applied Poison Effect to B2 (usage: 3)
 
 
-[Tick 160] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
+[Tick 21] 1 unit(s) acting
+Magic: B1 targeting R2 (HP: 15)
+R2 HP: 15 - 2 => 13
+Magic: B1 targeting R0 (HP: 10)
+R0 HP: 10 - 2 => 8
 
 
-[Tick 168] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 24] 2 unit(s) acting
+Ranged: R4 targeting B2 (HP: 15)
+B2 HP: 28 - 28 => 0
+Melee: R0 targeting B3 (HP: 11)
+B3 HP: 11 - 0 => 11
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R0 applied Poison Effect to B3 (usage: 3)
 
 
-[Tick 180] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
+[Tick 28] 1 unit(s) acting
+Magic: R3 targeting B3 (HP: 11)
+[BOON] Applied Tetrodo Effect to B3 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
 
 
-[Tick 196] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 30] 2 unit(s) acting
+Ranged: R4 targeting B3 (HP: 11)
+B3 HP: 38 - 38 => 0
+Melee: R0 targeting B1 (HP: 10)
+B1 HP: 10 - 0 => 10
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R0 applied Poison Effect to B1 (usage: 3)
 
 
-[Tick 200] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 9)
-B4 HP: 9 - 0 => 9
-
-
-[Tick 210] 1 unit(s) acting
-Ranged: R4 targeting B4 (HP: 9)
-B4 HP: 9 - 1 => 8
-  -> B4 (magic) tick reset due to ranged attack!
-
-
-[Tick 220] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-
-
-[Tick 224] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 240] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-
-
-[Tick 252] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 260] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-
-
-[Tick 280] 4 unit(s) acting
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-Melee: B2 targeting R0 (HP: 11)
-R0 HP: 11 - 2 => 9
-  -> R0 (magic) tick reset due to melee attack!
-Magic: R3 targeting R0 (HP: 9)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B3 targeting B4 (HP: 8)
-
-
-[Tick 420] 7 unit(s) acting
-Ranged: R2 targeting B4 (HP: 8)
-B4 HP: 8 - 0 => 8
-Ranged: R4 targeting B4 (HP: 8)
-B4 HP: 8 - 1 => 7
-  -> B4 (magic) tick reset due to ranged attack!
-Melee: B2 targeting R0 (HP: 9)
-R0 HP: 9 - 2 => 7
-  -> R0 (magic) tick reset due to melee attack!
-Magic: B3 targeting B4 (HP: 7)
-Magic: R1 targeting R0 (HP: 7)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: R3 targeting R0 (HP: 7)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 440] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
-
-
-[Tick 448] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 7)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 460] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
-
-
-[Tick 476] 1 unit(s) acting
-Magic: R3 targeting R0 (HP: 7)
-[BOON] Refreshing existing BulkupSTART on R0
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 480] 1 unit(s) acting
-Ranged: R2 targeting B4 (HP: 7)
-B4 HP: 7 - 0 => 7
-
-
-[Tick 490] 1 unit(s) acting
-Ranged: R4 targeting B4 (HP: 7)
-B4 HP: 7 - 1 => 6
-  -> B4 (magic) tick reset due to ranged attack!
-Battle Over! Tick limit reached (500 ticks elapsed)
+[Tick 36] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 10)
+B1 HP: 44 - 44 => 0
+Battle Over! Red Team wins!

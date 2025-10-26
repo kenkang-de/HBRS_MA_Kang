@@ -269,11 +269,19 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
 
         std::cout << "[Generation:" << Generation << "]" << std::endl;
 
-        // Elite Chromosome (does not have offspring, progress to next generation)
-        Chromosome *eliteChromosome = GetHighestFitnessChromosome(currentGenChromosomeList);
-        Chromosome *eliteCopy = new Chromosome(eliteChromosome);
+        // Get top ELITES_PER_GENERATION chromosomes (sorted by fitness, highest first)
+        std::vector<Chromosome *> sortedChromosomes = currentGenChromosomeList;
+        std::sort(sortedChromosomes.begin(), sortedChromosomes.end(), [](Chromosome *a, Chromosome *b) {
+            return a->Get_Fitness() > b->Get_Fitness(); // Descending order (highest first)
+        });
 
-        nextGenChromosomeList.push_back(eliteCopy);
+        for (int i = 0; i < ELITES_PER_GENERATION; i++) {
+            // Elite Chromosome (does not have offspring, progress to next generation)
+            Chromosome *eliteChromosome = sortedChromosomes[i]; // Get i-th highest fitness
+            Chromosome *eliteCopy = new Chromosome(eliteChromosome);
+            nextGenChromosomeList.push_back(eliteCopy);
+            BalancingLog(Generation + 1, eliteCopy->Get_Fitness(), eliteCopy->Get_MRSE(), eliteCopy->Get_DOG());
+        }
 
         // Crossover
         while (nextGenChromosomeList.size() < INDIVIDUALS_PER_GENERATION) {
@@ -316,7 +324,8 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
         // batches = batchCreator.CreateBatches(*batchConfig);
 
         // Simulate NextGenerations
-        for (Chromosome *nextGenChromosome : nextGenChromosomeList) {
+        for (size_t i = ELITES_PER_GENERATION; i < nextGenChromosomeList.size(); ++i) {
+            Chromosome *nextGenChromosome = nextGenChromosomeList[i];
             SimulateChromosome(simulator, &batches, nextGenChromosome, combinedTestSubjects);
             BalancingLog(Generation + 1, nextGenChromosome->Get_Fitness(), nextGenChromosome->Get_MRSE(),
                          nextGenChromosome->Get_DOG());
