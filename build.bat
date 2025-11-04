@@ -121,6 +121,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling GameCoponentToCSV.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c GameCoponentToCSV.cpp -o GameCoponentToCSV.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile GameCoponentToCSV.cpp
+    exit /b 1
+)
+
 cd ../AutoBalancing
 echo Compiling Chromosome.cpp...
 g++ %COMPILE_FLAGS% -I. -I.. -c Chromosome.cpp -o Chromosome.o
@@ -164,6 +171,8 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+
+
 REM Build main executable with library
 cd ..
 echo Linking Run.exe...
@@ -189,6 +198,7 @@ g++ %LINK_FLAGS% ^
     Analysis/TestSubjectToCSV.o ^
     Analysis/RMSE.o ^
     Analysis/BalancingLogToCSV.o ^
+    Analysis/GameCoponentToCSV.o ^
     AutoBalancing/Chromosome.o ^
     AutoBalancing/GeneticBalancingProcessor.o ^
     AutoBalancing/Crossover.o ^

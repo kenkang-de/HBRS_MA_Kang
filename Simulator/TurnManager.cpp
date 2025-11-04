@@ -70,6 +70,9 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
     if (turnQueue.empty())
         return unitsToAct;
 
+    if (tick < turnQueue.top().nextTick + turnQueue.top().unit->TickDelay)
+        tick = turnQueue.top().nextTick + turnQueue.top().unit->TickDelay;
+
     // Pop out dead unit
     while (!turnQueue.empty()) {
         const ScheduledAction &top = turnQueue.top();

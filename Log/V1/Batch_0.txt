@@ -1,237 +1,302 @@
-Unit 0: R0 Attack:2 Defense:-1 HP:10 Speed:2 Threat:5 Weapon: [BSW44](Exposure) Armor: [BSA32]
-Unit 1: R1 Attack:3 Defense:1 HP:10 Speed:7 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA12]
-Unit 2: R2 Attack:1 Defense:1 HP:10 Speed:0 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA43]
-Unit 3: R3 Attack:1 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW50](Corrosion) Armor: [BSA44]
-Unit 4: R4 Attack:1 Defense:1 HP:12 Speed:4 Threat:2 Weapon: [BSW20](Blitz Shot) Armor: [BSA20]
-Unit 5: B0 Attack:2 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW39](Healing Link) Armor: [BSA11]
-Unit 6: B1 Attack:4 Defense:2 HP:10 Speed:1 Threat:8 Weapon: [BSW35](Chain Lightning) Armor: [BSA30]
-Unit 7: B2 Attack:3 Defense:1 HP:12 Speed:4 Threat:3 Weapon: [BSW29](Camo Throw) Armor: [BSA20]
-Unit 8: B3 Attack:4 Defense:3 HP:13 Speed:1 Threat:6 Weapon: [BSW28](Heavy Shot) Armor: [BSA47]
-Unit 9: B4 Attack:4 Defense:6 HP:10 Speed:1 Threat:8 Weapon: [BSW5](Overpower) Armor: [BSA42]
+Unit 0: R0 Attack:4 Defense:4 HP:15 Speed:2 Threat:8 Weapon: [BSW24](Boost Acuity) Armor: [BSA50]
+Unit 1: R1 Attack:1 Defense:4 HP:10 Speed:1 Threat:8 Weapon: [BSW42](Haste) Armor: [BSA31]
+Unit 2: R2 Attack:3 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA8]
+Unit 3: R3 Attack:2 Defense:-1 HP:10 Speed:1 Threat:4 Weapon: [BSW42](Haste) Armor: [BSA32]
+Unit 4: R4 Attack:5 Defense:0 HP:8 Speed:6 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA4]
+Unit 5: B0 Attack:2 Defense:3 HP:13 Speed:2 Threat:6 Weapon: [BSW20](Blitz Shot) Armor: [BSA47]
+Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:5 Threat:0 Weapon: [BSW20](Blitz Shot) Armor: [BSA14]
+Unit 7: B2 Attack:-1 Defense:0 HP:10 Speed:3 Threat:2 Weapon: [BSW37](Freeze) Armor: [BSA14]
+Unit 8: B3 Attack:2 Defense:3 HP:14 Speed:3 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA22]
+Unit 9: B4 Attack:2 Defense:2 HP:12 Speed:4 Threat:5 Weapon: [BSW13](Prep Attack) Armor: [BSA24]
 ==========================
 
 
-[Tick 20] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 10)
-B1 HP: 10 - 1 => 9
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 10] 2 unit(s) acting
+Ranged: R2 targeting B0 (HP: 13)
+B0 HP: 13 - 0 => 13
+[BOON] Applied Poison Effect to B0 (Usage: 2)
+[A28] R2 applied Poison Effect to B0 (usage: 2)
+Ranged: R4 targeting B0 (HP: 13)
+B0 HP: 13 - 3 => 10
 
 
-[Tick 28] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 9)
-[HEAL] B1 healed for 1 HP (from 9 to 10/10)
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[Tick 12] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 15)
+R0 HP: 15 - 2 => 13
 
 
-[Tick 35] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 0 => 12
-Ranged: R4 targeting B1 (HP: 10)
-B1 HP: 10 - 3 => 7
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 15] 1 unit(s) acting
+Melee: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 40] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 7)
-B1 HP: 7 - 1 => 6
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 20] 4 unit(s) acting
+Ranged: R4 targeting B0 (HP: 10)
+B0 HP: 10 - 3 => 7
+Ranged: R2 targeting B0 (HP: 7)
+B0 HP: 7 - 0 => 7
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R2 applied Poison Effect to B0 (usage: 2)
+Melee: B3 targeting R0 (HP: 13)
+B3 HP: 14 - 3 => 11
+R0 HP: 13 - 0 => 13
+Magic: B2 targeting R0 (HP: 13)
+[BOON] Applied FreezeSTART to R0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 56] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 6)
-[HEAL] B1 healed for 2 HP (from 6 to 8/10)
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[Tick 24] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 60] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 8)
-B1 HP: 8 - 1 => 7
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 30] 4 unit(s) acting
+Ranged: B0 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 6)
+[BOON] Poison Effect triggered on B0 (Usage: 2/2)
+[EXECUTE_EFFECT] B0 triggered Poison Effect
+B0 HP: 7 - 2 => 5
+Ranged: R4 targeting B0 (HP: 5)
+B0 HP: 5 - 3 => 2
+Ranged: R2 targeting B0 (HP: 2)
+B0 HP: 2 - 0 => 2
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R2 applied Poison Effect to B0 (usage: 2)
+Melee: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 70] 3 unit(s) acting
-Ranged: R4 targeting B1 (HP: 7)
-B1 HP: 7 - 3 => 4
-  -> B1 (magic) tick reset due to ranged attack!
-Ranged: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 0 => 12
-Magic: R0 targeting B1 (HP: 4)
-Magic: R0 targeting B4 (HP: 10)
-Magic: R0 targeting B0 (HP: 10)
+[Tick 36] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 80] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 4)
-B1 HP: 4 - 1 => 3
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 40] 4 unit(s) acting
+Ranged: R4 targeting B0 (HP: 2)
+B0 HP: 3 - 3 => 0
+Ranged: R2 targeting B4 (HP: 12)
+B4 HP: 12 - 1 => 11
+[BOON] Applied Poison Effect to B4 (Usage: 2)
+[A28] R2 applied Poison Effect to B4 (usage: 2)
+Melee: B3 targeting R0 (HP: 13)
+B3 HP: 11 - 3 => 8
+R0 HP: 13 - 0 => 13
+Magic: B2 targeting R0 (HP: 13)
+[BOON] Refreshing existing FreezeSTART on R0
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 45] 1 unit(s) acting
+Melee: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 5)
+[BOON] Poison Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 HP: 11 - 2 => 9
+
+
+[Tick 48] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 50] 2 unit(s) acting
+Ranged: R2 targeting B4 (HP: 9)
+B4 HP: 9 - 1 => 8
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R2 applied Poison Effect to B4 (usage: 2)
+Ranged: R4 targeting B4 (HP: 8)
+B4 HP: 8 - 1 => 7
+
+
+[Tick 60] 8 unit(s) acting
+Ranged: R4 targeting B4 (HP: 7)
+B4 HP: 7 - 1 => 6
+Ranged: R2 targeting B4 (HP: 6)
+B4 HP: 6 - 1 => 5
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R2 applied Poison Effect to B4 (usage: 2)
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+Melee: B3 targeting R0 (HP: 13)
+B3 HP: 8 - 3 => 5
+R0 HP: 13 - 0 => 13
+Melee: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 5)
+[BOON] Poison Effect triggered on B4 (Usage: 2/2)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 HP: 5 - 2 => 3
+Magic: R1 targeting R0 (HP: 13)
+[BOON] Applied HasteSTART to R0 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: R3 targeting R0 (HP: 13)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: B2 targeting R0 (HP: 13)
+[BOON] Refreshing existing FreezeSTART on R0
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 70] 2 unit(s) acting
+Ranged: R4 targeting B4 (HP: 3)
+B4 HP: 3 - 1 => 2
+Ranged: R2 targeting B3 (HP: 5)
+B3 HP: 5 - 0 => 5
+[BOON] Applied Poison Effect to B3 (Usage: 2)
+[A28] R2 applied Poison Effect to B3 (usage: 2)
+
+
+[Tick 72] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+
+
+[Tick 75] 1 unit(s) acting
+Melee: B4 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 5)
+[BOON] Poison Effect triggered on B4 (Usage: 1/2)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 HP: 2 - 2 => 0
+[BOON] Poison Effect expired on B4 - cleaned up
+  -> B4 died during after-actions, stopping further actions
+
+
+[Tick 80] 4 unit(s) acting
+Ranged: R4 targeting B3 (HP: 5)
+B3 HP: 5 - 2 => 3
+Ranged: R2 targeting B3 (HP: 3)
+B3 HP: 3 - 0 => 3
+[BOON] Refreshing existing Poison Effect on B3
+[A28] R2 applied Poison Effect to B3 (usage: 2)
+Melee: B3 targeting R0 (HP: 13)
+B3 HP: 3 - 3 => 0
+R0 HP: 13 - 0 => 13
+  -> B3 died during after-actions, stopping further actions
+Magic: B2 targeting R0 (HP: 13)
+[BOON] Refreshing existing FreezeSTART on R0
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
 [Tick 84] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 3)
-[HEAL] B1 healed for 2 HP (from 3 to 5/10)
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 100] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 5)
-B1 HP: 5 - 1 => 4
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 90] 2 unit(s) acting
+Ranged: R4 targeting B2 (HP: 10)
+B2 HP: 10 - 2 => 8
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B2 (HP: 8)
+B2 HP: 8 - 3 => 5
+[BOON] Applied Poison Effect to B2 (Usage: 2)
+[A28] R2 applied Poison Effect to B2 (usage: 2)
+  -> B2 (magic) tick reset due to ranged attack!
 
 
-[Tick 105] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 0 => 12
-Ranged: R4 targeting B1 (HP: 4)
-B1 HP: 4 - 3 => 1
-  -> B1 (magic) tick reset due to ranged attack!
+[Tick 96] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
 
 
-[Tick 112] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 1)
-[HEAL] B1 healed for 2 HP (from 1 to 3/10)
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+[Tick 120] 6 unit(s) acting
+Ranged: R4 targeting B2 (HP: 5)
+B2 HP: 5 - 2 => 3
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B1 (HP: 10)
+B1 HP: 10 - 3 => 7
+[BOON] Applied Poison Effect to B1 (Usage: 2)
+[A28] R2 applied Poison Effect to B1 (usage: 2)
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[BOON] Poison Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
+B1 HP: 7 - 1 => 6
+Magic: R3 targeting R0 (HP: 13)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: R1 targeting R0 (HP: 13)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 120] 1 unit(s) acting
-Ranged: R1 targeting B1 (HP: 3)
+[Tick 130] 2 unit(s) acting
+Ranged: R4 targeting B2 (HP: 3)
+B2 HP: 3 - 2 => 1
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R2 targeting B1 (HP: 6)
+B1 HP: 6 - 3 => 3
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R2 applied Poison Effect to B1 (usage: 2)
+
+
+[Tick 132] 1 unit(s) acting
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[BOON] Poison Effect triggered on B1 (Usage: 2/2)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
 B1 HP: 3 - 1 => 2
-  -> B1 (magic) tick reset due to ranged attack!
 
 
-[Tick 140] 3 unit(s) acting
+[Tick 160] 3 unit(s) acting
+Ranged: R2 targeting B2 (HP: 1)
+B2 HP: 3 - 3 => 0
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R2 applied Poison Effect to B2 (usage: 2)
 Ranged: R4 targeting B1 (HP: 2)
-B1 HP: 3 - 3 => 0
-Ranged: B3 targeting R3 (HP: 12)
-R3 HP: 12 - 5 => 7
-  -> R3 (magic) tick reset due to ranged attack!
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 160] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
+B1 HP: 2 - 0 => 2
 
 
 [Tick 168] 1 unit(s) acting
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
+Ranged: B1 targeting R0 (HP: 13)
+R0 HP: 13 - 0 => 13
+[DEBUG] B1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B1
+[AFTER-ACTION] B1 performs after-action on B1 (threat: 0)
+[BOON] Poison Effect triggered on B1 (Usage: 1/2)
+[EXECUTE_EFFECT] B1 triggered Poison Effect
+B1 HP: 2 - 1 => 1
+[BOON] Poison Effect expired on B1 - cleaned up
 
 
-[Tick 175] 2 unit(s) acting
-Ranged: B2 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
+[Tick 170] 2 unit(s) acting
+Ranged: R4 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
 
 
-[Tick 180] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 196] 1 unit(s) acting
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
-
-
-[Tick 200] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 210] 3 unit(s) acting
-Ranged: B2 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Magic: R0 targeting B4 (HP: 10)
-Magic: R0 targeting B0 (HP: 10)
-Magic: R0 targeting B3 (HP: 13)
-
-
-[Tick 220] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 224] 1 unit(s) acting
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
-
-
-[Tick 240] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 245] 2 unit(s) acting
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Ranged: B2 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-
-
-[Tick 252] 1 unit(s) acting
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
-
-
-[Tick 260] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 280] 7 unit(s) acting
-Ranged: B3 targeting R3 (HP: 7)
-R3 HP: 7 - 5 => 2
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B2 targeting R3 (HP: 2)
-R3 HP: 2 - 0 => 2
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Melee: B4 targeting R3 (HP: 2)
-R3 HP: 2 - 1 => 1
-R3 HP: 1 - 1 => 0
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
-Magic: R0 targeting B4 (HP: 10)
-Magic: R0 targeting B0 (HP: 10)
-Magic: R0 targeting B3 (HP: 13)
-
-
-[Tick 300] 1 unit(s) acting
-Ranged: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-
-
-[Tick 308] 1 unit(s) acting
-Magic: B0 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting B3 (HP: 13)
-[HEAL] B3 healed for 0 HP (from 13 to 13/13)
-
-
-[Tick 315] 2 unit(s) acting
-Ranged: B2 targeting R0 (HP: 10)
-R0 HP: 10 - 4 => 6
-  -> R0 (magic) tick reset due to ranged attack!
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Battle Over! Tick limit reached (500 ticks elapsed)
+[Tick 180] 5 unit(s) acting
+Ranged: R2 targeting B1 (HP: 1)
+B1 HP: 3 - 3 => 0
+[BOON] Applied Poison Effect to B1 (Usage: 2)
+[A28] R2 applied Poison Effect to B1 (usage: 2)
+Magic: R1 targeting R0 (HP: 13)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Magic: R3 targeting R0 (HP: 13)
+[BOON] Refreshing existing HasteSTART on R0
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Battle Over! Red Team wins!

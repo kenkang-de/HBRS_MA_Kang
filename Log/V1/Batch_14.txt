@@ -1,162 +1,234 @@
-Unit 0: R0 Attack:5 Defense:2 HP:15 Speed:1 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA49]
-Unit 1: R1 Attack:4 Defense:-1 HP:10 Speed:7 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA2]
-Unit 2: R2 Attack:4 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW35](Chain Lightning) Armor: [BSA8]
-Unit 3: R3 Attack:3 Defense:5 HP:15 Speed:0 Threat:10 Weapon: [BSW15](Taunt) Armor: [BSA48]
-Unit 4: R4 Attack:1 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA1]
-Unit 5: B0 Attack:1 Defense:2 HP:15 Speed:1 Threat:6 Weapon: [BSW39](Healing Link) Armor: [BSA49]
-Unit 6: B1 Attack:1 Defense:3 HP:10 Speed:2 Threat:7 Weapon: [BSW35](Chain Lightning) Armor: [BSA22]
-Unit 7: B2 Attack:4 Defense:4 HP:12 Speed:1 Threat:11 Weapon: [BSW35](Chain Lightning) Armor: [BSA40]
-Unit 8: B3 Attack:1 Defense:0 HP:10 Speed:6 Threat:2 Weapon: [BSW21](Poison Arrow) Armor: [BSA10]
-Unit 9: B4 Attack:5 Defense:-2 HP:10 Speed:7 Threat:5 Weapon: [BSW29](Camo Throw) Armor: [BSA3]
+Unit 0: R0 Attack:6 Defense:2 HP:15 Speed:1 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA49]
+Unit 1: R1 Attack:-1 Defense:0 HP:10 Speed:4 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA10]
+Unit 2: R2 Attack:0 Defense:1 HP:10 Speed:5 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA12]
+Unit 3: R3 Attack:3 Defense:3 HP:7 Speed:4 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA23]
+Unit 4: R4 Attack:6 Defense:4 HP:10 Speed:1 Threat:8 Weapon: [BSW10](Reckless Attack) Armor: [BSA31]
+Unit 5: B0 Attack:2 Defense:-1 HP:10 Speed:5 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA6]
+Unit 6: B1 Attack:0 Defense:11 HP:12 Speed:2 Threat:5 Weapon: [BSW12](Final Attack) Armor: [BSA20]
+Unit 7: B2 Attack:2 Defense:3 HP:10 Speed:1 Threat:10 Weapon: [BSW49](Earthquake) Armor: [BSA34]
+Unit 8: B3 Attack:5 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW28](Heavy Shot) Armor: [BSA44]
+Unit 9: B4 Attack:2 Defense:1 HP:8 Speed:3 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA25]
 ==========================
 
 
 [Tick 12] 2 unit(s) acting
-Ranged: R1 targeting B2 (HP: 12)
-B2 HP: 12 - 0 => 12
-Ranged: B4 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
+Ranged: B0 targeting R4 (HP: 10)
+R4 HP: 10 - 0 => 10
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R1 (HP: 10)
+R1 HP: 10 - 2 => 8
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B2 (HP: 10)
+[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
+[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
 
 
-[Tick 14] 2 unit(s) acting
-Ranged: B3 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
-[BOON] Applied Poison Effect to R3 (Usage: 2)
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-Ranged: R4 targeting B2 (HP: 12)
-B2 HP: 12 - 0 => 12
-Ranged: R4 targeting B1 (HP: 10)
-B1 HP: 10 - 0 => 10
-Ranged: R4 targeting B0 (HP: 15)
-B0 HP: 15 - 0 => 15
-
-
-[Tick 21] 1 unit(s) acting
-Magic: R2 targeting B2 (HP: 12)
-B2 HP: 12 - 4 => 8
-Magic: R2 targeting B1 (HP: 10)
-B1 HP: 10 - 4 => 6
-Magic: R2 targeting B0 (HP: 15)
-B0 HP: 15 - 4 => 11
-
-
-[Tick 24] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-
-
-[Tick 28] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B1 (HP: 6)
-B1 HP: 6 - 0 => 6
-Ranged: R4 targeting B0 (HP: 11)
-B0 HP: 11 - 0 => 11
-Ranged: B3 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
+[Tick 30] 3 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 HP: 10 - 0 => 10
+Melee: B1 targeting R4 (HP: 10)
+R4 HP: 10 - 7 => 3
+[A12] B1 defense changed from 11 to 0
+Magic: R1 targeting B2 (HP: 10)
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
 [Tick 36] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
-Ranged: R1 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
+Ranged: B0 targeting R4 (HP: 3)
+R4 HP: 3 - 0 => 3
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R1 (HP: 8)
+R1 HP: 8 - 2 => 6
+  -> R1 (magic) tick reset due to ranged attack!
+Magic: R2 targeting B2 (HP: 10)
+[BOON] Refreshing existing Tetrodo Effect on B2
+[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
 
 
-[Tick 42] 4 unit(s) acting
-Ranged: B3 targeting R3 (HP: 15)
-R3 HP: 15 - 0 => 15
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-Ranged: R4 targeting B2 (HP: 8)
-B2 HP: 8 - 0 => 8
-Ranged: R4 targeting B1 (HP: 6)
-B1 HP: 6 - 0 => 6
-Ranged: R4 targeting B0 (HP: 11)
-B0 HP: 11 - 0 => 11
-Magic: R2 targeting B2 (HP: 8)
-B2 HP: 8 - 4 => 4
-Magic: R2 targeting B1 (HP: 6)
-B1 HP: 6 - 4 => 2
-Magic: R2 targeting B0 (HP: 11)
-B0 HP: 11 - 4 => 7
-Magic: B1 targeting R3 (HP: 15)
-R3 HP: 15 - 1 => 14
-Magic: B1 targeting R2 (HP: 10)
-R2 HP: 10 - 1 => 9
-Magic: B1 targeting R0 (HP: 15)
-R0 HP: 15 - 1 => 14
+[Tick 40] 1 unit(s) acting
+Magic: B4 targeting R4 (HP: 3)
+Magic: B4 targeting R0 (HP: 15)
+Magic: B4 targeting R1 (HP: 6)
 
 
-[Tick 48] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-Ranged: R1 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
+[Tick 60] 5 unit(s) acting
+Ranged: R3 targeting B2 (HP: 10)
+B2 HP: 10 - 0 => 10
+Ranged: B0 targeting R4 (HP: 3)
+R4 HP: 3 - 0 => 3
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R1 (HP: 6)
+R1 HP: 6 - 2 => 4
+  -> R1 (magic) tick reset due to ranged attack!
+Melee: R0 targeting B2 (HP: 10)
+B2 HP: 10 - 3 => 7
+  -> B2 (magic) tick reset due to melee attack!
+Magic: B4 targeting R4 (HP: 3)
+Magic: B4 targeting R0 (HP: 15)
+Magic: B4 targeting R1 (HP: 4)
 
 
-[Tick 56] 2 unit(s) acting
-Ranged: R4 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-Ranged: R4 targeting B1 (HP: 2)
-B1 HP: 2 - 0 => 2
-Ranged: R4 targeting B0 (HP: 7)
-B0 HP: 7 - 0 => 7
-Ranged: B3 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
-
-
-[Tick 60] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-Ranged: R1 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-
-
-[Tick 63] 1 unit(s) acting
+[Tick 120] 9 unit(s) acting
+Ranged: R3 targeting B2 (HP: 7)
+B2 HP: 7 - 0 => 7
+Ranged: B0 targeting R4 (HP: 3)
+R4 HP: 3 - 0 => 3
+Ranged: B0 targeting R1 (HP: 4)
+R1 HP: 4 - 2 => 2
+  -> R1 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B3 targeting R4 (HP: 3)
+R4 HP: 6 - 6 => 0
+Melee: R0 targeting B2 (HP: 7)
+B2 HP: 7 - 3 => 4
+  -> B2 (magic) tick reset due to melee attack!
 Magic: R2 targeting B2 (HP: 4)
-B2 HP: 4 - 4 => 0
-Magic: R2 targeting B1 (HP: 2)
-B1 HP: 4 - 4 => 0
-Magic: R2 targeting B0 (HP: 7)
-B0 HP: 7 - 4 => 3
+[BOON] Refreshing existing Tetrodo Effect on B2
+[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
+Magic: B4 targeting R1 (HP: 2)
+Magic: B4 targeting R0 (HP: 15)
 
 
-[Tick 70] 2 unit(s) acting
-Ranged: R4 targeting B0 (HP: 3)
-B0 HP: 3 - 0 => 3
-Ranged: R4 targeting B3 (HP: 10)
-B3 HP: 10 - 1 => 9
-Ranged: R4 targeting B4 (HP: 10)
-B4 HP: 10 - 3 => 7
-Ranged: B3 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-[BOON] Refreshing existing Poison Effect on R3
-[A28] B3 applied Poison Effect to R3 (usage: 2)
+[Tick 132] 2 unit(s) acting
+Ranged: B0 targeting R1 (HP: 2)
+R1 HP: 2 - 2 => 0
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Magic: R2 targeting B2 (HP: 4)
+[BOON] Refreshing existing Tetrodo Effect on B2
+[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
 
 
-[Tick 72] 2 unit(s) acting
-Ranged: B4 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-Ranged: R1 targeting B0 (HP: 3)
-B0 HP: 5 - 5 => 0
+[Tick 135] 1 unit(s) acting
+Ranged: R3 targeting B2 (HP: 4)
+B2 HP: 4 - 0 => 4
 
 
-[Tick 84] 6 unit(s) acting
-Ranged: R0 targeting B3 (HP: 9)
-B3 HP: 9 - 5 => 4
-Ranged: R1 targeting B3 (HP: 4)
-B3 HP: 5 - 5 => 0
-Ranged: R4 targeting B4 (HP: 7)
-B4 HP: 7 - 3 => 4
-Ranged: B4 targeting R3 (HP: 14)
-R3 HP: 14 - 0 => 14
-Magic: R2 targeting B4 (HP: 4)
-B4 HP: 4 - 4 => 0
-Battle Over! Red Team wins!
+[Tick 140] 1 unit(s) acting
+Magic: B4 targeting R0 (HP: 15)
+Magic: B4 targeting R3 (HP: 7)
+Magic: B4 targeting R2 (HP: 10)
+
+
+[Tick 144] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Ranged: B0 targeting R2 (HP: 10)
+R2 HP: 10 - 1 => 9
+  -> R2 (magic) tick reset due to ranged attack!
+
+
+[Tick 150] 2 unit(s) acting
+Ranged: R3 targeting B2 (HP: 4)
+B2 HP: 4 - 0 => 4
+Melee: B1 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+[A12] B1 defense changed from 0 to 0
+
+
+[Tick 156] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Ranged: B0 targeting R2 (HP: 9)
+R2 HP: 9 - 1 => 8
+  -> R2 (magic) tick reset due to ranged attack!
+
+
+[Tick 168] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Ranged: B0 targeting R2 (HP: 8)
+R2 HP: 8 - 1 => 7
+  -> R2 (magic) tick reset due to ranged attack!
+
+
+[Tick 180] 2 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Ranged: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 0 => 7
+Ranged: B0 targeting R2 (HP: 7)
+R2 HP: 7 - 1 => 6
+  -> R2 (magic) tick reset due to ranged attack!
+Melee: R0 targeting B2 (HP: 4)
+B2 HP: 4 - 3 => 1
+  -> B2 (magic) tick reset due to melee attack!
+
+
+[Tick 240] 7 unit(s) acting
+Ranged: B3 targeting R3 (HP: 7)
+R3 HP: 7 - 7 => 0
+Ranged: B0 targeting R2 (HP: 6)
+R2 HP: 6 - 1 => 5
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+Melee: R0 targeting B2 (HP: 1)
+B2 HP: 3 - 3 => 0
+Magic: B4 targeting R2 (HP: 5)
+Magic: B4 targeting R0 (HP: 15)
+
+
+[Tick 264] 2 unit(s) acting
+Ranged: B0 targeting R2 (HP: 5)
+R2 HP: 5 - 1 => 4
+  -> R2 (magic) tick reset due to ranged attack!
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+
+
+[Tick 270] 2 unit(s) acting
+Ranged: B3 targeting R2 (HP: 4)
+R2 HP: 9 - 9 => 0
+Melee: B1 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+[A12] B1 defense changed from 0 to 0
+
+
+[Tick 276] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+
+
+[Tick 280] 1 unit(s) acting
+Magic: B4 targeting R0 (HP: 15)
+
+
+[Tick 288] 1 unit(s) acting
+Ranged: B0 targeting R0 (HP: 15)
+R0 HP: 15 - 0 => 15
+
+
+[Tick 290] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 15)
+R0 HP: 15 - 8 => 7
+
+
+[Tick 300] 4 unit(s) acting
+Ranged: B0 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+Melee: B1 targeting R0 (HP: 7)
+R0 HP: 7 - 0 => 7
+[A12] B1 defense changed from 0 to 0
+Melee: R0 targeting B1 (HP: 12)
+B1 HP: 12 - 6 => 6
+Magic: B4 targeting R0 (HP: 7)
+
+
+[Tick 305] 1 unit(s) acting
+Ranged: B3 targeting R0 (HP: 7)
+R0 HP: 8 - 8 => 0
+Battle Over! Blue Team wins!

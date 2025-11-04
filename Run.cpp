@@ -19,6 +19,7 @@
 #include "Simulator/Simulator.h"
 
 #include "Analysis/BalancingLogToCSV.h"
+#include "Analysis/GameCoponentToCSV.h"
 #include "Analysis/RMSE.h"
 #include "Analysis/TestSubjectToCSV.h"
 
@@ -130,6 +131,7 @@ class NewMasterController {
 
         // Stage 5: Analysis
         BalancingLogToCSV::Convert();
+        GameComponentToCSV::Convert(testSubjects);
 
         std::cout << "Stage 5 Complete" << std::endl;
 

@@ -1,254 +1,223 @@
-Unit 0: R0 Attack:6 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA49]
-Unit 1: R1 Attack:1 Defense:0 HP:8 Speed:4 Threat:2 Weapon: [BSW38](Healing Touch) Armor: [BSA15]
-Unit 2: R2 Attack:3 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA38]
-Unit 3: R3 Attack:-2 Defense:3 HP:12 Speed:2 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA22]
-Unit 4: R4 Attack:1 Defense:0 HP:12 Speed:1 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA38]
-Unit 5: B0 Attack:1 Defense:3 HP:10 Speed:2 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA21]
-Unit 6: B1 Attack:1 Defense:0 HP:8 Speed:6 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA4]
-Unit 7: B2 Attack:5 Defense:0 HP:10 Speed:3 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA29]
-Unit 8: B3 Attack:3 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW26](Double Shot) Armor: [BSA28]
-Unit 9: B4 Attack:5 Defense:5 HP:10 Speed:1 Threat:7 Weapon: [BSW18](Killing Spree) Armor: [BSA45]
+Unit 0: R0 Attack:3 Defense:0 HP:14 Speed:5 Threat:3 Weapon: [BSW4](Berserk) Armor: [BSA10]
+Unit 1: R1 Attack:7 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW30](Fire Arrow) Armor: [BSA26]
+Unit 2: R2 Attack:5 Defense:2 HP:15 Speed:2 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA49]
+Unit 3: R3 Attack:0 Defense:-1 HP:12 Speed:5 Threat:7 Weapon: [BSW45](Fatigue) Armor: [BSA2]
+Unit 4: R4 Attack:-1 Defense:0 HP:10 Speed:4 Threat:4 Weapon: [BSW41](Bulkup) Armor: [BSA10]
+Unit 5: B0 Attack:4 Defense:-1 HP:10 Speed:3 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA32]
+Unit 6: B1 Attack:2 Defense:3 HP:10 Speed:1 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA34]
+Unit 7: B2 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW47](Cheer) Armor: [BSA1]
+Unit 8: B3 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW37](Freeze) Armor: [BSA38]
+Unit 9: B4 Attack:3 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA22]
 ==========================
 
 
-[Tick 2] 1 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 3] 1 unit(s) acting
-Magic: R1 targeting R4 (HP: 12)
-[HEAL] R4 healed for 0 HP (from 12 to 12/12)
-
-
-[Tick 4] 4 unit(s) acting
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Ranged: B2 targeting R4 (HP: 12)
-R4 HP: 12 - 6 => 6
-  -> R4 (magic) tick reset due to ranged attack!
-Ranged: B3 targeting R4 (HP: 6)
-R4 HP: 6 - 3 => 3
-  -> R4 (magic) tick reset due to ranged attack!
-Ranged: B3 targeting R0 (HP: 15)
-R0 HP: 15 - 1 => 14
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 6] 4 unit(s) acting
-Magic: B0 targeting R4 (HP: 3)
-R4 HP: 3 - 1 => 2
-Magic: B0 targeting R0 (HP: 14)
-R0 HP: 14 - 1 => 13
-Magic: B0 targeting R3 (HP: 12)
-R3 HP: 12 - 1 => 11
-Magic: B0 targeting R2 (HP: 12)
-R2 HP: 12 - 1 => 11
-Magic: B0 targeting R1 (HP: 8)
-R1 HP: 8 - 1 => 7
-Magic: R1 targeting R4 (HP: 2)
-[HEAL] R4 healed for 1 HP (from 2 to 3/12)
-Magic: R3 targeting B0 (HP: 10)
-Magic: R3 targeting B4 (HP: 10)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 8] 4 unit(s) acting
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Ranged: B3 targeting R4 (HP: 3)
-R4 HP: 3 - 3 => 0
-Ranged: B3 targeting R0 (HP: 13)
-R0 HP: 13 - 1 => 12
-Ranged: B2 targeting R0 (HP: 12)
-R0 HP: 12 - 6 => 6
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 9] 1 unit(s) acting
-Magic: R1 targeting R0 (HP: 6)
-[HEAL] R0 healed for 1 HP (from 6 to 7/15)
-
-
-[Tick 10] 1 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 12] 8 unit(s) acting
-Ranged: B4 targeting R0 (HP: 7)
-R0 HP: 7 - 3 => 4
-Ranged: B3 targeting R0 (HP: 4)
-R0 HP: 4 - 1 => 3
-Ranged: B3 targeting R3 (HP: 11)
-R3 HP: 11 - 0 => 11
-Ranged: B2 targeting R0 (HP: 3)
-R0 HP: 6 - 6 => 0
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Magic: R3 targeting B0 (HP: 10)
-Magic: R3 targeting B4 (HP: 10)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
-Magic: B0 targeting R3 (HP: 11)
-R3 HP: 11 - 1 => 10
-Magic: B0 targeting R2 (HP: 11)
-R2 HP: 11 - 1 => 10
-Magic: B0 targeting R1 (HP: 7)
-R1 HP: 7 - 1 => 6
-Magic: R1 targeting R3 (HP: 10)
-[HEAL] R3 healed for 1 HP (from 10 to 11/12)
-
-
-[Tick 14] 1 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 12] 3 unit(s) acting
+Melee: R0 targeting B1 (HP: 10)
+R0 HP: 14 - 0 => 14
+B1 HP: 10 - 0 => 10
+Magic: R3 targeting B1 (HP: 10)
+Magic: R3 targeting B2 (HP: 10)
+Magic: B2 targeting B1 (HP: 10)
 
 
 [Tick 15] 1 unit(s) acting
-Magic: R1 targeting R3 (HP: 11)
-[HEAL] R3 healed for 1 HP (from 11 to 12/12)
+Magic: R4 targeting R3 (HP: 12)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 16] 4 unit(s) acting
-Ranged: B2 targeting R3 (HP: 12)
-R3 HP: 12 - 6 => 6
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B3 targeting R3 (HP: 6)
-R3 HP: 6 - 0 => 6
-Ranged: B3 targeting R2 (HP: 10)
+[Tick 20] 2 unit(s) acting
+Ranged: R1 targeting B1 (HP: 10)
+B1 HP: 10 - 6 => 4
+  -> B1 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R3 (HP: 12)
+R3 HP: 12 - 5 => 7
+  -> R3 (magic) tick reset due to melee attack!
+
+
+[Tick 24] 2 unit(s) acting
+Melee: R0 targeting B1 (HP: 4)
+R0 HP: 14 - 0 => 14
+B1 HP: 4 - 0 => 4
+Magic: B2 targeting B1 (HP: 4)
+
+
+[Tick 36] 2 unit(s) acting
+Melee: R0 targeting B1 (HP: 4)
+R0 HP: 14 - 0 => 14
+B1 HP: 4 - 0 => 4
+Magic: R3 targeting B1 (HP: 4)
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+Magic: R3 targeting B2 (HP: 10)
+[DEBUG] R3 processing 1 boons
+[DEBUG] Registering boon BulkupSTART for R3
+[AFTER-ACTION] R3 performs after-action on R3 (threat: 7)
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+[BOON] BulkupSTART expired on R3 - cleaned up
+
+
+[Tick 40] 2 unit(s) acting
+Ranged: R1 targeting B1 (HP: 4)
+B1 HP: 6 - 6 => 0
+Melee: B0 targeting R3 (HP: 7)
+R3 HP: 7 - 5 => 2
+  -> R3 (magic) tick reset due to melee attack!
+
+
+[Tick 44] 1 unit(s) acting
+Magic: B2 targeting B2 (HP: 10)
+
+
+[Tick 45] 1 unit(s) acting
+Magic: R4 targeting R3 (HP: 2)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 60] 8 unit(s) acting
+Ranged: R2 targeting B2 (HP: 10)
+B2 HP: 10 - 6 => 4
+  -> B2 (magic) tick reset due to ranged attack!
+Ranged: R1 targeting B2 (HP: 4)
+B2 HP: 6 - 6 => 0
+Melee: B0 targeting R3 (HP: 2)
+R3 HP: 5 - 5 => 0
+Melee: B4 targeting R2 (HP: 15)
+B4 HP: 10 - 3 => 7
+R2 HP: 15 - 3 => 12
+Melee: R0 targeting B3 (HP: 12)
+R0 HP: 14 - 0 => 14
+B3 HP: 12 - 3 => 9
+  -> B3 (magic) tick reset due to melee attack!
+Magic: B3 targeting R2 (HP: 12)
+[BOON] Applied FreezeSTART to R2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+Magic: R4 targeting R2 (HP: 12)
+[BOON] Applied BulkupSTART to R2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 72] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 9)
+R0 HP: 14 - 0 => 14
+B3 HP: 9 - 0 => 9
+
+
+[Tick 75] 1 unit(s) acting
+Magic: R4 targeting R2 (HP: 12)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 80] 2 unit(s) acting
+Ranged: R1 targeting B3 (HP: 9)
+B3 HP: 9 - 6 => 3
+  -> B3 (magic) tick reset due to ranged attack!
+Melee: B0 targeting R2 (HP: 12)
+R2 HP: 12 - 2 => 10
+
+
+[Tick 84] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 3)
+R0 HP: 14 - 0 => 14
+B3 HP: 3 - 0 => 3
+
+
+[Tick 90] 2 unit(s) acting
+Melee: B4 targeting R2 (HP: 10)
+B4 HP: 7 - 3 => 4
 R2 HP: 10 - 3 => 7
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+Magic: R4 targeting R2 (HP: 7)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 18] 2 unit(s) acting
-Magic: R1 targeting R3 (HP: 6)
-[HEAL] R3 healed for 1 HP (from 6 to 7/12)
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 96] 1 unit(s) acting
+Melee: R0 targeting B3 (HP: 3)
+R0 HP: 14 - 0 => 14
+B3 HP: 3 - 0 => 3
 
 
-[Tick 24] 8 unit(s) acting
-Ranged: B4 targeting R3 (HP: 7)
-R3 HP: 7 - 2 => 5
-  -> R3 (magic) tick reset due to ranged attack!
-Ranged: B2 targeting R3 (HP: 5)
-R3 HP: 6 - 6 => 0
-Ranged: B3 targeting R2 (HP: 7)
-R2 HP: 7 - 3 => 4
-Ranged: R2 targeting B0 (HP: 10)
-B0 HP: 10 - 0 => 10
-Ranged: R2 targeting B4 (HP: 10)
-B4 HP: 10 - 0 => 10
-Magic: B0 targeting R2 (HP: 4)
-R2 HP: 4 - 1 => 3
-Magic: B0 targeting R1 (HP: 6)
-R1 HP: 6 - 1 => 5
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 100] 2 unit(s) acting
+Ranged: R1 targeting B3 (HP: 3)
+B3 HP: 6 - 6 => 0
+Melee: B0 targeting R2 (HP: 7)
+R2 HP: 7 - 2 => 5
 
 
-[Tick 26] 1 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 105] 1 unit(s) acting
+Magic: R4 targeting R2 (HP: 5)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 27] 1 unit(s) acting
-Magic: R1 targeting R2 (HP: 3)
-[HEAL] R2 healed for 1 HP (from 3 to 4/12)
+[Tick 108] 1 unit(s) acting
+Melee: R0 targeting B4 (HP: 4)
+R0 HP: 14 - 0 => 14
+B4 HP: 4 - 0 => 4
 
 
-[Tick 28] 4 unit(s) acting
-Ranged: B2 targeting R2 (HP: 4)
-R2 HP: 6 - 6 => 0
-Ranged: B3 targeting R1 (HP: 5)
-R1 HP: 5 - 3 => 2
-  -> R1 (magic) tick reset due to ranged attack!
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 120] 5 unit(s) acting
+Ranged: R1 targeting B4 (HP: 4)
+B4 HP: 5 - 5 => 0
+Melee: B0 targeting R2 (HP: 5)
+R2 HP: 5 - 2 => 3
+Magic: R4 targeting R2 (HP: 3)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 33] 2 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 132] 1 unit(s) acting
+Melee: R0 targeting B0 (HP: 10)
+R0 HP: 14 - 0 => 14
+B0 HP: 10 - 4 => 6
 
 
-[Tick 35] 1 unit(s) acting
-Magic: B1 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: B1 targeting B3 (HP: 10)
-[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+[Tick 135] 1 unit(s) acting
+Magic: R4 targeting R2 (HP: 3)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 36] 5 unit(s) acting
-Ranged: B2 targeting R1 (HP: 2)
-R1 HP: 6 - 6 => 0
-Battle Over! Blue Team wins!
+[Tick 140] 2 unit(s) acting
+Ranged: R1 targeting B0 (HP: 6)
+B0 HP: 6 - 4 => 2
+Melee: B0 targeting R2 (HP: 3)
+R2 HP: 3 - 2 => 1
+
+
+[Tick 144] 1 unit(s) acting
+Melee: R0 targeting B0 (HP: 2)
+R0 HP: 14 - 0 => 14
+B0 HP: 2 - 1 => 1
+
+
+[Tick 150] 1 unit(s) acting
+Magic: R4 targeting R2 (HP: 1)
+[BOON] Refreshing existing BulkupSTART on R2
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 156] 1 unit(s) acting
+Melee: R0 targeting B0 (HP: 1)
+R0 HP: 14 - 0 => 14
+B0 HP: 1 - 0 => 1
+
+
+[Tick 160] 2 unit(s) acting
+Ranged: R1 targeting B0 (HP: 1)
+B0 HP: 4 - 4 => 0
+Battle Over! Red Team wins!

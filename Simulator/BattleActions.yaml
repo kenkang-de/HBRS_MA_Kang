@@ -346,14 +346,7 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A32"]         
-
-- id: BulkupEND
-  targetNumber: 1
-  self: true
-  targetType: ALLY
-  actionType: MAGIC
-  actionIDs: ["C00_A32"]   
+  actionIDs: ["C00_A32"]          
 
 - id: Haste
   targetNumber: 1

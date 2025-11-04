@@ -12,7 +12,7 @@ std::vector<Stat> BalancingRule::GenerateRamdomAppliedStats(int amount) {
         int randAttack = dist(gen);
         int randDefense = static_cast<int>(dist(gen) * DEFENSE_RATIO);
         int randHP = dist(gen);
-        int randSpeed = static_cast<int>(dist(gen) * SPEED_RATIO);
+        int randSpeed = std::lround(dist(gen) * SPEED_RATIO);
         int randThreat = dist(gen);
 
         appliedStats.push_back(Stat(randAttack, randDefense, randHP, randSpeed, randThreat));

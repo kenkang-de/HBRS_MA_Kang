@@ -2,16 +2,33 @@
 #include "../Constants.h"
 #include "../Paths.h"
 #include <algorithm>
+#include <chrono>
 #include <filesystem>
 #include <fstream>
+#include <iomanip>
 #include <iostream>
+#include <sstream>
 
 void BalancingLogToCSV::Convert() {
-    // Create directory if it doesn't exist
-    std::string outputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
+    // Create base output directory if it doesn't exist
+    std::string baseOutputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
+    std::filesystem::create_directories(baseOutputDir);
+
+    // Create timestamp-based subdirectory
+    auto now = std::chrono::system_clock::now();
+    auto time_t = std::chrono::system_clock::to_time_t(now);
+    auto tm = *std::localtime(&time_t);
+
+    std::ostringstream timestampStream;
+    timestampStream << std::put_time(&tm, "%Y%m%d_%H%M%S");
+    std::string timestamp = timestampStream.str();
+
+    std::string outputDir = baseOutputDir + "Run_" + timestamp + "\\";
     std::filesystem::create_directories(outputDir);
 
-    // Generate unique filename in the specified directory
+    std::cout << "Created new run directory: " << outputDir << std::endl;
+
+    // Generate unique filename in the new subdirectory
     std::string baseFilename = "BalancingLogResults";
     std::string extension = ".csv";
     std::string filename = outputDir + baseFilename + extension;
@@ -81,30 +98,42 @@ void BalancingLogToCSV::Convert() {
         csvFile << std::endl;
     }
 
-    // Add constants section at the end
-    csvFile << std::endl; // Empty line separator
-    csvFile << "Configuration Constants" << std::endl;
-    csvFile << "UNITS_PER_TEAM," << UNITS_PER_TEAM << std::endl;
-    csvFile << "TEST_TICK," << TEST_TICK << std::endl;
-    csvFile << "SIMULATION_COUNT," << SIMULATION_COUNT << std::endl;
-    csvFile << "DELAY_MULTIPLIER," << DELAY_MULTIPLIER << std::endl;
-    csvFile << "MULTIPLIER_COUNTER," << MULTIPLIER_COUNTER << std::endl;
-    csvFile << "MULTIPLIER_BASIC," << MULTIPLIER_BASIC << std::endl;
-    csvFile << "DEFENSE_RATIO," << DEFENSE_RATIO << std::endl;
-    csvFile << "SPEED_RATIO," << SPEED_RATIO << std::endl;
-    csvFile << "APPLIEDSTAT_RANGE," << APPLIEDSTAT_RANGE << std::endl;
-    csvFile << "INDIVIDUALS_PER_GENERATION," << INDIVIDUALS_PER_GENERATION << std::endl;
-    csvFile << "CROSSOVER_PROBABILITY," << CROSSOVER_PROBABILITY << std::endl;
-    csvFile << "MUTATION_PROBABILITY," << MUTATION_PROBABILITY << std::endl;
-    csvFile << "MUTATION_SIGMA," << MUTATION_SIGMA << std::endl;
-    csvFile << "TARGET_WINRATE," << TARGET_WINRATE << std::endl;
-    csvFile << "TARGET_THRESHOLD," << TARGET_THRESHOLD << std::endl;
-    csvFile << "FITNESS_THRESHOLD," << FITNESS_THRESHOLD << std::endl;
-    csvFile << "FITNESS_MAX," << FITNESS_MAX << std::endl;
-    csvFile << "RMSE_WEIGHT," << RMSE_WEIGHT << std::endl;
-    csvFile << "DOC_WEIGHT," << DOC_WEIGHT << std::endl;
-    csvFile << "MAXGENERATION," << MAXGENERATION << std::endl;
-
     csvFile.close();
     std::cout << "BalancingLog CSV file created successfully: " << filename << std::endl;
+
+    // Create separate configuration constants file
+    std::string configFilename = outputDir + "Configuration.txt";
+    std::ofstream configFile(configFilename);
+
+    if (!configFile.is_open()) {
+        std::cerr << "Error: Could not create " << configFilename << " file!" << std::endl;
+        return;
+    }
+
+    configFile << "Configuration Constants" << std::endl;
+    configFile << "========================" << std::endl;
+    configFile << "UNITS_PER_TEAM: " << UNITS_PER_TEAM << std::endl;
+    configFile << "TEST_TICK: " << TEST_TICK << std::endl;
+    configFile << "SIMULATION_COUNT: " << SIMULATION_COUNT << std::endl;
+    configFile << "DELAY_MULTIPLIER: " << DELAY_MULTIPLIER << std::endl;
+    configFile << "MULTIPLIER_COUNTER: " << MULTIPLIER_COUNTER << std::endl;
+    configFile << "MULTIPLIER_BASIC: " << MULTIPLIER_BASIC << std::endl;
+    configFile << "DEFENSE_RATIO: " << DEFENSE_RATIO << std::endl;
+    configFile << "SPEED_RATIO: " << SPEED_RATIO << std::endl;
+    configFile << "APPLIEDSTAT_RANGE: " << APPLIEDSTAT_RANGE << std::endl;
+    configFile << "INDIVIDUALS_PER_GENERATION: " << INDIVIDUALS_PER_GENERATION << std::endl;
+    configFile << "ELITES_PER_GENERATION: " << ELITES_PER_GENERATION << std::endl;
+    configFile << "CROSSOVER_PROBABILITY: " << CROSSOVER_PROBABILITY << std::endl;
+    configFile << "MUTATION_PROBABILITY: " << MUTATION_PROBABILITY << std::endl;
+    configFile << "MUTATION_SIGMA: " << MUTATION_SIGMA << std::endl;
+    configFile << "TARGET_WINRATE: " << TARGET_WINRATE << std::endl;
+    configFile << "TARGET_THRESHOLD: " << TARGET_THRESHOLD << std::endl;
+    configFile << "FITNESS_THRESHOLD: " << FITNESS_THRESHOLD << std::endl;
+    configFile << "FITNESS_MAX: " << FITNESS_MAX << std::endl;
+    configFile << "RMSE_WEIGHT: " << RMSE_WEIGHT << std::endl;
+    configFile << "DOC_WEIGHT: " << DOC_WEIGHT << std::endl;
+    configFile << "MAXGENERATION: " << MAXGENERATION << std::endl;
+
+    configFile.close();
+    std::cout << "Configuration file created successfully: " << configFilename << std::endl;
 }
