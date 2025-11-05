@@ -1,515 +1,161 @@
-Unit 0: R0 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW47](Cheer) Armor: [BSA50]
-Unit 1: R1 Attack:3 Defense:5 HP:10 Speed:2 Threat:9 Weapon: [BSW6](Achilles' heel) Armor: [BSA45]
-Unit 2: R2 Attack:4 Defense:3 HP:12 Speed:3 Threat:5 Weapon: [BSW17](Shoot) Armor: [BSA44]
-Unit 3: R3 Attack:6 Defense:1 HP:4 Speed:4 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA27]
-Unit 4: R4 Attack:5 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW14](Leech Attack) Armor: [BSA41]
-Unit 5: B0 Attack:1 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA5]
-Unit 6: B1 Attack:5 Defense:4 HP:10 Speed:2 Threat:6 Weapon: [BSW28](Heavy Shot) Armor: [BSA31]
-Unit 7: B2 Attack:-2 Defense:5 HP:17 Speed:0 Threat:11 Weapon: [BSW45](Fatigue) Armor: [BSA48]
-Unit 8: B3 Attack:5 Defense:2 HP:10 Speed:1 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA36]
-Unit 9: B4 Attack:1 Defense:2 HP:10 Speed:2 Threat:6 Weapon: [BSW38](Healing Touch) Armor: [BSA30]
+Unit 0: R0 Attack:1 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW7](Poison Attack) Armor: [BSA18]
+Unit 1: R1 Attack:3 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA13]
+Unit 2: R2 Attack:6 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA33]
+Unit 3: R3 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA29]
+Unit 4: R4 Attack:1 Defense:1 HP:7 Speed:5 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA19]
+Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:2 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA29]
+Unit 6: B1 Attack:10 Defense:1 HP:4 Speed:2 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA27]
+Unit 7: B2 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA20]
+Unit 8: B3 Attack:5 Defense:2 HP:15 Speed:2 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA49]
+Unit 9: B4 Attack:3 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA10]
 ==========================
 
 
-[Tick 12] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 17)
-[BOON] Applied BulkupSTART to B2 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 2] R0, R1, R4, B4, B2,  acting
+R2 HP: 10 - 1 => 9
+Melee: R0 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
+[BOON] Applied Poison Effect to B1 (Usage: 3)
+[A28] R0 applied Poison Effect to B1 (usage: 3)
+Melee: R4 targeting B1 (HP: 4)
+B1 HP: 4 - 0 => 4
+Melee: B4 targeting R2 (HP: 9)
+R2 HP: 9 - 2 => 7
+Magic: R1 targeting B1 (HP: 4)
+B1 HP: 4 - 3 => 1
+Magic: R1 targeting B3 (HP: 15)
+B3 HP: 15 - 3 => 12
 
 
-[Tick 15] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 17)
-B2 HP: 17 - 1 => 16
-  -> B2 (magic) tick reset due to ranged attack!
+[Tick 4] R0, B4, R1, R4, B2,  acting
+R2 HP: 7 - 0 => 7
+Melee: R0 targeting B1 (HP: 1)
+B1 HP: 1 - 0 => 1
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R0 applied Poison Effect to B1 (usage: 3)
+Melee: B4 targeting R2 (HP: 7)
+R2 HP: 7 - 0 => 7
+Melee: R4 targeting B3 (HP: 12)
+B3 HP: 12 - 0 => 12
+Magic: R1 targeting B1 (HP: 1)
+B1 HP: 3 - 3 => 0
+Magic: R1 targeting B3 (HP: 12)
+B3 HP: 12 - 3 => 9
 
 
-[Tick 20] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 16)
-B2 HP: 16 - 0 => 16
+[Tick 5] B0, B3, R2,  acting
+R2 HP: 7 - 0 => 7
+Melee: R2 targeting B3 (HP: 9)
+B3 HP: 9 - 4 => 5
+B3 HP: 5 - 4 => 1
+  -> B3 (ranged) delayed by 1 tick(s) due to 8/15 damage!
+Magic: B0 targeting R2 (HP: 7)
+[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
+[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
 
 
-[Tick 24] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 16)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[Tick 6] R4, B2, B4, R1, R0,  acting
+R2 HP: 7 - 0 => 7
+Melee: R4 targeting B3 (HP: 1)
+B3 HP: 1 - 0 => 1
+Melee: B4 targeting R2 (HP: 7)
+R2 HP: 7 - 0 => 7
+Melee: R0 targeting B3 (HP: 1)
+B3 HP: 1 - 0 => 1
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R0 applied Poison Effect to B3 (usage: 3)
+Magic: R1 targeting B3 (HP: 1)
+B3 HP: 3 - 3 => 0
+Magic: R1 targeting B4 (HP: 10)
+B4 HP: 10 - 3 => 7
 
 
-[Tick 30] 4 unit(s) acting
-Ranged: R3 targeting B2 (HP: 16)
-B2 HP: 16 - 1 => 15
-  -> B2 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R1 (HP: 10)
-R1 HP: 10 - 5 => 5
-Melee: R1 targeting B2 (HP: 15)
-B2 HP: 15 - 0 => 15
-Magic: B4 targeting B2 (HP: 15)
-[HEAL] B2 healed for 1 HP (from 15 to 16/17)
+[Tick 8] R4, B2, R0, B4, R1,  acting
+R2 HP: 7 - 0 => 7
+Melee: R4 targeting B4 (HP: 7)
+B4 HP: 7 - 1 => 6
+Melee: R0 targeting B4 (HP: 6)
+B4 HP: 6 - 1 => 5
+[BOON] Applied Poison Effect to B4 (Usage: 3)
+[A28] R0 applied Poison Effect to B4 (usage: 3)
+Melee: B4 targeting R2 (HP: 7)
+R2 HP: 7 - 0 => 7
+[DEBUG] B4 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B4
+[AFTER-ACTION] B4 performs after-action on B4 (threat: 3)
+[BOON] Poison Effect triggered on B4 (Usage: 3/3)
+[EXECUTE_EFFECT] B4 triggered Poison Effect
+B4 HP: 5 - 3 => 2
+Magic: R1 targeting B4 (HP: 2)
+B4 HP: 3 - 3 => 0
+Magic: R1 targeting B0 (HP: 10)
+B0 HP: 10 - 3 => 7
 
 
-[Tick 32] 1 unit(s) acting
-Magic: B2 targeting R1 (HP: 5)
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART applied to B2 (Duration: 1 turns)
-[EXECUTE_EFFECT] B2 triggered BulkupSTART
-Magic: B2 targeting R0 (HP: 15)
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART on B2 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B2
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B2 triggered BulkupEND
-[BOON] BulkupSTART expired on B2 - cleaned up
+[Tick 10] R2, R3,  acting
+Melee: R2 targeting B0 (HP: 7)
+B0 HP: 7 - 6 => 1
+B0 HP: 6 - 6 => 0
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 5)
+[BOON] Tetrodo Effect triggered on R2 (Usage: 2/2)
+[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
+R2 HP: 7 - 6 => 1
+Magic: R3 targeting R2 (HP: 1)
+Magic: R3 targeting R1 (HP: 11)
 
 
-[Tick 33] 1 unit(s) acting
-Magic: R0 targeting R1 (HP: 5)
-
-
-[Tick 36] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 12)
-[BOON] Applied BulkupSTART to B2 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 40] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 12)
+[Tick 16] R0, R1, B2, R4,  acting
+R2 HP: 1 - 0 => 1
+Melee: R0 targeting B2 (HP: 12)
 B2 HP: 12 - 0 => 12
+[BOON] Applied Poison Effect to B2 (Usage: 3)
+[A28] R0 applied Poison Effect to B2 (usage: 3)
+Melee: R4 targeting B2 (HP: 12)
+B2 HP: 12 - 0 => 12
+Magic: R1 targeting B2 (HP: 12)
+B2 HP: 12 - 3 => 9
 
 
-[Tick 45] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 12)
-B2 HP: 12 - 1 => 11
-  -> B2 (magic) tick reset due to ranged attack!
-
-
-[Tick 48] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 60] 8 unit(s) acting
-Ranged: R2 targeting B2 (HP: 11)
-B2 HP: 11 - 0 => 11
-Ranged: R3 targeting B2 (HP: 11)
-B2 HP: 11 - 1 => 10
-  -> B2 (magic) tick reset due to ranged attack!
-Ranged: B1 targeting R1 (HP: 5)
-R1 HP: 5 - 5 => 0
-Melee: R4 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-Magic: B0 targeting B2 (HP: 10)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-Magic: B4 targeting B2 (HP: 10)
-[HEAL] B2 healed for 1 HP (from 10 to 11/13)
-
-
-[Tick 72] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 11)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 75] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 11)
-B2 HP: 11 - 1 => 10
-  -> B2 (magic) tick reset due to ranged attack!
-
-
-[Tick 80] 2 unit(s) acting
-Ranged: B1 targeting R0 (HP: 15)
-R0 HP: 15 - 6 => 9
-  -> R0 (magic) tick reset due to ranged attack!
-Ranged: R2 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-
-
-[Tick 84] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 10)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 90] 2 unit(s) acting
-Ranged: R3 targeting B2 (HP: 10)
-B2 HP: 10 - 1 => 9
-  -> B2 (magic) tick reset due to ranged attack!
-Magic: B4 targeting B2 (HP: 9)
-[HEAL] B2 healed for 1 HP (from 9 to 10/13)
-
-
-[Tick 152] 1 unit(s) acting
-Magic: B2 targeting R0 (HP: 9)
+[Tick 24] R0, R1, R4, B2,  acting
+R2 HP: 1 - 0 => 1
 [DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART applied to B2 (Duration: 1 turns)
-[EXECUTE_EFFECT] B2 triggered BulkupSTART
-Magic: B2 targeting R4 (HP: 12)
+[DEBUG] Registering boon Poison Effect for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 2)
+[BOON] Poison Effect triggered on B2 (Usage: 3/3)
+[EXECUTE_EFFECT] B2 triggered Poison Effect
+B2 HP: 9 - 2 => 7
+Melee: R0 targeting B2 (HP: 7)
+B2 HP: 7 - 0 => 7
+[BOON] Refreshing existing Poison Effect on B2
+[A28] R0 applied Poison Effect to B2 (usage: 3)
+Melee: R4 targeting B2 (HP: 7)
+B2 HP: 7 - 0 => 7
+Magic: R1 targeting B2 (HP: 7)
+B2 HP: 7 - 3 => 4
+
+
+[Tick 29] B2,  acting
+R2 HP: 1 - 0 => 1
 [DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART on B2 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B2
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B2 triggered BulkupEND
-[BOON] BulkupSTART expired on B2 - cleaned up
-
-
-[Tick 153] 2 unit(s) acting
-Ranged: B1 targeting R0 (HP: 9)
-R0 HP: 9 - 6 => 3
-  -> R0 (magic) tick reset due to ranged attack!
-
-
-[Tick 156] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 6)
-[BOON] Applied BulkupSTART to B2 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 160] 1 unit(s) acting
-Ranged: R2 targeting B2 (HP: 6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 165] 2 unit(s) acting
-Ranged: B1 targeting R0 (HP: 3)
-R0 HP: 6 - 6 => 0
-Ranged: R3 targeting B2 (HP: 6)
-B2 HP: 6 - 1 => 5
-  -> B2 (magic) tick reset due to ranged attack!
-
-
-[Tick 168] 1 unit(s) acting
-Magic: B0 targeting B2 (HP: 5)
-[BOON] Refreshing existing BulkupSTART on B2
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 175] 1 unit(s) acting
-Ranged: B1 targeting R4 (HP: 12)
-R4 HP: 12 - 7 => 5
-
-
-[Tick 180] 5 unit(s) acting
-Ranged: R3 targeting B2 (HP: 5)
-B2 HP: 5 - 1 => 4
-  -> B2 (magic) tick reset due to ranged attack!
-Ranged: R2 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-Melee: R4 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-Melee: B3 targeting R4 (HP: 5)
-R4 HP: 5 - 2 => 3
-Magic: B4 targeting B2 (HP: 4)
-[HEAL] B2 healed for 1 HP (from 4 to 5/9)
-
-
-[Tick 210] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 5)
-B2 HP: 5 - 1 => 4
-  -> B2 (magic) tick reset due to ranged attack!
-
-
-[Tick 332] 2 unit(s) acting
-Ranged: R2 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-Magic: B2 targeting R4 (HP: 3)
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART applied to B2 (Duration: 1 turns)
-[EXECUTE_EFFECT] B2 triggered BulkupSTART
-Magic: B2 targeting R2 (HP: 12)
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[TEMP-BUFF] BulkupSTART on B2 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B2
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B2 triggered BulkupEND
-[BOON] BulkupSTART expired on B2 - cleaned up
-  -> B2 died during after-actions, stopping further actions
-
-
-[Tick 340] 1 unit(s) acting
-Ranged: B1 targeting R4 (HP: 3)
-R4 HP: 7 - 7 => 0
-
-
-[Tick 348] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 10)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 355] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 12)
-R2 HP: 12 - 7 => 5
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-
-
-[Tick 360] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 15)
-B1 HP: 15 - 2 => 13
-[A25] B1 attack reduced from 5 to 4 (damage: 2, reduction: 1)
-Magic: B4 targeting B1 (HP: 13)
-[HEAL] B1 healed for 1 HP (from 13 to 14/15)
-
-
-[Tick 365] 1 unit(s) acting
-Ranged: R3 targeting B1 (HP: 14)
-B1 HP: 14 - 2 => 12
-[A25] B1 attack reduced from 4 to 3 (damage: 2, reduction: 1)
-
-
-[Tick 370] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 12)
-B1 HP: 12 - 2 => 10
-[A25] B1 attack reduced from 3 to 2 (damage: 2, reduction: 1)
-Magic: B4 targeting B1 (HP: 10)
-[HEAL] B1 healed for 1 HP (from 10 to 11/15)
-
-
-[Tick 372] 1 unit(s) acting
-Ranged: R2 targeting B1 (HP: 11)
-B1 HP: 11 - 0 => 11
-
-
-[Tick 375] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 11)
-B1 HP: 11 - 2 => 9
-[A25] B1 attack reduced from 2 to 1 (damage: 2, reduction: 1)
-Ranged: B1 targeting R2 (HP: 5)
-R2 HP: 5 - 0 => 5
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B1
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B1 triggered BulkupEND
-[BOON] BulkupSTART expired on B1 - cleaned up
-
-
-[Tick 377] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-R2 HP: 5 - 0 => 5
-
-
-[Tick 380] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 10)
-B1 HP: 10 - 2 => 8
-[A25] B1 attack reduced from 1 to 0 (damage: 2, reduction: 1)
-Magic: B4 targeting B1 (HP: 8)
-[HEAL] B1 healed for 1 HP (from 8 to 9/16)
-
-
-[Tick 384] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 9)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 392] 1 unit(s) acting
-Ranged: R2 targeting B1 (HP: 9)
-B1 HP: 9 - 0 => 9
-
-
-[Tick 395] 1 unit(s) acting
-Ranged: R3 targeting B1 (HP: 9)
-B1 HP: 9 - 2 => 7
-[A25] B1 attack reduced from 0 to 0 (damage: 2, reduction: 1)
-
-
-[Tick 396] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 7)
-[BOON] Refreshing existing BulkupSTART on B1
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 397] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-R2 HP: 5 - 0 => 5
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-
-
-[Tick 402] 1 unit(s) acting
-Ranged: B1 targeting R2 (HP: 5)
-R2 HP: 5 - 0 => 5
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B1
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B1 triggered BulkupEND
-[BOON] BulkupSTART expired on B1 - cleaned up
-
-
-[Tick 408] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 7)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 410] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 7)
-B1 HP: 7 - 2 => 5
-[A25] B1 attack reduced from 0 to 0 (damage: 2, reduction: 1)
-Magic: B4 targeting B1 (HP: 5)
-[HEAL] B1 healed for 1 HP (from 5 to 6/16)
-
-
-[Tick 420] 1 unit(s) acting
-Melee: B3 targeting R2 (HP: 5)
-R2 HP: 10 - 10 => 0
-
-
-[Tick 422] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-
-
-[Tick 432] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B1
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B1 triggered BulkupEND
-[BOON] BulkupSTART expired on B1 - cleaned up
-
-
-[Tick 436] 2 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-Magic: B0 targeting B1 (HP: 6)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 441] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-
-
-[Tick 445] 1 unit(s) acting
-Ranged: R3 targeting B1 (HP: 6)
-B1 HP: 6 - 2 => 4
-[A25] B1 attack reduced from 0 to 0 (damage: 2, reduction: 1)
-
-
-[Tick 452] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 4)
-[BOON] Refreshing existing BulkupSTART on B1
-[REFRESH] BulkupSTART duration refreshed, effect remains active
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 461] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B1
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B1 triggered BulkupEND
-[BOON] BulkupSTART expired on B1 - cleaned up
-
-
-[Tick 471] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-
-
-[Tick 480] 1 unit(s) acting
-Magic: B4 targeting B1 (HP: 4)
-[HEAL] B1 healed for 1 HP (from 4 to 5/16)
-
-
-[Tick 488] 1 unit(s) acting
-Magic: B0 targeting B1 (HP: 5)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 490] 2 unit(s) acting
-Ranged: R3 targeting B1 (HP: 5)
-B1 HP: 5 - 2 => 3
-[A25] B1 attack reduced from 0 to 0 (damage: 2, reduction: 1)
-Magic: B4 targeting B1 (HP: 3)
-[HEAL] B1 healed for 1 HP (from 3 to 4/16)
-
-
-[Tick 491] 1 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART applied to B1 (Duration: 1 turns)
-[EXECUTE_EFFECT] B1 triggered BulkupSTART
-
-
-[Tick 492] 2 unit(s) acting
-Ranged: B1 targeting R3 (HP: 4)
-R3 HP: 4 - 0 => 4
-[DEBUG] B1 processing 1 boons
-[DEBUG] Registering boon BulkupSTART for B1
-[AFTER-ACTION] B1 performs after-action on B1 (threat: 6)
-[TEMP-BUFF] BulkupSTART on B1 (Remaining: 0 turns)
-[TEMP-BUFF] BulkupSTART expired on B1
- - applying removal effect: BulkupEND
-[EXECUTE_EFFECT] B1 triggered BulkupEND
-[BOON] BulkupSTART expired on B1 - cleaned up
-Magic: B0 targeting B1 (HP: 4)
-[BOON] Applied BulkupSTART to B1 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-
-
-[Tick 495] 1 unit(s) acting
-Ranged: R3 targeting B1 (HP: 4)
-B1 HP: 4 - 2 => 2
-[A25] B1 attack reduced from 0 to 0 (damage: 2, reduction: 1)
-
-
-[Tick 500] 1 unit(s) acting
-Magic: B4 targeting B1 (HP: 2)
-[HEAL] B1 healed for 1 HP (from 2 to 3/16)
-Battle Over! Tick limit reached (501 ticks elapsed)
+[DEBUG] Registering boon Poison Effect for B2
+[AFTER-ACTION] B2 performs after-action on B2 (threat: 2)
+[BOON] Poison Effect triggered on B2 (Usage: 3/3)
+[EXECUTE_EFFECT] B2 triggered Poison Effect
+B2 HP: 4 - 2 => 2
+
+
+[Tick 30] R2,  acting
+Melee: R2 targeting B2 (HP: 2)
+B2 HP: 5 - 5 => 0
+B2 HP: 5 - 5 => 0
+[DEBUG] R2 processing 1 boons
+[DEBUG] Registering boon Tetrodo Effect for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
+[BOON] Tetrodo Effect triggered on R2 (Usage: 1/2)
+[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
+R2 HP: 6 - 6 => 0
+[BOON] Tetrodo Effect expired on R2 - cleaned up
+  -> R2 died during after-actions, stopping further actions
+Battle Over! Red Team wins!

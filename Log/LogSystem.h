@@ -1,30 +1,35 @@
 #ifndef LOGSYSTEM_H
 #define LOGSYSTEM_H
 
-#include <string>
+#include "../Simulator/Unit.h"
+
 #include <fstream>
+#include <string>
+#include <vector>
 
 class LogSystem {
-private:
+  private:
     static std::ofstream logFile;
     static bool isLogging;
 
-public:
-    static bool StartLogging(const std::string& logFileName);
-    
+  public:
+    static bool StartLogging(const std::string &logFileName);
+
     static void StopLogging();
-    
-    static void Log(const std::string& message);
-    
+
+    static void Log(const std::string &message);
+
     static bool IsLogging();
 
-template<typename... Args>
-static void LogStream(Args&&... args) {
-    if (isLogging && logFile.is_open()) {
-        (logFile << ... << args) << std::endl;
+    static std::string GetUnitListName(std::vector<Unit *> unitList);
+
+    static void LogUnitListStats(std::vector<Unit *> unitList);
+
+    template <typename... Args> static void LogStream(Args &&...args) {
+        if (isLogging && logFile.is_open()) {
+            (logFile << ... << args) << std::endl;
+        }
     }
-}
-    
 };
 
 #endif

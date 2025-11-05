@@ -126,6 +126,8 @@ void Unit::TakeDamage(int amount, bool defendable, Unit *actor) {
 
     currentHP = std::max(0, currentHP - finalDamage);
     LogSystem::LogStream(Name, " HP: ", currentHP + finalDamage, " - ", finalDamage, " => ", currentHP);
+
+    DelayRule::DelayUnitFromDamage(actor, this, finalDamage);
 }
 
 void Unit::Heal(int amount) {

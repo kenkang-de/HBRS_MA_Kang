@@ -67,6 +67,7 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
 
     std::vector<Unit *> unitsToAct;
 
+    // if there is no units left to act at the battle
     if (turnQueue.empty())
         return unitsToAct;
 

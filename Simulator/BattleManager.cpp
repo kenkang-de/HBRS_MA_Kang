@@ -54,6 +54,7 @@ int BattleManager::CalculateDelayFromDamage(int damageTaken, int maxHP) {
 }
 
 void BattleManager::StartBattle(bool log, std::string batchID) {
+
     turnManager.Initialize(allUnits);
 
     if (log) {
@@ -61,20 +62,16 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         LogSystem::StartLogging(logFilename);
     }
 
-    for (int i = 0; i < allUnits.size(); i++) {
-        Unit *unit = allUnits[i];
-        LogSystem::LogStream("Unit ", i, ": ", unit->GetName(), " Attack:", unit->GetTotalStat().GetAttack(),
-                             " Defense:", unit->GetTotalStat().GetDefense(), " HP:", unit->GetTotalStat().GetHP(),
-                             " Speed:", unit->GetTotalStat().GetSpeed(), " Threat:", unit->GetTotalStat().GetThreat(),
-                             " Weapon: [", unit->GetWeapon()->GetID(), "]", "(", unit->GetWeapon()->GetAction().GetID(),
-                             ")", " Armor: [", unit->GetArmor()->GetID(), "]");
-    }
-    LogSystem::LogStream("==========================");
+    LogSystem::LogUnitListStats(allUnits);
 
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit *> rangedUnits;
     std::vector<Unit *> meleeUnits;
     std::vector<Unit *> magicUnits;
+
+    rangedUnits.reserve(10);
+    meleeUnits.reserve(10);
+    magicUnits.reserve(10);
 
     while (!IsBattleOver()) {
         // Get all units scheduled to act in the current tick
@@ -82,29 +79,23 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
 
         if (!units.empty()) {
             LogSystem::Log("\n");
-            LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", units.size(), " unit(s) acting");
+            LogSystem::LogStream("[Tick ", turnManager.GetCurrentTick(), "] ", LogSystem::GetUnitListName(units),
+                                 " acting");
         } else {
             // Check if queue is empty and no units can act (battle should end)
             if (!turnManager.CanContinue(allUnits)) {
-                LogSystem::LogStream("Battle Over! No more units can act (empty queue at tick ",
-                                     turnManager.GetCurrentTick(), ")");
+                LogSystem::LogStream("DRAW");
                 LogDrawResult();
                 LogUsageCount();
                 break;
             }
-            turnManager.AdvanceTick();
-            continue;
         }
 
-        // Separate ranged, melee, and magic units
         rangedUnits.clear();
         meleeUnits.clear();
         magicUnits.clear();
 
         for (Unit *unit : units) {
-            // Ranged vs Melee vs Magic separation
-            if (!unit->GetWeapon())
-                continue;
             ActionType actionType = unit->GetWeapon()->GetAction().GetActionType();
             if (actionType == ActionType::RANGE) {
                 rangedUnits.push_back(unit);
@@ -115,88 +106,25 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
             }
         }
 
-        // Combine all acting units and process them one by one
-        std::vector<Unit *> allActingUnits;
-        allActingUnits.insert(allActingUnits.end(), rangedUnits.begin(), rangedUnits.end());
-        allActingUnits.insert(allActingUnits.end(), meleeUnits.begin(), meleeUnits.end());
-        allActingUnits.insert(allActingUnits.end(), magicUnits.begin(), magicUnits.end());
-
-        // Get targets for all units at once using smart targeting
-        std::map<Unit *, std::vector<Unit *>> allTargets =
-            TargetManager::SelectTargetsForGroup(allActingUnits, allUnits);
+        // map of acting unit and list of targets
+        std::map<Unit *, std::vector<Unit *>> allTargets = TargetManager::SelectTargetsForGroup(units, allUnits);
 
         // Track units killed by ranged attacks in this tick (they cannot act)
         std::set<Unit *> unitsKilledByRanged;
         std::set<Unit *> magicUnitsTickResetByRanged;
 
-        // PHASE 1: Execute ranged actions first
-        for (Unit *unit : rangedUnits) {
-            // Check if unit is still alive before processing
-            if (!unit->IsAlive())
-                continue;
-
-            std::vector<Unit *> &targets = allTargets[unit];
-            if (targets.empty())
-                continue;
-
-            // Execute action against all targets
+        // RangeUnit
+        for (Unit *rangedUnit : rangedUnits) {
+            std::vector<Unit *> targets = allTargets[rangedUnit];
             for (Unit *target : targets) {
-                if (!target->IsAlive())
-                    continue;
-
-                // Skip if unit has no weapon
-                if (!unit->GetWeapon())
-                    continue;
-
-                // Create ally/enemy lists for this unit
-                std::vector<Unit *> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
-
-                LogSystem::LogStream("Ranged: ", unit->GetName(), " targeting ", target->GetName(),
-                                     " (HP: ", target->GetCurrentHP(), ")");
-
-                int hpBeforeAttack = target->GetCurrentHP();
-
-                // Check if unit is frozen - if so, skip the action but still apply boons
-                if (!unit->IsFrozen()) {
-                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
-                } else {
-                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
-                }
-
+                rangedUnit->GetWeapon()->GetAction().Perform(rangedUnit, target, rangedUnit->Allies,
+                                                             rangedUnit->Enemies);
                 // Apply unit boons to after-action system
-                ApplyUnitBoonsToAfterAction(unit);
-
+                ApplyUnitBoonsToAfterAction(rangedUnit);
                 // Process any after-actions triggered
                 ProcessAfterActions(allUnits);
-
-                // CRITICAL FIX: Check if the acting unit died during after-actions
-                if (!unit->IsAlive()) {
-                    LogSystem::LogStream("  -> ", unit->GetName(),
-                                         " died during after-actions, stopping further actions");
-                    break; // Stop processing remaining targets for this unit
-                }
-
                 // Check for speed changes and update turn queue if needed
                 turnManager.UpdateSpeedChanges(allUnits);
-
-                // Track if target was killed by this ranged attack
-                if (hpBeforeAttack > 0 && !target->IsAlive()) {
-                    unitsKilledByRanged.insert(target);
-                }
-
-                // If target is still alive and is a magic unit, reset their tick
-                if (target->IsAlive() && target->GetWeapon() &&
-                    target->GetWeapon()->GetAction().GetActionType() == ActionType::MAGIC) {
-                    int hpAfterAttack = target->GetCurrentHP();
-                    int damageTaken = hpBeforeAttack - hpAfterAttack;
-
-                    if (damageTaken > 0) {
-                        turnManager.ResetMagicUnitTick(target);
-                        magicUnitsTickResetByRanged.insert(target);
-                        LogSystem::LogStream("  -> ", target->GetName(), " (magic) tick reset due to ranged attack!");
-                    }
-                }
             }
         }
 

@@ -1,234 +1,158 @@
-Unit 0: R0 Attack:6 Defense:2 HP:15 Speed:1 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA49]
-Unit 1: R1 Attack:-1 Defense:0 HP:10 Speed:4 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA10]
-Unit 2: R2 Attack:0 Defense:1 HP:10 Speed:5 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA12]
-Unit 3: R3 Attack:3 Defense:3 HP:7 Speed:4 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA23]
-Unit 4: R4 Attack:6 Defense:4 HP:10 Speed:1 Threat:8 Weapon: [BSW10](Reckless Attack) Armor: [BSA31]
-Unit 5: B0 Attack:2 Defense:-1 HP:10 Speed:5 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA6]
-Unit 6: B1 Attack:0 Defense:11 HP:12 Speed:2 Threat:5 Weapon: [BSW12](Final Attack) Armor: [BSA20]
-Unit 7: B2 Attack:2 Defense:3 HP:10 Speed:1 Threat:10 Weapon: [BSW49](Earthquake) Armor: [BSA34]
-Unit 8: B3 Attack:5 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW28](Heavy Shot) Armor: [BSA44]
-Unit 9: B4 Attack:2 Defense:1 HP:8 Speed:3 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA25]
+Unit 0: R0 Attack:5 Defense:0 HP:10 Speed:1 Threat:2 Weapon: [BSW19](Momentum) Armor: [BSA29]
+Unit 1: R1 Attack:5 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW1](Slash) Armor: [BSA50]
+Unit 2: R2 Attack:4 Defense:0 HP:9 Speed:6 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA7]
+Unit 3: R3 Attack:2 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA36]
+Unit 4: R4 Attack:0 Defense:1 HP:10 Speed:4 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA12]
+Unit 5: B0 Attack:2 Defense:1 HP:11 Speed:0 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA46]
+Unit 6: B1 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW46](Protect) Armor: [BSA50]
+Unit 7: B2 Attack:6 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW11](Fade Attack) Armor: [BSA44]
+Unit 8: B3 Attack:1 Defense:4 HP:15 Speed:1 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA50]
+Unit 9: B4 Attack:4 Defense:-1 HP:10 Speed:2 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA32]
 ==========================
 
 
-[Tick 12] 2 unit(s) acting
-Ranged: B0 targeting R4 (HP: 10)
-R4 HP: 10 - 0 => 10
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R1 (HP: 10)
-R1 HP: 10 - 2 => 8
-  -> R1 (magic) tick reset due to ranged attack!
-Magic: R2 targeting B2 (HP: 10)
-[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
-[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
+[Tick 2] R2,  acting
+Melee: R2 targeting B0 (HP: 11)
+B0 HP: 11 - 9 => 2
+  -> B0 (magic) tick reset due to melee attack!
 
 
-[Tick 30] 3 unit(s) acting
-Ranged: R3 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-Melee: B1 targeting R4 (HP: 10)
-R4 HP: 10 - 7 => 3
-[A12] B1 defense changed from 11 to 0
-Magic: R1 targeting B2 (HP: 10)
-[BOON] Applied FreezeSTART to B2 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 3] R4,  acting
+Magic: R4 targeting R1 (HP: 15)
+[BOON] Applied ProtectSTART to R1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 36] 2 unit(s) acting
-Ranged: B0 targeting R4 (HP: 3)
-R4 HP: 3 - 0 => 3
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R1 (HP: 8)
-R1 HP: 8 - 2 => 6
-  -> R1 (magic) tick reset due to ranged attack!
-Magic: R2 targeting B2 (HP: 10)
-[BOON] Refreshing existing Tetrodo Effect on B2
-[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
+[Tick 4] R2,  acting
+Melee: R2 targeting B0 (HP: 2)
+B0 HP: 9 - 9 => 0
 
 
-[Tick 40] 1 unit(s) acting
-Magic: B4 targeting R4 (HP: 3)
-Magic: B4 targeting R0 (HP: 15)
-Magic: B4 targeting R1 (HP: 6)
+[Tick 6] B4, R1, R3, R2, R4,  acting
+R1 HP: 15 - 0 => 15
+R4 HP: 10 - 3 => 7
+R2 HP: 9 - 4 => 5
+Melee: R1 targeting B1 (HP: 15)
+B1 HP: 15 - 1 => 14
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered ProtectSTART
+  -> B1 (magic) tick reset due to melee attack!
+Melee: R2 targeting B1 (HP: 14)
+B1 HP: 14 - 6 => 8
+  -> B1 (magic) tick reset due to melee attack!
+Magic: R3 targeting B1 (HP: 8)
+B1 HP: 8 - 2 => 6
+Magic: R3 targeting B3 (HP: 15)
+B3 HP: 15 - 2 => 13
+Magic: R4 targeting R1 (HP: 15)
+[BOON] Refreshing existing ProtectSTART on R1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 60] 5 unit(s) acting
-Ranged: R3 targeting B2 (HP: 10)
-B2 HP: 10 - 0 => 10
-Ranged: B0 targeting R4 (HP: 3)
-R4 HP: 3 - 0 => 3
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R1 (HP: 6)
-R1 HP: 6 - 2 => 4
-  -> R1 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B2 (HP: 10)
-B2 HP: 10 - 3 => 7
-  -> B2 (magic) tick reset due to melee attack!
-Magic: B4 targeting R4 (HP: 3)
-Magic: B4 targeting R0 (HP: 15)
-Magic: B4 targeting R1 (HP: 4)
+[Tick 8] R2,  acting
+Melee: R2 targeting B1 (HP: 6)
+B1 HP: 6 - 6 => 0
 
 
-[Tick 120] 9 unit(s) acting
-Ranged: R3 targeting B2 (HP: 7)
-B2 HP: 7 - 0 => 7
-Ranged: B0 targeting R4 (HP: 3)
-R4 HP: 3 - 0 => 3
-Ranged: B0 targeting R1 (HP: 4)
-R1 HP: 4 - 2 => 2
-  -> R1 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B3 targeting R4 (HP: 3)
-R4 HP: 6 - 6 => 0
-Melee: R0 targeting B2 (HP: 7)
-B2 HP: 7 - 3 => 4
-  -> B2 (magic) tick reset due to melee attack!
-Magic: R2 targeting B2 (HP: 4)
-[BOON] Refreshing existing Tetrodo Effect on B2
-[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
-Magic: B4 targeting R1 (HP: 2)
-Magic: B4 targeting R0 (HP: 15)
+[Tick 12] R4, R0,  acting
+B3 HP: 13 - 1 => 12
+Magic: R4 targeting R1 (HP: 15)
+[BOON] Refreshing existing ProtectSTART on R1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 132] 2 unit(s) acting
-Ranged: B0 targeting R1 (HP: 2)
-R1 HP: 2 - 2 => 0
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Magic: R2 targeting B2 (HP: 4)
-[BOON] Refreshing existing Tetrodo Effect on B2
-[A28] R2 applied Tetrodo Effect to B2 (usage: 2)
+[Tick 24] B3, R3, B4, R2, B2, R4, R0, R1,  acting
+R1 HP: 15 - 0 => 15
+R4 HP: 7 - 3 => 4
+R2 HP: 5 - 4 => 1
+B3 HP: 12 - 1 => 11
+Melee: R2 targeting B3 (HP: 11)
+B3 HP: 11 - 6 => 5
+  -> B3 (magic) tick reset due to melee attack!
+Melee: B2 targeting R1 (HP: 15)
+R1 HP: 15 - 0 => 15
+Melee: R1 targeting B3 (HP: 5)
+B3 HP: 5 - 1 => 4
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
+[TEMP-BUFF] ProtectSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R1
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R1 triggered ProtectEND
+[BOON] ProtectSTART expired on R1 - cleaned up
+  -> B3 (magic) tick reset due to melee attack!
+Magic: B3 targeting B2 (HP: 12)
+[HEAL] B2 healed for 0 HP (from 12 to 12/12)
+Magic: B3 targeting B4 (HP: 10)
+[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+Magic: R3 targeting B3 (HP: 4)
+B3 HP: 4 - 2 => 2
+Magic: R3 targeting B2 (HP: 12)
+B2 HP: 12 - 2 => 10
+Magic: R4 targeting R1 (HP: 15)
+[BOON] Applied ProtectSTART to R1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 135] 1 unit(s) acting
-Ranged: R3 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
+[Tick 26] R2,  acting
+Melee: R2 targeting B3 (HP: 2)
+B3 HP: 6 - 6 => 0
 
 
-[Tick 140] 1 unit(s) acting
-Magic: B4 targeting R0 (HP: 15)
-Magic: B4 targeting R3 (HP: 7)
-Magic: B4 targeting R2 (HP: 10)
+[Tick 30] R4, R3, R2, B4, R1,  acting
+R1 HP: 15 - 0 => 15
+R4 HP: 4 - 3 => 1
+R2 HP: 4 - 4 => 0
+Melee: R1 targeting B2 (HP: 10)
+B2 HP: 10 - 2 => 8
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
+[TEMP-BUFF] ProtectSTART applied to R1 (Duration: 1 turns)
+[EXECUTE_EFFECT] R1 triggered ProtectSTART
+Magic: R4 targeting R1 (HP: 15)
+[BOON] Refreshing existing ProtectSTART on R1
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Magic: R3 targeting B2 (HP: 8)
+B2 HP: 8 - 2 => 6
+Magic: R3 targeting B4 (HP: 10)
+B4 HP: 10 - 2 => 8
 
 
-[Tick 144] 2 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 1 => 9
-  -> R2 (magic) tick reset due to ranged attack!
+[Tick 36] R4, B2, B4, R0, R1, R3,  acting
+R1 HP: 15 - 0 => 15
+R4 HP: 3 - 3 => 0
+R3 HP: 10 - 2 => 8
+B2 HP: 6 - 2 => 4
+Melee: B2 targeting R1 (HP: 15)
+R1 HP: 15 - 0 => 15
+Melee: R1 targeting B2 (HP: 4)
+B2 HP: 4 - 2 => 2
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon ProtectSTART for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
+[TEMP-BUFF] ProtectSTART on R1 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on R1
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R1 triggered ProtectEND
+[BOON] ProtectSTART expired on R1 - cleaned up
+Magic: R3 targeting B2 (HP: 2)
+B2 HP: 2 - 2 => 0
+Magic: R3 targeting B4 (HP: 8)
+B4 HP: 8 - 2 => 6
 
 
-[Tick 150] 2 unit(s) acting
-Ranged: R3 targeting B2 (HP: 4)
-B2 HP: 4 - 0 => 4
-Melee: B1 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-[A12] B1 defense changed from 0 to 0
-
-
-[Tick 156] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: B0 targeting R2 (HP: 9)
-R2 HP: 9 - 1 => 8
-  -> R2 (magic) tick reset due to ranged attack!
-
-
-[Tick 168] 2 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: B0 targeting R2 (HP: 8)
-R2 HP: 8 - 1 => 7
-  -> R2 (magic) tick reset due to ranged attack!
-
-
-[Tick 180] 2 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Ranged: B0 targeting R3 (HP: 7)
-R3 HP: 7 - 0 => 7
-Ranged: B0 targeting R2 (HP: 7)
-R2 HP: 7 - 1 => 6
-  -> R2 (magic) tick reset due to ranged attack!
-Melee: R0 targeting B2 (HP: 4)
-B2 HP: 4 - 3 => 1
-  -> B2 (magic) tick reset due to melee attack!
-
-
-[Tick 240] 7 unit(s) acting
-Ranged: B3 targeting R3 (HP: 7)
-R3 HP: 7 - 7 => 0
-Ranged: B0 targeting R2 (HP: 6)
-R2 HP: 6 - 1 => 5
-  -> R2 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-Melee: R0 targeting B2 (HP: 1)
-B2 HP: 3 - 3 => 0
-Magic: B4 targeting R2 (HP: 5)
-Magic: B4 targeting R0 (HP: 15)
-
-
-[Tick 264] 2 unit(s) acting
-Ranged: B0 targeting R2 (HP: 5)
-R2 HP: 5 - 1 => 4
-  -> R2 (magic) tick reset due to ranged attack!
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-
-
-[Tick 270] 2 unit(s) acting
-Ranged: B3 targeting R2 (HP: 4)
-R2 HP: 9 - 9 => 0
-Melee: B1 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-[A12] B1 defense changed from 0 to 0
-
-
-[Tick 276] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-
-
-[Tick 280] 1 unit(s) acting
-Magic: B4 targeting R0 (HP: 15)
-
-
-[Tick 288] 1 unit(s) acting
-Ranged: B0 targeting R0 (HP: 15)
-R0 HP: 15 - 0 => 15
-
-
-[Tick 290] 1 unit(s) acting
-Ranged: B3 targeting R0 (HP: 15)
-R0 HP: 15 - 8 => 7
-
-
-[Tick 300] 4 unit(s) acting
-Ranged: B0 targeting R0 (HP: 7)
-R0 HP: 7 - 0 => 7
-Melee: B1 targeting R0 (HP: 7)
-R0 HP: 7 - 0 => 7
-[A12] B1 defense changed from 0 to 0
-Melee: R0 targeting B1 (HP: 12)
-B1 HP: 12 - 6 => 6
-Magic: B4 targeting R0 (HP: 7)
-
-
-[Tick 305] 1 unit(s) acting
-Ranged: B3 targeting R0 (HP: 7)
-R0 HP: 8 - 8 => 0
-Battle Over! Blue Team wins!
+[Tick 48] R3, R0, R1, B4,  acting
+B4 HP: 6 - 6 => 0
+[AFTER-ACTION] No valid target found for R0
+R1 HP: 15 - 0 => 15
+R3 HP: 8 - 2 => 6
+R0 HP: 10 - 4 => 6
+Battle Over! Red Team wins!
