@@ -115,6 +115,12 @@ const Armor *Unit::GetArmor() const {
     return armor;
 }
 
+// only used when it's need to update speed change dynamically during a battle.
+void Unit::SetSpeed(int speed) {
+    totalStat.SetSpeed(speed);
+    TurnManager::UpdateSpeedChanges();
+}
+
 void Unit::TakeDamage(int amount, bool defendable, Unit *actor) {
     int finalDamage = amount;
 

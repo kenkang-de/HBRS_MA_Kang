@@ -1,160 +1,94 @@
-Unit 0: R0 Attack:2 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW43](Vow) Armor: [BSA25]
-Unit 1: R1 Attack:7 Defense:1 HP:11 Speed:0 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA46]
-Unit 2: R2 Attack:4 Defense:0 HP:9 Speed:5 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA7]
-Unit 3: R3 Attack:0 Defense:5 HP:15 Speed:2 Threat:9 Weapon: [BSW22](Delay Shot) Armor: [BSA48]
-Unit 4: R4 Attack:2 Defense:0 HP:14 Speed:5 Threat:3 Weapon: [BSW8](Charge Attack) Armor: [BSA17]
-Unit 5: B0 Attack:1 Defense:2 HP:15 Speed:1 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA49]
-Unit 6: B1 Attack:3 Defense:0 HP:12 Speed:5 Threat:2 Weapon: [BSW29](Camo Throw) Armor: [BSA17]
-Unit 7: B2 Attack:5 Defense:0 HP:11 Speed:6 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA5]
-Unit 8: B3 Attack:4 Defense:1 HP:10 Speed:6 Threat:4 Weapon: [BSW29](Camo Throw) Armor: [BSA12]
-Unit 9: B4 Attack:6 Defense:0 HP:10 Speed:6 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA11]
+Unit 0: R0 Attack:8 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW15](Taunt) Armor: [BSA16]
+Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:6 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA10]
+Unit 2: R2 Attack:7 Defense:0 HP:10 Speed:4 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA11]
+Unit 3: R3 Attack:2 Defense:1 HP:10 Speed:6 Threat:3 Weapon: [BSW20](Blitz Shot) Armor: [BSA12]
+Unit 4: R4 Attack:4 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW30](Fire Arrow) Armor: [BSA36]
+Unit 5: B0 Attack:6 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW10](Reckless Attack) Armor: [BSA15]
+Unit 6: B1 Attack:-2 Defense:3 HP:10 Speed:2 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA22]
+Unit 7: B2 Attack:-1 Defense:1 HP:12 Speed:2 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA20]
+Unit 8: B3 Attack:1 Defense:4 HP:12 Speed:2 Threat:7 Weapon: [BSW33](Magic Bolt) Armor: [BSA40]
+Unit 9: B4 Attack:-1 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW47](Cheer) Armor: [BSA18]
 ==========================
 
 
-[Tick 5] B4, B2, B3,  acting
-R3 HP: 15 - 0 => 15
-Melee: B4 targeting R3 (HP: 15)
-R3 HP: 15 - 7 => 8
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 11 - 0 => 11
-R3 HP: 8 - 0 => 8
+[Tick 2] R1, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 10 - 0 => 10
+B2 HP: 12 - 0 => 12
+B1 HP: 10 - 5 => 5
 
 
-[Tick 6] R2, R4, B1,  acting
-B0 HP: 15 - 2 => 13
-R3 HP: 8 - 0 => 8
-Melee: R4 targeting B0 (HP: 13)
-B0 HP: 13 - 4 => 9
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 3] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 5 - 4 => 1
+[HEAL] R2 healed for 0 HP (from 10 to 10/10)
 
 
-[Tick 10] B3, B2, B4,  acting
-R3 HP: 8 - 0 => 8
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 11 - 0 => 11
-R3 HP: 8 - 0 => 8
-Melee: B4 targeting R3 (HP: 8)
-R3 HP: 8 - 0 => 8
+[Tick 4] B0, R3, B4, R1, R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 5 - 5 => 0
+B1 HP: 0 - 0 => 0
+B2 HP: 12 - 0 => 12
+B0 HP: 8 - 0 => 8
+R2 HP: 10 - 7 => 3
+B1 HP: 5 - 5 => 0
 
 
-[Tick 12] B1, R2, R4,  acting
-R3 HP: 8 - 0 => 8
-B0 HP: 9 - 2 => 7
-Melee: R4 targeting B0 (HP: 7)
-B0 HP: 7 - 4 => 3
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 12] B2, B0, B4, R3, R2, R1, R0, B3, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+B2 HP: 12 - 7 => 5
+B2 HP: 5 - 0 => 5
+B3 HP: 12 - 0 => 12
+B3 HP: 12 - 2 => 10
+B0 HP: 8 - 0 => 8
+R2 HP: 7 - 7 => 0
+B2 HP: 6 - 6 => 0
+[HEAL] R2 healed for 6 HP (from 0 to 6/10)
+B2 HP: 13 - 13 => 0
 
 
-[Tick 15] R3, B3, R0, B2, B4,  acting
-B0 HP: 3 - 0 => 3
-R3 HP: 8 - 0 => 8
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 11 - 0 => 11
-R3 HP: 8 - 0 => 8
-Melee: B4 targeting R3 (HP: 8)
-R3 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 8)
-Magic: R0 targeting R1 (HP: 11)
+[Tick 14] R3, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
+B3 HP: 10 - 4 => 6
+B3 HP: 6 - 0 => 6
+B4 HP: 8 - 0 => 8
 
 
-[Tick 18] B1, R4, R2,  acting
-R3 HP: 8 - 0 => 8
-B0 HP: 3 - 2 => 1
-Melee: R4 targeting B0 (HP: 1)
-B0 HP: 4 - 4 => 0
+[Tick 15] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
+B3 HP: 6 - 3 => 3
+[HEAL] R2 healed for 3 HP (from 6 to 9/10)
 
 
-[Tick 20] B3, B2, B4,  acting
-R3 HP: 8 - 0 => 8
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 11 - 0 => 11
-R3 HP: 8 - 0 => 8
-Melee: B4 targeting R3 (HP: 8)
-R3 HP: 8 - 0 => 8
+[Tick 16] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
+B0 HP: 8 - 0 => 8
+R2 HP: 9 - 7 => 2
 
 
-[Tick 24] R4, B1, R2,  acting
-R3 HP: 8 - 0 => 8
-B4 HP: 10 - 4 => 6
-Melee: R4 targeting B4 (HP: 6)
-B4 HP: 6 - 6 => 0
+[Tick 20] B4, B2, B3, B0, R0, R3, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
+B4 HP: 8 - 7 => 1
+B4 HP: 1 - 0 => 1
+B0 HP: 8 - 1 => 7
+B0 HP: 7 - 0 => 7
+R2 HP: 7 - 7 => 0
+B3 HP: 16 - 16 => 0
+R2 HP: 1 - 1 => 0
+Survived Unit: R0, R1, R3, R4, B0, B4, 
 
 
-[Tick 25] B3, B2,  acting
-R3 HP: 8 - 0 => 8
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 11 - 0 => 11
-R3 HP: 8 - 0 => 8
+[Tick 22] R3, R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B4, 
+B4 HP: 7 - 7 => 0
+B0 HP: 7 - 1 => 6
 
 
-[Tick 30] R0, R4, B3, B1, R2, R3, B2,  acting
-R3 HP: 8 - 0 => 8
-R3 HP: 8 - 0 => 8
-B2 HP: 11 - 4 => 7
-B2 HP: 7 - 0 => 7
-Melee: R4 targeting B2 (HP: 7)
-B2 HP: 7 - 6 => 1
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 1 - 0 => 1
-R3 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 8)
-Magic: R0 targeting R1 (HP: 11)
-
-
-[Tick 35] B3,  acting
-R3 HP: 8 - 0 => 8
-
-
-[Tick 45] B2, R0, B3, R3,  acting
-R3 HP: 8 - 0 => 8
-B2 HP: 1 - 0 => 1
-Melee: B2 targeting R3 (HP: 8)
-B2 HP: 1 - 0 => 1
-R3 HP: 8 - 0 => 8
-Magic: R0 targeting R3 (HP: 8)
-Magic: R0 targeting R1 (HP: 11)
-
-
-[Tick 48] B1, R2, R4,  acting
-R3 HP: 8 - 0 => 8
-B2 HP: 4 - 4 => 0
-[AFTER-ACTION] R2 performs after-action on B1 (threat: 0)
-B1 HP: 12 - 4 => 8
-Melee: R4 targeting B1 (HP: 8)
-B1 HP: 8 - 6 => 2
-  -> B1 (ranged) delayed by 1 tick(s) due to 6/12 damage!
-
-
-[Tick 50] B3,  acting
-R3 HP: 8 - 0 => 8
-
-
-[Tick 54] R4,  acting
-Melee: R4 targeting B1 (HP: 2)
-B1 HP: 6 - 6 => 0
-
-
-[Tick 55] B3,  acting
-R3 HP: 8 - 0 => 8
-
-
-[Tick 60] R3, R0, R2, R4, B3,  acting
-B3 HP: 10 - 0 => 10
-B3 HP: 10 - 3 => 7
-R3 HP: 8 - 0 => 8
-Melee: R4 targeting B3 (HP: 7)
-B3 HP: 7 - 5 => 2
-  -> B3 (ranged) delayed by 1 tick(s) due to 5/10 damage!
-Magic: R0 targeting R3 (HP: 8)
-Magic: R0 targeting R1 (HP: 11)
-
-
-[Tick 67] B3,  acting
-R3 HP: 8 - 0 => 8
-
-
-[Tick 72] B3, R4, R2,  acting
-R3 HP: 8 - 0 => 8
-B3 HP: 3 - 3 => 0
-[AFTER-ACTION] No valid target found for R2
+[Tick 24] B0, R4, R1, R0, R3,  acting
+Survived Unit: R0, R1, R3, R4, B0, 
+B0 HP: 6 - 1 => 5
+B0 HP: 5 - 1 => 4
+B0 HP: 4 - 0 => 4
+R3 HP: 10 - 7 => 3
+B0 HP: 26 - 26 => 0
 Battle Over! Red Team wins!

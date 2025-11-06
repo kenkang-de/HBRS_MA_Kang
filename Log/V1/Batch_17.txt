@@ -1,150 +1,123 @@
-Unit 0: R0 Attack:5 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW30](Fire Arrow) Armor: [BSA44]
-Unit 1: R1 Attack:2 Defense:3 HP:10 Speed:2 Threat:8 Weapon: [BSW39](Healing Link) Armor: [BSA34]
-Unit 2: R2 Attack:6 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA49]
-Unit 3: R3 Attack:0 Defense:3 HP:15 Speed:0 Threat:9 Weapon: [BSW45](Fatigue) Armor: [BSA47]
-Unit 4: R4 Attack:-1 Defense:1 HP:7 Speed:4 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA19]
-Unit 5: B0 Attack:7 Defense:1 HP:6 Speed:4 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA26]
-Unit 6: B1 Attack:9 Defense:1 HP:4 Speed:2 Threat:3 Weapon: [BSW14](Leech Attack) Armor: [BSA27]
-Unit 7: B2 Attack:4 Defense:0 HP:10 Speed:3 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA35]
-Unit 8: B3 Attack:3 Defense:4 HP:10 Speed:3 Threat:6 Weapon: [BSW26](Double Shot) Armor: [BSA31]
-Unit 9: B4 Attack:3 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA21]
+Unit 0: R0 Attack:3 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW3](Thrust) Armor: [BSA41]
+Unit 1: R1 Attack:4 Defense:1 HP:8 Speed:4 Threat:1 Weapon: [BSW21](Poison Arrow) Armor: [BSA25]
+Unit 2: R2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW37](Freeze) Armor: [BSA3]
+Unit 3: R3 Attack:2 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW36](Tetrodo) Armor: [BSA25]
+Unit 4: R4 Attack:3 Defense:2 HP:12 Speed:3 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA36]
+Unit 5: B0 Attack:1 Defense:1 HP:10 Speed:0 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA43]
+Unit 6: B1 Attack:1 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA44]
+Unit 7: B2 Attack:0 Defense:-1 HP:10 Speed:4 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA6]
+Unit 8: B3 Attack:4 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW24](Boost Acuity) Armor: [BSA43]
+Unit 9: B4 Attack:4 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW34](Wind Blade) Armor: [BSA25]
 ==========================
 
 
-[Tick 3] B0, B4, R4,  acting
-R3 HP: 15 - 0 => 15
-[BOON] Applied Poison Effect to R3 (Usage: 2)
-[A28] B4 applied Poison Effect to R3 (usage: 2)
-Melee: B0 targeting R3 (HP: 15)
-R3 HP: 15 - 4 => 11
-  -> R3 (magic) tick reset due to melee attack!
-Magic: R4 targeting B3 (HP: 10)
-Magic: R4 targeting B1 (HP: 4)
-Magic: R4 targeting B4 (HP: 10)
+[Tick 12] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Applied FreezeSTART to B1 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 4] B3,  acting
-R3 HP: 11 - 0 => 11
-R1 HP: 10 - 0 => 10
+[Tick 15] R0, R1, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 12 - 1 => 11
+[BOON] Applied Poison Effect to B1 (Usage: 2)
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+B1 HP: 11 - 0 => 11
 
 
-[Tick 6] B0,  acting
-Melee: B0 targeting R3 (HP: 11)
-R3 HP: 11 - 4 => 7
-  -> R3 (magic) tick reset due to melee attack!
+[Tick 20] R4, B4, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+R2 HP: 10 - 4 => 6
+R0 HP: 12 - 4 => 8
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
 
 
-[Tick 12] R1, B1, B2, R4, B0, R0, B4, B3,  acting
-B3 HP: 10 - 2 => 8
-R1 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to R1 (Usage: 2)
-[A28] B4 applied Poison Effect to R1 (usage: 2)
-R1 HP: 10 - 0 => 10
-R2 HP: 15 - 1 => 14
-Melee: B1 targeting R3 (HP: 7)
-R3 HP: 7 - 6 => 1
-[HEAL] B1 healed for 0 HP (from 4 to 4/4)
-  -> R3 (magic) tick reset due to melee attack!
-Melee: B2 targeting R3 (HP: 1)
-R3 HP: 1 - 1 => 0
-Magic: R1 targeting R2 (HP: 14)
-[HEAL] R2 healed for 1 HP (from 14 to 15/15)
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 8)
-[BOON] Poison Effect triggered on R1 (Usage: 2/2)
-[EXECUTE_EFFECT] R1 triggered Poison Effect
-R1 HP: 10 - 2 => 8
-Magic: R4 targeting B3 (HP: 8)
-Magic: R4 targeting B1 (HP: 4)
-Magic: R4 targeting B4 (HP: 10)
+[Tick 36] R2, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Refreshing existing FreezeSTART on B1
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
 
 
-[Tick 15] B4, B0, R4,  acting
-R1 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on R1
-[A28] B4 applied Poison Effect to R1 (usage: 2)
-Melee: B0 targeting R1 (HP: 8)
+[Tick 40] B4, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+R2 HP: 6 - 4 => 2
+R0 HP: 8 - 4 => 4
+
+
+[Tick 45] R0, B2, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+B1 HP: 11 - 0 => 11
+
+
+[Tick 60] R2, R1, B3, B4, R0, B2, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+R2 HP: 11 - 11 => 0
+B1 HP: 11 - 0 => 11
+B1 HP: 11 - 0 => 11
+R0 HP: 4 - 4 => 0
+R4 HP: 12 - 4 => 8
+
+
+[Tick 84] R0,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 90] B2, B3, R1,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 5 => 3
+B1 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+
+
+[Tick 96] R3,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 100] B4, R4,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+R4 HP: 4 - 4 => 0
 R1 HP: 8 - 4 => 4
-  -> R1 (magic) tick reset due to melee attack!
-Magic: R4 targeting B3 (HP: 8)
-Magic: R4 targeting B0 (HP: 6)
-Magic: R4 targeting B1 (HP: 4)
 
 
-[Tick 16] B2, B3,  acting
-R1 HP: 4 - 0 => 4
-R2 HP: 15 - 1 => 14
-Melee: B2 targeting R1 (HP: 4)
-R1 HP: 4 - 1 => 3
-  -> R1 (magic) tick reset due to melee attack!
+[Tick 106] R1, R3,  acting
+Survived Unit: R1, R3, B0, B1, B2, B3, B4, 
+B1 HP: 11 - 0 => 11
+[BOON] Refreshing existing Poison Effect on B1
+[A28] R1 applied Poison Effect to B1 (usage: 2)
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
 
 
-[Tick 18] R4, B1,  acting
-Melee: B1 targeting R1 (HP: 3)
-R1 HP: 6 - 6 => 0
-[HEAL] B1 healed for 0 HP (from 4 to 4/4)
-Magic: R4 targeting B3 (HP: 8)
-Magic: R4 targeting B2 (HP: 10)
-Magic: R4 targeting B4 (HP: 10)
+[Tick 120] B2,  acting
+Survived Unit: R1, R3, B0, B1, B2, B3, B4, 
 
 
-[Tick 20] B3, B2,  acting
-R2 HP: 14 - 1 => 13
-R0 HP: 12 - 0 => 12
-Melee: B2 targeting R2 (HP: 13)
-R2 HP: 13 - 2 => 11
+[Tick 180] B2, B3, R4, B4,  acting
+Survived Unit: R1, R3, B0, B1, B2, B3, B4, 
+R1 HP: 7 - 7 => 0
+R1 HP: 4 - 4 => 0
+R3 HP: 8 - 4 => 4
+Survived Unit: R3, B0, B1, B2, B3, B4, 
 
 
-[Tick 21] B4, B0, R4,  acting
-R2 HP: 11 - 1 => 10
-[BOON] Applied Poison Effect to R2 (Usage: 2)
-[A28] B4 applied Poison Effect to R2 (usage: 2)
-Melee: B0 targeting R2 (HP: 10)
-R2 HP: 10 - 5 => 5
-Magic: R4 targeting B3 (HP: 8)
-Magic: R4 targeting B0 (HP: 6)
-Magic: R4 targeting B1 (HP: 4)
-
-
-[Tick 24] B1, B4, B2, B0, R0, B3, R4,  acting
-R0 HP: 12 - 0 => 12
-[BOON] Applied Poison Effect to R0 (Usage: 2)
-[A28] B4 applied Poison Effect to R0 (usage: 2)
-B3 HP: 8 - 2 => 6
-[DEBUG] R0 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R0
-[AFTER-ACTION] R0 performs after-action on R0 (threat: 5)
-[BOON] Poison Effect triggered on R0 (Usage: 2/2)
-[EXECUTE_EFFECT] R0 triggered Poison Effect
-R0 HP: 12 - 5 => 7
-R0 HP: 7 - 0 => 7
-R4 HP: 7 - 2 => 5
-Melee: B1 targeting R2 (HP: 5)
-R2 HP: 7 - 7 => 0
-[HEAL] B1 healed for 0 HP (from 4 to 4/4)
-Melee: B2 targeting R0 (HP: 7)
-R0 HP: 7 - 1 => 6
-Melee: B0 targeting R0 (HP: 6)
-R0 HP: 6 - 4 => 2
-Magic: R4 targeting B3 (HP: 6)
-Magic: R4 targeting B0 (HP: 6)
-Magic: R4 targeting B1 (HP: 4)
-
-
-[Tick 27] B4,  acting
-R0 HP: 2 - 0 => 2
-[BOON] Refreshing existing Poison Effect on R0
-[A28] B4 applied Poison Effect to R0 (usage: 2)
-
-
-[Tick 30] R4, B4, B1, B0,  acting
-R0 HP: 2 - 0 => 2
-[BOON] Refreshing existing Poison Effect on R0
-[A28] B4 applied Poison Effect to R0 (usage: 2)
-Melee: B1 targeting R0 (HP: 2)
-R0 HP: 6 - 6 => 0
-[HEAL] B1 healed for 0 HP (from 4 to 4/4)
-Melee: B0 targeting R4 (HP: 5)
-R4 HP: 6 - 6 => 0
+[Tick 206] R3, B3,  acting
+Survived Unit: R3, B0, B1, B2, B3, B4, 
+R3 HP: 6 - 6 => 0
 Battle Over! Blue Team wins!

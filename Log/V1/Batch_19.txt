@@ -1,393 +1,189 @@
-Unit 0: R0 Attack:4 Defense:4 HP:10 Speed:1 Threat:5 Weapon: [BSW19](Momentum) Armor: [BSA37]
-Unit 1: R1 Attack:4 Defense:-1 HP:10 Speed:3 Threat:2 Weapon: [BSW21](Poison Arrow) Armor: [BSA32]
-Unit 2: R2 Attack:4 Defense:3 HP:10 Speed:3 Threat:6 Weapon: [BSW21](Poison Arrow) Armor: [BSA34]
-Unit 3: R3 Attack:3 Defense:0 HP:7 Speed:7 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA5]
-Unit 4: R4 Attack:4 Defense:1 HP:8 Speed:4 Threat:1 Weapon: [BSW21](Poison Arrow) Armor: [BSA25]
-Unit 5: B0 Attack:5 Defense:11 HP:4 Speed:2 Threat:4 Weapon: [BSW12](Final Attack) Armor: [BSA27]
-Unit 6: B1 Attack:2 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW33](Magic Bolt) Armor: [BSA25]
-Unit 7: B2 Attack:1 Defense:4 HP:10 Speed:1 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA31]
-Unit 8: B3 Attack:-1 Defense:1 HP:8 Speed:3 Threat:6 Weapon: [BSW48](Meteor) Armor: [BSA18]
-Unit 9: B4 Attack:1 Defense:-2 HP:12 Speed:4 Threat:5 Weapon: [BSW45](Fatigue) Armor: [BSA9]
+Unit 0: R0 Attack:3 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW34](Wind Blade) Armor: [BSA28]
+Unit 1: R1 Attack:2 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW50](Corrosion) Armor: [BSA25]
+Unit 2: R2 Attack:3 Defense:4 HP:15 Speed:2 Threat:8 Weapon: [BSW7](Poison Attack) Armor: [BSA50]
+Unit 3: R3 Attack:-1 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW46](Protect) Armor: [BSA18]
+Unit 4: R4 Attack:1 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA44]
+Unit 5: B0 Attack:3 Defense:2 HP:12 Speed:3 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA39]
+Unit 6: B1 Attack:4 Defense:1 HP:10 Speed:5 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA12]
+Unit 7: B2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA9]
+Unit 8: B3 Attack:0 Defense:-1 HP:10 Speed:5 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA2]
+Unit 9: B4 Attack:5 Defense:0 HP:7 Speed:7 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA5]
 ==========================
 
 
-[Tick 12] R3,  acting
-B2 HP: 10 - 0 => 10
-B3 HP: 8 - 2 => 6
-
-
-[Tick 21] R4, B4,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to B2 (Usage: 2)
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-Magic: B4 targeting R2 (HP: 10)
-Magic: B4 targeting R0 (HP: 10)
-
-
-[Tick 24] R3,  acting
-B2 HP: 10 - 0 => 10
-B3 HP: 6 - 2 => 4
-
-
-[Tick 28] R1, R2,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R2 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 56] B3, R1, B1,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B3 targeting R2 (HP: 10)
-R2 HP: 10 - -1 => 11
-Magic: B3 targeting R0 (HP: 10)
-R0 HP: 10 - -1 => 11
-Magic: B3 targeting R3 (HP: 7)
-R3 HP: 7 - -1 => 8
-Magic: B3 targeting R1 (HP: 10)
-R1 HP: 10 - -1 => 11
-Magic: B1 targeting R2 (HP: 11)
-R2 HP: 11 - 2 => 9
-
-
-[Tick 59] R3,  acting
-B2 HP: 10 - 0 => 10
-B3 HP: 4 - 2 => 2
-
-
-[Tick 63] B4, R4,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-Magic: B4 targeting R2 (HP: 9)
-Magic: B4 targeting R0 (HP: 11)
-
-
-[Tick 70] R2,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R2 applied Poison Effect to B2 (usage: 2)
+[Tick 30] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 15 - 1 => 14
+
+
+[Tick 42] B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 14 - 0 => 14
+[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
+[A28] B2 applied Tetrodo Effect to R2 (usage: 2)
+R2 HP: 14 - 0 => 14
+R4 HP: 12 - 0 => 12
+R0 HP: 10 - 0 => 10
+R1 HP: 8 - 0 => 8
+
+
+[Tick 60] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 14 - 1 => 13
+
+
+[Tick 70] R3, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 13 - 0 => 13
+[BOON] Applied Poison Effect to R2 (Usage: 3)
+[A28] B0 applied Poison Effect to R2 (usage: 3)
+[BOON] Applied ProtectSTART to R2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 84] B2, B3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 13 - 0 => 13
+[BOON] Refreshing existing Tetrodo Effect on R2
+[A28] B2 applied Tetrodo Effect to R2 (usage: 2)
+R2 HP: 13 - 0 => 13
+R4 HP: 12 - 0 => 12
+R0 HP: 10 - 0 => 10
+R1 HP: 8 - 0 => 8
+
+
+[Tick 90] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 13 - 1 => 12
+
+
+[Tick 105] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 10 - 4 => 6
+[BOON] Applied Poison Effect to B3 (Usage: 3)
+[A28] R2 applied Poison Effect to B3 (usage: 3)
+[DEBUG] R2 processing 3 boons
+[DEBUG] Registering boon Tetrodo Effect for R2
+[DEBUG] Registering boon Poison Effect for R2
+[DEBUG] Registering boon ProtectSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[BOON] Tetrodo Effect triggered on R2 (Usage: 2/2)
+[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
+R2 HP: 12 - 3 => 9
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[BOON] Poison Effect triggered on R2 (Usage: 3/3)
+[EXECUTE_EFFECT] R2 triggered Poison Effect
+R2 HP: 9 - 3 => 6
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[TEMP-BUFF] ProtectSTART applied to R2 (Duration: 1 turns)
+[EXECUTE_EFFECT] R2 triggered ProtectSTART
+
+
+[Tick 210] R0, R1, B3, R3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 6 - 0 => 6
+R2 HP: 6 - 0 => 6
+B3 HP: 6 - 3 => 3
+B0 HP: 12 - 3 => 9
+R2 HP: 6 - 0 => 6
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 9)
+[BOON] Poison Effect triggered on B3 (Usage: 3/3)
+[EXECUTE_EFFECT] B3 triggered Poison Effect
+B3 HP: 3 - 0 => 3
+R4 HP: 12 - 0 => 12
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 9)
+[BOON] Poison Effect triggered on B3 (Usage: 2/3)
+[EXECUTE_EFFECT] B3 triggered Poison Effect
+B3 HP: 3 - 0 => 3
+R0 HP: 10 - 0 => 10
+[DEBUG] B3 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 9)
+[BOON] Poison Effect triggered on B3 (Usage: 1/3)
+[EXECUTE_EFFECT] B3 triggered Poison Effect
+B3 HP: 3 - 0 => 3
+[BOON] Poison Effect expired on B3 - cleaned up
+R1 HP: 8 - 0 => 8
+[BOON] Refreshing existing ProtectSTART on R2
+[REFRESH] ProtectSTART duration refreshed, effect remains active
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
 
-
-[Tick 71] R3,  acting
-B2 HP: 10 - 0 => 10
-B3 HP: 2 - 2 => 0
-
-
-[Tick 83] R3,  acting
-B2 HP: 10 - 0 => 10
-B4 HP: 12 - 5 => 7
-
-
-[Tick 105] B4, B2, R4,  acting
-B2 HP: 10 - 0 => 10
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-Magic: B4 targeting R2 (HP: 9)
-Magic: B4 targeting R0 (HP: 11)
-Magic: B2 targeting R2 (HP: 9)
-R2 HP: 9 - 1 => 8
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 2/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 10 - 1 => 9
-Magic: B2 targeting R0 (HP: 11)
-R0 HP: 11 - 1 => 10
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 1/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 9 - 1 => 8
-[BOON] Poison Effect expired on B2 - cleaned up
-Magic: B2 targeting R3 (HP: 8)
-R3 HP: 8 - 1 => 7
-Magic: B2 targeting R1 (HP: 11)
-R1 HP: 11 - 1 => 10
-
-
-[Tick 107] R3,  acting
-B2 HP: 8 - 0 => 8
-B4 HP: 7 - 5 => 2
-
-
-[Tick 112] B1, R1,  acting
-B2 HP: 8 - 0 => 8
-[BOON] Applied Poison Effect to B2 (Usage: 2)
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B1 targeting R2 (HP: 8)
-R2 HP: 8 - 2 => 6
-
-
-[Tick 119] R3,  acting
-B2 HP: 8 - 0 => 8
-B4 HP: 5 - 5 => 0
-
-
-[Tick 126] B0, R4,  acting
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-Melee: B0 targeting R2 (HP: 6)
-R2 HP: 13 - 13 => 0
-[A12] B0 defense changed from 11 to 0
-
-
-[Tick 131] R3,  acting
-B2 HP: 8 - 0 => 8
-B0 HP: 4 - 3 => 1
-
-
-[Tick 140] B1, R1,  acting
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B1 targeting R0 (HP: 10)
-R0 HP: 10 - 2 => 8
-
-
-[Tick 143] R3,  acting
-B2 HP: 8 - 0 => 8
-B0 HP: 3 - 3 => 0
-
-
-[Tick 147] R4,  acting
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 155] R3,  acting
-B2 HP: 8 - 0 => 8
-B1 HP: 8 - 2 => 6
-
-
-[Tick 167] R3,  acting
-B2 HP: 8 - 0 => 8
-B1 HP: 6 - 2 => 4
-
-
-[Tick 168] R0, R4, R1,  acting
-B2 HP: 8 - 0 => 8
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 196] B1, B2, R1,  acting
-B2 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B1 targeting R0 (HP: 8)
-R0 HP: 8 - 2 => 6
-Magic: B2 targeting R0 (HP: 6)
-R0 HP: 6 - 1 => 5
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 2/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 8 - 1 => 7
-Magic: B2 targeting R3 (HP: 7)
-R3 HP: 7 - 1 => 6
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 1/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 7 - 1 => 6
-[BOON] Poison Effect expired on B2 - cleaned up
-Magic: B2 targeting R1 (HP: 10)
-R1 HP: 10 - 1 => 9
-Magic: B2 targeting R4 (HP: 8)
-R4 HP: 8 - 1 => 7
-
-
-[Tick 203] R3,  acting
-B2 HP: 6 - 0 => 6
-B1 HP: 4 - 2 => 2
-
-
-[Tick 210] R4,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Applied Poison Effect to B2 (Usage: 2)
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 215] R3,  acting
-B2 HP: 6 - 0 => 6
-B1 HP: 2 - 2 => 0
-
-
-[Tick 224] R1,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 227] R3,  acting
-B2 HP: 6 - 0 => 6
-
-
-[Tick 231] R4,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 239] R3,  acting
-B2 HP: 6 - 0 => 6
-
-
-[Tick 251] R3,  acting
-B2 HP: 6 - 0 => 6
-
-
-[Tick 252] R1, R4, R0,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 263] R3,  acting
-B2 HP: 6 - 0 => 6
-
-
-[Tick 273] R4,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 275] R3,  acting
-B2 HP: 6 - 0 => 6
-
-
-[Tick 364] B2, R1,  acting
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B2 targeting R0 (HP: 5)
-R0 HP: 5 - 1 => 4
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 2/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 6 - 1 => 5
-Magic: B2 targeting R3 (HP: 6)
-R3 HP: 6 - 1 => 5
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 1/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 5 - 1 => 4
-[BOON] Poison Effect expired on B2 - cleaned up
-Magic: B2 targeting R1 (HP: 9)
-R1 HP: 9 - 1 => 8
-Magic: B2 targeting R4 (HP: 7)
-R4 HP: 7 - 1 => 6
-
-
-[Tick 371] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 378] R4,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Applied Poison Effect to B2 (Usage: 2)
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 383] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 392] R1,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 395] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 399] R4,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 407] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 419] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 420] R1, R4, R0,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-B2 HP: 4 - 0 => 4
-
-
-[Tick 431] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 441] R4,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R4 applied Poison Effect to B2 (usage: 2)
-
-
-[Tick 443] R3,  acting
-B2 HP: 4 - 0 => 4
-
-
-[Tick 532] B2, R1,  acting
-B2 HP: 4 - 0 => 4
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R1 applied Poison Effect to B2 (usage: 2)
-Magic: B2 targeting R0 (HP: 4)
-R0 HP: 4 - 1 => 3
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 2/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 4 - 1 => 3
-Magic: B2 targeting R3 (HP: 5)
-R3 HP: 5 - 1 => 4
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 11)
-[BOON] Poison Effect triggered on B2 (Usage: 1/2)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 3 - 1 => 2
-[BOON] Poison Effect expired on B2 - cleaned up
-Magic: B2 targeting R1 (HP: 8)
-R1 HP: 8 - 1 => 7
-Magic: B2 targeting R4 (HP: 6)
-R4 HP: 6 - 1 => 5
-Battle Over! Tick limit reached (533 ticks elapsed)
+[Tick 420] R1, R0, B3, R2, R3, B4, B0, B1, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 9 - 1 => 8
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R2 applied Poison Effect to B0 (usage: 3)
+[DEBUG] R2 processing 3 boons
+[DEBUG] Registering boon Tetrodo Effect for R2
+[DEBUG] Registering boon Poison Effect for R2
+[DEBUG] Registering boon ProtectSTART for R2
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[BOON] Tetrodo Effect triggered on R2 (Usage: 1/2)
+[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
+R2 HP: 6 - 3 => 3
+[BOON] Tetrodo Effect expired on R2 - cleaned up
+[AFTER-ACTION] R2 performs after-action on R2 (threat: 8)
+[BOON] Poison Effect triggered on R2 (Usage: 2/3)
+[EXECUTE_EFFECT] R2 triggered Poison Effect
+R2 HP: 3 - 3 => 0
+[AFTER-ACTION] R2 performs after-action on B3 (threat: 9)
+[TEMP-BUFF] ProtectSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] ProtectSTART expired on B3
+ - applying removal effect: ProtectEND
+[EXECUTE_EFFECT] R2 triggered ProtectEND
+[BOON] ProtectSTART expired on R2 - cleaned up
+R2 HP: 0 - 0 => 0
+R2 HP: 0 - 0 => 0
+[BOON] Refreshing existing Poison Effect on R2
+[A28] B0 applied Poison Effect to R2 (usage: 3)
+[DEBUG] B0 processing 1 boons
+[DEBUG] Registering boon Poison Effect for B0
+[AFTER-ACTION] B0 performs after-action on B0 (threat: 7)
+[BOON] Poison Effect triggered on B0 (Usage: 3/3)
+[EXECUTE_EFFECT] B0 triggered Poison Effect
+B0 HP: 8 - 1 => 7
+R2 HP: 0 - 0 => 0
+R2 HP: 0 - 0 => 0
+B0 HP: 7 - 3 => 4
+B1 HP: 10 - 3 => 7
+R2 HP: 0 - 0 => 0
+R4 HP: 12 - 0 => 12
+R0 HP: 10 - 0 => 10
+R1 HP: 8 - 0 => 8
+[BOON] Applied ProtectSTART to R2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
+[A28] B2 applied Tetrodo Effect to R2 (usage: 2)
+
+
+[Tick 450] B4,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 12 - 2 => 10
+
+
+[Tick 462] B1, B2, B3,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 10 - 1 => 9
+[BOON] Applied Tetrodo Effect to R4 (Usage: 2)
+[A28] B2 applied Tetrodo Effect to R4 (usage: 2)
+R4 HP: 9 - 0 => 9
+R0 HP: 10 - 0 => 10
+R1 HP: 8 - 0 => 8
+R3 HP: 8 - 0 => 8
+
+
+[Tick 480] B4,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 9 - 2 => 7
+
+
+[Tick 560] R3, R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Applied ProtectSTART to R4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+Battle Over! Tick limit reached (560 ticks elapsed)

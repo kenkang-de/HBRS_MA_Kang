@@ -72,6 +72,9 @@ class Unit {
     void SetCurrentHP(int hp) {
         currentHP = hp;
     }
+
+    void SetSpeed(int speed);
+
     void InitializeCurrentHP() {
         currentHP = totalStat.GetHP();
     } // Initialize currentHP to match totalStat HP

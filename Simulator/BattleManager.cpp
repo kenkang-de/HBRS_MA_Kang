@@ -18,7 +18,6 @@
 static BattleManager *currentBattleManager = nullptr;
 
 BattleManager::BattleManager(Battlefield &bf) : battlefield(bf) {
-
     GlobalAction::ClearAfterAction();
     currentBattleManager = this;
 
@@ -91,6 +90,8 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
             }
         }
 
+        LogSystem::LogSurvivedUnit(allUnits);
+
         rangedUnits.clear();
         meleeUnits.clear();
         magicUnits.clear();
@@ -114,148 +115,16 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
         std::set<Unit *> magicUnitsTickResetByRanged;
 
         // RangeUnit
-        for (Unit *rangedUnit : rangedUnits) {
-            std::vector<Unit *> targets = allTargets[rangedUnit];
-            for (Unit *target : targets) {
-                rangedUnit->GetWeapon()->GetAction().Perform(rangedUnit, target, rangedUnit->Allies,
-                                                             rangedUnit->Enemies);
-                // Apply unit boons to after-action system
-                ApplyUnitBoonsToAfterAction(rangedUnit);
-                // Process any after-actions triggered
-                ProcessAfterActions(allUnits);
-                // Check for speed changes and update turn queue if needed
-                turnManager.UpdateSpeedChanges(allUnits);
-            }
-        }
+        ActUnits(rangedUnits, allTargets);
 
-        // PHASE 2: Execute melee actions
-        for (Unit *unit : meleeUnits) {
-            // Melee units can act even if killed by other melee/magic units in same tick
-            // Only skip if killed by ranged units in this tick or already dead before this tick
-            if (unitsKilledByRanged.count(unit) > 0 || !unit->IsAlive())
-                continue;
+        turnManager.RevalidateEntry(meleeUnits);
+        turnManager.RevalidateEntry(magicUnits);
 
-            std::vector<Unit *> &targets = allTargets[unit];
-            if (targets.empty())
-                continue;
+        // Melee
+        ActUnits(meleeUnits, allTargets);
 
-            // Execute action against all targets
-            for (Unit *target : targets) {
-                if (!target->IsAlive())
-                    continue;
-
-                // Create ally/enemy lists for this unit
-                std::vector<Unit *> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
-
-                LogSystem::LogStream("Melee: ", unit->GetName(), " targeting ", target->GetName(),
-                                     " (HP: ", target->GetCurrentHP(), ")");
-
-                int hpBeforeAttack = target->GetCurrentHP();
-                int maxHP = target->GetTotalStat().GetHP(); // Get max HP from totalStat
-
-                // Check if unit is frozen - if so, skip the action but still apply boons
-                if (!unit->IsFrozen()) {
-                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
-                } else {
-                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
-                }
-
-                // Apply unit boons to after-action system
-                ApplyUnitBoonsToAfterAction(unit);
-
-                // Process any after-actions triggered
-                ProcessAfterActions(allUnits);
-
-                // CRITICAL FIX: Check if the acting unit died during after-actions
-                if (!unit->IsAlive()) {
-                    LogSystem::LogStream("  -> ", unit->GetName(),
-                                         " died during after-actions, stopping further actions");
-                    break; // Stop processing remaining targets for this unit
-                }
-
-                // Check for speed changes and update turn queue if needed
-                turnManager.UpdateSpeedChanges(allUnits);
-
-                // If target is still alive and is a ranged unit, calculate damage-based delay
-                if (target->IsAlive() && target->GetWeapon() &&
-                    target->GetWeapon()->GetAction().GetActionType() == ActionType::RANGE) {
-                    int hpAfterAttack = target->GetCurrentHP();
-                    int damageTaken = hpBeforeAttack - hpAfterAttack;
-
-                    int delayAmount = CalculateDelayFromDamage(damageTaken, maxHP);
-
-                    if (delayAmount > 0) {
-                        turnManager.DelayUnit(target, delayAmount);
-                        LogSystem::LogStream("  -> ", target->GetName(), " (ranged) delayed by ", delayAmount,
-                                             " tick(s) due to ", damageTaken, "/", maxHP, " damage!");
-                    }
-                }
-
-                // If target is still alive and is a magic unit, reset their tick
-                if (target->IsAlive() && target->GetWeapon() &&
-                    target->GetWeapon()->GetAction().GetActionType() == ActionType::MAGIC) {
-                    int hpAfterAttack = target->GetCurrentHP();
-                    int damageTaken = hpBeforeAttack - hpAfterAttack;
-
-                    if (damageTaken > 0) {
-                        turnManager.ResetMagicUnitTick(target);
-                        LogSystem::LogStream("  -> ", target->GetName(), " (magic) tick reset due to melee attack!");
-                    }
-                }
-            }
-        }
-
-        // PHASE 3: Execute magic actions
-        for (Unit *unit : magicUnits) {
-            // Magic units can act even if killed by other melee/magic units in same tick
-            // Skip if killed by ranged units OR if tick was reset by ranged units in this tick OR if already dead
-            if (unitsKilledByRanged.count(unit) > 0 || magicUnitsTickResetByRanged.count(unit) > 0 || !unit->IsAlive())
-                continue;
-
-            std::vector<Unit *> &targets = allTargets[unit];
-            if (targets.empty())
-                continue;
-
-            // Execute action against all targets
-            for (Unit *target : targets) {
-                if (!target->IsAlive())
-                    continue;
-
-                // Create ally/enemy lists for this unit
-                std::vector<Unit *> unitAllies, unitEnemies;
-                SplitAlliesAndEnemies(unit, unit->GetWeapon()->GetAction(), unitAllies, unitEnemies);
-
-                LogSystem::LogStream("Magic: ", unit->GetName(), " targeting ", target->GetName(),
-                                     " (HP: ", target->GetCurrentHP(), ")");
-
-                // Check if unit is frozen - if so, skip the action but still apply boons
-                if (!unit->IsFrozen()) {
-                    unit->GetWeapon()->GetAction().Perform(unit, target, unitAllies, unitEnemies);
-                } else {
-                    LogSystem::LogStream("  -> ", unit->GetName(), " is frozen and cannot act!");
-                }
-
-                // Apply unit boons to after-action system
-                ApplyUnitBoonsToAfterAction(unit);
-
-                // Process any after-actions triggered
-                ProcessAfterActions(allUnits);
-
-                // CRITICAL FIX: Check if the acting unit died during after-actions (e.g., poison)
-                if (!unit->IsAlive()) {
-                    LogSystem::LogStream("  -> ", unit->GetName(),
-                                         " died during after-actions, stopping further actions");
-                    break; // Stop processing remaining targets for this unit
-                }
-
-                // Check for speed changes and update turn queue if needed
-                turnManager.UpdateSpeedChanges(allUnits);
-            }
-        }
-        turnManager.RemoveDeadUnits(allUnits);
-
-        turnManager.AdvanceTick();
+        // Magic
+        ActUnits(magicUnits, allTargets);
     }
 
     if (log) {
@@ -263,19 +132,20 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
     }
 }
 
-void BattleManager::SplitAlliesAndEnemies(Unit *unit, const BattleAction &action, std::vector<Unit *> &allies,
-                                          std::vector<Unit *> &enemies) {
-    for (Unit *u : allUnits) {
-        if (!u->IsAlive())
-            continue;
+void BattleManager::ActUnits(std::vector<Unit *> &units, std::map<Unit *, std::vector<Unit *>> &allTargets) {
+    for (Unit *unit : units) {
 
-        if (u->team == unit->team) {
-            if (u == unit && !action.IncludesSelf())
-                continue; // skip self if action does not include self
-            allies.push_back(u);
-        } else {
-            enemies.push_back(u);
+        std::vector<Unit *> &targets = allTargets[unit];
+        for (Unit *target : targets) {
+            unit->GetWeapon()->GetAction().Perform(unit, target, unit->Allies, unit->Enemies);
+
+            // Apply unit boons to after-action system
+            ApplyUnitBoonsToAfterAction(unit);
+            // Process any after-actions triggered
+            ProcessAfterActions(allUnits);
         }
+        // Check for speed changes and update turn queue if needed
+        // turnManager.UpdateSpeedChanges();
     }
 }
 

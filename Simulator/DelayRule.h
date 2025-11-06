@@ -5,6 +5,7 @@
 
 #include "../Constants.h"
 #include "BattleAction.h"
+#include "TurnManager.h"
 #include "Unit.h"
 
 class DelayRule {

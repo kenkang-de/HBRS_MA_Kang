@@ -1,161 +1,87 @@
-Unit 0: R0 Attack:1 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW7](Poison Attack) Armor: [BSA18]
-Unit 1: R1 Attack:3 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA13]
-Unit 2: R2 Attack:6 Defense:1 HP:10 Speed:2 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA33]
-Unit 3: R3 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA29]
-Unit 4: R4 Attack:1 Defense:1 HP:7 Speed:5 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA19]
-Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:2 Threat:2 Weapon: [BSW36](Tetrodo) Armor: [BSA29]
-Unit 6: B1 Attack:10 Defense:1 HP:4 Speed:2 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA27]
-Unit 7: B2 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA20]
-Unit 8: B3 Attack:5 Defense:2 HP:15 Speed:2 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA49]
-Unit 9: B4 Attack:3 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA10]
+Unit 0: R0 Attack:2 Defense:3 HP:10 Speed:2 Threat:9 Weapon: [BSW44](Exposure) Armor: [BSA34]
+Unit 1: R1 Attack:2 Defense:10 HP:8 Speed:5 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA4]
+Unit 2: R2 Attack:0 Defense:3 HP:12 Speed:2 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA41]
+Unit 3: R3 Attack:4 Defense:1 HP:8 Speed:4 Threat:1 Weapon: [BSW26](Double Shot) Armor: [BSA25]
+Unit 4: R4 Attack:6 Defense:0 HP:8 Speed:4 Threat:2 Weapon: [BSW11](Fade Attack) Armor: [BSA15]
+Unit 5: B0 Attack:5 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW1](Slash) Armor: [BSA40]
+Unit 6: B1 Attack:5 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW21](Poison Arrow) Armor: [BSA16]
+Unit 7: B2 Attack:0 Defense:3 HP:13 Speed:1 Threat:6 Weapon: [BSW33](Magic Bolt) Armor: [BSA47]
+Unit 8: B3 Attack:1 Defense:2 HP:15 Speed:1 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA49]
+Unit 9: B4 Attack:8 Defense:1 HP:4 Speed:3 Threat:1 Weapon: [BSW28](Heavy Shot) Armor: [BSA27]
 ==========================
 
 
-[Tick 2] R0, R1, R4, B4, B2,  acting
-R2 HP: 10 - 1 => 9
-Melee: R0 targeting B1 (HP: 4)
-B1 HP: 4 - 0 => 4
-[BOON] Applied Poison Effect to B1 (Usage: 3)
-[A28] R0 applied Poison Effect to B1 (usage: 3)
-Melee: R4 targeting B1 (HP: 4)
-B1 HP: 4 - 0 => 4
-Melee: B4 targeting R2 (HP: 9)
-R2 HP: 9 - 2 => 7
-Magic: R1 targeting B1 (HP: 4)
-B1 HP: 4 - 3 => 1
-Magic: R1 targeting B3 (HP: 15)
-B3 HP: 15 - 3 => 12
+[Tick 12] R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0 HP: 10 - 2 => 8
+[BOON] Applied Poison Effect to R0 (Usage: 2)
+[A28] B1 applied Poison Effect to R0 (usage: 2)
+B0 HP: 12 - 8 => 4
+[A12] R1 defense changed from 10 to 0
 
 
-[Tick 4] R0, B4, R1, R4, B2,  acting
-R2 HP: 7 - 0 => 7
-Melee: R0 targeting B1 (HP: 1)
-B1 HP: 1 - 0 => 1
-[BOON] Refreshing existing Poison Effect on B1
-[A28] R0 applied Poison Effect to B1 (usage: 3)
-Melee: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-Melee: R4 targeting B3 (HP: 12)
-B3 HP: 12 - 0 => 12
-Magic: R1 targeting B1 (HP: 1)
-B1 HP: 3 - 3 => 0
-Magic: R1 targeting B3 (HP: 12)
-B3 HP: 12 - 3 => 9
+[Tick 15] R3, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 4 - 0 => 4
+B3 HP: 15 - 2 => 13
+B0 HP: 4 - 2 => 2
 
 
-[Tick 5] B0, B3, R2,  acting
-R2 HP: 7 - 0 => 7
-Melee: R2 targeting B3 (HP: 9)
+[Tick 20] B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0 HP: 13 - 13 => 0
+R0 HP: 2 - 2 => 0
+
+
+[Tick 24] R1, B1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1 HP: 8 - 5 => 3
+[BOON] Applied Poison Effect to R1 (Usage: 2)
+[A28] B1 applied Poison Effect to R1 (usage: 2)
+B0 HP: 2 - 0 => 2
+[A12] R1 defense changed from 0 to 0
+[DEBUG] R1 processing 1 boons
+[DEBUG] Registering boon Poison Effect for R1
+[AFTER-ACTION] R1 performs after-action on R1 (threat: 7)
+[BOON] Poison Effect triggered on R1 (Usage: 2/2)
+[EXECUTE_EFFECT] R1 triggered Poison Effect
+R1 HP: 3 - 2 => 1
+
+
+[Tick 30] R4, R2, R3,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 13 - 2 => 11
+B2 HP: 13 - 1 => 12
+B0 HP: 2 - 2 => 0
+[HEAL] R1 healed for 0 HP (from 1 to 1/8)
+[HEAL] R3 healed for 0 HP (from 8 to 8/8)
+[HEAL] R4 healed for 0 HP (from 8 to 8/8)
+
+
+[Tick 60] R3, R4, B1, B0, B4, R1,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B3 HP: 11 - 2 => 9
+B2 HP: 12 - 1 => 11
+R1 HP: 5 - 5 => 0
+[BOON] Refreshing existing Poison Effect on R1
+[A28] B1 applied Poison Effect to R1 (usage: 2)
+R2 HP: 13 - 13 => 0
 B3 HP: 9 - 4 => 5
-B3 HP: 5 - 4 => 1
-  -> B3 (ranged) delayed by 1 tick(s) due to 8/15 damage!
-Magic: B0 targeting R2 (HP: 7)
-[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
-[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
 
 
-[Tick 6] R4, B2, B4, R1, R0,  acting
-R2 HP: 7 - 0 => 7
-Melee: R4 targeting B3 (HP: 1)
-B3 HP: 1 - 0 => 1
-Melee: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-Melee: R0 targeting B3 (HP: 1)
-B3 HP: 1 - 0 => 1
-[BOON] Applied Poison Effect to B3 (Usage: 3)
-[A28] R0 applied Poison Effect to B3 (usage: 3)
-Magic: R1 targeting B3 (HP: 1)
-B3 HP: 3 - 3 => 0
-Magic: R1 targeting B4 (HP: 10)
-B4 HP: 10 - 3 => 7
+[Tick 120] B3, B2, R2, R3, B1, B0, R1, B4, R4,  acting
+Survived Unit: R3, R4, B1, B2, B3, B4, 
+B3 HP: 5 - 2 => 3
+B2 HP: 11 - 1 => 10
+R3 HP: 8 - 4 => 4
+[BOON] Applied Poison Effect to R3 (Usage: 2)
+[A28] B1 applied Poison Effect to R3 (usage: 2)
+R4 HP: 16 - 16 => 0
 
 
-[Tick 8] R4, B2, R0, B4, R1,  acting
-R2 HP: 7 - 0 => 7
-Melee: R4 targeting B4 (HP: 7)
-B4 HP: 7 - 1 => 6
-Melee: R0 targeting B4 (HP: 6)
-B4 HP: 6 - 1 => 5
-[BOON] Applied Poison Effect to B4 (Usage: 3)
-[A28] R0 applied Poison Effect to B4 (usage: 3)
-Melee: B4 targeting R2 (HP: 7)
-R2 HP: 7 - 0 => 7
-[DEBUG] B4 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B4
-[AFTER-ACTION] B4 performs after-action on B4 (threat: 3)
-[BOON] Poison Effect triggered on B4 (Usage: 3/3)
-[EXECUTE_EFFECT] B4 triggered Poison Effect
-B4 HP: 5 - 3 => 2
-Magic: R1 targeting B4 (HP: 2)
-B4 HP: 3 - 3 => 0
-Magic: R1 targeting B0 (HP: 10)
-B0 HP: 10 - 3 => 7
-
-
-[Tick 10] R2, R3,  acting
-Melee: R2 targeting B0 (HP: 7)
-B0 HP: 7 - 6 => 1
-B0 HP: 6 - 6 => 0
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 5)
-[BOON] Tetrodo Effect triggered on R2 (Usage: 2/2)
-[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
-R2 HP: 7 - 6 => 1
-Magic: R3 targeting R2 (HP: 1)
-Magic: R3 targeting R1 (HP: 11)
-
-
-[Tick 16] R0, R1, B2, R4,  acting
-R2 HP: 1 - 0 => 1
-Melee: R0 targeting B2 (HP: 12)
-B2 HP: 12 - 0 => 12
-[BOON] Applied Poison Effect to B2 (Usage: 3)
-[A28] R0 applied Poison Effect to B2 (usage: 3)
-Melee: R4 targeting B2 (HP: 12)
-B2 HP: 12 - 0 => 12
-Magic: R1 targeting B2 (HP: 12)
-B2 HP: 12 - 3 => 9
-
-
-[Tick 24] R0, R1, R4, B2,  acting
-R2 HP: 1 - 0 => 1
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 2)
-[BOON] Poison Effect triggered on B2 (Usage: 3/3)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 9 - 2 => 7
-Melee: R0 targeting B2 (HP: 7)
-B2 HP: 7 - 0 => 7
-[BOON] Refreshing existing Poison Effect on B2
-[A28] R0 applied Poison Effect to B2 (usage: 3)
-Melee: R4 targeting B2 (HP: 7)
-B2 HP: 7 - 0 => 7
-Magic: R1 targeting B2 (HP: 7)
-B2 HP: 7 - 3 => 4
-
-
-[Tick 29] B2,  acting
-R2 HP: 1 - 0 => 1
-[DEBUG] B2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for B2
-[AFTER-ACTION] B2 performs after-action on B2 (threat: 2)
-[BOON] Poison Effect triggered on B2 (Usage: 3/3)
-[EXECUTE_EFFECT] B2 triggered Poison Effect
-B2 HP: 4 - 2 => 2
-
-
-[Tick 30] R2,  acting
-Melee: R2 targeting B2 (HP: 2)
-B2 HP: 5 - 5 => 0
-B2 HP: 5 - 5 => 0
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Tetrodo Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 6)
-[BOON] Tetrodo Effect triggered on R2 (Usage: 1/2)
-[EXECUTE_EFFECT] R2 triggered Tetrodo Effect
-R2 HP: 6 - 6 => 0
-[BOON] Tetrodo Effect expired on R2 - cleaned up
-  -> R2 died during after-actions, stopping further actions
-Battle Over! Red Team wins!
+[Tick 132] B1, R1,  acting
+Survived Unit: R3, B1, B2, B3, B4, 
+R3 HP: 4 - 4 => 0
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B1 applied Poison Effect to R3 (usage: 2)
+Battle Over! Blue Team wins!

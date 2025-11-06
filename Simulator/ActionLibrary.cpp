@@ -222,7 +222,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
              int value = ctx.actor->GetTotalStat().GetSpeed() - ctx.actor->GetTotalStat().GetThreat();
              int newSpeed = ctx.target->GetTotalStat().GetSpeed() + value;
              // Ensure speed never goes below 1 to prevent infinite loops
-             ctx.target->GetTotalStat().SetSpeed(std::max(1, newSpeed));
+             ctx.target->SetSpeed(std::max(1, newSpeed));
          }
      }},
 
@@ -267,7 +267,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
              int value = static_cast<int>(ctx.actor->GetTotalStat().GetHP() * 0.1f);
-             ctx.actor->GetTotalStat().SetSpeed(ctx.actor->GetTotalStat().GetSpeed() + value);
+             ctx.actor->SetSpeed(ctx.actor->GetTotalStat().GetSpeed() + value);
          }
      }},
 
@@ -339,7 +339,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
              int value = static_cast<int>(ctx.actor->GetTotalStat().GetHP() * 0.1f * -1);
              int newSpeed = ctx.actor->GetTotalStat().GetSpeed() + value;
              // Ensure speed never goes below 1 to prevent infinite loops
-             ctx.target->GetTotalStat().SetSpeed(std::max(1, newSpeed));
+             ctx.target->SetSpeed(std::max(1, newSpeed));
          }
      }},
 

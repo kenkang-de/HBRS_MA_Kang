@@ -1,99 +1,117 @@
-Unit 0: R0 Attack:6 Defense:0 HP:12 Speed:2 Threat:5 Weapon: [BSW11](Fade Attack) Armor: [BSA38]
-Unit 1: R1 Attack:3 Defense:0 HP:10 Speed:4 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA14]
-Unit 2: R2 Attack:2 Defense:0 HP:12 Speed:6 Threat:1 Weapon: [BSW17](Shoot) Armor: [BSA17]
-Unit 3: R3 Attack:5 Defense:-1 HP:10 Speed:3 Threat:4 Weapon: [BSW24](Boost Acuity) Armor: [BSA32]
-Unit 4: R4 Attack:4 Defense:2 HP:17 Speed:2 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA49]
-Unit 5: B0 Attack:4 Defense:4 HP:10 Speed:2 Threat:6 Weapon: [BSW5](Overpower) Armor: [BSA37]
-Unit 6: B1 Attack:3 Defense:-1 HP:10 Speed:8 Threat:4 Weapon: [BSW3](Thrust) Armor: [BSA2]
-Unit 7: B2 Attack:1 Defense:4 HP:10 Speed:2 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA31]
-Unit 8: B3 Attack:5 Defense:2 HP:12 Speed:2 Threat:5 Weapon: [BSW28](Heavy Shot) Armor: [BSA39]
-Unit 9: B4 Attack:3 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW34](Wind Blade) Armor: [BSA50]
+Unit 0: R0 Attack:0 Defense:0 HP:10 Speed:2 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA35]
+Unit 1: R1 Attack:1 Defense:1 HP:12 Speed:4 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA20]
+Unit 2: R2 Attack:3 Defense:0 HP:10 Speed:3 Threat:1 Weapon: [BSW25](Smoke Shot) Armor: [BSA35]
+Unit 3: R3 Attack:6 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW10](Reckless Attack) Armor: [BSA44]
+Unit 4: R4 Attack:6 Defense:0 HP:10 Speed:4 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA8]
+Unit 5: B0 Attack:2 Defense:1 HP:9 Speed:5 Threat:2 Weapon: [BSW8](Charge Attack) Armor: [BSA19]
+Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:7 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA1]
+Unit 7: B2 Attack:4 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW3](Thrust) Armor: [BSA38]
+Unit 8: B3 Attack:5 Defense:0 HP:10 Speed:2 Threat:3 Weapon: [BSW11](Fade Attack) Armor: [BSA35]
+Unit 9: B4 Attack:5 Defense:2 HP:10 Speed:1 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA36]
 ==========================
 
 
-[Tick 3] B1,  acting
-Melee: B1 targeting R4 (HP: 17)
-R4 HP: 17 - 4 => 13
+[Tick 60] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 0 => 12
+[BOON] Applied Poison Effect to R3 (Usage: 2)
+[A28] B1 applied Poison Effect to R3 (usage: 2)
 
 
-[Tick 4] R2,  acting
-B2 HP: 10 - 0 => 10
+[Tick 84] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 1 => 11
 
 
-[Tick 6] B1, R1,  acting
-B2 HP: 10 - 2 => 8
-Melee: B1 targeting R4 (HP: 13)
-R4 HP: 13 - 4 => 9
+[Tick 105] R1, R4, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B4 HP: 10 - 0 => 10
+R4 HP: 10 - 0 => 10
+B4 HP: 10 - 7 => 3
+R3 HP: 11 - 5 => 6
 
 
-[Tick 8] R2, R3,  acting
-B2 HP: 8 - 0 => 8
-B2 HP: 8 - 3 => 5
+[Tick 120] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 6 - 0 => 6
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B1 applied Poison Effect to R3 (usage: 2)
 
 
-[Tick 9] B1,  acting
-Melee: B1 targeting R4 (HP: 9)
+[Tick 140] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B4 HP: 3 - 1 => 2
+
+
+[Tick 168] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 6 - 1 => 5
+
+
+[Tick 180] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 5 - 0 => 5
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B1 applied Poison Effect to R3 (usage: 2)
+
+
+[Tick 210] R0, B2, R4, B3, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 5 - 5 => 0
+R4 HP: 10 - 0 => 10
+B1 HP: 10 - 7 => 3
+R3 HP: 2 - 2 => 0
+B1 HP: 3 - 1 => 2
+[HEAL] R3 healed for 0 HP (from 0 to 0/12)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[HEAL] R1 healed for 0 HP (from 12 to 12/12)
+
+
+[Tick 240] B1,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
+R4 HP: 10 - 1 => 9
+[BOON] Applied Poison Effect to R4 (Usage: 2)
+[A28] B1 applied Poison Effect to R4 (usage: 2)
+
+
+[Tick 252] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
 R4 HP: 9 - 4 => 5
 
 
-[Tick 12] B0, R1, R0, R4,  acting
-B2 HP: 5 - 2 => 3
-Melee: B0 targeting R4 (HP: 5)
-R4 HP: 5 - 2 => 3
-R4 HP: 3 - 2 => 1
-Melee: R0 targeting B2 (HP: 3)
-B2 HP: 3 - 2 => 1
-  -> B2 (magic) tick reset due to melee attack!
-Melee: R4 targeting B2 (HP: 1)
-B2 HP: 1 - 0 => 1
+[Tick 280] R2,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
+B1 HP: 3 - 3 => 0
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, B4, 
 
 
-[Tick 24] B2, B1, B4, B3,  acting
-R3 HP: 11 - 11 => 0
-Melee: B1 targeting R4 (HP: 1)
-R4 HP: 4 - 4 => 0
-Magic: B2 targeting B0 (HP: 10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-Magic: B2 targeting B4 (HP: 15)
-[HEAL] B4 healed for 0 HP (from 15 to 15/15)
-Magic: B2 targeting B3 (HP: 12)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-Magic: B4 targeting R2 (HP: 12)
-R2 HP: 12 - 3 => 9
+[Tick 315] R1, B2, R4,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, B4, 
+B2 HP: 12 - 1 => 11
+R4 HP: 8 - 8 => 0
+R4 HP: 0 - 0 => 0
+B2 HP: 11 - 7 => 4
 
 
-[Tick 27] B1,  acting
-Melee: B1 targeting R2 (HP: 9)
-R2 HP: 9 - 6 => 3
-  -> R2 (ranged) delayed by 1 tick(s) due to 6/12 damage!
+[Tick 336] B0,  acting
+Survived Unit: R0, R1, R2, B0, B2, B3, B4, 
+R1 HP: 12 - 3 => 9
 
 
-[Tick 30] R2, B1,  acting
-B2 HP: 1 - 0 => 1
-Melee: B1 targeting R2 (HP: 3)
-R2 HP: 6 - 6 => 0
+[Tick 420] B3, R4, B0, R0, B4, B2, R2, R1,  acting
+Survived Unit: R0, R1, R2, B0, B2, B3, B4, 
+B4 HP: 2 - 1 => 1
+R1 HP: 9 - 4 => 5
+R1 HP: 5 - 3 => 2
+B4 HP: 2 - 2 => 0
+R1 HP: 6 - 6 => 0
+R0 HP: 10 - 8 => 2
+B4 HP: 0 - 0 => 0
+[HEAL] R1 healed for 0 HP (from 0 to 0/12)
+[HEAL] R2 healed for 0 HP (from 10 to 10/10)
 
 
-[Tick 33] B1,  acting
-Melee: B1 targeting R0 (HP: 12)
-R0 HP: 12 - 6 => 6
-
-
-[Tick 36] B3, R1, B1,  acting
-R0 HP: 10 - 10 => 0
-B2 HP: 2 - 2 => 0
-
-
-[Tick 39] B1,  acting
-Melee: B1 targeting R1 (HP: 10)
-R1 HP: 10 - 6 => 4
-  -> R1 (ranged) delayed by 1 tick(s) due to 6/10 damage!
-
-
-[Tick 42] R1,  acting
-B0 HP: 10 - 2 => 8
-
-
-[Tick 44] B3,  acting
-R1 HP: 10 - 10 => 0
-Battle Over! Blue Team wins!
+[Tick 504] B0,  acting
+Survived Unit: R0, R2, B0, B2, B3, 
+R0 HP: 4 - 4 => 0
+Battle Over! Tick limit reached (504 ticks elapsed)

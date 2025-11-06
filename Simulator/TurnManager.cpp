@@ -4,6 +4,9 @@
 #include "../Log/LogSystem.h"
 #include "TurnManager.h"
 
+int TurnManager::LCM = 1;
+std::vector<Unit *> *TurnManager::allUnitsPtr = nullptr;
+
 int TurnManager::GreatestCommonDivisor(int a, int b) {
     return b == 0 ? a : GreatestCommonDivisor(b, a % b);
 }
@@ -12,39 +15,43 @@ int TurnManager::ComputeLCM(std::vector<Unit *> units) {
 
     int result = 1;
     for (Unit *unit : units) {
-        int speed = unit->GetTotalStat().GetSpeed();
-        if (speed <= 0)
-            continue;
-        int gcd = GreatestCommonDivisor(result, speed);
-        result = result * speed / gcd;
+        if (unit != nullptr) {
+            int speed = unit->GetTotalStat().GetSpeed();
+            if (speed <= 0)
+                continue;
+            int gcd = GreatestCommonDivisor(result, speed);
+            result = result * speed / gcd;
+        }
     }
     return result;
 }
 
-void TurnManager::Initialize(std::vector<Unit *> units) {
+void TurnManager::Initialize(std::vector<Unit *> &units) {
+
+    allUnitsPtr = &units;
 
     tick = 0;
 
     while (!turnQueue.empty())
         turnQueue.pop();
 
-    lcm = ComputeLCM(units);
+    LCM = ComputeLCM(units);
 
     for (Unit *unit : units) {
         int speed = unit->GetTotalStat().GetSpeed();
-        unit->Tickinterval = speed > 0 ? lcm / speed : 1;
+        unit->Tickinterval = speed > 0 ? LCM / speed : LCM;
         turnQueue.push({unit, unit->Tickinterval});
     }
 }
 
-void TurnManager::UpdateSpeedChanges(const std::vector<Unit *> units) {
+void TurnManager::UpdateSpeedChanges() {
 
-    lcm = ComputeLCM(units);
+    LCM = ComputeLCM(*allUnitsPtr);
 
-    for (Unit *unit : units) {
+    for (Unit *unit : *allUnitsPtr) {
         if (unit->IsAlive() && unit->GetTotalStat().GetSpeed() > 0) {
             int speed = unit->GetTotalStat().GetSpeed();
-            unit->Tickinterval = speed > 0 ? lcm / speed : 1;
+            unit->Tickinterval = speed > 0 ? LCM / speed : LCM;
         }
     }
 }
@@ -144,4 +151,15 @@ void TurnManager::RemoveDeadUnits(const std::vector<Unit *> &units) {
     for (const auto &action : aliveActions) {
         turnQueue.push(action);
     }
+}
+
+// make sure that units stay in the respective tick.
+// this prevents modified units during battle not to act. (with repect to Range/ Melee/ Magic relationship)
+void TurnManager::RevalidateEntry(std::vector<Unit *> &units) {
+    units.erase(std::remove_if(units.begin(), units.end(),
+                               [](Unit *unit) {
+                                   return !unit->IsAlive() || unit->TickDelay > 0 || unit->IsFrozen() ||
+                                          unit->GetTotalStat().GetSpeed() <= 0;
+                               }),
+                units.end());
 }

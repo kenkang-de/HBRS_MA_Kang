@@ -1,158 +1,205 @@
-Unit 0: R0 Attack:5 Defense:0 HP:10 Speed:1 Threat:2 Weapon: [BSW19](Momentum) Armor: [BSA29]
-Unit 1: R1 Attack:5 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW1](Slash) Armor: [BSA50]
-Unit 2: R2 Attack:4 Defense:0 HP:9 Speed:6 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA7]
-Unit 3: R3 Attack:2 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA36]
-Unit 4: R4 Attack:0 Defense:1 HP:10 Speed:4 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA12]
-Unit 5: B0 Attack:2 Defense:1 HP:11 Speed:0 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA46]
-Unit 6: B1 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW46](Protect) Armor: [BSA50]
-Unit 7: B2 Attack:6 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW11](Fade Attack) Armor: [BSA44]
-Unit 8: B3 Attack:1 Defense:4 HP:15 Speed:1 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA50]
-Unit 9: B4 Attack:4 Defense:-1 HP:10 Speed:2 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA32]
+Unit 0: R0 Attack:1 Defense:1 HP:8 Speed:4 Threat:1 Weapon: [BSW34](Wind Blade) Armor: [BSA18]
+Unit 1: R1 Attack:5 Defense:4 HP:12 Speed:2 Threat:8 Weapon: [BSW2](Chop) Armor: [BSA40]
+Unit 2: R2 Attack:4 Defense:5 HP:10 Speed:2 Threat:9 Weapon: [BSW24](Boost Acuity) Armor: [BSA45]
+Unit 3: R3 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA1]
+Unit 4: R4 Attack:1 Defense:0 HP:12 Speed:2 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA38]
+Unit 5: B0 Attack:-1 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA17]
+Unit 6: B1 Attack:5 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA28]
+Unit 7: B2 Attack:1 Defense:0 HP:10 Speed:4 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA8]
+Unit 8: B3 Attack:4 Defense:6 HP:10 Speed:1 Threat:7 Weapon: [BSW18](Killing Spree) Armor: [BSA42]
+Unit 9: B4 Attack:5 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA30]
 ==========================
 
 
-[Tick 2] R2,  acting
-Melee: R2 targeting B0 (HP: 11)
-B0 HP: 11 - 9 => 2
-  -> B0 (magic) tick reset due to melee attack!
+[Tick 12] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
 
 
-[Tick 3] R4,  acting
-Magic: R4 targeting R1 (HP: 15)
-[BOON] Applied ProtectSTART to R1 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 15] R0, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 10 - 1 => 9
+B1 HP: 10 - 1 => 9
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
 
 
-[Tick 4] R2,  acting
-Melee: R2 targeting B0 (HP: 2)
-B0 HP: 9 - 9 => 0
+[Tick 20] B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 10 - 1 => 9
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 6] B4, R1, R3, R2, R4,  acting
-R1 HP: 15 - 0 => 15
-R4 HP: 10 - 3 => 7
-R2 HP: 9 - 4 => 5
-Melee: R1 targeting B1 (HP: 15)
-B1 HP: 15 - 1 => 14
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
-[TEMP-BUFF] ProtectSTART applied to R1 (Duration: 1 turns)
-[EXECUTE_EFFECT] R1 triggered ProtectSTART
-  -> B1 (magic) tick reset due to melee attack!
-Melee: R2 targeting B1 (HP: 14)
-B1 HP: 14 - 6 => 8
-  -> B1 (magic) tick reset due to melee attack!
-Magic: R3 targeting B1 (HP: 8)
-B1 HP: 8 - 2 => 6
-Magic: R3 targeting B3 (HP: 15)
-B3 HP: 15 - 2 => 13
-Magic: R4 targeting R1 (HP: 15)
-[BOON] Refreshing existing ProtectSTART on R1
-[REFRESH] ProtectSTART duration refreshed, effect remains active
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 24] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
 
 
-[Tick 8] R2,  acting
-Melee: R2 targeting B1 (HP: 6)
-B1 HP: 6 - 6 => 0
+[Tick 30] B2, R2, B4, R0, R1, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 9 - 0 => 9
+R2 HP: 9 - 0 => 9
+B3 HP: 9 - 0 => 9
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B3 HP: 9 - 1 => 8
+B1 HP: 9 - 1 => 8
+B3 HP: 8 - 1 => 7
 
 
-[Tick 12] R4, R0,  acting
-B3 HP: 13 - 1 => 12
-Magic: R4 targeting R1 (HP: 15)
-[BOON] Refreshing existing ProtectSTART on R1
-[REFRESH] ProtectSTART duration refreshed, effect remains active
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 36] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
 
 
-[Tick 24] B3, R3, B4, R2, B2, R4, R0, R1,  acting
-R1 HP: 15 - 0 => 15
-R4 HP: 7 - 3 => 4
-R2 HP: 5 - 4 => 1
-B3 HP: 12 - 1 => 11
-Melee: R2 targeting B3 (HP: 11)
-B3 HP: 11 - 6 => 5
-  -> B3 (magic) tick reset due to melee attack!
-Melee: B2 targeting R1 (HP: 15)
-R1 HP: 15 - 0 => 15
-Melee: R1 targeting B3 (HP: 5)
-B3 HP: 5 - 1 => 4
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
-[TEMP-BUFF] ProtectSTART on R1 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on R1
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] R1 triggered ProtectEND
-[BOON] ProtectSTART expired on R1 - cleaned up
-  -> B3 (magic) tick reset due to melee attack!
-Magic: B3 targeting B2 (HP: 12)
-[HEAL] B2 healed for 0 HP (from 12 to 12/12)
-Magic: B3 targeting B4 (HP: 10)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-Magic: R3 targeting B3 (HP: 4)
-B3 HP: 4 - 2 => 2
-Magic: R3 targeting B2 (HP: 12)
-B2 HP: 12 - 2 => 10
-Magic: R4 targeting R1 (HP: 15)
-[BOON] Applied ProtectSTART to R1 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 40] B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 9 - 3 => 6
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 26] R2,  acting
-Melee: R2 targeting B3 (HP: 2)
-B3 HP: 6 - 6 => 0
+[Tick 45] B2, R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B3 HP: 7 - 1 => 6
+B1 HP: 8 - 1 => 7
 
 
-[Tick 30] R4, R3, R2, B4, R1,  acting
-R1 HP: 15 - 0 => 15
-R4 HP: 4 - 3 => 1
+[Tick 48] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 60] R4, B1, R3, R2, R1, B2, R0, B3, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 6 - 0 => 6
+R2 HP: 6 - 3 => 3
+[DEBUG] B3 processing 2 boons
+[DEBUG] Registering boon HasteSTART for B3
+[DEBUG] Registering boon BulkupSTART for B3
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 7)
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 7)
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+R1 HP: 12 - 1 => 11
 R2 HP: 4 - 4 => 0
-Melee: R1 targeting B2 (HP: 10)
-B2 HP: 10 - 2 => 8
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
-[TEMP-BUFF] ProtectSTART applied to R1 (Duration: 1 turns)
-[EXECUTE_EFFECT] R1 triggered ProtectSTART
-Magic: R4 targeting R1 (HP: 15)
-[BOON] Refreshing existing ProtectSTART on R1
-[REFRESH] ProtectSTART duration refreshed, effect remains active
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-Magic: R3 targeting B2 (HP: 8)
-B2 HP: 8 - 2 => 6
-Magic: R3 targeting B4 (HP: 10)
-B4 HP: 10 - 2 => 8
+B3 HP: 14 - 0 => 14
+B3 HP: 14 - 1 => 13
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B3 HP: 13 - 1 => 12
+B1 HP: 7 - 1 => 6
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 36] R4, B2, B4, R0, R1, R3,  acting
-R1 HP: 15 - 0 => 15
-R4 HP: 3 - 3 => 0
-R3 HP: 10 - 2 => 8
-B2 HP: 6 - 2 => 4
-Melee: B2 targeting R1 (HP: 15)
-R1 HP: 15 - 0 => 15
-Melee: R1 targeting B2 (HP: 4)
-B2 HP: 4 - 2 => 2
-[DEBUG] R1 processing 1 boons
-[DEBUG] Registering boon ProtectSTART for R1
-[AFTER-ACTION] R1 performs after-action on R1 (threat: 6)
-[TEMP-BUFF] ProtectSTART on R1 (Remaining: 0 turns)
-[TEMP-BUFF] ProtectSTART expired on R1
- - applying removal effect: ProtectEND
-[EXECUTE_EFFECT] R1 triggered ProtectEND
-[BOON] ProtectSTART expired on R1 - cleaned up
-Magic: R3 targeting B2 (HP: 2)
-B2 HP: 2 - 2 => 0
-Magic: R3 targeting B4 (HP: 8)
-B4 HP: 8 - 2 => 6
+[Tick 72] R3,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
 
 
-[Tick 48] R3, R0, R1, B4,  acting
-B4 HP: 6 - 6 => 0
-[AFTER-ACTION] No valid target found for R0
-R1 HP: 15 - 0 => 15
-R3 HP: 8 - 2 => 6
-R0 HP: 10 - 4 => 6
-Battle Over! Red Team wins!
+[Tick 75] B2, R0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B3 HP: 12 - 1 => 11
+B1 HP: 6 - 1 => 5
+
+
+[Tick 80] B1, B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R1 HP: 11 - 7 => 4
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 84] R3,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 90] R4, R0, B4, R1, B2, R2,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R1 HP: 4 - 1 => 3
+B3 HP: 11 - 0 => 11
+B3 HP: 11 - 0 => 11
+B3 HP: 11 - 1 => 10
+B3 HP: 10 - 1 => 9
+B1 HP: 5 - 1 => 4
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 96] R3,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 100] B0, B1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R1 HP: 9 - 9 => 0
+[BOON] Refreshing existing BulkupSTART on B3
+[REFRESH] BulkupSTART duration refreshed, effect remains active
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+
+
+[Tick 105] R0, B2,  acting
+Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 9 - 1 => 8
+B1 HP: 4 - 1 => 3
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, effect remains active
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+
+
+[Tick 108] R3,  acting
+Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 120] B1, R3, B2, R4, B4, B0, R1, R0, B3,  acting
+Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 12 - 5 => 7
+R4 HP: 13 - 13 => 0
+[DEBUG] B3 processing 2 boons
+[DEBUG] Registering boon HasteSTART for B3
+[DEBUG] Registering boon BulkupSTART for B3
+[AFTER-ACTION] B3 performs after-action on R3 (threat: 6)
+R3 HP: 13 - 13 => 0
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 7)
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+[BOON] HasteSTART expired on B3 - cleaned up
+[AFTER-ACTION] B3 performs after-action on B3 (threat: 7)
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+[BOON] BulkupSTART expired on B3 - cleaned up
+R3 HP: 14 - 14 => 0
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B3 HP: 1 - 1 => 0
+B1 HP: 3 - 1 => 2
+
+
+[Tick 144] R1,  acting
+Survived Unit: R0, B0, B1, B2, B4, 
+
+
+[Tick 150] R0, B3, B2, B4,  acting
+Survived Unit: R0, B0, B1, B2, B4, 
+R0 HP: 12 - 12 => 0
+[AFTER-ACTION] No valid target found for B3
+[BOON] Applied HasteSTART to B1 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+Battle Over! Blue Team wins!

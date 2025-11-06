@@ -25,6 +25,8 @@ class LogSystem {
 
     static void LogUnitListStats(std::vector<Unit *> unitList);
 
+    static void LogSurvivedUnit(std::vector<Unit *> unitList);
+
     template <typename... Args> static void LogStream(Args &&...args) {
         if (isLogging && logFile.is_open()) {
             (logFile << ... << args) << std::endl;

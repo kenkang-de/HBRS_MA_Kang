@@ -32,14 +32,12 @@ class BattleManager {
     int currentTick = 0;
     int CurrentTurn = 0;
 
+    void ActUnits(std::vector<Unit *> &units, std::map<Unit *, std::vector<Unit *>> &allTargets);
     bool IsBattleOver();
     void LogDrawResult();
     void LogWinLoseResult();
     void LogUsageCount();
     int CalculateDelayFromDamage(int damageTaken, int maxHP);
-
-    void SplitAlliesAndEnemies(Unit *unit, const BattleAction &action, std::vector<Unit *> &allies,
-                               std::vector<Unit *> &enemies);
 };
 
 #endif

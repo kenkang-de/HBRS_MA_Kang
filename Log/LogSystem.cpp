@@ -54,3 +54,12 @@ void LogSystem::LogUnitListStats(std::vector<Unit *> unitList) {
     }
     LogSystem::LogStream("==========================");
 }
+
+void LogSystem::LogSurvivedUnit(std::vector<Unit *> unitList) {
+    std::string unitIDs = "";
+    for (Unit *unit : unitList) {
+        if (unit->IsAlive())
+            unitIDs += unit->Name + ", ";
+    }
+    LogSystem::LogStream("Survived Unit: ", unitIDs);
+}
