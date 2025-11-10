@@ -13,8 +13,8 @@ class BoonAction;
 struct ActionContext {
     Unit *actor;
     Unit *target;
-    const std::vector<Unit *> &allies;
-    const std::vector<Unit *> &enemies;
+    // const std::vector<Unit *> &allies;
+    // const std::vector<Unit *> &enemies;
 };
 
 using ConditionFn = std::function<bool(const ActionContext &)>;

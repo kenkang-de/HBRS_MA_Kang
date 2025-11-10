@@ -31,8 +31,7 @@ class BattleAction {
 
     const std::string &GetID() const;
 
-    virtual void Perform(Unit *actor, Unit *target, const std::vector<Unit *> &allies,
-                         const std::vector<Unit *> &enemies) const;
+    virtual void Perform(Unit *actor, Unit *target);
 
     int CalculateDamage(Unit *actingUnit, Unit *target) const;
 

@@ -14,5 +14,5 @@ void DelayRule::DelayUnitFromDamage(Unit *attacker, Unit *defender, int damage) 
         defender->TickDelay = static_cast<int>(std::floor(delayCalculation));
     }
 
-    TurnManager::UpdateSpeedChanges();
+    TurnManager::ApplyDelays();
 }

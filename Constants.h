@@ -38,6 +38,6 @@ const float FITNESS_MAX = 1.0f;
 const float RMSE_WEIGHT = 0.9f;
 const float DOC_WEIGHT = 0.1f;
 
-const int MAXGENERATION = 100;
+const int MAXGENERATION = 1000;
 
 #endif

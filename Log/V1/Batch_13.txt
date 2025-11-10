@@ -1,94 +1,177 @@
-Unit 0: R0 Attack:8 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW15](Taunt) Armor: [BSA16]
-Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:6 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA10]
-Unit 2: R2 Attack:7 Defense:0 HP:10 Speed:4 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA11]
-Unit 3: R3 Attack:2 Defense:1 HP:10 Speed:6 Threat:3 Weapon: [BSW20](Blitz Shot) Armor: [BSA12]
-Unit 4: R4 Attack:4 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW30](Fire Arrow) Armor: [BSA36]
-Unit 5: B0 Attack:6 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW10](Reckless Attack) Armor: [BSA15]
-Unit 6: B1 Attack:-2 Defense:3 HP:10 Speed:2 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA22]
-Unit 7: B2 Attack:-1 Defense:1 HP:12 Speed:2 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA20]
-Unit 8: B3 Attack:1 Defense:4 HP:12 Speed:2 Threat:7 Weapon: [BSW33](Magic Bolt) Armor: [BSA40]
-Unit 9: B4 Attack:-1 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW47](Cheer) Armor: [BSA18]
+Unit 0: R0 Attack:3 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW36](Tetrodo) Armor: [BSA26]
+Unit 1: R1 Attack:5 Defense:0 HP:8 Speed:6 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA4]
+Unit 2: R2 Attack:-1 Defense:0 HP:10 Speed:4 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA14]
+Unit 3: R3 Attack:3 Defense:3 HP:12 Speed:2 Threat:5 Weapon: [BSW26](Double Shot) Armor: [BSA44]
+Unit 4: R4 Attack:6 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW14](Leech Attack) Armor: [BSA38]
+Unit 5: B0 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA16]
+Unit 6: B1 Attack:0 Defense:3 HP:13 Speed:1 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA47]
+Unit 7: B2 Attack:-1 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW43](Vow) Armor: [BSA17]
+Unit 8: B3 Attack:3 Defense:2 HP:12 Speed:3 Threat:5 Weapon: [BSW20](Blitz Shot) Armor: [BSA39]
+Unit 9: B4 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW41](Bulkup) Armor: [BSA29]
 ==========================
 
 
-[Tick 2] R1, R3,  acting
+[Tick 2] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-B2 HP: 12 - 0 => 12
-B1 HP: 10 - 5 => 5
+B1 HP: 13 - 2 => 11
 
 
 [Tick 3] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 5 - 4 => 1
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
 
 
-[Tick 4] B0, R3, B4, R1, R0,  acting
+[Tick 4] R0, B0, B2, B3, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 5 - 5 => 0
-B1 HP: 0 - 0 => 0
-B2 HP: 12 - 0 => 12
-B0 HP: 8 - 0 => 8
-R2 HP: 10 - 7 => 3
-B1 HP: 5 - 5 => 0
+R1 HP: 8 - 6 => 2
+B1 HP: 11 - 2 => 9
+[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+[BOON] Applied ProtectSTART to B1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 12] B2, B0, B4, R3, R2, R1, R0, B3, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
-B2 HP: 12 - 7 => 5
-B2 HP: 5 - 0 => 5
-B3 HP: 12 - 0 => 12
-B3 HP: 12 - 2 => 10
-B0 HP: 8 - 0 => 8
-R2 HP: 7 - 7 => 0
-B2 HP: 6 - 6 => 0
-[HEAL] R2 healed for 6 HP (from 0 to 6/10)
-B2 HP: 13 - 13 => 0
+[Tick 6] R3, R2, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 9 - 0 => 9
+B2 HP: 12 - 3 => 9
+B1 HP: 9 - 0 => 9
 
 
-[Tick 14] R3, R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
-B3 HP: 10 - 4 => 6
-B3 HP: 6 - 0 => 6
-B4 HP: 8 - 0 => 8
+[Tick 8] R0, B0, B3, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1 HP: 6 - 6 => 0
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 9] R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 12] R4, B4, R3, B2, R0, B0, B3, R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 9 - 0 => 9
+B2 HP: 9 - 3 => 6
+R3 HP: 12 - 3 => 9
+B1 HP: 9 - 0 => 9
+[BOON] Applied BulkupSTART to B1 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
 [Tick 15] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
-B3 HP: 6 - 3 => 3
-[HEAL] R2 healed for 3 HP (from 6 to 9/10)
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
 
 
-[Tick 16] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
-B0 HP: 8 - 0 => 8
-R2 HP: 9 - 7 => 2
+[Tick 16] R0, B0, B3,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 3 => 6
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 20] B4, B2, B3, B0, R0, R3, R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B3, B4, 
-B4 HP: 8 - 7 => 1
-B4 HP: 1 - 0 => 1
-B0 HP: 8 - 1 => 7
-B0 HP: 7 - 0 => 7
-R2 HP: 7 - 7 => 0
-B3 HP: 16 - 16 => 0
-R2 HP: 1 - 1 => 0
-Survived Unit: R0, R1, R3, R4, B0, B4, 
+[Tick 18] R3, R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 9 - 0 => 9
+B3 HP: 12 - 0 => 12
 
 
-[Tick 22] R3, R1,  acting
-Survived Unit: R0, R1, R3, R4, B0, B4, 
-B4 HP: 7 - 7 => 0
-B0 HP: 7 - 1 => 6
+[Tick 20] B2, R0, B0, B3,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 6 - 3 => 3
+[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
+[A28] R0 applied Tetrodo Effect to B0 (usage: 2)
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[AFTER-ACTION] No valid target found for B0
+[AFTER-ACTION] No valid target found for B0
 
 
-[Tick 24] B0, R4, R1, R0, R3,  acting
-Survived Unit: R0, R1, R3, R4, B0, 
-B0 HP: 6 - 1 => 5
-B0 HP: 5 - 1 => 4
-B0 HP: 4 - 0 => 4
-R3 HP: 10 - 7 => 3
-B0 HP: 26 - 26 => 0
-Battle Over! Red Team wins!
+[Tick 21] R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+
+
+[Tick 24] R4, B4, R3, B2, R0, B0, B3, R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 6 - 3 => 3
+B1 HP: 9 - 0 => 9
+R3 HP: 3 - 3 => 0
+B0 HP: 6 - 6 => 0
+[HEAL] R4 healed for 0 HP (from 12 to 12/12)
+[BOON] Refreshing existing BulkupSTART on B1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+[BOON] Refreshing existing ProtectSTART on B1
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+
+
+[Tick 27] R2,  acting
+Survived Unit: R0, R2, R4, B1, B2, B3, B4, 
+
+
+[Tick 28] B2, R0, B3,  acting
+Survived Unit: R0, R2, R4, B1, B2, B3, B4, 
+R4 HP: 12 - 6 => 6
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 30] R2,  acting
+Survived Unit: R0, R2, R4, B1, B2, B3, B4, 
+
+
+[Tick 32] B2, R0, B3,  acting
+Survived Unit: R0, R2, R4, B1, B2, B3, B4, 
+R4 HP: 6 - 6 => 0
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 33] R2,  acting
+Survived Unit: R0, R2, B1, B2, B3, B4, 
+
+
+[Tick 36] B4, B2, R0, B3, R2,  acting
+Survived Unit: R0, R2, B1, B2, B3, B4, 
+R2 HP: 10 - 6 => 4
+[BOON] Refreshing existing BulkupSTART on B1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 40] B2, R0, B3,  acting
+Survived Unit: R0, R2, B1, B2, B3, B4, 
+R2 HP: 6 - 6 => 0
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 44] B2, R0, B3,  acting
+Survived Unit: R0, B1, B2, B3, B4, 
+R0 HP: 6 - 5 => 1
+[BOON] Refreshing existing Tetrodo Effect on B1
+[A28] R0 applied Tetrodo Effect to B1 (usage: 2)
+
+
+[Tick 48] B4, B2, B3,  acting
+Survived Unit: R0, B1, B2, B3, B4, 
+R0 HP: 5 - 5 => 0
+[BOON] Refreshing existing BulkupSTART on B1
+[REFRESH] BulkupSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+Battle Over! Blue Team wins!

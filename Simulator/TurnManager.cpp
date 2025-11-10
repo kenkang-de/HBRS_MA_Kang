@@ -6,6 +6,7 @@
 
 int TurnManager::LCM = 1;
 std::vector<Unit *> *TurnManager::allUnitsPtr = nullptr;
+std::multimap<int, Unit *> TurnManager::turnMap;
 
 int TurnManager::GreatestCommonDivisor(int a, int b) {
     return b == 0 ? a : GreatestCommonDivisor(b, a % b);
@@ -32,15 +33,14 @@ void TurnManager::Initialize(std::vector<Unit *> &units) {
 
     tick = 0;
 
-    while (!turnQueue.empty())
-        turnQueue.pop();
+    turnMap.clear();
 
     LCM = ComputeLCM(units);
 
     for (Unit *unit : units) {
         int speed = unit->GetTotalStat().GetSpeed();
         unit->Tickinterval = speed > 0 ? LCM / speed : LCM;
-        turnQueue.push({unit, unit->Tickinterval});
+        turnMap.insert({unit->Tickinterval, unit});
     }
 }
 
@@ -56,10 +56,6 @@ void TurnManager::UpdateSpeedChanges() {
     }
 }
 
-void TurnManager::AdvanceTick() {
-    ++tick;
-}
-
 bool TurnManager::CanContinue(std::vector<Unit *> units) {
     for (Unit *unit : units) {
         if (unit->IsAlive() && unit->GetTotalStat().GetSpeed() > 0) {
@@ -69,64 +65,61 @@ bool TurnManager::CanContinue(std::vector<Unit *> units) {
     return false;
 }
 
+void TurnManager::ApplyDelays() {
+    std::vector<std::multimap<int, Unit *>::iterator> toRemove;
+
+    for (auto it = turnMap.begin(); it != turnMap.end(); ++it) {
+        Unit *unit = it->second;
+
+        if (unit->TickDelay > 0) {
+            turnMap.insert({it->first + unit->TickDelay, unit});
+            unit->TickDelay = 0;
+            toRemove.push_back(it);
+        }
+    }
+
+    for (auto it : toRemove) {
+        turnMap.erase(it);
+    }
+}
+
 // TODO: investigate isfrozen
 std::vector<Unit *> TurnManager::GetNextUnits() {
 
     std::vector<Unit *> unitsToAct;
 
-    // if there is no units left to act at the battle
-    if (turnQueue.empty())
+    RemoveDeadUnitsFromMap();
+
+    // annihilated
+    if (turnMap.empty())
         return unitsToAct;
 
-    if (tick < turnQueue.top().nextTick + turnQueue.top().unit->TickDelay)
-        tick = turnQueue.top().nextTick + turnQueue.top().unit->TickDelay;
+    // get earliest tick (next tick + delay)
+    tick = turnMap.begin()->first + turnMap.begin()->second->TickDelay;
 
-    // Pop out dead unit
-    while (!turnQueue.empty()) {
-        const ScheduledAction &top = turnQueue.top();
-        if (top.unit == nullptr)
-            std::cerr << "Unit pointer null at (GetNextUnits())" << std::endl;
-        else if (!top.unit->IsAlive())
-            turnQueue.pop();
-        // Found valid action, stop cleaning
-        else
-            break;
+    std::vector<std::multimap<int, Unit *>::iterator> toRemove;
+
+    for (auto it = turnMap.begin(); it != turnMap.end(); ++it) {
+        Unit *unit = it->second;
+        int scheduledTick = it->first;
+        int actualTick = scheduledTick + unit->TickDelay;
+
+        if (actualTick == tick) {
+            if (unit->GetTotalStat().GetSpeed() > 0 && !unit->IsFrozen()) {
+                unitsToAct.push_back(unit);
+            }
+            unit->TickDelay = 0;
+            int nextActionTick = tick + unit->Tickinterval;
+            turnMap.insert({nextActionTick, unit});
+            toRemove.push_back(it);
+        }
     }
 
-    // If all dead
-    if (turnQueue.empty())
-        return unitsToAct;
-
-    // add to unitsToAct (return vector Unit*) units that is at it's turn.
-    while (turnQueue.top().nextTick + turnQueue.top().unit->TickDelay <= tick) {
-
-        int nextTick;
-
-        while (turnQueue.top().nextTick + turnQueue.top().unit->TickDelay < tick) {
-            nextTick = turnQueue.top().nextTick + turnQueue.top().unit->Tickinterval;
-            turnQueue.push({turnQueue.top().unit, nextTick});
-            turnQueue.pop();
-        }
-
-        if (turnQueue.empty())
-            return unitsToAct;
-
-        if (turnQueue.top().unit->GetTotalStat().GetSpeed() > 0 && !turnQueue.top().unit->IsFrozen())
-            unitsToAct.push_back(turnQueue.top().unit);
-
-        // Reset Tickdelay after an act
-        turnQueue.top().unit->TickDelay = 0;
-        nextTick = tick + turnQueue.top().unit->Tickinterval;
-        // Reschedule turnQueue
-        turnQueue.push({turnQueue.top().unit, nextTick});
-        turnQueue.pop();
+    for (auto it : toRemove) {
+        turnMap.erase(it);
     }
 
     return unitsToAct;
-}
-
-void TurnManager::DelayUnit(Unit *targetUnit, int delayTicks) {
-    targetUnit->TickDelay += std::max(delayTicks, 0);
 }
 
 void TurnManager::ResetMagicUnitTick(Unit *magicUnit) {
@@ -134,22 +127,14 @@ void TurnManager::ResetMagicUnitTick(Unit *magicUnit) {
     magicUnit->TickDelay = magicUnit->Tickinterval;
 }
 
-void TurnManager::RemoveDeadUnits(const std::vector<Unit *> &units) {
-    std::vector<ScheduledAction> aliveActions;
-
-    while (!turnQueue.empty()) {
-        ScheduledAction action = turnQueue.top();
-        turnQueue.pop();
-
-        // Only keep actions for alive units
-        if (action.unit != nullptr && action.unit->IsAlive()) {
-            aliveActions.push_back(action);
+void TurnManager::RemoveDeadUnitsFromMap() {
+    auto it = turnMap.begin();
+    while (it != turnMap.end()) {
+        if (!it->second->IsAlive()) {
+            it = turnMap.erase(it);
+        } else {
+            ++it;
         }
-    }
-
-    // Rebuild queue with only alive units
-    for (const auto &action : aliveActions) {
-        turnQueue.push(action);
     }
 }
 

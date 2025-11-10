@@ -21,18 +21,14 @@ class BattleManager {
     // Boon management - now handled through Units
     void ApplyUnitBoonsToAfterAction(Unit *unit);
 
-    // Public method to access TurnManager functionality
-    void DelayUnit(Unit *unit, int delayAmount);
-
   private:
     Battlefield &battlefield;
     std::vector<Unit *> allUnits;
     TurnManager turnManager;
 
-    int currentTick = 0;
-    int CurrentTurn = 0;
+    int TickCounted = 0;
 
-    void ActUnits(std::vector<Unit *> &units, std::map<Unit *, std::vector<Unit *>> &allTargets);
+    void ActUnits(std::vector<Unit *> &units);
     bool IsBattleOver();
     void LogDrawResult();
     void LogWinLoseResult();

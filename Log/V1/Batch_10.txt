@@ -1,110 +1,303 @@
-Unit 0: R0 Attack:4 Defense:0 HP:10 Speed:2 Threat:2 Weapon: [BSW5](Overpower) Armor: [BSA35]
-Unit 1: R1 Attack:4 Defense:0 HP:9 Speed:5 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA7]
-Unit 2: R2 Attack:5 Defense:2 HP:12 Speed:2 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA24]
-Unit 3: R3 Attack:2 Defense:0 HP:9 Speed:6 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA7]
-Unit 4: R4 Attack:2 Defense:3 HP:10 Speed:3 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA22]
-Unit 5: B0 Attack:5 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW15](Taunt) Armor: [BSA7]
-Unit 6: B1 Attack:4 Defense:2 HP:17 Speed:2 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA49]
-Unit 7: B2 Attack:-1 Defense:1 HP:7 Speed:4 Threat:2 Weapon: [BSW39](Healing Link) Armor: [BSA19]
-Unit 8: B3 Attack:1 Defense:1 HP:7 Speed:4 Threat:0 Weapon: [BSW34](Wind Blade) Armor: [BSA19]
-Unit 9: B4 Attack:2 Defense:10 HP:10 Speed:4 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA8]
+Unit 0: R0 Attack:3 Defense:4 HP:12 Speed:3 Threat:9 Weapon: [BSW7](Poison Attack) Armor: [BSA40]
+Unit 1: R1 Attack:4 Defense:3 HP:10 Speed:4 Threat:5 Weapon: [BSW17](Shoot) Armor: [BSA28]
+Unit 2: R2 Attack:2 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW39](Healing Link) Armor: [BSA46]
+Unit 3: R3 Attack:6 Defense:1 HP:8 Speed:3 Threat:2 Weapon: [BSW2](Chop) Armor: [BSA25]
+Unit 4: R4 Attack:4 Defense:1 HP:10 Speed:5 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA12]
+Unit 5: B0 Attack:6 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA3]
+Unit 6: B1 Attack:2 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW33](Magic Bolt) Armor: [BSA25]
+Unit 7: B2 Attack:-1 Defense:1 HP:8 Speed:4 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA18]
+Unit 8: B3 Attack:3 Defense:3 HP:7 Speed:4 Threat:4 Weapon: [BSW31](Wrist Shot) Armor: [BSA23]
+Unit 9: B4 Attack:4 Defense:4 HP:10 Speed:2 Threat:5 Weapon: [BSW30](Fire Arrow) Armor: [BSA37]
 ==========================
 
 
-[Tick 10] R3,  acting
+[Tick 12] R4, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 17 - 0 => 17
+B0 HP: 10 - 6 => 4
+B0 HP: 6 - 6 => 0
+B0 HP: 0 - -2 => 2
+R0 HP: 12 - 7 => 5
+
+
+[Tick 15] R1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 6 - 6 => 0
+R0 HP: 5 - 0 => 5
+
+
+[Tick 20] R0, R3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
 B4 HP: 10 - 0 => 10
+[BOON] Applied Poison Effect to B4 (Usage: 3)
+[A28] R0 applied Poison Effect to B4 (usage: 3)
+B4 HP: 10 - 2 => 8
+R0 HP: 5 - 2 => 3
 
 
-[Tick 12] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 17 - 2 => 15
+[Tick 24] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
 
 
-[Tick 15] B0, B4, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 12 - 3 => 9
-R2 HP: 10 - 10 => 0
-[A12] B4 defense changed from 10 to 0
-[HEAL] B1 healed for -1 HP (from 15 to 14/17)
-[HEAL] B4 healed for -1 HP (from 10 to 9/10)
-R2 HP: 1 - 1 => 0
-R1 HP: 9 - 1 => 8
+[Tick 30] B4, R1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R0 HP: 3 - 1 => 2
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R0 HP: 2 - 0 => 2
 
 
-[Tick 20] R4, R3,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 14 - 0 => 14
-B1 HP: 14 - 0 => 14
-B4 HP: 9 - 2 => 7
+[Tick 36] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
 
 
-[Tick 24] R1,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 14 - 0 => 14
+[Tick 40] R0, R3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R0 applied Poison Effect to B4 (usage: 3)
+B4 HP: 8 - 0 => 8
+R0 HP: 2 - 2 => 0
 
 
-[Tick 30] B1, R3, R2, B2, B3, B0, B4, R0,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 14 - 0 => 14
-B4 HP: 7 - 2 => 5
-R1 HP: 8 - 8 => 0
-R1 HP: 14 - 14 => 0
-R4 HP: 10 - 0 => 10
-[A12] B4 defense changed from 0 to 0
-B1 HP: 14 - 0 => 14
-[HEAL] B1 healed for -1 HP (from 14 to 13/17)
-[HEAL] B4 healed for -1 HP (from 5 to 4/10)
-R1 HP: 1 - 1 => 0
-R4 HP: 10 - 1 => 9
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
+[Tick 45] R1, B2, B3,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R2 HP: 11 - 2 => 9
+[A25] R2 attack reduced from 2 to 1 (damage: 2, reduction: 1)
 
 
-[Tick 40] R3, R4,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 13 - 0 => 13
-B4 HP: 4 - 2 => 2
-B1 HP: 13 - 0 => 13
+[Tick 48] R4,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
 
 
-[Tick 45] B4, B2, B0, B3,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-R4 HP: 9 - 0 => 9
-[A12] B4 defense changed from 0 to 0
-R4 HP: 20 - 20 => 0
-[HEAL] B1 healed for -1 HP (from 13 to 12/17)
-[HEAL] B4 healed for -1 HP (from 2 to 1/10)
-R0 HP: 10 - 1 => 9
-R3 HP: 9 - 1 => 8
+[Tick 60] B4, R3, B1, R1, B2, B3, R4,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+R2 HP: 9 - 3 => 6
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R2 HP: 6 - 2 => 4
+[A25] R2 attack reduced from 1 to 0 (damage: 2, reduction: 1)
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+R2 HP: 4 - 2 => 2
 
 
-[Tick 50] R3,  acting
-Survived Unit: R0, R3, B0, B1, B2, B3, B4, 
-B1 HP: 12 - 0 => 12
-B4 HP: 2 - 2 => 0
-Survived Unit: R0, R3, B0, B1, B2, B3, 
+[Tick 72] R4,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
 
 
-[Tick 60] R0, R2, B3, B1, B0, R3, B2, B4,  acting
-Survived Unit: R0, R3, B0, B1, B2, B3, 
-B1 HP: 12 - 0 => 12
-B2 HP: 7 - 1 => 6
-B1 HP: 12 - 0 => 12
-R0 HP: 9 - 7 => 2
-R0 HP: 32 - 32 => 0
-R0 HP: 1 - 1 => 0
-R3 HP: 8 - 1 => 7
+[Tick 75] R1, B2, B3,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R2 HP: 2 - 2 => 0
+[A25] R2 attack reduced from 0 to 0 (damage: 2, reduction: 1)
 
 
-[Tick 70] R3,  acting
-Survived Unit: R3, B0, B1, B2, B3, 
-B1 HP: 12 - 0 => 12
-B2 HP: 6 - 1 => 5
+[Tick 80] R3, B1,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R3 HP: 8 - 2 => 6
 
 
-[Tick 75] B3, B0,  acting
-Survived Unit: R3, B0, B1, B2, B3, 
-R3 HP: 41 - 41 => 0
-R3 HP: 1 - 1 => 0
+[Tick 84] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 90] B4, R1, B2, B3,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+R3 HP: 6 - 1 => 5
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R3 HP: 5 - 2 => 3
+[A25] R3 attack reduced from 6 to 5 (damage: 2, reduction: 1)
+
+
+[Tick 96] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 100] R3, B1,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 10 - 2 => 8
+
+
+[Tick 105] R1, B2, B3,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 8 - 0 => 8
+
+
+[Tick 108] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 120] B4, R3, B1, R1, B2, B3, R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+R1 HP: 8 - 0 => 8
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R1 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+R1 HP: 8 - 2 => 6
+
+
+[Tick 132] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 135] R1, B2, B3,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 6 - 0 => 6
+
+
+[Tick 140] R3, B1,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 6 - 2 => 4
+
+
+[Tick 144] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 150] B4, R1, B2, B3,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+R1 HP: 4 - 0 => 4
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R1 HP: 4 - 0 => 4
+
+
+[Tick 156] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 160] R3, B1,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 4 - 2 => 2
+
+
+[Tick 165] R1, B2, B3,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R1 HP: 2 - 0 => 2
+
+
+[Tick 168] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 180] B4, R3, B1, R1, B2, B3, R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+R1 HP: 2 - 0 => 2
+[AFTER-ACTION] No valid target found for B4
+B4 HP: 8 - 0 => 8
+R1 HP: 2 - 0 => 2
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+R1 HP: 2 - 2 => 0
+
+
+[Tick 192] R4,  acting
+Survived Unit: R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 195] B2, B3,  acting
+Survived Unit: R3, R4, B1, B2, B3, B4, 
+R3 HP: 3 - 2 => 1
+[A25] R3 attack reduced from 5 to 4 (damage: 2, reduction: 1)
+
+
+[Tick 200] R3, B1,  acting
+Survived Unit: R3, R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+R3 HP: 2 - 2 => 0
+
+
+[Tick 204] R4,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 210] B4, B2, B3,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+R4 HP: 10 - -1 => 11
+[AFTER-ACTION] No valid target found for B4
+R4 HP: 11 - 2 => 9
+[A25] R4 attack reduced from 4 to 3 (damage: 2, reduction: 1)
+
+
+[Tick 216] R4,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+B4 HP: 8 - 0 => 8
+
+
+[Tick 220] B1,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+R4 HP: 9 - 2 => 7
+
+
+[Tick 225] B2, B3,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+R4 HP: 7 - 2 => 5
+[A25] R4 attack reduced from 3 to 2 (damage: 2, reduction: 1)
+
+
+[Tick 228] R4,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+
+
+[Tick 240] B4, B1, B2, B3, R4,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+R4 HP: 5 - -1 => 6
+[AFTER-ACTION] No valid target found for B4
+R4 HP: 6 - 2 => 4
+[A25] R4 attack reduced from 2 to 1 (damage: 2, reduction: 1)
+B4 HP: 8 - 0 => 8
+R4 HP: 4 - 2 => 2
+
+
+[Tick 252] R4,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+B4 HP: 8 - 0 => 8
+
+
+[Tick 255] B2, B3,  acting
+Survived Unit: R4, B1, B2, B3, B4, 
+R4 HP: 2 - 2 => 0
+[A25] R4 attack reduced from 1 to 0 (damage: 2, reduction: 1)
 Battle Over! Blue Team wins!

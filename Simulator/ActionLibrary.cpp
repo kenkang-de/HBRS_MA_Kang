@@ -9,18 +9,6 @@
 #include "Unit.h"
 
 const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap = {
-
-    {"TargetLowHP", [](const ActionContext &ctx) { return ctx.target && ctx.target->GetCurrentHP() < 30; }},
-    {"ActorHasMoreAttackThanTargetDefense",
-     [](const ActionContext &ctx) {
-         return ctx.actor && ctx.target &&
-                ctx.actor->GetTotalStat().GetAttack() > ctx.target->GetTotalStat().GetDefense();
-     }},
-    {"AnyAllyLowHP",
-     [](const ActionContext &ctx) {
-         return std::any_of(ctx.allies.begin(), ctx.allies.end(),
-                            [&](Unit *u) { return u != ctx.actor && u->GetCurrentHP() < 30; });
-     }},
     // ALWAYS
     {"C00", [](const ActionContext &) { return true; }},
     // Actor Attack is Higher than Target's Defense.
@@ -363,7 +351,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     {"A18",
      [](const std::string &param) -> ActionFn {
          std::string actionID = param;
-         return [actionID](const ActionContext &ctx) {
+         return [actionID](ActionContext ctx) {
              if (ctx.actor) {
                  auto afterAction = GlobalAction::GetGlobalAction(actionID);
                  if (afterAction) {
@@ -385,7 +373,7 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
              auto effectAction = GlobalAction::GetGlobalAction(effectName);
              if (effectAction) {
                  LogSystem::LogStream("[EXECUTE_EFFECT] ", ctx.actor->GetName(), " triggered ", effectName);
-                 effectAction->Perform(ctx.actor, ctx.target, ctx.allies, ctx.enemies);
+                 effectAction->Perform(ctx.actor, ctx.target);
              }
          };
      }},

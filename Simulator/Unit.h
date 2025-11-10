@@ -61,9 +61,8 @@ class Unit {
     void SetArmor(Armor *a);
 
     Weapon *GetWeapon();
-    const Weapon *GetWeapon() const;
+
     Armor *GetArmor();
-    const Armor *GetArmor() const;
 
     void Heal(int amount);
     int GetCurrentHP() const {

@@ -13,10 +13,9 @@ void BattleAction::AddConditionalAction(const std::string &conditionID, const st
                                                   : ActionLibrary::GetAction(actionID, param));
 }
 
-void BattleAction::Perform(Unit *actor, Unit *target, const std::vector<Unit *> &allies,
-                           const std::vector<Unit *> &enemies) const {
+void BattleAction::Perform(Unit *actor, Unit *target) {
     if (target) {
-        ActionContext ctx{actor, target, allies, enemies};
+        ActionContext ctx{actor, target};
 
         if (conditionalActions.empty()) {
             return;

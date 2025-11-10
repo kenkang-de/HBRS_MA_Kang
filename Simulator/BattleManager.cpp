@@ -63,6 +63,8 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
 
     LogSystem::LogUnitListStats(allUnits);
 
+    TickCounted = 0;
+
     // Reusable vectors for ranged, melee, and magic units
     std::vector<Unit *> rangedUnits;
     std::vector<Unit *> meleeUnits;
@@ -87,6 +89,9 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 LogDrawResult();
                 LogUsageCount();
                 break;
+            } else {
+                // when there are units that cannot act in this turn but scheduled before returns 0 from GetNextUnits()
+                continue;
             }
         }
 
@@ -106,25 +111,19 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
                 magicUnits.push_back(unit);
             }
         }
-
-        // map of acting unit and list of targets
-        std::map<Unit *, std::vector<Unit *>> allTargets = TargetManager::SelectTargetsForGroup(units, allUnits);
-
-        // Track units killed by ranged attacks in this tick (they cannot act)
-        std::set<Unit *> unitsKilledByRanged;
-        std::set<Unit *> magicUnitsTickResetByRanged;
-
         // RangeUnit
-        ActUnits(rangedUnits, allTargets);
+        ActUnits(rangedUnits);
 
         turnManager.RevalidateEntry(meleeUnits);
         turnManager.RevalidateEntry(magicUnits);
 
         // Melee
-        ActUnits(meleeUnits, allTargets);
+        ActUnits(meleeUnits);
 
         // Magic
-        ActUnits(magicUnits, allTargets);
+        ActUnits(magicUnits);
+
+        TickCounted++;
     }
 
     if (log) {
@@ -132,26 +131,24 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
     }
 }
 
-void BattleManager::ActUnits(std::vector<Unit *> &units, std::map<Unit *, std::vector<Unit *>> &allTargets) {
-    for (Unit *unit : units) {
+void BattleManager::ActUnits(std::vector<Unit *> &units) {
 
-        std::vector<Unit *> &targets = allTargets[unit];
+    for (Unit *actor : units) {
+        std::vector<Unit *> targets = TargetManager::GetTargets(*actor);
         for (Unit *target : targets) {
-            unit->GetWeapon()->GetAction().Perform(unit, target, unit->Allies, unit->Enemies);
+            actor->GetWeapon()->GetAction().Perform(actor, target);
 
             // Apply unit boons to after-action system
-            ApplyUnitBoonsToAfterAction(unit);
+            ApplyUnitBoonsToAfterAction(actor);
             // Process any after-actions triggered
             ProcessAfterActions(allUnits);
         }
-        // Check for speed changes and update turn queue if needed
-        // turnManager.UpdateSpeedChanges();
     }
 }
 
 bool BattleManager::IsBattleOver() {
-    if (turnManager.GetCurrentTick() >= 500) {
-        LogSystem::LogStream("Battle Over! Tick limit reached (", turnManager.GetCurrentTick(), " ticks elapsed)");
+    if (TickCounted >= 100) {
+        LogSystem::LogStream("Battle Over! Tick limit reached");
         LogDrawResult();
         LogUsageCount();
         return true;
@@ -167,7 +164,7 @@ bool BattleManager::IsBattleOver() {
         LogUsageCount();
         return true;
     }
-    return false; // Battle continues
+    return false;
 }
 
 void BattleManager::LogDrawResult() {
@@ -199,11 +196,6 @@ void BattleManager::LogUsageCount() {
     }
 }
 
-// Public method to access TurnManager DelayUnit functionality
-void BattleManager::DelayUnit(Unit *unit, int delayAmount) {
-    turnManager.DelayUnit(unit, delayAmount);
-}
-
 void BattleManager::ProcessAfterActions(const std::vector<Unit *> &allUnits) {
     // Move all after-actions to be processed (clear the vector)
     std::vector<AfterActionEvent> toProcess = std::move(GlobalAction::afterActions);
@@ -212,34 +204,12 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit *> &allUnits) {
     for (const auto &afterActionEvent : toProcess) {
         Unit *actor = afterActionEvent.context.actor;
 
-        // Use the target from context if specified, otherwise find a target
-        Unit *target = afterActionEvent.context.target;
-        if (!target || !target->IsAlive()) {
-            // Use TargetManager to find the best target based on the action's targeting rules
-            target = TargetManager::FindBestTargetForAction(actor, *afterActionEvent.battleAction, allUnits);
-        }
+        std::vector<Unit *> targets = TargetManager::GetTargets(*actor, *afterActionEvent.battleAction);
 
-        if (target) {
-            LogSystem::LogStream("[AFTER-ACTION] ", actor->GetName(), " performs after-action on ", target->GetName(),
-                                 " (threat: ", target->GetTotalStat().GetThreat(), ")");
-
-            // Create fresh ally/enemy lists for the after-action
-            std::vector<Unit *> allies, enemies;
-            for (Unit *unit : allUnits) {
-                if (!unit->IsAlive())
-                    continue;
-
-                if (unit->team == actor->team) {
-                    if (unit == actor && !afterActionEvent.battleAction->IncludesSelf())
-                        continue;
-                    allies.push_back(unit);
-                } else {
-                    enemies.push_back(unit);
-                }
+        if (targets.size() > 0) {
+            for (Unit *target : targets) {
+                afterActionEvent.battleAction->Perform(actor, target);
             }
-
-            // Execute the battle action
-            afterActionEvent.battleAction->Perform(actor, target, allies, enemies);
         } else {
             LogSystem::LogStream("[AFTER-ACTION] No valid target found for ", actor->GetName());
         }

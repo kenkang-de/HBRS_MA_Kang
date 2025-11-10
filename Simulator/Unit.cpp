@@ -103,15 +103,7 @@ Weapon *Unit::GetWeapon() {
     return weapon;
 }
 
-const Weapon *Unit::GetWeapon() const {
-    return weapon;
-}
-
 Armor *Unit::GetArmor() {
-    return armor;
-}
-
-const Armor *Unit::GetArmor() const {
     return armor;
 }
 
@@ -208,17 +200,10 @@ bool Unit::HasBoon(const std::string &effectType) const {
 }
 
 void Unit::ApplyBoonsToAfterAction() {
-    // This will be called by BattleManager to register active boons as after-actions
-    if (!activeBoons.empty()) {
-        LogSystem::LogStream("[DEBUG] ", Name, " processing ", activeBoons.size(), " boons");
-    }
-    for (auto &boon : activeBoons) {
+    for (std::unique_ptr<BoonAction> &boon : activeBoons) {
         if (!boon->IsExpired()) {
-            LogSystem::LogStream("[DEBUG] Registering boon ", boon->GetEffectType(), " for ", Name);
-            // Register this boon in the after-action system
-            GlobalAction::AddAfterAction(boon.get(), {this, this, {}, {}});
-        } else {
-            LogSystem::LogStream("[DEBUG] Skipping expired boon ", boon->GetEffectType(), " for ", Name);
+            ActionContext context{this, this};
+            GlobalAction::AddAfterAction(boon.get(), context);
         }
     }
 }

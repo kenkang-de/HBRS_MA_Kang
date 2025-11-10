@@ -1,148 +1,155 @@
-Unit 0: R0 Attack:3 Defense:-2 HP:10 Speed:6 Threat:3 Weapon: [BSW22](Delay Shot) Armor: [BSA9]
-Unit 1: R1 Attack:4 Defense:1 HP:11 Speed:6 Threat:4 Weapon: [BSW25](Smoke Shot) Armor: [BSA13]
-Unit 2: R2 Attack:3 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA37]
-Unit 3: R3 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW45](Fatigue) Armor: [BSA29]
-Unit 4: R4 Attack:3 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW34](Wind Blade) Armor: [BSA50]
-Unit 5: B0 Attack:6 Defense:1 HP:12 Speed:3 Threat:2 Weapon: [BSW4](Berserk) Armor: [BSA25]
-Unit 6: B1 Attack:2 Defense:3 HP:12 Speed:3 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA41]
-Unit 7: B2 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA38]
-Unit 8: B3 Attack:5 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA9]
-Unit 9: B4 Attack:1 Defense:1 HP:10 Speed:0 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA43]
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW6](Achilles' heel) Armor: [BSA1]
+Unit 1: R1 Attack:3 Defense:3 HP:12 Speed:1 Threat:9 Weapon: [BSW35](Chain Lightning) Armor: [BSA41]
+Unit 2: R2 Attack:1 Defense:5 HP:15 Speed:3 Threat:8 Weapon: [BSW3](Thrust) Armor: [BSA48]
+Unit 3: R3 Attack:-1 Defense:1 HP:9 Speed:3 Threat:3 Weapon: [BSW45](Fatigue) Armor: [BSA19]
+Unit 4: R4 Attack:3 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA13]
+Unit 5: B0 Attack:2 Defense:1 HP:7 Speed:3 Threat:4 Weapon: [BSW35](Chain Lightning) Armor: [BSA19]
+Unit 6: B1 Attack:2 Defense:3 HP:12 Speed:2 Threat:5 Weapon: [BSW34](Wind Blade) Armor: [BSA41]
+Unit 7: B2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA3]
+Unit 8: B3 Attack:2 Defense:3 HP:10 Speed:1 Threat:8 Weapon: [BSW50](Corrosion) Armor: [BSA34]
+Unit 9: B4 Attack:-1 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW50](Corrosion) Armor: [BSA18]
 ==========================
 
 
-[Tick 5] R0, R1,  acting
+[Tick 30] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 10 - 0 => 10
+
+
+[Tick 42] R4, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 10 - 0 => 10
+B2 HP: 10 - 5 => 5
 B1 HP: 12 - 0 => 12
-B1 HP: 12 - 1 => 11
 
 
-[Tick 6] B3,  acting
+[Tick 60] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 12 - 1 => 11
+B3 HP: 10 - 0 => 10
 
 
-[Tick 10] R2, B1, B0, R0, R1,  acting
+[Tick 70] R2, R3, B0, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2 HP: 12 - 3 => 9
-B2 HP: 9 - 4 => 5
-B2 HP: 6 - 6 => 0
-R2 HP: 11 - 0 => 11
-[BOON] Applied Poison Effect to R2 (Usage: 3)
-[A28] B1 applied Poison Effect to R2 (usage: 3)
-B0 HP: 12 - 1 => 11
-R2 HP: 11 - 2 => 9
+B3 HP: 10 - 0 => 10
+R1 HP: 12 - 2 => 10
+R2 HP: 15 - 2 => 13
+R0 HP: 10 - 2 => 8
 
 
-[Tick 12] B3,  acting
+[Tick 84] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3 HP: 10 - 0 => 10
+B2 HP: 5 - 5 => 0
+B1 HP: 12 - 0 => 12
+
+
+[Tick 90] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R2 HP: 9 - 0 => 9
+B3 HP: 10 - 0 => 10
 
 
-[Tick 15] R0, R1,  acting
+[Tick 120] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-B4 HP: 10 - 2 => 8
-B4 HP: 8 - 3 => 5
+B3 HP: 10 - 0 => 10
 
 
-[Tick 18] B3,  acting
+[Tick 126] R4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R2 HP: 9 - 0 => 9
+B3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+B0 HP: 7 - 2 => 5
 
 
-[Tick 20] B1, B0, R2, R0, R1,  acting
+[Tick 140] R2, R3, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-B1 HP: 11 - 0 => 11
-B1 HP: 11 - 1 => 10
-R2 HP: 9 - 0 => 9
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
-B0 HP: 11 - 1 => 10
-R2 HP: 9 - 0 => 9
-B1 HP: 10 - 2 => 8
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 7)
-[BOON] Poison Effect triggered on R2 (Usage: 3/3)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 9 - 3 => 6
+B3 HP: 10 - 0 => 10
 
 
-[Tick 24] B3,  acting
+[Tick 168] R4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R2 HP: 6 - 0 => 6
+B3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+B0 HP: 5 - 2 => 3
 
 
-[Tick 25] R0, R1,  acting
+[Tick 180] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-B4 HP: 5 - 2 => 3
-B4 HP: 3 - 3 => 0
+B3 HP: 10 - 0 => 10
 
 
-[Tick 30] B0, R2, R1, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, 
-B0 HP: 10 - 3 => 7
-B0 HP: 7 - 1 => 6
-R2 HP: 6 - 0 => 6
-B0 HP: 6 - 3 => 3
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 7)
-[BOON] Poison Effect triggered on R2 (Usage: 2/3)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 6 - 3 => 3
-R2 HP: 3 - 0 => 3
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
+[Tick 210] R2, R3, B4, R4, R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+B0 HP: 3 - 2 => 1
+B3 HP: 10 - 0 => 10
+B3 HP: 10 - 0 => 10
 
 
-[Tick 60] B2, B0, R2, R0, B3, R1, R4, B1, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, 
-B3 HP: 10 - 5 => 5
-R2 HP: 3 - 0 => 3
-B0 HP: 3 - 3 => 0
+[Tick 240] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+
+
+[Tick 252] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+B0 HP: 2 - 2 => 0
+
+
+[Tick 270] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+
+
+[Tick 280] R2, R3, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+
+
+[Tick 390] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+
+
+[Tick 420] R1, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+B3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+B4 HP: 8 - 2 => 6
+B3 HP: 10 - 6 => 4
+B1 HP: 12 - 6 => 6
+B4 HP: 6 - 6 => 0
+
+
+[Tick 462] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, 
+B3 HP: 4 - 0 => 4
+B1 HP: 6 - 0 => 6
+
+
+[Tick 480] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, 
+B3 HP: 4 - 0 => 4
+
+
+[Tick 490] R2, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, 
 B3 HP: 5 - 5 => 0
-[DEBUG] R2 processing 1 boons
-[DEBUG] Registering boon Poison Effect for R2
-[AFTER-ACTION] R2 performs after-action on R2 (threat: 7)
-[BOON] Poison Effect triggered on R2 (Usage: 3/3)
-[EXECUTE_EFFECT] R2 triggered Poison Effect
-R2 HP: 3 - 3 => 0
-R2 HP: 0 - 0 => 0
-[BOON] Refreshing existing Poison Effect on R2
-[A28] B1 applied Poison Effect to R2 (usage: 3)
-B1 HP: 8 - 3 => 5
 
 
-[Tick 65] R0, R1,  acting
-Survived Unit: R0, R1, R3, R4, B1, 
-B1 HP: 5 - 0 => 5
-B1 HP: 5 - 1 => 4
-Survived Unit: R0, R1, R3, R4, B1, 
+[Tick 504] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, 
+B1 HP: 6 - 0 => 6
 
 
-[Tick 70] B1, R1, R0,  acting
-Survived Unit: R0, R1, R3, R4, B1, 
-B1 HP: 4 - 1 => 3
-B1 HP: 3 - 0 => 3
-R4 HP: 15 - 0 => 15
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B1 applied Poison Effect to R4 (usage: 3)
+[Tick 510] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, 
+B1 HP: 6 - 0 => 6
 
 
-[Tick 75] R1, R0,  acting
-Survived Unit: R0, R1, R3, R4, B1, 
-B1 HP: 3 - 1 => 2
-B1 HP: 2 - 0 => 2
-
-
-[Tick 80] R1, R0,  acting
-Survived Unit: R0, R1, R3, R4, B1, 
-B1 HP: 2 - 1 => 1
-B1 HP: 1 - 0 => 1
-
-
-[Tick 85] R1, R0,  acting
-Survived Unit: R0, R1, R3, R4, B1, 
-B1 HP: 1 - 1 => 0
+[Tick 630] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, 
+B1 HP: 6 - 6 => 0
 Battle Over! Red Team wins!

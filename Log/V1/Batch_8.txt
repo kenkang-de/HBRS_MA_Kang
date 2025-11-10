@@ -1,115 +1,117 @@
-Unit 0: R0 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW42](Haste) Armor: [BSA50]
-Unit 1: R1 Attack:0 Defense:5 HP:15 Speed:1 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA48]
-Unit 2: R2 Attack:5 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW27](Tripple Shot) Armor: [BSA26]
-Unit 3: R3 Attack:4 Defense:3 HP:12 Speed:3 Threat:5 Weapon: [BSW3](Thrust) Armor: [BSA44]
-Unit 4: R4 Attack:1 Defense:-2 HP:10 Speed:5 Threat:5 Weapon: [BSW44](Exposure) Armor: [BSA9]
-Unit 5: B0 Attack:4 Defense:1 HP:4 Speed:2 Threat:3 Weapon: [BSW43](Vow) Armor: [BSA27]
-Unit 6: B1 Attack:3 Defense:1 HP:12 Speed:4 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA20]
-Unit 7: B2 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW37](Freeze) Armor: [BSA38]
-Unit 8: B3 Attack:2 Defense:1 HP:9 Speed:5 Threat:2 Weapon: [BSW8](Charge Attack) Armor: [BSA19]
-Unit 9: B4 Attack:5 Defense:3 HP:10 Speed:3 Threat:7 Weapon: [BSW23](All-Out Assault) Armor: [BSA34]
+Unit 0: R0 Attack:3 Defense:5 HP:15 Speed:1 Threat:10 Weapon: [BSW11](Fade Attack) Armor: [BSA48]
+Unit 1: R1 Attack:2 Defense:0 HP:10 Speed:6 Threat:0 Weapon: [BSW17](Shoot) Armor: [BSA14]
+Unit 2: R2 Attack:2 Defense:4 HP:10 Speed:3 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA37]
+Unit 3: R3 Attack:2 Defense:11 HP:10 Speed:0 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA43]
+Unit 4: R4 Attack:1 Defense:1 HP:11 Speed:4 Threat:6 Weapon: [BSW46](Protect) Armor: [BSA13]
+Unit 5: B0 Attack:6 Defense:3 HP:10 Speed:3 Threat:6 Weapon: [BSW32](Focus Throw) Armor: [BSA34]
+Unit 6: B1 Attack:3 Defense:2 HP:12 Speed:3 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA39]
+Unit 7: B2 Attack:4 Defense:2 HP:10 Speed:4 Threat:4 Weapon: [BSW3](Thrust) Armor: [BSA30]
+Unit 8: B3 Attack:5 Defense:1 HP:10 Speed:4 Threat:4 Weapon: [BSW17](Shoot) Armor: [BSA33]
+Unit 9: B4 Attack:4 Defense:0 HP:10 Speed:3 Threat:2 Weapon: [BSW15](Taunt) Armor: [BSA14]
 ==========================
 
 
-[Tick 12] R4, B3,  acting
+[Tick 2] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 12 - 0 => 12
+
+
+[Tick 3] R4, B2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
 R0 HP: 15 - 0 => 15
-
-
-[Tick 15] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
 R0 HP: 15 - 0 => 15
+[BOON] Applied ProtectSTART to R0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 20] R3, B4, R2,  acting
+[Tick 4] R2, B0, B1, B4, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 15 - 8 => 7
-B4 HP: 10 - 2 => 8
-B2 HP: 12 - 5 => 7
-B0 HP: 4 - 4 => 0
-B4 HP: 8 - 5 => 3
+R0 HP: 15 - 7 => 8
+B1 HP: 12 - 0 => 12
+B1 HP: 12 - 0 => 12
+R0 HP: 8 - 0 => 8
+R0 HP: 8 - 0 => 8
 
 
-[Tick 24] B3, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R0 HP: 7 - 0 => 7
+[Tick 6] R4, B2, B3, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0 HP: 8 - 0 => 8
+B1 HP: 12 - 0 => 12
+R0 HP: 8 - 0 => 8
+[BOON] Refreshing existing ProtectSTART on R0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 60] R3, B1, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R0 HP: 7 - 0 => 7
-B2 HP: 8 - 8 => 0
+[Tick 8] R2, B0, B1, B4, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0 HP: 8 - 7 => 1
+B1 HP: 12 - 0 => 12
+B1 HP: 12 - 0 => 12
+R0 HP: 1 - 0 => 1
+R0 HP: 9 - 9 => 0
 
 
-[Tick 120] B2, B4, B1, B3, R2, R4, R1, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
-R0 HP: 15 - 15 => 0
-R0 HP: 0 - 0 => 0
-B4 HP: 3 - 2 => 1
-B1 HP: 12 - 4 => 8
-B3 HP: 9 - 4 => 5
-B4 HP: 1 - 0 => 1
-B1 HP: 8 - 0 => 8
-B3 HP: 5 - 0 => 5
-R0 HP: 0 - 0 => 0
-B4 HP: 5 - 5 => 0
+[Tick 9] R4, B2, B3,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 10 - 1 => 9
+R2 HP: 9 - 0 => 9
+[BOON] Applied ProtectSTART to R2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 132] B3, R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-R1 HP: 15 - 0 => 15
+[Tick 10] R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 12 - 0 => 12
 
 
-[Tick 135] B1,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-R1 HP: 15 - 0 => 15
+[Tick 12] R2, B0, B4, R4, B2, B3, R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 9 - 7 => 2
+R2 HP: 2 - 1 => 1
+B1 HP: 12 - 0 => 12
+B1 HP: 12 - 0 => 12
+[AFTER-ACTION] No valid target found for R2
+R2 HP: 20 - 20 => 0
+R3 HP: 10 - 0 => 10
+[BOON] Applied ProtectSTART to R3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 141] R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
+[Tick 14] R1,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+B1 HP: 12 - 0 => 12
 
 
-[Tick 144] B3,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-R1 HP: 15 - 0 => 15
+[Tick 15] R4, B2, B3,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 10 - 0 => 10
+R3 HP: 10 - 0 => 10
+[BOON] Refreshing existing ProtectSTART on R3
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 150] B1,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-R1 HP: 15 - 0 => 15
+[Tick 16] B0, B4, R1,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 10 - 0 => 10
+B1 HP: 12 - 0 => 12
+R3 HP: 23 - 23 => 0
 
 
-[Tick 153] R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
+[Tick 18] R4, B2, B3, R1,  acting
+Survived Unit: R1, R4, B0, B1, B2, B3, B4, 
+R4 HP: 11 - 4 => 7
+B1 HP: 12 - 0 => 12
+R4 HP: 7 - 7 => 0
+[BOON] Applied ProtectSTART to R1 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 156] B3,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-R1 HP: 15 - 0 => 15
-
-
-[Tick 160] R2, R3,  acting
-Survived Unit: R1, R2, R3, R4, B1, B3, 
-B1 HP: 8 - 4 => 4
-B3 HP: 5 - 4 => 1
-B1 HP: 7 - 7 => 0
-
-
-[Tick 166] B3,  acting
-Survived Unit: R1, R2, R3, R4, B3, 
-R1 HP: 15 - 0 => 15
-
-
-[Tick 177] R4,  acting
-Survived Unit: R1, R2, R3, R4, B3, 
-
-
-[Tick 178] B3,  acting
-Survived Unit: R1, R2, R3, R4, B3, 
-R1 HP: 15 - 0 => 15
-
-
-[Tick 180] R2,  acting
-Survived Unit: R1, R2, R3, R4, B3, 
-B3 HP: 4 - 4 => 0
-Battle Over! Red Team wins!
+[Tick 20] B1, B0, B4, R1,  acting
+Survived Unit: R1, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 7 => 3
+B1 HP: 12 - 0 => 12
+[AFTER-ACTION] No valid target found for R1
+R1 HP: 3 - 3 => 0
+Battle Over! Blue Team wins!

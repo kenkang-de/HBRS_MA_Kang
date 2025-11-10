@@ -30,7 +30,7 @@ class Weapon : public TestSubject {
         return stat;
     }
 
-    const BattleAction &GetAction() const {
+    BattleAction &GetAction() {
         return action;
     }
     void SetWeaponType(CounterType _weaponType) {

@@ -6,26 +6,23 @@
 
 #include "BattleAction.h"
 
-
-
 struct AfterActionEvent {
-    const BattleAction* battleAction;
+    BattleAction *battleAction;
     ActionContext context;
-    
-    AfterActionEvent(const BattleAction* action, const ActionContext& ctx)
-        : battleAction(action), context(ctx) {}
+
+    AfterActionEvent(BattleAction *action, ActionContext &ctx) : battleAction(action), context(ctx) {}
 };
 
-class GlobalAction{
+class GlobalAction {
 
-    public:
-        static void RegisterGlobalAction(const std::string& id, BattleAction* action);
-        static const BattleAction* GetGlobalAction(const std::string& id);
+  public:
+    static void RegisterGlobalAction(const std::string &id, BattleAction *action);
+    static BattleAction *GetGlobalAction(const std::string &id);
 
-        static std::vector<AfterActionEvent> afterActions;
-        static void AddAfterAction(const BattleAction* battleAction, const ActionContext& context);
-        static void ClearAfterAction();
-        static void ClearGlobalRegistry(); // Add method to clear static registry
+    static std::vector<AfterActionEvent> afterActions;
+    static void AddAfterAction(BattleAction *battleAction, ActionContext context);
+    static void ClearAfterAction();
+    static void ClearGlobalRegistry(); // Add method to clear static registry
 };
 
 #endif
