@@ -154,7 +154,7 @@ void Unit::AddBoon(std::unique_ptr<BoonAction> boon) {
     // Check if the same effect type already exists
     for (auto &existingBoon : activeBoons) {
         if (existingBoon->GetEffectType() == boon->GetEffectType()) {
-            LogSystem::LogStream("[BOON] Refreshing existing ", boon->GetEffectType(), " on ", Name);
+            LogSystem::LogStream("[BOON] Refreshing existing ", boon->GetID(), " on ", Name);
 
             // For TempBoonAction, we want to reset duration but NOT reapply the effect
             TempBoonAction *tempBoon = dynamic_cast<TempBoonAction *>(existingBoon.get());

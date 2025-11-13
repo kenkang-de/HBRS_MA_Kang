@@ -26,6 +26,8 @@
 #include "AutoBalancing/Chromosome.h"
 #include "AutoBalancing/GeneticBalancingProcessor.h"
 
+#include "ExperimentSettings.h"
+
 class NewMasterController {
   private:
     std::string configFile;
@@ -124,17 +126,44 @@ class NewMasterController {
         // Stage 4: Autobalancing
         GeneticBalancingProcessor balancer;
         balancer.GenerateFirstChromosome(&elementList, testSubjects);
-        BalancingLog::InitializeLogs(MAXGENERATION);
-        balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
 
-        std::cout << "Stage 4 Complete" << std::endl;
+        std::cout << "Auto balancing starts" << std::endl;
 
-        // Stage 5: Analysis
-        BalancingLogToCSV::Convert();
-        GameComponentToCSV::Convert(testSubjects);
+        ExperimentSettings settings;
+        std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
 
-        std::cout << "Stage 5 Complete" << std::endl;
+        // If there is no setting file, run the experiment once.
+        if (settingFiles.empty()) {
+            std::cout << "EXPERIMENT 1/1" << std::endl;
+            std::cout << "No experiment files found. Using default settings." << std::endl;
 
+            BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
+            balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
+
+            BalancingLogToCSV::Convert();
+            GameComponentToCSV::Convert(testSubjects);
+        } else {
+            // Setting files found - run for each file
+            int experimentCount = 1;
+            for (const std::string &fileDir : settingFiles) {
+                std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
+                std::cout << "Loading settings from: " << fileDir << std::endl;
+
+                settings.LoadFromFile(fileDir);
+
+                BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
+                balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
+
+                BalancingLogToCSV::Convert();
+                GameComponentToCSV::Convert(testSubjects);
+
+                experimentCount++;
+            }
+        }
+
+        std::cout << "Auto balancing ended" << std::endl;
+
+        // TimeCheck
         auto endTime = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime);
         std::cout << "Total process time: " << duration.count() << " ms" << std::endl;

@@ -1,5 +1,6 @@
 #include "BalancingLogToCSV.h"
 #include "../Constants.h"
+#include "../ExperimentSettings.h"
 #include "../Paths.h"
 #include <algorithm>
 #include <chrono>
@@ -110,29 +111,26 @@ void BalancingLogToCSV::Convert() {
         return;
     }
 
-    configFile << "Configuration Constants" << std::endl;
+    configFile << "Experiment Settings" << std::endl;
     configFile << "========================" << std::endl;
-    configFile << "UNITS_PER_TEAM: " << UNITS_PER_TEAM << std::endl;
-    configFile << "TEST_TICK: " << TEST_TICK << std::endl;
-    configFile << "SIMULATION_COUNT: " << SIMULATION_COUNT << std::endl;
-    configFile << "DELAY_MULTIPLIER: " << DELAY_MULTIPLIER << std::endl;
-    configFile << "MULTIPLIER_COUNTER: " << MULTIPLIER_COUNTER << std::endl;
-    configFile << "MULTIPLIER_BASIC: " << MULTIPLIER_BASIC << std::endl;
-    configFile << "DEFENSE_RATIO: " << DEFENSE_RATIO << std::endl;
-    configFile << "SPEED_RATIO: " << SPEED_RATIO << std::endl;
-    configFile << "APPLIEDSTAT_RANGE: " << APPLIEDSTAT_RANGE << std::endl;
-    configFile << "INDIVIDUALS_PER_GENERATION: " << INDIVIDUALS_PER_GENERATION << std::endl;
-    configFile << "ELITES_PER_GENERATION: " << ELITES_PER_GENERATION << std::endl;
-    configFile << "CROSSOVER_PROBABILITY: " << CROSSOVER_PROBABILITY << std::endl;
-    configFile << "MUTATION_PROBABILITY: " << MUTATION_PROBABILITY << std::endl;
-    configFile << "MUTATION_SIGMA: " << MUTATION_SIGMA << std::endl;
-    configFile << "TARGET_WINRATE: " << TARGET_WINRATE << std::endl;
-    configFile << "TARGET_THRESHOLD: " << TARGET_THRESHOLD << std::endl;
-    configFile << "FITNESS_THRESHOLD: " << FITNESS_THRESHOLD << std::endl;
-    configFile << "FITNESS_MAX: " << FITNESS_MAX << std::endl;
-    configFile << "RMSE_WEIGHT: " << RMSE_WEIGHT << std::endl;
-    configFile << "DOC_WEIGHT: " << DOC_WEIGHT << std::endl;
-    configFile << "MAXGENERATION: " << MAXGENERATION << std::endl;
+    // configFile << "DELAY_MULTIPLIER: " << DELAY_MULTIPLIER << std::endl;
+    // configFile << "MULTIPLIER_COUNTER: " << MULTIPLIER_COUNTER << std::endl;
+    // configFile << "MULTIPLIER_BASIC: " << MULTIPLIER_BASIC << std::endl;
+    // configFile << "DEFENSE_RATIO: " << DEFENSE_RATIO << std::endl;
+    // configFile << "SPEED_RATIO: " << SPEED_RATIO << std::endl;
+    configFile << "APPLIEDSTAT_RANGE: " << ExperimentSettings::APPLIEDSTAT_RANGE << std::endl;
+    configFile << "INDIVIDUALS_PER_GENERATION: " << ExperimentSettings::INDIVIDUALS_PER_GENERATION << std::endl;
+    configFile << "ELITES_PER_GENERATION: " << ExperimentSettings::ELITES_PER_GENERATION << std::endl;
+    configFile << "CROSSOVER_PROBABILITY: " << ExperimentSettings::CROSSOVER_PROBABILITY << std::endl;
+    configFile << "MUTATION_PROBABILITY: " << ExperimentSettings::MUTATION_PROBABILITY << std::endl;
+    configFile << "MUTATION_SIGMA: " << ExperimentSettings::MUTATION_SIGMA << std::endl;
+    // configFile << "TARGET_WINRATE: " << TARGET_WINRATE << std::endl;
+    // configFile << "TARGET_THRESHOLD: " << TARGET_THRESHOLD << std::endl;
+    // configFile << "FITNESS_THRESHOLD: " << FITNESS_THRESHOLD << std::endl;
+    // configFile << "FITNESS_MAX: " << FITNESS_MAX << std::endl;
+    // configFile << "RMSE_WEIGHT: " << RMSE_WEIGHT << std::endl;
+    // configFile << "DOC_WEIGHT: " << DOC_WEIGHT << std::endl;
+    configFile << "MAXGENERATION: " << ExperimentSettings::MAXGENERATION << std::endl;
 
     configFile.close();
     std::cout << "Configuration file created successfully: " << configFilename << std::endl;

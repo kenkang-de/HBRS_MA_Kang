@@ -1,4 +1,5 @@
 #include "GeneticBalancingProcessor.h"
+#include "../ExperimentSettings.h"
 #include "Crossover.h"
 #include "Mutation.h"
 
@@ -77,7 +78,7 @@ float GeneticBalancingProcessor::CosineSimilarity(std::vector<Stat> targetStats)
         static_cast<float>(dotProduct) / (std::sqrt(static_cast<float>(firstMagnitude)) * mag_float);
     float similarityScore = (cosineSimilarity + 1.0f) / 2.0f;
 
-    return std::round(similarityScore * 1000.0f) / 1000.0f;
+    return similarityScore;
 }
 
 std::vector<float> GeneticBalancingProcessor::GetAverageWinrate(std::vector<TestSubject *> testSubjects) {
@@ -91,9 +92,9 @@ std::vector<float> GeneticBalancingProcessor::GetAverageWinrate(std::vector<Test
 std::vector<Chromosome *> GeneticBalancingProcessor::Instantiate_FirstGenChromosomes() {
 
     std::vector<Chromosome *> firstGenChromosomes;
-    firstGenChromosomes.reserve(INDIVIDUALS_PER_GENERATION);
+    firstGenChromosomes.reserve(ExperimentSettings::INDIVIDUALS_PER_GENERATION);
 
-    for (int i = 0; i < INDIVIDUALS_PER_GENERATION; i++) {
+    for (int i = 0; i < ExperimentSettings::INDIVIDUALS_PER_GENERATION; i++) {
         Chromosome *newChromosome = new Chromosome(BalancingRule::GenerateRamdomAppliedStats(firstStats.size()));
         firstGenChromosomes.push_back(newChromosome);
     }
@@ -242,9 +243,10 @@ void GeneticBalancingProcessor::SimulateChromosome(Simulator *simulator, std::ve
 void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConfig *batchConfig,
                                                  std::vector<Batch> batches) {
     // Initialization
+    GeneticBalancingProcessor::Generation = 1;
     // First Generation Setting
-    currentGenChromosomeList.reserve(INDIVIDUALS_PER_GENERATION);
-    nextGenChromosomeList.reserve(INDIVIDUALS_PER_GENERATION);
+    currentGenChromosomeList.reserve(ExperimentSettings::INDIVIDUALS_PER_GENERATION);
+    nextGenChromosomeList.reserve(ExperimentSettings::INDIVIDUALS_PER_GENERATION);
     currentGenChromosomeList = Instantiate_FirstGenChromosomes();
 
     BatchCreator batchCreator;
@@ -258,12 +260,12 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
     for (Chromosome *firstGenchromosome : currentGenChromosomeList) {
         SimulateChromosome(simulator, &batches, firstGenchromosome, combinedTestSubjects);
         BalancingLog(Generation, firstGenchromosome->Get_Fitness(), firstGenchromosome->Get_MRSE(),
-                     firstGenchromosome->Get_DOG());
+                     firstGenchromosome->Get_DOC());
     }
 
     // Generation Progression
     // Second to max generation
-    while (Generation < MAXGENERATION &&
+    while (Generation < ExperimentSettings::MAXGENERATION &&
            // If the highest fitness score among all chromosomes has reached the threshold
            GetHighestFitnessChromosome(currentGenChromosomeList)->Get_Fitness() <= FITNESS_MAX - FITNESS_THRESHOLD) {
 
@@ -275,16 +277,16 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
             return a->Get_Fitness() > b->Get_Fitness(); // Descending order (highest first)
         });
 
-        for (int i = 0; i < ELITES_PER_GENERATION; i++) {
+        for (int i = 0; i < ExperimentSettings::ELITES_PER_GENERATION; i++) {
             // Elite Chromosome (does not have offspring, progress to next generation)
             Chromosome *eliteChromosome = sortedChromosomes[i]; // Get i-th highest fitness
             Chromosome *eliteCopy = new Chromosome(eliteChromosome);
             nextGenChromosomeList.push_back(eliteCopy);
-            BalancingLog(Generation + 1, eliteCopy->Get_Fitness(), eliteCopy->Get_MRSE(), eliteCopy->Get_DOG());
+            BalancingLog(Generation + 1, eliteCopy->Get_Fitness(), eliteCopy->Get_MRSE(), eliteCopy->Get_DOC());
         }
 
         // Crossover
-        while (nextGenChromosomeList.size() < INDIVIDUALS_PER_GENERATION) {
+        while (nextGenChromosomeList.size() < ExperimentSettings::INDIVIDUALS_PER_GENERATION) {
             std::array<Chromosome *, 2> parentCandidates = ParentTournament(currentGenChromosomeList);
 
             // Random crossover probability: CROSSOVER_PROBABILITY = crossover, else = no crossover
@@ -292,10 +294,10 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
             static std::mt19937 gen(rd());
             static std::uniform_real_distribution<float> prob(0.0f, 1.0f);
 
-            if (prob(gen) < CROSSOVER_PROBABILITY) {
+            if (prob(gen) < ExperimentSettings::CROSSOVER_PROBABILITY) {
                 std::array<Chromosome *, 2> crossedParents = Crossover::SinglePointCrossOver(parentCandidates);
                 nextGenChromosomeList.push_back(crossedParents[0]);
-                if (nextGenChromosomeList.size() < INDIVIDUALS_PER_GENERATION) {
+                if (nextGenChromosomeList.size() < ExperimentSettings::INDIVIDUALS_PER_GENERATION) {
                     nextGenChromosomeList.push_back(crossedParents[1]);
                 } else {
                     // Population is full, delete the unused second child to prevent memory leak
@@ -307,7 +309,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
                 highestCopy->averageWinrates = highest->averageWinrates;
                 nextGenChromosomeList.push_back(highestCopy);
 
-                if (nextGenChromosomeList.size() < INDIVIDUALS_PER_GENERATION) {
+                if (nextGenChromosomeList.size() < ExperimentSettings::INDIVIDUALS_PER_GENERATION) {
                     Chromosome *lowest = GetLowestFitnessChromosome(parentCandidates);
                     Chromosome *lowestCopy = new Chromosome(lowest->appliedStat_INDIVIDUAL);
                     lowestCopy->averageWinrates = lowest->averageWinrates;
@@ -324,11 +326,11 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
         // batches = batchCreator.CreateBatches(*batchConfig);
 
         // Simulate NextGenerations
-        for (size_t i = ELITES_PER_GENERATION; i < nextGenChromosomeList.size(); ++i) {
+        for (size_t i = ExperimentSettings::ELITES_PER_GENERATION; i < nextGenChromosomeList.size(); ++i) {
             Chromosome *nextGenChromosome = nextGenChromosomeList[i];
             SimulateChromosome(simulator, &batches, nextGenChromosome, combinedTestSubjects);
             BalancingLog(Generation + 1, nextGenChromosome->Get_Fitness(), nextGenChromosome->Get_MRSE(),
-                         nextGenChromosome->Get_DOG());
+                         nextGenChromosome->Get_DOC());
         }
 
         // Cleanup all chromosomes since we create copies for survivors

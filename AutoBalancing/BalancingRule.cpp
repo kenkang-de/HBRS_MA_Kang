@@ -1,8 +1,9 @@
 #include "BalancingRule.h"
+#include "../ExperimentSettings.h"
 
 std::random_device BalancingRule::rd;
 std::mt19937 BalancingRule::gen(BalancingRule::rd());
-std::uniform_int_distribution<int> BalancingRule::dist(1, APPLIEDSTAT_RANGE);
+std::uniform_int_distribution<int> BalancingRule::dist(1, ExperimentSettings::APPLIEDSTAT_RANGE);
 
 std::vector<Stat> BalancingRule::GenerateRamdomAppliedStats(int amount) {
 

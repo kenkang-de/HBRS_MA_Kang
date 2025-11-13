@@ -1,5 +1,6 @@
 #include "Mutation.h"
 #include "../Constants.h"
+#include "../ExperimentSettings.h"
 #include <algorithm>
 #include <random>
 
@@ -11,16 +12,16 @@ void Mutation::GaussianMutation(std::vector<Chromosome *> chromosomeList) {
 
     // Iterate through all chromosomes except the first one (elite chromosome)
     // Elites are exempt from both crossover and mutation.
-    for (size_t i = ELITES_PER_GENERATION; i < chromosomeList.size(); ++i) {
+    for (size_t i = ExperimentSettings::ELITES_PER_GENERATION; i < chromosomeList.size(); ++i) {
         Chromosome *chromosome = chromosomeList[i];
-        if (mutationProb(gen) < MUTATION_PROBABILITY) {
+        if (mutationProb(gen) < ExperimentSettings::MUTATION_PROBABILITY) {
             if (chromosome->IsAppliedAll()) {
                 // Original version: mutate single stat
                 MutateStatObject(chromosome->appliedStat_ALL);
             } else {
                 // New version: mutate individual stats
                 for (Stat &stat : chromosome->appliedStat_INDIVIDUAL) {
-                    if (mutationProb(gen) < MUTATION_PROBABILITY) {
+                    if (mutationProb(gen) < ExperimentSettings::MUTATION_PROBABILITY) {
                         MutateStatObject(stat);
                     }
                 }
@@ -32,7 +33,7 @@ void Mutation::GaussianMutation(std::vector<Chromosome *> chromosomeList) {
 void Mutation::MutateStatObject(Stat &stat) {
     static std::random_device rd;
     static std::mt19937 gen(rd());
-    static std::normal_distribution<float> gaussianNoise(0.0f, MUTATION_SIGMA);
+    static std::normal_distribution<float> gaussianNoise(0.0f, ExperimentSettings::MUTATION_SIGMA);
 
     // Attack
     int currentAttack = stat.GetAttack();

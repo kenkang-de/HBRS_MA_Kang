@@ -52,7 +52,7 @@ class Chromosome {
     float Get_MRSE() {
         return rootMeanSquareError;
     }
-    float Get_DOG() {
+    float Get_DOC() {
         return degreeOfChange;
     }
 

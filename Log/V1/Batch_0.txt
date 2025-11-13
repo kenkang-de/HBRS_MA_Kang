@@ -1,126 +1,88 @@
-Unit 0: R0 Attack:5 Defense:2 HP:12 Speed:3 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA39]
-Unit 1: R1 Attack:1 Defense:3 HP:12 Speed:1 Threat:8 Weapon: [BSW44](Exposure) Armor: [BSA44]
-Unit 2: R2 Attack:3 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA21]
-Unit 3: R3 Attack:3 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA5]
-Unit 4: R4 Attack:1 Defense:2 HP:10 Speed:1 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA30]
-Unit 5: B0 Attack:6 Defense:2 HP:10 Speed:1 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA30]
-Unit 6: B1 Attack:4 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW8](Charge Attack) Armor: [BSA15]
-Unit 7: B2 Attack:2 Defense:3 HP:10 Speed:3 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA22]
-Unit 8: B3 Attack:3 Defense:0 HP:8 Speed:4 Threat:0 Weapon: [BSW34](Wind Blade) Armor: [BSA15]
-Unit 9: B4 Attack:-2 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW38](Healing Touch) Armor: [BSA22]
+Unit 0: R0 Attack:0 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW37](Freeze) Armor: [BSA2]
+Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA14]
+Unit 2: R2 Attack:4 Defense:1 HP:8 Speed:4 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA25]
+Unit 3: R3 Attack:2 Defense:3 HP:12 Speed:3 Threat:6 Weapon: [BSW22](Delay Shot) Armor: [BSA41]
+Unit 4: R4 Attack:1 Defense:0 HP:7 Speed:5 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA5]
+Unit 5: B0 Attack:4 Defense:0 HP:9 Speed:5 Threat:2 Weapon: [BSW28](Heavy Shot) Armor: [BSA7]
+Unit 6: B1 Attack:1 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA49]
+Unit 7: B2 Attack:4 Defense:1 HP:11 Speed:2 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA46]
+Unit 8: B3 Attack:3 Defense:0 HP:12 Speed:5 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA17]
+Unit 9: B4 Attack:0 Defense:5 HP:15 Speed:2 Threat:8 Weapon: [BSW21](Poison Arrow) Armor: [BSA48]
 ==========================
 
 
-[Tick 60] R3,  acting
+[Tick 12] R0, R1, R4, B0, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 1 => 9
+R4 HP: 8 - 8 => 0
+B4 HP: 15 - 0 => 15
+R0 HP: 10 - 4 => 6
+[BOON] Applied FreezeSTART to B4 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 84] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 12 - 4 => 8
+[Tick 15] R2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B4 HP: 15 - 0 => 15
 
 
-[Tick 105] R2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 9 - 1 => 8
-[BOON] Applied Poison Effect to B0 (Usage: 2)
-[A28] R2 applied Poison Effect to B0 (usage: 2)
-R1 HP: 8 - 3 => 5
-R4 HP: 10 - 3 => 7
+[Tick 20] R3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B4 HP: 15 - 0 => 15
 
 
-[Tick 120] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 8 - 1 => 7
+[Tick 24] R1, B0, B3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R0 HP: 9 - 9 => 0
+B4 HP: 15 - 0 => 15
+R3 HP: 12 - 0 => 12
 
 
-[Tick 140] R0, B2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 5 - 1 => 4
-B0 HP: 7 - 3 => 4
-[HEAL] B0 healed for -2 HP (from 4 to 2/10)
+[Tick 30] B2, R2,  acting
+Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 1 => 11
+[BOON] Applied Poison Effect to R3 (Usage: 2)
+[A28] B2 applied Poison Effect to R3 (usage: 2)
+B4 HP: 15 - 0 => 15
 
 
-[Tick 168] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 4 - 4 => 0
+[Tick 36] R1, B0, B3,  acting
+Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 11 - 5 => 6
+B4 HP: 15 - 0 => 15
+R3 HP: 6 - 0 => 6
 
 
-[Tick 180] R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 2 - 1 => 1
+[Tick 40] R3,  acting
+Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
+B4 HP: 15 - 0 => 15
+[AFTER-ACTION] No valid target found for R3
 
 
-[Tick 210] R2, B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 1 - 1 => 0
-[BOON] Refreshing existing Poison Effect on B0
-[A28] R2 applied Poison Effect to B0 (usage: 2)
-R4 HP: 7 - 3 => 4
-R0 HP: 12 - 3 => 9
+[Tick 60] R2, R1, B0, B3,  acting
+Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 6 - 5 => 1
+B4 HP: 15 - 0 => 15
+B4 HP: 15 - 0 => 15
+R3 HP: 1 - 0 => 1
 
 
-[Tick 240] R3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B2, B3, B4, 
-B4 HP: 10 - 0 => 10
+[Tick 90] B2,  acting
+Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 1 - 1 => 0
+[BOON] Refreshing existing Poison Effect on R3
+[A28] B2 applied Poison Effect to R3 (usage: 2)
 
 
-[Tick 252] B1,  acting
-Survived Unit: R0, R2, R3, R4, B1, B2, B3, B4, 
-R4 HP: 5 - 5 => 0
+[Tick 192] R1, B0, B3,  acting
+Survived Unit: R1, R2, B0, B1, B2, B3, B4, 
+R2 HP: 8 - 7 => 1
+B4 HP: 15 - 0 => 15
+R2 HP: 2 - 2 => 0
 
 
-[Tick 280] R0, B2,  acting
-Survived Unit: R0, R2, R3, B1, B2, B3, B4, 
-R0 HP: 9 - 2 => 7
-B4 HP: 10 - 2 => 8
-
-
-[Tick 300] R3,  acting
-Survived Unit: R0, R2, R3, B1, B2, B3, B4, 
-B4 HP: 8 - 0 => 8
-
-
-[Tick 315] R2, B3,  acting
-Survived Unit: R0, R2, R3, B1, B2, B3, B4, 
-B4 HP: 8 - 0 => 8
-[BOON] Applied Poison Effect to B4 (Usage: 2)
-[A28] R2 applied Poison Effect to B4 (usage: 2)
-R0 HP: 7 - 3 => 4
-R3 HP: 7 - 3 => 4
-
-
-[Tick 336] B1,  acting
-Survived Unit: R0, R2, R3, B1, B2, B3, B4, 
-R0 HP: 5 - 5 => 0
-
-
-[Tick 360] R3,  acting
-Survived Unit: R2, R3, B1, B2, B3, B4, 
-B4 HP: 8 - 0 => 8
-
-
-[Tick 385] B2,  acting
-Survived Unit: R2, R3, B1, B2, B3, B4, 
-R3 HP: 4 - 4 => 0
-
-
-[Tick 420] R2, B3, B1,  acting
-Survived Unit: R2, B1, B2, B3, B4, 
-B4 HP: 8 - 0 => 8
-[BOON] Refreshing existing Poison Effect on B4
-[A28] R2 applied Poison Effect to B4 (usage: 2)
-R2 HP: 10 - 4 => 6
-R2 HP: 6 - 3 => 3
-
-
-[Tick 469] B2,  acting
-Survived Unit: R2, B1, B2, B3, B4, 
-R2 HP: 3 - 1 => 2
-
-
-[Tick 504] B1,  acting
-Survived Unit: R2, B1, B2, B3, B4, 
-R2 HP: 4 - 4 => 0
+[Tick 276] R1, B0, B3,  acting
+Survived Unit: R1, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 8 => 2
+B4 HP: 15 - 0 => 15
+R1 HP: 3 - 3 => 0
 Battle Over! Blue Team wins!

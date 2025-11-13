@@ -14,8 +14,7 @@ void BoonAction::Perform(Unit *actor, Unit *target) {
     if (target) {
         ActionContext ctx{actor, target};
 
-        LogSystem::LogStream("[BOON] ", effectType, " triggered on ", target->GetName(), " (Usage: ", usageNumber, "/",
-                             maxUsage, ")");
+        LogSystem::LogStream("[BOON] ", ID, " on ", target->GetName(), " (Usage: ", usageNumber, "/", maxUsage, ")");
 
         // Execute all conditional actions for this boon
         if (!conditionalActions.empty()) {
