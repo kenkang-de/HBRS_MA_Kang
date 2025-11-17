@@ -7,21 +7,17 @@
 #include <iostream>
 #include <sstream>
 
+// Static variable definitions
+std::string GameComponentToCSV::sharedRunDirectory = "";
+int GameComponentToCSV::currentExperimentNumber = 1;
+
 void GameComponentToCSV::Convert(std::vector<TestSubject *> testSubjects) {
-    // Create base output directory if it doesn't exist
-    std::string baseOutputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
-    std::filesystem::create_directories(baseOutputDir);
+    // Debug output
+    std::cout << "GameComponentToCSV::Convert - Current experiment number: " << currentExperimentNumber << std::endl;
+    std::cout << "GameComponentToCSV::Convert - Shared directory: " << sharedRunDirectory << std::endl;
 
-    // Create timestamp-based subdirectory (same as BalancingLogToCSV)
-    auto now = std::chrono::system_clock::now();
-    auto time_t = std::chrono::system_clock::to_time_t(now);
-    auto tm = *std::localtime(&time_t);
-
-    std::ostringstream timestampStream;
-    timestampStream << std::put_time(&tm, "%Y%m%d_%H%M%S");
-    std::string timestamp = timestampStream.str();
-
-    std::string outputDir = baseOutputDir + "Run_" + timestamp + "\\";
+    // Use the shared run directory and create experiment subdirectory
+    std::string outputDir = sharedRunDirectory + "Experiment_" + std::to_string(currentExperimentNumber) + "\\";
     std::filesystem::create_directories(outputDir);
 
     std::cout << "Using run directory: " << outputDir << std::endl;
@@ -72,4 +68,14 @@ void GameComponentToCSV::Convert(std::vector<TestSubject *> testSubjects) {
     csvFile.close();
     std::cout << "GameComponents CSV file created successfully: " << filename << std::endl;
     std::cout << "Total test subjects processed: " << testSubjects.size() << std::endl;
+}
+
+// Set the shared run directory
+void GameComponentToCSV::SetSharedDirectory(const std::string &sharedDir) {
+    sharedRunDirectory = sharedDir;
+}
+
+// Set the current experiment number
+void GameComponentToCSV::SetExperimentNumber(int experimentNumber) {
+    currentExperimentNumber = experimentNumber;
 }

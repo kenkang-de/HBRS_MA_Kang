@@ -129,6 +129,10 @@ class NewMasterController {
 
         std::cout << "Auto balancing starts" << std::endl;
 
+        BalancingLogToCSV::InitializeRunDirectory();
+
+        GameComponentToCSV::SetSharedDirectory(BalancingLogToCSV::GetSharedDirectory());
+
         ExperimentSettings settings;
         std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
 
@@ -136,6 +140,9 @@ class NewMasterController {
         if (settingFiles.empty()) {
             std::cout << "EXPERIMENT 1/1" << std::endl;
             std::cout << "No experiment files found. Using default settings." << std::endl;
+
+            BalancingLogToCSV::SetExperimentNumber(1);
+            GameComponentToCSV::SetExperimentNumber(1);
 
             BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
             balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
@@ -148,6 +155,9 @@ class NewMasterController {
             for (const std::string &fileDir : settingFiles) {
                 std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
                 std::cout << "Loading settings from: " << fileDir << std::endl;
+
+                BalancingLogToCSV::SetExperimentNumber(experimentCount);
+                GameComponentToCSV::SetExperimentNumber(experimentCount);
 
                 settings.LoadFromFile(fileDir);
 

@@ -1,121 +1,106 @@
-Unit 0: R0 Attack:2 Defense:1 HP:12 Speed:2 Threat:6 Weapon: [BSW35](Chain Lightning) Armor: [BSA20]
-Unit 1: R1 Attack:6 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA11]
-Unit 2: R2 Attack:4 Defense:1 HP:4 Speed:3 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA27]
-Unit 3: R3 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA38]
-Unit 4: R4 Attack:3 Defense:2 HP:12 Speed:3 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA36]
-Unit 5: B0 Attack:5 Defense:3 HP:7 Speed:3 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA23]
-Unit 6: B1 Attack:3 Defense:3 HP:13 Speed:0 Threat:10 Weapon: [BSW35](Chain Lightning) Armor: [BSA47]
-Unit 7: B2 Attack:1 Defense:0 HP:12 Speed:5 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA17]
-Unit 8: B3 Attack:1 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA10]
-Unit 9: B4 Attack:5 Defense:2 HP:12 Speed:2 Threat:6 Weapon: [BSW2](Chop) Armor: [BSA39]
+Unit 0: R0 Attack:3 Defense:3 HP:12 Speed:3 Threat:7 Weapon: [BSW24](Boost Acuity) Armor: [BSA41]
+Unit 1: R1 Attack:6 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW15](Taunt) Armor: [BSA9]
+Unit 2: R2 Attack:3 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW31](Wrist Shot) Armor: [BSA30]
+Unit 3: R3 Attack:5 Defense:3 HP:7 Speed:2 Threat:3 Weapon: [BSW19](Momentum) Armor: [BSA23]
+Unit 4: R4 Attack:3 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA8]
+Unit 5: B0 Attack:0 Defense:5 HP:15 Speed:1 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA48]
+Unit 6: B1 Attack:2 Defense:1 HP:7 Speed:5 Threat:2 Weapon: [BSW24](Boost Acuity) Armor: [BSA19]
+Unit 7: B2 Attack:3 Defense:0 HP:12 Speed:5 Threat:3 Weapon: [BSW9](Blitz Attack) Armor: [BSA17]
+Unit 8: B3 Attack:3 Defense:4 HP:10 Speed:2 Threat:6 Weapon: [BSW27](Tripple Shot) Armor: [BSA31]
+Unit 9: B4 Attack:2 Defense:-1 HP:10 Speed:1 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA32]
 ==========================
 
 
-[Tick 6] R1, B2, B3,  acting
+[Tick 10] R4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 13 - 3 => 10
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-R3 HP: 12 - 1 => 11
-R4 HP: 12 - 0 => 12
+B0 HP: 15 - 0 => 15
+[BOON] Applied Poison Effect to B0 (Usage: 2)
+[A28] R4 applied Poison Effect to B0 (usage: 2)
 
 
-[Tick 10] R2, R4, B0,  acting
+[Tick 12] B1, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 3 => 7
-R0 HP: 12 - 4 => 8
-[HEAL] R0 healed for 4 HP (from 8 to 12/12)
+R0 HP: 12 - 2 => 10
+R0 HP: 10 - 5 => 5
 
 
-[Tick 12] R1, B2, B3,  acting
+[Tick 15] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 3 => 4
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-R3 HP: 11 - 1 => 10
-R4 HP: 12 - 0 => 12
+B0 HP: 15 - 1 => 14
 
 
-[Tick 15] B4,  acting
+[Tick 20] R0, R2, R4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 12 - 4 => 8
+B0 HP: 14 - 0 => 14
+B0 HP: 14 - 0 => 14
+B0 HP: 14 - 0 => 14
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R4 applied Poison Effect to B0 (usage: 2)
 
 
-[Tick 18] R1, B2, B3,  acting
+[Tick 24] B1, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 4 - 3 => 1
-R0 HP: 8 - 0 => 8
-R0 HP: 8 - 0 => 8
-R3 HP: 10 - 1 => 9
-R4 HP: 12 - 0 => 12
+R0 HP: 5 - 2 => 3
+R0 HP: 5 - 5 => 0
 
 
-[Tick 20] R2, R4, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 3 - 3 => 0
-R0 HP: 8 - 0 => 8
-[HEAL] R0 healed for 4 HP (from 8 to 12/12)
+[Tick 30] R3, B3, R1, R4,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 14 - 0 => 14
+R2 HP: 10 - 1 => 9
+R3 HP: 7 - 0 => 7
+R4 HP: 10 - 3 => 7
+B0 HP: 14 - 0 => 14
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R4 applied Poison Effect to B0 (usage: 2)
+B0 HP: 14 - 13 => 1
 
 
-[Tick 24] R1, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
-B4 HP: 12 - 4 => 8
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-R3 HP: 9 - 1 => 8
-R4 HP: 12 - 0 => 12
+[Tick 36] B1, B2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 9 - 3 => 6
+R2 HP: 6 - 6 => 0
 
 
-[Tick 30] B4, R2, R4, B0, R1, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
-B4 HP: 8 - 4 => 4
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-R3 HP: 8 - 1 => 7
-R4 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-B4 HP: 4 - 4 => 0
-R0 HP: 12 - 0 => 12
-[HEAL] R0 healed for 0 HP (from 12 to 12/12)
+[Tick 40] R4,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 1 - 0 => 1
+[BOON] Refreshing existing Poison Effect on B0
+[A28] R4 applied Poison Effect to B0 (usage: 2)
 
 
-[Tick 36] R1, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, 
-B0 HP: 7 - 3 => 4
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
+[Tick 45] R1,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 25 - 25 => 0
+
+
+[Tick 48] B1, B2,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
 R3 HP: 7 - 1 => 6
-R4 HP: 12 - 0 => 12
+R3 HP: 6 - 5 => 1
 
 
-[Tick 40] R2, R4, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, 
-B0 HP: 4 - 3 => 1
-R0 HP: 12 - 0 => 12
-[HEAL] R0 healed for 0 HP (from 12 to 12/12)
+[Tick 50] R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+B4 HP: 10 - 4 => 6
+[BOON] Applied Poison Effect to B4 (Usage: 2)
+[A28] R4 applied Poison Effect to B4 (usage: 2)
 
 
-[Tick 42] R1, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, 
-B0 HP: 3 - 3 => 0
-B2 HP: 12 - 6 => 6
-R0 HP: 12 - 0 => 12
-R0 HP: 12 - 0 => 12
-R3 HP: 6 - 1 => 5
-R4 HP: 12 - 0 => 12
+[Tick 60] B3, R1, B1, B2, R4,  acting
+Survived Unit: R1, R3, R4, B1, B2, B3, B4, 
+R3 HP: 1 - 0 => 1
+R4 HP: 7 - 3 => 4
+R1 HP: 10 - 5 => 5
+R3 HP: 1 - 1 => 0
+B4 HP: 6 - 4 => 2
+[BOON] Refreshing existing Poison Effect on B4
+[A28] R4 applied Poison Effect to B4 (usage: 2)
+B4 HP: 43 - 43 => 0
+R4 HP: 8 - 8 => 0
 
 
-[Tick 48] R1, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, B3, 
-B2 HP: 6 - 6 => 0
-B3 HP: 10 - 6 => 4
-R0 HP: 12 - 0 => 12
-R3 HP: 5 - 1 => 4
-R4 HP: 12 - 0 => 12
-
-
-[Tick 50] R2, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B3, 
-B3 HP: 6 - 6 => 0
-[HEAL] R0 healed for 0 HP (from 12 to 12/12)
-Battle Over! Red Team wins!
+[Tick 72] B1, B2,  acting
+Survived Unit: R1, B1, B2, B3, 
+R1 HP: 8 - 8 => 0
+Battle Over! Blue Team wins!

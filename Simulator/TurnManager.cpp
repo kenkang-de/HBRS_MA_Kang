@@ -88,6 +88,8 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
 
     std::vector<Unit *> unitsToAct;
 
+    unitsToAct.reserve(10);
+
     RemoveDeadUnitsFromMap();
 
     // annihilated
@@ -98,6 +100,7 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
     tick = turnMap.begin()->first + turnMap.begin()->second->TickDelay;
 
     std::vector<std::multimap<int, Unit *>::iterator> toRemove;
+    toRemove.reserve(10);
 
     for (auto it = turnMap.begin(); it != turnMap.end(); ++it) {
         Unit *unit = it->second;
@@ -106,12 +109,21 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
 
         if (actualTick == tick) {
             if (unit->GetTotalStat().GetSpeed() > 0 && !unit->IsFrozen()) {
-                unitsToAct.push_back(unit);
+                try {
+                    unitsToAct.push_back(unit);
+                } catch (const std::bad_alloc &e) {
+                    // Log the error and handle gracefully
+                    std::cerr << "Memory allocation failed in GetNextUnits: " << e.what() << std::endl;
+                    // Return what we have so far
+                    return unitsToAct;
+                }
             }
             unit->TickDelay = 0;
             int nextActionTick = tick + unit->Tickinterval;
             turnMap.insert({nextActionTick, unit});
             toRemove.push_back(it);
+        } else if (actualTick > tick) {
+            break;
         }
     }
 

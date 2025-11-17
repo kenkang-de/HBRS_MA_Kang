@@ -15,17 +15,6 @@ const float MULTIPLIER_BASIC = 1.0f;
 const float DEFENSE_RATIO = 0.5f;
 const float SPEED_RATIO = 0.3f;
 
-const int APPLIEDSTAT_RANGE = 10;
-
-const int INDIVIDUALS_PER_GENERATION = 50;
-const int MAXGENERATION = 50;
-
-const int ELITES_PER_GENERATION = 4;
-
-const float CROSSOVER_PROBABILITY = 0.9f;
-const float MUTATION_PROBABILITY = 0.3f;
-const float MUTATION_SIGMA = 1.2f;
-
 const float TARGET_WINRATE = 0.5f;
 const float TARGET_THRESHOLD = 0.05f;
 

@@ -1,479 +1,119 @@
-Unit 0: R0 Attack:0 Defense:-1 HP:10 Speed:4 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA6]
-Unit 1: R1 Attack:4 Defense:6 HP:10 Speed:1 Threat:8 Weapon: [BSW5](Overpower) Armor: [BSA42]
-Unit 2: R2 Attack:1 Defense:0 HP:10 Speed:5 Threat:5 Weapon: [BSW38](Healing Touch) Armor: [BSA8]
-Unit 3: R3 Attack:0 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA36]
-Unit 4: R4 Attack:7 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW14](Leech Attack) Armor: [BSA25]
-Unit 5: B0 Attack:6 Defense:0 HP:10 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA11]
-Unit 6: B1 Attack:-1 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA1]
-Unit 7: B2 Attack:3 Defense:4 HP:10 Speed:3 Threat:6 Weapon: [BSW26](Double Shot) Armor: [BSA31]
-Unit 8: B3 Attack:5 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA13]
-Unit 9: B4 Attack:0 Defense:4 HP:10 Speed:2 Threat:7 Weapon: [BSW39](Healing Link) Armor: [BSA37]
+Unit 0: R0 Attack:-2 Defense:3 HP:10 Speed:2 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA22]
+Unit 1: R1 Attack:1 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW47](Cheer) Armor: [BSA9]
+Unit 2: R2 Attack:7 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA46]
+Unit 3: R3 Attack:2 Defense:1 HP:10 Speed:2 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA33]
+Unit 4: R4 Attack:2 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA25]
+Unit 5: B0 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW42](Haste) Armor: [BSA16]
+Unit 6: B1 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
+Unit 7: B2 Attack:3 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA5]
+Unit 8: B3 Attack:-1 Defense:15 HP:15 Speed:0 Threat:11 Weapon: [BSW12](Final Attack) Armor: [BSA48]
+Unit 9: B4 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW45](Fatigue) Armor: [BSA29]
 ==========================
 
 
-[Tick 10] B1,  acting
+[Tick 12] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 10 - -1 => 11
+R0 HP: 10 - 0 => 10
 
 
-[Tick 12] R2, B3,  acting
+[Tick 14] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 11 - 4 => 7
-[HEAL] R1 healed for 1 HP (from 7 to 8/10)
+R0 HP: 10 - 3 => 7
+R3 HP: 10 - 3 => 7
 
 
-[Tick 15] R0, B0,  acting
+[Tick 21] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 8 - 0 => 8
 
 
-[Tick 20] B2, B1,  acting
+[Tick 24] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 8 - 0 => 8
-R2 HP: 10 - 0 => 10
-R1 HP: 8 - -1 => 9
+R0 HP: 7 - 0 => 7
 
 
-[Tick 24] B3,  acting
+[Tick 28] B0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 9 - 4 => 5
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R0 HP: 7 - 3 => 4
+R3 HP: 7 - 3 => 4
 
 
-[Tick 30] R3, R4, B4, R0, B0, B1,  acting
+[Tick 36] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 5 - 0 => 5
-B4 HP: 10 - 3 => 7
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B4 HP: 7 - 0 => 7
-[HEAL] B2 healed for 0 HP (from 10 to 10/10)
-[HEAL] B0 healed for 0 HP (from 10 to 10/10)
-R1 HP: 5 - -1 => 6
+R0 HP: 4 - 0 => 4
 
 
-[Tick 36] R2, B3,  acting
+[Tick 42] R4, R1, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 6 - 4 => 2
-[HEAL] R1 healed for 1 HP (from 2 to 3/10)
+[BOON] Applied BulkupSTART to R0 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R0 HP: 4 - 3 => 1
+R3 HP: 4 - 3 => 1
 
 
-[Tick 40] B2, B1,  acting
+[Tick 48] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 3 - 0 => 3
-R2 HP: 10 - 0 => 10
-R1 HP: 3 - -1 => 4
+R0 HP: 1 - 0 => 1
 
 
-[Tick 45] R0, B0,  acting
+[Tick 56] B0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 4 - 0 => 4
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R0 HP: 3 - 3 => 0
+R3 HP: 3 - 3 => 0
 
 
-[Tick 48] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 4 - 4 => 0
+[Tick 60] B2,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+R2 HP: 11 - 2 => 9
 
 
-[Tick 50] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 10 - -1 => 11
-
-
-[Tick 60] R3, R4, B2, R0, B0, B3, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 11 - 0 => 11
-R0 HP: 10 - 4 => 6
-R2 HP: 11 - 0 => 11
-R2 HP: 11 - 0 => 11
-B4 HP: 7 - 3 => 4
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B4 HP: 4 - 0 => 4
-R2 HP: 11 - -1 => 12
+[Tick 63] R1,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
 
 
 [Tick 70] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 12 - -1 => 13
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+R2 HP: 9 - 3 => 6
+R1 HP: 10 - 3 => 7
 
 
-[Tick 72] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 13 - 0 => 13
+[Tick 72] B2,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+R2 HP: 6 - 2 => 4
 
 
-[Tick 75] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 13 - 0 => 13
+[Tick 84] B4, R4, B0, B1, B2,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+R2 HP: 4 - 2 => 2
+[BOON] Applied BulkupSTART to R2 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON] Refreshing existing HasteSTART on B3
+[REFRESH] HasteSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2 HP: 3 - 3 => 0
+R1 HP: 7 - 3 => 4
 
 
-[Tick 80] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 13 - 0 => 13
-R0 HP: 6 - 0 => 6
-R2 HP: 13 - -1 => 14
+[Tick 96] B2,  acting
+Survived Unit: R1, R4, B0, B1, B2, B3, B4, 
+R1 HP: 5 - 5 => 0
 
 
-[Tick 84] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 14 - 0 => 14
+[Tick 98] B1,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 3 => 5
 
 
-[Tick 90] R3, R4, B0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 14 - 0 => 14
-B4 HP: 4 - 3 => 1
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B4 HP: 1 - 0 => 1
-R2 HP: 14 - -1 => 15
+[Tick 102] B2,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+R4 HP: 5 - 2 => 3
 
 
-[Tick 96] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 15 - 0 => 15
-
-
-[Tick 100] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 15 - 0 => 15
-R0 HP: 6 - 0 => 6
-R2 HP: 15 - -1 => 16
-
-
-[Tick 105] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 16 - 0 => 16
-
-
-[Tick 108] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 16 - 0 => 16
-
-
-[Tick 110] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 16 - -1 => 17
-
-
-[Tick 120] R3, R4, B2, R0, B0, B3, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 17 - 0 => 17
-R0 HP: 6 - 0 => 6
-R2 HP: 17 - 0 => 17
-R2 HP: 17 - 0 => 17
-B4 HP: 3 - 3 => 0
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B2 HP: 10 - 0 => 10
-R2 HP: 17 - -1 => 18
-
-
-[Tick 130] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 18 - -1 => 19
-
-
-[Tick 132] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 19 - 0 => 19
-
-
-[Tick 135] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 19 - 0 => 19
-
-
-[Tick 140] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 19 - 0 => 19
-R0 HP: 6 - 0 => 6
-R2 HP: 19 - -1 => 20
-
-
-[Tick 144] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 20 - 0 => 20
-
-
-[Tick 150] R3, R4, B0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 20 - 0 => 20
-B2 HP: 10 - 3 => 7
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B2 HP: 7 - 0 => 7
-R2 HP: 20 - -1 => 21
-
-
-[Tick 156] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 21 - 0 => 21
-
-
-[Tick 160] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 21 - 0 => 21
-R0 HP: 6 - 0 => 6
-R2 HP: 21 - -1 => 22
-
-
-[Tick 165] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 22 - 0 => 22
-
-
-[Tick 168] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 22 - 0 => 22
-
-
-[Tick 170] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 22 - -1 => 23
-
-
-[Tick 180] R3, R4, B2, R0, B0, B3, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 23 - 0 => 23
-R0 HP: 6 - 0 => 6
-R2 HP: 23 - 0 => 23
-R2 HP: 23 - 0 => 23
-B2 HP: 7 - 3 => 4
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B2 HP: 4 - 0 => 4
-R2 HP: 23 - -1 => 24
-
-
-[Tick 190] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 24 - -1 => 25
-
-
-[Tick 192] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 25 - 0 => 25
-
-
-[Tick 195] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 25 - 0 => 25
-
-
-[Tick 200] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 25 - 0 => 25
-R0 HP: 6 - 0 => 6
-R2 HP: 25 - -1 => 26
-
-
-[Tick 204] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 26 - 0 => 26
-
-
-[Tick 210] R3, R4, B0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 26 - 0 => 26
-B2 HP: 4 - 3 => 1
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B2 HP: 1 - 0 => 1
-R2 HP: 26 - -1 => 27
-
-
-[Tick 216] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 27 - 0 => 27
-
-
-[Tick 220] B2, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 27 - 0 => 27
-R0 HP: 6 - 0 => 6
-R2 HP: 27 - -1 => 28
-
-
-[Tick 225] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 28 - 0 => 28
-
-
-[Tick 228] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 28 - 0 => 28
-
-
-[Tick 230] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 28 - -1 => 29
-
-
-[Tick 240] R3, R4, B2, R0, B0, B3, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-R2 HP: 29 - 0 => 29
-R0 HP: 6 - 0 => 6
-R2 HP: 29 - 0 => 29
-R2 HP: 29 - 0 => 29
-B2 HP: 3 - 3 => 0
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B0 HP: 10 - 0 => 10
-R2 HP: 29 - -1 => 30
-
-
-[Tick 250] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 30 - -1 => 31
-
-
-[Tick 252] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 31 - 0 => 31
-
-
-[Tick 255] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 31 - 0 => 31
-
-
-[Tick 260] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 31 - -1 => 32
-
-
-[Tick 264] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 32 - 0 => 32
-
-
-[Tick 270] R3, R4, R0, B0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 32 - 0 => 32
-B0 HP: 10 - 7 => 3
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B0 HP: 3 - 0 => 3
-R2 HP: 32 - -1 => 33
-
-
-[Tick 276] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 33 - 0 => 33
-
-
-[Tick 280] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 33 - -1 => 34
-
-
-[Tick 285] R0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-
-
-[Tick 286] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 34 - 0 => 34
-
-
-[Tick 288] B3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 34 - 0 => 34
-
-
-[Tick 290] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 34 - -1 => 35
-
-
-[Tick 300] R3, R4, R0, B3, B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
-R2 HP: 35 - 0 => 35
-B0 HP: 7 - 7 => 0
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B1 HP: 10 - 0 => 10
-R2 HP: 35 - -1 => 36
-
-
-[Tick 312] B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 36 - 0 => 36
-
-
-[Tick 315] R0,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-
-
-[Tick 320] B1,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 36 - -1 => 37
-
-
-[Tick 324] B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 37 - 0 => 37
-
-
-[Tick 330] R3, R4, R0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-B1 HP: 10 - 7 => 3
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B1 HP: 3 - 0 => 3
-R2 HP: 37 - -1 => 38
-
-
-[Tick 336] B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 38 - 0 => 38
-
-
-[Tick 345] R0,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-
-
-[Tick 348] B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 38 - 0 => 38
-
-
-[Tick 360] R3, R4, B1, R0, B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, 
-R2 HP: 38 - 0 => 38
-B1 HP: 7 - 7 => 0
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B3 HP: 11 - 0 => 11
-R2 HP: 38 - -1 => 39
-
-
-[Tick 372] B3,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-R2 HP: 39 - 0 => 39
-
-
-[Tick 375] R0,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-
-
-[Tick 384] B3,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-R2 HP: 39 - 0 => 39
-
-
-[Tick 390] R3, R4, R0,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-B3 HP: 11 - 6 => 5
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-B3 HP: 5 - 0 => 5
-
-
-[Tick 397] B3,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-R2 HP: 39 - 0 => 39
-
-
-[Tick 405] R0,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-
-
-[Tick 409] B3,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-R2 HP: 39 - 0 => 39
-
-
-[Tick 420] R3, R4, R0,  acting
-Survived Unit: R0, R2, R3, R4, B3, 
-B3 HP: 6 - 6 => 0
-[HEAL] R4 healed for 0 HP (from 8 to 8/8)
-Battle Over! Red Team wins!
+[Tick 105] B1,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+R4 HP: 3 - 3 => 0
+Battle Over! Blue Team wins!

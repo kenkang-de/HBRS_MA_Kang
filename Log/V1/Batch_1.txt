@@ -1,97 +1,346 @@
-Unit 0: R0 Attack:3 Defense:1 HP:6 Speed:3 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA26]
-Unit 1: R1 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW47](Cheer) Armor: [BSA1]
-Unit 2: R2 Attack:6 Defense:2 HP:12 Speed:1 Threat:7 Weapon: [BSW15](Taunt) Armor: [BSA39]
-Unit 3: R3 Attack:4 Defense:2 HP:12 Speed:4 Threat:5 Weapon: [BSW9](Blitz Attack) Armor: [BSA24]
-Unit 4: R4 Attack:6 Defense:1 HP:4 Speed:4 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA27]
-Unit 5: B0 Attack:0 Defense:1 HP:10 Speed:4 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA12]
-Unit 6: B1 Attack:-1 Defense:1 HP:7 Speed:3 Threat:2 Weapon: [BSW47](Cheer) Armor: [BSA19]
-Unit 7: B2 Attack:6 Defense:1 HP:6 Speed:2 Threat:5 Weapon: [BSW35](Chain Lightning) Armor: [BSA26]
-Unit 8: B3 Attack:1 Defense:1 HP:12 Speed:4 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA20]
-Unit 9: B4 Attack:3 Defense:0 HP:7 Speed:7 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA5]
+Unit 0: R0 Attack:3 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW5](Overpower) Armor: [BSA10]
+Unit 1: R1 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW37](Freeze) Armor: [BSA3]
+Unit 2: R2 Attack:2 Defense:0 HP:10 Speed:3 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA35]
+Unit 3: R3 Attack:0 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA41]
+Unit 4: R4 Attack:-2 Defense:5 HP:17 Speed:0 Threat:11 Weapon: [BSW45](Fatigue) Armor: [BSA48]
+Unit 5: B0 Attack:2 Defense:1 HP:8 Speed:3 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA25]
+Unit 6: B1 Attack:5 Defense:0 HP:8 Speed:7 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA4]
+Unit 7: B2 Attack:5 Defense:4 HP:10 Speed:2 Threat:7 Weapon: [BSW5](Overpower) Armor: [BSA31]
+Unit 8: B3 Attack:6 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA21]
+Unit 9: B4 Attack:3 Defense:4 HP:10 Speed:3 Threat:7 Weapon: [BSW24](Boost Acuity) Armor: [BSA37]
 ==========================
 
 
-[Tick 60] B4,  acting
+[Tick 30] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 12 - 1 => 11
-R1 HP: 10 - 3 => 7
+R4 HP: 17 - 0 => 17
 
 
-[Tick 105] R3, R4, B0, B3,  acting
+[Tick 42] R0, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 7 => 3
-B0 HP: 5 - 5 => 0
-R2 HP: 11 - 0 => 11
-[BOON] Applied ProtectSTART to B2 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+B2 HP: 10 - 0 => 10
+[BOON] Applied FreezeSTART to B2 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 120] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R2 HP: 11 - 1 => 10
-R1 HP: 7 - 3 => 4
+[Tick 60] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 17 - 0 => 17
 
 
-[Tick 140] R0, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-[HEAL] R2 healed for 2 HP (from 10 to 12/12)
-[HEAL] R1 healed for 3 HP (from 4 to 7/10)
-[HEAL] R3 healed for 0 HP (from 12 to 12/12)
+[Tick 70] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 17 - 0 => 17
+B2 HP: 10 - 0 => 10
 
 
-[Tick 180] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R2 HP: 12 - 1 => 11
-R1 HP: 7 - 3 => 4
+[Tick 84] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 210] B2, R3, R4, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-B2 HP: 7 - 7 => 0
-B3 HP: 12 - 5 => 7
-R2 HP: 11 - 0 => 11
-R2 HP: 11 - 7 => 4
-R1 HP: 7 - 7 => 0
-R3 HP: 12 - 7 => 5
+[Tick 90] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 17 - 0 => 17
 
 
-[Tick 240] B4,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, B4, 
-R2 HP: 4 - 1 => 3
-R3 HP: 5 - 1 => 4
+[Tick 105] B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 17 - 1 => 16
 
 
-[Tick 280] R0, B1,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, B4, 
-[HEAL] R2 healed for 3 HP (from 3 to 6/12)
-[HEAL] R3 healed for 3 HP (from 4 to 7/12)
-[HEAL] R4 healed for 3 HP (from 4 to 7/14)
+[Tick 120] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 16 - 0 => 16
 
 
-[Tick 300] B4,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, B4, 
-R2 HP: 6 - 1 => 5
-R3 HP: 7 - 1 => 6
+[Tick 126] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 315] R3, R4, B3,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, B4, 
-B3 HP: 7 - 7 => 0
-B4 HP: 7 - 6 => 1
-R2 HP: 5 - 0 => 5
+[Tick 140] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 16 - 0 => 16
+B2 HP: 10 - 0 => 10
 
 
-[Tick 361] B4,  acting
-Survived Unit: R0, R2, R3, R4, B1, B4, 
-R2 HP: 5 - 1 => 4
-R3 HP: 6 - 1 => 5
+[Tick 150] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 16 - 0 => 16
 
 
-[Tick 420] R2, R0, B1, R3, R4,  acting
-Survived Unit: R0, R2, R3, R4, B1, B4, 
-B4 HP: 6 - 6 => 0
-B1 HP: 7 - 7 => 0
-[HEAL] R3 healed for 3 HP (from 5 to 8/12)
-[HEAL] R2 healed for 3 HP (from 4 to 7/12)
-[HEAL] R4 healed for 3 HP (from 7 to 10/20)
-Battle Over! Red Team wins!
+[Tick 168] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 180] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 16 - 0 => 16
+
+
+[Tick 210] R3, B3, R2, B0, B4, R0, R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 16 - 0 => 16
+R4 HP: 16 - 0 => 16
+R4 HP: 16 - 8 => 8
+B2 HP: 10 - 0 => 10
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 240] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 0 => 8
+
+
+[Tick 252] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 270] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 0 => 8
+
+
+[Tick 280] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 0 => 8
+B2 HP: 10 - 0 => 10
+
+
+[Tick 294] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 300] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 0 => 8
+
+
+[Tick 315] B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 4 => 4
+
+
+[Tick 330] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 4 - 0 => 4
+
+
+[Tick 336] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 350] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 4 - 0 => 4
+B2 HP: 10 - 0 => 10
+
+
+[Tick 360] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 4 - 0 => 4
+
+
+[Tick 378] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 390] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 4 - 0 => 4
+
+
+[Tick 420] R3, B3, R2, B0, B4, R0, R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 4 - 0 => 4
+R4 HP: 4 - 0 => 4
+R4 HP: 11 - 11 => 0
+B2 HP: 10 - 0 => 10
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 450] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 0 => 12
+
+
+[Tick 462] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 480] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 0 => 12
+
+
+[Tick 490] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 0 => 12
+B2 HP: 10 - 0 => 10
+
+
+[Tick 504] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 510] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 0 => 12
+
+
+[Tick 525] B3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 12 - 3 => 9
+
+
+[Tick 540] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 0 => 9
+
+
+[Tick 546] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 560] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 0 => 9
+B2 HP: 10 - 0 => 10
+
+
+[Tick 570] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 0 => 9
+
+
+[Tick 588] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 600] B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 0 => 9
+
+
+[Tick 630] B3, R2, B0, B4, R0, R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R3 HP: 9 - 0 => 9
+R3 HP: 9 - 0 => 9
+R3 HP: 10 - 10 => 0
+B2 HP: 10 - 0 => 10
+B2 HP: 10 - 0 => 10
+[BOON] Refreshing existing FreezeSTART on B2
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+
+
+[Tick 660] B1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 0 => 10
+
+
+[Tick 672] R0,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+
+
+[Tick 690] B1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 0 => 10
+
+
+[Tick 700] R2, B0, B4,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 0 => 10
+B2 HP: 10 - 0 => 10
+
+
+[Tick 714] R0,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+
+
+[Tick 720] B1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+R1 HP: 10 - 0 => 10
+
+
+[Tick 735] B3,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
+R1 HP: 33 - 33 => 0
+
+
+[Tick 750] B1,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+R0 HP: 10 - 6 => 4
+
+
+[Tick 756] R0,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 0 => 10
+
+
+[Tick 770] R2, B0, B4,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+R0 HP: 8 - 8 => 0
+B2 HP: 10 - 0 => 10
+
+
+[Tick 780] B1,  acting
+Survived Unit: R2, B0, B1, B2, B3, B4, 
+R2 HP: 10 - 6 => 4
+
+
+[Tick 810] B1,  acting
+Survived Unit: R2, B0, B1, B2, B3, B4, 
+R2 HP: 6 - 6 => 0
+Battle Over! Blue Team wins!

@@ -10,42 +10,22 @@
 #include <iostream>
 #include <sstream>
 
+// Static variable definitions
+std::string BalancingLogToCSV::sharedRunDirectory = "";
+int BalancingLogToCSV::currentExperimentNumber = 1;
+
 void BalancingLogToCSV::Convert() {
-    // Create base output directory if it doesn't exist
-    std::string baseOutputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
-    std::filesystem::create_directories(baseOutputDir);
-
-    // Create timestamp-based subdirectory
-    auto now = std::chrono::system_clock::now();
-    auto time_t = std::chrono::system_clock::to_time_t(now);
-    auto tm = *std::localtime(&time_t);
-
-    std::ostringstream timestampStream;
-    timestampStream << std::put_time(&tm, "%Y%m%d_%H%M%S");
-    std::string timestamp = timestampStream.str();
-
-    std::string outputDir = baseOutputDir + "Run_" + timestamp + "\\";
+    // Use the shared run directory and create experiment subdirectory
+    std::string outputDir = sharedRunDirectory + "Experiment_" + std::to_string(currentExperimentNumber) + "\\";
     std::filesystem::create_directories(outputDir);
 
-    std::cout << "Created new run directory: " << outputDir << std::endl;
+    std::cout << "Using shared run directory: " << sharedRunDirectory << std::endl;
+    std::cout << "Created experiment directory: " << outputDir << std::endl;
 
-    // Generate unique filename in the new subdirectory
-    std::string baseFilename = "BalancingLogResults";
-    std::string extension = ".csv";
-    std::string filename = outputDir + baseFilename + extension;
+    // Generate filename in the new subdirectory
+    std::string filename = outputDir + "BalancingLogResults.csv";
 
-    // Check if file exists and generate unique name
-    int counter = 1;
-    std::ifstream testFile(filename);
-    while (testFile.good()) {
-        testFile.close();
-        filename = outputDir + baseFilename + "_" + std::to_string(counter) + extension;
-        testFile.open(filename);
-        counter++;
-    }
-    testFile.close();
-
-    // Create output file with unique name
+    // Create output file
     std::ofstream csvFile(filename);
 
     if (!csvFile.is_open()) {
@@ -134,4 +114,33 @@ void BalancingLogToCSV::Convert() {
 
     configFile.close();
     std::cout << "Configuration file created successfully: " << configFilename << std::endl;
+}
+
+// Initialize the shared run directory with timestamp
+void BalancingLogToCSV::InitializeRunDirectory() {
+    std::string baseOutputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
+    std::filesystem::create_directories(baseOutputDir);
+
+    auto now = std::chrono::system_clock::now();
+    auto time_t = std::chrono::system_clock::to_time_t(now);
+    auto tm = *std::localtime(&time_t);
+
+    std::ostringstream timestampStream;
+    timestampStream << std::put_time(&tm, "%Y%m%d_%H%M%S");
+    std::string timestamp = timestampStream.str();
+
+    sharedRunDirectory = baseOutputDir + "Run_" + timestamp + "\\";
+    std::filesystem::create_directories(sharedRunDirectory);
+
+    std::cout << "Initialized shared run directory: " << sharedRunDirectory << std::endl;
+}
+
+// Set the current experiment number
+void BalancingLogToCSV::SetExperimentNumber(int experimentNumber) {
+    currentExperimentNumber = experimentNumber;
+}
+
+// Get the shared run directory
+std::string BalancingLogToCSV::GetSharedDirectory() {
+    return sharedRunDirectory;
 }

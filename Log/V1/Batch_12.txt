@@ -1,168 +1,91 @@
-Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW44](Exposure) Armor: [BSA8]
-Unit 1: R1 Attack:4 Defense:1 HP:4 Speed:2 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA27]
-Unit 2: R2 Attack:1 Defense:2 HP:15 Speed:1 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA49]
-Unit 3: R3 Attack:3 Defense:5 HP:10 Speed:2 Threat:7 Weapon: [BSW20](Blitz Shot) Armor: [BSA45]
-Unit 4: R4 Attack:2 Defense:8 HP:10 Speed:4 Threat:5 Weapon: [BSW12](Final Attack) Armor: [BSA9]
-Unit 5: B0 Attack:1 Defense:3 HP:7 Speed:2 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA23]
-Unit 6: B1 Attack:-2 Defense:5 HP:15 Speed:1 Threat:10 Weapon: [BSW40](Grace) Armor: [BSA48]
-Unit 7: B2 Attack:3 Defense:11 HP:11 Speed:0 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA46]
-Unit 8: B3 Attack:1 Defense:0 HP:10 Speed:4 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA8]
-Unit 9: B4 Attack:6 Defense:3 HP:10 Speed:1 Threat:7 Weapon: [BSW14](Leech Attack) Armor: [BSA28]
+Unit 0: R0 Attack:6 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
+Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA29]
+Unit 2: R2 Attack:3 Defense:-2 HP:10 Speed:6 Threat:3 Weapon: [BSW31](Wrist Shot) Armor: [BSA9]
+Unit 3: R3 Attack:3 Defense:-1 HP:10 Speed:8 Threat:4 Weapon: [BSW3](Thrust) Armor: [BSA2]
+Unit 4: R4 Attack:1 Defense:3 HP:10 Speed:2 Threat:7 Weapon: [BSW39](Healing Link) Armor: [BSA28]
+Unit 5: B0 Attack:1 Defense:0 HP:12 Speed:2 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA38]
+Unit 6: B1 Attack:7 Defense:0 HP:10 Speed:4 Threat:1 Weapon: [BSW4](Berserk) Armor: [BSA16]
+Unit 7: B2 Attack:1 Defense:1 HP:10 Speed:0 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA43]
+Unit 8: B3 Attack:0 Defense:2 HP:10 Speed:2 Threat:5 Weapon: [BSW39](Healing Link) Armor: [BSA36]
+Unit 9: B4 Attack:2 Defense:1 HP:11 Speed:1 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA46]
 ==========================
 
 
-[Tick 4] R0,  acting
+[Tick 15] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 10 - 5 => 5
 
 
-[Tick 5] R4, B3,  acting
+[Tick 20] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 15 - 5 => 10
-[A12] R4 defense changed from 8 to 0
-R3 HP: 10 - 1 => 9
-R0 HP: 10 - 1 => 9
-R4 HP: 10 - 1 => 9
-R2 HP: 15 - 1 => 14
+B2 HP: 5 - 2 => 3
+[A25] B2 attack reduced from 1 to 0 (damage: 2, reduction: 1)
 
 
-[Tick 10] R1, R3, B0, R4, B3,  acting
+[Tick 24] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 HP: 11 - 11 => 0
+
+
+[Tick 30] B1, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
 B1 HP: 10 - 0 => 10
+R4 HP: 10 - 4 => 6
+B3 HP: 10 - 4 => 6
+
+
+[Tick 33] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+B3 HP: 6 - 4 => 2
+
+
+[Tick 36] B1, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
 B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-[BOON] Applied BulkupSTART to R3 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[BOON] Applied HasteSTART to B1 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R3 HP: 9 - 1 => 8
-R0 HP: 9 - 1 => 8
-R4 HP: 9 - 1 => 8
-R2 HP: 14 - 1 => 13
+R4 HP: 6 - 3 => 3
+B3 HP: 4 - 4 => 0
 
 
-[Tick 15] R4, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+[Tick 39] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
+B4 HP: 11 - 5 => 6
+
+
+[Tick 40] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
+B4 HP: 6 - 2 => 4
+[A25] B4 attack reduced from 2 to 1 (damage: 2, reduction: 1)
+
+
+[Tick 42] B1, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
 B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-R3 HP: 8 - 1 => 7
-R0 HP: 8 - 1 => 7
-R4 HP: 8 - 1 => 7
-R2 HP: 13 - 1 => 12
+R4 HP: 3 - 2 => 1
+B4 HP: 5 - 5 => 0
 
 
-[Tick 20] B4, R1, R3, B0, R4, B3, R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[AFTER-ACTION] No valid target found for R3
-R3 HP: 7 - 1 => 6
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-[BOON] Refreshing existing BulkupSTART on R3
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[BOON] Refreshing existing HasteSTART on B1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R3 HP: 6 - 1 => 5
-R0 HP: 7 - 1 => 6
-R4 HP: 7 - 1 => 6
-R2 HP: 12 - 1 => 11
+[Tick 44] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0 HP: 12 - 3 => 9
+[A25] B0 attack reduced from 1 to 0 (damage: 3, reduction: 1)
 
 
-[Tick 25] R4, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-R3 HP: 5 - 1 => 4
-R0 HP: 6 - 1 => 5
-R4 HP: 6 - 1 => 5
-R2 HP: 11 - 1 => 10
+[Tick 45] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0 HP: 9 - 6 => 3
 
 
-[Tick 30] R1, R3, B0, R4, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[AFTER-ACTION] No valid target found for R3
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-[BOON] Refreshing existing BulkupSTART on R3
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[BOON] Refreshing existing HasteSTART on B1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R3 HP: 4 - 1 => 3
-R0 HP: 5 - 1 => 4
-R4 HP: 5 - 1 => 4
-R2 HP: 10 - 1 => 9
+[Tick 48] R0, B1, R2, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0 HP: 12 - 12 => 0
+B1 HP: 10 - 3 => 7
+[A25] B1 attack reduced from 7 to 6 (damage: 3, reduction: 1)
+B1 HP: 7 - 0 => 7
+R4 HP: 1 - 0 => 1
+B1 HP: 7 - 6 => 1
 
 
-[Tick 35] R4, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-R3 HP: 3 - 1 => 2
-R0 HP: 4 - 1 => 3
-R4 HP: 4 - 1 => 3
-R2 HP: 9 - 1 => 8
-
-
-[Tick 40] B4, R1, R3, B0, R4, B3, R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[AFTER-ACTION] No valid target found for R3
-R3 HP: 2 - 1 => 1
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-[BOON] Refreshing existing BulkupSTART on R3
-[REFRESH] BulkupSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[BOON] Refreshing existing HasteSTART on B1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R3 HP: 1 - 1 => 0
-R0 HP: 3 - 1 => 2
-R4 HP: 3 - 1 => 2
-R2 HP: 8 - 1 => 7
-
-
-[Tick 45] R4, B3,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-R0 HP: 2 - 1 => 1
-R4 HP: 2 - 1 => 1
-R2 HP: 7 - 1 => 6
-R1 HP: 4 - 1 => 3
-
-
-[Tick 50] B0, R4, B3,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 0 => 10
-[A12] R4 defense changed from 0 to 0
-[BOON] Refreshing existing HasteSTART on B1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R0 HP: 1 - 1 => 0
-R4 HP: 1 - 1 => 0
-R2 HP: 6 - 1 => 5
-R1 HP: 3 - 1 => 2
-
-
-[Tick 55] B3,  acting
-Survived Unit: R1, R2, B0, B1, B2, B3, B4, 
-R2 HP: 5 - 1 => 4
-R1 HP: 2 - 1 => 1
-
-
-[Tick 60] B4, B0, B3,  acting
-Survived Unit: R1, R2, B0, B1, B2, B3, B4, 
-R2 HP: 4 - 4 => 0
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-[BOON] Refreshing existing HasteSTART on B1
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R1 HP: 1 - 1 => 0
-Battle Over! Blue Team wins!
+[Tick 51] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, 
+B1 HP: 6 - 6 => 0
+Battle Over! Red Team wins!
