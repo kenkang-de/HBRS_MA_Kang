@@ -1,216 +1,137 @@
-Unit 0: R0 Attack:7 Defense:3 HP:10 Speed:2 Threat:8 Weapon: [BSW11](Fade Attack) Armor: [BSA34]
-Unit 1: R1 Attack:1 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA1]
-Unit 2: R2 Attack:2 Defense:1 HP:12 Speed:1 Threat:7 Weapon: [BSW45](Fatigue) Armor: [BSA33]
-Unit 3: R3 Attack:1 Defense:3 HP:14 Speed:0 Threat:8 Weapon: [BSW45](Fatigue) Armor: [BSA44]
-Unit 4: R4 Attack:2 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW46](Protect) Armor: [BSA33]
-Unit 5: B0 Attack:1 Defense:0 HP:12 Speed:2 Threat:3 Weapon: [BSW36](Tetrodo) Armor: [BSA38]
-Unit 6: B1 Attack:1 Defense:-2 HP:10 Speed:6 Threat:6 Weapon: [BSW38](Healing Touch) Armor: [BSA3]
-Unit 7: B2 Attack:5 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA2]
-Unit 8: B3 Attack:3 Defense:0 HP:12 Speed:3 Threat:5 Weapon: [BSW6](Achilles' heel) Armor: [BSA38]
-Unit 9: B4 Attack:2 Defense:-1 HP:10 Speed:7 Threat:5 Weapon: [BSW22](Delay Shot) Armor: [BSA2]
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:5 Threat:0 Weapon: [BSW20](Blitz Shot) Armor: [BSA14]
+Unit 1: R1 Attack:3 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW24](Boost Acuity) Armor: [BSA6]
+Unit 2: R2 Attack:3 Defense:-2 HP:10 Speed:7 Threat:6 Weapon: [BSW13](Prep Attack) Armor: [BSA3]
+Unit 3: R3 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW37](Freeze) Armor: [BSA3]
+Unit 4: R4 Attack:1 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW34](Wind Blade) Armor: [BSA10]
+Unit 5: B0 Attack:1 Defense:4 HP:12 Speed:2 Threat:9 Weapon: [BSW38](Healing Touch) Armor: [BSA40]
+Unit 6: B1 Attack:1 Defense:1 HP:12 Speed:3 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA20]
+Unit 7: B2 Attack:5 Defense:1 HP:6 Speed:4 Threat:3 Weapon: [BSW6](Achilles' heel) Armor: [BSA26]
+Unit 8: B3 Attack:3 Defense:0 HP:10 Speed:2 Threat:2 Weapon: [BSW27](Tripple Shot) Armor: [BSA29]
+Unit 9: B4 Attack:1 Defense:0 HP:10 Speed:4 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA14]
 ==========================
 
 
-[Tick 30] B4,  acting
+[Tick 60] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 10 - 0 => 10
+B0 HP: 12 - 0 => 12
 
 
-[Tick 35] R1, B1,  acting
+[Tick 70] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 3 => 7
-B2 HP: 10 - 2 => 8
-B3 HP: 12 - 1 => 11
-[HEAL] B2 healed for 1 HP (from 8 to 9/10)
-
-
-[Tick 42] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2 HP: 9 - -1 => 10
-R0 HP: 10 - 6 => 4
-
-
-[Tick 60] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 4 - 0 => 4
-
-
-[Tick 70] B3, R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 3 => 4
-B2 HP: 10 - 2 => 8
-B3 HP: 11 - 1 => 10
-R0 HP: 4 - 0 => 4
-
-
-[Tick 84] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2 HP: 8 - -1 => 9
-R0 HP: 6 - 6 => 0
-
-
-[Tick 90] B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 14 - 0 => 14
-
-
-[Tick 105] B0, R1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 4 - 3 => 1
-B2 HP: 9 - 2 => 7
-B3 HP: 10 - 1 => 9
-[BOON] Applied Tetrodo Effect to R3 (Usage: 2)
-[A28] B0 applied Tetrodo Effect to R3 (usage: 2)
-
-
-[Tick 120] B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 14 - 0 => 14
-
-
-[Tick 126] B2,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2 HP: 7 - -1 => 8
-R3 HP: 14 - 6 => 8
-
-
-[Tick 140] B3, R1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 3 - 3 => 0
-B2 HP: 8 - 2 => 6
-B3 HP: 9 - 1 => 8
-R3 HP: 8 - 0 => 8
-
-
-[Tick 150] B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B2, B3, B4, 
-R3 HP: 8 - 0 => 8
-
-
-[Tick 168] B2,  acting
-Survived Unit: R1, R2, R3, R4, B0, B2, B3, B4, 
-B2 HP: 6 - -1 => 7
-R3 HP: 8 - 6 => 2
-
-
-[Tick 175] R1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B2, B3, B4, 
-B2 HP: 7 - 2 => 5
-B3 HP: 8 - 1 => 7
-B4 HP: 10 - 2 => 8
-
-
-[Tick 180] B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B2, B3, B4, 
-R3 HP: 2 - 0 => 2
-
-
-[Tick 210] R2, R4, B0, B3, B2, R1, B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B2, B3, B4, 
-B2 HP: 5 - 2 => 3
-B3 HP: 7 - 1 => 6
-B4 HP: 8 - 2 => 6
-R3 HP: 2 - 0 => 2
-R3 HP: 2 - 0 => 2
-B2 HP: 3 - -1 => 4
-R3 HP: 6 - 6 => 0
-[BOON] Applied ProtectSTART to R2 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[BOON] Applied Tetrodo Effect to R2 (Usage: 2)
-[A28] B0 applied Tetrodo Effect to R2 (usage: 2)
-
-
-[Tick 240] B4,  acting
-Survived Unit: R1, R2, R4, B0, B2, B3, B4, 
-R2 HP: 12 - 1 => 11
-
-
-[Tick 245] R1,  acting
-Survived Unit: R1, R2, R4, B0, B2, B3, B4, 
-B2 HP: 4 - 2 => 2
-B3 HP: 6 - 1 => 5
-B4 HP: 6 - 2 => 4
-
-
-[Tick 246] B4,  acting
-Survived Unit: R1, R2, R4, B0, B2, B3, B4, 
-R2 HP: 11 - 1 => 10
-
-
-[Tick 252] B2, R1, B4,  acting
-Survived Unit: R1, R2, R4, B0, B2, B3, B4, 
-B2 HP: 2 - 2 => 0
-B3 HP: 5 - 1 => 4
-B4 HP: 4 - 2 => 2
-R2 HP: 10 - 1 => 9
-
-
-[Tick 258] B4,  acting
-Survived Unit: R1, R2, R4, B0, B3, B4, 
-R2 HP: 9 - 1 => 8
-
-
-[Tick 259] R1,  acting
-Survived Unit: R1, R2, R4, B0, B3, B4, 
-B3 HP: 4 - 1 => 3
-B4 HP: 2 - 2 => 0
 B0 HP: 12 - 1 => 11
 
 
-[Tick 266] R1,  acting
-Survived Unit: R1, R2, R4, B0, B3, 
-B3 HP: 3 - 1 => 2
-B0 HP: 11 - 1 => 10
-
-
-[Tick 273] R1,  acting
-Survived Unit: R1, R2, R4, B0, B3, 
-B3 HP: 2 - 1 => 1
-B0 HP: 10 - 1 => 9
-
-
-[Tick 280] B3, R1,  acting
-Survived Unit: R1, R2, R4, B0, B3, 
-B3 HP: 1 - 1 => 0
+[Tick 84] R0, R3, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 11 - 2 => 9
+[BOON] Applied FreezeSTART to B0 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 B0 HP: 9 - 1 => 8
+B2 HP: 6 - 1 => 5
 
 
-[Tick 287] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
+[Tick 105] B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 HP: 10 - 3 => 7
+R3 HP: 10 - 3 => 7
+R1 HP: 10 - 2 => 8
+R2 HP: 7 - 7 => 0
+
+
+[Tick 140] B1, R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 7 - 3 => 4
+R1 HP: 8 - 2 => 6
+R4 HP: 10 - 1 => 9
 B0 HP: 8 - 1 => 7
 
 
-[Tick 294] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
+[Tick 160] R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
 B0 HP: 7 - 1 => 6
 
 
-[Tick 301] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
-B0 HP: 6 - 1 => 5
+[Tick 168] R0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 6 - 2 => 4
 
 
-[Tick 308] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
-B0 HP: 5 - 1 => 4
-
-
-[Tick 315] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
+[Tick 180] B1, R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 4 - 3 => 1
+R1 HP: 6 - 2 => 4
+R4 HP: 9 - 1 => 8
 B0 HP: 4 - 1 => 3
 
 
-[Tick 322] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
-B0 HP: 3 - 1 => 2
+[Tick 192] R0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 3 - 2 => 1
 
 
-[Tick 329] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
-B0 HP: 2 - 1 => 1
-
-
-[Tick 336] R1,  acting
-Survived Unit: R1, R2, R4, B0, 
+[Tick 200] R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
 B0 HP: 1 - 1 => 0
-Battle Over! Red Team wins!
+
+
+[Tick 210] B3, B2, B4,  acting
+Survived Unit: R0, R1, R3, R4, B1, B2, B3, B4, 
+R3 HP: 5 - 5 => 0
+R1 HP: 4 - 4 => 0
+R4 HP: 8 - 3 => 5
+R4 HP: 5 - 1 => 4
+R0 HP: 10 - 1 => 9
+R4 HP: 5 - 5 => 0
+
+
+[Tick 216] R0,  acting
+Survived Unit: R0, B1, B2, B3, B4, 
+B2 HP: 5 - 5 => 0
+
+
+[Tick 220] B1,  acting
+Survived Unit: R0, B1, B3, B4, 
+R0 HP: 9 - 1 => 8
+
+
+[Tick 240] B4, R0,  acting
+Survived Unit: R0, B1, B3, B4, 
+R0 HP: 8 - 1 => 7
+B1 HP: 12 - 5 => 7
+
+
+[Tick 260] B1,  acting
+Survived Unit: R0, B1, B3, B4, 
+R0 HP: 7 - 1 => 6
+
+
+[Tick 264] R0,  acting
+Survived Unit: R0, B1, B3, B4, 
+B1 HP: 7 - 5 => 2
+
+
+[Tick 270] B3, B4,  acting
+Survived Unit: R0, B1, B3, B4, 
+R0 HP: 6 - 3 => 3
+R0 HP: 3 - 1 => 2
+
+
+[Tick 288] R0,  acting
+Survived Unit: R0, B1, B3, B4, 
+B1 HP: 5 - 5 => 0
+
+
+[Tick 300] B4,  acting
+Survived Unit: R0, B3, B4, 
+R0 HP: 2 - 1 => 1
+
+
+[Tick 312] R0,  acting
+Survived Unit: R0, B3, B4, 
+B3 HP: 10 - 6 => 4
+
+
+[Tick 330] B4,  acting
+Survived Unit: R0, B3, B4, 
+R0 HP: 1 - 1 => 0
+Battle Over! Blue Team wins!

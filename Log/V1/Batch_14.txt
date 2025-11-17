@@ -1,119 +1,130 @@
-Unit 0: R0 Attack:-2 Defense:3 HP:10 Speed:2 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA22]
-Unit 1: R1 Attack:1 Defense:-2 HP:10 Speed:4 Threat:4 Weapon: [BSW47](Cheer) Armor: [BSA9]
-Unit 2: R2 Attack:7 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW11](Fade Attack) Armor: [BSA46]
-Unit 3: R3 Attack:2 Defense:1 HP:10 Speed:2 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA33]
-Unit 4: R4 Attack:2 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA25]
-Unit 5: B0 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW42](Haste) Armor: [BSA16]
-Unit 6: B1 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
-Unit 7: B2 Attack:3 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA5]
-Unit 8: B3 Attack:-1 Defense:15 HP:15 Speed:0 Threat:11 Weapon: [BSW12](Final Attack) Armor: [BSA48]
-Unit 9: B4 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW45](Fatigue) Armor: [BSA29]
+Unit 0: R0 Attack:0 Defense:-1 HP:10 Speed:5 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA2]
+Unit 1: R1 Attack:5 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA13]
+Unit 2: R2 Attack:4 Defense:3 HP:14 Speed:2 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA44]
+Unit 3: R3 Attack:2 Defense:3 HP:10 Speed:1 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA34]
+Unit 4: R4 Attack:5 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW29](Camo Throw) Armor: [BSA5]
+Unit 5: B0 Attack:5 Defense:4 HP:10 Speed:1 Threat:7 Weapon: [BSW14](Leech Attack) Armor: [BSA37]
+Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:6 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA9]
+Unit 7: B2 Attack:3 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW31](Wrist Shot) Armor: [BSA30]
+Unit 8: B3 Attack:1 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW36](Tetrodo) Armor: [BSA44]
+Unit 9: B4 Attack:3 Defense:0 HP:7 Speed:7 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA5]
 ==========================
 
 
-[Tick 12] B2,  acting
+[Tick 30] R4, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 10 - 0 => 10
+B0 HP: 10 - 1 => 9
+R0 HP: 10 - 4 => 6
+R3 HP: 10 - 0 => 10
 
 
-[Tick 14] B1,  acting
+[Tick 35] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 10 - 3 => 7
-R3 HP: 10 - 3 => 7
+R0 HP: 6 - 6 => 0
 
 
-[Tick 21] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+[Tick 42] R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 9 - 4 => 5
 
 
-[Tick 24] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 7 - 0 => 7
+[Tick 60] R4, B4,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 5 - 1 => 4
+R3 HP: 10 - 0 => 10
+R2 HP: 14 - 0 => 14
 
 
-[Tick 28] B0, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-[BOON] Applied HasteSTART to B3 (Usage: 1)
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R0 HP: 7 - 3 => 4
-R3 HP: 7 - 3 => 4
+[Tick 70] B2, B1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3 HP: 10 - 0 => 10
+R3 HP: 10 - 6 => 4
 
 
-[Tick 36] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 4 - 0 => 4
+[Tick 84] R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 HP: 4 - 4 => 0
 
 
-[Tick 42] R4, R1, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-[BOON] Applied BulkupSTART to R0 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-R0 HP: 4 - 3 => 1
-R3 HP: 4 - 3 => 1
+[Tick 90] R4, B4,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+B2 HP: 10 - 3 => 7
+R3 HP: 4 - 0 => 4
+R2 HP: 14 - 0 => 14
 
 
-[Tick 48] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 1 - 0 => 1
+[Tick 105] R2, B1,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
+R3 HP: 6 - 6 => 0
+B2 HP: 7 - 6 => 1
 
 
-[Tick 56] B0, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-[BOON] Refreshing existing HasteSTART on B3
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R0 HP: 3 - 3 => 0
-R3 HP: 3 - 3 => 0
+[Tick 120] R4, B4,  acting
+Survived Unit: R1, R2, R4, B1, B2, B3, B4, 
+B2 HP: 3 - 3 => 0
+R2 HP: 14 - 0 => 14
+R1 HP: 11 - 2 => 9
 
 
-[Tick 60] B2,  acting
-Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
-R2 HP: 11 - 2 => 9
+[Tick 126] R1,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+B3 HP: 12 - 4 => 8
 
 
-[Tick 63] R1,  acting
-Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+[Tick 140] B1,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+R2 HP: 14 - 6 => 8
 
 
-[Tick 70] B1,  acting
-Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
-R2 HP: 9 - 3 => 6
-R1 HP: 10 - 3 => 7
+[Tick 150] R4, B4,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+B3 HP: 8 - 2 => 6
+R2 HP: 8 - 0 => 8
+R1 HP: 9 - 2 => 7
 
 
-[Tick 72] B2,  acting
-Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
-R2 HP: 6 - 2 => 4
+[Tick 168] R1,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+B3 HP: 6 - 4 => 2
 
 
-[Tick 84] B4, R4, B0, B1, B2,  acting
-Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
-R2 HP: 4 - 2 => 2
-[BOON] Applied BulkupSTART to R2 (Usage: 1)
-[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
-[BOON] Refreshing existing HasteSTART on B3
-[REFRESH] HasteSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
-R2 HP: 3 - 3 => 0
-R1 HP: 7 - 3 => 4
+[Tick 175] B1,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+R2 HP: 8 - 6 => 2
 
 
-[Tick 96] B2,  acting
-Survived Unit: R1, R4, B0, B1, B2, B3, B4, 
-R1 HP: 5 - 5 => 0
+[Tick 180] R4, B4,  acting
+Survived Unit: R1, R2, R4, B1, B3, B4, 
+B3 HP: 2 - 2 => 0
+R2 HP: 2 - 0 => 2
+R1 HP: 7 - 2 => 5
 
 
-[Tick 98] B1,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-R4 HP: 8 - 3 => 5
+[Tick 210] R2, R1, B1, R4, B4,  acting
+Survived Unit: R1, R2, R4, B1, B4, 
+B4 HP: 7 - -2 => 9
+R2 HP: 6 - 6 => 0
+B4 HP: 9 - 5 => 4
+R1 HP: 5 - 2 => 3
+R4 HP: 7 - 3 => 4
 
 
-[Tick 102] B2,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-R4 HP: 5 - 2 => 3
+[Tick 240] R4,  acting
+Survived Unit: R1, R4, B1, B4, 
+B4 HP: 5 - 5 => 0
 
 
-[Tick 105] B1,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-R4 HP: 3 - 3 => 0
+[Tick 245] B1,  acting
+Survived Unit: R1, R4, B1, 
+R1 HP: 6 - 6 => 0
+
+
+[Tick 270] R4,  acting
+Survived Unit: R4, B1, 
+B1 HP: 10 - 7 => 3
+
+
+[Tick 281] B1,  acting
+Survived Unit: R4, B1, 
+R4 HP: 6 - 6 => 0
 Battle Over! Blue Team wins!

@@ -265,11 +265,21 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
 
     // Generation Progression
     // Second to max generation
-    while (Generation < ExperimentSettings::MAXGENERATION &&
-           // If the highest fitness score among all chromosomes has reached the threshold
-           GetHighestFitnessChromosome(currentGenChromosomeList)->Get_Fitness() <= FITNESS_MAX - FITNESS_THRESHOLD) {
+    while (Generation < ExperimentSettings::MAXGENERATION) {
 
         std::cout << "[Generation:" << Generation << "]" << std::endl;
+
+        // Simulate CurrentGenChromosomes
+        for (size_t i = 0; i < currentGenChromosomeList.size(); ++i) {
+            Chromosome *currentGenChromosome = currentGenChromosomeList[i];
+            SimulateChromosome(simulator, &batches, currentGenChromosome, combinedTestSubjects);
+            BalancingLog(Generation + 1, currentGenChromosome->Get_Fitness(), currentGenChromosome->Get_MRSE(),
+                         currentGenChromosome->Get_DOC());
+        }
+
+        // If the highest fitness score among all chromosomes has reached the threshold
+        if (GetHighestFitnessChromosome(currentGenChromosomeList)->Get_Fitness() >= FITNESS_MAX - FITNESS_THRESHOLD)
+            break;
 
         // Get top ELITES_PER_GENERATION chromosomes (sorted by fitness, highest first)
         std::vector<Chromosome *> sortedChromosomes = currentGenChromosomeList;
@@ -318,26 +328,19 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
             }
         }
 
-        std::cout << "Individual Count: " << nextGenChromosomeList.size() << std::endl;
+        std::cout << "Highest Fitness: " << currentGenChromosomeList[0]->Get_Fitness() << std::endl;
 
         // Mutation
         Mutation::GaussianMutation(nextGenChromosomeList);
 
         // batches = batchCreator.CreateBatches(*batchConfig);
 
-        // Simulate NextGenerations
-        for (size_t i = ExperimentSettings::ELITES_PER_GENERATION; i < nextGenChromosomeList.size(); ++i) {
-            Chromosome *nextGenChromosome = nextGenChromosomeList[i];
-            SimulateChromosome(simulator, &batches, nextGenChromosome, combinedTestSubjects);
-            BalancingLog(Generation + 1, nextGenChromosome->Get_Fitness(), nextGenChromosome->Get_MRSE(),
-                         nextGenChromosome->Get_DOC());
-        }
-
         // Cleanup all chromosomes since we create copies for survivors
         for (Chromosome *currentGenChromosome : currentGenChromosomeList) {
             delete currentGenChromosome;
         }
 
+        // Move NextGenChromosomes to currentGenChromosomes
         currentGenChromosomeList = nextGenChromosomeList;
         nextGenChromosomeList.clear();
 

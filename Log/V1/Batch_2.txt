@@ -1,96 +1,76 @@
-Unit 0: R0 Attack:3 Defense:3 HP:10 Speed:4 Threat:4 Weapon: [BSW22](Delay Shot) Armor: [BSA21]
-Unit 1: R1 Attack:4 Defense:5 HP:10 Speed:2 Threat:8 Weapon: [BSW23](All-Out Assault) Armor: [BSA45]
-Unit 2: R2 Attack:3 Defense:0 HP:10 Speed:6 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA1]
-Unit 3: R3 Attack:4 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA2]
-Unit 4: R4 Attack:7 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW18](Killing Spree) Armor: [BSA26]
-Unit 5: B0 Attack:7 Defense:4 HP:15 Speed:0 Threat:9 Weapon: [BSW16](Killer's Spirit) Armor: [BSA50]
-Unit 6: B1 Attack:-2 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW38](Healing Touch) Armor: [BSA22]
-Unit 7: B2 Attack:3 Defense:0 HP:12 Speed:3 Threat:5 Weapon: [BSW7](Poison Attack) Armor: [BSA38]
-Unit 8: B3 Attack:3 Defense:0 HP:10 Speed:5 Threat:2 Weapon: [BSW28](Heavy Shot) Armor: [BSA10]
-Unit 9: B4 Attack:3 Defense:-2 HP:10 Speed:7 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA3]
+Unit 0: R0 Attack:4 Defense:-2 HP:10 Speed:5 Threat:8 Weapon: [BSW35](Chain Lightning) Armor: [BSA3]
+Unit 1: R1 Attack:6 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW10](Reckless Attack) Armor: [BSA50]
+Unit 2: R2 Attack:5 Defense:4 HP:12 Speed:2 Threat:7 Weapon: [BSW28](Heavy Shot) Armor: [BSA40]
+Unit 3: R3 Attack:5 Defense:-1 HP:12 Speed:3 Threat:4 Weapon: [BSW8](Charge Attack) Armor: [BSA32]
+Unit 4: R4 Attack:1 Defense:4 HP:14 Speed:1 Threat:10 Weapon: [BSW45](Fatigue) Armor: [BSA40]
+Unit 5: B0 Attack:1 Defense:0 HP:12 Speed:5 Threat:2 Weapon: [BSW22](Delay Shot) Armor: [BSA17]
+Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA3]
+Unit 7: B2 Attack:3 Defense:4 HP:10 Speed:2 Threat:6 Weapon: [BSW34](Wind Blade) Armor: [BSA31]
+Unit 8: B3 Attack:5 Defense:0 HP:10 Speed:3 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA29]
+Unit 9: B4 Attack:6 Defense:0 HP:8 Speed:4 Threat:2 Weapon: [BSW11](Fade Attack) Armor: [BSA15]
 ==========================
 
 
-[Tick 60] B4,  acting
+[Tick 60] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 10 - 5 => 5
+R4 HP: 14 - 8 => 6
 
 
-[Tick 70] R2, R3,  acting
+[Tick 84] R0, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 15 - 0 => 15
-B0 HP: 15 - 0 => 15
+R4 HP: 6 - 0 => 6
+B1 HP: 10 - 4 => 6
+B2 HP: 10 - 4 => 6
+B0 HP: 12 - 4 => 8
 
 
-[Tick 84] B3,  acting
+[Tick 105] B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 5 - 1 => 4
-
-
-[Tick 105] R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 15 - 0 => 15
-
-
-[Tick 120] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 5 - 5 => 0
-
-
-[Tick 126] R0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 15 - 0 => 15
-
-
-[Tick 132] B4,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 HP: 10 - 10 => 0
-
-
-[Tick 140] R4, B1, B2, R3,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 15 - 3 => 12
-B0 HP: 12 - 0 => 12
-R0 HP: 10 - 0 => 10
-[BOON] Applied Poison Effect to R0 (Usage: 3)
-[A28] B2 applied Poison Effect to R0 (usage: 3)
-[HEAL] B0 healed for -2 HP (from 12 to 10/15)
-
-
-[Tick 144] B4,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 10 - 7 => 3
-
-
-[Tick 148] R0,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 0 => 10
-[AFTER-ACTION] No valid target found for R0
-
-
-[Tick 154] R3,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 0 => 10
-
-
-[Tick 156] B4,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 7 - 7 => 0
-
-
-[Tick 168] B3, R4, B1, B2, R3, B4,  acting
-Survived Unit: R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 10 - 7 => 3
-B0 HP: 10 - 3 => 7
-B0 HP: 7 - 0 => 7
-R3 HP: 11 - 11 => 0
 R4 HP: 6 - 2 => 4
-[BOON] Applied Poison Effect to R4 (Usage: 3)
-[A28] B2 applied Poison Effect to R4 (usage: 3)
-[HEAL] B0 healed for -2 HP (from 7 to 5/15)
 
 
-[Tick 180] B4,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-R4 HP: 9 - 9 => 0
-Battle Over! Blue Team wins!
+[Tick 120] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4 HP: 8 - 8 => 0
+
+
+[Tick 140] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R0 HP: 10 - 6 => 4
+B1 HP: 10 - 10 => 0
+
+
+[Tick 168] B0,  acting
+Survived Unit: R0, R1, R2, R3, B0, B2, B3, B4, 
+R0 HP: 4 - 3 => 1
+
+
+[Tick 210] R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, B0, B2, B3, B4, 
+B2 HP: 6 - 6 => 0
+R0 HP: 8 - 8 => 0
+
+
+[Tick 252] B0,  acting
+Survived Unit: R1, R2, R3, B0, B3, B4, 
+R1 HP: 15 - 0 => 15
+
+
+[Tick 280] R3, B3,  acting
+Survived Unit: R1, R2, R3, B0, B3, B4, 
+R1 HP: 15 - 6 => 9
+B0 HP: 8 - 8 => 0
+
+
+[Tick 315] B4,  acting
+Survived Unit: R1, R2, R3, B3, B4, 
+R1 HP: 9 - 2 => 7
+
+
+[Tick 420] R2, R3, B3, B4,  acting
+Survived Unit: R1, R2, R3, B3, B4, 
+B3 HP: 10 - 10 => 0
+R1 HP: 7 - 6 => 1
+B4 HP: 8 - 8 => 0
+R1 HP: 2 - 2 => 0
+Battle Over! Red Team wins!
