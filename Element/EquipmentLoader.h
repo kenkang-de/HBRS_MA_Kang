@@ -2,26 +2,27 @@
 #define EQUIPMENT_LOADER_H
 
 #include "../Paths.h"
-#include <vector>
-#include <string>
 #include <fstream>
-#include <sstream>
 #include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
 
-#include "ElementList.h"
 #include "../Simulator/BattleAction.h"
+#include "ElementList.h"
 
 class EquipmentLoader {
-private:
-
-    
-public:
+  private:
+  public:
     ElementList equipment;
 
-    void LoadArmorListFromCSV(const std::string& filepath);
-    void LoadWeaponListFromCSV(const std::string& filepath, const std::unordered_map<std::string, BattleAction>& actionMap);
+    void LoadArmorListFromCSV(const std::string &filepath);
+    void LoadWeaponListFromCSV(const std::string &filepath,
+                               const std::unordered_map<std::string, BattleAction> &actionMap);
 
-    ElementList InstantiateElements(const std::unordered_map<std::string,BattleAction>& actionMap);
+    ElementList InstantiateElements(const std::unordered_map<std::string, BattleAction> &actionMap);
+    ElementList InstantiateElements(const std::unordered_map<std::string, BattleAction> &actionMap,
+                                    std::string weaponFile, std::string armorFile);
 };
 
-#endif 
+#endif

@@ -6,22 +6,19 @@ Battlefield::Battlefield(std::array<Unit *, 5> redTeamPtrs, std::array<Unit *, 5
     SetAlliesandEnemies();
 }
 
-Team *Battlefield::GetWinnerTeam() {
-    if (redTeam.HasTeamLost()) {
-        return &blueTeam;
-    } else if (blueTeam.HasTeamLost()) {
-        return &redTeam;
-    }
-    return nullptr;
-}
+BATTLERESULT Battlefield::GetBattleResult() {
+    bool redLost = redTeam.HasTeamLost();
+    bool blueLost = blueTeam.HasTeamLost();
 
-Team *Battlefield::GetLoserTeam() {
-    if (redTeam.HasTeamLost()) {
-        return &redTeam;
-    } else if (blueTeam.HasTeamLost()) {
-        return &blueTeam;
+    if (redLost && blueLost) {
+        return DRAW;
     }
-    return nullptr;
+    if (redLost) {
+        return BLUEWIN;
+    } else if (blueLost) {
+        return REDWIN;
+    }
+    return ONGOING;
 }
 
 void Battlefield::SetAlliesandEnemies() {

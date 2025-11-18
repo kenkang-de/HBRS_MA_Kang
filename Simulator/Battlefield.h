@@ -6,6 +6,8 @@
 
 class Unit;
 
+enum BATTLERESULT { REDWIN, BLUEWIN, DRAW, ONGOING };
+
 struct Battlefield {
   private:
     Team redTeam;
@@ -24,8 +26,7 @@ struct Battlefield {
         return &blueTeam;
     }
 
-    Team *GetWinnerTeam();
-    Team *GetLoserTeam();
+    BATTLERESULT GetBattleResult();
 };
 
-#endif // BATTLEFIELD_HPP
+#endif

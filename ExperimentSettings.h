@@ -14,7 +14,7 @@ class ExperimentSettings {
     static constexpr int Default_APPLIEDSTAT_RANGE = 10;
     static constexpr int Default_INDIVIDUALS_PER_GENERATION = 50;
     static constexpr int Default_MAXGENERATION = 50;
-    static constexpr int Default_ELITES_PER_GENERATION = 4;
+    static constexpr int Default_ELITES_PER_GENERATION = 1;
     static constexpr float Default_CROSSOVER_PROBABILITY = 0.9f;
     static constexpr float Default_MUTATION_PROBABILITY = 0.3f;
     static constexpr float Default_MUTATION_SIGMA = 1.2f;

@@ -21,8 +21,9 @@ const std::unordered_map<std::string, ConditionFn> ActionLibrary::conditionMap =
      [](const ActionContext &ctx) {
          return ctx.actor->GetTotalStat().GetAttack() <= ctx.target->GetTotalStat().GetDefense();
      }},
-    // Actor's HP is higher than Target's HP
-    {"C03", [](const ActionContext &ctx) { return ctx.actor->GetCurrentHP() > ctx.target->GetCurrentHP(); }},
+    // Actor's Total HP is higher than Target's Total HP
+    {"C03",
+     [](const ActionContext &ctx) { return ctx.actor->GetTotalStat().GetHP() > ctx.target->GetTotalStat().GetHP(); }},
     // Actor's Attack is higher than 0
     {"C04", [](const ActionContext &ctx) { return ctx.actor->GetTotalStat().GetAttack() > 0; }},
     // Check Target is killed
@@ -169,7 +170,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          }
      }},
 
-    // Raise Target's Defense by Action's Threat
+    // Raise Target's Defense by (actor's Threat)
     {"A02",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
@@ -178,7 +179,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          }
      }},
 
-    // Deals undefendable damage (actor's Attack)
+    // Deals undefendable damage to target by (actor's Attack)
     {"A03",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
@@ -191,6 +192,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
              int value = ctx.actor->GetTotalStat().GetHP() - ctx.actor->GetTotalStat().GetDefense();
+             value = std::max(0,value);
              ctx.actor->GetTotalStat().SetAttack(ctx.actor->GetTotalStat().GetAttack() + value);
          }
      }},
@@ -199,7 +201,8 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     {"A05",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
-             ctx.actor->TakeDamage(ctx.actor->GetTotalStat().GetDefense(), false, ctx.actor);
+            int value = std::max(0,ctx.actor->GetTotalStat().GetDefense());
+             ctx.actor->TakeDamage(value, false, ctx.actor);
          }
      }},
 
@@ -339,6 +342,16 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
                                                    ctx.actor->GetTotalStat().GetThreat());
          }
      }},
+     
+     // Raise Actor's Attack by (actor's Defense) 
+     {"A39",
+     [](const ActionContext &ctx) {
+         if (ctx.actor) {
+            int value = std::max(0,ctx.actor->GetTotalStat().GetDefense());
+             ctx.actor->GetTotalStat().SetAttack(ctx.actor->GetTotalStat().GetAttack() + value);
+         }
+     }},
+
     
     
 };

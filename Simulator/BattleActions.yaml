@@ -17,7 +17,7 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C00_A02"]
+  actionIDs: ["C00_A00", "C00_A38"]
 
 - id: Shoot
   targetNumber: 1
@@ -52,7 +52,7 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A05", "C00_A00", "C00_A02"]
+  actionIDs: ["C00_A05", "C00_A00", "C00_A39"]
 
 - id: Achilles' heel
   targetNumber: 1

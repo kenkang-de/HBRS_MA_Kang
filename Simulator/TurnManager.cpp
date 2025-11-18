@@ -16,7 +16,7 @@ int TurnManager::ComputeLCM(std::vector<Unit *> units) {
 
     int result = 1;
     for (Unit *unit : units) {
-        if (unit != nullptr) {
+        if (unit != nullptr && unit->IsAlive()) {
             int speed = unit->GetTotalStat().GetSpeed();
             if (speed <= 0)
                 continue;

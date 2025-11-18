@@ -1,23 +1,24 @@
+#include <cctype>
 #include <fstream>
+#include <iostream>
 #include <sstream>
 #include <string>
-#include <vector>
 #include <unordered_map>
-#include <iostream>  
-#include <cctype>    
+#include <vector>
 
+#include "../Simulator/Armor.h"
+#include "../Simulator/BattleAction.h"
+#include "../Simulator/Weapon.h"
 #include "ElementList.h"
 #include "EquipmentLoader.h"
-#include "../Simulator/BattleAction.h"
 #include "Stat.h"
-#include "../Simulator/Weapon.h"  
-#include "../Simulator/Armor.h"   
 
 #include "Paths.h"
 
-static std::string Trim(const std::string& str) {
+static std::string Trim(const std::string &str) {
     auto start = str.begin();
-    while (start != str.end() && std::isspace(*start)) start++;
+    while (start != str.end() && std::isspace(*start))
+        start++;
 
     auto end = str.end();
     do {
@@ -27,8 +28,7 @@ static std::string Trim(const std::string& str) {
     return std::string(start, end + 1);
 }
 
-void EquipmentLoader::LoadArmorListFromCSV(const std::string& filepath)
-{
+void EquipmentLoader::LoadArmorListFromCSV(const std::string &filepath) {
     std::ifstream file(filepath);
     std::string line;
 
@@ -44,11 +44,16 @@ void EquipmentLoader::LoadArmorListFromCSV(const std::string& filepath)
         std::getline(ss, type, ',');
         std::getline(ss, name, ',');
 
-        std::getline(ss, token, ','); atk = std::stoi(token);
-        std::getline(ss, token, ','); def = std::stoi(token);
-        std::getline(ss, token, ','); spd = std::stoi(token);
-        std::getline(ss, token, ','); thr = std::stoi(token);
-        std::getline(ss, token, ','); hp  = std::stoi(token);
+        std::getline(ss, token, ',');
+        atk = std::stoi(token);
+        std::getline(ss, token, ',');
+        def = std::stoi(token);
+        std::getline(ss, token, ',');
+        spd = std::stoi(token);
+        std::getline(ss, token, ',');
+        thr = std::stoi(token);
+        std::getline(ss, token, ',');
+        hp = std::stoi(token);
 
         Stat stat(atk, def, hp, spd, thr);
         Armor armor(id, name, stat);
@@ -57,9 +62,8 @@ void EquipmentLoader::LoadArmorListFromCSV(const std::string& filepath)
     }
 }
 
-
-void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath,const std::unordered_map<std::string, BattleAction>& actionMap)
-{
+void EquipmentLoader::LoadWeaponListFromCSV(const std::string &filepath,
+                                            const std::unordered_map<std::string, BattleAction> &actionMap) {
     std::ifstream file(filepath);
     std::string line;
 
@@ -75,11 +79,16 @@ void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath,const st
         std::getline(ss, type, ',');
         std::getline(ss, name, ',');
 
-        std::getline(ss, token, ','); atk = std::stoi(token);
-        std::getline(ss, token, ','); def = std::stoi(token);
-        std::getline(ss, token, ','); spd = std::stoi(token);
-        std::getline(ss, token, ','); thr = std::stoi(token);
-        std::getline(ss, token, ','); hp  = std::stoi(token);
+        std::getline(ss, token, ',');
+        atk = std::stoi(token);
+        std::getline(ss, token, ',');
+        def = std::stoi(token);
+        std::getline(ss, token, ',');
+        spd = std::stoi(token);
+        std::getline(ss, token, ',');
+        thr = std::stoi(token);
+        std::getline(ss, token, ',');
+        hp = std::stoi(token);
         std::getline(ss, actionId, ',');
         actionId = Trim(actionId);
 
@@ -99,10 +108,17 @@ void EquipmentLoader::LoadWeaponListFromCSV(const std::string& filepath,const st
     }
 }
 
-ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string,BattleAction>& actionMap)
-{
+ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string, BattleAction> &actionMap) {
     LoadArmorListFromCSV(Paths::DATA_DIR + Paths::ARMOR_DATA_CSV);
     LoadWeaponListFromCSV(Paths::DATA_DIR + Paths::WEAPON_DATA_CSV, actionMap);
+
+    return equipment;
+}
+
+ElementList EquipmentLoader::InstantiateElements(const std::unordered_map<std::string, BattleAction> &actionMap,
+                                                 std::string weaponFile, std::string armorFile) {
+    LoadArmorListFromCSV(Paths::DATA_DIR + armorFile);
+    LoadWeaponListFromCSV(Paths::DATA_DIR + weaponFile, actionMap);
 
     return equipment;
 }

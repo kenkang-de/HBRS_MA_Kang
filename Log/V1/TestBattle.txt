@@ -1,0 +1,68 @@
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW6](Achilles' heel) Armor: [BSA1]
+Unit 1: R1 Attack:2 Defense:-1 HP:10 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA2]
+Unit 2: R2 Attack:4 Defense:-2 HP:12 Speed:7 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA3]
+Unit 3: R3 Attack:5 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
+Unit 4: R4 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
+Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW6](Achilles' heel) Armor: [BSA1]
+Unit 6: B1 Attack:2 Defense:-1 HP:10 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA2]
+Unit 7: B2 Attack:4 Defense:-2 HP:12 Speed:7 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA3]
+Unit 8: B3 Attack:5 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
+Unit 9: B4 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
+==========================
+
+
+[Tick 5] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(1,0,10,7,6) performs [Achilles' heel] to B0(1,0,10,7,6)
+B0 HP: 10 - 1 => 9
+R1(2,-1,10,7,6) performs [Poison Attack] to B0(1,0,10,8,6)
+B0 HP: 9 - 2 => 7
+[BOON] Applied Poison Effect to B0 (Usage: 3)
+[A28] R1 applied Poison Effect to B0 (usage: 3)
+R2(4,-2,12,7,6) performs [Charge Attack] to B0(1,0,10,8,6)
+B0 HP: 7 - 7 => 0
+R3(5,0,8,7,6) performs [Blitz Attack] to B1(2,-1,10,7,6)
+B1 HP: 10 - 13 => -3
+B0(1,0,10,8,6) performs [Achilles' heel] to R0(1,0,10,7,6)
+R0 HP: 10 - 1 => 9
+B1(2,-1,10,7,6) performs [Poison Attack] to R0(1,0,10,9,6)
+R0 HP: 9 - 2 => 7
+[BOON] Applied Poison Effect to R0 (Usage: 3)
+[A28] B1 applied Poison Effect to R0 (usage: 3)
+B2(4,-2,12,7,6) performs [Charge Attack] to R0(1,0,10,9,6)
+R0 HP: 7 - 7 => 0
+B3(5,0,8,7,6) performs [Blitz Attack] to R1(2,-1,10,7,6)
+R1 HP: 10 - 13 => -3
+
+
+[Tick 7] R4, B4,  acting
+Survived Unit: R2, R3, R4, B2, B3, B4, 
+R4(6,0,7,5,5) performs [Reckless Attack] to B2(4,-2,12,7,6)
+R4 HP: 7 - 0 => 7
+B2 HP: 12 - 7 => 5
+B4(6,0,7,5,5) performs [Reckless Attack] to R2(4,-2,12,7,6)
+B4 HP: 7 - 0 => 7
+R2 HP: 12 - 7 => 5
+
+
+[Tick 10] R2, R3, B2, B3,  acting
+Survived Unit: R2, R3, R4, B2, B3, B4, 
+R2(4,-2,12,7,6) performs [Charge Attack] to B2(4,-2,12,7,6)
+B2 HP: 5 - 7 => -2
+R3(5,0,8,7,6) performs [Blitz Attack] to B3(5,0,8,7,6)
+B3 HP: 8 - 12 => -4
+B2(4,-2,12,7,6) performs [Charge Attack] to R2(4,-2,12,7,6)
+R2 HP: 5 - 6 => -1
+B3(5,0,8,7,6) performs [Blitz Attack] to R3(5,0,8,7,6)
+R3 HP: 8 - 12 => -4
+
+
+[Tick 14] R4, B4,  acting
+Survived Unit: R4, B4, 
+R4(6,0,7,5,5) performs [Reckless Attack] to B4(6,0,7,5,5)
+R4 HP: 7 - 0 => 7
+B4 HP: 7 - 7 => 0
+B4(6,0,7,5,5) performs [Reckless Attack] to R4(6,0,7,5,5)
+B4 HP: 0 - 0 => 0
+R4 HP: 7 - 7 => 0
+Battle Over! Draw - both teams eliminated!

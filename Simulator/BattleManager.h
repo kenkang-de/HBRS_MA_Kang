@@ -31,7 +31,7 @@ class BattleManager {
     void ActUnits(std::vector<Unit *> &units);
     bool IsBattleOver();
     void LogDrawResult();
-    void LogWinLoseResult();
+    void LogWinLoseResult(BATTLERESULT result);
     void LogUsageCount();
     int CalculateDelayFromDamage(int damageTaken, int maxHP);
 };

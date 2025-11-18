@@ -136,7 +136,16 @@ void BattleManager::ActUnits(std::vector<Unit *> &units) {
     for (Unit *actor : units) {
         std::vector<Unit *> targets = TargetManager::GetTargets(*actor);
         for (Unit *target : targets) {
-            actor->GetWeapon()->GetAction().Perform(actor, target);
+            BattleAction action = actor->GetWeapon()->GetAction();
+
+            LogSystem::LogStream(actor->GetName(), "(", actor->GetTotalStat().GetAttack(), ",",
+                                 actor->GetTotalStat().GetDefense(), ",", actor->GetTotalStat().GetHP(), ",",
+                                 actor->GetTotalStat().GetSpeed(), ",", actor->GetTotalStat().GetThreat(), ")",
+                                 " performs [", action.GetID(), "] to " + target->GetName(), "(",
+                                 target->GetTotalStat().GetAttack(), ",", target->GetTotalStat().GetDefense(), ",",
+                                 target->GetTotalStat().GetHP(), ",", target->GetTotalStat().GetSpeed(), ",",
+                                 target->GetTotalStat().GetThreat(), ")");
+            action.Perform(actor, target);
 
             // Apply unit boons to after-action system
             ApplyUnitBoonsToAfterAction(actor);
@@ -147,6 +156,7 @@ void BattleManager::ActUnits(std::vector<Unit *> &units) {
 }
 
 bool BattleManager::IsBattleOver() {
+    // Check tick limit
     if (TickCounted >= 100) {
         LogSystem::LogStream("Battle Over! Tick limit reached");
         LogDrawResult();
@@ -154,16 +164,31 @@ bool BattleManager::IsBattleOver() {
         return true;
     }
 
-    // Use battlefield to check for victory
-    Team *winner = battlefield.GetWinnerTeam();
-    if (winner != nullptr) {
-        // Determine team name based on color
-        std::string teamName = (winner->GetTeamColor() == Red) ? "Red Team" : "Blue Team";
-        LogSystem::LogStream("Battle Over! ", teamName, " wins!");
-        LogWinLoseResult();
+    BATTLERESULT result = battlefield.GetBattleResult();
+
+    switch (result) {
+    case DRAW:
+        LogSystem::LogStream("Battle Over! Draw - both teams eliminated!");
+        LogDrawResult();
         LogUsageCount();
         return true;
+
+    case REDWIN:
+        LogSystem::LogStream("Battle Over! Red Team wins!");
+        LogWinLoseResult(result);
+        LogUsageCount();
+        return true;
+
+    case BLUEWIN:
+        LogSystem::LogStream("Battle Over! Blue Team wins!");
+        LogWinLoseResult(result);
+        LogUsageCount();
+        return true;
+
+    case ONGOING:
+        return false;
     }
+
     return false;
 }
 
@@ -174,9 +199,18 @@ void BattleManager::LogDrawResult() {
     }
 }
 
-void BattleManager::LogWinLoseResult() {
-    Team *winnerTeam = battlefield.GetWinnerTeam();
-    Team *loserTeam = battlefield.GetLoserTeam();
+void BattleManager::LogWinLoseResult(BATTLERESULT result) {
+
+    Team *winnerTeam;
+    Team *loserTeam;
+
+    if (result == REDWIN) {
+        winnerTeam = battlefield.GetRedTeam();
+        loserTeam = battlefield.GetBlueTeam();
+    } else {
+        winnerTeam = battlefield.GetBlueTeam();
+        loserTeam = battlefield.GetRedTeam();
+    }
 
     for (Unit *unit : winnerTeam->GetUnits()) {
         unit->GetWeapon()->recordWin();

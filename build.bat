@@ -222,3 +222,37 @@ if %ERRORLEVEL% NEQ 0 (
         echo Run.exe built successfully in RELEASE mode!
     )
 )
+
+
+
+REM Build TestBattle.exe
+echo.
+echo Linking TestBattle.exe...
+
+g++ %LINK_FLAGS% ^
+    -I. ^
+    -IElement ^
+    -ISimulator ^
+    -ISimulator/yaml-cpp/include ^
+    -DYAML_CPP_STATIC_DEFINE ^
+    TestBattle.cpp ^
+    Log/LogSystem.o ^
+    Element/BattleActionLoader.o ^
+    Element/BattleActionParser.o ^
+    Element/EquipmentLoader.o ^
+    Element/UnitGenerator.o ^
+    Element/ElementList.o ^
+    Element/Stat.o ^
+    -LSimulator ^
+    -lsimulator ^
+    -LSimulator/yaml-cpp/mingw-build ^
+    -lyaml-cpp ^
+    -o TestBattle.exe
+
+if %ERRORLEVEL% NEQ 0 (
+    echo ERROR: Failed to build TestBattle.exe
+    exit /b 1
+) else (
+    echo TestBattle.exe built successfully!
+    echo Run with: TestBattle.exe
+)

@@ -94,6 +94,7 @@ class NewMasterController {
         SynergyComponentInitializer synergyComponentInitializer(StrategyRatio_SYS, &elementList.armors,
                                                                 &elementList.weapons);
         synergyComponentInitializer.Init();
+        SynergyRule::PrintTotalUnitSynergyApplied();
 
         battleUnits = GenerateUnits();
         std::cout << "Stage 1 Complete" << std::endl;

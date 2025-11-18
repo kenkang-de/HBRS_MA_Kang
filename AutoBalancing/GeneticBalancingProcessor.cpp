@@ -292,7 +292,7 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
             Chromosome *eliteChromosome = sortedChromosomes[i]; // Get i-th highest fitness
             Chromosome *eliteCopy = new Chromosome(eliteChromosome);
             nextGenChromosomeList.push_back(eliteCopy);
-            BalancingLog(Generation + 1, eliteCopy->Get_Fitness(), eliteCopy->Get_MRSE(), eliteCopy->Get_DOC());
+            // BalancingLog(Generation + 1, eliteCopy->Get_Fitness(), eliteCopy->Get_MRSE(), eliteCopy->Get_DOC());
         }
 
         // Crossover
@@ -328,7 +328,8 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
             }
         }
 
-        std::cout << "Highest Fitness: " << currentGenChromosomeList[0]->Get_Fitness() << std::endl;
+        std::cout << "Highest Fitness: " << currentGenChromosomeList[0]->Get_Fitness()
+                  << " ( entries: " << currentGenChromosomeList.size() << " ) " << std::endl;
 
         // Mutation
         Mutation::GaussianMutation(nextGenChromosomeList);

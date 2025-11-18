@@ -1,130 +1,89 @@
-Unit 0: R0 Attack:0 Defense:-1 HP:10 Speed:5 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA2]
-Unit 1: R1 Attack:5 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA13]
-Unit 2: R2 Attack:4 Defense:3 HP:14 Speed:2 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA44]
-Unit 3: R3 Attack:2 Defense:3 HP:10 Speed:1 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA34]
-Unit 4: R4 Attack:5 Defense:0 HP:7 Speed:7 Threat:4 Weapon: [BSW29](Camo Throw) Armor: [BSA5]
-Unit 5: B0 Attack:5 Defense:4 HP:10 Speed:1 Threat:7 Weapon: [BSW14](Leech Attack) Armor: [BSA37]
-Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:6 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA9]
-Unit 7: B2 Attack:3 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW31](Wrist Shot) Armor: [BSA30]
-Unit 8: B3 Attack:1 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW36](Tetrodo) Armor: [BSA44]
-Unit 9: B4 Attack:3 Defense:0 HP:7 Speed:7 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA5]
+Unit 0: R0 Attack:3 Defense:3 HP:12 Speed:3 Threat:7 Weapon: [BSW24](Boost Acuity) Armor: [BSA41]
+Unit 1: R1 Attack:-1 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW40](Grace) Armor: [BSA10]
+Unit 2: R2 Attack:4 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA2]
+Unit 3: R3 Attack:5 Defense:2 HP:15 Speed:1 Threat:5 Weapon: [BSW2](Chop) Armor: [BSA49]
+Unit 4: R4 Attack:-1 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW41](Bulkup) Armor: [BSA18]
+Unit 5: B0 Attack:2 Defense:10 HP:12 Speed:1 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA38]
+Unit 6: B1 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA5]
+Unit 7: B2 Attack:4 Defense:4 HP:10 Speed:3 Threat:5 Weapon: [BSW32](Focus Throw) Armor: [BSA37]
+Unit 8: B3 Attack:5 Defense:0 HP:12 Speed:2 Threat:3 Weapon: [BSW18](Killing Spree) Armor: [BSA38]
+Unit 9: B4 Attack:2 Defense:1 HP:12 Speed:4 Threat:3 Weapon: [BSW23](All-Out Assault) Armor: [BSA20]
 ==========================
 
 
-[Tick 30] R4, B4,  acting
+[Tick 10] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 1 => 9
-R0 HP: 10 - 4 => 6
-R3 HP: 10 - 0 => 10
+R2 performs [Killing Spree] to B0
+B0 HP: 12 - 0 => 12
 
 
-[Tick 35] B1,  acting
+[Tick 12] R1, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 HP: 6 - 6 => 0
+B1 performs [Taunt] to R0
+R0 HP: 12 - 3 => 9
+R1 performs [Grace] to R0
+[HEAL] R0 healed for -1 HP (from 9 to 8/12)
+R1 performs [Grace] to R3
+[HEAL] R3 healed for -1 HP (from 15 to 14/15)
+R1 performs [Grace] to R2
+[HEAL] R2 healed for -1 HP (from 10 to 9/10)
 
 
-[Tick 42] R1,  acting
+[Tick 15] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B4 performs [All-Out Assault] to R0
+R0 HP: 10 - 10 => 0
+
+
+[Tick 20] R4, B2, R2,  acting
 Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 9 - 4 => 5
+B2 performs [Focus Throw] to R3
+R3 HP: 14 - 5 => 9
+R2 performs [Killing Spree] to B0
+B0 HP: 12 - 0 => 12
+R4 performs [Bulkup] to R3
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
 
 
-[Tick 60] R4, B4,  acting
+[Tick 24] R1, B1,  acting
 Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 5 - 1 => 4
-R3 HP: 10 - 0 => 10
-R2 HP: 14 - 0 => 14
+B1 performs [Taunt] to R3
+R3 HP: 11 - 11 => 0
+R1 performs [Grace] to R2
+[HEAL] R2 healed for -1 HP (from 9 to 8/10)
+R1 performs [Grace] to R4
+[HEAL] R4 healed for -1 HP (from 8 to 7/8)
 
 
-[Tick 70] B2, B1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 10 - 0 => 10
-R3 HP: 10 - 6 => 4
+[Tick 30] B3, B4, R2,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+B3 performs [Killing Spree] to R1
+R1 HP: 10 - 5 => 5
+B4 performs [All-Out Assault] to R1
+R1 HP: 24 - 24 => 0
+R2 performs [Killing Spree] to B0
+B0 HP: 12 - 0 => 12
 
 
-[Tick 84] R1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 4 - 4 => 0
+[Tick 36] B1,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+B1 performs [Taunt] to R2
+R2 HP: 21 - 21 => 0
 
 
-[Tick 90] R4, B4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
-B2 HP: 10 - 3 => 7
-R3 HP: 4 - 0 => 4
-R2 HP: 14 - 0 => 14
+[Tick 40] R4, B2,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B2 performs [Focus Throw] to R4
+R4 HP: 7 - 5 => 2
+R4 performs [Bulkup] to R4
+[BOON] Applied BulkupSTART to R4 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[AFTER-ACTION] No valid target found for R4
 
 
-[Tick 105] R2, B1,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B3, B4, 
-R3 HP: 6 - 6 => 0
-B2 HP: 7 - 6 => 1
-
-
-[Tick 120] R4, B4,  acting
-Survived Unit: R1, R2, R4, B1, B2, B3, B4, 
-B2 HP: 3 - 3 => 0
-R2 HP: 14 - 0 => 14
-R1 HP: 11 - 2 => 9
-
-
-[Tick 126] R1,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-B3 HP: 12 - 4 => 8
-
-
-[Tick 140] B1,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-R2 HP: 14 - 6 => 8
-
-
-[Tick 150] R4, B4,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-B3 HP: 8 - 2 => 6
-R2 HP: 8 - 0 => 8
-R1 HP: 9 - 2 => 7
-
-
-[Tick 168] R1,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-B3 HP: 6 - 4 => 2
-
-
-[Tick 175] B1,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-R2 HP: 8 - 6 => 2
-
-
-[Tick 180] R4, B4,  acting
-Survived Unit: R1, R2, R4, B1, B3, B4, 
-B3 HP: 2 - 2 => 0
-R2 HP: 2 - 0 => 2
-R1 HP: 7 - 2 => 5
-
-
-[Tick 210] R2, R1, B1, R4, B4,  acting
-Survived Unit: R1, R2, R4, B1, B4, 
-B4 HP: 7 - -2 => 9
-R2 HP: 6 - 6 => 0
-B4 HP: 9 - 5 => 4
-R1 HP: 5 - 2 => 3
-R4 HP: 7 - 3 => 4
-
-
-[Tick 240] R4,  acting
-Survived Unit: R1, R4, B1, B4, 
-B4 HP: 5 - 5 => 0
-
-
-[Tick 245] B1,  acting
-Survived Unit: R1, R4, B1, 
-R1 HP: 6 - 6 => 0
-
-
-[Tick 270] R4,  acting
-Survived Unit: R4, B1, 
-B1 HP: 10 - 7 => 3
-
-
-[Tick 281] B1,  acting
-Survived Unit: R4, B1, 
-R4 HP: 6 - 6 => 0
+[Tick 45] B4,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B4 performs [All-Out Assault] to R4
+R4 HP: 34 - 34 => 0
 Battle Over! Blue Team wins!

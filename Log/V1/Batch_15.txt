@@ -1,69 +1,107 @@
-Unit 0: R0 Attack:1 Defense:1 HP:10 Speed:0 Threat:5 Weapon: [BSW50](Corrosion) Armor: [BSA43]
-Unit 1: R1 Attack:4 Defense:0 HP:8 Speed:7 Threat:5 Weapon: [BSW23](All-Out Assault) Armor: [BSA4]
-Unit 2: R2 Attack:4 Defense:1 HP:10 Speed:2 Threat:4 Weapon: [BSW23](All-Out Assault) Armor: [BSA43]
-Unit 3: R3 Attack:6 Defense:1 HP:10 Speed:2 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA33]
-Unit 4: R4 Attack:4 Defense:2 HP:10 Speed:3 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA30]
-Unit 5: B0 Attack:3 Defense:4 HP:10 Speed:3 Threat:7 Weapon: [BSW31](Wrist Shot) Armor: [BSA31]
-Unit 6: B1 Attack:4 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA2]
-Unit 7: B2 Attack:0 Defense:4 HP:10 Speed:1 Threat:7 Weapon: [BSW37](Freeze) Armor: [BSA37]
-Unit 8: B3 Attack:2 Defense:-1 HP:10 Speed:2 Threat:4 Weapon: [BSW40](Grace) Armor: [BSA32]
-Unit 9: B4 Attack:5 Defense:0 HP:7 Speed:6 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA5]
+Unit 0: R0 Attack:5 Defense:4 HP:10 Speed:3 Threat:8 Weapon: [BSW9](Blitz Attack) Armor: [BSA31]
+Unit 1: R1 Attack:2 Defense:0 HP:10 Speed:4 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA11]
+Unit 2: R2 Attack:4 Defense:4 HP:10 Speed:3 Threat:6 Weapon: [BSW29](Camo Throw) Armor: [BSA37]
+Unit 3: R3 Attack:3 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA8]
+Unit 4: R4 Attack:-1 Defense:13 HP:10 Speed:2 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA22]
+Unit 5: B0 Attack:6 Defense:1 HP:6 Speed:4 Threat:1 Weapon: [BSW25](Smoke Shot) Armor: [BSA26]
+Unit 6: B1 Attack:4 Defense:1 HP:10 Speed:3 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA43]
+Unit 7: B2 Attack:2 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW24](Boost Acuity) Armor: [BSA18]
+Unit 8: B3 Attack:1 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA44]
+Unit 9: B4 Attack:5 Defense:-1 HP:10 Speed:3 Threat:3 Weapon: [BSW23](All-Out Assault) Armor: [BSA32]
 ==========================
 
 
-[Tick 6] R1,  acting
+[Tick 10] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 10 - 8 => 2
+R3 performs [Double Shot] to B3
+B3 HP: 12 - 0 => 12
+R3 performs [Double Shot] to B1
+B1 HP: 10 - 2 => 8
 
 
-[Tick 7] B1, B4,  acting
+[Tick 12] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4 HP: 10 - 2 => 8
-R4 HP: 8 - 3 => 5
-R4 HP: 5 - 3 => 2
+B2 performs [Boost Acuity] to R1
+R1 HP: 10 - 6 => 4
 
 
-[Tick 12] R1,  acting
+[Tick 15] B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0 HP: 16 - 16 => 0
+B0 performs [Smoke Shot] to R1
+R1 HP: 6 - 6 => 0
 
 
-[Tick 14] R4, B1, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-B2 HP: 10 - 1 => 9
-R4 HP: 2 - 2 => 0
-R0 HP: 10 - 3 => 7
-R0 HP: 7 - 4 => 3
-R0 HP: 4 - 4 => 0
+[Tick 20] R0, R2, B1, B4, R3,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 performs [Camo Throw] to B3
+B3 HP: 12 - 1 => 11
+B1 performs [Shoot] to R0
+R0 HP: 10 - 0 => 10
+B4 performs [All-Out Assault] to R0
+R0 HP: 12 - 12 => 0
+R3 performs [Double Shot] to B3
+B3 HP: 11 - 0 => 11
+R3 performs [Double Shot] to B1
+B1 HP: 8 - 2 => 6
 
 
-[Tick 18] R1,  acting
-Survived Unit: R1, R2, R3, B1, B2, B3, B4, 
-B2 HP: 24 - 24 => 0
+[Tick 24] B2,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 performs [Boost Acuity] to R2
+R2 HP: 10 - 1 => 9
 
 
-[Tick 21] R2, R3, B3, B1, B4,  acting
-Survived Unit: R1, R2, R3, B1, B3, B4, 
-B1 HP: 14 - 14 => 0
-B3 HP: 10 - 4 => 6
-R3 HP: 10 - 3 => 7
-R3 HP: 7 - 4 => 3
-R3 HP: 4 - 4 => 0
-[HEAL] B4 healed for 0 HP (from 7 to 7/7)
+[Tick 30] R4, B0, R3,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+B0 performs [Smoke Shot] to R2
+R2 HP: 9 - 2 => 7
+R3 performs [Double Shot] to B3
+B3 HP: 11 - 0 => 11
+R3 performs [Double Shot] to B1
+B1 HP: 6 - 2 => 4
+R4 performs [Final Attack] to B3
+B3 HP: 11 - 9 => 2
+[A12] R4 defense changed from 13 to 0
 
 
-[Tick 24] R1,  acting
-Survived Unit: R1, R2, B3, B4, 
-B3 HP: 37 - 37 => 0
+[Tick 36] B2,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+B2 performs [Boost Acuity] to R4
+R4 HP: 10 - 4 => 6
 
 
-[Tick 28] B4,  acting
-Survived Unit: R1, R2, B4, 
-R2 HP: 10 - 4 => 6
-R2 HP: 6 - 4 => 2
+[Tick 40] R2, B1, B4, R3,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+R2 performs [Camo Throw] to B3
+B3 HP: 2 - 1 => 1
+B1 performs [Shoot] to R4
+R4 HP: 6 - 4 => 2
+B4 performs [All-Out Assault] to R4
+R4 HP: 27 - 27 => 0
+R3 performs [Double Shot] to B3
+B3 HP: 1 - 0 => 1
+R3 performs [Double Shot] to B1
+B1 HP: 4 - 2 => 2
 
 
-[Tick 30] R1,  acting
-Survived Unit: R1, R2, B4, 
-B4 HP: 44 - 44 => 0
-Battle Over! Red Team wins!
+[Tick 45] B0,  acting
+Survived Unit: R2, R3, B0, B1, B2, B3, B4, 
+B0 performs [Smoke Shot] to R3
+R3 HP: 10 - 6 => 4
+
+
+[Tick 48] B2,  acting
+Survived Unit: R2, R3, B0, B1, B2, B3, B4, 
+B2 performs [Boost Acuity] to R3
+R3 HP: 8 - 8 => 0
+
+
+[Tick 60] R2, B1, B4, B0, B2,  acting
+Survived Unit: R2, B0, B1, B2, B3, B4, 
+R2 performs [Camo Throw] to B3
+B3 HP: 1 - 1 => 0
+B1 performs [Shoot] to R2
+R2 HP: 7 - 0 => 7
+B4 performs [All-Out Assault] to R2
+R2 HP: 34 - 34 => 0
+Battle Over! Blue Team wins!

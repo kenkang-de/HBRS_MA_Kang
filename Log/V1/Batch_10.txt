@@ -1,92 +1,139 @@
-Unit 0: R0 Attack:3 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW19](Momentum) Armor: [BSA18]
-Unit 1: R1 Attack:5 Defense:2 HP:12 Speed:2 Threat:5 Weapon: [BSW18](Killing Spree) Armor: [BSA39]
-Unit 2: R2 Attack:-1 Defense:0 HP:10 Speed:4 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA14]
-Unit 3: R3 Attack:3 Defense:0 HP:10 Speed:6 Threat:5 Weapon: [BSW2](Chop) Armor: [BSA1]
-Unit 4: R4 Attack:5 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA30]
-Unit 5: B0 Attack:3 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA13]
-Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA8]
-Unit 7: B2 Attack:2 Defense:1 HP:8 Speed:5 Threat:1 Weapon: [BSW25](Smoke Shot) Armor: [BSA18]
-Unit 8: B3 Attack:4 Defense:-1 HP:10 Speed:4 Threat:2 Weapon: [BSW19](Momentum) Armor: [BSA6]
-Unit 9: B4 Attack:6 Defense:-1 HP:10 Speed:2 Threat:3 Weapon: [BSW5](Overpower) Armor: [BSA32]
+Unit 0: R0 Attack:5 Defense:3 HP:10 Speed:2 Threat:3 Weapon: [BSW19](Momentum) Armor: [BSA21]
+Unit 1: R1 Attack:1 Defense:5 HP:10 Speed:0 Threat:12 Weapon: [BSW48](Meteor) Armor: [BSA45]
+Unit 2: R2 Attack:5 Defense:3 HP:7 Speed:3 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA23]
+Unit 3: R3 Attack:1 Defense:4 HP:12 Speed:1 Threat:9 Weapon: [BSW43](Vow) Armor: [BSA40]
+Unit 4: R4 Attack:1 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW33](Magic Bolt) Armor: [BSA50]
+Unit 5: B0 Attack:5 Defense:4 HP:19 Speed:1 Threat:7 Weapon: [BSW4](Berserk) Armor: [BSA50]
+Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:1 Threat:6 Weapon: [BSW49](Earthquake) Armor: [BSA29]
+Unit 7: B2 Attack:5 Defense:5 HP:14 Speed:1 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA45]
+Unit 8: B3 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW37](Freeze) Armor: [BSA26]
+Unit 9: B4 Attack:1 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA15]
 ==========================
 
 
-[Tick 10] R3,  acting
+[Tick 2] R2, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 10 - 3 => 7
+R2 performs [Heavy Shot] to B2
+B2 HP: 14 - 5 => 9
+B4 performs [Protect] to B2
+[BOON] Applied ProtectSTART to B2 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 12] B0, B2,  acting
+[Tick 3] R0, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1 HP: 12 - 0 => 12
-R3 HP: 10 - 3 => 7
-R4 HP: 10 - 3 => 7
+R0 performs [Momentum] to B2
+B2 HP: 9 - 0 => 9
+B3 performs [Freeze] to R1
+[BOON] Applied FreezeSTART to R1 (Usage: 1)
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 15] R2, B3,  acting
+[Tick 4] R2, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 7 - 4 => 3
+R2 performs [Heavy Shot] to B2
+B2 HP: 9 - 5 => 4
+B4 performs [Protect] to B2
+[BOON] Refreshing existing ProtectSTART on B2
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 20] R0, R3,  acting
+[Tick 6] R3, R4, B0, B1, B2, R0, B3, R2, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 0 => 7
-B1 HP: 7 - 0 => 7
+R0 performs [Momentum] to B2
+B2 HP: 4 - 0 => 4
+R2 performs [Heavy Shot] to B2
+B2 HP: 5 - 5 => 0
+B0 performs [Berserk] to R1
+B0 HP: 19 - 4 => 15
+R1 HP: 10 - 0 => 10
+R3 performs [Vow] to R1
+R3 performs [Vow] to R3
+R4 performs [Magic Bolt] to B0
+B0 HP: 15 - 1 => 14
+B1 performs [Earthquake] to R1
+R1 HP: 10 - 1 => 9
+B1 performs [Earthquake] to R3
+R3 HP: 12 - 1 => 11
+B1 performs [Earthquake] to R4
+R4 HP: 15 - 1 => 14
+B1 performs [Earthquake] to R0
+R0 HP: 10 - 1 => 9
+B1 performs [Earthquake] to R2
+R2 HP: 7 - 1 => 6
+B3 performs [Freeze] to R1
+[BOON] Refreshing existing FreezeSTART on R1
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+B4 performs [Protect] to B0
+[BOON] Applied ProtectSTART to B0 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 24] B0, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3 HP: 3 - 2 => 1
-R3 HP: 3 - 3 => 0
-R4 HP: 7 - 3 => 4
+[Tick 8] R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+R2 performs [Heavy Shot] to B0
+B0 HP: 14 - 6 => 8
+B4 performs [Protect] to B0
+[BOON] Refreshing existing ProtectSTART on B0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 30] R1, R4, B4, R2, B3,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 0 => 7
-B1 HP: 7 - 0 => 7
-R4 HP: 4 - 2 => 2
-R4 HP: 4 - 4 => 0
-R4 HP: 4 - 4 => 0
+[Tick 9] R0, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+R0 performs [Momentum] to B0
+B0 HP: 8 - 1 => 7
+B3 performs [Freeze] to R1
+[BOON] Refreshing existing FreezeSTART on R1
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
 
 
-[Tick 36] B0, B2,  acting
-Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
-R1 HP: 12 - 0 => 12
-R2 HP: 10 - 3 => 7
-R0 HP: 8 - 3 => 5
+[Tick 10] R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+R2 performs [Heavy Shot] to B0
+B0 HP: 7 - 6 => 1
+B4 performs [Protect] to B0
+[BOON] Refreshing existing ProtectSTART on B0
+[REFRESH] ProtectSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 40] R0,  acting
-Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 0 => 7
+[Tick 12] B0, B1, R0, B3, R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
+R0 performs [Momentum] to B0
+B0 HP: 1 - 1 => 0
+R2 performs [Heavy Shot] to B1
+B1 HP: 10 - 10 => 0
+B3 performs [Freeze] to R1
+[BOON] Refreshing existing FreezeSTART on R1
+[REFRESH] FreezeSTART duration refreshed, ready for first effect
+[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+B4 performs [Protect] to B3
+[BOON] Applied ProtectSTART to B3 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
 
 
-[Tick 45] B3,  acting
-Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
-R2 HP: 7 - 4 => 3
+[Tick 14] R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B3, B4, 
+R2 performs [Heavy Shot] to B3
+B3 HP: 9 - 9 => 0
+B4 performs [Protect] to B4
+[BOON] Applied ProtectSTART to B4 (Usage: 1)
+[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[AFTER-ACTION] No valid target found for B4
 
 
-[Tick 48] B0, B2,  acting
-Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
-R2 HP: 3 - 2 => 1
-R2 HP: 3 - 3 => 0
-R0 HP: 5 - 3 => 2
+[Tick 15] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B4, 
+R0 performs [Momentum] to B4
+B4 HP: 8 - 5 => 3
 
 
-[Tick 60] R1, B4, R0, B3, B0, B2,  acting
-Survived Unit: R0, R1, B0, B1, B2, B3, B4, 
-B1 HP: 7 - 0 => 7
-B1 HP: 7 - 0 => 7
-R0 HP: 3 - 3 => 0
-R1 HP: 12 - 0 => 12
-R1 HP: 12 - 4 => 8
-R1 HP: 8 - 4 => 4
-R1 HP: 4 - 3 => 1
-
-
-[Tick 72] B0, B2,  acting
-Survived Unit: R1, B0, B1, B2, B3, B4, 
-R1 HP: 1 - 0 => 1
-R1 HP: 3 - 3 => 0
-Battle Over! Blue Team wins!
+[Tick 16] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B4, 
+R2 performs [Heavy Shot] to B4
+B4 HP: 10 - 10 => 0
+Battle Over! Red Team wins!

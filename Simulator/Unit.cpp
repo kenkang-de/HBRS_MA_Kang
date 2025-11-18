@@ -118,14 +118,18 @@ void Unit::TakeDamage(int amount, bool defendable, Unit *actor) {
 
     if (defendable) {
         finalDamage = std::max(0, amount - totalStat.GetDefense());
+    } else {
+        finalDamage = std::max(0, amount);
     }
 
     finalDamage = finalDamage * std::round(GetCounterMultiplier(actor, this));
-
+    LogSystem::LogStream(Name, " HP: ", currentHP, " - ", finalDamage, " => ", currentHP - finalDamage);
     currentHP = std::max(0, currentHP - finalDamage);
-    LogSystem::LogStream(Name, " HP: ", currentHP + finalDamage, " - ", finalDamage, " => ", currentHP);
 
-    DelayRule::DelayUnitFromDamage(actor, this, finalDamage);
+    if (currentHP > 0)
+        DelayRule::DelayUnitFromDamage(actor, this, finalDamage);
+    else
+        TurnManager::UpdateSpeedChanges();
 }
 
 void Unit::Heal(int amount) {
