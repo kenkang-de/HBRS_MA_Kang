@@ -1,139 +1,266 @@
-Unit 0: R0 Attack:5 Defense:3 HP:10 Speed:2 Threat:3 Weapon: [BSW19](Momentum) Armor: [BSA21]
-Unit 1: R1 Attack:1 Defense:5 HP:10 Speed:0 Threat:12 Weapon: [BSW48](Meteor) Armor: [BSA45]
-Unit 2: R2 Attack:5 Defense:3 HP:7 Speed:3 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA23]
-Unit 3: R3 Attack:1 Defense:4 HP:12 Speed:1 Threat:9 Weapon: [BSW43](Vow) Armor: [BSA40]
-Unit 4: R4 Attack:1 Defense:4 HP:15 Speed:1 Threat:6 Weapon: [BSW33](Magic Bolt) Armor: [BSA50]
-Unit 5: B0 Attack:5 Defense:4 HP:19 Speed:1 Threat:7 Weapon: [BSW4](Berserk) Armor: [BSA50]
-Unit 6: B1 Attack:1 Defense:0 HP:10 Speed:1 Threat:6 Weapon: [BSW49](Earthquake) Armor: [BSA29]
-Unit 7: B2 Attack:5 Defense:5 HP:14 Speed:1 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA45]
-Unit 8: B3 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW37](Freeze) Armor: [BSA26]
-Unit 9: B4 Attack:1 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA15]
+Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:5 Threat:5 Weapon: [BSW39](Healing Link) Armor: [BSA8]
+Unit 1: R1 Attack:0 Defense:0 HP:10 Speed:2 Threat:3 Weapon: [BSW39](Healing Link) Armor: [BSA35]
+Unit 2: R2 Attack:5 Defense:2 HP:12 Speed:3 Threat:7 Weapon: [BSW9](Blitz Attack) Armor: [BSA39]
+Unit 3: R3 Attack:5 Defense:3 HP:10 Speed:3 Threat:7 Weapon: [BSW23](All-Out Assault) Armor: [BSA34]
+Unit 4: R4 Attack:3 Defense:3 HP:10 Speed:3 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA28]
+Unit 5: B0 Attack:1 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW33](Magic Bolt) Armor: [BSA13]
+Unit 6: B1 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA1]
+Unit 7: B2 Attack:0 Defense:5 HP:15 Speed:1 Threat:8 Weapon: [BSW27](Tripple Shot) Armor: [BSA48]
+Unit 8: B3 Attack:3 Defense:2 HP:10 Speed:3 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA30]
+Unit 9: B4 Attack:5 Defense:-1 HP:10 Speed:3 Threat:2 Weapon: [BSW25](Smoke Shot) Armor: [BSA32]
 ==========================
 
 
-[Tick 2] R2, B4,  acting
+[Tick 6] R0, B0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 performs [Heavy Shot] to B2
-B2 HP: 14 - 5 => 9
-B4 performs [Protect] to B2
-[BOON] Applied ProtectSTART to B2 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+R0(1,0,10,5,5) performs [Healing Link] to R2(5,2,12,3,7)
+[HEAL] R2 healed for 0 HP (from 12 to 12/12)
+R0(1,0,10,5,5) performs [Healing Link] to R3(5,3,10,3,7)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+B0(1,1,11,5,4) performs [Magic Bolt] to R2(5,2,12,3,7)
+R2 HP: 12 - 1 => 11
+B1(-1,0,10,5,6) performs [Bulkup] to B2(0,5,15,1,8)
 
 
-[Tick 3] R0, B3,  acting
+[Tick 10] R2, R3, R4, B3, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 performs [Momentum] to B2
-B2 HP: 9 - 0 => 9
-B3 performs [Freeze] to R1
-[BOON] Applied FreezeSTART to R1 (Usage: 1)
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+R3(5,3,10,3,7) performs [All-Out Assault] to B2(0,5,15,1,8)
+Attack set from 5 to 7
+B2 HP: 15 - 2 => 13
+B3(3,2,10,3,4) performs [Poison Arrow] to R2(5,2,12,3,7)
+R2 HP: 11 - 1 => 10
+B4(5,-1,10,3,2) performs [Smoke Shot] to R2(5,2,12,3,7)
+R2 HP: 10 - 3 => 7
+Threat set from 7 to 5
+Threat set from 7 to 14
+R2(5,2,12,3,5) performs [Blitz Attack] to B2(0,5,15,1,8)
+B2 HP: 13 - 3 => 10
+R4(3,3,10,3,7) performs [Achilles' heel] to B2(0,5,15,1,8)
+B2 HP: 10 - 0 => 10
+Speed set from 1 to 1
+[AFTER-ACTION] B3 → R2: Poison Effect
+[BOON] Poison Effect on R2 (Usage: 2/2)
+R2 HP: 7 - 3 => 4
 
 
-[Tick 4] R2, B4,  acting
+[Tick 12] R0, B0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2 performs [Heavy Shot] to B2
-B2 HP: 9 - 5 => 4
-B4 performs [Protect] to B2
-[BOON] Refreshing existing ProtectSTART on B2
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+R0(1,0,10,5,5) performs [Healing Link] to R3(7,3,10,3,14)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+R0(1,0,10,5,5) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+B0(1,1,11,5,4) performs [Magic Bolt] to R3(7,3,10,3,14)
+R3 HP: 10 - 1 => 9
+B1(-1,0,10,5,6) performs [Bulkup] to B2(0,5,15,1,8)
+[BOON] Refreshing existing  on B2
 
 
-[Tick 6] R3, R4, B0, B1, B2, R0, B3, R2, B4,  acting
+[Tick 15] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 performs [Momentum] to B2
-B2 HP: 4 - 0 => 4
-R2 performs [Heavy Shot] to B2
-B2 HP: 5 - 5 => 0
-B0 performs [Berserk] to R1
-B0 HP: 19 - 4 => 15
-R1 HP: 10 - 0 => 10
-R3 performs [Vow] to R1
-R3 performs [Vow] to R3
-R4 performs [Magic Bolt] to B0
-B0 HP: 15 - 1 => 14
-B1 performs [Earthquake] to R1
-R1 HP: 10 - 1 => 9
-B1 performs [Earthquake] to R3
-R3 HP: 12 - 1 => 11
-B1 performs [Earthquake] to R4
-R4 HP: 15 - 1 => 14
-B1 performs [Earthquake] to R0
-R0 HP: 10 - 1 => 9
-B1 performs [Earthquake] to R2
-R2 HP: 7 - 1 => 6
-B3 performs [Freeze] to R1
-[BOON] Refreshing existing FreezeSTART on R1
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-B4 performs [Protect] to B0
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+R1(0,0,10,2,3) performs [Healing Link] to R3(7,3,10,3,14)
+[HEAL] R3 healed for 0 HP (from 9 to 9/10)
+R1(0,0,10,2,3) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
 
 
-[Tick 8] R2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R2 performs [Heavy Shot] to B0
-B0 HP: 14 - 6 => 8
-B4 performs [Protect] to B0
-[BOON] Refreshing existing ProtectSTART on B0
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 18] R0, B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(1,0,10,5,5) performs [Healing Link] to R3(7,3,10,3,14)
+[HEAL] R3 healed for 1 HP (from 9 to 10/10)
+R0(1,0,10,5,5) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+B0(1,1,11,5,4) performs [Magic Bolt] to R3(7,3,10,3,14)
+R3 HP: 10 - 1 => 9
+B1(-1,0,10,5,6) performs [Bulkup] to B2(0,5,15,1,8)
+[BOON] Refreshing existing  on B2
 
 
-[Tick 9] R0, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R0 performs [Momentum] to B0
-B0 HP: 8 - 1 => 7
-B3 performs [Freeze] to R1
-[BOON] Refreshing existing FreezeSTART on R1
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
+[Tick 20] R2, R3, R4, B3, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(7,3,10,3,14) performs [All-Out Assault] to B2(0,5,15,1,8)
+Attack set from 7 to 9
+B2 HP: 10 - 4 => 6
+B3(3,2,10,3,4) performs [Poison Arrow] to R3(9,3,10,3,14)
+R3 HP: 9 - 0 => 9
+B4(5,-1,10,3,2) performs [Smoke Shot] to R3(9,3,10,3,14)
+R3 HP: 9 - 2 => 7
+Threat set from 14 to 11
+Threat set from 11 to 20
+[AFTER-ACTION] B3 → R3: Poison Effect
+[BOON] Poison Effect on R3 (Usage: 2/2)
+R3 HP: 7 - 3 => 4
+R2(5,2,12,3,5) performs [Blitz Attack] to B2(0,5,15,1,8)
+B2 HP: 6 - 3 => 3
+R4(3,3,10,3,7) performs [Achilles' heel] to B2(0,5,15,1,8)
+B2 HP: 3 - 0 => 3
+Speed set from 1 to 1
+[AFTER-ACTION] B3 → R2: Poison Effect
+[BOON] Poison Effect on R2 (Usage: 1/2)
+R2 HP: 4 - 3 => 1
+[BOON] Poison Effect expired on R2 - cleaned up
 
 
-[Tick 10] R2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R2 performs [Heavy Shot] to B0
-B0 HP: 7 - 6 => 1
-B4 performs [Protect] to B0
-[BOON] Refreshing existing ProtectSTART on B0
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 24] R0, B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(1,0,10,5,5) performs [Healing Link] to R3(9,3,10,3,20)
+[HEAL] R3 healed for 1 HP (from 4 to 5/10)
+R0(1,0,10,5,5) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+B0(1,1,11,5,4) performs [Magic Bolt] to R3(9,3,10,3,20)
+R3 HP: 5 - 1 => 4
+B1(-1,0,10,5,6) performs [Bulkup] to B2(0,5,15,1,8)
+[BOON] Refreshing existing  on B2
 
 
-[Tick 12] B0, B1, R0, B3, R2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R0 performs [Momentum] to B0
-B0 HP: 1 - 1 => 0
-R2 performs [Heavy Shot] to B1
-B1 HP: 10 - 10 => 0
-B3 performs [Freeze] to R1
-[BOON] Refreshing existing FreezeSTART on R1
-[REFRESH] FreezeSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff FreezeSTART for 1 turns, removal: FreezeEnd
-B4 performs [Protect] to B3
-[BOON] Applied ProtectSTART to B3 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 30] B2, R1, R2, R3, R4, B3, B4, R0, B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(0,5,15,1,8) performs [Tripple Shot] to R3(9,3,10,3,20)
+R3 HP: 4 - 0 => 4
+B2(0,5,15,1,8) performs [Tripple Shot] to R4(3,3,10,3,7)
+R4 HP: 10 - 0 => 10
+B2(0,5,15,1,8) performs [Tripple Shot] to R0(1,0,10,5,5)
+R0 HP: 10 - 0 => 10
+R3(9,3,10,3,20) performs [All-Out Assault] to B2(0,5,15,1,8)
+Attack set from 9 to 11
+B2 HP: 3 - 6 => -3
+B3(3,2,10,3,4) performs [Poison Arrow] to R3(11,3,10,3,20)
+R3 HP: 4 - 0 => 4
+[BOON] Refreshing existing  on R3
+B4(5,-1,10,3,2) performs [Smoke Shot] to R3(11,3,10,3,20)
+R3 HP: 4 - 2 => 2
+Threat set from 20 to 17
+Threat set from 17 to 28
+[AFTER-ACTION] B3 → R3: Poison Effect
+[BOON] Poison Effect on R3 (Usage: 2/2)
+R3 HP: 2 - 3 => -1
+R2(5,2,12,3,5) performs [Blitz Attack] to B1(-1,0,10,5,6)
+B1 HP: 10 - 8 => 2
+R4(3,3,10,3,7) performs [Achilles' heel] to B1(-1,0,10,5,6)
+B1 HP: 2 - 3 => -1
+Speed set from 5 to 1
+R1(0,0,10,2,3) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+R1(0,0,10,2,3) performs [Healing Link] to R0(1,0,10,5,5)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+R0(1,0,10,5,5) performs [Healing Link] to R4(3,3,10,3,7)
+[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+R0(1,0,10,5,5) performs [Healing Link] to R2(5,2,12,3,5)
+[HEAL] R2 healed for 1 HP (from 1 to 2/12)
+B0(1,1,11,5,4) performs [Magic Bolt] to R4(3,3,10,3,7)
+R4 HP: 10 - 1 => 9
+B1(-1,0,10,1,6) performs [Bulkup] to B0(1,1,11,5,4)
+[AFTER-ACTION] B1 → B0: BulkupSTART
+HP set from 11 to 10
 
 
-[Tick 14] R2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B3, B4, 
-R2 performs [Heavy Shot] to B3
-B3 HP: 9 - 9 => 0
-B4 performs [Protect] to B4
-[BOON] Applied ProtectSTART to B4 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[AFTER-ACTION] No valid target found for B4
+[Tick 36] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B3, B4, 
+B0(1,1,10,5,4) performs [Magic Bolt] to R4(3,3,10,3,7)
+R4 HP: 9 - 1 => 8
+[AFTER-ACTION] B1 → B0: BulkupSTART
+[TEMP-BUFF] BulkupSTART expired on B0
+ - applying removal effect: BulkupEND
+HP set from 10 to 11
+[BOON] BulkupSTART expired on B0 - cleaned up
 
 
-[Tick 15] R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B4, 
-R0 performs [Momentum] to B4
-B4 HP: 8 - 5 => 3
+[Tick 40] R2, R4, B3, B4,  acting
+Survived Unit: R0, R1, R2, R4, B0, B3, B4, 
+B3(3,2,10,3,4) performs [Poison Arrow] to R4(3,3,10,3,7)
+R4 HP: 8 - 0 => 8
+B4(5,-1,10,3,2) performs [Smoke Shot] to R4(3,3,10,3,7)
+R4 HP: 8 - 2 => 6
+Threat set from 7 to 4
+R2(5,2,12,3,5) performs [Blitz Attack] to B0(1,1,11,5,4)
+B0 HP: 11 - 7 => 4
+R4(3,3,10,3,4) performs [Achilles' heel] to B0(1,1,11,5,4)
+B0 HP: 4 - 2 => 2
+Speed set from 5 to 4
+[AFTER-ACTION] B3 → R4: Poison Effect
+[BOON] Poison Effect on R4 (Usage: 2/2)
+R4 HP: 6 - 3 => 3
 
 
-[Tick 16] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B4, 
-R2 performs [Heavy Shot] to B4
-B4 HP: 10 - 10 => 0
-Battle Over! Red Team wins!
+[Tick 42] R0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B3, B4, 
+R0(1,0,10,5,5) performs [Healing Link] to R2(5,2,12,3,5)
+[HEAL] R2 healed for 1 HP (from 2 to 3/12)
+R0(1,0,10,5,5) performs [Healing Link] to R4(3,3,10,3,4)
+[HEAL] R4 healed for 1 HP (from 3 to 4/10)
+
+
+[Tick 45] R1,  acting
+Survived Unit: R0, R1, R2, R4, B0, B3, B4, 
+R1(0,0,10,2,3) performs [Healing Link] to R0(1,0,10,5,5)
+[HEAL] R0 healed for 0 HP (from 10 to 10/10)
+R1(0,0,10,2,3) performs [Healing Link] to R2(5,2,12,3,5)
+[HEAL] R2 healed for 0 HP (from 3 to 3/12)
+
+
+[Tick 50] R2, R4, B3, B4,  acting
+Survived Unit: R0, R1, R2, R4, B0, B3, B4, 
+B3(3,2,10,3,4) performs [Poison Arrow] to R0(1,0,10,5,5)
+R0 HP: 10 - 3 => 7
+B4(5,-1,10,3,2) performs [Smoke Shot] to R0(1,0,10,5,5)
+R0 HP: 7 - 5 => 2
+Threat set from 5 to 5
+R2(5,2,12,3,5) performs [Blitz Attack] to B0(1,1,11,4,4)
+B0 HP: 2 - 7 => -5
+R4(3,3,10,3,4) performs [Achilles' heel] to B3(3,2,10,3,4)
+B3 HP: 10 - 1 => 9
+Speed set from 3 to 2
+[AFTER-ACTION] B3 → R4: Poison Effect
+[BOON] Poison Effect on R4 (Usage: 1/2)
+R4 HP: 4 - 3 => 1
+[BOON] Poison Effect expired on R4 - cleaned up
+
+
+[Tick 70] R2, R4, B3, B4,  acting
+Survived Unit: R0, R1, R2, R4, B3, B4, 
+B3(3,2,10,2,4) performs [Poison Arrow] to R0(1,0,10,5,5)
+R0 HP: 2 - 3 => -1
+[BOON] Refreshing existing  on R0
+B4(5,-1,10,3,2) performs [Smoke Shot] to R2(5,2,12,3,5)
+R2 HP: 3 - 3 => 0
+Threat set from 5 to 3
+R4(3,3,10,3,4) performs [Achilles' heel] to B3(3,2,10,2,4)
+B3 HP: 9 - 1 => 8
+Speed set from 2 to 1
+
+
+[Tick 75] R1,  acting
+Survived Unit: R1, R4, B3, B4, 
+R1(0,0,10,2,3) performs [Healing Link] to R4(3,3,10,3,4)
+[HEAL] R4 healed for 0 HP (from 1 to 1/10)
+
+
+[Tick 78] R1,  acting
+Survived Unit: R1, R4, B3, B4, 
+R1(0,0,10,2,3) performs [Healing Link] to R4(3,3,10,3,4)
+[HEAL] R4 healed for 0 HP (from 1 to 1/10)
+
+
+[Tick 80] R4, B4,  acting
+Survived Unit: R1, R4, B3, B4, 
+B4(5,-1,10,3,2) performs [Smoke Shot] to R4(3,3,10,3,4)
+R4 HP: 1 - 2 => -1
+Threat set from 4 to 1
+
+
+[Tick 81] R1,  acting
+Survived Unit: R1, B3, B4, 
+
+
+[Tick 82] B4,  acting
+Survived Unit: R1, B3, B4, 
+B4(5,-1,10,3,2) performs [Smoke Shot] to R1(0,0,10,2,3)
+R1 HP: 10 - 5 => 5
+Threat set from 3 to 3
+
+
+[Tick 84] B4,  acting
+Survived Unit: R1, B3, B4, 
+B4(5,-1,10,3,2) performs [Smoke Shot] to R1(0,0,10,2,3)
+R1 HP: 5 - 5 => 0
+Threat set from 3 to 3
+Battle Over! Blue Team wins!

@@ -5,21 +5,22 @@
 #include "TempBoonAction.h"
 #include "Unit.h"
 
-TempBoonAction::TempBoonAction() : BoonAction(), hasBeenApplied(false), effectExecuted(false), removalEffectName("") {}
-
-TempBoonAction::TempBoonAction(const std::string &id, const std::string &effectType, int duration,
-                               const std::string &removalEffect)
-    : BoonAction(id, effectType, duration), hasBeenApplied(false), effectExecuted(false),
-      removalEffectName(removalEffect) {}
+TempBoonAction::TempBoonAction(std::string id, std::string effectType, int duration, std::string removalEffect,
+                               Unit *caster)
+    : BoonAction(id, effectType, duration, caster), removalEffectName(removalEffect) {}
 
 void TempBoonAction::Perform(Unit *actor, Unit *target) {
     if (target) {
-        ActionContext ctx{actor, target};
 
+        ActionContext ctx;
+
+        if (this->Caster != nullptr)
+            ctx = ActionContext{this->Caster, target};
+        else
+            ctx = ActionContext{actor, target};
+
+        // Apply the buff effect only once
         if (!effectExecuted) {
-            // Apply the buff effect only once
-            LogSystem::LogStream("[TEMP-BUFF] ", GetEffectType(), " applied to ", target->GetName(),
-                                 " (Duration: ", GetUsageNumber(), " turns)");
 
             // Execute all conditional actions for this buff
             if (!conditionalActions.empty()) {
@@ -34,9 +35,6 @@ void TempBoonAction::Perform(Unit *actor, Unit *target) {
             MarkAsApplied();
             MarkEffectExecuted();
         } else {
-            // Count down duration and decrement usage for subsequent turns
-            LogSystem::LogStream("[TEMP-BUFF] ", GetEffectType(), " on ", target->GetName(),
-                                 " (Remaining: ", (GetUsageNumber() - 1), " turns)");
 
             // Only decrement usage after the first application
             const_cast<TempBoonAction *>(this)->DecrementUsage();
@@ -52,14 +50,12 @@ void TempBoonAction::Perform(Unit *actor, Unit *target) {
 
                 // Use EXECUTE_EFFECT to apply removal BattleAction
                 ActionFn removalAction = ActionLibrary::GetAction("EXECUTE_EFFECT", removalEffectName);
-                ActionContext removalContext = {actor, target};
+                ActionContext removalContext = {ctx.actor, ctx.target};
                 removalAction(removalContext);
             } else {
                 LogSystem::LogStream(" - no removal effect specified");
             }
-
-            // Clean up expired boons
-            actor->CleanupExpiredBoons();
+            target->CleanupExpiredBoons();
         }
     }
 }

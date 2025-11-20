@@ -1,159 +1,196 @@
-Unit 0: R0 Attack:5 Defense:1 HP:10 Speed:4 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA12]
-Unit 1: R1 Attack:4 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW10](Reckless Attack) Armor: [BSA17]
-Unit 2: R2 Attack:6 Defense:2 HP:12 Speed:2 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA24]
-Unit 3: R3 Attack:-1 Defense:1 HP:7 Speed:4 Threat:0 Weapon: [BSW36](Tetrodo) Armor: [BSA19]
-Unit 4: R4 Attack:2 Defense:6 HP:10 Speed:2 Threat:9 Weapon: [BSW13](Prep Attack) Armor: [BSA42]
-Unit 5: B0 Attack:4 Defense:2 HP:16 Speed:3 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA24]
-Unit 6: B1 Attack:-1 Defense:1 HP:7 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA19]
-Unit 7: B2 Attack:7 Defense:0 HP:10 Speed:4 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA11]
-Unit 8: B3 Attack:2 Defense:1 HP:10 Speed:5 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA12]
-Unit 9: B4 Attack:2 Defense:0 HP:10 Speed:6 Threat:0 Weapon: [BSW3](Thrust) Armor: [BSA14]
+Unit 0: R0 Attack:0 Defense:3 HP:13 Speed:0 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA47]
+Unit 1: R1 Attack:-1 Defense:1 HP:7 Speed:3 Threat:2 Weapon: [BSW42](Haste) Armor: [BSA19]
+Unit 2: R2 Attack:4 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA38]
+Unit 3: R3 Attack:2 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW36](Tetrodo) Armor: [BSA11]
+Unit 4: R4 Attack:4 Defense:1 HP:12 Speed:3 Threat:4 Weapon: [BSW11](Fade Attack) Armor: [BSA20]
+Unit 5: B0 Attack:4 Defense:1 HP:12 Speed:3 Threat:4 Weapon: [BSW11](Fade Attack) Armor: [BSA20]
+Unit 6: B1 Attack:3 Defense:6 HP:10 Speed:2 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA42]
+Unit 7: B2 Attack:4 Defense:5 HP:10 Speed:2 Threat:8 Weapon: [BSW29](Camo Throw) Armor: [BSA45]
+Unit 8: B3 Attack:5 Defense:1 HP:11 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA13]
+Unit 9: B4 Attack:2 Defense:6 HP:10 Speed:2 Threat:7 Weapon: [BSW20](Blitz Shot) Armor: [BSA42]
 ==========================
 
 
-[Tick 10] B4,  acting
+[Tick 12] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4 performs [Thrust] to R4
-R4 HP: 10 - 0 => 10
+R3(2,0,10,5,4) performs [Tetrodo] to B1(3,6,10,2,8)
 
 
-[Tick 12] B3,  acting
+[Tick 15] R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3 performs [Wind Blade] to R4
-R4 HP: 10 - 2 => 8
-B3 performs [Wind Blade] to R2
-R2 HP: 12 - 2 => 10
+R2(4,0,12,4,3) performs [Shoot] to B1(3,6,10,2,8)
+B1 HP: 10 - 0 => 10
+B3(5,1,11,4,4) performs [Momentum] to R0(0,3,13,0,11)
+R0 HP: 13 - 2 => 11
 
 
-[Tick 15] R0, R3, B2,  acting
+[Tick 20] R1, R4, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0 performs [Reckless Attack] to B2
+R4(4,1,12,3,4) performs [Fade Attack] to B1(3,6,10,2,8)
+B1 HP: 10 - 0 => 10
+B0(4,1,12,3,4) performs [Fade Attack] to R0(0,3,13,0,11)
+R0 HP: 11 - 1 => 10
+Threat set from 4 to 1
+Threat set from 4 to 1
+R1(-1,1,7,3,2) performs [Haste] to R0(0,3,13,0,11)
+
+
+[Tick 24] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(2,0,10,5,4) performs [Tetrodo] to B1(3,6,10,2,8)
+[BOON] Refreshing existing  on B1
+
+
+[Tick 30] B1, B2, B4, R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(3,6,10,2,8) performs [Camo Throw] to R0(0,3,13,0,11)
+R0 HP: 10 - 0 => 10
+B2(4,5,10,2,8) performs [Camo Throw] to R0(0,3,13,0,11)
 R0 HP: 10 - 1 => 9
-B2 HP: 10 - 6 => 4
-B2 performs [Reckless Attack] to R4
-B2 HP: 4 - 0 => 4
-R4 HP: 8 - 8 => 0
-R3 performs [Tetrodo] to B2
-[BOON] Applied Tetrodo Effect to B2 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B2 (usage: 2)
+B4(2,6,10,2,7) performs [Blitz Shot] to R0(0,3,13,0,11)
+R0 HP: 9 - 1 => 8
+R2(4,0,12,4,3) performs [Shoot] to B1(3,6,10,2,8)
+B1 HP: 10 - 0 => 10
+B3(5,1,11,4,4) performs [Momentum] to R0(0,3,13,0,11)
+R0 HP: 8 - 2 => 6
+Threat set from 8 to 11
+Threat set from 8 to 9
+[AFTER-ACTION] R3 → B1: Tetrodo Effect
+[BOON] Tetrodo Effect on B1 (Usage: 2/2)
+B1 HP: 10 - 2 => 8
 
 
-[Tick 20] R1, B0, B1, B4,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
-R1 performs [Reckless Attack] to B2
-R1 HP: 12 - 0 => 12
-B2 HP: 5 - 5 => 0
-B0 performs [Berserk] to R2
-B0 HP: 16 - 2 => 14
-R2 HP: 10 - 2 => 8
-B4 performs [Thrust] to R2
-R2 HP: 8 - 0 => 8
-B1 performs [Protect] to B0
-[BOON] Applied ProtectSTART to B0 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 36] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(2,0,10,5,4) performs [Tetrodo] to B1(3,6,10,2,11)
+[BOON] Refreshing existing  on B1
 
 
-[Tick 24] B3,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B3 performs [Wind Blade] to R2
-R2 HP: 8 - 2 => 6
-B3 performs [Wind Blade] to R0
-R0 HP: 9 - 2 => 7
+[Tick 40] R1, R4, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(4,1,12,3,1) performs [Fade Attack] to B1(3,6,10,2,11)
+B1 HP: 8 - 0 => 8
+B0(4,1,12,3,1) performs [Fade Attack] to R0(0,3,13,0,11)
+R0 HP: 6 - 1 => 5
+Threat set from 1 to -2
+Threat set from 1 to -2
+R1(-1,1,7,3,2) performs [Haste] to R0(0,3,13,0,11)
+[BOON] Refreshing existing  on R0
 
 
-[Tick 30] R2, R0, R3, B4,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R2 performs [Killer's Spirit] to B0
-B0 HP: 14 - 4 => 10
-R0 performs [Reckless Attack] to B0
-R0 HP: 7 - 1 => 6
-B0 HP: 10 - 6 => 4
-B4 performs [Thrust] to R2
-R2 HP: 6 - 0 => 6
-R3 performs [Tetrodo] to B0
-[BOON] Applied Tetrodo Effect to B0 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B0 (usage: 2)
+[Tick 45] R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(4,0,12,4,3) performs [Shoot] to B1(3,6,10,2,11)
+B1 HP: 8 - 0 => 8
+B3(5,1,11,4,4) performs [Momentum] to R0(0,3,13,0,11)
+R0 HP: 5 - 2 => 3
 
 
-[Tick 36] B3,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B3 performs [Wind Blade] to R2
-R2 HP: 6 - 2 => 4
-B3 performs [Wind Blade] to R0
-R0 HP: 6 - 2 => 4
+[Tick 48] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(2,0,10,5,4) performs [Tetrodo] to B1(3,6,10,2,11)
+[BOON] Refreshing existing  on B1
 
 
-[Tick 40] R1, B0, B1, B4,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R1 performs [Reckless Attack] to B0
-R1 HP: 12 - 0 => 12
-B0 HP: 5 - 5 => 0
-B0 performs [Berserk] to R2
-B0 HP: 2 - 2 => 0
-R2 HP: 4 - 4 => 0
-B4 performs [Thrust] to R0
-R0 HP: 4 - 3 => 1
-B1 performs [Protect] to B3
-[BOON] Applied ProtectSTART to B3 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
+[Tick 60] B1, B2, B4, R1, R4, B0, R2, B3, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(3,6,10,2,11) performs [Camo Throw] to R0(0,3,13,0,11)
+R0 HP: 3 - 0 => 3
+B2(4,5,10,2,9) performs [Camo Throw] to R0(0,3,13,0,11)
+R0 HP: 3 - 1 => 2
+B4(2,6,10,2,7) performs [Blitz Shot] to R0(0,3,13,0,11)
+R0 HP: 2 - 1 => 1
+R2(4,0,12,4,3) performs [Shoot] to B1(3,6,10,2,11)
+B1 HP: 8 - 0 => 8
+B3(5,1,11,4,4) performs [Momentum] to R0(0,3,13,0,11)
+R0 HP: 1 - 2 => -1
+Threat set from 11 to 14
+Threat set from 9 to 10
+Speed set from 4 to 6
+[AFTER-ACTION] R3 → B1: Tetrodo Effect
+[BOON] Tetrodo Effect on B1 (Usage: 2/2)
+B1 HP: 8 - 2 => 6
+R4(4,1,12,3,0) performs [Fade Attack] to B1(3,6,10,2,14)
+B1 HP: 6 - 0 => 6
+B0(4,1,12,3,0) performs [Fade Attack] to R3(2,0,10,5,4)
+R3 HP: 10 - 4 => 6
+Threat set from 0 to -3
+Threat set from 0 to -3
+R1(-1,1,7,3,2) performs [Haste] to R3(2,0,10,5,4)
+R3(2,0,10,5,4) performs [Tetrodo] to B1(3,6,10,2,14)
+[BOON] Refreshing existing  on B1
+[AFTER-ACTION] R1 → R3: HasteSTART
+Speed set from 3 to 4
 
 
-[Tick 45] R0, R3,  acting
-Survived Unit: R0, R1, R3, B1, B3, B4, 
-R0 performs [Reckless Attack] to B3
-R0 HP: 1 - 1 => 0
-B3 HP: 10 - 6 => 4
-R3 performs [Tetrodo] to B3
-[BOON] Applied Tetrodo Effect to B3 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B3 (usage: 2)
+[Tick 75] R2, B3,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(4,0,12,4,3) performs [Shoot] to B1(3,6,10,2,14)
+B1 HP: 6 - 0 => 6
+B3(5,1,11,6,4) performs [Momentum] to R3(2,0,10,5,4)
+R3 HP: 6 - 5 => 1
 
 
-[Tick 50] B4,  acting
-Survived Unit: R1, R3, B1, B3, B4, 
-B4 performs [Thrust] to R1
-R1 HP: 12 - 4 => 8
+[Tick 80] R1, R4, B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(4,1,12,3,0) performs [Fade Attack] to B1(3,6,10,2,14)
+B1 HP: 6 - 0 => 6
+B0(4,1,12,3,0) performs [Fade Attack] to R3(2,0,10,5,4)
+R3 HP: 1 - 4 => -3
+Threat set from 0 to -3
+Threat set from 0 to -3
+R1(-1,1,7,4,2) performs [Haste] to R2(4,0,12,4,3)
 
 
-[Tick 60] R1, B1, R3, B3, B4,  acting
-Survived Unit: R1, R3, B1, B3, B4, 
-R1 performs [Reckless Attack] to B3
-R1 HP: 8 - 0 => 8
-B3 HP: 5 - 5 => 0
-B4 performs [Thrust] to R1
-R1 HP: 8 - 4 => 4
-B1 performs [Protect] to B1
-[BOON] Applied ProtectSTART to B1 (Usage: 1)
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[AFTER-ACTION] No valid target found for B1
-R3 performs [Tetrodo] to B1
-[BOON] Applied Tetrodo Effect to B1 (Usage: 2)
-[A28] R3 applied Tetrodo Effect to B1 (usage: 2)
-B3 performs [Wind Blade] to R1
-R1 HP: 4 - 2 => 2
-B3 performs [Wind Blade] to R3
-R3 HP: 7 - 2 => 5
+[Tick 85] B3,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,6,4) performs [Momentum] to R2(4,0,12,4,3)
+R2 HP: 12 - 5 => 7
 
 
-[Tick 70] B4,  acting
-Survived Unit: R1, R3, B1, B4, 
-B4 performs [Thrust] to R1
-R1 HP: 4 - 4 => 0
+[Tick 87] B3,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,6,4) performs [Momentum] to R2(4,0,12,4,3)
+R2 HP: 7 - 5 => 2
 
 
-[Tick 80] B1, B4,  acting
-Survived Unit: R3, B1, B4, 
-B4 performs [Thrust] to R3
-R3 HP: 5 - 3 => 2
-B1 performs [Protect] to B1
-[BOON] Refreshing existing ProtectSTART on B1
-[REFRESH] ProtectSTART duration refreshed, ready for first effect
-[A31] Applied temporary buff ProtectSTART for 1 turns, removal: ProtectEND
-[AFTER-ACTION] No valid target found for B1
-[AFTER-ACTION] No valid target found for B1
+[Tick 89] B3,  acting
+Survived Unit: R1, R2, R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,6,4) performs [Momentum] to R2(4,0,12,4,3)
+R2 HP: 2 - 5 => -3
+Speed set from 6 to 8
 
 
-[Tick 90] B4,  acting
-Survived Unit: R3, B1, B4, 
-B4 performs [Thrust] to R3
-R3 HP: 3 - 3 => 0
+[Tick 90] B1, B2, B4,  acting
+Survived Unit: R1, R4, B0, B1, B2, B3, B4, 
+B1(3,6,10,2,14) performs [Camo Throw] to R1(-1,1,7,4,2)
+R1 HP: 7 - 2 => 5
+B2(4,5,10,2,10) performs [Camo Throw] to R1(-1,1,7,4,2)
+R1 HP: 5 - 3 => 2
+B4(2,6,10,2,7) performs [Blitz Shot] to R1(-1,1,7,4,2)
+R1 HP: 2 - 3 => -1
+Threat set from 14 to 17
+Threat set from 10 to 11
+[AFTER-ACTION] R3 → B1: Tetrodo Effect
+[BOON] Tetrodo Effect on B1 (Usage: 2/2)
+B1 HP: 6 - 2 => 4
+
+
+[Tick 91] B3,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,8,4) performs [Momentum] to R4(4,1,12,3,0)
+R4 HP: 12 - 4 => 8
+
+
+[Tick 94] B3,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,8,4) performs [Momentum] to R4(4,1,12,3,0)
+R4 HP: 8 - 4 => 4
+
+
+[Tick 97] B3,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B3(5,1,11,8,4) performs [Momentum] to R4(4,1,12,3,0)
+R4 HP: 4 - 4 => 0
+Speed set from 8 to 10
 Battle Over! Blue Team wins!

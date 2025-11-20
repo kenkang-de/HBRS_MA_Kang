@@ -153,44 +153,16 @@ void Unit::EnhanceHP(int amount) {
     currentHP += amount;
 }
 
-// Boon management methods
 void Unit::AddBoon(std::unique_ptr<BoonAction> boon) {
     // Check if the same effect type already exists
     for (auto &existingBoon : activeBoons) {
         if (existingBoon->GetEffectType() == boon->GetEffectType()) {
-            LogSystem::LogStream("[BOON] Refreshing existing ", boon->GetID(), " on ", Name);
-
-            // For TempBoonAction, we want to reset duration but NOT reapply the effect
-            TempBoonAction *tempBoon = dynamic_cast<TempBoonAction *>(existingBoon.get());
-            if (tempBoon) {
-                // Store the current execution state before reset
-                bool wasExecuted = tempBoon->HasEffectExecuted();
-
-                // Reset the usage counter (this also resets flags)
-                BoonAction *baseBoon = static_cast<BoonAction *>(tempBoon);
-                baseBoon->ResetUsage();
-
-                // If effect was already executed, prevent reapplication
-                if (wasExecuted) {
-                    tempBoon->MarkAsApplied();
-                    tempBoon->MarkEffectExecuted();
-                    LogSystem::LogStream("[REFRESH] ", boon->GetEffectType(),
-                                         " duration refreshed, effect remains active");
-                } else {
-                    LogSystem::LogStream("[REFRESH] ", boon->GetEffectType(),
-                                         " duration refreshed, ready for first effect");
-                }
-            } else {
-                // For regular boons, normal reset
-                existingBoon->ResetUsage();
-            }
+            LogSystem::LogStream("[BOON] Refreshing existing  on ", Name);
+            existingBoon->ResetUsage();
             return;
         }
     }
-
-    // Add new boon
-    LogSystem::LogStream("[BOON] Applied ", boon->GetEffectType(), " to ", Name, " (Usage: ", boon->GetUsageNumber(),
-                         ")");
+    // else add the boon to the list
     activeBoons.push_back(std::move(boon));
 }
 
@@ -206,7 +178,7 @@ bool Unit::HasBoon(const std::string &effectType) const {
 void Unit::ApplyBoonsToAfterAction() {
     for (std::unique_ptr<BoonAction> &boon : activeBoons) {
         if (!boon->IsExpired()) {
-            ActionContext context{this, this};
+            ActionContext context{boon->Caster, this};
             GlobalAction::AddAfterAction(boon.get(), context);
         }
     }

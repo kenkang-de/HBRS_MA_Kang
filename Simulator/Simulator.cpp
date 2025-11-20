@@ -76,7 +76,7 @@ void Simulator::SimulateBattle(SimulationTeamSetting *redTeamSetting, Simulation
                                std::string batchID) {
     // Clear any static/global state before battle
     SynergyRule::ResetAppliedCounter(); // Reset synergy counter each battle
-    GlobalAction::ClearAfterAction();   // Clear any lingering after actions
+    GlobalAction::ClearAfterAction();
 
     // Equip both teams
     EquipTeam(0, redTeamSetting);
@@ -84,7 +84,4 @@ void Simulator::SimulateBattle(SimulationTeamSetting *redTeamSetting, Simulation
 
     BattleManager battleManager(*battlefield);
     battleManager.StartBattle(log, batchID);
-
-    // Additional cleanup after battle
-    GlobalAction::ClearAfterAction(); // Make sure after actions are cleared
 }

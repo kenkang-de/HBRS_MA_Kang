@@ -1,0 +1,6 @@
+﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
+BSW46,Charm,,0,0,-4,2,0,Protect
+BSW47,Charm,,2,0,-4,2,0,Cheer
+BSW48,Staff,,3,0,-4,5,0,Meteor
+BSW49,Staff,,2,0,-4,4,0,Earthquake
+BSW50,Wand,,0,0,-4,2,0,Corrosion

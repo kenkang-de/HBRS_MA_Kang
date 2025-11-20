@@ -8,15 +8,18 @@ class Unit;
 
 class BoonAction : public BattleAction {
   private:
-    mutable int usageNumber; // How many times this boon can trigger (mutable for const Perform)
-    int maxUsage;            // Original usage for reference
-    std::string effectType;  // Type of effect (buff/debuff identifier)
+    mutable int usageNumber;
+    int maxUsage;
+    std::string effectType;
 
   public:
-    BoonAction();
-    BoonAction(const std::string &id, const std::string &effectType, int usage);
+    BoonAction(const std::string &id, const std::string &effectType, int usage, Unit *caster)
+        : BattleAction(), effectType(effectType), usageNumber(usage), maxUsage(usage), Caster(caster) {
+        SetID(id);
+    }
 
-    // Getters
+    Unit *Caster;
+
     int GetUsageNumber() const {
         return usageNumber;
     }
@@ -27,7 +30,6 @@ class BoonAction : public BattleAction {
         return effectType;
     }
 
-    // Usage management
     void DecrementUsage() {
         if (usageNumber > 0)
             usageNumber--;
@@ -36,12 +38,9 @@ class BoonAction : public BattleAction {
         return usageNumber <= 0;
     }
 
-    // Reset usage (for reapplying same effect)
     virtual void ResetUsage() {
         usageNumber = maxUsage;
     }
-
-    // Override Perform to handle boon-specific logic
     void Perform(Unit *actor, Unit *target) override;
 };
 

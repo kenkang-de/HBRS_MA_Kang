@@ -1,0 +1,4392 @@
+Unit 0: R0 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA1]
+Unit 1: R1 Attack:0 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA2]
+Unit 2: R2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW43](Vow) Armor: [BSA3]
+Unit 3: R3 Attack:1 Defense:0 HP:8 Speed:6 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA4]
+Unit 4: R4 Attack:1 Defense:0 HP:9 Speed:5 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA5]
+Unit 5: B0 Attack:-1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA1]
+Unit 6: B1 Attack:0 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA2]
+Unit 7: B2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:6 Weapon: [BSW43](Vow) Armor: [BSA3]
+Unit 8: B3 Attack:1 Defense:0 HP:8 Speed:6 Threat:7 Weapon: [BSW44](Exposure) Armor: [BSA4]
+Unit 9: B4 Attack:1 Defense:0 HP:9 Speed:5 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA5]
+==========================
+
+
+[Tick 5] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,7) performs [Exposure] to B3(1,0,8,6,7)
+Threat set from 7 to 8
+R3(1,0,8,6,7) performs [Exposure] to B0(-1,0,10,5,6)
+Threat set from 6 to 7
+R3(1,0,8,6,7) performs [Exposure] to B1(0,-1,10,5,6)
+Threat set from 6 to 7
+B3(1,0,8,6,8) performs [Exposure] to R3(1,0,8,6,7)
+Threat set from 7 to 8
+B3(1,0,8,6,8) performs [Exposure] to R0(-1,0,10,5,6)
+Threat set from 6 to 7
+B3(1,0,8,6,8) performs [Exposure] to R1(0,-1,10,5,6)
+Threat set from 6 to 7
+
+
+[Tick 6] R0, R1, R2, R4, B0, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,5,7) performs [Bulkup] to R3(1,0,8,6,8)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,7) performs [Haste] to R3(1,0,8,6,8)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,8)
+Threat set from 8 to 9
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,5,7)
+Threat set from 7 to 8
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,8)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,5,7)
+Speed set from 5 to 4
+B0(-1,0,10,4,7) performs [Bulkup] to B3(1,0,8,5,8)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B1(0,-1,10,5,7) performs [Haste] to B3(1,0,8,5,8)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,8)
+Threat set from 8 to 9
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,4,7)
+Threat set from 7 to 8
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,9)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,5,8)
+Speed set from 5 to 4
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+
+
+[Tick 10] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,9) performs [Exposure] to B3(1,0,8,5,9)
+Threat set from 9 to 10
+R3(1,0,8,5,9) performs [Exposure] to B0(-1,0,10,4,8)
+Threat set from 8 to 9
+R3(1,0,8,5,9) performs [Exposure] to B1(0,-1,10,5,7)
+Threat set from 7 to 8
+B3(1,0,8,5,10) performs [Exposure] to R3(1,0,8,5,9)
+Threat set from 9 to 10
+B3(1,0,8,5,10) performs [Exposure] to R0(-1,0,10,4,8)
+Threat set from 8 to 9
+B3(1,0,8,5,10) performs [Exposure] to R1(0,-1,10,5,7)
+Threat set from 7 to 8
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 12] R0, R1, R2, R4, B0, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,4,9) performs [Bulkup] to R3(1,0,8,6,10)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,8) performs [Haste] to R3(1,0,8,6,10)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,10)
+Threat set from 10 to 11
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,4,9)
+Threat set from 9 to 10
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,10)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,4,9)
+Speed set from 4 to 3
+B0(-1,0,10,3,9) performs [Bulkup] to B3(1,0,8,5,10)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B1(0,-1,10,5,8) performs [Haste] to B3(1,0,8,5,10)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,10)
+Threat set from 10 to 11
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,3,9)
+Threat set from 9 to 10
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,11)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,4,10)
+Speed set from 4 to 3
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start on R0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on R0 - cleaned up
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start on B0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on B0 - cleaned up
+
+
+[Tick 14] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,11) performs [Exposure] to B3(1,0,8,5,11)
+Threat set from 11 to 12
+R3(1,0,8,5,11) performs [Exposure] to B0(-1,0,10,3,10)
+Threat set from 10 to 11
+R3(1,0,8,5,11) performs [Exposure] to B1(0,-1,10,5,8)
+Threat set from 8 to 9
+B3(1,0,8,5,12) performs [Exposure] to R3(1,0,8,5,11)
+Threat set from 11 to 12
+B3(1,0,8,5,12) performs [Exposure] to R0(-1,0,10,3,10)
+Threat set from 10 to 11
+B3(1,0,8,5,12) performs [Exposure] to R1(0,-1,10,5,8)
+Threat set from 8 to 9
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 17] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,12) performs [Exposure] to B3(1,0,8,6,12)
+Threat set from 12 to 13
+R3(1,0,8,6,12) performs [Exposure] to B0(-1,0,10,3,11)
+Threat set from 11 to 12
+R3(1,0,8,6,12) performs [Exposure] to B1(0,-1,10,5,9)
+Threat set from 9 to 10
+B3(1,0,8,6,13) performs [Exposure] to R3(1,0,8,6,12)
+Threat set from 12 to 13
+B3(1,0,8,6,13) performs [Exposure] to R0(-1,0,10,3,11)
+Threat set from 11 to 12
+B3(1,0,8,6,13) performs [Exposure] to R1(0,-1,10,5,9)
+Threat set from 9 to 10
+
+
+[Tick 22] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,13) performs [Exposure] to B3(1,0,8,6,13)
+Threat set from 13 to 14
+R3(1,0,8,6,13) performs [Exposure] to B0(-1,0,10,3,12)
+Threat set from 12 to 13
+R3(1,0,8,6,13) performs [Exposure] to B1(0,-1,10,5,10)
+Threat set from 10 to 11
+B3(1,0,8,6,14) performs [Exposure] to R3(1,0,8,6,13)
+Threat set from 13 to 14
+B3(1,0,8,6,14) performs [Exposure] to R0(-1,0,10,3,12)
+Threat set from 12 to 13
+B3(1,0,8,6,14) performs [Exposure] to R1(0,-1,10,5,10)
+Threat set from 10 to 11
+
+
+[Tick 24] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,11) performs [Haste] to R3(1,0,8,6,14)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,14)
+Threat set from 14 to 15
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,3,13)
+Threat set from 13 to 14
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,14)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,3,13)
+Speed set from 3 to 2
+B1(0,-1,10,5,11) performs [Haste] to B3(1,0,8,5,14)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,14)
+Threat set from 14 to 15
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,2,13)
+Threat set from 13 to 14
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,15)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,3,14)
+Speed set from 3 to 2
+
+
+[Tick 27] R0, B0, R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,2,14) performs [Bulkup] to R3(1,0,8,5,15)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,2,14) performs [Bulkup] to B3(1,0,8,5,15)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R3(1,0,8,5,15) performs [Exposure] to B3(1,0,8,5,15)
+Threat set from 15 to 16
+R3(1,0,8,5,15) performs [Exposure] to B0(-1,0,10,2,14)
+Threat set from 14 to 15
+R3(1,0,8,5,15) performs [Exposure] to B1(0,-1,10,5,11)
+Threat set from 11 to 12
+B3(1,0,8,5,16) performs [Exposure] to R3(1,0,8,5,15)
+Threat set from 15 to 16
+B3(1,0,8,5,16) performs [Exposure] to R0(-1,0,10,2,14)
+Threat set from 14 to 15
+B3(1,0,8,5,16) performs [Exposure] to R1(0,-1,10,5,11)
+Threat set from 11 to 12
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+
+
+[Tick 29] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,16) performs [Exposure] to B3(1,0,8,6,16)
+Threat set from 16 to 17
+R3(1,0,8,6,16) performs [Exposure] to B0(-1,0,10,2,15)
+Threat set from 15 to 16
+R3(1,0,8,6,16) performs [Exposure] to B1(0,-1,10,5,12)
+Threat set from 12 to 13
+B3(1,0,8,6,17) performs [Exposure] to R3(1,0,8,6,16)
+Threat set from 16 to 17
+B3(1,0,8,6,17) performs [Exposure] to R0(-1,0,10,2,15)
+Threat set from 15 to 16
+B3(1,0,8,6,17) performs [Exposure] to R1(0,-1,10,5,12)
+Threat set from 12 to 13
+
+
+[Tick 30] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,13) performs [Haste] to R3(1,0,8,6,17)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,17)
+Threat set from 17 to 18
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,2,16)
+Threat set from 16 to 17
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,17)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,2,16)
+Speed set from 2 to 1
+B1(0,-1,10,5,13) performs [Haste] to B3(1,0,8,5,17)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,17)
+Threat set from 17 to 18
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,16)
+Threat set from 16 to 17
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,18)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,2,17)
+Speed set from 2 to 1
+
+
+[Tick 32] R0, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,17) performs [Bulkup] to R3(1,0,8,5,18)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,17) performs [Bulkup] to B3(1,0,8,5,18)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start on R0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on R0 - cleaned up
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start on B0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on B0 - cleaned up
+
+
+[Tick 34] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,18) performs [Exposure] to B3(1,0,8,5,18)
+Threat set from 18 to 19
+R3(1,0,8,5,18) performs [Exposure] to B0(-1,0,10,1,17)
+Threat set from 17 to 18
+R3(1,0,8,5,18) performs [Exposure] to B1(0,-1,10,5,13)
+Threat set from 13 to 14
+B3(1,0,8,5,19) performs [Exposure] to R3(1,0,8,5,18)
+Threat set from 18 to 19
+B3(1,0,8,5,19) performs [Exposure] to R0(-1,0,10,1,17)
+Threat set from 17 to 18
+B3(1,0,8,5,19) performs [Exposure] to R1(0,-1,10,5,13)
+Threat set from 13 to 14
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+
+
+[Tick 35] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,19) performs [Exposure] to B3(1,0,8,6,19)
+Threat set from 19 to 20
+R3(1,0,8,6,19) performs [Exposure] to B0(-1,0,10,1,18)
+Threat set from 18 to 19
+R3(1,0,8,6,19) performs [Exposure] to B1(0,-1,10,5,14)
+Threat set from 14 to 15
+B3(1,0,8,6,20) performs [Exposure] to R3(1,0,8,6,19)
+Threat set from 19 to 20
+B3(1,0,8,6,20) performs [Exposure] to R0(-1,0,10,1,18)
+Threat set from 18 to 19
+B3(1,0,8,6,20) performs [Exposure] to R1(0,-1,10,5,14)
+Threat set from 14 to 15
+
+
+[Tick 36] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,15) performs [Haste] to R3(1,0,8,6,20)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,20)
+Threat set from 20 to 21
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,19)
+Threat set from 19 to 20
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,20)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,19)
+Speed set from 1 to 1
+B1(0,-1,10,5,15) performs [Haste] to B3(1,0,8,5,20)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,20)
+Threat set from 20 to 21
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,19)
+Threat set from 19 to 20
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,21)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,20)
+Speed set from 1 to 1
+
+
+[Tick 37] R0, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,20) performs [Bulkup] to R3(1,0,8,5,21)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,20) performs [Bulkup] to B3(1,0,8,5,21)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+
+
+[Tick 40] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,21) performs [Exposure] to B3(1,0,8,5,21)
+Threat set from 21 to 22
+R3(1,0,8,5,21) performs [Exposure] to B0(-1,0,10,1,20)
+Threat set from 20 to 21
+R3(1,0,8,5,21) performs [Exposure] to B1(0,-1,10,5,15)
+Threat set from 15 to 16
+B3(1,0,8,5,22) performs [Exposure] to R3(1,0,8,5,21)
+Threat set from 21 to 22
+B3(1,0,8,5,22) performs [Exposure] to R0(-1,0,10,1,20)
+Threat set from 20 to 21
+B3(1,0,8,5,22) performs [Exposure] to R1(0,-1,10,5,15)
+Threat set from 15 to 16
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+
+
+[Tick 41] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,22) performs [Exposure] to B3(1,0,8,6,22)
+Threat set from 22 to 23
+R3(1,0,8,6,22) performs [Exposure] to B0(-1,0,10,1,21)
+Threat set from 21 to 22
+R3(1,0,8,6,22) performs [Exposure] to B1(0,-1,10,5,16)
+Threat set from 16 to 17
+B3(1,0,8,6,23) performs [Exposure] to R3(1,0,8,6,22)
+Threat set from 22 to 23
+B3(1,0,8,6,23) performs [Exposure] to R0(-1,0,10,1,21)
+Threat set from 21 to 22
+B3(1,0,8,6,23) performs [Exposure] to R1(0,-1,10,5,16)
+Threat set from 16 to 17
+
+
+[Tick 42] R1, R2, R4, B1, B2, B4, R0, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,17) performs [Haste] to R3(1,0,8,6,23)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,23)
+Threat set from 23 to 24
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,22)
+Threat set from 22 to 23
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,23)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,22)
+Speed set from 1 to 1
+B1(0,-1,10,5,17) performs [Haste] to B3(1,0,8,5,23)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,23)
+Threat set from 23 to 24
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,22)
+Threat set from 22 to 23
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,24)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,23)
+Speed set from 1 to 1
+R0(-1,0,10,1,23) performs [Bulkup] to R3(1,0,8,5,24)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,23) performs [Bulkup] to B3(1,0,8,5,24)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start on R0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on R0 - cleaned up
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start on B0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on B0 - cleaned up
+
+
+[Tick 46] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,24) performs [Exposure] to B3(1,0,8,5,24)
+Threat set from 24 to 25
+R3(1,0,8,5,24) performs [Exposure] to B0(-1,0,10,1,23)
+Threat set from 23 to 24
+R3(1,0,8,5,24) performs [Exposure] to B1(0,-1,10,5,17)
+Threat set from 17 to 18
+B3(1,0,8,5,25) performs [Exposure] to R3(1,0,8,5,24)
+Threat set from 24 to 25
+B3(1,0,8,5,25) performs [Exposure] to R0(-1,0,10,1,23)
+Threat set from 23 to 24
+B3(1,0,8,5,25) performs [Exposure] to R1(0,-1,10,5,17)
+Threat set from 17 to 18
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+
+
+[Tick 47] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,25) performs [Exposure] to B3(1,0,8,6,25)
+Threat set from 25 to 26
+R3(1,0,8,6,25) performs [Exposure] to B0(-1,0,10,1,24)
+Threat set from 24 to 25
+R3(1,0,8,6,25) performs [Exposure] to B1(0,-1,10,5,18)
+Threat set from 18 to 19
+B3(1,0,8,6,26) performs [Exposure] to R3(1,0,8,6,25)
+Threat set from 25 to 26
+B3(1,0,8,6,26) performs [Exposure] to R0(-1,0,10,1,24)
+Threat set from 24 to 25
+B3(1,0,8,6,26) performs [Exposure] to R1(0,-1,10,5,18)
+Threat set from 18 to 19
+
+
+[Tick 48] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,19) performs [Haste] to R3(1,0,8,6,26)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,26)
+Threat set from 26 to 27
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,25)
+Threat set from 25 to 26
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,26)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,25)
+Speed set from 1 to 1
+B1(0,-1,10,5,19) performs [Haste] to B3(1,0,8,5,26)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,26)
+Threat set from 26 to 27
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,25)
+Threat set from 25 to 26
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,27)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,26)
+Speed set from 1 to 1
+
+
+[Tick 52] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,27) performs [Exposure] to B3(1,0,8,5,27)
+Threat set from 27 to 28
+R3(1,0,8,5,27) performs [Exposure] to B0(-1,0,10,1,26)
+Threat set from 26 to 27
+R3(1,0,8,5,27) performs [Exposure] to B1(0,-1,10,5,19)
+Threat set from 19 to 20
+B3(1,0,8,5,28) performs [Exposure] to R3(1,0,8,5,27)
+Threat set from 27 to 28
+B3(1,0,8,5,28) performs [Exposure] to R0(-1,0,10,1,26)
+Threat set from 26 to 27
+B3(1,0,8,5,28) performs [Exposure] to R1(0,-1,10,5,19)
+Threat set from 19 to 20
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 53] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,28) performs [Exposure] to B3(1,0,8,6,28)
+Threat set from 28 to 29
+R3(1,0,8,6,28) performs [Exposure] to B0(-1,0,10,1,27)
+Threat set from 27 to 28
+R3(1,0,8,6,28) performs [Exposure] to B1(0,-1,10,5,20)
+Threat set from 20 to 21
+B3(1,0,8,6,29) performs [Exposure] to R3(1,0,8,6,28)
+Threat set from 28 to 29
+B3(1,0,8,6,29) performs [Exposure] to R0(-1,0,10,1,27)
+Threat set from 27 to 28
+B3(1,0,8,6,29) performs [Exposure] to R1(0,-1,10,5,20)
+Threat set from 20 to 21
+
+
+[Tick 54] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,21) performs [Haste] to R3(1,0,8,6,29)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,29)
+Threat set from 29 to 30
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,28)
+Threat set from 28 to 29
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,29)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,28)
+Speed set from 1 to 1
+B1(0,-1,10,5,21) performs [Haste] to B3(1,0,8,5,29)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,29)
+Threat set from 29 to 30
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,28)
+Threat set from 28 to 29
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,30)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,29)
+Speed set from 1 to 1
+
+
+[Tick 58] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,30) performs [Exposure] to B3(1,0,8,5,30)
+Threat set from 30 to 31
+R3(1,0,8,5,30) performs [Exposure] to B0(-1,0,10,1,29)
+Threat set from 29 to 30
+R3(1,0,8,5,30) performs [Exposure] to B1(0,-1,10,5,21)
+Threat set from 21 to 22
+B3(1,0,8,5,31) performs [Exposure] to R3(1,0,8,5,30)
+Threat set from 30 to 31
+B3(1,0,8,5,31) performs [Exposure] to R0(-1,0,10,1,29)
+Threat set from 29 to 30
+B3(1,0,8,5,31) performs [Exposure] to R1(0,-1,10,5,21)
+Threat set from 21 to 22
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 59] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,31) performs [Exposure] to B3(1,0,8,6,31)
+Threat set from 31 to 32
+R3(1,0,8,6,31) performs [Exposure] to B0(-1,0,10,1,30)
+Threat set from 30 to 31
+R3(1,0,8,6,31) performs [Exposure] to B1(0,-1,10,5,22)
+Threat set from 22 to 23
+B3(1,0,8,6,32) performs [Exposure] to R3(1,0,8,6,31)
+Threat set from 31 to 32
+B3(1,0,8,6,32) performs [Exposure] to R0(-1,0,10,1,30)
+Threat set from 30 to 31
+B3(1,0,8,6,32) performs [Exposure] to R1(0,-1,10,5,22)
+Threat set from 22 to 23
+
+
+[Tick 60] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,23) performs [Haste] to R3(1,0,8,6,32)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,32)
+Threat set from 32 to 33
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,31)
+Threat set from 31 to 32
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,32)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,31)
+Speed set from 1 to 1
+B1(0,-1,10,5,23) performs [Haste] to B3(1,0,8,5,32)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,32)
+Threat set from 32 to 33
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,31)
+Threat set from 31 to 32
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,33)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,32)
+Speed set from 1 to 1
+
+
+[Tick 64] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,33) performs [Exposure] to B3(1,0,8,5,33)
+Threat set from 33 to 34
+R3(1,0,8,5,33) performs [Exposure] to B0(-1,0,10,1,32)
+Threat set from 32 to 33
+R3(1,0,8,5,33) performs [Exposure] to B1(0,-1,10,5,23)
+Threat set from 23 to 24
+B3(1,0,8,5,34) performs [Exposure] to R3(1,0,8,5,33)
+Threat set from 33 to 34
+B3(1,0,8,5,34) performs [Exposure] to R0(-1,0,10,1,32)
+Threat set from 32 to 33
+B3(1,0,8,5,34) performs [Exposure] to R1(0,-1,10,5,23)
+Threat set from 23 to 24
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 65] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,34) performs [Exposure] to B3(1,0,8,6,34)
+Threat set from 34 to 35
+R3(1,0,8,6,34) performs [Exposure] to B0(-1,0,10,1,33)
+Threat set from 33 to 34
+R3(1,0,8,6,34) performs [Exposure] to B1(0,-1,10,5,24)
+Threat set from 24 to 25
+B3(1,0,8,6,35) performs [Exposure] to R3(1,0,8,6,34)
+Threat set from 34 to 35
+B3(1,0,8,6,35) performs [Exposure] to R0(-1,0,10,1,33)
+Threat set from 33 to 34
+B3(1,0,8,6,35) performs [Exposure] to R1(0,-1,10,5,24)
+Threat set from 24 to 25
+
+
+[Tick 66] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,25) performs [Haste] to R3(1,0,8,6,35)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,35)
+Threat set from 35 to 36
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,34)
+Threat set from 34 to 35
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,35)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,34)
+Speed set from 1 to 1
+B1(0,-1,10,5,25) performs [Haste] to B3(1,0,8,5,35)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,35)
+Threat set from 35 to 36
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,34)
+Threat set from 34 to 35
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,36)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,35)
+Speed set from 1 to 1
+
+
+[Tick 70] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,36) performs [Exposure] to B3(1,0,8,5,36)
+Threat set from 36 to 37
+R3(1,0,8,5,36) performs [Exposure] to B0(-1,0,10,1,35)
+Threat set from 35 to 36
+R3(1,0,8,5,36) performs [Exposure] to B1(0,-1,10,5,25)
+Threat set from 25 to 26
+B3(1,0,8,5,37) performs [Exposure] to R3(1,0,8,5,36)
+Threat set from 36 to 37
+B3(1,0,8,5,37) performs [Exposure] to R0(-1,0,10,1,35)
+Threat set from 35 to 36
+B3(1,0,8,5,37) performs [Exposure] to R1(0,-1,10,5,25)
+Threat set from 25 to 26
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 71] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,37) performs [Exposure] to B3(1,0,8,6,37)
+Threat set from 37 to 38
+R3(1,0,8,6,37) performs [Exposure] to B0(-1,0,10,1,36)
+Threat set from 36 to 37
+R3(1,0,8,6,37) performs [Exposure] to B1(0,-1,10,5,26)
+Threat set from 26 to 27
+B3(1,0,8,6,38) performs [Exposure] to R3(1,0,8,6,37)
+Threat set from 37 to 38
+B3(1,0,8,6,38) performs [Exposure] to R0(-1,0,10,1,36)
+Threat set from 36 to 37
+B3(1,0,8,6,38) performs [Exposure] to R1(0,-1,10,5,26)
+Threat set from 26 to 27
+
+
+[Tick 72] R0, B0, R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,37) performs [Bulkup] to R3(1,0,8,6,38)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,37) performs [Bulkup] to B3(1,0,8,6,38)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,27) performs [Haste] to R3(1,0,8,6,38)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,38)
+Threat set from 38 to 39
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,37)
+Threat set from 37 to 38
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,38)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,37)
+Speed set from 1 to 1
+B1(0,-1,10,5,27) performs [Haste] to B3(1,0,8,5,38)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,38)
+Threat set from 38 to 39
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,37)
+Threat set from 37 to 38
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,39)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,38)
+Speed set from 1 to 1
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+
+
+[Tick 76] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,39) performs [Exposure] to B3(1,0,8,5,39)
+Threat set from 39 to 40
+R3(1,0,8,5,39) performs [Exposure] to B0(-1,0,10,1,38)
+Threat set from 38 to 39
+R3(1,0,8,5,39) performs [Exposure] to B1(0,-1,10,5,27)
+Threat set from 27 to 28
+B3(1,0,8,5,40) performs [Exposure] to R3(1,0,8,5,39)
+Threat set from 39 to 40
+B3(1,0,8,5,40) performs [Exposure] to R0(-1,0,10,1,38)
+Threat set from 38 to 39
+B3(1,0,8,5,40) performs [Exposure] to R1(0,-1,10,5,27)
+Threat set from 27 to 28
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 77] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,40) performs [Exposure] to B3(1,0,8,6,40)
+Threat set from 40 to 41
+R3(1,0,8,6,40) performs [Exposure] to B0(-1,0,10,1,39)
+Threat set from 39 to 40
+R3(1,0,8,6,40) performs [Exposure] to B1(0,-1,10,5,28)
+Threat set from 28 to 29
+B3(1,0,8,6,41) performs [Exposure] to R3(1,0,8,6,40)
+Threat set from 40 to 41
+B3(1,0,8,6,41) performs [Exposure] to R0(-1,0,10,1,39)
+Threat set from 39 to 40
+B3(1,0,8,6,41) performs [Exposure] to R1(0,-1,10,5,28)
+Threat set from 28 to 29
+
+
+[Tick 78] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,29) performs [Haste] to R3(1,0,8,6,41)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,41)
+Threat set from 41 to 42
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,40)
+Threat set from 40 to 41
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,41)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,40)
+Speed set from 1 to 1
+B1(0,-1,10,5,29) performs [Haste] to B3(1,0,8,5,41)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,41)
+Threat set from 41 to 42
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,40)
+Threat set from 40 to 41
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,42)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,41)
+Speed set from 1 to 1
+
+
+[Tick 82] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,42) performs [Exposure] to B3(1,0,8,5,42)
+Threat set from 42 to 43
+R3(1,0,8,5,42) performs [Exposure] to B0(-1,0,10,1,41)
+Threat set from 41 to 42
+R3(1,0,8,5,42) performs [Exposure] to B1(0,-1,10,5,29)
+Threat set from 29 to 30
+B3(1,0,8,5,43) performs [Exposure] to R3(1,0,8,5,42)
+Threat set from 42 to 43
+B3(1,0,8,5,43) performs [Exposure] to R0(-1,0,10,1,41)
+Threat set from 41 to 42
+B3(1,0,8,5,43) performs [Exposure] to R1(0,-1,10,5,29)
+Threat set from 29 to 30
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 83] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,43) performs [Exposure] to B3(1,0,8,6,43)
+Threat set from 43 to 44
+R3(1,0,8,6,43) performs [Exposure] to B0(-1,0,10,1,42)
+Threat set from 42 to 43
+R3(1,0,8,6,43) performs [Exposure] to B1(0,-1,10,5,30)
+Threat set from 30 to 31
+B3(1,0,8,6,44) performs [Exposure] to R3(1,0,8,6,43)
+Threat set from 43 to 44
+B3(1,0,8,6,44) performs [Exposure] to R0(-1,0,10,1,42)
+Threat set from 42 to 43
+B3(1,0,8,6,44) performs [Exposure] to R1(0,-1,10,5,30)
+Threat set from 30 to 31
+
+
+[Tick 84] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,31) performs [Haste] to R3(1,0,8,6,44)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,44)
+Threat set from 44 to 45
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,43)
+Threat set from 43 to 44
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,44)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,43)
+Speed set from 1 to 1
+B1(0,-1,10,5,31) performs [Haste] to B3(1,0,8,5,44)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,44)
+Threat set from 44 to 45
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,43)
+Threat set from 43 to 44
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,45)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,44)
+Speed set from 1 to 1
+
+
+[Tick 88] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,45) performs [Exposure] to B3(1,0,8,5,45)
+Threat set from 45 to 46
+R3(1,0,8,5,45) performs [Exposure] to B0(-1,0,10,1,44)
+Threat set from 44 to 45
+R3(1,0,8,5,45) performs [Exposure] to B1(0,-1,10,5,31)
+Threat set from 31 to 32
+B3(1,0,8,5,46) performs [Exposure] to R3(1,0,8,5,45)
+Threat set from 45 to 46
+B3(1,0,8,5,46) performs [Exposure] to R0(-1,0,10,1,44)
+Threat set from 44 to 45
+B3(1,0,8,5,46) performs [Exposure] to R1(0,-1,10,5,31)
+Threat set from 31 to 32
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 89] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,46) performs [Exposure] to B3(1,0,8,6,46)
+Threat set from 46 to 47
+R3(1,0,8,6,46) performs [Exposure] to B0(-1,0,10,1,45)
+Threat set from 45 to 46
+R3(1,0,8,6,46) performs [Exposure] to B1(0,-1,10,5,32)
+Threat set from 32 to 33
+B3(1,0,8,6,47) performs [Exposure] to R3(1,0,8,6,46)
+Threat set from 46 to 47
+B3(1,0,8,6,47) performs [Exposure] to R0(-1,0,10,1,45)
+Threat set from 45 to 46
+B3(1,0,8,6,47) performs [Exposure] to R1(0,-1,10,5,32)
+Threat set from 32 to 33
+
+
+[Tick 90] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,33) performs [Haste] to R3(1,0,8,6,47)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,47)
+Threat set from 47 to 48
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,46)
+Threat set from 46 to 47
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,47)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,46)
+Speed set from 1 to 1
+B1(0,-1,10,5,33) performs [Haste] to B3(1,0,8,5,47)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,47)
+Threat set from 47 to 48
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,46)
+Threat set from 46 to 47
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,48)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,47)
+Speed set from 1 to 1
+
+
+[Tick 94] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,48) performs [Exposure] to B3(1,0,8,5,48)
+Threat set from 48 to 49
+R3(1,0,8,5,48) performs [Exposure] to B0(-1,0,10,1,47)
+Threat set from 47 to 48
+R3(1,0,8,5,48) performs [Exposure] to B1(0,-1,10,5,33)
+Threat set from 33 to 34
+B3(1,0,8,5,49) performs [Exposure] to R3(1,0,8,5,48)
+Threat set from 48 to 49
+B3(1,0,8,5,49) performs [Exposure] to R0(-1,0,10,1,47)
+Threat set from 47 to 48
+B3(1,0,8,5,49) performs [Exposure] to R1(0,-1,10,5,33)
+Threat set from 33 to 34
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 95] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,49) performs [Exposure] to B3(1,0,8,6,49)
+Threat set from 49 to 50
+R3(1,0,8,6,49) performs [Exposure] to B0(-1,0,10,1,48)
+Threat set from 48 to 49
+R3(1,0,8,6,49) performs [Exposure] to B1(0,-1,10,5,34)
+Threat set from 34 to 35
+B3(1,0,8,6,50) performs [Exposure] to R3(1,0,8,6,49)
+Threat set from 49 to 50
+B3(1,0,8,6,50) performs [Exposure] to R0(-1,0,10,1,48)
+Threat set from 48 to 49
+B3(1,0,8,6,50) performs [Exposure] to R1(0,-1,10,5,34)
+Threat set from 34 to 35
+
+
+[Tick 96] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,35) performs [Haste] to R3(1,0,8,6,50)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,50)
+Threat set from 50 to 51
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,49)
+Threat set from 49 to 50
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,50)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,49)
+Speed set from 1 to 1
+B1(0,-1,10,5,35) performs [Haste] to B3(1,0,8,5,50)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,50)
+Threat set from 50 to 51
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,49)
+Threat set from 49 to 50
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,51)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,50)
+Speed set from 1 to 1
+
+
+[Tick 100] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,51) performs [Exposure] to B3(1,0,8,5,51)
+Threat set from 51 to 52
+R3(1,0,8,5,51) performs [Exposure] to B0(-1,0,10,1,50)
+Threat set from 50 to 51
+R3(1,0,8,5,51) performs [Exposure] to B1(0,-1,10,5,35)
+Threat set from 35 to 36
+B3(1,0,8,5,52) performs [Exposure] to R3(1,0,8,5,51)
+Threat set from 51 to 52
+B3(1,0,8,5,52) performs [Exposure] to R0(-1,0,10,1,50)
+Threat set from 50 to 51
+B3(1,0,8,5,52) performs [Exposure] to R1(0,-1,10,5,35)
+Threat set from 35 to 36
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 101] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,52) performs [Exposure] to B3(1,0,8,6,52)
+Threat set from 52 to 53
+R3(1,0,8,6,52) performs [Exposure] to B0(-1,0,10,1,51)
+Threat set from 51 to 52
+R3(1,0,8,6,52) performs [Exposure] to B1(0,-1,10,5,36)
+Threat set from 36 to 37
+B3(1,0,8,6,53) performs [Exposure] to R3(1,0,8,6,52)
+Threat set from 52 to 53
+B3(1,0,8,6,53) performs [Exposure] to R0(-1,0,10,1,51)
+Threat set from 51 to 52
+B3(1,0,8,6,53) performs [Exposure] to R1(0,-1,10,5,36)
+Threat set from 36 to 37
+
+
+[Tick 102] R0, B0, R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,52) performs [Bulkup] to R3(1,0,8,6,53)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,52) performs [Bulkup] to B3(1,0,8,6,53)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,37) performs [Haste] to R3(1,0,8,6,53)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,53)
+Threat set from 53 to 54
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,52)
+Threat set from 52 to 53
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,53)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,52)
+Speed set from 1 to 1
+B1(0,-1,10,5,37) performs [Haste] to B3(1,0,8,5,53)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,53)
+Threat set from 53 to 54
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,52)
+Threat set from 52 to 53
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,54)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,53)
+Speed set from 1 to 1
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start on R0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on R0 - cleaned up
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start on B0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on B0 - cleaned up
+
+
+[Tick 106] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,54) performs [Exposure] to B3(1,0,8,5,54)
+Threat set from 54 to 55
+R3(1,0,8,5,54) performs [Exposure] to B0(-1,0,10,1,53)
+Threat set from 53 to 54
+R3(1,0,8,5,54) performs [Exposure] to B1(0,-1,10,5,37)
+Threat set from 37 to 38
+B3(1,0,8,5,55) performs [Exposure] to R3(1,0,8,5,54)
+Threat set from 54 to 55
+B3(1,0,8,5,55) performs [Exposure] to R0(-1,0,10,1,53)
+Threat set from 53 to 54
+B3(1,0,8,5,55) performs [Exposure] to R1(0,-1,10,5,37)
+Threat set from 37 to 38
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 107] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,55) performs [Exposure] to B3(1,0,8,6,55)
+Threat set from 55 to 56
+R3(1,0,8,6,55) performs [Exposure] to B0(-1,0,10,1,54)
+Threat set from 54 to 55
+R3(1,0,8,6,55) performs [Exposure] to B1(0,-1,10,5,38)
+Threat set from 38 to 39
+B3(1,0,8,6,56) performs [Exposure] to R3(1,0,8,6,55)
+Threat set from 55 to 56
+B3(1,0,8,6,56) performs [Exposure] to R0(-1,0,10,1,54)
+Threat set from 54 to 55
+B3(1,0,8,6,56) performs [Exposure] to R1(0,-1,10,5,38)
+Threat set from 38 to 39
+
+
+[Tick 108] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,39) performs [Haste] to R3(1,0,8,6,56)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,56)
+Threat set from 56 to 57
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,55)
+Threat set from 55 to 56
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,56)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,55)
+Speed set from 1 to 1
+B1(0,-1,10,5,39) performs [Haste] to B3(1,0,8,5,56)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,56)
+Threat set from 56 to 57
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,55)
+Threat set from 55 to 56
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,57)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,56)
+Speed set from 1 to 1
+
+
+[Tick 112] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,57) performs [Exposure] to B3(1,0,8,5,57)
+Threat set from 57 to 58
+R3(1,0,8,5,57) performs [Exposure] to B0(-1,0,10,1,56)
+Threat set from 56 to 57
+R3(1,0,8,5,57) performs [Exposure] to B1(0,-1,10,5,39)
+Threat set from 39 to 40
+B3(1,0,8,5,58) performs [Exposure] to R3(1,0,8,5,57)
+Threat set from 57 to 58
+B3(1,0,8,5,58) performs [Exposure] to R0(-1,0,10,1,56)
+Threat set from 56 to 57
+B3(1,0,8,5,58) performs [Exposure] to R1(0,-1,10,5,39)
+Threat set from 39 to 40
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 113] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,58) performs [Exposure] to B3(1,0,8,6,58)
+Threat set from 58 to 59
+R3(1,0,8,6,58) performs [Exposure] to B0(-1,0,10,1,57)
+Threat set from 57 to 58
+R3(1,0,8,6,58) performs [Exposure] to B1(0,-1,10,5,40)
+Threat set from 40 to 41
+B3(1,0,8,6,59) performs [Exposure] to R3(1,0,8,6,58)
+Threat set from 58 to 59
+B3(1,0,8,6,59) performs [Exposure] to R0(-1,0,10,1,57)
+Threat set from 57 to 58
+B3(1,0,8,6,59) performs [Exposure] to R1(0,-1,10,5,40)
+Threat set from 40 to 41
+
+
+[Tick 114] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,41) performs [Haste] to R3(1,0,8,6,59)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,59)
+Threat set from 59 to 60
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,58)
+Threat set from 58 to 59
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,59)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,58)
+Speed set from 1 to 1
+B1(0,-1,10,5,41) performs [Haste] to B3(1,0,8,5,59)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,59)
+Threat set from 59 to 60
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,58)
+Threat set from 58 to 59
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,60)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,59)
+Speed set from 1 to 1
+
+
+[Tick 118] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,60) performs [Exposure] to B3(1,0,8,5,60)
+Threat set from 60 to 61
+R3(1,0,8,5,60) performs [Exposure] to B0(-1,0,10,1,59)
+Threat set from 59 to 60
+R3(1,0,8,5,60) performs [Exposure] to B1(0,-1,10,5,41)
+Threat set from 41 to 42
+B3(1,0,8,5,61) performs [Exposure] to R3(1,0,8,5,60)
+Threat set from 60 to 61
+B3(1,0,8,5,61) performs [Exposure] to R0(-1,0,10,1,59)
+Threat set from 59 to 60
+B3(1,0,8,5,61) performs [Exposure] to R1(0,-1,10,5,41)
+Threat set from 41 to 42
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 119] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,61) performs [Exposure] to B3(1,0,8,6,61)
+Threat set from 61 to 62
+R3(1,0,8,6,61) performs [Exposure] to B0(-1,0,10,1,60)
+Threat set from 60 to 61
+R3(1,0,8,6,61) performs [Exposure] to B1(0,-1,10,5,42)
+Threat set from 42 to 43
+B3(1,0,8,6,62) performs [Exposure] to R3(1,0,8,6,61)
+Threat set from 61 to 62
+B3(1,0,8,6,62) performs [Exposure] to R0(-1,0,10,1,60)
+Threat set from 60 to 61
+B3(1,0,8,6,62) performs [Exposure] to R1(0,-1,10,5,42)
+Threat set from 42 to 43
+
+
+[Tick 120] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,43) performs [Haste] to R3(1,0,8,6,62)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,62)
+Threat set from 62 to 63
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,61)
+Threat set from 61 to 62
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,62)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,61)
+Speed set from 1 to 1
+B1(0,-1,10,5,43) performs [Haste] to B3(1,0,8,5,62)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,62)
+Threat set from 62 to 63
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,61)
+Threat set from 61 to 62
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,63)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,62)
+Speed set from 1 to 1
+
+
+[Tick 124] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,63) performs [Exposure] to B3(1,0,8,5,63)
+Threat set from 63 to 64
+R3(1,0,8,5,63) performs [Exposure] to B0(-1,0,10,1,62)
+Threat set from 62 to 63
+R3(1,0,8,5,63) performs [Exposure] to B1(0,-1,10,5,43)
+Threat set from 43 to 44
+B3(1,0,8,5,64) performs [Exposure] to R3(1,0,8,5,63)
+Threat set from 63 to 64
+B3(1,0,8,5,64) performs [Exposure] to R0(-1,0,10,1,62)
+Threat set from 62 to 63
+B3(1,0,8,5,64) performs [Exposure] to R1(0,-1,10,5,43)
+Threat set from 43 to 44
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 125] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,64) performs [Exposure] to B3(1,0,8,6,64)
+Threat set from 64 to 65
+R3(1,0,8,6,64) performs [Exposure] to B0(-1,0,10,1,63)
+Threat set from 63 to 64
+R3(1,0,8,6,64) performs [Exposure] to B1(0,-1,10,5,44)
+Threat set from 44 to 45
+B3(1,0,8,6,65) performs [Exposure] to R3(1,0,8,6,64)
+Threat set from 64 to 65
+B3(1,0,8,6,65) performs [Exposure] to R0(-1,0,10,1,63)
+Threat set from 63 to 64
+B3(1,0,8,6,65) performs [Exposure] to R1(0,-1,10,5,44)
+Threat set from 44 to 45
+
+
+[Tick 126] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,45) performs [Haste] to R3(1,0,8,6,65)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,65)
+Threat set from 65 to 66
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,64)
+Threat set from 64 to 65
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,65)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,64)
+Speed set from 1 to 1
+B1(0,-1,10,5,45) performs [Haste] to B3(1,0,8,5,65)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,65)
+Threat set from 65 to 66
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,64)
+Threat set from 64 to 65
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,66)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,65)
+Speed set from 1 to 1
+
+
+[Tick 130] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,66) performs [Exposure] to B3(1,0,8,5,66)
+Threat set from 66 to 67
+R3(1,0,8,5,66) performs [Exposure] to B0(-1,0,10,1,65)
+Threat set from 65 to 66
+R3(1,0,8,5,66) performs [Exposure] to B1(0,-1,10,5,45)
+Threat set from 45 to 46
+B3(1,0,8,5,67) performs [Exposure] to R3(1,0,8,5,66)
+Threat set from 66 to 67
+B3(1,0,8,5,67) performs [Exposure] to R0(-1,0,10,1,65)
+Threat set from 65 to 66
+B3(1,0,8,5,67) performs [Exposure] to R1(0,-1,10,5,45)
+Threat set from 45 to 46
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 131] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,67) performs [Exposure] to B3(1,0,8,6,67)
+Threat set from 67 to 68
+R3(1,0,8,6,67) performs [Exposure] to B0(-1,0,10,1,66)
+Threat set from 66 to 67
+R3(1,0,8,6,67) performs [Exposure] to B1(0,-1,10,5,46)
+Threat set from 46 to 47
+B3(1,0,8,6,68) performs [Exposure] to R3(1,0,8,6,67)
+Threat set from 67 to 68
+B3(1,0,8,6,68) performs [Exposure] to R0(-1,0,10,1,66)
+Threat set from 66 to 67
+B3(1,0,8,6,68) performs [Exposure] to R1(0,-1,10,5,46)
+Threat set from 46 to 47
+
+
+[Tick 132] R0, B0, R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,67) performs [Bulkup] to R3(1,0,8,6,68)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,67) performs [Bulkup] to B3(1,0,8,6,68)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,47) performs [Haste] to R3(1,0,8,6,68)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,68)
+Threat set from 68 to 69
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,67)
+Threat set from 67 to 68
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,68)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,67)
+Speed set from 1 to 1
+B1(0,-1,10,5,47) performs [Haste] to B3(1,0,8,5,68)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,68)
+Threat set from 68 to 69
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,67)
+Threat set from 67 to 68
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,69)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,68)
+Speed set from 1 to 1
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+
+
+[Tick 136] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,69) performs [Exposure] to B3(1,0,8,5,69)
+Threat set from 69 to 70
+R3(1,0,8,5,69) performs [Exposure] to B0(-1,0,10,1,68)
+Threat set from 68 to 69
+R3(1,0,8,5,69) performs [Exposure] to B1(0,-1,10,5,47)
+Threat set from 47 to 48
+B3(1,0,8,5,70) performs [Exposure] to R3(1,0,8,5,69)
+Threat set from 69 to 70
+B3(1,0,8,5,70) performs [Exposure] to R0(-1,0,10,1,68)
+Threat set from 68 to 69
+B3(1,0,8,5,70) performs [Exposure] to R1(0,-1,10,5,47)
+Threat set from 47 to 48
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 137] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,70) performs [Exposure] to B3(1,0,8,6,70)
+Threat set from 70 to 71
+R3(1,0,8,6,70) performs [Exposure] to B0(-1,0,10,1,69)
+Threat set from 69 to 70
+R3(1,0,8,6,70) performs [Exposure] to B1(0,-1,10,5,48)
+Threat set from 48 to 49
+B3(1,0,8,6,71) performs [Exposure] to R3(1,0,8,6,70)
+Threat set from 70 to 71
+B3(1,0,8,6,71) performs [Exposure] to R0(-1,0,10,1,69)
+Threat set from 69 to 70
+B3(1,0,8,6,71) performs [Exposure] to R1(0,-1,10,5,48)
+Threat set from 48 to 49
+
+
+[Tick 138] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,49) performs [Haste] to R3(1,0,8,6,71)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,71)
+Threat set from 71 to 72
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,70)
+Threat set from 70 to 71
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,71)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,70)
+Speed set from 1 to 1
+B1(0,-1,10,5,49) performs [Haste] to B3(1,0,8,5,71)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,71)
+Threat set from 71 to 72
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,70)
+Threat set from 70 to 71
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,72)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,71)
+Speed set from 1 to 1
+
+
+[Tick 142] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,72) performs [Exposure] to B3(1,0,8,5,72)
+Threat set from 72 to 73
+R3(1,0,8,5,72) performs [Exposure] to B0(-1,0,10,1,71)
+Threat set from 71 to 72
+R3(1,0,8,5,72) performs [Exposure] to B1(0,-1,10,5,49)
+Threat set from 49 to 50
+B3(1,0,8,5,73) performs [Exposure] to R3(1,0,8,5,72)
+Threat set from 72 to 73
+B3(1,0,8,5,73) performs [Exposure] to R0(-1,0,10,1,71)
+Threat set from 71 to 72
+B3(1,0,8,5,73) performs [Exposure] to R1(0,-1,10,5,49)
+Threat set from 49 to 50
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 143] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,73) performs [Exposure] to B3(1,0,8,6,73)
+Threat set from 73 to 74
+R3(1,0,8,6,73) performs [Exposure] to B0(-1,0,10,1,72)
+Threat set from 72 to 73
+R3(1,0,8,6,73) performs [Exposure] to B1(0,-1,10,5,50)
+Threat set from 50 to 51
+B3(1,0,8,6,74) performs [Exposure] to R3(1,0,8,6,73)
+Threat set from 73 to 74
+B3(1,0,8,6,74) performs [Exposure] to R0(-1,0,10,1,72)
+Threat set from 72 to 73
+B3(1,0,8,6,74) performs [Exposure] to R1(0,-1,10,5,50)
+Threat set from 50 to 51
+
+
+[Tick 144] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,51) performs [Haste] to R3(1,0,8,6,74)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,74)
+Threat set from 74 to 75
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,73)
+Threat set from 73 to 74
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,74)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,73)
+Speed set from 1 to 1
+B1(0,-1,10,5,51) performs [Haste] to B3(1,0,8,5,74)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,74)
+Threat set from 74 to 75
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,73)
+Threat set from 73 to 74
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,75)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,74)
+Speed set from 1 to 1
+
+
+[Tick 148] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,75) performs [Exposure] to B3(1,0,8,5,75)
+Threat set from 75 to 76
+R3(1,0,8,5,75) performs [Exposure] to B0(-1,0,10,1,74)
+Threat set from 74 to 75
+R3(1,0,8,5,75) performs [Exposure] to B1(0,-1,10,5,51)
+Threat set from 51 to 52
+B3(1,0,8,5,76) performs [Exposure] to R3(1,0,8,5,75)
+Threat set from 75 to 76
+B3(1,0,8,5,76) performs [Exposure] to R0(-1,0,10,1,74)
+Threat set from 74 to 75
+B3(1,0,8,5,76) performs [Exposure] to R1(0,-1,10,5,51)
+Threat set from 51 to 52
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 149] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,76) performs [Exposure] to B3(1,0,8,6,76)
+Threat set from 76 to 77
+R3(1,0,8,6,76) performs [Exposure] to B0(-1,0,10,1,75)
+Threat set from 75 to 76
+R3(1,0,8,6,76) performs [Exposure] to B1(0,-1,10,5,52)
+Threat set from 52 to 53
+B3(1,0,8,6,77) performs [Exposure] to R3(1,0,8,6,76)
+Threat set from 76 to 77
+B3(1,0,8,6,77) performs [Exposure] to R0(-1,0,10,1,75)
+Threat set from 75 to 76
+B3(1,0,8,6,77) performs [Exposure] to R1(0,-1,10,5,52)
+Threat set from 52 to 53
+
+
+[Tick 150] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,53) performs [Haste] to R3(1,0,8,6,77)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,77)
+Threat set from 77 to 78
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,76)
+Threat set from 76 to 77
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,77)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,76)
+Speed set from 1 to 1
+B1(0,-1,10,5,53) performs [Haste] to B3(1,0,8,5,77)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,77)
+Threat set from 77 to 78
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,76)
+Threat set from 76 to 77
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,78)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,77)
+Speed set from 1 to 1
+
+
+[Tick 154] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,78) performs [Exposure] to B3(1,0,8,5,78)
+Threat set from 78 to 79
+R3(1,0,8,5,78) performs [Exposure] to B0(-1,0,10,1,77)
+Threat set from 77 to 78
+R3(1,0,8,5,78) performs [Exposure] to B1(0,-1,10,5,53)
+Threat set from 53 to 54
+B3(1,0,8,5,79) performs [Exposure] to R3(1,0,8,5,78)
+Threat set from 78 to 79
+B3(1,0,8,5,79) performs [Exposure] to R0(-1,0,10,1,77)
+Threat set from 77 to 78
+B3(1,0,8,5,79) performs [Exposure] to R1(0,-1,10,5,53)
+Threat set from 53 to 54
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 155] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,79) performs [Exposure] to B3(1,0,8,6,79)
+Threat set from 79 to 80
+R3(1,0,8,6,79) performs [Exposure] to B0(-1,0,10,1,78)
+Threat set from 78 to 79
+R3(1,0,8,6,79) performs [Exposure] to B1(0,-1,10,5,54)
+Threat set from 54 to 55
+B3(1,0,8,6,80) performs [Exposure] to R3(1,0,8,6,79)
+Threat set from 79 to 80
+B3(1,0,8,6,80) performs [Exposure] to R0(-1,0,10,1,78)
+Threat set from 78 to 79
+B3(1,0,8,6,80) performs [Exposure] to R1(0,-1,10,5,54)
+Threat set from 54 to 55
+
+
+[Tick 156] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,55) performs [Haste] to R3(1,0,8,6,80)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,80)
+Threat set from 80 to 81
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,79)
+Threat set from 79 to 80
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,80)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,79)
+Speed set from 1 to 1
+B1(0,-1,10,5,55) performs [Haste] to B3(1,0,8,5,80)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,80)
+Threat set from 80 to 81
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,79)
+Threat set from 79 to 80
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,81)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,80)
+Speed set from 1 to 1
+
+
+[Tick 160] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,81) performs [Exposure] to B3(1,0,8,5,81)
+Threat set from 81 to 82
+R3(1,0,8,5,81) performs [Exposure] to B0(-1,0,10,1,80)
+Threat set from 80 to 81
+R3(1,0,8,5,81) performs [Exposure] to B1(0,-1,10,5,55)
+Threat set from 55 to 56
+B3(1,0,8,5,82) performs [Exposure] to R3(1,0,8,5,81)
+Threat set from 81 to 82
+B3(1,0,8,5,82) performs [Exposure] to R0(-1,0,10,1,80)
+Threat set from 80 to 81
+B3(1,0,8,5,82) performs [Exposure] to R1(0,-1,10,5,55)
+Threat set from 55 to 56
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 161] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,82) performs [Exposure] to B3(1,0,8,6,82)
+Threat set from 82 to 83
+R3(1,0,8,6,82) performs [Exposure] to B0(-1,0,10,1,81)
+Threat set from 81 to 82
+R3(1,0,8,6,82) performs [Exposure] to B1(0,-1,10,5,56)
+Threat set from 56 to 57
+B3(1,0,8,6,83) performs [Exposure] to R3(1,0,8,6,82)
+Threat set from 82 to 83
+B3(1,0,8,6,83) performs [Exposure] to R0(-1,0,10,1,81)
+Threat set from 81 to 82
+B3(1,0,8,6,83) performs [Exposure] to R1(0,-1,10,5,56)
+Threat set from 56 to 57
+
+
+[Tick 162] R0, B0, R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,82) performs [Bulkup] to R3(1,0,8,6,83)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,82) performs [Bulkup] to B3(1,0,8,6,83)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,57) performs [Haste] to R3(1,0,8,6,83)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,83)
+Threat set from 83 to 84
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,82)
+Threat set from 82 to 83
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,83)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,82)
+Speed set from 1 to 1
+B1(0,-1,10,5,57) performs [Haste] to B3(1,0,8,5,83)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,83)
+Threat set from 83 to 84
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,82)
+Threat set from 82 to 83
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,84)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,83)
+Speed set from 1 to 1
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start on R0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on R0 - cleaned up
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start on B0 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B0
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B0 triggered Vow Effect End
+Defense set from 0 to 0
+[BOON] Vow Effect Start expired on B0 - cleaned up
+
+
+[Tick 166] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,84) performs [Exposure] to B3(1,0,8,5,84)
+Threat set from 84 to 85
+R3(1,0,8,5,84) performs [Exposure] to B0(-1,0,10,1,83)
+Threat set from 83 to 84
+R3(1,0,8,5,84) performs [Exposure] to B1(0,-1,10,5,57)
+Threat set from 57 to 58
+B3(1,0,8,5,85) performs [Exposure] to R3(1,0,8,5,84)
+Threat set from 84 to 85
+B3(1,0,8,5,85) performs [Exposure] to R0(-1,0,10,1,83)
+Threat set from 83 to 84
+B3(1,0,8,5,85) performs [Exposure] to R1(0,-1,10,5,57)
+Threat set from 57 to 58
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 167] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,85) performs [Exposure] to B3(1,0,8,6,85)
+Threat set from 85 to 86
+R3(1,0,8,6,85) performs [Exposure] to B0(-1,0,10,1,84)
+Threat set from 84 to 85
+R3(1,0,8,6,85) performs [Exposure] to B1(0,-1,10,5,58)
+Threat set from 58 to 59
+B3(1,0,8,6,86) performs [Exposure] to R3(1,0,8,6,85)
+Threat set from 85 to 86
+B3(1,0,8,6,86) performs [Exposure] to R0(-1,0,10,1,84)
+Threat set from 84 to 85
+B3(1,0,8,6,86) performs [Exposure] to R1(0,-1,10,5,58)
+Threat set from 58 to 59
+
+
+[Tick 168] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,59) performs [Haste] to R3(1,0,8,6,86)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,86)
+Threat set from 86 to 87
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,85)
+Threat set from 85 to 86
+[BOON] Applied Vow Effect Start to R0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,86)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,85)
+Speed set from 1 to 1
+B1(0,-1,10,5,59) performs [Haste] to B3(1,0,8,5,86)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,86)
+Threat set from 86 to 87
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,85)
+Threat set from 85 to 86
+[BOON] Applied Vow Effect Start to B0 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,87)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,86)
+Speed set from 1 to 1
+
+
+[Tick 172] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,87) performs [Exposure] to B3(1,0,8,5,87)
+Threat set from 87 to 88
+R3(1,0,8,5,87) performs [Exposure] to B0(-1,0,10,1,86)
+Threat set from 86 to 87
+R3(1,0,8,5,87) performs [Exposure] to B1(0,-1,10,5,59)
+Threat set from 59 to 60
+B3(1,0,8,5,88) performs [Exposure] to R3(1,0,8,5,87)
+Threat set from 87 to 88
+B3(1,0,8,5,88) performs [Exposure] to R0(-1,0,10,1,86)
+Threat set from 86 to 87
+B3(1,0,8,5,88) performs [Exposure] to R1(0,-1,10,5,59)
+Threat set from 59 to 60
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 173] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,88) performs [Exposure] to B3(1,0,8,6,88)
+Threat set from 88 to 89
+R3(1,0,8,6,88) performs [Exposure] to B0(-1,0,10,1,87)
+Threat set from 87 to 88
+R3(1,0,8,6,88) performs [Exposure] to B1(0,-1,10,5,60)
+Threat set from 60 to 61
+B3(1,0,8,6,89) performs [Exposure] to R3(1,0,8,6,88)
+Threat set from 88 to 89
+B3(1,0,8,6,89) performs [Exposure] to R0(-1,0,10,1,87)
+Threat set from 87 to 88
+B3(1,0,8,6,89) performs [Exposure] to R1(0,-1,10,5,60)
+Threat set from 60 to 61
+
+
+[Tick 174] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,61) performs [Haste] to R3(1,0,8,6,89)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,89)
+Threat set from 89 to 90
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,88)
+Threat set from 88 to 89
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,89)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,88)
+Speed set from 1 to 1
+B1(0,-1,10,5,61) performs [Haste] to B3(1,0,8,5,89)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,89)
+Threat set from 89 to 90
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,88)
+Threat set from 88 to 89
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,90)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,89)
+Speed set from 1 to 1
+
+
+[Tick 178] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,90) performs [Exposure] to B3(1,0,8,5,90)
+Threat set from 90 to 91
+R3(1,0,8,5,90) performs [Exposure] to B0(-1,0,10,1,89)
+Threat set from 89 to 90
+R3(1,0,8,5,90) performs [Exposure] to B1(0,-1,10,5,61)
+Threat set from 61 to 62
+B3(1,0,8,5,91) performs [Exposure] to R3(1,0,8,5,90)
+Threat set from 90 to 91
+B3(1,0,8,5,91) performs [Exposure] to R0(-1,0,10,1,89)
+Threat set from 89 to 90
+B3(1,0,8,5,91) performs [Exposure] to R1(0,-1,10,5,61)
+Threat set from 61 to 62
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 179] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,91) performs [Exposure] to B3(1,0,8,6,91)
+Threat set from 91 to 92
+R3(1,0,8,6,91) performs [Exposure] to B0(-1,0,10,1,90)
+Threat set from 90 to 91
+R3(1,0,8,6,91) performs [Exposure] to B1(0,-1,10,5,62)
+Threat set from 62 to 63
+B3(1,0,8,6,92) performs [Exposure] to R3(1,0,8,6,91)
+Threat set from 91 to 92
+B3(1,0,8,6,92) performs [Exposure] to R0(-1,0,10,1,90)
+Threat set from 90 to 91
+B3(1,0,8,6,92) performs [Exposure] to R1(0,-1,10,5,62)
+Threat set from 62 to 63
+
+
+[Tick 180] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,63) performs [Haste] to R3(1,0,8,6,92)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,92)
+Threat set from 92 to 93
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,91)
+Threat set from 91 to 92
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,92)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,91)
+Speed set from 1 to 1
+B1(0,-1,10,5,63) performs [Haste] to B3(1,0,8,5,92)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,92)
+Threat set from 92 to 93
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,91)
+Threat set from 91 to 92
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,93)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,92)
+Speed set from 1 to 1
+
+
+[Tick 184] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,93) performs [Exposure] to B3(1,0,8,5,93)
+Threat set from 93 to 94
+R3(1,0,8,5,93) performs [Exposure] to B0(-1,0,10,1,92)
+Threat set from 92 to 93
+R3(1,0,8,5,93) performs [Exposure] to B1(0,-1,10,5,63)
+Threat set from 63 to 64
+B3(1,0,8,5,94) performs [Exposure] to R3(1,0,8,5,93)
+Threat set from 93 to 94
+B3(1,0,8,5,94) performs [Exposure] to R0(-1,0,10,1,92)
+Threat set from 92 to 93
+B3(1,0,8,5,94) performs [Exposure] to R1(0,-1,10,5,63)
+Threat set from 63 to 64
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 185] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,94) performs [Exposure] to B3(1,0,8,6,94)
+Threat set from 94 to 95
+R3(1,0,8,6,94) performs [Exposure] to B0(-1,0,10,1,93)
+Threat set from 93 to 94
+R3(1,0,8,6,94) performs [Exposure] to B1(0,-1,10,5,64)
+Threat set from 64 to 65
+B3(1,0,8,6,95) performs [Exposure] to R3(1,0,8,6,94)
+Threat set from 94 to 95
+B3(1,0,8,6,95) performs [Exposure] to R0(-1,0,10,1,93)
+Threat set from 93 to 94
+B3(1,0,8,6,95) performs [Exposure] to R1(0,-1,10,5,64)
+Threat set from 64 to 65
+
+
+[Tick 186] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,65) performs [Haste] to R3(1,0,8,6,95)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,95)
+Threat set from 95 to 96
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,94)
+Threat set from 94 to 95
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,95)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,94)
+Speed set from 1 to 1
+B1(0,-1,10,5,65) performs [Haste] to B3(1,0,8,5,95)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,95)
+Threat set from 95 to 96
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,94)
+Threat set from 94 to 95
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,96)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,95)
+Speed set from 1 to 1
+
+
+[Tick 190] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,96) performs [Exposure] to B3(1,0,8,5,96)
+Threat set from 96 to 97
+R3(1,0,8,5,96) performs [Exposure] to B0(-1,0,10,1,95)
+Threat set from 95 to 96
+R3(1,0,8,5,96) performs [Exposure] to B1(0,-1,10,5,65)
+Threat set from 65 to 66
+B3(1,0,8,5,97) performs [Exposure] to R3(1,0,8,5,96)
+Threat set from 96 to 97
+B3(1,0,8,5,97) performs [Exposure] to R0(-1,0,10,1,95)
+Threat set from 95 to 96
+B3(1,0,8,5,97) performs [Exposure] to R1(0,-1,10,5,65)
+Threat set from 65 to 66
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 191] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,97) performs [Exposure] to B3(1,0,8,6,97)
+Threat set from 97 to 98
+R3(1,0,8,6,97) performs [Exposure] to B0(-1,0,10,1,96)
+Threat set from 96 to 97
+R3(1,0,8,6,97) performs [Exposure] to B1(0,-1,10,5,66)
+Threat set from 66 to 67
+B3(1,0,8,6,98) performs [Exposure] to R3(1,0,8,6,97)
+Threat set from 97 to 98
+B3(1,0,8,6,98) performs [Exposure] to R0(-1,0,10,1,96)
+Threat set from 96 to 97
+B3(1,0,8,6,98) performs [Exposure] to R1(0,-1,10,5,66)
+Threat set from 66 to 67
+
+
+[Tick 192] R0, B0, R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(-1,0,10,1,97) performs [Bulkup] to R3(1,0,8,6,98)
+[BOON] Applied BulkupSTART to R3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+B0(-1,0,10,1,97) performs [Bulkup] to B3(1,0,8,6,98)
+[BOON] Applied BulkupSTART to B3 (Usage: 1)
+[A31] Applied temporary buff BulkupSTART for 1 turns, removal: BulkupEND
+R1(0,-1,10,5,67) performs [Haste] to R3(1,0,8,6,98)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,98)
+Threat set from 98 to 99
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,97)
+Threat set from 97 to 98
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,98)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,97)
+Speed set from 1 to 1
+B1(0,-1,10,5,67) performs [Haste] to B3(1,0,8,5,98)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,98)
+Threat set from 98 to 99
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,97)
+Threat set from 97 to 98
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, ready for first effect
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,99)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,98)
+Speed set from 1 to 1
+[BOON: Vow Effect Start] applied to R0
+[AFTER-ACTION] performed from R0/ target:R0
+[TEMP-BUFF] Vow Effect Start applied to R0 (Duration: 1 turns)
+[EXECUTE_EFFECT] R0 triggered Vow Effect Start
+Defense set from 0 to 0
+[BOON: Vow Effect Start] applied to B0
+[AFTER-ACTION] performed from B0/ target:B0
+[TEMP-BUFF] Vow Effect Start applied to B0 (Duration: 1 turns)
+[EXECUTE_EFFECT] B0 triggered Vow Effect Start
+Defense set from 0 to 0
+
+
+[Tick 196] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,99) performs [Exposure] to B3(1,0,8,5,99)
+Threat set from 99 to 100
+R3(1,0,8,5,99) performs [Exposure] to B0(-1,0,10,1,98)
+Threat set from 98 to 99
+R3(1,0,8,5,99) performs [Exposure] to B1(0,-1,10,5,67)
+Threat set from 67 to 68
+B3(1,0,8,5,100) performs [Exposure] to R3(1,0,8,5,99)
+Threat set from 99 to 100
+B3(1,0,8,5,100) performs [Exposure] to R0(-1,0,10,1,98)
+Threat set from 98 to 99
+B3(1,0,8,5,100) performs [Exposure] to R1(0,-1,10,5,67)
+Threat set from 67 to 68
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] BulkupSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on R3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] R3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on R3 - cleaned up
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered BulkupSTART
+HP set from 8 to 9
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: BulkupSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] BulkupSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] BulkupSTART expired on B3
+ - applying removal effect: BulkupEND
+[EXECUTE_EFFECT] B3 triggered BulkupEND
+HP set from 9 to 8
+[BOON] BulkupSTART expired on B3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 197] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,100) performs [Exposure] to B3(1,0,8,6,100)
+Threat set from 100 to 101
+R3(1,0,8,6,100) performs [Exposure] to B0(-1,0,10,1,99)
+Threat set from 99 to 100
+R3(1,0,8,6,100) performs [Exposure] to B1(0,-1,10,5,68)
+Threat set from 68 to 69
+B3(1,0,8,6,101) performs [Exposure] to R3(1,0,8,6,100)
+Threat set from 100 to 101
+B3(1,0,8,6,101) performs [Exposure] to R0(-1,0,10,1,99)
+Threat set from 99 to 100
+B3(1,0,8,6,101) performs [Exposure] to R1(0,-1,10,5,68)
+Threat set from 68 to 69
+
+
+[Tick 198] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,69) performs [Haste] to R3(1,0,8,6,101)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,101)
+Threat set from 101 to 102
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,100)
+Threat set from 100 to 101
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,101)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,100)
+Speed set from 1 to 1
+B1(0,-1,10,5,69) performs [Haste] to B3(1,0,8,5,101)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,101)
+Threat set from 101 to 102
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,100)
+Threat set from 100 to 101
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,102)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,101)
+Speed set from 1 to 1
+
+
+[Tick 202] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,5,102) performs [Exposure] to B3(1,0,8,5,102)
+Threat set from 102 to 103
+R3(1,0,8,5,102) performs [Exposure] to B0(-1,0,10,1,101)
+Threat set from 101 to 102
+R3(1,0,8,5,102) performs [Exposure] to B1(0,-1,10,5,69)
+Threat set from 69 to 70
+B3(1,0,8,5,103) performs [Exposure] to R3(1,0,8,5,102)
+Threat set from 102 to 103
+B3(1,0,8,5,103) performs [Exposure] to R0(-1,0,10,1,101)
+Threat set from 101 to 102
+B3(1,0,8,5,103) performs [Exposure] to R1(0,-1,10,5,69)
+Threat set from 69 to 70
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start applied to R3 (Duration: 1 turns)
+[EXECUTE_EFFECT] R3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] HasteSTART on R3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on R3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] R3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on R3 - cleaned up
+[BOON: Vow Effect Start] applied to R3
+[AFTER-ACTION] performed from R3/ target:R3
+[TEMP-BUFF] Vow Effect Start on R3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on R3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] R3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on R3 - cleaned up
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered HasteSTART
+Speed set from 5 to 6
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start applied to B3 (Duration: 1 turns)
+[EXECUTE_EFFECT] B3 triggered Vow Effect Start
+Defense set from 0 to 1
+[BOON: HasteSTART] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] HasteSTART on B3 (Remaining: 0 turns)
+[TEMP-BUFF] HasteSTART expired on B3
+ - applying removal effect: HasteEND
+[EXECUTE_EFFECT] B3 triggered HasteEND
+Speed set from 6 to 6
+[BOON] HasteSTART expired on B3 - cleaned up
+[BOON: Vow Effect Start] applied to B3
+[AFTER-ACTION] performed from B3/ target:B3
+[TEMP-BUFF] Vow Effect Start on B3 (Remaining: 0 turns)
+[TEMP-BUFF] Vow Effect Start expired on B3
+ - applying removal effect: Vow Effect End
+[EXECUTE_EFFECT] B3 triggered Vow Effect End
+Defense set from 1 to 0
+[BOON] Vow Effect Start expired on B3 - cleaned up
+
+
+[Tick 203] R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(1,0,8,6,103) performs [Exposure] to B3(1,0,8,6,103)
+Threat set from 103 to 104
+R3(1,0,8,6,103) performs [Exposure] to B0(-1,0,10,1,102)
+Threat set from 102 to 103
+R3(1,0,8,6,103) performs [Exposure] to B1(0,-1,10,5,70)
+Threat set from 70 to 71
+B3(1,0,8,6,104) performs [Exposure] to R3(1,0,8,6,103)
+Threat set from 103 to 104
+B3(1,0,8,6,104) performs [Exposure] to R0(-1,0,10,1,102)
+Threat set from 102 to 103
+B3(1,0,8,6,104) performs [Exposure] to R1(0,-1,10,5,70)
+Threat set from 70 to 71
+
+
+[Tick 204] R1, R2, R4, B1, B2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(0,-1,10,5,71) performs [Haste] to R3(1,0,8,6,104)
+[BOON] Applied HasteSTART to R3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+R2(1,-2,10,5,6) performs [Vow] to R3(1,0,8,6,104)
+Threat set from 104 to 105
+[BOON] Applied Vow Effect Start to R3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R2(1,-2,10,5,6) performs [Vow] to R0(-1,0,10,1,103)
+Threat set from 103 to 104
+[BOON] Refreshing existing Vow Effect Start on R0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+R4(1,0,9,5,6) performs [Fatigue] to B3(1,0,8,6,104)
+Speed set from 6 to 5
+R4(1,0,9,5,6) performs [Fatigue] to B0(-1,0,10,1,103)
+Speed set from 1 to 1
+B1(0,-1,10,5,71) performs [Haste] to B3(1,0,8,5,104)
+[BOON] Applied HasteSTART to B3 (Usage: 1)
+[A31] Applied temporary buff HasteSTART for 1 turns, removal: HasteEND
+B2(1,-2,10,5,6) performs [Vow] to B3(1,0,8,5,104)
+Threat set from 104 to 105
+[BOON] Applied Vow Effect Start to B3 (Usage: 1)
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B2(1,-2,10,5,6) performs [Vow] to B0(-1,0,10,1,103)
+Threat set from 103 to 104
+[BOON] Refreshing existing Vow Effect Start on B0
+[REFRESH] Vow Effect Start duration refreshed, effect remains active
+[A31] Applied temporary buff Vow Effect Start for 1 turns, removal: Vow Effect End
+B4(1,0,9,5,6) performs [Fatigue] to R3(1,0,8,6,105)
+Speed set from 6 to 5
+B4(1,0,9,5,6) performs [Fatigue] to R0(-1,0,10,1,104)
+Speed set from 1 to 1
+Battle Over! Tick limit reached

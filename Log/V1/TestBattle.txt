@@ -1,68 +1,1870 @@
-Unit 0: R0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW6](Achilles' heel) Armor: [BSA1]
-Unit 1: R1 Attack:2 Defense:-1 HP:10 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA2]
-Unit 2: R2 Attack:4 Defense:-2 HP:12 Speed:7 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA3]
-Unit 3: R3 Attack:5 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
-Unit 4: R4 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
-Unit 5: B0 Attack:1 Defense:0 HP:10 Speed:7 Threat:6 Weapon: [BSW6](Achilles' heel) Armor: [BSA1]
-Unit 6: B1 Attack:2 Defense:-1 HP:10 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA2]
-Unit 7: B2 Attack:4 Defense:-2 HP:12 Speed:7 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA3]
-Unit 8: B3 Attack:5 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
-Unit 9: B4 Attack:6 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
+Unit 0: R0 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW1](Slash) Armor: [BSA1]
+Unit 1: R1 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW2](Slash) Armor: [BSA2]
+Unit 2: R2 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW3](Slash) Armor: [BSA3]
+Unit 3: R3 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW4](Slash) Armor: [BSA4]
+Unit 4: R4 Attack:1 Defense:100 HP:10 Speed:7 Threat:4 Weapon: [BSW46](Protect) Armor: [BSA5]
+Unit 5: B0 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW1](Slash) Armor: [BSA1]
+Unit 6: B1 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW2](Slash) Armor: [BSA2]
+Unit 7: B2 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW3](Slash) Armor: [BSA3]
+Unit 8: B3 Attack:5 Defense:100 HP:10 Speed:9 Threat:4 Weapon: [BSW4](Slash) Armor: [BSA4]
+Unit 9: B4 Attack:1 Defense:100 HP:10 Speed:7 Threat:4 Weapon: [BSW46](Protect) Armor: [BSA5]
 ==========================
 
 
-[Tick 5] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+[Tick 7] R0, R1, R2, R3, B0, B1, B2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(1,0,10,7,6) performs [Achilles' heel] to B0(1,0,10,7,6)
-B0 HP: 10 - 1 => 9
-R1(2,-1,10,7,6) performs [Poison Attack] to B0(1,0,10,8,6)
-B0 HP: 9 - 2 => 7
-[BOON] Applied Poison Effect to B0 (Usage: 3)
-[A28] R1 applied Poison Effect to B0 (usage: 3)
-R2(4,-2,12,7,6) performs [Charge Attack] to B0(1,0,10,8,6)
-B0 HP: 7 - 7 => 0
-R3(5,0,8,7,6) performs [Blitz Attack] to B1(2,-1,10,7,6)
-B1 HP: 10 - 13 => -3
-B0(1,0,10,8,6) performs [Achilles' heel] to R0(1,0,10,7,6)
-R0 HP: 10 - 1 => 9
-B1(2,-1,10,7,6) performs [Poison Attack] to R0(1,0,10,9,6)
-R0 HP: 9 - 2 => 7
-[BOON] Applied Poison Effect to R0 (Usage: 3)
-[A28] B1 applied Poison Effect to R0 (usage: 3)
-B2(4,-2,12,7,6) performs [Charge Attack] to R0(1,0,10,9,6)
-R0 HP: 7 - 7 => 0
-B3(5,0,8,7,6) performs [Blitz Attack] to R1(2,-1,10,7,6)
-R1 HP: 10 - 13 => -3
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
 
 
-[Tick 7] R4, B4,  acting
-Survived Unit: R2, R3, R4, B2, B3, B4, 
-R4(6,0,7,5,5) performs [Reckless Attack] to B2(4,-2,12,7,6)
-R4 HP: 7 - 0 => 7
-B2 HP: 12 - 7 => 5
-B4(6,0,7,5,5) performs [Reckless Attack] to R2(4,-2,12,7,6)
-B4 HP: 7 - 0 => 7
-R2 HP: 12 - 7 => 5
+[Tick 9] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
 
 
-[Tick 10] R2, R3, B2, B3,  acting
-Survived Unit: R2, R3, R4, B2, B3, B4, 
-R2(4,-2,12,7,6) performs [Charge Attack] to B2(4,-2,12,7,6)
-B2 HP: 5 - 7 => -2
-R3(5,0,8,7,6) performs [Blitz Attack] to B3(5,0,8,7,6)
-B3 HP: 8 - 12 => -4
-B2(4,-2,12,7,6) performs [Charge Attack] to R2(4,-2,12,7,6)
-R2 HP: 5 - 6 => -1
-B3(5,0,8,7,6) performs [Blitz Attack] to R3(5,0,8,7,6)
-R3 HP: 8 - 12 => -4
+[Tick 14] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
 
 
-[Tick 14] R4, B4,  acting
-Survived Unit: R4, B4, 
-R4(6,0,7,5,5) performs [Reckless Attack] to B4(6,0,7,5,5)
-R4 HP: 7 - 0 => 7
-B4 HP: 7 - 7 => 0
-B4(6,0,7,5,5) performs [Reckless Attack] to R4(6,0,7,5,5)
-B4 HP: 0 - 0 => 0
-R4 HP: 7 - 7 => 0
-Battle Over! Draw - both teams eliminated!
+[Tick 18] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 21] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 27] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 28] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 35] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 36] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 42] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 45] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 49] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 54] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 56] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 63] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 70] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 72] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 77] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 81] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 84] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 90] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 91] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 98] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 99] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 105] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 108] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 112] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 117] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 119] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 126] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 133] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 135] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 140] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 144] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 147] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 153] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 154] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 161] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 162] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 168] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 171] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 175] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 180] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 182] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 189] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 196] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 198] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 203] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 207] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 210] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 216] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 217] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 224] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 225] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 231] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 234] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 238] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 243] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 245] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 252] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 259] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 261] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 266] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 270] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 273] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 279] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 280] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 287] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 288] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 294] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 297] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 301] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 306] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 308] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 315] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 322] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 324] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 329] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 333] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 336] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 342] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 343] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 350] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 351] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 357] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 360] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 364] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 369] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 371] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 378] R4, B4, R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 385] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 387] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 392] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 396] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 399] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+
+
+[Tick 405] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,104,10,9,4)
+[BOON] Refreshing existing  on R0
+B4(1,100,10,7,4) performs [Protect] to B0(5,104,10,9,4)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 406] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,104,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,104,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,104,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,104,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on R0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on R0 - cleaned up
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 104 to 100
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 413] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+
+
+[Tick 414] R4, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(1,100,10,7,4) performs [Protect] to R0(5,100,10,9,4)
+B4(1,100,10,7,4) performs [Protect] to B0(5,100,10,9,4)
+
+
+[Tick 420] R0, R1, R2, R3, B0, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R1(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R2(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+R3(5,100,10,9,4) performs [Slash] to B0(5,100,10,9,4)
+B0 HP: 10 - 0 => 10
+B0(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B1(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B2(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+B3(5,100,10,9,4) performs [Slash] to R0(5,100,10,9,4)
+R0 HP: 10 - 0 => 10
+[AFTER-ACTION] R4 → R0: ProtectSTART
+Defense set from 100 to 104
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 100 to 104
+Battle Over! Tick limit reached

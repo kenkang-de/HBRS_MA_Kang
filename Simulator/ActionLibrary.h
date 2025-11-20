@@ -31,7 +31,6 @@ class ActionLibrary {
 };
 
 // Global functions for Boon system
-void AddBoonToUnit(Unit *target, std::unique_ptr<BoonAction> boon);
 bool HasBoonOnUnit(Unit *target, const std::string &effectType);
 
 #endif

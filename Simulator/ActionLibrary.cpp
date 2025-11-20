@@ -129,7 +129,8 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     {"A24",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
-             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - ctx.target->GetTotalStat().GetSpeed(),
+            int targetvalue= static_cast<int>(std::ceil(ctx.target->GetTotalStat().GetSpeed()*0.25f));
+             ctx.target->TakeDamage(ctx.actor->GetTotalStat().GetAttack() - targetvalue,
                                     false, ctx.actor);
          }
      }},
@@ -187,11 +188,11 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          }
      }},
 
-    // Add actor's attack by (actor's HP-Defense)
+    // Add actor's attack by (actor's (HP-Defense)*0.25)
     {"A04",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
-             int value = ctx.actor->GetTotalStat().GetHP() - ctx.actor->GetTotalStat().GetDefense();
+             int value = static_cast<int>(std::ceil((ctx.actor->GetTotalStat().GetHP() - ctx.actor->GetTotalStat().GetDefense()) * 0.25f));
              value = std::max(0,value);
              ctx.actor->GetTotalStat().SetAttack(ctx.actor->GetTotalStat().GetAttack() + value);
          }
@@ -257,7 +258,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
     {"A19",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
-             int value = static_cast<int>(ctx.actor->GetTotalStat().GetHP() * 0.1f);
+             int value = static_cast<int>(std::ceil(ctx.actor->GetTotalStat().GetHP() * 0.1f));
              ctx.actor->SetSpeed(ctx.actor->GetTotalStat().GetSpeed() + value);
          }
      }},
@@ -276,9 +277,9 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
              int usage = std::max(1, ctx.actor->GetTotalStat().GetSpeed() - ctx.target->GetTotalStat().GetSpeed());
-             auto poisonBoon = std::make_unique<BoonAction>("Poison", "Poison", usage);
+             auto poisonBoon = std::make_unique<BoonAction>("Poison", "Poison", usage, ctx.actor);
              poisonBoon->AddConditionalAction("C00", "A03", std::to_string(ctx.actor->GetTotalStat().GetAttack()));
-             AddBoonToUnit(ctx.target, std::move(poisonBoon));
+             ctx.target->AddBoon(std::move(poisonBoon));
          }
      }},
 
@@ -314,11 +315,11 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          }
      }},
 
-    // subtract target's attack (actor's Attack)
+    // Decrease target's attack (actor's Attack)
     {"A34",
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
-            int value = ctx.actor->GetTotalStat().GetAttack();
+            int value = std::max(0,ctx.actor->GetTotalStat().GetAttack());
     ctx.target->GetTotalStat().SetAttack(ctx.target->GetTotalStat().GetAttack() - value);
          }
      }},
@@ -352,6 +353,53 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          }
      }},
 
+    // Change Threat of actor (+ actor' Attack)
+    {"A40",
+     [](const ActionContext &ctx) {
+         if (ctx.actor && ctx.target) {
+             int value = ctx.actor->GetTotalStat().GetAttack();
+             ctx.actor->GetTotalStat().SetThreat(ctx.actor->GetTotalStat().GetThreat() + value);
+         }
+     }},
+
+    // increase Target's Defense by (actor's Attack)
+    {"A41",
+     [](const ActionContext &ctx) {
+         if (ctx.actor && ctx.target) {
+            int value = std::max(0, ctx.actor->GetTotalStat().GetAttack());
+             ctx.target->GetTotalStat().SetDefense(ctx.target->GetTotalStat().GetDefense() +
+                                                   value);
+         }
+     }},
+
+    // decrease Target's Defense by (actor's Attack)
+    {"A42",
+     [](const ActionContext &ctx) {
+         if (ctx.actor && ctx.target) {
+            int value = std::max(0, ctx.actor->GetTotalStat().GetAttack());
+             ctx.target->GetTotalStat().SetDefense(ctx.target->GetTotalStat().GetDefense() -
+                                                   value);
+         }
+     }},
+
+    // Increase target's attack (actor's Attack)
+    {"A43",
+     [](const ActionContext &ctx) {
+         if (ctx.actor && ctx.target) {
+            int value = std::max(0,ctx.actor->GetTotalStat().GetAttack());
+    ctx.target->GetTotalStat().SetAttack(ctx.target->GetTotalStat().GetAttack() + value);
+         }
+     }},
+
+    // Decrease target's attack (actor's Attack *0.25)
+    {"A44",
+     [](const ActionContext &ctx) {
+         if (ctx.actor && ctx.target) {
+            int value = std::max(0,ctx.actor->GetTotalStat().GetAttack());
+            value = static_cast<int>(std::ceil(value * 0.25f));
+    ctx.target->GetTotalStat().SetAttack(ctx.target->GetTotalStat().GetAttack() - value);
+         }
+     }},
     
     
 };
@@ -385,7 +433,6 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
              // Get and execute the registered effect action directly
              auto effectAction = GlobalAction::GetGlobalAction(effectName);
              if (effectAction) {
-                 LogSystem::LogStream("[EXECUTE_EFFECT] ", ctx.actor->GetName(), " triggered ", effectName);
                  effectAction->Perform(ctx.actor, ctx.target);
              }
          };
@@ -405,14 +452,13 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
                  auto effectAction = GlobalAction::GetGlobalAction(effectName);
                  if (effectAction) {
                      // Create a boon that will execute the specified effect action
-                     auto boon = std::make_unique<BoonAction>(effectName, effectName, usage);
+                     auto boon = std::make_unique<BoonAction>(effectName, effectName, usage, ctx.actor);
 
                      // Add a conditional action that directly executes the registered effect
                      boon->AddConditionalAction("C00", "EXECUTE_EFFECT", effectName);
 
-                     AddBoonToUnit(ctx.target, std::move(boon));
-                     LogSystem::LogStream("[A28] ", ctx.actor->GetName(), " applied ", effectName, " to ",
-                                          ctx.target->GetName(), " (usage: ", usage, ")");
+                     ctx.target->AddBoon(std::move(boon));
+
                  } else {
                      LogSystem::LogStream("[A28] ERROR: Effect action '", effectName, "' not found in registry!");
                  }
@@ -423,39 +469,26 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
     // Apply TempBoon with BattleAction names (param format: "StartActionName,duration,EndActionName")
     {"A31",
      [](const std::string &param) -> ActionFn {
-         // Parse: "Bulkup(START),3,Bulkup(END)"
+         // Parse
          size_t comma1 = param.find(',');
          size_t comma2 = param.find(',', comma1 + 1);
 
-         if (comma1 == std::string::npos || comma2 == std::string::npos) {
-             LogSystem::LogStream("[A31 ERROR] Invalid parameter format: ", param);
-             return [](const ActionContext &) {};
-         }
-
-         std::string startActionName = param.substr(0, comma1); // "Bulkup(START)"
+         std::string startActionName = param.substr(0, comma1);
          std::string durationStr = param.substr(comma1 + 1, comma2 - comma1 - 1);
-         std::string endActionName = param.substr(comma2 + 1); // "Bulkup(END)"
+         std::string endActionName = param.substr(comma2 + 1);
 
-         int duration;
-         try {
-             duration = std::stoi(durationStr);
-         } catch (const std::exception &e) {
-             LogSystem::LogStream("[A31 ERROR] Failed to parse duration '", durationStr, "': ", e.what());
-             return [](const ActionContext &) {};
-         }
+         int duration = std::stoi(durationStr);
 
          return [startActionName, duration, endActionName](const ActionContext &ctx) {
              if (ctx.target) {
                  // Create TempBoonAction
-                 auto tempBoon =
-                     std::make_unique<TempBoonAction>(startActionName, startActionName, duration, endActionName);
+                 auto tempBoon = std::make_unique<TempBoonAction>(startActionName, startActionName, duration,
+                                                                  endActionName, ctx.actor);
 
-                 // Add the buff effect using EXECUTE_EFFECT (no parameters needed)
+                 //  // Add the buff effect using EXECUTE_EFFECT (no parameters needed)
                  tempBoon->AddConditionalAction("C00", "EXECUTE_EFFECT", startActionName);
 
-                 AddBoonToUnit(ctx.target, std::move(tempBoon));
-                 LogSystem::LogStream("[A31] Applied temporary buff ", startActionName, " for ", duration,
-                                      " turns, removal: ", endActionName);
+                 ctx.target->AddBoon(std::move(tempBoon));
              }
          };
      }},
@@ -489,13 +522,6 @@ ActionFn ActionLibrary::GetAction(const std::string &id, const std::string &para
     }
 
     throw std::runtime_error("No parameterized action for ID: " + id);
-}
-
-// Global functions for boon system
-void AddBoonToUnit(Unit *target, std::unique_ptr<BoonAction> boon) {
-    if (target) {
-        target->AddBoon(std::move(boon));
-    }
 }
 
 bool HasBoonOnUnit(Unit *target, const std::string &effectType) {

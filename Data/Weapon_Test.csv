@@ -1,6 +1,6 @@
 ﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
-BSW6,Spear,,2,0,-2,2,0,Achilles' heel
-BSW7,Sword,,2,0,-2,2,0,Poison Attack
-BSW8,Spear,,3,0,-2,2,2,Charge Attack
-BSW9,Mace,,4,0,-2,2,0,Blitz Attack
-BSW10,Halberd,,5,0,-4,2,0,Reckless Attack
+BSW1,Sword,,4,0,0,0,0,Slash
+BSW2,Sword,,4,0,0,0,0,Slash
+BSW3,Sword,,4,0,0,0,0,Slash
+BSW4,Sword,,4,0,0,0,0,Slash
+BSW46,Charm,,0,0,0,2,0,Protect

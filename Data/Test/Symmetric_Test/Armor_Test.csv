@@ -1,0 +1,6 @@
+﻿ID,Type,ArmorType,ATK,DEF,SPD,THR,HP
+BSA1,Shoe,,-2,0,4,4,0
+BSA2,Shoe,,-1,-1,4,4,0
+BSA3,Shoe,,0,-2,4,4,0
+BSA4,Shoe,,0,0,4,4,-2
+BSA5,Shoe,,0,0,4,3,-3

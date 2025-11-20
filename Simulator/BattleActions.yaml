@@ -87,14 +87,28 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C00_A10"] 
+  actionIDs: ["C00_A00", "C00_A18(Fade Attack Effect)"]
+
+- id: Fade Attack Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A10"]   
 
 - id: Final Attack
   targetNumber: 1
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A11", "C00_A12"]
+  actionIDs: ["C00_A11", "C00_A18(Final Attack Effect)"]
+
+- id: Final Attack Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: MELEE
+  actionIDs: ["C00_A12"]  
 
 - id: Prep Attack
   targetNumber: 1
@@ -115,7 +129,14 @@
   self: false
   targetType: ENEMY
   actionType: MELEE
-  actionIDs: ["C00_A00", "C04_A10", "C04_A04"]
+  actionIDs: ["C00_A00", "C00_A18(Taunt Effect)"]
+
+- id: Taunt Effect
+  targetNumber: 1
+  self: false
+  targetType: ALLY
+  actionType: MELEE
+  actionIDs: ["C04_A10"]
 
 - id: Killer's Spirit
   targetNumber: 1
@@ -171,7 +192,14 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A10", "C00_A04","C00_A00"]  
+  actionIDs: ["C00_A18(All-Out Assault Effect)", "C00_A04","C00_A00"]
+
+- id: All-Out Assault Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A40"]  
 
 - id: Boost Acuity
   targetNumber: 1
@@ -199,7 +227,14 @@
   self: false
   targetType: ENEMY
   actionType: RANGE
-  actionIDs: ["C00_A00", "C00_A10"]   
+  actionIDs: ["C00_A00", "C00_A18(Camo Throw Effect)"]
+
+- id: Camo Throw Effect
+  targetNumber: 1
+  self: false
+  targetType: ENEMY
+  actionType: RANGE
+  actionIDs: ["C00_A10"]     
 
 - id: Fire Arrow
   targetNumber: 1
@@ -374,7 +409,21 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A33", "C00_A02"]  
+  actionIDs: ["C00_A33", "C00_A31(Vow Effect Start,1,Vow Effect End)"]
+
+- id: Vow Effect Start
+  targetNumber: 2
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A41"]  
+
+- id: Vow Effect End
+  targetNumber: 2
+  self: true
+  targetType: ALLY
+  actionType: MAGIC
+  actionIDs: ["C00_A42"]  
 
 - id: Exposure
   targetNumber: 3
@@ -416,7 +465,7 @@
   self: true
   targetType: ALLY
   actionType: MAGIC
-  actionIDs: ["C00_A34"]
+  actionIDs: ["C00_A43"]
 
 - id: Meteor
   targetNumber: 4
@@ -437,4 +486,12 @@
   self: false
   targetType: ENEMY
   actionType: MAGIC
-  actionIDs: ["C00_A34"]   
+  actionIDs: ["C00_A28(Corrosion Effect,1)"]   
+
+- id: Corrosion Effect
+  targetNumber: 1
+  self: true
+  targetType: ENEMY
+  actionType: MAGIC
+  actionIDs: ["C00_A44"]
+

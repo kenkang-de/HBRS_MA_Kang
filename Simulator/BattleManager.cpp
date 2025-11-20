@@ -133,6 +133,7 @@ void BattleManager::StartBattle(bool log, std::string batchID) {
 
 void BattleManager::ActUnits(std::vector<Unit *> &units) {
 
+    // normal actions
     for (Unit *actor : units) {
         std::vector<Unit *> targets = TargetManager::GetTargets(*actor);
         for (Unit *target : targets) {
@@ -146,13 +147,15 @@ void BattleManager::ActUnits(std::vector<Unit *> &units) {
                                  target->GetTotalStat().GetHP(), ",", target->GetTotalStat().GetSpeed(), ",",
                                  target->GetTotalStat().GetThreat(), ")");
             action.Perform(actor, target);
-
-            // Apply unit boons to after-action system
-            ApplyUnitBoonsToAfterAction(actor);
-            // Process any after-actions triggered
-            ProcessAfterActions(allUnits);
         }
     }
+    // after actions
+    for (Unit *actor : units) {
+        // Apply unit boons to after-action system
+        ApplyUnitBoonsToAfterAction(actor);
+    }
+    // Process any after-actions triggered
+    ProcessAfterActions(allUnits);
 }
 
 bool BattleManager::IsBattleOver() {
@@ -238,10 +241,24 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit *> &allUnits) {
     for (const auto &afterActionEvent : toProcess) {
         Unit *actor = afterActionEvent.context.actor;
 
-        std::vector<Unit *> targets = TargetManager::GetTargets(*actor, *afterActionEvent.battleAction);
+        std::vector<Unit *> targets;
+        targets.reserve(5);
+
+        // if boon then apply to the actor
+        BoonAction *boonAction = dynamic_cast<BoonAction *>(afterActionEvent.battleAction);
+        if (boonAction != nullptr) {
+            targets = {afterActionEvent.context.target};
+            LogSystem::LogStream("[AFTER-ACTION] ", actor->GetName(), " → ", afterActionEvent.context.target->GetName(),
+                                 ": ", boonAction->GetID());
+        }
+        // otherwise just normal targetting
+        else {
+            targets = TargetManager::GetTargets(*actor, *afterActionEvent.battleAction);
+        }
 
         if (targets.size() > 0) {
             for (Unit *target : targets) {
+
                 afterActionEvent.battleAction->Perform(actor, target);
             }
         } else {
