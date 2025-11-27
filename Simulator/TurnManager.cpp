@@ -102,6 +102,9 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
     std::vector<std::multimap<int, Unit *>::iterator> toRemove;
     toRemove.reserve(10);
 
+    std::vector<std::pair<int, Unit *>> toInsert;
+    toInsert.reserve(10);
+
     for (auto it = turnMap.begin(); it != turnMap.end(); ++it) {
         Unit *unit = it->second;
         int scheduledTick = it->first;
@@ -120,7 +123,7 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
             }
             unit->TickDelay = 0;
             int nextActionTick = tick + unit->Tickinterval;
-            turnMap.insert({nextActionTick, unit});
+            toInsert.push_back({nextActionTick, unit});
             toRemove.push_back(it);
         } else if (actualTick > tick) {
             break;
@@ -129,6 +132,10 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
 
     for (auto it : toRemove) {
         turnMap.erase(it);
+    }
+
+    for (const auto &[nextTick, unit] : toInsert) {
+        turnMap.insert({nextTick, unit});
     }
 
     return unitsToAct;

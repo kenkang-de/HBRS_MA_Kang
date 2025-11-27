@@ -265,6 +265,7 @@ void BattleManager::ProcessAfterActions(const std::vector<Unit *> &allUnits) {
             LogSystem::LogStream("[AFTER-ACTION] No valid target found for ", actor->GetName());
         }
     }
+    GlobalAction::afterActions.clear();
 }
 
 // Apply unit boons to after-action system

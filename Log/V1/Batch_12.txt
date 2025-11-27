@@ -1,120 +1,114 @@
-Unit 0: R0 Attack:3 Defense:2 HP:10 Speed:3 Threat:6 Weapon: [BSW13](Prep Attack) Armor: [BSA30]
-Unit 1: R1 Attack:3 Defense:1 HP:10 Speed:1 Threat:3 Weapon: [BSW27](Tripple Shot) Armor: [BSA43]
-Unit 2: R2 Attack:7 Defense:0 HP:6 Speed:5 Threat:0 Weapon: [BSW32](Focus Throw) Armor: [BSA16]
-Unit 3: R3 Attack:6 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA21]
-Unit 4: R4 Attack:1 Defense:1 HP:8 Speed:5 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA18]
-Unit 5: B0 Attack:5 Defense:4 HP:10 Speed:3 Threat:6 Weapon: [BSW32](Focus Throw) Armor: [BSA31]
-Unit 6: B1 Attack:2 Defense:4 HP:10 Speed:3 Threat:5 Weapon: [BSW21](Poison Arrow) Armor: [BSA37]
-Unit 7: B2 Attack:4 Defense:1 HP:10 Speed:3 Threat:5 Weapon: [BSW22](Delay Shot) Armor: [BSA33]
-Unit 8: B3 Attack:2 Defense:0 HP:10 Speed:4 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA11]
-Unit 9: B4 Attack:2 Defense:1 HP:12 Speed:2 Threat:6 Weapon: [BSW35](Chain Lightning) Armor: [BSA20]
+Unit 0: R0 Attack:3 Defense:2 HP:15 Speed:2 Threat:6 Weapon: [BSW13](Prep Attack) Armor: [BSA49]
+Unit 1: R1 Attack:4 Defense:1 HP:13 Speed:6 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA13]
+Unit 2: R2 Attack:5 Defense:0 HP:8 Speed:5 Threat:0 Weapon: [BSW32](Focus Throw) Armor: [BSA15]
+Unit 3: R3 Attack:6 Defense:1 HP:8 Speed:4 Threat:3 Weapon: [BSW8](Charge Attack) Armor: [BSA26]
+Unit 4: R4 Attack:0 Defense:0 HP:10 Speed:1 Threat:3 Weapon: [BSW42](Haste) Armor: [BSA35]
+Unit 5: B0 Attack:3 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW8](Charge Attack) Armor: [BSA37]
+Unit 6: B1 Attack:3 Defense:5 HP:15 Speed:0 Threat:10 Weapon: [BSW15](Taunt) Armor: [BSA48]
+Unit 7: B2 Attack:2 Defense:2 HP:12 Speed:3 Threat:3 Weapon: [BSW27](Tripple Shot) Armor: [BSA24]
+Unit 8: B3 Attack:5 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA4]
+Unit 9: B4 Attack:6 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW14](Leech Attack) Armor: [BSA50]
 ==========================
 
 
-[Tick 12] R2, R4,  acting
+[Tick 60] B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(7,0,6,5,0) performs [Focus Throw] to B3(2,0,10,4,9)
-B3 HP: 10 - 8 => 2
-R4(1,1,8,5,2) performs [Wrist Shot] to B3(2,0,10,4,9)
-B3 HP: 2 - 1 => 1
+B3(5,0,8,7,6) performs [Blitz Attack] to R0(3,2,15,2,6)
+R0 HP: 15 - 10 => 5
 
 
-[Tick 20] R0, B0, B1, B2,  acting
+[Tick 70] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,4,10,3,6) performs [Focus Throw] to R0(3,2,10,3,6)
-R0 HP: 10 - 6 => 4
-B1(2,4,10,3,5) performs [Poison Arrow] to R0(3,2,10,3,6)
-R0 HP: 4 - 0 => 4
-B2(4,1,10,3,5) performs [Delay Shot] to R0(3,2,10,3,6)
-R0 HP: 4 - 2 => 2
+R1(4,1,13,6,6) performs [Charge Attack] to B1(3,5,15,0,10)
+B1 HP: 15 - 3 => 12
 
 
-[Tick 24] R2, R4,  acting
+[Tick 84] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(7,0,6,5,0) performs [Focus Throw] to B3(2,0,10,4,9)
-B3 HP: 1 - 8 => -7
-R4(1,1,8,5,2) performs [Wrist Shot] to B0(5,4,10,3,6)
-B0 HP: 10 - 0 => 10
+R2(5,0,8,5,0) performs [Focus Throw] to B1(3,5,15,0,10)
+B1 HP: 12 - 0 => 12
 
 
-[Tick 30] R3, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-R3(6,3,10,2,5) performs [Reckless Attack] to B0(5,4,10,3,6)
-R3 HP: 10 - 3 => 7
-B0 HP: 10 - 7 => 3
-B4(2,1,12,2,6) performs [Chain Lightning] to R0(3,2,10,3,6)
-R0 HP: 2 - 2 => 0
-B4(2,1,12,2,6) performs [Chain Lightning] to R3(6,3,10,2,5)
-R3 HP: 7 - 2 => 5
-B4(2,1,12,2,6) performs [Chain Lightning] to R1(3,1,10,1,3)
-R1 HP: 10 - 2 => 8
+[Tick 105] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(6,1,8,4,3) performs [Charge Attack] to B1(3,5,15,0,10)
+B1 HP: 12 - 3 => 9
 
 
-[Tick 36] R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B4, 
-R2(7,0,6,5,0) performs [Focus Throw] to B0(5,4,10,3,6)
-B0 HP: 3 - 8 => -5
-R4(1,1,8,5,2) performs [Wrist Shot] to B4(2,1,12,2,6)
-B4 HP: 12 - 0 => 12
+[Tick 120] B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3(5,0,8,7,6) performs [Blitz Attack] to R0(3,2,15,2,6)
+R0 HP: 5 - 10 => -5
 
 
-[Tick 40] B1, B2,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
-B1(2,4,10,3,5) performs [Poison Arrow] to R3(6,3,10,2,5)
-R3 HP: 5 - 0 => 5
-B2(4,1,10,3,5) performs [Delay Shot] to R3(6,3,10,2,5)
-R3 HP: 5 - 1 => 4
+[Tick 140] B0, B2, R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(2,2,12,3,3) performs [Tripple Shot] to R1(4,1,13,6,6)
+R1 HP: 13 - 1 => 12
+B2(2,2,12,3,3) performs [Tripple Shot] to R3(6,1,8,4,3)
+R3 HP: 8 - 1 => 7
+B2(2,2,12,3,3) performs [Tripple Shot] to R4(0,0,10,1,3)
+R4 HP: 10 - 2 => 8
+B0(3,4,12,3,7) performs [Charge Attack] to R1(4,1,13,6,6)
+R1 HP: 12 - 5 => 7
+R1(4,1,13,6,6) performs [Charge Attack] to B1(3,5,15,0,10)
+B1 HP: 9 - 1 => 8
 
 
-[Tick 42] R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
-R2(7,0,6,5,0) performs [Focus Throw] to B4(2,1,12,2,6)
-B4 HP: 12 - 8 => 4
-R4(1,1,8,5,2) performs [Wrist Shot] to B4(2,1,12,2,6)
-B4 HP: 4 - 0 => 4
+[Tick 168] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(5,0,8,5,0) performs [Focus Throw] to B1(3,5,15,0,10)
+B1 HP: 8 - 0 => 8
 
 
-[Tick 48] R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
-R2(7,0,6,5,0) performs [Focus Throw] to B4(2,1,12,2,6)
-B4 HP: 4 - 8 => -4
-R4(1,1,8,5,2) performs [Wrist Shot] to B1(2,4,10,3,5)
-B1 HP: 10 - 0 => 10
+[Tick 180] B3,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3(5,0,8,7,6) performs [Blitz Attack] to R1(4,1,13,6,6)
+R1 HP: 7 - 11 => -4
 
 
-[Tick 50] B1, B2,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, 
-B1(2,4,10,3,5) performs [Poison Arrow] to R3(6,3,10,2,5)
-R3 HP: 4 - 0 => 4
-[BOON] Refreshing existing  on R3
-B2(4,1,10,3,5) performs [Delay Shot] to R3(6,3,10,2,5)
-R3 HP: 4 - 1 => 3
+[Tick 210] R3,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(6,1,8,4,3) performs [Charge Attack] to B1(3,5,15,0,10)
+B1 HP: 8 - 3 => 5
 
 
-[Tick 54] R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, 
-R2(7,0,6,5,0) performs [Focus Throw] to B1(2,4,10,3,5)
-B1 HP: 10 - 8 => 2
-R4(1,1,8,5,2) performs [Wrist Shot] to B1(2,4,10,3,5)
-B1 HP: 2 - 0 => 2
+[Tick 240] B3,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
+B3(5,0,8,7,6) performs [Blitz Attack] to R3(6,1,8,4,3)
+R3 HP: 7 - 11 => -4
 
 
-[Tick 60] R1, B2, R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, 
-R1(3,1,10,1,3) performs [Tripple Shot] to B1(2,4,10,3,5)
-B1 HP: 2 - 0 => 2
-R1(3,1,10,1,3) performs [Tripple Shot] to B2(4,1,10,3,5)
-B2 HP: 10 - 2 => 8
-B2(4,1,10,3,5) performs [Delay Shot] to R3(6,3,10,2,5)
-R3 HP: 3 - 1 => 2
-R2(7,0,6,5,0) performs [Focus Throw] to B1(2,4,10,3,5)
-B1 HP: 2 - 8 => -6
-R4(1,1,8,5,2) performs [Wrist Shot] to B2(4,1,10,3,5)
-B2 HP: 8 - 0 => 8
+[Tick 252] R2,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+R2(5,0,8,5,0) performs [Focus Throw] to B1(3,5,15,0,10)
+B1 HP: 5 - 0 => 5
 
 
-[Tick 66] R2, R4,  acting
-Survived Unit: R1, R2, R3, R4, B2, 
-R2(7,0,6,5,0) performs [Focus Throw] to B2(4,1,10,3,5)
-B2 HP: 8 - 8 => 0
-Battle Over! Red Team wins!
+[Tick 273] R2,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+R2(5,0,8,5,0) performs [Focus Throw] to B1(3,5,15,0,10)
+B1 HP: 5 - 0 => 5
+
+
+[Tick 280] B0, B2,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+B2(2,2,12,3,3) performs [Tripple Shot] to R4(0,0,10,1,3)
+R4 HP: 8 - 2 => 6
+B2(2,2,12,3,3) performs [Tripple Shot] to R2(5,0,8,5,0)
+R2 HP: 8 - 2 => 6
+B0(3,4,12,3,7) performs [Charge Attack] to R4(0,0,10,1,3)
+R4 HP: 6 - 6 => 0
+
+
+[Tick 294] R2,  acting
+Survived Unit: R2, B0, B1, B2, B3, B4, 
+R2(5,0,8,5,0) performs [Focus Throw] to B1(3,5,15,0,10)
+B1 HP: 5 - 0 => 5
+
+
+[Tick 300] B3,  acting
+Survived Unit: R2, B0, B1, B2, B3, B4, 
+B3(5,0,8,7,6) performs [Blitz Attack] to R2(5,0,8,5,0)
+R2 HP: 6 - 12 => -6
+Battle Over! Blue Team wins!

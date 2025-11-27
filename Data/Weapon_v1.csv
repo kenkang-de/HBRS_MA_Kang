@@ -46,6 +46,6 @@ BSW44,Wand,,0,0,-3,3,0,Exposure
 BSW45,Wand,,0,0,-4,3,2,Fatigue
 BSW46,Charm,,0,0,-4,2,0,Protect
 BSW47,Charm,,0,0,-4,2,0,Cheer
-BSW48,Staff,,0,0,-4,5,0,Meteor
-BSW49,Staff,,0,0,-4,4,0,Earthquake
+BSW48,Staff,,3,0,-4,5,0,Meteor
+BSW49,Staff,,2,0,-4,4,0,Earthquake
 BSW50,Wand,,0,0,-4,2,0,Corrosion
