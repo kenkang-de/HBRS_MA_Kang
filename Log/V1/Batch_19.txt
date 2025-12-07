@@ -1,206 +1,88 @@
-Unit 0: R0 Attack:4 Defense:0 HP:8 Speed:7 Threat:5 Weapon: [BSW29](Camo Throw) Armor: [BSA4]
-Unit 1: R1 Attack:1 Defense:0 HP:12 Speed:4 Threat:1 Weapon: [BSW34](Wind Blade) Armor: [BSA17]
-Unit 2: R2 Attack:-1 Defense:0 HP:10 Speed:6 Threat:6 Weapon: [BSW39](Healing Link) Armor: [BSA1]
-Unit 3: R3 Attack:1 Defense:0 HP:8 Speed:5 Threat:6 Weapon: [BSW50](Corrosion) Armor: [BSA4]
-Unit 4: R4 Attack:4 Defense:3 HP:12 Speed:2 Threat:6 Weapon: [BSW2](Chop) Armor: [BSA41]
-Unit 5: B0 Attack:3 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW9](Blitz Attack) Armor: [BSA18]
-Unit 6: B1 Attack:5 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA30]
-Unit 7: B2 Attack:1 Defense:1 HP:7 Speed:5 Threat:0 Weapon: [BSW21](Poison Arrow) Armor: [BSA19]
-Unit 8: B3 Attack:8 Defense:1 HP:4 Speed:4 Threat:1 Weapon: [BSW1](Slash) Armor: [BSA27]
-Unit 9: B4 Attack:6 Defense:1 HP:4 Speed:4 Threat:1 Weapon: [BSW20](Blitz Shot) Armor: [BSA27]
+Unit 0: R0 Attack:3 Defense:1 HP:12 Speed:4 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA20]
+Unit 1: R1 Attack:6 Defense:-1 HP:10 Speed:1 Threat:2 Weapon: [BSW19](Momentum) Armor: [BSA32]
+Unit 2: R2 Attack:3 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA21]
+Unit 3: R3 Attack:3 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW26](Double Shot) Armor: [BSA21]
+Unit 4: R4 Attack:0 Defense:3 HP:15 Speed:0 Threat:9 Weapon: [BSW45](Fatigue) Armor: [BSA47]
+Unit 5: B0 Attack:5 Defense:0 HP:11 Speed:6 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA5]
+Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA9]
+Unit 7: B2 Attack:6 Defense:1 HP:8 Speed:3 Threat:1 Weapon: [BSW18](Killing Spree) Armor: [BSA25]
+Unit 8: B3 Attack:6 Defense:0 HP:10 Speed:4 Threat:4 Weapon: [BSW19](Momentum) Armor: [BSA11]
+Unit 9: B4 Attack:3 Defense:-2 HP:10 Speed:6 Threat:2 Weapon: [BSW20](Blitz Shot) Armor: [BSA9]
 ==========================
 
 
-[Tick 60] R0,  acting
+[Tick 2] B0, B1, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(4,0,8,7,5) performs [Camo Throw] to B1(5,2,10,2,4)
-B1 HP: 10 - 2 => 8
-Threat set from 5 to 1
+B4(3,-2,10,6,2) performs [Blitz Shot] to R4(0,3,15,0,9)
+R4 HP: 15 - 6 => 9
+B0(5,0,11,6,4) performs [Berserk] to R4(0,3,15,0,9)
+B0 HP: 11 - 0 => 11
+R4 HP: 9 - 2 => 7
+Attack set from 5 to 5
+B1(5,-2,10,6,4) performs [Blitz Attack] to R4(0,3,15,0,9)
+R4 HP: 7 - 8 => -1
 
 
-[Tick 70] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(-1,0,10,6,6) performs [Healing Link] to R3(1,0,8,5,6)
-[HEAL] R3 healed for -1 HP (from 8 to 7/8)
-R2(-1,0,10,6,6) performs [Healing Link] to R4(4,3,12,2,6)
-[HEAL] R4 healed for -1 HP (from 12 to 11/12)
+[Tick 3] R0, R2, R3, B3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R2(3,3,10,4,3) performs [Poison Arrow] to B0(5,0,11,6,4)
+B0 HP: 11 - 3 => 8
+R3(3,3,10,4,3) performs [Double Shot] to B0(5,0,11,6,4)
+B0 HP: 8 - 3 => 5
+R3(3,3,10,4,3) performs [Double Shot] to B1(5,-2,10,6,4)
+B1 HP: 10 - 5 => 5
+B3(6,0,10,4,4) performs [Momentum] to R0(3,1,12,4,4)
+R0 HP: 12 - 5 => 7
+R0(3,1,12,4,4) performs [Blitz Attack] to B0(5,0,11,6,4)
+B0 HP: 5 - 7 => -2
 
 
-[Tick 84] R3, B0, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R2(-1,0,10,6,6)
-R2 HP: 10 - 1 => 9
-B0(3,1,8,5,3) performs [Blitz Attack] to R2(-1,0,10,6,6)
-R2 HP: 9 - 8 => 1
-R3(1,0,8,5,6) performs [Corrosion] to B1(5,2,10,2,4)
-R3(1,0,8,5,6) performs [Corrosion] to B0(3,1,8,5,3)
+[Tick 4] B2, B1, B4,  acting
+Survived Unit: R0, R1, R2, R3, B1, B2, B3, B4, 
+B2(6,1,8,3,1) performs [Killing Spree] to R0(3,1,12,4,4)
+R0 HP: 7 - 5 => 2
+B4(3,-2,10,6,2) performs [Blitz Shot] to R0(3,1,12,4,4)
+R0 HP: 2 - 8 => -6
+B1(5,-2,10,6,4) performs [Blitz Attack] to R2(3,3,10,4,3)
+R2 HP: 10 - 8 => 2
 
 
-[Tick 105] R1, B3, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(6,1,4,4,1) performs [Blitz Shot] to R2(-1,0,10,6,6)
-R2 HP: 1 - 10 => -9
-B3(8,1,4,4,1) performs [Slash] to R3(1,0,8,5,6)
-R3 HP: 7 - 8 => -1
-R1(1,0,12,4,1) performs [Wind Blade] to B1(5,2,10,2,4)
-B1 HP: 8 - 1 => 7
-R1(1,0,12,4,1) performs [Wind Blade] to B0(3,1,8,5,3)
-B0 HP: 8 - 1 => 7
+[Tick 6] R3, B3, B1, B4,  acting
+Survived Unit: R1, R2, R3, B1, B2, B3, B4, 
+R3(3,3,10,4,3) performs [Double Shot] to B1(5,-2,10,6,4)
+B1 HP: 5 - 5 => 0
+R3(3,3,10,4,3) performs [Double Shot] to B3(6,0,10,4,4)
+B3 HP: 10 - 3 => 7
+B3(6,0,10,4,4) performs [Momentum] to R2(3,3,10,4,3)
+R2 HP: 2 - 3 => -1
+B4(3,-2,10,6,2) performs [Blitz Shot] to R3(3,3,10,4,3)
+R3 HP: 10 - 6 => 4
+Speed set from 4 to 5
 
 
-[Tick 120] R0,  acting
-Survived Unit: R0, R1, R4, B0, B1, B2, B3, B4, 
-R0(4,0,8,7,1) performs [Camo Throw] to B1(5,2,10,2,4)
-B1 HP: 7 - 2 => 5
-Threat set from 1 to -3
+[Tick 8] B2, B4,  acting
+Survived Unit: R1, R3, B2, B3, B4, 
+B2(6,1,8,3,1) performs [Killing Spree] to R3(3,3,10,4,3)
+R3 HP: 4 - 3 => 1
+B4(3,-2,10,6,2) performs [Blitz Shot] to R3(3,3,10,4,3)
+R3 HP: 1 - 6 => -5
 
 
-[Tick 140] R0,  acting
-Survived Unit: R0, R1, R4, B0, B1, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B1(5,2,10,2,4)
-B1 HP: 5 - 2 => 3
-Threat set from 0 to -4
+[Tick 9] B3,  acting
+Survived Unit: R1, B2, B3, B4, 
+B3(6,0,10,5,4) performs [Momentum] to R1(6,-1,10,1,2)
+R1 HP: 10 - 7 => 3
 
 
-[Tick 160] R0,  acting
-Survived Unit: R0, R1, R4, B0, B1, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B1(5,2,10,2,4)
-B1 HP: 3 - 2 => 1
-Threat set from 0 to -4
+[Tick 13] R1,  acting
+Survived Unit: R1, B2, B3, B4, 
+R1(6,-1,10,1,2) performs [Momentum] to B3(6,0,10,5,4)
+B3 HP: 7 - 6 => 1
 
 
-[Tick 168] B0, B2,  acting
-Survived Unit: R0, R1, R4, B0, B1, B2, B3, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R4(4,3,12,2,6)
-R4 HP: 11 - 0 => 11
-B0(3,1,8,5,3) performs [Blitz Attack] to R4(4,3,12,2,6)
-R4 HP: 11 - 5 => 6
-[AFTER-ACTION] R3 → B0: Corrosion Effect
-[BOON] Corrosion Effect on B0 (Usage: 1/1)
-Attack set from 3 to 2
-[BOON] Corrosion Effect expired on B0 - cleaned up
-
-
-[Tick 180] R0,  acting
-Survived Unit: R0, R1, R4, B0, B1, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B1(5,2,10,2,4)
-B1 HP: 1 - 2 => -1
-Threat set from 0 to -4
-
-
-[Tick 196] B0, B2,  acting
-Survived Unit: R0, R1, R4, B0, B2, B3, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R4(4,3,12,2,6)
-R4 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on R4
-B0(2,1,8,5,3) performs [Blitz Attack] to R4(4,3,12,2,6)
-R4 HP: 6 - 4 => 2
-
-
-[Tick 200] R0,  acting
-Survived Unit: R0, R1, R4, B0, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B0(2,1,8,5,3)
-B0 HP: 7 - 3 => 4
-Threat set from 0 to -4
-
-
-[Tick 210] R4, R1, B3, B4,  acting
-Survived Unit: R0, R1, R4, B0, B2, B3, B4, 
-B4(6,1,4,4,1) performs [Blitz Shot] to R4(4,3,12,2,6)
-R4 HP: 2 - 7 => -5
-B3(8,1,4,4,1) performs [Slash] to R1(1,0,12,4,1)
-R1 HP: 12 - 8 => 4
-R1(1,0,12,4,1) performs [Wind Blade] to B0(2,1,8,5,3)
-B0 HP: 4 - 1 => 3
-R1(1,0,12,4,1) performs [Wind Blade] to B3(8,1,4,4,1)
-B3 HP: 4 - 1 => 3
-
-
-[Tick 220] R0,  acting
-Survived Unit: R0, R1, B0, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B0(2,1,8,5,3)
-B0 HP: 3 - 3 => 0
-Threat set from 0 to -4
-
-
-[Tick 224] B2,  acting
-Survived Unit: R0, R1, B2, B3, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R1(1,0,12,4,1)
-R1 HP: 4 - 1 => 3
-
-
-[Tick 240] R0,  acting
-Survived Unit: R0, R1, B2, B3, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B3(8,1,4,4,1)
-B3 HP: 3 - 3 => 0
-Threat set from 0 to -4
-
-
-[Tick 245] B4,  acting
-Survived Unit: R0, R1, B2, B4, 
-B4(6,1,4,4,1) performs [Blitz Shot] to R1(1,0,12,4,1)
-R1 HP: 3 - 10 => -7
-
-
-[Tick 252] B2,  acting
-Survived Unit: R0, B2, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R0(4,0,8,7,0)
-R0 HP: 8 - 1 => 7
-
-
-[Tick 260] R0,  acting
-Survived Unit: R0, B2, B4, 
-R0(4,0,8,7,0) performs [Camo Throw] to B4(6,1,4,4,1)
-B4 HP: 4 - 3 => 1
-Threat set from 0 to -4
-[AFTER-ACTION] B2 → R0: Poison Effect
-[BOON] Poison Effect on R0 (Usage: 2/2)
-R0 HP: 7 - 1 => 6
-
-
-[Tick 280] B2, R0,  acting
-Survived Unit: R0, B2, B4, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R0(4,0,8,7,0)
-R0 HP: 6 - 1 => 5
-[BOON] Refreshing existing  on R0
-R0(4,0,8,7,0) performs [Camo Throw] to B4(6,1,4,4,1)
-B4 HP: 1 - 3 => -2
-Threat set from 0 to -4
-[AFTER-ACTION] B2 → R0: Poison Effect
-[BOON] Poison Effect on R0 (Usage: 2/2)
-R0 HP: 5 - 1 => 4
-
-
-[Tick 300] R0,  acting
-Survived Unit: R0, B2, 
-R0(4,0,8,7,0) performs [Camo Throw] to B2(1,1,7,5,0)
-B2 HP: 7 - 3 => 4
-Threat set from 0 to -4
-[AFTER-ACTION] B2 → R0: Poison Effect
-[BOON] Poison Effect on R0 (Usage: 1/2)
-R0 HP: 4 - 1 => 3
-[BOON] Poison Effect expired on R0 - cleaned up
-
-
-[Tick 305] R0,  acting
-Survived Unit: R0, B2, 
-R0(4,0,8,7,0) performs [Camo Throw] to B2(1,1,7,5,0)
-B2 HP: 4 - 3 => 1
-Threat set from 0 to -4
-
-
-[Tick 308] B2,  acting
-Survived Unit: R0, B2, 
-B2(1,1,7,5,0) performs [Poison Arrow] to R0(4,0,8,7,0)
-R0 HP: 3 - 1 => 2
-
-
-[Tick 310] R0,  acting
-Survived Unit: R0, B2, 
-R0(4,0,8,7,0) performs [Camo Throw] to B2(1,1,7,5,0)
-B2 HP: 1 - 3 => -2
-[AFTER-ACTION] No valid target found for R0
-[AFTER-ACTION] B2 → R0: Poison Effect
-[BOON] Poison Effect on R0 (Usage: 2/2)
-R0 HP: 2 - 1 => 1
-Battle Over! Red Team wins!
+[Tick 16] B3,  acting
+Survived Unit: R1, B2, B3, B4, 
+B3(6,0,10,5,4) performs [Momentum] to R1(6,-1,10,1,2)
+R1 HP: 3 - 7 => -4
+Speed set from 5 to 6
+Battle Over! Blue Team wins!

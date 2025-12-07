@@ -98,6 +98,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling NoveltyChecker.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -c NoveltyChecker.cpp -o NoveltyChecker.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile NoveltyChecker.cpp
+    exit /b 1
+)
+
 
 cd ../Analysis
 echo Compiling SubjectToCSV.cpp...
@@ -195,6 +202,7 @@ g++ %LINK_FLAGS% ^
     Element/CounterTypeInitializer.o ^
     Element/SynergyComponentInitializer.o ^
     Sampling/BatchCreator.o ^
+    Sampling/NoveltyChecker.o ^
     Analysis/TestSubjectToCSV.o ^
     Analysis/RMSE.o ^
     Analysis/BalancingLogToCSV.o ^

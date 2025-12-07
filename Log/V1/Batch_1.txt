@@ -1,124 +1,98 @@
-Unit 0: R0 Attack:4 Defense:4 HP:15 Speed:0 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA50]
-Unit 1: R1 Attack:3 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW24](Boost Acuity) Armor: [BSA6]
-Unit 2: R2 Attack:-1 Defense:1 HP:7 Speed:3 Threat:2 Weapon: [BSW46](Protect) Armor: [BSA19]
-Unit 3: R3 Attack:1 Defense:5 HP:10 Speed:0 Threat:9 Weapon: [BSW42](Haste) Armor: [BSA45]
-Unit 4: R4 Attack:5 Defense:0 HP:10 Speed:2 Threat:3 Weapon: [BSW5](Overpower) Armor: [BSA29]
-Unit 5: B0 Attack:3 Defense:0 HP:6 Speed:3 Threat:2 Weapon: [BSW42](Haste) Armor: [BSA16]
-Unit 6: B1 Attack:2 Defense:1 HP:8 Speed:5 Threat:2 Weapon: [BSW29](Camo Throw) Armor: [BSA18]
-Unit 7: B2 Attack:7 Defense:1 HP:4 Speed:5 Threat:1 Weapon: [BSW17](Shoot) Armor: [BSA27]
-Unit 8: B3 Attack:4 Defense:-1 HP:10 Speed:6 Threat:2 Weapon: [BSW32](Focus Throw) Armor: [BSA6]
-Unit 9: B4 Attack:3 Defense:10 HP:10 Speed:4 Threat:7 Weapon: [BSW12](Final Attack) Armor: [BSA11]
+Unit 0: R0 Attack:1 Defense:1 HP:7 Speed:5 Threat:2 Weapon: [BSW6](Achilles' heel) Armor: [BSA19]
+Unit 1: R1 Attack:7 Defense:1 HP:11 Speed:0 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA46]
+Unit 2: R2 Attack:0 Defense:3 HP:10 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA22]
+Unit 3: R3 Attack:3 Defense:5 HP:10 Speed:2 Threat:8 Weapon: [BSW31](Wrist Shot) Armor: [BSA45]
+Unit 4: R4 Attack:5 Defense:2 HP:15 Speed:2 Threat:4 Weapon: [BSW32](Focus Throw) Armor: [BSA49]
+Unit 5: B0 Attack:5 Defense:0 HP:10 Speed:6 Threat:5 Weapon: [BSW9](Blitz Attack) Armor: [BSA8]
+Unit 6: B1 Attack:4 Defense:0 HP:10 Speed:1 Threat:1 Weapon: [BSW19](Momentum) Armor: [BSA35]
+Unit 7: B2 Attack:6 Defense:1 HP:6 Speed:4 Threat:2 Weapon: [BSW29](Camo Throw) Armor: [BSA26]
+Unit 8: B3 Attack:3 Defense:1 HP:11 Speed:5 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA13]
+Unit 9: B4 Attack:0 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA41]
 ==========================
 
 
-[Tick 10] R1, B3,  acting
+[Tick 10] B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B4(3,10,10,4,7)
-B4 HP: 10 - 0 => 10
-B3(4,-1,10,6,2) performs [Focus Throw] to R0(4,4,15,0,11)
-R0 HP: 15 - 0 => 15
+B0(5,0,10,6,5) performs [Blitz Attack] to R3(3,5,10,2,8)
+R3 HP: 10 - 6 => 4
 
 
-[Tick 12] B1, B2,  acting
+[Tick 12] R0, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(2,1,8,5,2) performs [Camo Throw] to R0(4,4,15,0,11)
-R0 HP: 15 - 0 => 15
-B2(7,1,4,5,1) performs [Shoot] to R0(4,4,15,0,11)
-R0 HP: 15 - 3 => 12
-Threat set from 2 to 1
+R0(1,1,7,5,2) performs [Achilles' heel] to B4(0,3,12,1,7)
+B4 HP: 12 - 0 => 12
+Speed set from 1 to 4
+B3(3,1,11,5,4) performs [Wind Blade] to R3(3,5,10,2,8)
+R3 HP: 4 - 3 => 1
+B3(3,1,11,5,4) performs [Wind Blade] to R1(7,1,11,0,6)
+R1 HP: 11 - 3 => 8
 
 
-[Tick 15] B4,  acting
+[Tick 15] R2, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(3,10,10,4,7) performs [Final Attack] to R0(4,4,15,0,11)
-R0 HP: 12 - 9 => 3
-Defense set from 10 to 0
-[A12] B4 defense changed from 10 to 0
+R2(0,3,10,4,3) performs [Poison Arrow] to B4(0,3,12,4,7)
+B4 HP: 12 - 0 => 12
+B2(6,1,6,4,2) performs [Camo Throw] to R3(3,5,10,2,8)
+R3 HP: 1 - 1 => 0
+Threat set from 2 to -3
 
 
-[Tick 20] R2, B0, R1, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B4(3,0,10,4,7)
-B4 HP: 10 - 7 => 3
-B3(4,-1,10,6,2) performs [Focus Throw] to R0(4,4,15,0,11)
-R0 HP: 3 - 0 => 3
-R2(-1,1,7,3,2) performs [Protect] to R0(4,4,15,0,11)
-B0(3,0,6,3,2) performs [Haste] to B4(3,0,10,4,7)
+[Tick 20] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
+B0(5,0,10,6,5) performs [Blitz Attack] to R1(7,1,11,0,6)
+R1 HP: 8 - 10 => -2
 
 
-[Tick 24] B1, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(2,1,8,5,1) performs [Camo Throw] to R0(4,4,15,0,11)
-R0 HP: 3 - 0 => 3
-B2(7,1,4,5,1) performs [Shoot] to R0(4,4,15,0,11)
-R0 HP: 3 - 3 => 0
-Threat set from 1 to 0
+[Tick 24] R0, B3,  acting
+Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
+R0(1,1,7,5,2) performs [Achilles' heel] to B4(0,3,12,4,7)
+B4 HP: 12 - 0 => 12
+Speed set from 4 to 7
+B3(3,1,11,5,4) performs [Wind Blade] to R4(5,2,15,2,4)
+R4 HP: 15 - 3 => 12
+B3(3,1,11,5,4) performs [Wind Blade] to R2(0,3,10,4,3)
+R2 HP: 10 - 3 => 7
 
 
-[Tick 30] R4, B4, R1, B3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B4(3,0,10,4,7)
-B4 HP: 3 - 7 => -4
-B3(4,-1,10,6,2) performs [Focus Throw] to R3(1,5,10,0,9)
-R3 HP: 10 - 0 => 10
-R4(5,0,10,2,3) performs [Overpower] to B0(3,0,6,3,2)
-B0 HP: 6 - 5 => 1
-B0 HP: 1 - 5 => -4
+[Tick 30] R4, R2, B2, B0,  acting
+Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
+R4(5,2,15,2,4) performs [Focus Throw] to B4(0,3,12,7,7)
+B4 HP: 12 - 6 => 6
+R2(0,3,10,4,3) performs [Poison Arrow] to B4(0,3,12,7,7)
+B4 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on B4
+B2(6,1,6,4,0) performs [Camo Throw] to R4(5,2,15,2,4)
+R4 HP: 12 - 4 => 8
+Threat set from 0 to -5
+B0(5,0,10,6,5) performs [Blitz Attack] to R4(5,2,15,2,4)
+R4 HP: 8 - 9 => -1
 
 
-[Tick 36] B1, B2,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B3, 
-B1(2,1,8,5,0) performs [Camo Throw] to R3(1,5,10,0,9)
-R3 HP: 10 - 0 => 10
-B2(7,1,4,5,1) performs [Shoot] to R3(1,5,10,0,9)
-R3 HP: 10 - 2 => 8
-Threat set from 0 to -1
+[Tick 36] R0, B3,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+R0(1,1,7,5,2) performs [Achilles' heel] to B4(0,3,12,7,7)
+B4 HP: 6 - 0 => 6
+Speed set from 7 to 10
+B3(3,1,11,5,4) performs [Wind Blade] to R2(0,3,10,4,3)
+R2 HP: 7 - 3 => 4
+B3(3,1,11,5,4) performs [Wind Blade] to R0(1,1,7,5,2)
+R0 HP: 7 - 3 => 4
 
 
-[Tick 40] R2, R1, B3,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, B3, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B3(4,-1,10,6,2)
-B3 HP: 10 - 10 => 0
-B3(4,-1,10,6,2) performs [Focus Throw] to R3(1,5,10,0,9)
-R3 HP: 8 - 0 => 8
-R2(-1,1,7,3,2) performs [Protect] to R3(1,5,10,0,9)
+[Tick 60] B1,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+B1(4,0,10,1,1) performs [Momentum] to R2(0,3,10,4,3)
+R2 HP: 4 - 1 => 3
 
 
-[Tick 42] B1, B2,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, 
-B1(2,1,8,5,0) performs [Camo Throw] to R3(1,5,10,0,9)
-R3 HP: 8 - 0 => 8
-B2(7,1,4,5,1) performs [Shoot] to R3(1,5,10,0,9)
-R3 HP: 8 - 2 => 6
-Threat set from 0 to -1
+[Tick 100] B0,  acting
+Survived Unit: R0, R2, B0, B1, B2, B3, B4, 
+B0(5,0,10,6,5) performs [Blitz Attack] to R2(0,3,10,4,3)
+R2 HP: 3 - 8 => -5
 
 
-[Tick 45] R1,  acting
-Survived Unit: R1, R2, R3, R4, B1, B2, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B2(7,1,4,5,1)
-B2 HP: 4 - 7 => -3
-
-
-[Tick 48] B1,  acting
-Survived Unit: R1, R2, R3, R4, B1, 
-B1(2,1,8,5,0) performs [Camo Throw] to R3(1,5,10,0,9)
-R3 HP: 6 - 0 => 6
-Threat set from 0 to -1
-
-
-[Tick 50] R2, R1,  acting
-Survived Unit: R1, R2, R3, R4, B1, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B1(2,1,8,5,0)
-B1 HP: 8 - 7 => 1
-R2(-1,1,7,3,2) performs [Protect] to R3(1,5,10,0,9)
-[BOON] Refreshing existing  on R3
-
-
-[Tick 55] R1, B1,  acting
-Survived Unit: R1, R2, R3, R4, B1, 
-R1(3,-1,10,6,4) performs [Boost Acuity] to B1(2,1,8,5,0)
-B1 HP: 1 - 7 => -6
-B1(2,1,8,5,0) performs [Camo Throw] to R3(1,5,10,0,9)
-R3 HP: 6 - 0 => 6
-Threat set from 0 to -1
-Battle Over! Red Team wins!
+[Tick 110] B0,  acting
+Survived Unit: R0, B0, B1, B2, B3, B4, 
+B0(5,0,10,6,5) performs [Blitz Attack] to R0(1,1,7,5,2)
+R0 HP: 4 - 10 => -6
+Battle Over! Blue Team wins!

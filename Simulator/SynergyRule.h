@@ -1,40 +1,33 @@
 #ifndef SYNERGYRULE_H
 #define SYNERGYRULE_H
 
-#include <vector>
 #include <iostream>
-#include <unordered_map>  
+#include <unordered_map>
+#include <vector>
 
-#include "Weapon.h"
+#include "../Element/Stat.h"
 #include "Armor.h"
 #include "Unit.h"
-#include "../Element/Stat.h"
+#include "Weapon.h"
 
-struct UnitSynergy
-{
-Armor* armorptr;
-Weapon* weaponptr;
-Stat effectStat;
+struct UnitSynergy {
+    Armor *armorptr;
+    Weapon *weaponptr;
+    Stat effectStat;
 };
 
-struct TeamSynergy
-{
+struct TeamSynergy {};
 
+class SynergyRule {
+  public:
+    static std::unordered_map<std::string, UnitSynergy> unitSynergyMap;
+
+    static void ApplyUnitSynergyMatch(Unit *unit);
+    static void ResetAppliedCounter();
+
+    static int unitSynergyApplied;
+
+    static void PrintTotalUnitSynergyApplied();
 };
-
-class SynergyRule
-{
-public:
-static std::unordered_map<std::string, UnitSynergy> unitSynergyMap;
-
-static void ApplyUnitSynergyMatch(Unit* unit);
-static void ResetAppliedCounter(); // Add method to reset counter
-
-static int unitSynergyApplied;
-
-static void PrintTotalUnitSynergyApplied();
-};
-
-
 
 #endif

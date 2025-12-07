@@ -11,6 +11,9 @@ const float DELAY_MULTIPLIER = 2.0f; // Multiplier for damage-based delay calcul
 const float MULTIPLIER_COUNTER = 1.5f;
 const float MULTIPLIER_BASIC = 1.0f;
 
+// Novelty K
+const int NOVELTYK = 5;
+
 // BALANCING
 const float DEFENSE_RATIO = 0.5f;
 const float SPEED_RATIO = 0.3f;

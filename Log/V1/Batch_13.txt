@@ -1,72 +1,186 @@
-Unit 0: R0 Attack:4 Defense:1 HP:4 Speed:2 Threat:3 Weapon: [BSW42](Haste) Armor: [BSA27]
-Unit 1: R1 Attack:5 Defense:1 HP:10 Speed:1 Threat:4 Weapon: [BSW2](Chop) Armor: [BSA43]
-Unit 2: R2 Attack:2 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA10]
-Unit 3: R3 Attack:9 Defense:1 HP:4 Speed:2 Threat:3 Weapon: [BSW15](Taunt) Armor: [BSA27]
-Unit 4: R4 Attack:4 Defense:0 HP:14 Speed:3 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA38]
-Unit 5: B0 Attack:5 Defense:0 HP:9 Speed:5 Threat:4 Weapon: [BSW11](Fade Attack) Armor: [BSA7]
-Unit 6: B1 Attack:2 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW38](Healing Touch) Armor: [BSA46]
-Unit 7: B2 Attack:6 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW10](Reckless Attack) Armor: [BSA44]
-Unit 8: B3 Attack:5 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA9]
-Unit 9: B4 Attack:2 Defense:1 HP:8 Speed:3 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA25]
+Unit 0: R0 Attack:4 Defense:2 HP:10 Speed:3 Threat:3 Weapon: [BSW1](Slash) Armor: [BSA36]
+Unit 1: R1 Attack:5 Defense:3 HP:12 Speed:2 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA44]
+Unit 2: R2 Attack:3 Defense:3 HP:12 Speed:2 Threat:7 Weapon: [BSW7](Poison Attack) Armor: [BSA44]
+Unit 3: R3 Attack:5 Defense:2 HP:12 Speed:3 Threat:5 Weapon: [BSW11](Fade Attack) Armor: [BSA24]
+Unit 4: R4 Attack:2 Defense:1 HP:8 Speed:3 Threat:5 Weapon: [BSW35](Chain Lightning) Armor: [BSA18]
+Unit 5: B0 Attack:1 Defense:1 HP:8 Speed:5 Threat:3 Weapon: [BSW7](Poison Attack) Armor: [BSA18]
+Unit 6: B1 Attack:4 Defense:-1 HP:10 Speed:3 Threat:4 Weapon: [BSW7](Poison Attack) Armor: [BSA32]
+Unit 7: B2 Attack:6 Defense:3 HP:10 Speed:3 Threat:6 Weapon: [BSW32](Focus Throw) Armor: [BSA34]
+Unit 8: B3 Attack:2 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA25]
+Unit 9: B4 Attack:0 Defense:0 HP:10 Speed:2 Threat:4 Weapon: [BSW44](Exposure) Armor: [BSA35]
 ==========================
 
 
-[Tick 12] B0, B3,  acting
+[Tick 6] B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(5,-2,10,5,2) performs [Killing Spree] to R2(2,0,10,4,7)
-R2 HP: 10 - 5 => 5
-B0(5,0,9,5,4) performs [Fade Attack] to R2(2,0,10,4,7)
-R2 HP: 5 - 5 => 0
-Threat set from 4 to -1
+B0(1,1,8,5,3) performs [Poison Attack] to R2(3,3,12,2,7)
+R2 HP: 12 - 0 => 12
 
 
-[Tick 20] R4, B4,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-R4(4,0,14,3,5) performs [Charge Attack] to B2(6,3,12,0,7)
-B2 HP: 12 - 5 => 7
-B4(2,1,8,3,4) performs [Exposure] to R4(4,0,14,3,5)
-Threat set from 5 to 7
-B4(2,1,8,3,4) performs [Exposure] to R1(5,1,10,1,4)
-Threat set from 4 to 6
-B4(2,1,8,3,4) performs [Exposure] to R0(4,1,4,2,3)
-Threat set from 3 to 5
+[Tick 10] R0, R3, R4, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(6,3,10,3,6) performs [Focus Throw] to R2(3,3,12,2,7)
+R2 HP: 12 - 7 => 5
+R0(4,2,10,3,3) performs [Slash] to B2(6,3,10,3,6)
+B2 HP: 10 - 1 => 9
+R3(5,2,12,3,5) performs [Fade Attack] to B2(6,3,10,3,6)
+B2 HP: 9 - 2 => 7
+B1(4,-1,10,3,4) performs [Poison Attack] to R2(3,3,12,2,7)
+R2 HP: 5 - 1 => 4
+[BOON] Refreshing existing  on R2
+Threat set from 5 to 2
+R4(2,1,8,3,5) performs [Chain Lightning] to B2(6,3,10,3,6)
+B2 HP: 7 - 2 => 5
+R4(2,1,8,3,5) performs [Chain Lightning] to B1(4,-1,10,3,4)
+B1 HP: 10 - 2 => 8
+R4(2,1,8,3,5) performs [Chain Lightning] to B4(0,0,10,2,4)
+B4 HP: 10 - 2 => 8
+B3(2,1,8,3,3) performs [Grace] to B2(6,3,10,3,6)
+[HEAL] B2 healed for 2 HP (from 5 to 7/10)
+B3(2,1,8,3,3) performs [Grace] to B1(4,-1,10,3,4)
+[HEAL] B1 healed for 2 HP (from 8 to 10/10)
+B3(2,1,8,3,3) performs [Grace] to B4(0,0,10,2,4)
+[HEAL] B4 healed for 2 HP (from 8 to 10/10)
 
 
-[Tick 24] B0, B3,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-B3(5,-2,10,5,2) performs [Killing Spree] to R4(4,0,14,3,7)
-R4 HP: 14 - 5 => 9
-B0(5,0,9,5,0) performs [Fade Attack] to R4(4,0,14,3,7)
-R4 HP: 9 - 5 => 4
-Threat set from 0 to -5
+[Tick 12] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(1,1,8,5,3) performs [Poison Attack] to R2(3,3,12,2,7)
+R2 HP: 4 - 0 => 4
+[BOON] Refreshing existing  on R2
 
 
-[Tick 30] R0, R3, R4, B4, B0, B3,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-B3(5,-2,10,5,2) performs [Killing Spree] to R4(4,0,14,3,7)
-R4 HP: 4 - 5 => -1
+[Tick 15] R1, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(5,3,12,2,5) performs [Slash] to B2(6,3,10,3,6)
+B2 HP: 7 - 2 => 5
+R2(3,3,12,2,7) performs [Poison Attack] to B2(6,3,10,3,6)
+B2 HP: 5 - 0 => 5
+[AFTER-ACTION] B0 → R2: Poison Effect
+[BOON] Poison Effect on R2 (Usage: 3/3)
+R2 HP: 4 - 1 => 3
+
+
+[Tick 18] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(1,1,8,5,3) performs [Poison Attack] to R2(3,3,12,2,7)
+R2 HP: 3 - 0 => 3
+[BOON] Refreshing existing  on R2
+
+
+[Tick 20] R0, R3, R4, B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(6,3,10,3,6) performs [Focus Throw] to R2(3,3,12,2,7)
+R2 HP: 3 - 7 => -4
+[AFTER-ACTION] R2 → B2: Poison Effect
+[BOON] Poison Effect on B2 (Usage: 3/3)
+B2 HP: 5 - 3 => 2
+R0(4,2,10,3,3) performs [Slash] to B2(6,3,10,3,6)
+B2 HP: 2 - 1 => 1
+R3(5,2,12,3,2) performs [Fade Attack] to B2(6,3,10,3,6)
+B2 HP: 1 - 2 => -1
+B1(4,-1,10,3,4) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 12 - 1 => 11
+Threat set from 2 to -1
+R4(2,1,8,3,5) performs [Chain Lightning] to B1(4,-1,10,3,4)
+B1 HP: 10 - 2 => 8
+R4(2,1,8,3,5) performs [Chain Lightning] to B4(0,0,10,2,4)
+B4 HP: 10 - 2 => 8
+R4(2,1,8,3,5) performs [Chain Lightning] to B0(1,1,8,5,3)
+B0 HP: 8 - 2 => 6
+B3(2,1,8,3,3) performs [Grace] to B1(4,-1,10,3,4)
+[HEAL] B1 healed for 2 HP (from 8 to 10/10)
+B3(2,1,8,3,3) performs [Grace] to B4(0,0,10,2,4)
+[HEAL] B4 healed for 2 HP (from 8 to 10/10)
+B3(2,1,8,3,3) performs [Grace] to B0(1,1,8,5,3)
+[HEAL] B0 healed for 2 HP (from 6 to 8/8)
+
+
+[Tick 24] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B3, B4, 
+B0(1,1,8,5,3) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 11 - 0 => 11
+[BOON] Refreshing existing  on R1
+
+
+[Tick 30] R1, R0, R3, R4, B1, B3, B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B3, B4, 
+R1(5,3,12,2,5) performs [Slash] to B1(4,-1,10,3,4)
+B1 HP: 10 - 6 => 4
+R0(4,2,10,3,3) performs [Slash] to B1(4,-1,10,3,4)
+B1 HP: 4 - 5 => -1
+R3(5,2,12,3,0) performs [Fade Attack] to B4(0,0,10,2,4)
+B4 HP: 10 - 5 => 5
+B1(4,-1,10,3,4) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 11 - 1 => 10
+[BOON] Refreshing existing  on R1
+B0(1,1,8,5,3) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 10 - 0 => 10
+[BOON] Refreshing existing  on R1
+Threat set from 0 to -3
+[AFTER-ACTION] B1 → R1: Poison Effect
+[BOON] Poison Effect on R1 (Usage: 3/3)
 R1 HP: 10 - 4 => 6
-R3(9,1,4,2,3) performs [Taunt] to B2(6,3,12,0,7)
-B2 HP: 7 - 6 => 1
-B0(5,0,9,5,0) performs [Fade Attack] to R1(5,1,10,1,6)
+R4(2,1,8,3,5) performs [Chain Lightning] to B4(0,0,10,2,4)
+B4 HP: 5 - 2 => 3
+R4(2,1,8,3,5) performs [Chain Lightning] to B0(1,1,8,5,3)
+B0 HP: 8 - 2 => 6
+R4(2,1,8,3,5) performs [Chain Lightning] to B3(2,1,8,3,3)
+B3 HP: 8 - 2 => 6
+B3(2,1,8,3,3) performs [Grace] to B4(0,0,10,2,4)
+[HEAL] B4 healed for 2 HP (from 3 to 5/10)
+B3(2,1,8,3,3) performs [Grace] to B0(1,1,8,5,3)
+[HEAL] B0 healed for 2 HP (from 6 to 8/8)
+
+
+[Tick 36] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, B4, 
+B0(1,1,8,5,3) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on R1
+
+
+[Tick 40] R0, R3, R4,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, B4, 
+R0(4,2,10,3,3) performs [Slash] to B4(0,0,10,2,4)
+B4 HP: 5 - 4 => 1
+R3(5,2,12,3,0) performs [Fade Attack] to B4(0,0,10,2,4)
+B4 HP: 1 - 5 => -4
+Threat set from 0 to -3
+R4(2,1,8,3,5) performs [Chain Lightning] to B0(1,1,8,5,3)
+B0 HP: 8 - 2 => 6
+R4(2,1,8,3,5) performs [Chain Lightning] to B3(2,1,8,3,3)
+B3 HP: 6 - 2 => 4
+
+
+[Tick 42] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, 
+B0(1,1,8,5,3) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on R1
+
+
+[Tick 45] R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, 
+R1(5,3,12,2,5) performs [Slash] to B0(1,1,8,5,3)
+B0 HP: 6 - 4 => 2
+[AFTER-ACTION] B1 → R1: Poison Effect
+[BOON] Poison Effect on R1 (Usage: 3/3)
 R1 HP: 6 - 4 => 2
-Threat set from 3 to -5
-Threat set from 0 to -5
-R0(4,1,4,2,5) performs [Haste] to R1(5,1,10,1,6)
-B4(2,1,8,3,4) performs [Exposure] to R1(5,1,10,1,6)
-Threat set from 6 to 8
-B4(2,1,8,3,4) performs [Exposure] to R0(4,1,4,2,5)
-Threat set from 5 to 7
-B4(2,1,8,3,4) performs [Exposure] to R3(9,1,4,2,0)
-Threat set from 0 to 2
 
 
-[Tick 36] B0, B3,  acting
-Survived Unit: R0, R1, R3, B0, B1, B2, B3, B4, 
-B3(5,-2,10,5,2) performs [Killing Spree] to R1(5,1,10,1,8)
-R1 HP: 2 - 4 => -2
-R0 HP: 4 - 4 => 0
-B0(5,0,9,5,0) performs [Fade Attack] to R3(9,1,4,2,2)
-R3 HP: 4 - 4 => 0
-[AFTER-ACTION] No valid target found for B0
-Battle Over! Blue Team wins!
+[Tick 48] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, 
+B0(1,1,8,5,3) performs [Poison Attack] to R1(5,3,12,2,5)
+R1 HP: 2 - 0 => 2
+[BOON] Refreshing existing  on R1
+
+
+[Tick 50] R0, R3, R4,  acting
+Survived Unit: R0, R1, R3, R4, B0, B3, 
+R0(4,2,10,3,3) performs [Slash] to B0(1,1,8,5,3)
+B0 HP: 2 - 3 => -1
+R3(5,2,12,3,0) performs [Fade Attack] to B3(2,1,8,3,3)
+B3 HP: 4 - 4 => 0
+[AFTER-ACTION] No valid target found for R3
+Battle Over! Red Team wins!

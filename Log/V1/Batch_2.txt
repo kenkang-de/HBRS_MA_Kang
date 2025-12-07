@@ -1,258 +1,117 @@
-Unit 0: R0 Attack:2 Defense:4 HP:10 Speed:1 Threat:9 Weapon: [BSW49](Earthquake) Armor: [BSA37]
-Unit 1: R1 Attack:1 Defense:2 HP:14 Speed:1 Threat:8 Weapon: [BSW45](Fatigue) Armor: [BSA39]
-Unit 2: R2 Attack:1 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA10]
-Unit 3: R3 Attack:3 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW24](Boost Acuity) Armor: [BSA36]
-Unit 4: R4 Attack:6 Defense:1 HP:8 Speed:2 Threat:1 Weapon: [BSW19](Momentum) Armor: [BSA25]
-Unit 5: B0 Attack:7 Defense:3 HP:12 Speed:0 Threat:8 Weapon: [BSW16](Killer's Spirit) Armor: [BSA44]
-Unit 6: B1 Attack:5 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA30]
-Unit 7: B2 Attack:0 Defense:-1 HP:10 Speed:6 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA2]
-Unit 8: B3 Attack:2 Defense:0 HP:12 Speed:7 Threat:6 Weapon: [BSW8](Charge Attack) Armor: [BSA1]
-Unit 9: B4 Attack:4 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW23](All-Out Assault) Armor: [BSA30]
+Unit 0: R0 Attack:7 Defense:-2 HP:10 Speed:5 Threat:7 Weapon: [BSW16](Killer's Spirit) Armor: [BSA3]
+Unit 1: R1 Attack:1 Defense:3 HP:10 Speed:5 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA22]
+Unit 2: R2 Attack:4 Defense:3 HP:12 Speed:1 Threat:5 Weapon: [BSW19](Momentum) Armor: [BSA41]
+Unit 3: R3 Attack:3 Defense:-2 HP:10 Speed:6 Threat:3 Weapon: [BSW31](Wrist Shot) Armor: [BSA9]
+Unit 4: R4 Attack:6 Defense:1 HP:4 Speed:3 Threat:1 Weapon: [BSW34](Wind Blade) Armor: [BSA27]
+Unit 5: B0 Attack:2 Defense:0 HP:10 Speed:2 Threat:1 Weapon: [BSW27](Tripple Shot) Armor: [BSA35]
+Unit 6: B1 Attack:1 Defense:4 HP:10 Speed:1 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA31]
+Unit 7: B2 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW42](Haste) Armor: [BSA26]
+Unit 8: B3 Attack:2 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA33]
+Unit 9: B4 Attack:1 Defense:4 HP:12 Speed:1 Threat:9 Weapon: [BSW50](Corrosion) Armor: [BSA40]
 ==========================
 
 
-[Tick 6] B3,  acting
+[Tick 5] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R0(2,4,10,1,9)
-R0 HP: 10 - 1 => 9
+R3(3,-2,10,6,3) performs [Wrist Shot] to B4(1,4,12,1,9)
+B4 HP: 12 - 0 => 12
 
 
-[Tick 7] R2, B2,  acting
+[Tick 6] R0, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(1,0,10,6,4) performs [Prep Attack] to B0(7,3,12,0,8)
-HP set from 10 to 8
-B0 HP: 12 - 0 => 12
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B4(4,2,10,3,5)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
+R1(1,3,10,5,3) performs [Shoot] to B4(1,4,12,1,9)
+B4 HP: 12 - 0 => 12
+R0(7,-2,10,5,7) performs [Killer's Spirit] to B4(1,4,12,1,9)
+B4 HP: 12 - 3 => 9
 
 
-[Tick 12] B3,  acting
+[Tick 10] R4, R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R0(2,4,10,1,9)
-R0 HP: 9 - 1 => 8
+R3(3,-2,10,6,3) performs [Wrist Shot] to B4(1,4,12,1,9)
+B4 HP: 9 - 0 => 9
+R4(6,1,4,3,1) performs [Wind Blade] to B4(1,4,12,1,9)
+B4 HP: 9 - 6 => 3
+R4(6,1,4,3,1) performs [Wind Blade] to B1(1,4,10,1,8)
+B1 HP: 10 - 6 => 4
 
 
-[Tick 14] R3, B4, R2, B2,  acting
+[Tick 12] R0, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(3,2,10,3,5) performs [Boost Acuity] to B0(7,3,12,0,8)
-B0 HP: 12 - 0 => 12
-B4(4,2,10,3,5) performs [All-Out Assault] to R0(2,4,10,1,9)
-Attack set from 4 to 6
-R0 HP: 8 - 2 => 6
-Threat set from 5 to 11
-R2(1,0,8,6,4) performs [Prep Attack] to B4(6,2,10,3,11)
-HP set from 8 to 7
-B4 HP: 10 - 0 => 10
-B2(0,-1,10,6,6) performs [Grace] to B4(6,2,10,3,11)
-[HEAL] B4 healed for 0 HP (from 10 to 10/10)
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
+R1(1,3,10,5,3) performs [Shoot] to B4(1,4,12,1,9)
+B4 HP: 3 - 0 => 3
+R0(7,-2,10,5,7) performs [Killer's Spirit] to B4(1,4,12,1,9)
+B4 HP: 3 - 3 => 0
+Attack set from 7 to 10
+Defense set from -2 to 0
 
 
-[Tick 18] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R0(2,4,10,1,9)
-R0 HP: 6 - 1 => 5
+[Tick 15] B0, B2, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+B0(2,0,10,2,1) performs [Tripple Shot] to R0(10,0,10,5,7)
+R0 HP: 10 - 2 => 8
+B0(2,0,10,2,1) performs [Tripple Shot] to R2(4,3,12,1,5)
+R2 HP: 12 - 0 => 12
+B0(2,0,10,2,1) performs [Tripple Shot] to R1(1,3,10,5,3)
+R1 HP: 10 - 0 => 10
+R3(3,-2,10,6,3) performs [Wrist Shot] to B1(1,4,10,1,8)
+B1 HP: 4 - 0 => 4
+B2(3,1,6,2,3) performs [Haste] to B1(1,4,10,1,8)
 
 
-[Tick 21] R4, B1, R2, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(6,1,8,2,1) performs [Momentum] to B4(6,2,10,3,11)
-B4 HP: 10 - 4 => 6
-B1(5,2,10,2,4) performs [Killing Spree] to R0(2,4,10,1,9)
-R0 HP: 5 - 1 => 4
-R2(1,0,7,6,4) performs [Prep Attack] to B4(6,2,10,3,11)
-HP set from 7 to 6
-B4 HP: 6 - 0 => 6
-B2(0,-1,10,6,6) performs [Grace] to B4(6,2,10,3,11)
-[HEAL] B4 healed for 0 HP (from 6 to 6/10)
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
+[Tick 18] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+R1(1,3,10,5,3) performs [Shoot] to B1(1,4,10,1,8)
+B1 HP: 4 - 0 => 4
+R0(10,0,10,5,7) performs [Killer's Spirit] to B1(1,4,10,1,8)
+B1 HP: 4 - 6 => -2
+Attack set from 10 to 13
+Defense set from 0 to 2
 
 
-[Tick 24] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R0(2,4,10,1,9)
-R0 HP: 4 - 1 => 3
+[Tick 20] R4, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, 
+R3(3,-2,10,6,3) performs [Wrist Shot] to B3(2,1,10,1,6)
+B3 HP: 10 - 2 => 8
+Attack set from 2 to 1
+[A25] B3 attack reduced from 2 to 1 (damage: 2, reduction: 1)
+R4(6,1,4,3,1) performs [Wind Blade] to B3(1,1,10,1,6)
+B3 HP: 8 - 6 => 2
+R4(6,1,4,3,1) performs [Wind Blade] to B2(3,1,6,2,3)
+B2 HP: 6 - 6 => 0
 
 
-[Tick 28] R3, B4, R2, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(3,2,10,3,5) performs [Boost Acuity] to B4(6,2,10,3,11)
-B4 HP: 6 - 4 => 2
-B4(6,2,10,3,11) performs [All-Out Assault] to R0(2,4,10,1,9)
-Attack set from 6 to 8
-R0 HP: 3 - 4 => -1
-Threat set from 11 to 19
-R2(1,0,6,6,4) performs [Prep Attack] to B4(8,2,10,3,19)
-HP set from 6 to 5
-B4 HP: 2 - 0 => 2
-B2(0,-1,10,6,6) performs [Grace] to B4(8,2,10,3,19)
-[HEAL] B4 healed for 0 HP (from 2 to 2/10)
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
+[Tick 24] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B3, 
+R1(1,3,10,5,3) performs [Shoot] to B3(1,1,10,1,6)
+B3 HP: 2 - 0 => 2
+R0(13,2,10,5,7) performs [Killer's Spirit] to B3(1,1,10,1,6)
+B3 HP: 2 - 12 => -10
+Attack set from 13 to 15
+Defense set from 2 to 4
 
 
-[Tick 30] B3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R1(1,2,14,1,8)
-R1 HP: 14 - 3 => 11
+[Tick 25] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, 
+R3(3,-2,10,6,3) performs [Wrist Shot] to B0(2,0,10,2,1)
+B0 HP: 10 - 3 => 7
+Attack set from 2 to 1
+[A25] B0 attack reduced from 2 to 1 (damage: 3, reduction: 1)
 
 
-[Tick 35] R2, B2,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(1,0,5,6,4) performs [Prep Attack] to B4(8,2,10,3,19)
-HP set from 5 to 4
-B4 HP: 2 - 0 => 2
-B2(0,-1,10,6,6) performs [Grace] to B4(8,2,10,3,19)
-[HEAL] B4 healed for 0 HP (from 2 to 2/10)
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-
-
-[Tick 36] B3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,0,12,7,6) performs [Charge Attack] to R1(1,2,14,1,8)
-R1 HP: 11 - 3 => 8
-
-
-[Tick 42] R4, B1, R3, B4, R2, B2, B3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(6,1,8,2,1) performs [Momentum] to B4(8,2,10,3,19)
-B4 HP: 2 - 4 => -2
-B1(5,2,10,2,4) performs [Killing Spree] to R1(1,2,14,1,8)
-R1 HP: 8 - 3 => 5
-R3(3,2,10,3,5) performs [Boost Acuity] to B0(7,3,12,0,8)
-B0 HP: 12 - 0 => 12
-B4(8,2,10,3,19) performs [All-Out Assault] to R1(1,2,14,1,8)
-Attack set from 8 to 10
-R1 HP: 5 - 8 => -3
-Speed set from 2 to 3
-Threat set from 19 to 29
-R2(1,0,4,6,4) performs [Prep Attack] to B0(7,3,12,0,8)
-HP set from 4 to 2
-B0 HP: 12 - 0 => 12
-B3(2,0,12,7,6) performs [Charge Attack] to R3(3,2,10,3,5)
-R3 HP: 10 - 3 => 7
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 48] B3,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
-B3(2,0,12,7,6) performs [Charge Attack] to R3(3,2,10,3,5)
-R3 HP: 7 - 3 => 4
-
-
-[Tick 49] R2, B2,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
-R2(1,0,2,6,4) performs [Prep Attack] to B0(7,3,12,0,8)
-HP set from 2 to 0
-B0 HP: 12 - 0 => 12
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 54] B3,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
-B3(2,0,12,7,6) performs [Charge Attack] to R3(3,2,10,3,5)
-R3 HP: 4 - 3 => 1
-
-
-[Tick 56] R3, R2, B2,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
-R3(3,2,10,3,5) performs [Boost Acuity] to B0(7,3,12,0,8)
-B0 HP: 12 - 0 => 12
-R2(1,0,0,6,4) performs [Prep Attack] to B0(7,3,12,0,8)
-HP set from 0 to -2
-B0 HP: 12 - 0 => 12
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 60] B3,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
-B3(2,0,12,7,6) performs [Charge Attack] to R3(3,2,10,3,5)
-R3 HP: 1 - 3 => -2
-
-
-[Tick 63] R4, B1, R2, B2,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, 
-R4(6,1,8,3,1) performs [Momentum] to B0(7,3,12,0,8)
-B0 HP: 12 - 3 => 9
-B1(5,2,10,2,4) performs [Killing Spree] to R2(1,0,0,6,4)
-R2 HP: 10 - 5 => 5
-R2(1,0,0,6,4) performs [Prep Attack] to B0(7,3,12,0,8)
-HP set from 0 to -2
-B0 HP: 9 - 0 => 9
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 9 to 9/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 66] B3,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, 
-B3(2,0,12,7,6) performs [Charge Attack] to R2(1,0,0,6,4)
-R2 HP: 5 - 5 => 0
-
-
-[Tick 70] B2,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 9 to 9/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 72] B3,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-B3(2,0,12,7,6) performs [Charge Attack] to R4(6,1,8,3,1)
-R4 HP: 8 - 4 => 4
-
-
-[Tick 77] B2,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-B2(0,-1,10,6,6) performs [Grace] to B0(7,3,12,0,8)
-[HEAL] B0 healed for 0 HP (from 9 to 9/12)
-B2(0,-1,10,6,6) performs [Grace] to B3(2,0,12,7,6)
-[HEAL] B3 healed for 0 HP (from 12 to 12/12)
-B2(0,-1,10,6,6) performs [Grace] to B1(5,2,10,2,4)
-[HEAL] B1 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 78] B3, R4,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-R4(6,1,8,3,1) performs [Momentum] to B0(7,3,12,0,8)
-B0 HP: 9 - 3 => 6
-B3(2,0,12,7,6) performs [Charge Attack] to R4(6,1,8,3,1)
-R4 HP: 4 - 4 => 0
-Battle Over! Blue Team wins!
+[Tick 30] R2, B0, R4, R0, R1, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, 
+R2(4,3,12,1,5) performs [Momentum] to B0(1,0,10,2,1)
+B0 HP: 7 - 4 => 3
+B0(1,0,10,2,1) performs [Tripple Shot] to R0(15,4,10,5,7)
+R0 HP: 8 - 0 => 8
+B0(1,0,10,2,1) performs [Tripple Shot] to R2(4,3,12,1,5)
+R2 HP: 12 - 0 => 12
+B0(1,0,10,2,1) performs [Tripple Shot] to R1(1,3,10,5,3)
+R1 HP: 10 - 0 => 10
+R1(1,3,10,5,3) performs [Shoot] to B0(1,0,10,2,1)
+B0 HP: 3 - 1 => 2
+R3(3,-2,10,6,3) performs [Wrist Shot] to B0(1,0,10,2,1)
+B0 HP: 2 - 3 => -1
+Attack set from 1 to 0
+[A25] B0 attack reduced from 1 to 0 (damage: 3, reduction: 1)
+Battle Over! Red Team wins!

@@ -1,195 +1,121 @@
-Unit 0: R0 Attack:1 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA38]
-Unit 1: R1 Attack:1 Defense:1 HP:10 Speed:1 Threat:5 Weapon: [BSW39](Healing Link) Armor: [BSA43]
-Unit 2: R2 Attack:1 Defense:0 HP:10 Speed:2 Threat:5 Weapon: [BSW44](Exposure) Armor: [BSA29]
-Unit 3: R3 Attack:1 Defense:0 HP:10 Speed:5 Threat:6 Weapon: [BSW44](Exposure) Armor: [BSA8]
-Unit 4: R4 Attack:3 Defense:5 HP:10 Speed:2 Threat:8 Weapon: [BSW22](Delay Shot) Armor: [BSA45]
-Unit 5: B0 Attack:3 Defense:0 HP:10 Speed:3 Threat:4 Weapon: [BSW7](Poison Attack) Armor: [BSA29]
-Unit 6: B1 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW47](Cheer) Armor: [BSA26]
-Unit 7: B2 Attack:7 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW15](Taunt) Armor: [BSA25]
-Unit 8: B3 Attack:3 Defense:1 HP:8 Speed:4 Threat:2 Weapon: [BSW5](Overpower) Armor: [BSA18]
-Unit 9: B4 Attack:4 Defense:-2 HP:10 Speed:7 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA9]
+Unit 0: R0 Attack:3 Defense:0 HP:10 Speed:5 Threat:3 Weapon: [BSW5](Overpower) Armor: [BSA10]
+Unit 1: R1 Attack:3 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA22]
+Unit 2: R2 Attack:3 Defense:2 HP:12 Speed:5 Threat:3 Weapon: [BSW17](Shoot) Armor: [BSA24]
+Unit 3: R3 Attack:5 Defense:0 HP:8 Speed:4 Threat:0 Weapon: [BSW28](Heavy Shot) Armor: [BSA15]
+Unit 4: R4 Attack:0 Defense:0 HP:10 Speed:1 Threat:3 Weapon: [BSW47](Cheer) Armor: [BSA35]
+Unit 5: B0 Attack:7 Defense:1 HP:10 Speed:0 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA43]
+Unit 6: B1 Attack:1 Defense:1 HP:7 Speed:4 Threat:0 Weapon: [BSW27](Tripple Shot) Armor: [BSA19]
+Unit 7: B2 Attack:6 Defense:1 HP:10 Speed:2 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA33]
+Unit 8: B3 Attack:1 Defense:0 HP:8 Speed:5 Threat:6 Weapon: [BSW46](Protect) Armor: [BSA4]
+Unit 9: B4 Attack:3 Defense:3 HP:10 Speed:1 Threat:9 Weapon: [BSW49](Earthquake) Armor: [BSA28]
 ==========================
 
 
-[Tick 60] B4,  acting
+[Tick 4] R0, R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 10 - 0 => 10
+R2(3,2,12,5,3) performs [Shoot] to B4(3,3,10,1,9)
+B4 HP: 10 - 0 => 10
+R0(3,0,10,5,3) performs [Overpower] to B4(3,3,10,1,9)
+B4 HP: 10 - 0 => 10
+B3(1,0,8,5,6) performs [Protect] to B4(3,3,10,1,9)
 
 
-[Tick 84] R3,  acting
+[Tick 5] R3, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,0,10,5,6) performs [Exposure] to B0(3,0,10,3,4)
-Threat set from 4 to 5
-R3(1,0,10,5,6) performs [Exposure] to B1(3,1,6,2,3)
-Threat set from 3 to 4
-R3(1,0,10,5,6) performs [Exposure] to B2(7,1,8,2,3)
-Threat set from 3 to 4
+R3(5,0,8,4,0) performs [Heavy Shot] to B4(3,3,10,1,9)
+B4 HP: 10 - 7 => 3
+Speed set from 4 to 5
+B1(1,1,7,4,0) performs [Tripple Shot] to R1(3,3,10,2,5)
+R1 HP: 10 - 0 => 10
+B1(1,1,7,4,0) performs [Tripple Shot] to R0(3,0,10,5,3)
+R0 HP: 10 - 1 => 9
+B1(1,1,7,4,0) performs [Tripple Shot] to R2(3,2,12,5,3)
+R2 HP: 12 - 0 => 12
 
 
-[Tick 105] B3,  acting
+[Tick 8] R0, R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(3,1,8,4,2) performs [Overpower] to R4(3,5,10,2,8)
-R4 HP: 10 - 0 => 10
+R2(3,2,12,5,3) performs [Shoot] to B4(3,3,10,1,9)
+B4 HP: 3 - 0 => 3
+R0(3,0,10,5,3) performs [Overpower] to B4(3,3,10,1,9)
+B4 HP: 3 - 0 => 3
+B3(1,0,8,5,6) performs [Protect] to B4(3,3,10,1,9)
+[BOON] Refreshing existing  on B4
 
 
-[Tick 120] B4,  acting
+[Tick 10] R1, B2, R3, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 10 - 0 => 10
+B2(6,1,10,2,4) performs [Fire Arrow] to R1(3,3,10,2,5)
+R1 HP: 10 - 5 => 5
+R3(5,0,8,5,0) performs [Heavy Shot] to B4(3,3,10,1,9)
+B4 HP: 3 - 7 => -4
+Speed set from 5 to 6
+B1(1,1,7,4,0) performs [Tripple Shot] to R1(3,3,10,2,5)
+R1 HP: 5 - 0 => 5
+B1(1,1,7,4,0) performs [Tripple Shot] to R0(3,0,10,5,3)
+R0 HP: 9 - 1 => 8
+B1(1,1,7,4,0) performs [Tripple Shot] to R2(3,2,12,5,3)
+R2 HP: 12 - 0 => 12
+R1(3,3,10,2,5) performs [Taunt] to B0(7,1,10,0,6)
+B0 HP: 10 - 2 => 8
+Threat set from 5 to 5
 
 
-[Tick 140] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(3,0,10,3,5) performs [Poison Attack] to R4(3,5,10,2,8)
-R4 HP: 10 - 0 => 10
+[Tick 12] R0, R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(3,2,12,5,3) performs [Shoot] to B0(7,1,10,0,6)
+B0 HP: 8 - 2 => 6
+R0(3,0,10,5,3) performs [Overpower] to B0(7,1,10,0,6)
+B0 HP: 6 - 2 => 4
+B3(1,0,8,5,6) performs [Protect] to B0(7,1,10,0,6)
 
 
-[Tick 168] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,0,10,5,6) performs [Exposure] to B0(3,0,10,3,5)
-Threat set from 5 to 6
-R3(1,0,10,5,6) performs [Exposure] to B1(3,1,6,2,4)
-Threat set from 4 to 5
-R3(1,0,10,5,6) performs [Exposure] to B2(7,1,8,2,4)
-Threat set from 4 to 5
+[Tick 14] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+R3(5,0,8,6,0) performs [Heavy Shot] to B0(7,1,10,0,6)
+B0 HP: 4 - 9 => -5
+Speed set from 6 to 7
 
 
-[Tick 180] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 10 - 0 => 10
+[Tick 15] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
+B1(1,1,7,4,0) performs [Tripple Shot] to R1(3,3,10,2,5)
+R1 HP: 5 - 0 => 5
+B1(1,1,7,4,0) performs [Tripple Shot] to R0(3,0,10,5,3)
+R0 HP: 8 - 1 => 7
+B1(1,1,7,4,0) performs [Tripple Shot] to R2(3,2,12,5,3)
+R2 HP: 12 - 0 => 12
 
 
-[Tick 210] R2, R4, B1, B2, B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(3,5,10,2,8) performs [Delay Shot] to B0(3,0,10,3,6)
-B0 HP: 10 - 3 => 7
-[AFTER-ACTION] B0 → R4: Poison Effect
-[BOON] Poison Effect on R4 (Usage: 3/3)
-R4 HP: 10 - 3 => 7
-B2(7,1,8,2,5) performs [Taunt] to R4(3,5,10,2,8)
-R4 HP: 7 - 2 => 5
-B3(3,1,8,4,2) performs [Overpower] to R4(3,5,10,2,8)
-R4 HP: 5 - 0 => 5
-Threat set from 5 to -1
-R2(1,0,10,2,5) performs [Exposure] to B0(3,0,10,3,6)
-Threat set from 6 to 7
-R2(1,0,10,2,5) performs [Exposure] to B1(3,1,6,2,5)
-Threat set from 5 to 6
-R2(1,0,10,2,5) performs [Exposure] to B3(3,1,8,4,2)
-Threat set from 2 to 3
-B1(3,1,6,2,6) performs [Cheer] to B0(3,0,10,3,7)
-Attack set from 3 to 6
+[Tick 20] R4, R1, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
+B2(6,1,10,2,4) performs [Fire Arrow] to R1(3,3,10,2,5)
+R1 HP: 5 - 5 => 0
+R4(0,0,10,1,3) performs [Cheer] to R0(3,0,10,5,3)
+Attack set from 3 to 3
 
 
-[Tick 240] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 5 - 0 => 5
+[Tick 24] R0, R2, B3, R3,  acting
+Survived Unit: R0, R2, R3, R4, B1, B2, B3, 
+R2(3,2,12,5,3) performs [Shoot] to B3(1,0,8,5,6)
+B3 HP: 8 - 3 => 5
+R3(5,0,8,7,0) performs [Heavy Shot] to B3(1,0,8,5,6)
+B3 HP: 5 - 10 => -5
+Speed set from 7 to 8
+R0(3,0,10,5,3) performs [Overpower] to B2(6,1,10,2,4)
+B2 HP: 10 - 2 => 8
 
 
-[Tick 252] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,0,10,5,6) performs [Exposure] to B0(6,0,10,3,7)
-Threat set from 7 to 8
-R3(1,0,10,5,6) performs [Exposure] to B1(3,1,6,2,6)
-Threat set from 6 to 7
-R3(1,0,10,5,6) performs [Exposure] to B3(3,1,8,4,3)
-Threat set from 3 to 4
+[Tick 44] R3,  acting
+Survived Unit: R0, R2, R3, R4, B1, B2, 
+R3(5,0,8,8,0) performs [Heavy Shot] to B2(6,1,10,2,4)
+B2 HP: 8 - 9 => -1
+Speed set from 8 to 9
 
 
-[Tick 300] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 5 - 0 => 5
-
-
-[Tick 315] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(3,1,8,4,4) performs [Overpower] to R4(3,5,10,2,8)
-R4 HP: 5 - 0 => 5
-
-
-[Tick 336] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,0,10,5,6) performs [Exposure] to B0(6,0,10,3,8)
-Threat set from 8 to 9
-R3(1,0,10,5,6) performs [Exposure] to B1(3,1,6,2,7)
-Threat set from 7 to 8
-R3(1,0,10,5,6) performs [Exposure] to B3(3,1,8,4,4)
-Threat set from 4 to 5
-
-
-[Tick 360] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R4(3,5,10,2,8)
-R4 HP: 5 - 0 => 5
-
-
-[Tick 420] R0, R1, R2, R4, B1, B2, B3, R3, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(3,5,10,2,8) performs [Delay Shot] to B0(6,0,10,3,9)
-B0 HP: 7 - 3 => 4
-[AFTER-ACTION] B0 → R4: Poison Effect
-[BOON] Poison Effect on R4 (Usage: 2/3)
-R4 HP: 5 - 6 => -1
-B2(7,1,8,2,0) performs [Taunt] to R3(1,0,10,5,6)
-R3 HP: 10 - 7 => 3
-B3(3,1,8,4,5) performs [Overpower] to R3(1,0,10,5,6)
-R3 HP: 3 - 3 => 0
-B4(4,-2,10,7,2) performs [Thrust] to R0(1,0,12,1,5)
-R0 HP: 12 - 8 => 4
-Threat set from 0 to -6
-R0(1,0,12,1,5) performs [Haste] to R0(1,0,12,1,5)
-R1(1,1,10,1,5) performs [Healing Link] to R0(1,0,12,1,5)
-[HEAL] R0 healed for 1 HP (from 4 to 5/12)
-R1(1,1,10,1,5) performs [Healing Link] to R2(1,0,10,2,5)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R2(1,0,10,2,5) performs [Exposure] to B0(6,0,10,3,9)
-Threat set from 9 to 10
-R2(1,0,10,2,5) performs [Exposure] to B1(3,1,6,2,8)
-Threat set from 8 to 9
-R2(1,0,10,2,5) performs [Exposure] to B3(3,1,8,4,5)
-Threat set from 5 to 6
-B1(3,1,6,2,9) performs [Cheer] to B0(6,0,10,3,10)
-Attack set from 6 to 9
-R3(1,0,10,5,6) performs [Exposure] to B0(9,0,10,3,10)
-Threat set from 10 to 11
-R3(1,0,10,5,6) performs [Exposure] to B1(3,1,6,2,9)
-Threat set from 9 to 10
-R3(1,0,10,5,6) performs [Exposure] to B3(3,1,8,4,6)
-Threat set from 6 to 7
-[AFTER-ACTION] R0 → R0: HasteSTART
-Speed set from 1 to 3
-
-
-[Tick 480] B4,  acting
-Survived Unit: R0, R1, R2, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R0(1,0,12,3,5)
-R0 HP: 5 - 8 => -3
-
-
-[Tick 492] B4,  acting
-Survived Unit: R1, R2, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R1(1,1,10,1,5)
-R1 HP: 10 - 7 => 3
-
-
-[Tick 504] B4,  acting
-Survived Unit: R1, R2, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R1(1,1,10,1,5)
-R1 HP: 3 - 7 => -4
-
-
-[Tick 516] B4,  acting
-Survived Unit: R2, B0, B1, B2, B3, B4, 
-B4(4,-2,10,7,2) performs [Thrust] to R2(1,0,10,2,5)
-R2 HP: 10 - 8 => 2
-
-
-[Tick 525] B3,  acting
-Survived Unit: R2, B0, B1, B2, B3, B4, 
-B3(3,1,8,4,7) performs [Overpower] to R2(1,0,10,2,5)
-R2 HP: 2 - 3 => -1
-Battle Over! Blue Team wins!
+[Tick 49] R3,  acting
+Survived Unit: R0, R2, R3, R4, B1, 
+R3(5,0,8,9,0) performs [Heavy Shot] to B1(1,1,7,4,0)
+B1 HP: 7 - 9 => -2
+Speed set from 9 to 10
+Battle Over! Red Team wins!
