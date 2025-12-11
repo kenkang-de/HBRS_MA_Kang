@@ -6,67 +6,60 @@
 
 const int CounterStrategyRelation = 3;
 
-   enum CounterType{
-    None,
-    Rock,
-    Scissor,
-    Paper
-};
+enum CounterType { None, Rock, Scissor, Paper };
 
 class Armor;
 class Weapon;
 
-//Initialize CounterType to GameElements(RPS)
-//Initialize order: 1.Armor -> 2.Weapon
-class CounterTypeInitializer
-{
-    private:
+// Initialize CounterType to GameElements(RPS)
+// Initialize order: 1.Armor -> 2.Weapon
+class CounterTypeInitializer {
+  private:
     float strategyRatio_CS;
 
-    static CounterTypeInitializer* instance;
+    static CounterTypeInitializer *instance;
 
-    std::vector<Armor>* armorList;
+    std::vector<Armor> *armorList;
 
-    std::vector<Weapon>* weaponList;
+    std::vector<Weapon> *weaponList;
 
     int maxTypeNumber;
 
     int CS_ElementAmount;
 
-    std::map<CounterType,int> armorUsageCount;
+    std::map<CounterType, int> armorUsageCount;
 
-    std::map<CounterType,int> weaponUsageCount;
+    std::map<CounterType, int> weaponUsageCount;
 
-    public:
- 
+  public:
+    static CounterTypeInitializer *GetInstance() {
+        return instance;
+    }
 
-    static CounterTypeInitializer* GetInstance() { return instance; }
-
-    CounterTypeInitializer(float _strategyRatio_CS, std::vector<Armor>* _armorList, std::vector<Weapon>* _weaponList) : 
-    strategyRatio_CS(_strategyRatio_CS), armorList(_armorList), weaponList(_weaponList) 
-    {
-    instance = this;
-    ResetUsageCount();
-    Init_MaxTypeNumber();
+    CounterTypeInitializer(std::vector<Armor> *_armorList, std::vector<Weapon> *_weaponList)
+        : armorList(_armorList), weaponList(_weaponList) {
+        instance = this;
     };
 
     void ResetUsageCount();
 
     void Init_MaxTypeNumber();
 
+    void Init(float strategyRatio_CS);
+
+    void Reset_ArmorList();
     void Init_ArmorList();
 
+    void Reset_WeaponList();
     void Init_WeaponList();
 
-    CounterType GetValidCounterType(std::map<CounterType,int> usageCount);
+    CounterType GetValidCounterType(std::map<CounterType, int> usageCount);
 
-    CounterType GetLowestUsageCounterType(std::map<CounterType,int> usageCount);
+    CounterType GetLowestUsageCounterType(std::map<CounterType, int> usageCount);
 
     void PrintArmorUsageCounts();
 
     void PrintWeaponUsageCounts();
-
 };
-
 
 #endif

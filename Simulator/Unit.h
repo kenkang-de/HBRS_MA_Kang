@@ -37,6 +37,8 @@ class Unit {
     std::vector<Unit *> Allies;
     std::vector<Unit *> Enemies;
 
+    bool Synergy = false;
+
     Unit();
 
     // Custom copy constructor and assignment operator to handle unique_ptr

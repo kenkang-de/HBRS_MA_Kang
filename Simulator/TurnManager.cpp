@@ -121,6 +121,11 @@ std::vector<Unit *> TurnManager::GetNextUnits() {
                     return unitsToAct;
                 }
             }
+
+            // Unfreeze manually
+            if (unit->GetTotalStat().GetSpeed() > 0 && unit->IsFrozen()) {
+                unit->SetFrozen(false);
+            }
             unit->TickDelay = 0;
             int nextActionTick = tick + unit->Tickinterval;
             toInsert.push_back({nextActionTick, unit});

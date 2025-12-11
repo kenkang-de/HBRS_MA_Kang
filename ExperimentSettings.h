@@ -18,6 +18,9 @@ class ExperimentSettings {
     static constexpr float Default_CROSSOVER_PROBABILITY = 0.9f;
     static constexpr float Default_MUTATION_PROBABILITY = 0.3f;
     static constexpr float Default_MUTATION_SIGMA = 1.2f;
+    static constexpr float Default_RATIO_BS = 1.0f;
+    static constexpr float Default_RATIO_CS = 0.0f;
+    static constexpr float Default_RATIO_SYS = 0.0f;
 
     inline static int APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
     inline static int INDIVIDUALS_PER_GENERATION = Default_INDIVIDUALS_PER_GENERATION;
@@ -26,6 +29,9 @@ class ExperimentSettings {
     inline static float CROSSOVER_PROBABILITY = Default_CROSSOVER_PROBABILITY;
     inline static float MUTATION_PROBABILITY = Default_MUTATION_PROBABILITY;
     inline static float MUTATION_SIGMA = Default_MUTATION_SIGMA;
+    inline static float RATIO_BS = Default_RATIO_BS;
+    inline static float RATIO_CS = Default_RATIO_CS;
+    inline static float RATIO_SYS = Default_RATIO_SYS;
 
     void LoadFromFile(const std::string &filename) {
         APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
@@ -35,6 +41,9 @@ class ExperimentSettings {
         CROSSOVER_PROBABILITY = Default_CROSSOVER_PROBABILITY;
         MUTATION_PROBABILITY = Default_MUTATION_PROBABILITY;
         MUTATION_SIGMA = Default_MUTATION_SIGMA;
+        RATIO_BS = Default_RATIO_BS;
+        RATIO_CS = Default_RATIO_CS;
+        RATIO_SYS = Default_RATIO_SYS;
 
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -69,6 +78,12 @@ class ExperimentSettings {
                 MUTATION_PROBABILITY = std::stof(line.substr(21));
             } else if (line.find("MUTATION_SIGMA=") == 0) {
                 MUTATION_SIGMA = std::stof(line.substr(15));
+            } else if (line.find("RATIO_BS=") == 0) {
+                RATIO_BS = std::stof(line.substr(9));
+            } else if (line.find("RATIO_CS=") == 0) {
+                RATIO_CS = std::stof(line.substr(9));
+            } else if (line.find("RATIO_SYS=") == 0) {
+                RATIO_SYS = std::stof(line.substr(10));
             }
         }
 

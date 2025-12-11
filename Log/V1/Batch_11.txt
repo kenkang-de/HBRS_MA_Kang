@@ -1,366 +1,226 @@
-Unit 0: R0 Attack:4 Defense:3 HP:12 Speed:3 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA41]
-Unit 1: R1 Attack:5 Defense:3 HP:11 Speed:3 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA23]
-Unit 2: R2 Attack:0 Defense:5 HP:15 Speed:2 Threat:8 Weapon: [BSW21](Poison Arrow) Armor: [BSA48]
-Unit 3: R3 Attack:2 Defense:3 HP:10 Speed:3 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA22]
-Unit 4: R4 Attack:1 Defense:0 HP:10 Speed:4 Threat:0 Weapon: [BSW34](Wind Blade) Armor: [BSA14]
-Unit 5: B0 Attack:5 Defense:1 HP:11 Speed:5 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA13]
-Unit 6: B1 Attack:4 Defense:1 HP:11 Speed:6 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA13]
-Unit 7: B2 Attack:5 Defense:1 HP:6 Speed:4 Threat:2 Weapon: [BSW31](Wrist Shot) Armor: [BSA26]
-Unit 8: B3 Attack:2 Defense:5 HP:15 Speed:2 Threat:8 Weapon: [BSW32](Focus Throw) Armor: [BSA48]
-Unit 9: B4 Attack:-1 Defense:0 HP:12 Speed:4 Threat:5 Weapon: [BSW45](Fatigue) Armor: [BSA10]
+Unit 0: R0 Attack:6 Defense:3 HP:12 Speed:0 Threat:7 Weapon: [BSW10](Reckless Attack) Armor: [BSA44]
+Unit 1: R1 Attack:2 Defense:5 HP:15 Speed:1 Threat:8 Weapon: [BSW30](Fire Arrow) Armor: [BSA48]
+Unit 2: R2 Attack:2 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA25]
+Unit 3: R3 Attack:0 Defense:0 HP:10 Speed:1 Threat:3 Weapon: [BSW42](Haste) Armor: [BSA35]
+Unit 4: R4 Attack:4 Defense:1 HP:10 Speed:0 Threat:8 Weapon: [BSW48](Meteor) Armor: [BSA43]
+Unit 5: B0 Attack:4 Defense:6 HP:10 Speed:2 Threat:9 Weapon: [BSW9](Blitz Attack) Armor: [BSA42]
+Unit 6: B1 Attack:3 Defense:3 HP:7 Speed:4 Threat:5 Weapon: [BSW13](Prep Attack) Armor: [BSA23]
+Unit 7: B2 Attack:1 Defense:0 HP:10 Speed:5 Threat:1 Weapon: [BSW22](Delay Shot) Armor: [BSA14]
+Unit 8: B3 Attack:6 Defense:3 HP:10 Speed:3 Threat:6 Weapon: [BSW32](Focus Throw) Armor: [BSA34]
+Unit 9: B4 Attack:-2 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW46](Protect) Armor: [BSA22]
 ==========================
 
 
-[Tick 10] B1,  acting
+[Tick 12] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,2,8)
-R2 HP: 15 - 1 => 14
+B2(1,0,10,5,1) performs [Delay Shot] to R1(2,5,15,1,8)
+R1 HP: 15 - 0 => 15
 
 
-[Tick 12] B0,  acting
+[Tick 15] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,2,8)
-R2 HP: 14 - 0 => 14
+B1(3,3,7,4,5) performs [Prep Attack] to R1(2,5,15,1,8)
+HP set from 7 to 5
+R1 HP: 15 - 0 => 15
 
 
-[Tick 15] R4, B2, B4,  acting
+[Tick 20] R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,2,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B3(2,5,15,2,8)
-B3 HP: 15 - 1 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B1(4,1,11,6,6)
-B1 HP: 11 - 1 => 10
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,2,8)
-Speed set from 2 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,3,5)
-Speed set from 3 to 2
+B3(6,3,10,3,6) performs [Focus Throw] to R1(2,5,15,1,8)
+R1 HP: 15 - 7 => 8
+R2(2,1,8,3,3) performs [Healing Touch] to R1(2,5,15,1,8)
+[HEAL] R1 healed for 2 HP (from 8 to 10/15)
 
 
-[Tick 20] R0, R1, R3, B1,  acting
+[Tick 24] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,3,10,3,3) performs [Heavy Shot] to B3(2,5,15,2,8)
-B3 HP: 14 - 0 => 14
-Speed set from 3 to 4
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R0(4,3,12,2,5) performs [Slash] to B3(2,5,15,2,8)
-B3 HP: 14 - 0 => 14
-R1(5,3,11,3,4) performs [Berserk] to B3(2,5,15,2,8)
-R1 HP: 11 - 3 => 8
-B3 HP: 14 - 0 => 14
-Attack set from 5 to 8
+B2(1,0,10,5,1) performs [Delay Shot] to R1(2,5,15,1,8)
+R1 HP: 10 - 0 => 10
 
 
-[Tick 24] B0,  acting
+[Tick 30] B0, B4, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+B0(4,6,10,2,9) performs [Blitz Attack] to R1(2,5,15,1,8)
+R1 HP: 10 - 1 => 9
+B1(3,3,5,4,5) performs [Prep Attack] to R1(2,5,15,1,8)
+HP set from 5 to 3
+R1 HP: 9 - 0 => 9
+B4(-2,3,10,2,5) performs [Protect] to B0(4,6,10,2,9)
 
 
-[Tick 30] R2, B3, R4, B2, B4, B1,  acting
+[Tick 36] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(0,5,15,1,8) performs [Poison Arrow] to B3(2,5,15,2,8)
-B3 HP: 14 - 0 => 14
-B3(2,5,15,2,8) performs [Focus Throw] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-[AFTER-ACTION] R2 → B3: Poison Effect
-[BOON] Poison Effect on B3 (Usage: 2/2)
-B3 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B3(2,5,15,2,8)
-B3 HP: 14 - 1 => 13
-R4(1,0,10,4,0) performs [Wind Blade] to B1(4,1,11,6,6)
-B1 HP: 10 - 1 => 9
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,1,8)
-Speed set from 1 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,2,5)
-Speed set from 2 to 1
+B2(1,0,10,5,1) performs [Delay Shot] to R1(2,5,15,1,8)
+R1 HP: 9 - 0 => 9
 
 
-[Tick 36] B0,  acting
+[Tick 40] R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+B3(6,3,10,3,6) performs [Focus Throw] to R1(2,5,15,1,8)
+R1 HP: 9 - 7 => 2
+R2(2,1,8,3,3) performs [Healing Touch] to R1(2,5,15,1,8)
+[HEAL] R1 healed for 2 HP (from 2 to 4/15)
 
 
-[Tick 40] R1, R3, B1,  acting
+[Tick 45] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,3,10,4,3) performs [Heavy Shot] to B3(2,5,15,2,8)
-B3 HP: 13 - 0 => 13
-Speed set from 4 to 5
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R1(8,3,11,3,4) performs [Berserk] to B3(2,5,15,2,8)
-R1 HP: 8 - 3 => 5
-B3 HP: 13 - 3 => 10
-Attack set from 8 to 11
+B1(3,3,3,4,5) performs [Prep Attack] to R1(2,5,15,1,8)
+HP set from 3 to 1
+R1 HP: 4 - 0 => 4
 
 
-[Tick 45] R4, B2, B4,  acting
+[Tick 48] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B3(2,5,15,2,8)
-B3 HP: 10 - 1 => 9
-R4(1,0,10,4,0) performs [Wind Blade] to B1(4,1,11,6,6)
-B1 HP: 9 - 1 => 8
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,1,8)
-Speed set from 1 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,1,5)
-Speed set from 1 to 1
+B2(1,0,10,5,1) performs [Delay Shot] to R1(2,5,15,1,8)
+R1 HP: 4 - 0 => 4
 
 
-[Tick 48] B0,  acting
+[Tick 60] R1, R3, B0, B4, R2, B3, B1, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+R1(2,5,15,1,8) performs [Fire Arrow] to B0(4,6,10,2,9)
+B0 HP: 10 - 1 => 9
+B3(6,3,10,3,6) performs [Focus Throw] to R1(2,5,15,1,8)
+R1 HP: 4 - 7 => -3
+B2(1,0,10,5,1) performs [Delay Shot] to R4(4,1,10,0,8)
+R4 HP: 10 - 0 => 10
+B0(4,6,10,2,9) performs [Blitz Attack] to R4(4,1,10,0,8)
+R4 HP: 10 - 5 => 5
+B1(3,3,1,4,5) performs [Prep Attack] to R4(4,1,10,0,8)
+HP set from 1 to 3
+R4 HP: 5 - 2 => 3
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 6 to 11
+R3(0,0,10,1,3) performs [Haste] to R4(4,1,10,0,8)
+B4(-2,3,10,2,5) performs [Protect] to B0(4,11,10,2,9)
+[BOON] Refreshing existing  on B0
+R2(2,1,8,3,3) performs [Healing Touch] to R4(4,1,10,0,8)
+[HEAL] R4 healed for 2 HP (from 3 to 5/10)
 
 
-[Tick 50] R0, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R0(4,3,12,1,5) performs [Slash] to B3(2,5,15,2,8)
-B3 HP: 9 - 0 => 9
+[Tick 72] B2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R4(4,1,10,0,8)
+R4 HP: 5 - 0 => 5
 
 
-[Tick 55] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,3,10,5,3) performs [Heavy Shot] to B3(2,5,15,2,8)
-B3 HP: 9 - 0 => 9
-Speed set from 5 to 6
+[Tick 75] B1,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(3,3,3,4,5) performs [Prep Attack] to R4(4,1,10,0,8)
+HP set from 3 to 5
+R4 HP: 5 - 2 => 3
 
 
-[Tick 60] B3, R1, R4, B2, B4, B0, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(2,5,15,2,8) performs [Focus Throw] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-[AFTER-ACTION] R2 → B3: Poison Effect
-[BOON] Poison Effect on B3 (Usage: 1/2)
-B3 HP: 9 - 0 => 9
-[BOON] Poison Effect expired on B3 - cleaned up
-R1(11,3,11,3,4) performs [Berserk] to B3(2,5,15,2,8)
-R1 HP: 5 - 3 => 2
-B3 HP: 9 - 6 => 3
-Attack set from 11 to 14
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B3(2,5,15,2,8)
-B3 HP: 3 - 1 => 2
-R4(1,0,10,4,0) performs [Wind Blade] to B1(4,1,11,6,6)
-B1 HP: 8 - 1 => 7
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,1,8)
-Speed set from 1 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,1,5)
-Speed set from 1 to 1
+[Tick 80] R2, B3,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+B3(6,3,10,3,6) performs [Focus Throw] to R4(4,1,10,0,8)
+R4 HP: 3 - 7 => -4
+R2(2,1,8,3,3) performs [Healing Touch] to R0(6,3,12,0,7)
+[HEAL] R0 healed for 0 HP (from 12 to 12/12)
 
 
-[Tick 67] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,3,10,6,3) performs [Heavy Shot] to B3(2,5,15,2,8)
-B3 HP: 2 - 0 => 2
-Speed set from 6 to 7
+[Tick 84] B2,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R0(6,3,12,0,7)
+R0 HP: 12 - 0 => 12
 
 
-[Tick 70] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,1,11,6,6) performs [Boost Acuity] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+[Tick 90] B0, B4, B1,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B0(4,11,10,2,9) performs [Blitz Attack] to R0(6,3,12,0,7)
+R0 HP: 12 - 3 => 9
+B1(3,3,5,4,5) performs [Prep Attack] to R0(6,3,12,0,7)
+HP set from 5 to 5
+R0 HP: 9 - 0 => 9
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 11 to 6
+[BOON] ProtectSTART expired on B0 - cleaned up
+B4(-2,3,10,2,5) performs [Protect] to B0(4,6,10,2,9)
 
 
-[Tick 72] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+[Tick 96] B2,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R0(6,3,12,0,7)
+R0 HP: 9 - 0 => 9
 
 
-[Tick 75] R4, B2, B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B3(2,5,15,2,8)
-B3 HP: 2 - 1 => 1
-R4(1,0,10,4,0) performs [Wind Blade] to B1(4,1,11,6,6)
-B1 HP: 7 - 1 => 6
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,1,8)
-Speed set from 1 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,1,5)
-Speed set from 1 to 1
+[Tick 100] R2, B3,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B3(6,3,10,3,6) performs [Focus Throw] to R0(6,3,12,0,7)
+R0 HP: 9 - 7 => 2
+R2(2,1,8,3,3) performs [Healing Touch] to R0(6,3,12,0,7)
+[HEAL] R0 healed for 2 HP (from 2 to 4/12)
 
 
-[Tick 77] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,3,10,7,3) performs [Heavy Shot] to B3(2,5,15,2,8)
-B3 HP: 1 - 0 => 1
-Speed set from 7 to 8
+[Tick 105] B1,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B1(3,3,5,4,5) performs [Prep Attack] to R0(6,3,12,0,7)
+HP set from 5 to 5
+R0 HP: 4 - 0 => 4
 
 
-[Tick 80] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(14,3,11,3,4) performs [Berserk] to B3(2,5,15,2,8)
-R1 HP: 2 - 3 => -1
-B3 HP: 1 - 9 => -8
-Attack set from 14 to 17
+[Tick 108] B2,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R0(6,3,12,0,7)
+R0 HP: 4 - 0 => 4
 
 
-[Tick 90] R2,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B4, 
-R2(0,5,15,1,8) performs [Poison Arrow] to B1(4,1,11,6,6)
-B1 HP: 6 - 0 => 6
+[Tick 120] R3, B0, B4, R2, B3, B1, B2,  acting
+Survived Unit: R0, R2, R3, B0, B1, B2, B3, B4, 
+B3(6,3,10,3,6) performs [Focus Throw] to R0(6,3,12,0,7)
+R0 HP: 4 - 7 => -3
+B2(1,0,10,5,1) performs [Delay Shot] to R2(2,1,8,3,3)
+R2 HP: 8 - 0 => 8
+B0(4,6,10,2,9) performs [Blitz Attack] to R2(2,1,8,3,3)
+R2 HP: 8 - 5 => 3
+B1(3,3,5,4,5) performs [Prep Attack] to R2(2,1,8,3,3)
+HP set from 5 to 7
+R2 HP: 3 - 2 => 1
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 6 to 11
+R3(0,0,10,1,3) performs [Haste] to R2(2,1,8,3,3)
+B4(-2,3,10,2,5) performs [Protect] to B0(4,11,10,2,9)
+[BOON] Refreshing existing  on B0
+R2(2,1,8,3,3) performs [Healing Touch] to R3(0,0,10,1,3)
+[HEAL] R3 healed for 0 HP (from 10 to 10/10)
+[AFTER-ACTION] R3 → R2: HasteSTART
+Speed set from 1 to 2
 
 
-[Tick 110] R0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B4, 
-R0(4,3,12,1,5) performs [Slash] to B1(4,1,11,6,6)
-B1 HP: 6 - 3 => 3
+[Tick 132] B2,  acting
+Survived Unit: R2, R3, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R2(2,1,8,3,3)
+R2 HP: 1 - 0 => 1
 
 
-[Tick 137] R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B4, 
-R3(2,3,10,8,3) performs [Heavy Shot] to B1(4,1,11,6,6)
-B1 HP: 3 - 3 => 0
-Speed set from 8 to 9
+[Tick 135] B1,  acting
+Survived Unit: R2, R3, B0, B1, B2, B3, B4, 
+B1(3,3,7,4,5) performs [Prep Attack] to R2(2,1,8,3,3)
+HP set from 7 to 9
+R2 HP: 1 - 2 => -1
 
 
-[Tick 152] R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-R3(2,3,10,9,3) performs [Heavy Shot] to B0(5,1,11,5,5)
-B0 HP: 11 - 3 => 8
-Speed set from 9 to 10
+[Tick 140] B3,  acting
+Survived Unit: R3, B0, B1, B2, B3, B4, 
+B3(6,3,10,3,6) performs [Focus Throw] to R3(0,0,10,2,3)
+R3 HP: 10 - 7 => 3
 
 
-[Tick 156] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
+[Tick 144] B2,  acting
+Survived Unit: R3, B0, B1, B2, B3, B4, 
+B2(1,0,10,5,1) performs [Delay Shot] to R3(0,0,10,2,3)
+R3 HP: 3 - 1 => 2
 
 
-[Tick 160] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 164] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 168] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 172] R3, B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-R3(2,3,10,10,3) performs [Heavy Shot] to B0(5,1,11,5,5)
-B0 HP: 8 - 3 => 5
-Speed set from 10 to 11
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 174] R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-R3(2,3,10,11,3) performs [Heavy Shot] to B0(5,1,11,5,5)
-B0 HP: 5 - 3 => 2
-Speed set from 11 to 12
-
-
-[Tick 176] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 180] R4, B2, B4,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B0(5,1,11,5,5)
-B0 HP: 2 - 1 => 1
-R4(1,0,10,4,0) performs [Wind Blade] to B4(-1,0,12,4,5)
-B4 HP: 12 - 1 => 11
-B4(-1,0,12,4,5) performs [Fatigue] to R2(0,5,15,1,8)
-Speed set from 1 to 1
-B4(-1,0,12,4,5) performs [Fatigue] to R0(4,3,12,1,5)
-Speed set from 1 to 1
-
-
-[Tick 188] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-B0(5,1,11,5,5) performs [Overpower] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-
-
-[Tick 194] R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B2, B4, 
-R3(2,3,10,12,3) performs [Heavy Shot] to B0(5,1,11,5,5)
-B0 HP: 1 - 3 => -2
-Speed set from 12 to 13
-
-
-[Tick 195] R4, B2,  acting
-Survived Unit: R0, R2, R3, R4, B2, B4, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B4(-1,0,12,4,5)
-B4 HP: 11 - 1 => 10
-R4(1,0,10,4,0) performs [Wind Blade] to B2(5,1,6,4,2)
-B2 HP: 6 - 1 => 5
-
-
-[Tick 199] R3,  acting
-Survived Unit: R0, R2, R3, R4, B2, B4, 
-R3(2,3,10,13,3) performs [Heavy Shot] to B4(-1,0,12,4,5)
-B4 HP: 10 - 4 => 6
-Speed set from 13 to 14
-
-
-[Tick 203] R3,  acting
-Survived Unit: R0, R2, R3, R4, B2, B4, 
-R3(2,3,10,14,3) performs [Heavy Shot] to B4(-1,0,12,4,5)
-B4 HP: 6 - 4 => 2
-Speed set from 14 to 15
-
-
-[Tick 205] R3,  acting
-Survived Unit: R0, R2, R3, R4, B2, B4, 
-R3(2,3,10,15,3) performs [Heavy Shot] to B4(-1,0,12,4,5)
-B4 HP: 2 - 4 => -2
-Speed set from 15 to 16
-
-
-[Tick 208] R4, B2,  acting
-Survived Unit: R0, R2, R3, R4, B2, 
-B2(5,1,6,4,2) performs [Wrist Shot] to R2(0,5,15,1,8)
-R2 HP: 14 - 0 => 14
-R4(1,0,10,4,0) performs [Wind Blade] to B2(5,1,6,4,2)
-B2 HP: 5 - 1 => 4
-
-
-[Tick 209] R3,  acting
-Survived Unit: R0, R2, R3, R4, B2, 
-R3(2,3,10,16,3) performs [Heavy Shot] to B2(5,1,6,4,2)
-B2 HP: 4 - 3 => 1
-Speed set from 16 to 17
-
-
-[Tick 210] R2, R3,  acting
-Survived Unit: R0, R2, R3, R4, B2, 
-R2(0,5,15,1,8) performs [Poison Arrow] to B2(5,1,6,4,2)
-B2 HP: 1 - 0 => 1
-R3(2,3,10,17,3) performs [Heavy Shot] to B2(5,1,6,4,2)
-B2 HP: 1 - 3 => -2
-Speed set from 17 to 18
-Battle Over! Red Team wins!
+[Tick 150] B0, B4, B1,  acting
+Survived Unit: R3, B0, B1, B2, B3, B4, 
+B0(4,11,10,2,9) performs [Blitz Attack] to R3(0,0,10,2,3)
+R3 HP: 2 - 6 => -4
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 11 to 6
+[BOON] ProtectSTART expired on B0 - cleaned up
+B4(-2,3,10,2,5) performs [Protect] to B0(4,6,10,2,9)
+Battle Over! Blue Team wins!

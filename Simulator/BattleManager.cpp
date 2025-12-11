@@ -137,7 +137,7 @@ void BattleManager::ActUnits(std::vector<Unit *> &units) {
     for (Unit *actor : units) {
         std::vector<Unit *> targets = TargetManager::GetTargets(*actor);
         for (Unit *target : targets) {
-            BattleAction action = actor->GetWeapon()->GetAction();
+            BattleAction &action = actor->GetWeapon()->GetAction();
 
             LogSystem::LogStream(actor->GetName(), "(", actor->GetTotalStat().GetAttack(), ",",
                                  actor->GetTotalStat().GetDefense(), ",", actor->GetTotalStat().GetHP(), ",",

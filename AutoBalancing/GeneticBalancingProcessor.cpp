@@ -347,4 +347,6 @@ void GeneticBalancingProcessor::RunAutoBalancing(Simulator *simulator, BatchConf
 
         Generation++;
     }
+    currentGenChromosomeList.clear();
+    nextGenChromosomeList.clear();
 }

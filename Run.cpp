@@ -38,12 +38,6 @@ class NewMasterController {
     std::unordered_map<std::string, BattleAction> actionMap;
     std::array<Unit, 10> battleUnits;
 
-    // Ratio of strategies
-    // BS: Basic, CS: Counter, SYS: Synergistic
-    float StrategyRatio_BS;
-    float StrategyRatio_CS;
-    float StrategyRatio_SYS;
-
   public:
     NewMasterController(const std::string &config) : configFile(config) {}
 
@@ -63,21 +57,15 @@ class NewMasterController {
 
             } else if (line.find("TEAMS_PER_BATCH=") == 0) {
                 teamsPerBatch = std::stoi(line.substr(16));
-
-            } else if (line.find("RATIO_BS=") == 0) {
-                StrategyRatio_BS = std::stof(line.substr(9));
-
-            } else if (line.find("RATIO_CS=") == 0) {
-                StrategyRatio_CS = std::stof(line.substr(9));
-
-            } else if (line.find("RATIO_SYS=") == 0) {
-                StrategyRatio_SYS = std::stof(line.substr(10));
             }
         }
     }
 
     void executeFullPipeline() {
         auto startTime = std::chrono::high_resolution_clock::now();
+
+        ExperimentSettings settings;
+        std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
 
         // Stage 1: Action Loading & Instantiation, Element(Equipment) Loading & Instantiation, Unit Instantiation
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
@@ -86,14 +74,14 @@ class NewMasterController {
         elementList = loader.InstantiateElements(actionMap);
 
         // Set armor, weapons components CounterType
-        CounterTypeInitializer counterTypeInitializer(StrategyRatio_CS, &elementList.armors, &elementList.weapons);
+        CounterTypeInitializer counterTypeInitializer(&elementList.armors, &elementList.weapons);
+        counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
         counterTypeInitializer.Init_ArmorList();
         counterTypeInitializer.Init_WeaponList();
 
         // Set armor, weapon components UnitSynergy(Synergy consists of a weapon and an armor)
-        SynergyComponentInitializer synergyComponentInitializer(StrategyRatio_SYS, &elementList.armors,
-                                                                &elementList.weapons);
-        synergyComponentInitializer.Init();
+        SynergyComponentInitializer synergyComponentInitializer(&elementList.armors, &elementList.weapons);
+        synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
         SynergyRule::PrintTotalUnitSynergyApplied();
 
         battleUnits = GenerateUnits();
@@ -134,9 +122,6 @@ class NewMasterController {
 
         GameComponentToCSV::SetSharedDirectory(BalancingLogToCSV::GetSharedDirectory());
 
-        ExperimentSettings settings;
-        std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
-
         // If there is no setting file, run the experiment once.
         if (settingFiles.empty()) {
             std::cout << "EXPERIMENT 1/1" << std::endl;
@@ -161,6 +146,15 @@ class NewMasterController {
                 GameComponentToCSV::SetExperimentNumber(experimentCount);
 
                 settings.LoadFromFile(fileDir);
+
+                // Init CS
+                counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
+                counterTypeInitializer.Init_ArmorList();
+                counterTypeInitializer.Init_WeaponList();
+
+                // Init SYS
+                synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
+                SynergyRule::PrintTotalUnitSynergyApplied();
 
                 BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
                 balancer.RunAutoBalancing(&simulator, &batchConfig, batches);

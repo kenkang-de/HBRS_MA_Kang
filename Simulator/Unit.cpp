@@ -121,8 +121,14 @@ void Unit::TakeDamage(int amount, bool defendable, Unit *actor) {
     } else {
         finalDamage = std::max(0, amount);
     }
+    // Counter
+    finalDamage = std::round(finalDamage * GetCounterMultiplier(actor, this));
+    // Synergy
+    if (actor->Synergy) {
+        LogSystem::LogStream("[SYNERGY]: from ", actor->GetName());
+        finalDamage = std::round(finalDamage * 1.5f);
+    }
 
-    finalDamage = finalDamage * std::round(GetCounterMultiplier(actor, this));
     LogSystem::LogStream(Name, " HP: ", currentHP, " - ", finalDamage, " => ", currentHP - finalDamage);
     currentHP = std::max(0, currentHP - finalDamage);
 

@@ -1,16 +1,16 @@
-#include <cmath>
-#include <random>
-#include <iostream>
 #include <algorithm>
+#include <cmath>
+#include <iostream>
 #include <numeric>
+#include <random>
 
+#include "../Simulator/Armor.h"  // Add this include
+#include "../Simulator/Weapon.h" // Add this include
 #include "CounterTypeInitializer.h"
-#include "../Simulator/Armor.h"    // Add this include
-#include "../Simulator/Weapon.h"   // Add this include
 
-CounterTypeInitializer* CounterTypeInitializer::instance = nullptr;
+CounterTypeInitializer *CounterTypeInitializer::instance = nullptr;
 
-void CounterTypeInitializer::ResetUsageCount(){
+void CounterTypeInitializer::ResetUsageCount() {
     armorUsageCount[CounterType::Rock] = 0;
     armorUsageCount[CounterType::Scissor] = 0;
     armorUsageCount[CounterType::Paper] = 0;
@@ -20,112 +20,121 @@ void CounterTypeInitializer::ResetUsageCount(){
     weaponUsageCount[CounterType::Paper] = 0;
 };
 
-void CounterTypeInitializer::Init_MaxTypeNumber()
-{
-    //Weapon and Amor size should be same.
-    if(weaponList->size() == armorList->size())
-    CS_ElementAmount = armorList->size() * strategyRatio_CS ;
+void CounterTypeInitializer::Init_MaxTypeNumber() {
+    // Weapon and Amor size should be same.
+    if (weaponList->size() == armorList->size())
+        CS_ElementAmount = armorList->size() * strategyRatio_CS;
 
     else
-std::cerr<< "[WARNING] weapon and armor size does not match"<< std::endl;
+        std::cerr << "[WARNING] weapon and armor size does not match" << std::endl;
 
     float calc = CS_ElementAmount / CounterStrategyRelation;
     maxTypeNumber = (calc > 0) ? std::ceil(calc) : 0;
 }
+void CounterTypeInitializer::Reset_ArmorList() {
+    for (Armor &armor : *armorList) {
+        armor.SetArmorType(CounterType::None);
+    }
+}
 
-void CounterTypeInitializer::Init_ArmorList()
-{
+void CounterTypeInitializer::Init(float _strategyRatio_CS) {
+    strategyRatio_CS = _strategyRatio_CS;
+    ResetUsageCount();
+    Init_MaxTypeNumber();
+}
+
+void CounterTypeInitializer::Init_ArmorList() {
+    Reset_ArmorList();
+
     std::vector<int> selectedIndices(CS_ElementAmount);
-    
     std::vector<int> allIndices(armorList->size());
-    std::iota(allIndices.begin(), allIndices.end(), 0); 
-    
+    std::iota(allIndices.begin(), allIndices.end(), 0);
+
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::sample(allIndices.begin(), allIndices.end(), 
-                selectedIndices.begin(), CS_ElementAmount, gen);
-    
+    std::sample(allIndices.begin(), allIndices.end(), selectedIndices.begin(), CS_ElementAmount, gen);
+
     for (int randomIndex : selectedIndices) {
-        Armor& armor = armorList->at(randomIndex);
-        CounterType counterType = GetValidCounterType(armorUsageCount);  
+        Armor &armor = armorList->at(randomIndex);
+        CounterType counterType = GetValidCounterType(armorUsageCount);
         armor.SetArmorType(counterType);
         armorUsageCount[counterType]++;
     }
 
-//PrintArmorUsageCounts();
+    PrintArmorUsageCounts();
 }
 
-void CounterTypeInitializer::Init_WeaponList()
-{
+void CounterTypeInitializer::Reset_WeaponList() {
+    for (Weapon &weapon : *weaponList) {
+        weapon.SetWeaponType(CounterType::None);
+    }
+}
+
+void CounterTypeInitializer::Init_WeaponList() {
+    Reset_WeaponList();
+
     std::vector<int> validIndices;
-    
+
     for (size_t i = 0; i < weaponList->size(); i++) {
-        Weapon& weapon = weaponList->at(i);
-        
-        //exclude Enemy targetted action Weapon, to make sure counter strategy is applied correctly.
-        if (weapon.GetAction().GetTargetType() == TargetType::ENEMY) {   
+        Weapon &weapon = weaponList->at(i);
+
+        // exclude Enemy targetted action Weapon, to make sure counter strategy is applied correctly.
+        if (weapon.GetAction().GetTargetType() == TargetType::ENEMY) {
             validIndices.push_back(i);
         }
     }
-    
+
     int weaponsToProcess = std::min(CS_ElementAmount, (int)validIndices.size());
     std::vector<int> selectedIndices(weaponsToProcess);
-    
+
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::sample(validIndices.begin(), validIndices.end(), 
-                selectedIndices.begin(), weaponsToProcess, gen);
-    
+    std::sample(validIndices.begin(), validIndices.end(), selectedIndices.begin(), weaponsToProcess, gen);
+
     for (int randomIndex : selectedIndices) {
-        Weapon& weapon = weaponList->at(randomIndex);
-        CounterType counterType = GetValidCounterType(weaponUsageCount); 
+        Weapon &weapon = weaponList->at(randomIndex);
+        CounterType counterType = GetValidCounterType(weaponUsageCount);
         weapon.SetWeaponType(counterType);
-        weaponUsageCount[counterType]++;  
+        weaponUsageCount[counterType]++;
     }
 
-    //PrintWeaponUsageCounts();
+    PrintWeaponUsageCounts();
 }
 
-void CounterTypeInitializer::PrintArmorUsageCounts()
-{
+void CounterTypeInitializer::PrintArmorUsageCounts() {
     std::cout << "=== Armor Usage Counts ===" << std::endl;
     std::cout << "Rock: " << armorUsageCount[CounterType::Rock] << std::endl;
     std::cout << "Paper: " << armorUsageCount[CounterType::Paper] << std::endl;
     std::cout << "Scissor: " << armorUsageCount[CounterType::Scissor] << std::endl;
 }
 
-void CounterTypeInitializer::PrintWeaponUsageCounts()
-{
+void CounterTypeInitializer::PrintWeaponUsageCounts() {
     std::cout << "=== Weapon Usage Counts ===" << std::endl;
     std::cout << "Rock: " << weaponUsageCount[CounterType::Rock] << std::endl;
     std::cout << "Paper: " << weaponUsageCount[CounterType::Paper] << std::endl;
     std::cout << "Scissor: " << weaponUsageCount[CounterType::Scissor] << std::endl;
 }
 
-
-CounterType CounterTypeInitializer::GetValidCounterType(std::map<CounterType,int> usageCount)
-{
-if(maxTypeNumber > 0)
-{
-  return GetLowestUsageCounterType(usageCount);
-} 
-else 
-    return CounterType::None;
+CounterType CounterTypeInitializer::GetValidCounterType(std::map<CounterType, int> usageCount) {
+    if (maxTypeNumber > 0) {
+        return GetLowestUsageCounterType(usageCount);
+    } else
+        return CounterType::None;
 }
 
-CounterType CounterTypeInitializer::GetLowestUsageCounterType(std::map<CounterType,int> usageCount)
-{
-    if (usageCount.empty()) return CounterType::None;
-    
+CounterType CounterTypeInitializer::GetLowestUsageCounterType(std::map<CounterType, int> usageCount) {
+    if (usageCount.empty())
+        return CounterType::None;
+
     CounterType lowestType = usageCount.begin()->first;
     int lowestCount = usageCount.begin()->second;
-    
-    for (const auto& pair : usageCount) {
+
+    for (const auto &pair : usageCount) {
         if (pair.second < lowestCount) {
             lowestCount = pair.second;
             lowestType = pair.first;
         }
     }
-    
+
     return lowestType;
 }

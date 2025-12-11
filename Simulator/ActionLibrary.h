@@ -25,6 +25,8 @@ class ActionLibrary {
     static ActionFn GetAction(const std::string &id);
     static ActionFn GetAction(const std::string &id, const std::string &param);
 
+    static int ApplySynergyToValue(Unit *actor, int value);
+
   private:
     static const std::unordered_map<std::string, ConditionFn> conditionMap;
     static const std::unordered_map<std::string, ActionFn> actionMap;

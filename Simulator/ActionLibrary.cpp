@@ -4,6 +4,7 @@
 #include "../Log/LogSystem.h"
 #include "ActionLibrary.h"
 #include "BoonAction.h"
+#include "CounterRule.h"
 #include "GlobalAction.h"
 #include "TempBoonAction.h"
 #include "Unit.h"
@@ -212,6 +213,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
              int value = ctx.actor->GetTotalStat().GetSpeed() - ctx.actor->GetTotalStat().GetThreat();
+             value = ActionLibrary::ApplySynergyToValue(ctx.actor, value);
              int newSpeed = ctx.target->GetTotalStat().GetSpeed() + value;
              // Ensure speed never goes below 1 to prevent infinite loops
              ctx.target->SetSpeed(std::max(1, newSpeed));
@@ -311,6 +313,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
      [](const ActionContext &ctx) {
          if (ctx.actor && ctx.target) {
             int value = ctx.actor->GetTotalStat().GetAttack();
+            value = ActionLibrary::ApplySynergyToValue(ctx.actor,value);
             ctx.target->GetTotalStat().SetThreat(ctx.target->GetTotalStat().GetThreat() + value);
          }
      }},
@@ -397,6 +400,7 @@ const std::unordered_map<std::string, ActionFn> ActionLibrary::actionMap = {
          if (ctx.actor && ctx.target) {
             int value = std::max(0,ctx.actor->GetTotalStat().GetAttack());
             value = static_cast<int>(std::ceil(value * 0.25f));
+            value = ActionLibrary::ApplySynergyToValue(ctx.actor, value);
     ctx.target->GetTotalStat().SetAttack(ctx.target->GetTotalStat().GetAttack() - value);
          }
      }},
@@ -477,10 +481,11 @@ static const std::unordered_map<std::string, ParamActionFactory> paramActionFact
          std::string durationStr = param.substr(comma1 + 1, comma2 - comma1 - 1);
          std::string endActionName = param.substr(comma2 + 1);
 
-         int duration = std::stoi(durationStr);
+         int baseDuration = std::stoi(durationStr);
 
-         return [startActionName, duration, endActionName](const ActionContext &ctx) {
+         return [startActionName, baseDuration, endActionName](const ActionContext &ctx) {
              if (ctx.target) {
+                 int duration = ActionLibrary::ApplySynergyToValue(ctx.actor, baseDuration);
                  // Create TempBoonAction
                  auto tempBoon = std::make_unique<TempBoonAction>(startActionName, startActionName, duration,
                                                                   endActionName, ctx.actor);
@@ -526,4 +531,15 @@ ActionFn ActionLibrary::GetAction(const std::string &id, const std::string &para
 
 bool HasBoonOnUnit(Unit *target, const std::string &effectType) {
     return target ? target->HasBoon(effectType) : false;
+}
+
+int ActionLibrary::ApplySynergyToValue(Unit *actor, int value) {
+    if (actor->Synergy) {
+        {
+            LogSystem::LogStream("Synergy Applied!");
+            return std::round(value * 2.0f);
+        }
+
+    } else
+        return value;
 }

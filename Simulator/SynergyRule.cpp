@@ -4,8 +4,7 @@
 std::unordered_map<std::string, UnitSynergy> SynergyRule::unitSynergyMap;
 int SynergyRule::unitSynergyApplied = 0;
 
-void SynergyRule::ApplyUnitSynergyMatch(Unit* unit)
-{
+void SynergyRule::ApplyUnitSynergyMatch(Unit *unit) {
     std::vector<std::string> armorUnitSynergyIDs = unit->GetArmor()->GetUnitSynergyIDs();
     std::vector<std::string> weaponUnitSynergyIDs = unit->GetWeapon()->GetUnitSynergyIDs();
 
@@ -14,13 +13,13 @@ void SynergyRule::ApplyUnitSynergyMatch(Unit* unit)
         return;
     }
 
-    for (const std::string& armorUnitSynergyID : armorUnitSynergyIDs) {
-        for (const std::string& weaponUnitSynergyID : weaponUnitSynergyIDs) {
+    for (const std::string &armorUnitSynergyID : armorUnitSynergyIDs) {
+        for (const std::string &weaponUnitSynergyID : weaponUnitSynergyIDs) {
             if (armorUnitSynergyID == weaponUnitSynergyID) {
                 auto it = SynergyRule::unitSynergyMap.find(armorUnitSynergyID);
                 if (it != SynergyRule::unitSynergyMap.end()) {
                     // Apply synergy effect
-                    unit->GetTotalStat() += it->second.effectStat;
+                    unit->Synergy = true;
                     SynergyRule::unitSynergyApplied++;
                 }
             }
@@ -28,12 +27,10 @@ void SynergyRule::ApplyUnitSynergyMatch(Unit* unit)
     }
 }
 
-void SynergyRule::PrintTotalUnitSynergyApplied()
-{
-    std::cout<<"Total unit synergy applied: "<< SynergyRule::unitSynergyApplied << std::endl;
+void SynergyRule::PrintTotalUnitSynergyApplied() {
+    std::cout << "Total unit synergy applied: " << SynergyRule::unitSynergyApplied << std::endl;
 }
 
-void SynergyRule::ResetAppliedCounter()
-{
+void SynergyRule::ResetAppliedCounter() {
     unitSynergyApplied = 0;
 }

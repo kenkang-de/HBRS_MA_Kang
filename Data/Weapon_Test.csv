@@ -1,6 +1,6 @@
 ﻿ID,Type,Name,ATK,DEF,SPD,THR,HP,actionId
-BSW1,Sword,,4,0,0,0,0,Slash
-BSW2,Sword,,4,0,0,0,0,Slash
-BSW3,Sword,,4,0,0,0,0,Slash
-BSW4,Sword,,4,0,0,0,0,Slash
+BSW37,Staff,,0,0,-2,0,0,Freeze
+BSW2,Sword,,4,0,0,1,0,Slash
+BSW3,Sword,,4,0,0,1,0,Slash
+BSW4,Sword,,4,0,0,1,0,Slash
 BSW46,Charm,,0,0,0,2,0,Protect
