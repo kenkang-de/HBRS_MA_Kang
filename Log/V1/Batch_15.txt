@@ -1,147 +1,246 @@
-Unit 0: R0 Attack:1 Defense:1 HP:7 Speed:5 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA19]
-Unit 1: R1 Attack:2 Defense:1 HP:10 Speed:6 Threat:3 Weapon: [BSW20](Blitz Shot) Armor: [BSA12]
-Unit 2: R2 Attack:4 Defense:-2 HP:10 Speed:5 Threat:8 Weapon: [BSW35](Chain Lightning) Armor: [BSA3]
-Unit 3: R3 Attack:0 Defense:0 HP:9 Speed:4 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA7]
-Unit 4: R4 Attack:4 Defense:0 HP:8 Speed:3 Threat:5 Weapon: [BSW48](Meteor) Armor: [BSA15]
-Unit 5: B0 Attack:4 Defense:2 HP:12 Speed:3 Threat:4 Weapon: [BSW2](Chop) Armor: [BSA24]
-Unit 6: B1 Attack:3 Defense:0 HP:8 Speed:7 Threat:6 Weapon: [BSW7](Poison Attack) Armor: [BSA4]
-Unit 7: B2 Attack:6 Defense:5 HP:10 Speed:1 Threat:9 Weapon: [BSW11](Fade Attack) Armor: [BSA45]
-Unit 8: B3 Attack:0 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA2]
-Unit 9: B4 Attack:2 Defense:1 HP:8 Speed:3 Threat:6 Weapon: [BSW48](Meteor) Armor: [BSA18]
+Unit 0: R0 Attack:1 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA22]
+Unit 1: R1 Attack:4 Defense:6 HP:10 Speed:1 Threat:7 Weapon: [BSW18](Killing Spree) Armor: [BSA42]
+Unit 2: R2 Attack:3 Defense:1 HP:11 Speed:6 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA13]
+Unit 3: R3 Attack:1 Defense:3 HP:7 Speed:2 Threat:5 Weapon: [BSW37](Freeze) Armor: [BSA23]
+Unit 4: R4 Attack:-1 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW39](Healing Link) Armor: [BSA17]
+Unit 5: B0 Attack:3 Defense:0 HP:16 Speed:4 Threat:2 Weapon: [BSW4](Berserk) Armor: [BSA17]
+Unit 6: B1 Attack:4 Defense:-2 HP:10 Speed:7 Threat:5 Weapon: [BSW29](Camo Throw) Armor: [BSA3]
+Unit 7: B2 Attack:2 Defense:3 HP:10 Speed:2 Threat:6 Weapon: [BSW33](Magic Bolt) Armor: [BSA34]
+Unit 8: B3 Attack:2 Defense:1 HP:8 Speed:3 Threat:5 Weapon: [BSW35](Chain Lightning) Armor: [BSA18]
+Unit 9: B4 Attack:0 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA41]
 ==========================
+
+
+[Tick 12] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,5) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 10 - 0 => 10
+Threat set from 5 to -1
+
+
+[Tick 14] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 12 - 0 => 12
+
+
+[Tick 21] R0, R4, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
+B4 HP: 12 - 1 => 11
+B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
+B0 HP: 16 - 0 => 16
+R1 HP: 10 - 0 => 10
+Attack set from 3 to 3
+R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
+[HEAL] R1 healed for -1 HP (from 10 to 9/10)
+R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
+[HEAL] R0 healed for -1 HP (from 12 to 11/12)
+
+
+[Tick 24] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 9 - 0 => 9
+Threat set from 0 to -6
+
+
+[Tick 28] B3, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+[BOON] Refreshing existing  on B4
+B3(2,1,8,3,5) performs [Chain Lightning] to R1(4,6,10,1,7)
+R1 HP: 9 - 2 => 7
+B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
+R0 HP: 11 - 2 => 9
+B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
+R3 HP: 7 - 2 => 5
+
+
+[Tick 36] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 7 - 0 => 7
+Threat set from 0 to -6
+
+
+[Tick 42] B2, R0, R4, B0, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+[BOON] Refreshing existing  on B4
+R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
+B0 HP: 16 - 0 => 16
+R1 HP: 7 - 0 => 7
+Attack set from 3 to 3
+B2(2,3,10,2,6) performs [Magic Bolt] to R1(4,6,10,1,7)
+R1 HP: 7 - 2 => 5
+R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
+[HEAL] R1 healed for -1 HP (from 5 to 4/10)
+R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
+[HEAL] R0 healed for -1 HP (from 9 to 8/12)
+
+
+[Tick 48] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 4 - 0 => 4
+Threat set from 0 to -6
+
+
+[Tick 56] B3, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+[BOON] Refreshing existing  on B4
+B3(2,1,8,3,5) performs [Chain Lightning] to R1(4,6,10,1,7)
+R1 HP: 4 - 2 => 2
+B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
+R0 HP: 8 - 2 => 6
+B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
+R3 HP: 5 - 2 => 3
 
 
 [Tick 60] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,8,7,6) performs [Poison Attack] to R2(4,-2,10,5,8)
-R2 HP: 10 - 5 => 5
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 2 - 0 => 2
+Threat set from 0 to -6
 
 
-[Tick 70] R1,  acting
+[Tick 63] R0, R4, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B2(6,5,10,1,9)
-B2 HP: 10 - 3 => 7
+R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
+B0 HP: 16 - 0 => 16
+R1 HP: 2 - 0 => 2
+Attack set from 3 to 3
+R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
+[HEAL] R1 healed for -1 HP (from 2 to 1/10)
+R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
+[HEAL] R0 healed for -1 HP (from 6 to 5/12)
 
 
-[Tick 84] R0, B3,  acting
+[Tick 70] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(1,1,7,5,2) performs [Poison Attack] to B2(6,5,10,1,9)
-B2 HP: 7 - 0 => 7
-B3(0,-1,10,5,6) performs [Bulkup] to B2(6,5,10,1,9)
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 11 - 0 => 11
+[BOON] Refreshing existing  on B4
 
 
-[Tick 105] R3,  acting
+[Tick 72] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(0,0,9,4,4) performs [Vow] to R2(4,-2,10,5,8)
-Threat set from 8 to 8
-R3(0,0,9,4,4) performs [Vow] to R4(4,0,8,3,5)
-Threat set from 5 to 5
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 1 - 0 => 1
+Threat set from 0 to -6
+
+
+[Tick 84] R1, B2, B3, R0, R4, B0, R2, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(4,6,10,1,7) performs [Killing Spree] to B4(0,3,12,1,7)
+B4 HP: 11 - 1 => 10
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 10 - 0 => 10
+[BOON] Refreshing existing  on B4
+B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
+R1 HP: 1 - 0 => 1
+Threat set from 0 to -6
+R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
+B4 HP: 10 - 0 => 10
+B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
+B0 HP: 16 - 0 => 16
+R1 HP: 1 - 0 => 1
+Attack set from 3 to 3
+B2(2,3,10,2,6) performs [Magic Bolt] to R1(4,6,10,1,7)
+R1 HP: 1 - 2 => -1
+B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
+R0 HP: 5 - 2 => 3
+B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
+R3 HP: 3 - 2 => 1
+B3(2,1,8,3,5) performs [Chain Lightning] to R2(3,1,11,6,4)
+R2 HP: 11 - 2 => 9
+R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
+[HEAL] R0 healed for -1 HP (from 3 to 2/12)
+R4(-1,0,12,4,3) performs [Healing Link] to R3(1,3,7,2,5)
+[HEAL] R3 healed for -1 HP (from 1 to 0/7)
+
+
+[Tick 96] B1,  acting
+Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R0(1,3,12,4,5)
+R0 HP: 2 - 1 => 1
+Threat set from 0 to -6
+
+
+[Tick 98] R2,  acting
+Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 10 - 0 => 10
+[BOON] Refreshing existing  on B4
+
+
+[Tick 105] R0, R4, B0,  acting
+Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
+R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
+B4 HP: 10 - 0 => 10
+B0(3,0,16,4,2) performs [Berserk] to R0(1,3,12,4,5)
+B0 HP: 16 - 0 => 16
+R0 HP: 1 - 0 => 1
+Attack set from 3 to 3
+R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
+[HEAL] R0 healed for -1 HP (from 1 to 0/12)
+R4(-1,0,12,4,3) performs [Healing Link] to R2(3,1,11,6,4)
+[HEAL] R2 healed for -1 HP (from 9 to 8/11)
+
+
+[Tick 108] B1,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R2(3,1,11,6,4)
+R2 HP: 8 - 3 => 5
+Threat set from 0 to -6
+
+
+[Tick 112] B3, R2,  acting
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
+B4 HP: 10 - 0 => 10
+[BOON] Refreshing existing  on B4
+B3(2,1,8,3,5) performs [Chain Lightning] to R2(3,1,11,6,4)
+R2 HP: 5 - 2 => 3
+B3(2,1,8,3,5) performs [Chain Lightning] to R4(-1,0,12,4,3)
+R4 HP: 12 - 2 => 10
 
 
 [Tick 120] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,8,7,6) performs [Poison Attack] to R2(4,-2,10,5,8)
-R2 HP: 5 - 5 => 0
-[BOON] Refreshing existing  on R2
+Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R2(3,1,11,6,4)
+R2 HP: 3 - 3 => 0
+Threat set from 0 to -6
 
 
-[Tick 140] R4, B0, B4, R1,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B2(6,5,10,1,9)
-B2 HP: 7 - 3 => 4
-B0(4,2,12,3,4) performs [Chop] to R4(4,0,8,3,5)
-R4 HP: 8 - 4 => 4
-Defense set from 0 to 0
-R4(4,0,8,3,5) performs [Meteor] to B2(6,5,10,1,9)
-B2 HP: 4 - 4 => 0
-R4(4,0,8,3,5) performs [Meteor] to B1(3,0,8,7,6)
-B1 HP: 8 - 4 => 4
-R4(4,0,8,3,5) performs [Meteor] to B3(0,-1,10,5,6)
-B3 HP: 10 - 4 => 6
-R4(4,0,8,3,5) performs [Meteor] to B4(2,1,8,3,6)
-B4 HP: 8 - 4 => 4
-B4(2,1,8,3,6) performs [Meteor] to R4(4,0,8,3,5)
-R4 HP: 4 - 2 => 2
-B4(2,1,8,3,6) performs [Meteor] to R3(0,0,9,4,4)
-R3 HP: 9 - 2 => 7
-B4(2,1,8,3,6) performs [Meteor] to R1(2,1,10,6,3)
-R1 HP: 10 - 2 => 8
-B4(2,1,8,3,6) performs [Meteor] to R0(1,1,7,5,2)
-R0 HP: 7 - 2 => 5
-[AFTER-ACTION] R3 → R4: Vow Effect Start
-Defense set from 0 to 0
+[Tick 126] B2, B0,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B0(3,0,16,4,2) performs [Berserk] to R4(-1,0,12,4,3)
+B0 HP: 16 - 0 => 16
+R4 HP: 10 - 3 => 7
+Attack set from 3 to 3
+B2(2,3,10,2,6) performs [Magic Bolt] to R4(-1,0,12,4,3)
+R4 HP: 7 - 2 => 5
 
 
-[Tick 168] R0,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B3, B4, 
-R0(1,1,7,5,2) performs [Poison Attack] to B1(3,0,8,7,6)
-B1 HP: 4 - 1 => 3
+[Tick 132] B1,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B1(4,-2,10,7,0) performs [Camo Throw] to R4(-1,0,12,4,3)
+R4 HP: 5 - 4 => 1
+Threat set from 0 to -6
 
 
-[Tick 180] B1,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B3, B4, 
-B1(3,0,8,7,6) performs [Poison Attack] to R4(4,0,8,3,5)
-R4 HP: 2 - 3 => -1
-[AFTER-ACTION] R0 → B1: Poison Effect
-[BOON] Poison Effect on B1 (Usage: 3/3)
-B1 HP: 3 - 1 => 2
-
-
-[Tick 210] R1,  acting
-Survived Unit: R0, R1, R3, B0, B1, B3, B4, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B1(3,0,8,7,6)
-B1 HP: 2 - 8 => -6
-
-
-[Tick 252] B3, R0,  acting
-Survived Unit: R0, R1, R3, B0, B3, B4, 
-R0(1,1,7,5,2) performs [Poison Attack] to B3(0,-1,10,5,6)
-B3 HP: 6 - 2 => 4
-B3(0,-1,10,5,6) performs [Bulkup] to B3(0,-1,10,5,6)
-[AFTER-ACTION] R0 → B3: Poison Effect
-[BOON] Poison Effect on B3 (Usage: 3/3)
-B3 HP: 4 - 1 => 3
-[AFTER-ACTION] B3 → B3: BulkupSTART
-HP set from 10 to 10
-
-
-[Tick 264] R0,  acting
-Survived Unit: R0, R1, R3, B0, B3, B4, 
-R0(1,1,7,5,2) performs [Poison Attack] to B3(0,-1,10,5,6)
-B3 HP: 3 - 2 => 1
-[BOON] Refreshing existing  on B3
-
-
-[Tick 276] R0,  acting
-Survived Unit: R0, R1, R3, B0, B3, B4, 
-R0(1,1,7,5,2) performs [Poison Attack] to B3(0,-1,10,5,6)
-B3 HP: 1 - 2 => -1
-[BOON] Refreshing existing  on B3
-
-
-[Tick 280] B0, R1,  acting
-Survived Unit: R0, R1, R3, B0, B4, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B4(2,1,8,3,6)
-B4 HP: 4 - 7 => -3
-B0(4,2,12,3,4) performs [Chop] to R3(0,0,9,4,4)
-R3 HP: 7 - 4 => 3
-Defense set from 0 to 0
-
-
-[Tick 288] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(1,1,7,5,2) performs [Poison Attack] to B0(4,2,12,3,4)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 290] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B0(4,2,12,3,4)
-B0 HP: 12 - 6 => 6
-
-
-[Tick 300] B0, R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(2,1,10,6,3) performs [Blitz Shot] to B0(4,2,12,3,4)
-B0 HP: 6 - 6 => 0
-Battle Over! Red Team wins!
+[Tick 140] B3,  acting
+Survived Unit: R4, B0, B1, B2, B3, B4, 
+B3(2,1,8,3,5) performs [Chain Lightning] to R4(-1,0,12,4,3)
+R4 HP: 1 - 2 => -1
+Battle Over! Blue Team wins!

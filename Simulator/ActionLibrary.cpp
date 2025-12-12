@@ -537,7 +537,7 @@ int ActionLibrary::ApplySynergyToValue(Unit *actor, int value) {
     if (actor->Synergy) {
         {
             LogSystem::LogStream("Synergy Applied!");
-            return std::round(value * 2.0f);
+            return std::round(value * 1.5f);
         }
 
     } else

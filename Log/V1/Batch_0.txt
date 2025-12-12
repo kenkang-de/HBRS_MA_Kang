@@ -1,230 +1,119 @@
-Unit 0: R0 Attack:5 Defense:4 HP:14 Speed:2 Threat:7 Weapon: [BSW4](Berserk) Armor: [BSA31]
-Unit 1: R1 Attack:-1 Defense:13 HP:10 Speed:2 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA22]
-Unit 2: R2 Attack:5 Defense:3 HP:10 Speed:3 Threat:3 Weapon: [BSW30](Fire Arrow) Armor: [BSA21]
-Unit 3: R3 Attack:-1 Defense:0 HP:10 Speed:6 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA1]
-Unit 4: R4 Attack:1 Defense:2 HP:15 Speed:1 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA49]
-Unit 5: B0 Attack:5 Defense:3 HP:10 Speed:4 Threat:6 Weapon: [BSW17](Shoot) Armor: [BSA34]
-Unit 6: B1 Attack:3 Defense:3 HP:12 Speed:3 Threat:5 Weapon: [BSW25](Smoke Shot) Armor: [BSA41]
-Unit 7: B2 Attack:4 Defense:4 HP:15 Speed:2 Threat:6 Weapon: [BSW25](Smoke Shot) Armor: [BSA50]
-Unit 8: B3 Attack:6 Defense:3 HP:10 Speed:2 Threat:6 Weapon: [BSW28](Heavy Shot) Armor: [BSA34]
-Unit 9: B4 Attack:2 Defense:1 HP:10 Speed:1 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA33]
+Unit 0: R0 Attack:4 Defense:2 HP:12 Speed:3 Threat:4 Weapon: [BSW5](Overpower) Armor: [BSA24]
+Unit 1: R1 Attack:5 Defense:1 HP:8 Speed:5 Threat:1 Weapon: [BSW17](Shoot) Armor: [BSA25]
+Unit 2: R2 Attack:3 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW21](Poison Arrow) Armor: [BSA40]
+Unit 3: R3 Attack:3 Defense:3 HP:12 Speed:2 Threat:5 Weapon: [BSW26](Double Shot) Armor: [BSA44]
+Unit 4: R4 Attack:4 Defense:-2 HP:10 Speed:4 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA9]
+Unit 5: B0 Attack:4 Defense:6 HP:10 Speed:1 Threat:8 Weapon: [BSW5](Overpower) Armor: [BSA42]
+Unit 6: B1 Attack:7 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW28](Heavy Shot) Armor: [BSA26]
+Unit 7: B2 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
+Unit 8: B3 Attack:1 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW36](Tetrodo) Armor: [BSA30]
+Unit 9: B4 Attack:5 Defense:3 HP:10 Speed:1 Threat:11 Weapon: [BSW48](Meteor) Armor: [BSA34]
 ==========================
 
 
-[Tick 2] R3,  acting
+[Tick 10] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(-1,0,10,6,6) performs [Grace] to R0(5,4,14,2,7)
-[HEAL] R0 healed for -1 HP (from 14 to 13/14)
-R3(-1,0,10,6,6) performs [Grace] to R1(-1,13,10,2,6)
-[HEAL] R1 healed for -1 HP (from 10 to 9/10)
-R3(-1,0,10,6,6) performs [Grace] to R4(1,2,15,1,6)
-[HEAL] R4 healed for -1 HP (from 15 to 14/15)
+B2(3,0,7,6,3) performs [Wind Blade] to R2(3,4,12,3,7)
+R2 HP: 12 - 3 => 9
+B2(3,0,7,6,3) performs [Wind Blade] to R4(4,-2,10,4,7)
+R4 HP: 10 - 3 => 7
 
 
-[Tick 3] B0,  acting
+[Tick 12] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(5,3,10,4,6) performs [Shoot] to R0(5,4,14,2,7)
-R0 HP: 13 - 1 => 12
+R1(5,1,8,5,1) performs [Shoot] to B4(5,3,10,1,11)
+B4 HP: 10 - 2 => 8
 
 
-[Tick 4] R2, B1, R3,  acting
+[Tick 20] R0, R2, B1, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(5,3,10,3,3) performs [Fire Arrow] to B0(5,3,10,4,6)
-B0 HP: 10 - 4 => 6
-B1(3,3,12,3,5) performs [Smoke Shot] to R0(5,4,14,2,7)
-R0 HP: 12 - 0 => 12
-Threat set from 7 to 3
-R3(-1,0,10,6,6) performs [Grace] to R1(-1,13,10,2,6)
-[HEAL] R1 healed for -1 HP (from 9 to 8/10)
-R3(-1,0,10,6,6) performs [Grace] to R4(1,2,15,1,6)
-[HEAL] R4 healed for -1 HP (from 14 to 13/15)
-R3(-1,0,10,6,6) performs [Grace] to R0(5,4,14,2,3)
-[HEAL] R0 healed for -1 HP (from 12 to 11/14)
-
-
-[Tick 6] R0, R1, B2, B3, B0, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(4,4,15,2,6) performs [Smoke Shot] to R1(-1,13,10,2,6)
-R1 HP: 8 - 0 => 8
-Threat set from 6 to -7
-B3(6,3,10,2,6) performs [Heavy Shot] to R3(-1,0,10,6,6)
-R3 HP: 10 - 12 => -2
-Speed set from 2 to 3
-B0(5,3,10,4,6) performs [Shoot] to R4(1,2,15,1,6)
-R4 HP: 13 - 3 => 10
-R0(5,4,14,2,3) performs [Berserk] to B0(5,3,10,4,6)
-R0 HP: 11 - 4 => 7
-B0 HP: 6 - 2 => 4
-Attack set from 5 to 9
-R1(-1,13,10,2,0) performs [Final Attack] to B0(5,3,10,4,6)
-B0 HP: 4 - 9 => -5
-Defense set from 13 to 0
-[A12] R1 defense changed from 13 to 0
-
-
-[Tick 8] R2, B1,  acting
-Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
-R2(5,3,10,3,3) performs [Fire Arrow] to B2(4,4,15,2,6)
-B2 HP: 15 - 4 => 11
-B1(3,3,12,3,5) performs [Smoke Shot] to R4(1,2,15,1,6)
-R4 HP: 10 - 1 => 9
-Threat set from 6 to 4
-
-
-[Tick 10] R2, B1,  acting
-Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
-R2(5,3,10,3,3) performs [Fire Arrow] to B2(4,4,15,2,6)
-B2 HP: 11 - 4 => 7
-B1(3,3,12,3,5) performs [Smoke Shot] to R4(1,2,15,1,4)
-R4 HP: 9 - 1 => 8
-Threat set from 4 to 2
-
-
-[Tick 12] B4, R0, R1, B2, B3, R2, B1,  acting
-Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
-B2(4,4,15,2,6) performs [Smoke Shot] to R0(9,4,14,2,3)
-R0 HP: 7 - 0 => 7
-Threat set from 3 to -1
-B3(6,3,10,3,6) performs [Heavy Shot] to R2(5,3,10,3,3)
-R2 HP: 10 - 9 => 1
+R2(3,4,12,3,7) performs [Poison Arrow] to B4(5,3,10,1,11)
+B4 HP: 8 - 0 => 8
+B1(7,1,6,3,1) performs [Heavy Shot] to R2(3,4,12,3,7)
+R2 HP: 9 - 10 => -1
 Speed set from 3 to 4
-R2(5,3,10,3,3) performs [Fire Arrow] to B2(4,4,15,2,6)
-B2 HP: 7 - 4 => 3
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,3)
-R2 HP: 1 - 0 => 1
-Threat set from 3 to 0
-R0(9,4,14,2,0) performs [Berserk] to B2(4,4,15,2,6)
-R0 HP: 7 - 4 => 3
-B2 HP: 3 - 5 => -2
-Attack set from 9 to 13
-R1(-1,0,10,2,0) performs [Final Attack] to B3(6,3,10,4,6)
-B3 HP: 10 - 0 => 10
-Defense set from 0 to 0
-[A12] R1 defense changed from 0 to 0
-B4(2,1,10,1,6) performs [Haste] to B3(6,3,10,4,6)
+R0(4,2,12,3,4) performs [Overpower] to B4(5,3,10,1,11)
+B4 HP: 8 - 1 => 7
+B4 HP: 7 - 1 => 6
+B2(3,0,7,6,3) performs [Wind Blade] to R4(4,-2,10,4,7)
+R4 HP: 7 - 3 => 4
+B2(3,0,7,6,3) performs [Wind Blade] to R3(3,3,12,2,5)
+R3 HP: 12 - 3 => 9
 
 
-[Tick 14] B3, B1,  acting
-Survived Unit: R0, R1, R2, R4, B1, B3, B4, 
-B3(6,3,10,4,6) performs [Heavy Shot] to R4(1,2,15,1,2)
-R4 HP: 8 - 10 => -2
+[Tick 24] R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R1(5,1,8,5,1) performs [Shoot] to B4(5,3,10,1,11)
+B4 HP: 6 - 2 => 4
+
+
+[Tick 30] R3, B3, B2,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R3(3,3,12,2,5) performs [Double Shot] to B4(5,3,10,1,11)
+B4 HP: 4 - 0 => 4
+R3(3,3,12,2,5) performs [Double Shot] to B0(4,6,10,1,8)
+B0 HP: 10 - 0 => 10
+B3(1,2,10,2,4) performs [Tetrodo] to R4(4,-2,10,4,7)
+B2(3,0,7,6,3) performs [Wind Blade] to R4(4,-2,10,4,7)
+R4 HP: 4 - 3 => 1
+B2(3,0,7,6,3) performs [Wind Blade] to R3(3,3,12,2,5)
+R3 HP: 9 - 3 => 6
+
+
+[Tick 36] R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+R1(5,1,8,5,1) performs [Shoot] to B4(5,3,10,1,11)
+B4 HP: 4 - 2 => 2
+
+
+[Tick 40] R0, B1, B2,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
+B1(7,1,6,4,1) performs [Heavy Shot] to R4(4,-2,10,4,7)
+R4 HP: 1 - 16 => -15
 Speed set from 4 to 5
-B1(3,3,12,3,5) performs [Smoke Shot] to R0(13,4,14,2,0)
-R0 HP: 3 - 0 => 3
-Threat set from 0 to -4
-[AFTER-ACTION] B4 → B3: HasteSTART
-Speed set from 1 to 2
+R0(4,2,12,3,4) performs [Overpower] to B4(5,3,10,1,11)
+B4 HP: 2 - 1 => 1
+B4 HP: 1 - 1 => 0
+B2(3,0,7,6,3) performs [Wind Blade] to R3(3,3,12,2,5)
+R3 HP: 6 - 3 => 3
+B2(3,0,7,6,3) performs [Wind Blade] to R0(4,2,12,3,4)
+R0 HP: 12 - 3 => 9
 
 
-[Tick 15] R0, R1, R2,  acting
-Survived Unit: R0, R1, R2, B1, B3, B4, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B3(6,3,10,5,6)
-B3 HP: 10 - 3 => 7
-R0(13,4,14,2,0) performs [Berserk] to B3(6,3,10,5,6)
-R0 HP: 3 - 4 => -1
-B3 HP: 7 - 10 => -3
-Attack set from 13 to 17
-R1(-1,0,10,2,0) performs [Final Attack] to B4(2,1,10,2,6)
-B4 HP: 10 - 0 => 10
-Defense set from 0 to 0
-[A12] R1 defense changed from 0 to 0
+[Tick 48] R1,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, B3, 
+R1(5,1,8,5,1) performs [Shoot] to B0(4,6,10,1,8)
+B0 HP: 10 - 0 => 10
 
 
-[Tick 18] B1,  acting
-Survived Unit: R1, R2, B1, B4, 
-B1(3,3,12,3,5) performs [Smoke Shot] to R1(-1,0,10,2,0)
+[Tick 50] B2,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, B3, 
+B2(3,0,7,6,3) performs [Wind Blade] to R3(3,3,12,2,5)
+R3 HP: 3 - 3 => 0
+B2(3,0,7,6,3) performs [Wind Blade] to R0(4,2,12,3,4)
+R0 HP: 9 - 3 => 6
+
+
+[Tick 54] R1,  acting
+Survived Unit: R0, R1, B0, B1, B2, B3, 
+R1(5,1,8,5,1) performs [Shoot] to B0(4,6,10,1,8)
+B0 HP: 10 - 0 => 10
+
+
+[Tick 55] B1, B2,  acting
+Survived Unit: R0, R1, B0, B1, B2, B3, 
+B1(7,1,6,5,1) performs [Heavy Shot] to R0(4,2,12,3,4)
+R0 HP: 6 - 12 => -6
+Speed set from 5 to 6
+B2(3,0,7,6,3) performs [Wind Blade] to R1(5,1,8,5,1)
 R1 HP: 8 - 3 => 5
-Threat set from 0 to 0
 
 
-[Tick 20] B1,  acting
-Survived Unit: R1, R2, B1, B4, 
-B1(3,3,12,3,5) performs [Smoke Shot] to R1(-1,0,10,2,0)
+[Tick 60] B0, B3, R1, B2,  acting
+Survived Unit: R1, B0, B1, B2, B3, 
+R1(5,1,8,5,1) performs [Shoot] to B0(4,6,10,1,8)
+B0 HP: 10 - 0 => 10
+B0(4,6,10,1,8) performs [Overpower] to R1(5,1,8,5,1)
 R1 HP: 5 - 3 => 2
-Threat set from 0 to 0
-
-
-[Tick 21] B4,  acting
-Survived Unit: R1, R2, B1, B4, 
-B4(2,1,10,2,6) performs [Haste] to B4(2,1,10,2,6)
-[AFTER-ACTION] B4 → B4: HasteSTART
-Speed set from 2 to 3
-
-
-[Tick 22] B1,  acting
-Survived Unit: R1, R2, B1, B4, 
-B1(3,3,12,3,5) performs [Smoke Shot] to R1(-1,0,10,2,0)
 R1 HP: 2 - 3 => -1
-Threat set from 0 to 0
-
-
-[Tick 24] B4, B1,  acting
-Survived Unit: R2, B1, B4, 
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-B4(2,1,10,3,6) performs [Haste] to B4(2,1,10,3,6)
-[BOON] Refreshing existing  on B4
-[AFTER-ACTION] B4 → B4: HasteSTART
-[TEMP-BUFF] HasteSTART expired on B4
- - applying removal effect: HasteEND
-Speed set from 3 to 2
-[BOON] HasteSTART expired on B4 - cleaned up
-
-
-[Tick 25] R2, B4, B1,  acting
-Survived Unit: R2, B1, B4, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B4(2,1,10,2,6)
-B4 HP: 10 - 4 => 6
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-B4(2,1,10,2,6) performs [Haste] to B4(2,1,10,2,6)
-[AFTER-ACTION] B4 → B4: HasteSTART
-Speed set from 2 to 3
-
-
-[Tick 27] R2, B1,  acting
-Survived Unit: R2, B1, B4, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B4(2,1,10,3,6)
-B4 HP: 6 - 4 => 2
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-
-
-[Tick 28] R2, B1,  acting
-Survived Unit: R2, B1, B4, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B4(2,1,10,3,6)
-B4 HP: 2 - 4 => -2
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-
-
-[Tick 29] R2, B1,  acting
-Survived Unit: R2, B1, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B1(3,3,12,3,5)
-B1 HP: 12 - 4 => 8
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-
-
-[Tick 30] R2, B1,  acting
-Survived Unit: R2, B1, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B1(3,3,12,3,5)
-B1 HP: 8 - 4 => 4
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-
-
-[Tick 31] R2, B1,  acting
-Survived Unit: R2, B1, 
-R2(5,3,10,3,0) performs [Fire Arrow] to B1(3,3,12,3,5)
-B1 HP: 4 - 4 => 0
-B1(3,3,12,3,5) performs [Smoke Shot] to R2(5,3,10,3,0)
-R2 HP: 1 - 0 => 1
-Threat set from 0 to -3
-Battle Over! Red Team wins!
+Battle Over! Blue Team wins!
