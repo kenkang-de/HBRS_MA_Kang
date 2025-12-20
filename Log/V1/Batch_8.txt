@@ -1,95 +1,834 @@
-Unit 0: R0 Attack:4 Defense:-1 HP:10 Speed:6 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA6]
-Unit 1: R1 Attack:6 Defense:2 HP:12 Speed:2 Threat:6 Weapon: [BSW16](Killer's Spirit) Armor: [BSA24]
-Unit 2: R2 Attack:4 Defense:0 HP:10 Speed:2 Threat:1 Weapon: [BSW28](Heavy Shot) Armor: [BSA35]
-Unit 3: R3 Attack:-2 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW39](Healing Link) Armor: [BSA22]
-Unit 4: R4 Attack:2 Defense:1 HP:10 Speed:4 Threat:7 Weapon: [BSW49](Earthquake) Armor: [BSA12]
-Unit 5: B0 Attack:6 Defense:1 HP:4 Speed:4 Threat:3 Weapon: [BSW13](Prep Attack) Armor: [BSA27]
-Unit 6: B1 Attack:3 Defense:3 HP:7 Speed:4 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA23]
-Unit 7: B2 Attack:5 Defense:4 HP:12 Speed:2 Threat:7 Weapon: [BSW28](Heavy Shot) Armor: [BSA40]
-Unit 8: B3 Attack:1 Defense:0 HP:7 Speed:5 Threat:5 Weapon: [BSW43](Vow) Armor: [BSA5]
-Unit 9: B4 Attack:1 Defense:3 HP:7 Speed:2 Threat:5 Weapon: [BSW47](Cheer) Armor: [BSA23]
+Unit 0: R0 Attack:3 Defense:-1 HP:10 Speed:7 Threat:6 Weapon: [BSW24](Boost Acuity) Armor: [BSA2]
+Unit 1: R1 Attack:1 Defense:5 HP:15 Speed:2 Threat:9 Weapon: [BSW29](Camo Throw) Armor: [BSA48]
+Unit 2: R2 Attack:1 Defense:-2 HP:10 Speed:5 Threat:2 Weapon: [BSW33](Magic Bolt) Armor: [BSA9]
+Unit 3: R3 Attack:1 Defense:3 HP:7 Speed:3 Threat:3 Weapon: [BSW33](Magic Bolt) Armor: [BSA23]
+Unit 4: R4 Attack:3 Defense:1 HP:6 Speed:3 Threat:1 Weapon: [BSW33](Magic Bolt) Armor: [BSA26]
+Unit 5: B0 Attack:4 Defense:-1 HP:10 Speed:3 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA32]
+Unit 6: B1 Attack:3 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA30]
+Unit 7: B2 Attack:1 Defense:4 HP:10 Speed:1 Threat:8 Weapon: [BSW42](Haste) Armor: [BSA31]
+Unit 8: B3 Attack:1 Defense:4 HP:15 Speed:0 Threat:8 Weapon: [BSW47](Cheer) Armor: [BSA50]
+Unit 9: B4 Attack:2 Defense:6 HP:10 Speed:0 Threat:11 Weapon: [BSW49](Earthquake) Armor: [BSA42]
 ==========================
 
 
-[Tick 10] R0,  acting
+[Tick 30] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(4,-1,10,6,4) performs [Blitz Attack] to B2(5,4,12,2,7)
-B2 HP: 12 - 6 => 6
+R0(3,-1,10,7,6) performs [Boost Acuity] to B4(2,6,10,0,11)
+B4 HP: 10 - 0 => 10
 
 
-[Tick 12] B3,  acting
+[Tick 42] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(1,0,7,5,5) performs [Vow] to B2(5,4,12,2,7)
-Threat set from 7 to 8
-B3(1,0,7,5,5) performs [Vow] to B3(1,0,7,5,5)
-Threat set from 5 to 6
-[AFTER-ACTION] B3 → B3: Vow Effect Start
-Defense set from 0 to 1
+R2(1,-2,10,5,2) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 10 - 1 => 9
 
 
-[Tick 15] R4, B0, B1,  acting
+[Tick 60] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,3,7,4,3) performs [Poison Arrow] to R4(2,1,10,4,7)
-R4 HP: 10 - 2 => 8
-B0(6,1,4,4,3) performs [Prep Attack] to R4(2,1,10,4,7)
-HP set from 4 to 9
-R4 HP: 8 - 5 => 3
-R4(2,1,10,4,7) performs [Earthquake] to B2(5,4,12,2,8)
-B2 HP: 6 - 2 => 4
-R4(2,1,10,4,7) performs [Earthquake] to B3(1,1,7,5,6)
-B3 HP: 7 - 2 => 5
-R4(2,1,10,4,7) performs [Earthquake] to B4(1,3,7,2,5)
-B4 HP: 7 - 2 => 5
-R4(2,1,10,4,7) performs [Earthquake] to B0(6,1,9,4,3)
-B0 HP: 4 - 2 => 2
-R4(2,1,10,4,7) performs [Earthquake] to B1(3,3,7,4,3)
-B1 HP: 7 - 2 => 5
-[AFTER-ACTION] B1 → R4: Poison Effect
-[BOON] Poison Effect on R4 (Usage: 2/2)
-R4 HP: 3 - 3 => 0
+R0(3,-1,10,7,6) performs [Boost Acuity] to B4(2,6,10,0,11)
+B4 HP: 9 - 0 => 9
 
 
-[Tick 20] R3, R0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
-R0(4,-1,10,6,4) performs [Blitz Attack] to B2(5,4,12,2,8)
-B2 HP: 4 - 6 => -2
-R3(-2,3,10,3,5) performs [Healing Link] to R1(6,2,12,2,6)
-[HEAL] R1 healed for -2 HP (from 12 to 10/12)
-R3(-2,3,10,3,5) performs [Healing Link] to R0(4,-1,10,6,4)
-[HEAL] R0 healed for -2 HP (from 10 to 8/10)
+[Tick 70] R3, R4, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,9)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R0(3,-1,10,7,6)
+R0 HP: 10 - 5 => 5
+R3(1,3,7,3,3) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 9 - 1 => 8
+R4(3,1,6,3,1) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 8 - 3 => 5
 
 
-[Tick 30] R1, R2, B0, B1, R0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R2(4,0,10,2,1) performs [Heavy Shot] to B3(1,1,7,5,6)
-B3 HP: 5 - 7 => -2
-Speed set from 2 to 3
-B1(3,3,7,4,3) performs [Poison Arrow] to R1(6,2,12,2,6)
-R1 HP: 10 - 1 => 9
-R1(6,2,12,2,6) performs [Killer's Spirit] to B4(1,3,7,2,5)
-B4 HP: 5 - 3 => 2
-B0(6,1,9,4,3) performs [Prep Attack] to R1(6,2,12,2,6)
-HP set from 9 to 13
-R1 HP: 9 - 4 => 5
-R0(4,-1,10,6,4) performs [Blitz Attack] to B4(1,3,7,2,5)
-B4 HP: 2 - 7 => -5
-[AFTER-ACTION] B1 → R1: Poison Effect
-[BOON] Poison Effect on R1 (Usage: 2/2)
-R1 HP: 5 - 3 => 2
+[Tick 84] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 5 - 1 => 4
 
 
-[Tick 40] R3, R0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, 
-R0(4,-1,10,6,4) performs [Blitz Attack] to B0(6,1,13,4,3)
-B0 HP: 2 - 9 => -7
-R3(-2,3,10,3,5) performs [Healing Link] to R1(6,2,12,2,6)
-[HEAL] R1 healed for -2 HP (from 2 to 0/12)
-R3(-2,3,10,3,5) performs [Healing Link] to R0(4,-1,10,6,4)
-[HEAL] R0 healed for -2 HP (from 8 to 6/10)
+[Tick 91] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(3,-1,10,7,6) performs [Boost Acuity] to B4(2,6,10,0,11)
+B4 HP: 4 - 0 => 4
 
 
-[Tick 42] R0,  acting
-Survived Unit: R0, R2, R3, B1, 
-R0(4,-1,10,6,4) performs [Blitz Attack] to B1(3,3,7,4,3)
-B1 HP: 5 - 7 => -2
-Battle Over! Red Team wins!
+[Tick 105] R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(1,5,15,2,9) performs [Camo Throw] to B4(2,6,10,0,11)
+B4 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,9)
+R1 HP: 15 - 0 => 15
+B1(3,2,10,2,4) performs [Tripple Shot] to R0(3,-1,10,7,6)
+R0 HP: 5 - 4 => 1
+B1(3,2,10,2,4) performs [Tripple Shot] to R3(1,3,7,3,3)
+R3 HP: 7 - 0 => 7
+Threat set from 9 to 13
+
+
+[Tick 121] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(3,-1,10,7,6) performs [Boost Acuity] to B4(2,6,10,0,11)
+B4 HP: 4 - 0 => 4
+
+
+[Tick 126] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 4 - 1 => 3
+
+
+[Tick 140] R4, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,13)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R0(3,-1,10,7,6)
+R0 HP: 1 - 5 => -4
+R4(3,1,6,3,1) performs [Magic Bolt] to B4(2,6,10,0,11)
+B4 HP: 3 - 3 => 0
+
+
+[Tick 168] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 10 - 1 => 9
+
+
+[Tick 174] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 9 - 1 => 8
+
+
+[Tick 180] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 8 - 1 => 7
+
+
+[Tick 186] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 7 - 1 => 6
+
+
+[Tick 192] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 6 - 1 => 5
+
+
+[Tick 198] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 5 - 1 => 4
+
+
+[Tick 204] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 4 - 1 => 3
+
+
+[Tick 210] R1, B1, R3, R4, B0, R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R1(1,5,15,2,13) performs [Camo Throw] to B2(1,4,10,1,8)
+B2 HP: 3 - 0 => 3
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,13)
+R1 HP: 15 - 0 => 15
+B1(3,2,10,2,4) performs [Tripple Shot] to R3(1,3,7,3,3)
+R3 HP: 7 - 0 => 7
+B1(3,2,10,2,4) performs [Tripple Shot] to R2(1,-2,10,5,2)
+R2 HP: 10 - 5 => 5
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,13)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 7 - 1 => 6
+Threat set from 13 to 17
+R3(1,3,7,3,3) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 3 - 1 => 2
+R4(3,1,6,3,1) performs [Magic Bolt] to B2(1,4,10,1,8)
+B2 HP: 2 - 3 => -1
+R2(1,-2,10,5,2) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 15 - 1 => 14
+
+
+[Tick 220] R4, B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B3, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,17)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 6 - 1 => 5
+R4(3,1,6,3,1) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 14 - 3 => 11
+
+
+[Tick 222] R2,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B3, 
+R2(1,-2,10,5,2) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 11 - 1 => 10
+
+
+[Tick 225] R1, B1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B3, 
+R1(1,5,15,2,17) performs [Camo Throw] to B3(1,4,15,0,8)
+B3 HP: 10 - 0 => 10
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,17)
+R1 HP: 15 - 0 => 15
+B1(3,2,10,2,4) performs [Tripple Shot] to R3(1,3,7,3,3)
+R3 HP: 5 - 0 => 5
+B1(3,2,10,2,4) performs [Tripple Shot] to R2(1,-2,10,5,2)
+R2 HP: 5 - 5 => 0
+Threat set from 17 to 21
+
+
+[Tick 230] R4, B0,  acting
+Survived Unit: R1, R3, R4, B0, B1, B3, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 5 - 1 => 4
+R4(3,1,6,3,1) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 10 - 3 => 7
+
+
+[Tick 232] R4, B0,  acting
+Survived Unit: R1, R3, R4, B0, B1, B3, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 4 - 1 => 3
+R4(3,1,6,3,1) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 7 - 3 => 4
+
+
+[Tick 234] R4, B0,  acting
+Survived Unit: R1, R3, R4, B0, B1, B3, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 3 - 1 => 2
+R4(3,1,6,3,1) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 4 - 3 => 1
+
+
+[Tick 236] R4, B0,  acting
+Survived Unit: R1, R3, R4, B0, B1, B3, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 2 - 1 => 1
+R4(3,1,6,3,1) performs [Magic Bolt] to B3(1,4,15,0,8)
+B3 HP: 1 - 3 => -2
+
+
+[Tick 238] R4, B0,  acting
+Survived Unit: R1, R3, R4, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R3(1,3,7,3,3)
+R3 HP: 1 - 1 => 0
+R4(3,1,6,3,1) performs [Magic Bolt] to B1(3,2,10,2,4)
+B1 HP: 10 - 3 => 7
+
+
+[Tick 240] R1, B1, R4, B0,  acting
+Survived Unit: R1, R4, B0, B1, 
+R1(1,5,15,2,21) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 7 - 0 => 7
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B1(3,2,10,2,4) performs [Tripple Shot] to R4(3,1,6,3,1)
+R4 HP: 6 - 2 => 4
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,21)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R4(3,1,6,3,1)
+R4 HP: 4 - 3 => 1
+Threat set from 21 to 25
+R4(3,1,6,3,1) performs [Magic Bolt] to B1(3,2,10,2,4)
+B1 HP: 7 - 3 => 4
+
+
+[Tick 242] B0,  acting
+Survived Unit: R1, R4, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,25)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R4(3,1,6,3,1)
+R4 HP: 1 - 3 => -2
+
+
+[Tick 243] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,25) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,25)
+R1 HP: 15 - 0 => 15
+Threat set from 25 to 29
+
+
+[Tick 244] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,29)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 246] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,29) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,29)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,29)
+R1 HP: 15 - 0 => 15
+Threat set from 29 to 33
+
+
+[Tick 248] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,33)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 249] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,33) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,33)
+R1 HP: 15 - 0 => 15
+Threat set from 33 to 37
+
+
+[Tick 250] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,37)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 252] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,37) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,37)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,37)
+R1 HP: 15 - 0 => 15
+Threat set from 37 to 41
+
+
+[Tick 254] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,41)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 255] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,41) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,41)
+R1 HP: 15 - 0 => 15
+Threat set from 41 to 45
+
+
+[Tick 256] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,45)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 258] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,45) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,45)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,45)
+R1 HP: 15 - 0 => 15
+Threat set from 45 to 49
+
+
+[Tick 260] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,49)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 261] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,49) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,49)
+R1 HP: 15 - 0 => 15
+Threat set from 49 to 53
+
+
+[Tick 262] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,53)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 264] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,53) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,53)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,53)
+R1 HP: 15 - 0 => 15
+Threat set from 53 to 57
+
+
+[Tick 266] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,57)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 267] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,57) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,57)
+R1 HP: 15 - 0 => 15
+Threat set from 57 to 61
+
+
+[Tick 268] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,61)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 270] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,61) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,61)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,61)
+R1 HP: 15 - 0 => 15
+Threat set from 61 to 65
+
+
+[Tick 272] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,65)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 273] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,65) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,65)
+R1 HP: 15 - 0 => 15
+Threat set from 65 to 69
+
+
+[Tick 274] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,69)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 276] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,69) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,69)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,69)
+R1 HP: 15 - 0 => 15
+Threat set from 69 to 73
+
+
+[Tick 278] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,73)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 279] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,73) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,73)
+R1 HP: 15 - 0 => 15
+Threat set from 73 to 77
+
+
+[Tick 280] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,77)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 282] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,77) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,77)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,77)
+R1 HP: 15 - 0 => 15
+Threat set from 77 to 81
+
+
+[Tick 284] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,81)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 285] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,81) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,81)
+R1 HP: 15 - 0 => 15
+Threat set from 81 to 85
+
+
+[Tick 286] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,85)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 288] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,85) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,85)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,85)
+R1 HP: 15 - 0 => 15
+Threat set from 85 to 89
+
+
+[Tick 290] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,89)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 291] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,89) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,89)
+R1 HP: 15 - 0 => 15
+Threat set from 89 to 93
+
+
+[Tick 292] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,93)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 294] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,93) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,93)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,93)
+R1 HP: 15 - 0 => 15
+Threat set from 93 to 97
+
+
+[Tick 296] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,97)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 297] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,97) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,97)
+R1 HP: 15 - 0 => 15
+Threat set from 97 to 101
+
+
+[Tick 298] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,101)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 300] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,101) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,101)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,101)
+R1 HP: 15 - 0 => 15
+Threat set from 101 to 105
+
+
+[Tick 302] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,105)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 303] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,105) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,105)
+R1 HP: 15 - 0 => 15
+Threat set from 105 to 109
+
+
+[Tick 304] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,109)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 306] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,109) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,109)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,109)
+R1 HP: 15 - 0 => 15
+Threat set from 109 to 113
+
+
+[Tick 308] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,113)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 309] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,113) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,113)
+R1 HP: 15 - 0 => 15
+Threat set from 113 to 117
+
+
+[Tick 310] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,117)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 312] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,117) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,117)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,117)
+R1 HP: 15 - 0 => 15
+Threat set from 117 to 121
+
+
+[Tick 314] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,121)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 315] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,121) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,121)
+R1 HP: 15 - 0 => 15
+Threat set from 121 to 125
+
+
+[Tick 316] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,125)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 318] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,125) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,125)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,125)
+R1 HP: 15 - 0 => 15
+Threat set from 125 to 129
+
+
+[Tick 320] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,129)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 321] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,129) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,129)
+R1 HP: 15 - 0 => 15
+Threat set from 129 to 133
+
+
+[Tick 322] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,133)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 324] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,133) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,133)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,133)
+R1 HP: 15 - 0 => 15
+Threat set from 133 to 137
+
+
+[Tick 326] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,137)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 327] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,137) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,137)
+R1 HP: 15 - 0 => 15
+Threat set from 137 to 141
+
+
+[Tick 328] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,141)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 330] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,141) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,141)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,141)
+R1 HP: 15 - 0 => 15
+Threat set from 141 to 145
+
+
+[Tick 332] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,145)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 333] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,145) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,145)
+R1 HP: 15 - 0 => 15
+Threat set from 145 to 149
+
+
+[Tick 334] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,149)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 336] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,149) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,149)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,149)
+R1 HP: 15 - 0 => 15
+Threat set from 149 to 153
+
+
+[Tick 338] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,153)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 339] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,153) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,153)
+R1 HP: 15 - 0 => 15
+Threat set from 153 to 157
+
+
+[Tick 340] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,157)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 342] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,157) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,157)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,157)
+R1 HP: 15 - 0 => 15
+Threat set from 157 to 161
+
+
+[Tick 344] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,161)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 345] R1, B1,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,161) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,161)
+R1 HP: 15 - 0 => 15
+Threat set from 161 to 165
+
+
+[Tick 346] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,165)
+R1 HP: 15 - 0 => 15
+
+
+[Tick 348] R1, B1, B0,  acting
+Survived Unit: R1, B0, B1, 
+R1(1,5,15,2,165) performs [Camo Throw] to B1(3,2,10,2,4)
+B1 HP: 4 - 0 => 4
+B1(3,2,10,2,4) performs [Tripple Shot] to R1(1,5,15,2,165)
+R1 HP: 15 - 0 => 15
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,165)
+R1 HP: 15 - 0 => 15
+Threat set from 165 to 169
+
+
+[Tick 350] B0,  acting
+Survived Unit: R1, B0, B1, 
+B0(4,-1,10,3,2) performs [Double Shot] to R1(1,5,15,2,169)
+R1 HP: 15 - 0 => 15
+Battle Over! Tick limit reached

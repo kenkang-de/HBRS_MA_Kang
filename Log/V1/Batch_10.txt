@@ -1,129 +1,165 @@
-Unit 0: R0 Attack:5 Defense:3 HP:12 Speed:1 Threat:6 Weapon: [BSW2](Chop) Armor: [BSA44]
-Unit 1: R1 Attack:3 Defense:4 HP:10 Speed:3 Threat:8 Weapon: [BSW13](Prep Attack) Armor: [BSA31]
-Unit 2: R2 Attack:5 Defense:0 HP:6 Speed:5 Threat:1 Weapon: [BSW22](Delay Shot) Armor: [BSA16]
-Unit 3: R3 Attack:1 Defense:0 HP:8 Speed:6 Threat:6 Weapon: [BSW39](Healing Link) Armor: [BSA4]
-Unit 4: R4 Attack:0 Defense:-1 HP:10 Speed:5 Threat:5 Weapon: [BSW44](Exposure) Armor: [BSA6]
-Unit 5: B0 Attack:5 Defense:1 HP:11 Speed:5 Threat:5 Weapon: [BSW2](Chop) Armor: [BSA13]
-Unit 6: B1 Attack:3 Defense:0 HP:9 Speed:7 Threat:2 Weapon: [BSW3](Thrust) Armor: [BSA7]
-Unit 7: B2 Attack:5 Defense:0 HP:8 Speed:4 Threat:0 Weapon: [BSW18](Killing Spree) Armor: [BSA15]
-Unit 8: B3 Attack:3 Defense:2 HP:10 Speed:3 Threat:5 Weapon: [BSW24](Boost Acuity) Armor: [BSA36]
-Unit 9: B4 Attack:2 Defense:2 HP:12 Speed:3 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA24]
+Unit 0: R0 Attack:3 Defense:0 HP:8 Speed:5 Threat:2 Weapon: [BSW7](Poison Attack) Armor: [BSA15]
+Unit 1: R1 Attack:4 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW15](Taunt) Armor: [BSA17]
+Unit 2: R2 Attack:5 Defense:1 HP:8 Speed:4 Threat:3 Weapon: [BSW24](Boost Acuity) Armor: [BSA25]
+Unit 3: R3 Attack:3 Defense:0 HP:8 Speed:7 Threat:5 Weapon: [BSW31](Wrist Shot) Armor: [BSA4]
+Unit 4: R4 Attack:0 Defense:1 HP:10 Speed:4 Threat:5 Weapon: [BSW42](Haste) Armor: [BSA12]
+Unit 5: B0 Attack:6 Defense:-1 HP:10 Speed:5 Threat:7 Weapon: [BSW16](Killer's Spirit) Armor: [BSA2]
+Unit 6: B1 Attack:5 Defense:1 HP:10 Speed:3 Threat:4 Weapon: [BSW25](Smoke Shot) Armor: [BSA33]
+Unit 7: B2 Attack:3 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA3]
+Unit 8: B3 Attack:0 Defense:2 HP:12 Speed:2 Threat:5 Weapon: [BSW43](Vow) Armor: [BSA24]
+Unit 9: B4 Attack:-2 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW50](Corrosion) Armor: [BSA22]
 ==========================
 
 
-[Tick 60] B1,  acting
+[Tick 60] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,9,7,2) performs [Thrust] to R1(3,4,10,3,8)
-R1 HP: 10 - 0 => 10
+R3(3,0,8,7,5) performs [Wrist Shot] to B0(6,-1,10,5,7)
+B0 HP: 10 - 4 => 6
+Attack set from 6 to 4
+[A25] B0 attack reduced from 6 to 4 (damage: 4, reduction: 2)
 
 
-[Tick 70] R3,  acting
+[Tick 70] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,0,8,6,6) performs [Healing Link] to R1(3,4,10,3,8)
-[HEAL] R1 healed for 0 HP (from 10 to 10/10)
-R3(1,0,8,6,6) performs [Healing Link] to R0(5,3,12,1,6)
-[HEAL] R0 healed for 0 HP (from 12 to 12/12)
+B2(3,-2,10,6,4) performs [Wind Blade] to R3(3,0,8,7,5)
+R3 HP: 8 - 3 => 5
+B2(3,-2,10,6,4) performs [Wind Blade] to R4(0,1,10,4,5)
+R4 HP: 10 - 3 => 7
 
 
-[Tick 84] R2, R4, B0,  acting
+[Tick 84] R0, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(5,0,6,5,1) performs [Delay Shot] to B0(5,1,11,5,5)
-B0 HP: 11 - 4 => 7
-B0(5,1,11,5,5) performs [Chop] to R1(3,4,10,3,8)
-R1 HP: 10 - 1 => 9
-Defense set from 4 to 0
-R4(0,-1,10,5,5) performs [Exposure] to B0(5,1,11,5,5)
+R0(3,0,8,5,2) performs [Poison Attack] to B0(4,-1,10,5,7)
+B0 HP: 6 - 4 => 2
+B0(4,-1,10,5,7) performs [Killer's Spirit] to R3(3,0,8,7,5)
+R3 HP: 5 - 4 => 1
+[AFTER-ACTION] R0 → B0: Poison Effect
+[BOON] Poison Effect on B0 (Usage: 3/3)
+B0 HP: 2 - 3 => -1
+
+
+[Tick 105] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R2(5,1,8,4,3) performs [Boost Acuity] to B3(0,2,12,2,5)
+B3 HP: 12 - 5 => 7
+
+
+[Tick 121] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R3(3,0,8,7,5) performs [Wrist Shot] to B3(0,2,12,2,5)
+B3 HP: 7 - 1 => 6
+
+
+[Tick 140] R1, B1, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B1(5,1,10,3,4) performs [Smoke Shot] to R3(3,0,8,7,5)
+R3 HP: 1 - 5 => -4
 Threat set from 5 to 5
-R4(0,-1,10,5,5) performs [Exposure] to B3(3,2,10,3,5)
-Threat set from 5 to 5
-R4(0,-1,10,5,5) performs [Exposure] to B4(2,2,12,3,3)
-Threat set from 3 to 3
+R1(4,0,12,3,3) performs [Taunt] to B3(0,2,12,2,5)
+B3 HP: 6 - 2 => 4
+Threat set from 3 to -1
+B2(3,-2,10,6,4) performs [Wind Blade] to R4(0,1,10,4,5)
+R4 HP: 7 - 3 => 4
+B2(3,-2,10,6,4) performs [Wind Blade] to R2(5,1,8,4,3)
+R2 HP: 8 - 3 => 5
 
 
-[Tick 105] B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,0,8,4,0) performs [Killing Spree] to R1(3,0,10,3,8)
-R1 HP: 9 - 5 => 4
+[Tick 168] R0,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B3(0,2,12,2,5)
+B3 HP: 4 - 1 => 3
 
 
-[Tick 120] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,9,7,2) performs [Thrust] to R1(3,0,10,3,8)
-R1 HP: 4 - 6 => -2
+[Tick 180] R0,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B3(0,2,12,2,5)
+B3 HP: 3 - 1 => 2
+[BOON] Refreshing existing  on B3
 
 
-[Tick 140] B3, B4, R3,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(3,2,10,3,5) performs [Boost Acuity] to R0(5,3,12,1,6)
-R0 HP: 12 - 1 => 11
-B4(2,2,12,3,3) performs [Wind Blade] to R0(5,3,12,1,6)
-R0 HP: 11 - 2 => 9
-B4(2,2,12,3,3) performs [Wind Blade] to R3(1,0,8,6,6)
-R3 HP: 8 - 2 => 6
-R3(1,0,8,6,6) performs [Healing Link] to R0(5,3,12,1,6)
-[HEAL] R0 healed for 1 HP (from 9 to 10/12)
-R3(1,0,8,6,6) performs [Healing Link] to R4(0,-1,10,5,5)
-[HEAL] R4 healed for 0 HP (from 10 to 10/10)
+[Tick 192] R0,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B3(0,2,12,2,5)
+B3 HP: 2 - 1 => 1
+[BOON] Refreshing existing  on B3
 
 
-[Tick 168] R2, R4, B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(5,0,6,5,1) performs [Delay Shot] to B0(5,1,11,5,5)
-B0 HP: 7 - 4 => 3
-B0(5,1,11,5,5) performs [Chop] to R0(5,3,12,1,6)
-R0 HP: 10 - 2 => 8
-Defense set from 3 to 0
-R4(0,-1,10,5,5) performs [Exposure] to B0(5,1,11,5,5)
-Threat set from 5 to 5
-R4(0,-1,10,5,5) performs [Exposure] to B3(3,2,10,3,5)
-Threat set from 5 to 5
-R4(0,-1,10,5,5) performs [Exposure] to B4(2,2,12,3,3)
-Threat set from 3 to 3
+[Tick 204] R0,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B3, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B3(0,2,12,2,5)
+B3 HP: 1 - 1 => 0
+[BOON] Refreshing existing  on B3
 
 
-[Tick 180] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,9,7,2) performs [Thrust] to R0(5,0,12,1,6)
-R0 HP: 8 - 6 => 2
+[Tick 210] B4, R2, B2,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B4, 
+R2(5,1,8,4,3) performs [Boost Acuity] to B4(-2,3,10,2,5)
+B4 HP: 10 - 4 => 6
+B4(-2,3,10,2,5) performs [Corrosion] to R4(0,1,10,4,5)
+B4(-2,3,10,2,5) performs [Corrosion] to R2(5,1,8,4,3)
+B2(3,-2,10,6,4) performs [Wind Blade] to R4(0,1,10,4,5)
+R4 HP: 4 - 3 => 1
+B2(3,-2,10,6,4) performs [Wind Blade] to R2(5,1,8,4,3)
+R2 HP: 5 - 3 => 2
 
 
-[Tick 210] B2,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,0,8,4,0) performs [Killing Spree] to R0(5,0,12,1,6)
-R0 HP: 2 - 5 => -3
-R3 HP: 6 - 5 => 1
+[Tick 216] R0,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B4(-2,3,10,2,5)
+B4 HP: 6 - 0 => 6
 
 
-[Tick 240] B1,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,9,7,2) performs [Thrust] to R3(1,0,8,6,6)
-R3 HP: 1 - 6 => -5
+[Tick 220] B2,  acting
+Survived Unit: R0, R1, R2, R4, B1, B2, B4, 
+B2(3,-2,10,6,4) performs [Wind Blade] to R4(0,1,10,4,5)
+R4 HP: 1 - 3 => -2
+B2(3,-2,10,6,4) performs [Wind Blade] to R2(5,1,8,4,3)
+R2 HP: 2 - 3 => -1
 
 
-[Tick 252] R2, R4, B0,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
-R2(5,0,6,5,1) performs [Delay Shot] to B0(5,1,11,5,5)
-B0 HP: 3 - 4 => -1
-R4(0,-1,10,5,5) performs [Exposure] to B3(3,2,10,3,5)
-Threat set from 5 to 5
-R4(0,-1,10,5,5) performs [Exposure] to B4(2,2,12,3,3)
-Threat set from 3 to 3
-R4(0,-1,10,5,5) performs [Exposure] to B1(3,0,9,7,2)
-Threat set from 2 to 2
+[Tick 228] R0,  acting
+Survived Unit: R0, R1, B1, B2, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B4(-2,3,10,2,5)
+B4 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on B4
 
 
-[Tick 280] B3, B4,  acting
-Survived Unit: R2, R4, B1, B2, B3, B4, 
-B3(3,2,10,3,5) performs [Boost Acuity] to R4(0,-1,10,5,5)
-R4 HP: 10 - 9 => 1
-B4(2,2,12,3,3) performs [Wind Blade] to R4(0,-1,10,5,5)
-R4 HP: 1 - 2 => -1
-B4(2,2,12,3,3) performs [Wind Blade] to R2(5,0,6,5,1)
-R2 HP: 6 - 2 => 4
+[Tick 230] B2,  acting
+Survived Unit: R0, R1, B1, B2, B4, 
+B2(3,-2,10,6,4) performs [Wind Blade] to R0(3,0,8,5,2)
+R0 HP: 8 - 3 => 5
+B2(3,-2,10,6,4) performs [Wind Blade] to R1(4,0,12,3,0)
+R1 HP: 12 - 3 => 9
 
 
-[Tick 300] B1,  acting
-Survived Unit: R2, B1, B2, B3, B4, 
-B1(3,0,9,7,2) performs [Thrust] to R2(5,0,6,5,1)
-R2 HP: 4 - 6 => -2
+[Tick 234] R0,  acting
+Survived Unit: R0, R1, B1, B2, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B4(-2,3,10,2,5)
+B4 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on B4
+
+
+[Tick 235] B2,  acting
+Survived Unit: R0, R1, B1, B2, B4, 
+B2(3,-2,10,6,4) performs [Wind Blade] to R0(3,0,8,5,2)
+R0 HP: 5 - 3 => 2
+B2(3,-2,10,6,4) performs [Wind Blade] to R1(4,0,12,3,0)
+R1 HP: 9 - 3 => 6
+
+
+[Tick 240] R0, B2,  acting
+Survived Unit: R0, R1, B1, B2, B4, 
+R0(3,0,8,5,2) performs [Poison Attack] to B4(-2,3,10,2,5)
+B4 HP: 6 - 0 => 6
+[BOON] Refreshing existing  on B4
+B2(3,-2,10,6,4) performs [Wind Blade] to R0(3,0,8,5,2)
+R0 HP: 2 - 3 => -1
+B2(3,-2,10,6,4) performs [Wind Blade] to R1(4,0,12,3,0)
+R1 HP: 6 - 3 => 3
+
+
+[Tick 245] B2,  acting
+Survived Unit: R1, B1, B2, B4, 
+B2(3,-2,10,6,4) performs [Wind Blade] to R1(4,0,12,3,0)
+R1 HP: 3 - 3 => 0
 Battle Over! Blue Team wins!

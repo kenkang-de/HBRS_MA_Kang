@@ -1,79 +1,140 @@
-Unit 0: R0 Attack:4 Defense:-1 HP:10 Speed:5 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA6]
-Unit 1: R1 Attack:4 Defense:3 HP:13 Speed:1 Threat:7 Weapon: [BSW5](Overpower) Armor: [BSA47]
-Unit 2: R2 Attack:8 Defense:1 HP:4 Speed:4 Threat:3 Weapon: [BSW9](Blitz Attack) Armor: [BSA27]
+Unit 0: R0 Attack:6 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW14](Leech Attack) Armor: [BSA49]
+Unit 1: R1 Attack:5 Defense:0 HP:8 Speed:4 Threat:0 Weapon: [BSW18](Killing Spree) Armor: [BSA15]
+Unit 2: R2 Attack:4 Defense:2 HP:10 Speed:2 Threat:3 Weapon: [BSW28](Heavy Shot) Armor: [BSA36]
 Unit 3: R3 Attack:6 Defense:1 HP:11 Speed:1 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA46]
-Unit 4: R4 Attack:2 Defense:1 HP:8 Speed:2 Threat:3 Weapon: [BSW46](Protect) Armor: [BSA25]
-Unit 5: B0 Attack:5 Defense:4 HP:12 Speed:3 Threat:7 Weapon: [BSW1](Slash) Armor: [BSA40]
-Unit 6: B1 Attack:3 Defense:-2 HP:10 Speed:7 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA3]
-Unit 7: B2 Attack:6 Defense:1 HP:8 Speed:4 Threat:1 Weapon: [BSW32](Focus Throw) Armor: [BSA25]
-Unit 8: B3 Attack:2 Defense:1 HP:11 Speed:1 Threat:6 Weapon: [BSW40](Grace) Armor: [BSA46]
-Unit 9: B4 Attack:1 Defense:5 HP:10 Speed:0 Threat:9 Weapon: [BSW41](Bulkup) Armor: [BSA45]
+Unit 4: R4 Attack:1 Defense:1 HP:10 Speed:0 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA43]
+Unit 5: B0 Attack:4 Defense:1 HP:8 Speed:4 Threat:3 Weapon: [BSW6](Achilles' heel) Armor: [BSA25]
+Unit 6: B1 Attack:6 Defense:0 HP:12 Speed:1 Threat:5 Weapon: [BSW15](Taunt) Armor: [BSA38]
+Unit 7: B2 Attack:3 Defense:4 HP:10 Speed:3 Threat:5 Weapon: [BSW25](Smoke Shot) Armor: [BSA37]
+Unit 8: B3 Attack:1 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW36](Tetrodo) Armor: [BSA3]
+Unit 9: B4 Attack:3 Defense:1 HP:6 Speed:3 Threat:3 Weapon: [BSW40](Grace) Armor: [BSA26]
 ==========================
 
 
-[Tick 60] B1,  acting
+[Tick 2] B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,-2,10,7,4) performs [Blitz Shot] to R1(4,3,13,1,7)
-R1 HP: 13 - 7 => 6
+B3(1,-2,10,6,4) performs [Tetrodo] to R0(6,2,15,0,6)
 
 
-[Tick 84] R0,  acting
+[Tick 3] R1, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(4,-1,10,5,3) performs [Chop] to B4(1,5,10,0,9)
-B4 HP: 10 - 0 => 10
-Defense set from 5 to 2
+R1(5,0,8,4,0) performs [Killing Spree] to B1(6,0,12,1,5)
+B1 HP: 12 - 5 => 7
+B0(4,1,8,4,3) performs [Achilles' heel] to R0(6,2,15,0,6)
+R0 HP: 15 - 2 => 13
+Speed set from 0 to 1
 
 
-[Tick 105] R2, B2,  acting
+[Tick 4] B2, B4, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(6,1,8,4,1) performs [Focus Throw] to R1(4,3,13,1,7)
-R1 HP: 6 - 7 => -1
-R2(8,1,4,4,3) performs [Blitz Attack] to B4(1,2,10,0,9)
-B4 HP: 10 - 10 => 0
+B2(3,4,10,3,5) performs [Smoke Shot] to R0(6,2,15,1,6)
+R0 HP: 13 - 1 => 12
+Threat set from 6 to 4
+B4(3,1,6,3,3) performs [Grace] to B1(6,0,12,1,5)
+[HEAL] B1 healed for 3 HP (from 7 to 10/12)
+B4(3,1,6,3,3) performs [Grace] to B2(3,4,10,3,5)
+[HEAL] B2 healed for 0 HP (from 10 to 10/10)
+B4(3,1,6,3,3) performs [Grace] to B3(1,-2,10,6,4)
+[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+B3(1,-2,10,6,4) performs [Tetrodo] to R4(1,1,10,0,5)
 
 
-[Tick 120] B1,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-B1(3,-2,10,7,4) performs [Blitz Shot] to R3(6,1,11,1,4)
-R3 HP: 11 - 9 => 2
+[Tick 6] R2, R1, B0, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(4,2,10,2,3) performs [Heavy Shot] to B1(6,0,12,1,5)
+B1 HP: 10 - 8 => 2
+Speed set from 2 to 3
+R1(5,0,8,4,0) performs [Killing Spree] to B1(6,0,12,1,5)
+B1 HP: 2 - 5 => -3
+B2 HP: 10 - 1 => 9
+B0(4,1,8,4,3) performs [Achilles' heel] to R4(1,1,10,0,5)
+R4 HP: 10 - 3 => 7
+Speed set from 0 to 1
+B3(1,-2,10,6,4) performs [Tetrodo] to R4(1,1,10,1,5)
+[BOON] Refreshing existing  on R4
 
 
-[Tick 140] B0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
-B0(5,4,12,3,7) performs [Slash] to R3(6,1,11,1,4)
-R3 HP: 2 - 4 => -2
+[Tick 8] B2, B4, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+B2(3,4,10,3,5) performs [Smoke Shot] to R4(1,1,10,1,5)
+R4 HP: 7 - 2 => 5
+Threat set from 5 to 4
+B4(3,1,6,3,3) performs [Grace] to B2(3,4,10,3,5)
+[HEAL] B2 healed for 1 HP (from 9 to 10/10)
+B4(3,1,6,3,3) performs [Grace] to B3(1,-2,10,6,4)
+[HEAL] B3 healed for 0 HP (from 10 to 10/10)
+B4(3,1,6,3,3) performs [Grace] to B0(4,1,8,4,3)
+[HEAL] B0 healed for 0 HP (from 8 to 8/8)
+B3(1,-2,10,6,4) performs [Tetrodo] to R0(6,2,15,1,4)
+[BOON] Refreshing existing  on R0
 
 
-[Tick 168] R0,  acting
-Survived Unit: R0, R2, R4, B0, B1, B2, B3, 
-R0(4,-1,10,5,3) performs [Chop] to B0(5,4,12,3,7)
-B0 HP: 12 - 0 => 12
-Defense set from 4 to 1
+[Tick 9] R1, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+R1(5,0,8,4,0) performs [Killing Spree] to B2(3,4,10,3,5)
+B2 HP: 10 - 1 => 9
+B0(4,1,8,4,3) performs [Achilles' heel] to R0(6,2,15,1,4)
+R0 HP: 12 - 2 => 10
+Speed set from 1 to 2
 
 
-[Tick 180] B1,  acting
-Survived Unit: R0, R2, R4, B0, B1, B2, B3, 
-B1(3,-2,10,7,4) performs [Blitz Shot] to R0(4,-1,10,5,3)
-R0 HP: 10 - 11 => -1
+[Tick 10] B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+B3(1,-2,10,6,4) performs [Tetrodo] to R0(6,2,15,2,4)
+[BOON] Refreshing existing  on R0
 
 
-[Tick 210] R4, R2, B2,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, 
-B2(6,1,8,4,1) performs [Focus Throw] to R2(8,1,4,4,3)
-R2 HP: 4 - 7 => -3
-R4(2,1,8,2,3) performs [Protect] to R4(2,1,8,2,3)
-[AFTER-ACTION] R4 → R4: ProtectSTART
-Defense set from 1 to 4
+[Tick 12] R0, R3, R2, B2, B4, R1, B0, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+R3(6,1,11,1,4) performs [Fire Arrow] to B2(3,4,10,3,5)
+B2 HP: 9 - 5 => 4
+R2(4,2,10,3,3) performs [Heavy Shot] to B2(3,4,10,3,5)
+B2 HP: 4 - 4 => 0
+Speed set from 3 to 4
+B2(3,4,10,3,5) performs [Smoke Shot] to R0(6,2,15,2,4)
+R0 HP: 10 - 1 => 9
+Threat set from 4 to 2
+R1(5,0,8,4,0) performs [Killing Spree] to B3(1,-2,10,6,4)
+B3 HP: 10 - 7 => 3
+R0(6,2,15,2,2) performs [Leech Attack] to B3(1,-2,10,6,4)
+B3 HP: 3 - 8 => -5
+[HEAL] R0 healed for 6 HP (from 9 to 15/15)
+B0(4,1,8,4,3) performs [Achilles' heel] to R3(6,1,11,1,4)
+R3 HP: 11 - 3 => 8
+Speed set from 1 to 2
+[AFTER-ACTION] B3 → R0: Tetrodo Effect
+[BOON] Tetrodo Effect on R0 (Usage: 2/2)
+R0 HP: 15 - 1 => 14
+B4(3,1,6,3,3) performs [Grace] to B0(4,1,8,4,3)
+[HEAL] B0 healed for 0 HP (from 8 to 8/8)
+B3(1,-2,10,6,4) performs [Tetrodo] to R3(6,1,11,2,4)
 
 
-[Tick 231] B2,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-B2(6,1,8,4,1) performs [Focus Throw] to R4(2,4,8,2,3)
-R4 HP: 8 - 7 => 1
+[Tick 15] R1, B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B4, 
+R1(5,0,8,4,0) performs [Killing Spree] to B0(4,1,8,4,3)
+B0 HP: 8 - 4 => 4
+B0(4,1,8,4,3) performs [Achilles' heel] to R3(6,1,11,2,4)
+R3 HP: 8 - 3 => 5
+Speed set from 2 to 3
 
 
-[Tick 240] B1,  acting
-Survived Unit: R4, B0, B1, B2, B3, 
-B1(3,-2,10,7,4) performs [Blitz Shot] to R4(2,4,8,2,3)
-R4 HP: 1 - 6 => -5
-Battle Over! Blue Team wins!
+[Tick 16] R2, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B4, 
+R2(4,2,10,4,3) performs [Heavy Shot] to B0(4,1,8,4,3)
+B0 HP: 4 - 7 => -3
+Speed set from 4 to 5
+
+
+[Tick 18] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B4, 
+R1(5,0,8,4,0) performs [Killing Spree] to B4(3,1,6,3,3)
+B4 HP: 6 - 4 => 2
+R0(6,2,15,2,2) performs [Leech Attack] to B4(3,1,6,3,3)
+B4 HP: 2 - 5 => -3
+[HEAL] R0 healed for 1 HP (from 14 to 15/15)
+[AFTER-ACTION] B3 → R0: Tetrodo Effect
+[BOON] Tetrodo Effect on R0 (Usage: 1/2)
+R0 HP: 15 - 1 => 14
+[BOON] Tetrodo Effect expired on R0 - cleaned up
+Battle Over! Red Team wins!

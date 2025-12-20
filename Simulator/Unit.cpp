@@ -49,6 +49,8 @@ void Unit::ResetUnit() {
     ClearActiveBoons();
     isFrozen = false;
 
+    Synergy = false;
+
     Tickinterval = 1;
     TickDelay = 0;
 }

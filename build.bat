@@ -89,6 +89,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
+echo Compiling ComponentSelector.cpp...
+g++ %COMPILE_FLAGS% -I. -I.. -I../Element -c ComponentSelector.cpp -o ComponentSelector.o
+if %ERRORLEVEL% NEQ 0 (
+    echo Failed to compile ComponentSelector.cpp
+    exit /b 1
+)
+
 REM Build essential Sampling components
 cd ../Sampling
 echo Compiling BatchCreator.cpp...
@@ -201,6 +208,7 @@ g++ %LINK_FLAGS% ^
     Element/Stat.o ^
     Element/CounterTypeInitializer.o ^
     Element/SynergyComponentInitializer.o ^
+    Element/ComponentSelector.o ^
     Sampling/BatchCreator.o ^
     Sampling/NoveltyChecker.o ^
     Analysis/TestSubjectToCSV.o ^

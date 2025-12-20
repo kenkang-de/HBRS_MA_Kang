@@ -1,246 +1,104 @@
-Unit 0: R0 Attack:1 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW8](Charge Attack) Armor: [BSA22]
-Unit 1: R1 Attack:4 Defense:6 HP:10 Speed:1 Threat:7 Weapon: [BSW18](Killing Spree) Armor: [BSA42]
-Unit 2: R2 Attack:3 Defense:1 HP:11 Speed:6 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA13]
-Unit 3: R3 Attack:1 Defense:3 HP:7 Speed:2 Threat:5 Weapon: [BSW37](Freeze) Armor: [BSA23]
-Unit 4: R4 Attack:-1 Defense:0 HP:12 Speed:4 Threat:3 Weapon: [BSW39](Healing Link) Armor: [BSA17]
-Unit 5: B0 Attack:3 Defense:0 HP:16 Speed:4 Threat:2 Weapon: [BSW4](Berserk) Armor: [BSA17]
-Unit 6: B1 Attack:4 Defense:-2 HP:10 Speed:7 Threat:5 Weapon: [BSW29](Camo Throw) Armor: [BSA3]
-Unit 7: B2 Attack:2 Defense:3 HP:10 Speed:2 Threat:6 Weapon: [BSW33](Magic Bolt) Armor: [BSA34]
-Unit 8: B3 Attack:2 Defense:1 HP:8 Speed:3 Threat:5 Weapon: [BSW35](Chain Lightning) Armor: [BSA18]
-Unit 9: B4 Attack:0 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW41](Bulkup) Armor: [BSA41]
+Unit 0: R0 Attack:6 Defense:2 HP:12 Speed:2 Threat:7 Weapon: [BSW11](Fade Attack) Armor: [BSA39]
+Unit 1: R1 Attack:6 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
+Unit 2: R2 Attack:0 Defense:0 HP:9 Speed:5 Threat:2 Weapon: [BSW33](Magic Bolt) Armor: [BSA7]
+Unit 3: R3 Attack:2 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA10]
+Unit 4: R4 Attack:4 Defense:0 HP:8 Speed:3 Threat:5 Weapon: [BSW48](Meteor) Armor: [BSA15]
+Unit 5: B0 Attack:5 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA2]
+Unit 6: B1 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
+Unit 7: B2 Attack:2 Defense:1 HP:12 Speed:2 Threat:6 Weapon: [BSW35](Chain Lightning) Armor: [BSA20]
+Unit 8: B3 Attack:-1 Defense:1 HP:12 Speed:3 Threat:4 Weapon: [BSW40](Grace) Armor: [BSA20]
+Unit 9: B4 Attack:-1 Defense:0 HP:10 Speed:4 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA14]
 ==========================
 
 
-[Tick 12] B1,  acting
+[Tick 10] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,5) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 10 - 0 => 10
-Threat set from 5 to -1
+B1(3,0,7,6,3) performs [Wind Blade] to R0(6,2,12,2,7)
+R0 HP: 12 - 3 => 9
+B1(3,0,7,6,3) performs [Wind Blade] to R3(2,0,10,4,7)
+R3 HP: 10 - 3 => 7
 
 
-[Tick 14] R2,  acting
+[Tick 12] R1, R2, B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 12 - 0 => 12
+R1(6,0,10,5,4) performs [Heavy Shot] to B0(5,-1,10,5,6)
+B0 HP: 10 - 13 => -3
+Speed set from 5 to 6
+R2(0,0,9,5,2) performs [Magic Bolt] to B2(2,1,12,2,6)
+B2 HP: 12 - 0 => 12
 
 
-[Tick 21] R0, R4, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
-B4 HP: 12 - 1 => 11
-B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
-B0 HP: 16 - 0 => 16
-R1 HP: 10 - 0 => 10
-Attack set from 3 to 3
-R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
-[HEAL] R1 healed for -1 HP (from 10 to 9/10)
-R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
-[HEAL] R0 healed for -1 HP (from 12 to 11/12)
+[Tick 15] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B4(-1,0,10,4,3) performs [Exposure] to R0(6,2,12,2,7)
+Threat set from 7 to 6
+B4(-1,0,10,4,3) performs [Exposure] to R3(2,0,10,4,7)
+Threat set from 7 to 6
+B4(-1,0,10,4,3) performs [Exposure] to R4(4,0,8,3,5)
+Threat set from 5 to 4
 
 
-[Tick 24] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 9 - 0 => 9
-Threat set from 0 to -6
+[Tick 20] R4, B3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R4(4,0,8,3,4) performs [Meteor] to B2(2,1,12,2,6)
+B2 HP: 12 - 4 => 8
+R4(4,0,8,3,4) performs [Meteor] to B3(-1,1,12,3,4)
+B3 HP: 12 - 4 => 8
+R4(4,0,8,3,4) performs [Meteor] to B1(3,0,7,6,3)
+B1 HP: 7 - 4 => 3
+R4(4,0,8,3,4) performs [Meteor] to B4(-1,0,10,4,3)
+B4 HP: 10 - 4 => 6
+B3(-1,1,12,3,4) performs [Grace] to B2(2,1,12,2,6)
+[HEAL] B2 healed for -1 HP (from 8 to 7/12)
+B3(-1,1,12,3,4) performs [Grace] to B1(3,0,7,6,3)
+[HEAL] B1 healed for -1 HP (from 3 to 2/7)
+B3(-1,1,12,3,4) performs [Grace] to B4(-1,0,10,4,3)
+[HEAL] B4 healed for -1 HP (from 6 to 5/10)
+B1(3,0,7,6,3) performs [Wind Blade] to R0(6,2,12,2,6)
+R0 HP: 9 - 3 => 6
+B1(3,0,7,6,3) performs [Wind Blade] to R3(2,0,10,4,6)
+R3 HP: 7 - 3 => 4
 
 
-[Tick 28] B3, R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-[BOON] Refreshing existing  on B4
-B3(2,1,8,3,5) performs [Chain Lightning] to R1(4,6,10,1,7)
-R1 HP: 9 - 2 => 7
-B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
-R0 HP: 11 - 2 => 9
-B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
-R3 HP: 7 - 2 => 5
+[Tick 24] R1, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R1(6,0,10,6,4) performs [Heavy Shot] to B2(2,1,12,2,6)
+B2 HP: 7 - 11 => -4
+Speed set from 6 to 7
+R2(0,0,9,5,2) performs [Magic Bolt] to B3(-1,1,12,3,4)
+B3 HP: 8 - 0 => 8
 
 
-[Tick 36] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 7 - 0 => 7
-Threat set from 0 to -6
+[Tick 30] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+R0(6,2,12,2,6) performs [Fade Attack] to B3(-1,1,12,3,4)
+B3 HP: 8 - 5 => 3
+Threat set from 6 to 2
 
 
-[Tick 42] B2, R0, R4, B0, R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-[BOON] Refreshing existing  on B4
-R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
-B0 HP: 16 - 0 => 16
-R1 HP: 7 - 0 => 7
-Attack set from 3 to 3
-B2(2,3,10,2,6) performs [Magic Bolt] to R1(4,6,10,1,7)
-R1 HP: 7 - 2 => 5
-R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
-[HEAL] R1 healed for -1 HP (from 5 to 4/10)
-R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
-[HEAL] R0 healed for -1 HP (from 9 to 8/12)
+[Tick 34] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
+R1(6,0,10,7,4) performs [Heavy Shot] to B3(-1,1,12,3,4)
+B3 HP: 3 - 11 => -8
+Speed set from 7 to 8
 
 
-[Tick 48] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 4 - 0 => 4
-Threat set from 0 to -6
+[Tick 36] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
+R2(0,0,9,5,2) performs [Magic Bolt] to B1(3,0,7,6,3)
+B1 HP: 2 - 0 => 2
 
 
-[Tick 56] B3, R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-[BOON] Refreshing existing  on B4
-B3(2,1,8,3,5) performs [Chain Lightning] to R1(4,6,10,1,7)
-R1 HP: 4 - 2 => 2
-B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
-R0 HP: 8 - 2 => 6
-B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
-R3 HP: 5 - 2 => 3
+[Tick 40] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
+R4(4,0,8,3,4) performs [Meteor] to B1(3,0,7,6,3)
+B1 HP: 2 - 4 => -2
+R4(4,0,8,3,4) performs [Meteor] to B4(-1,0,10,4,3)
+B4 HP: 5 - 4 => 1
 
 
-[Tick 60] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 2 - 0 => 2
-Threat set from 0 to -6
-
-
-[Tick 63] R0, R4, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
-B0 HP: 16 - 0 => 16
-R1 HP: 2 - 0 => 2
-Attack set from 3 to 3
-R4(-1,0,12,4,3) performs [Healing Link] to R1(4,6,10,1,7)
-[HEAL] R1 healed for -1 HP (from 2 to 1/10)
-R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
-[HEAL] R0 healed for -1 HP (from 6 to 5/12)
-
-
-[Tick 70] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 11 - 0 => 11
-[BOON] Refreshing existing  on B4
-
-
-[Tick 72] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 1 - 0 => 1
-Threat set from 0 to -6
-
-
-[Tick 84] R1, B2, B3, R0, R4, B0, R2, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(4,6,10,1,7) performs [Killing Spree] to B4(0,3,12,1,7)
-B4 HP: 11 - 1 => 10
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 10 - 0 => 10
-[BOON] Refreshing existing  on B4
-B1(4,-2,10,7,0) performs [Camo Throw] to R1(4,6,10,1,7)
-R1 HP: 1 - 0 => 1
-Threat set from 0 to -6
-R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
-B4 HP: 10 - 0 => 10
-B0(3,0,16,4,2) performs [Berserk] to R1(4,6,10,1,7)
-B0 HP: 16 - 0 => 16
-R1 HP: 1 - 0 => 1
-Attack set from 3 to 3
-B2(2,3,10,2,6) performs [Magic Bolt] to R1(4,6,10,1,7)
-R1 HP: 1 - 2 => -1
-B3(2,1,8,3,5) performs [Chain Lightning] to R0(1,3,12,4,5)
-R0 HP: 5 - 2 => 3
-B3(2,1,8,3,5) performs [Chain Lightning] to R3(1,3,7,2,5)
-R3 HP: 3 - 2 => 1
-B3(2,1,8,3,5) performs [Chain Lightning] to R2(3,1,11,6,4)
-R2 HP: 11 - 2 => 9
-R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
-[HEAL] R0 healed for -1 HP (from 3 to 2/12)
-R4(-1,0,12,4,3) performs [Healing Link] to R3(1,3,7,2,5)
-[HEAL] R3 healed for -1 HP (from 1 to 0/7)
-
-
-[Tick 96] B1,  acting
-Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R0(1,3,12,4,5)
-R0 HP: 2 - 1 => 1
-Threat set from 0 to -6
-
-
-[Tick 98] R2,  acting
-Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 10 - 0 => 10
-[BOON] Refreshing existing  on B4
-
-
-[Tick 105] R0, R4, B0,  acting
-Survived Unit: R0, R2, R4, B0, B1, B2, B3, B4, 
-R0(1,3,12,4,5) performs [Charge Attack] to B4(0,3,12,1,7)
-B4 HP: 10 - 0 => 10
-B0(3,0,16,4,2) performs [Berserk] to R0(1,3,12,4,5)
-B0 HP: 16 - 0 => 16
-R0 HP: 1 - 0 => 1
-Attack set from 3 to 3
-R4(-1,0,12,4,3) performs [Healing Link] to R0(1,3,12,4,5)
-[HEAL] R0 healed for -1 HP (from 1 to 0/12)
-R4(-1,0,12,4,3) performs [Healing Link] to R2(3,1,11,6,4)
-[HEAL] R2 healed for -1 HP (from 9 to 8/11)
-
-
-[Tick 108] B1,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R2(3,1,11,6,4)
-R2 HP: 8 - 3 => 5
-Threat set from 0 to -6
-
-
-[Tick 112] B3, R2,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
-R2(3,1,11,6,4) performs [Poison Arrow] to B4(0,3,12,1,7)
-B4 HP: 10 - 0 => 10
-[BOON] Refreshing existing  on B4
-B3(2,1,8,3,5) performs [Chain Lightning] to R2(3,1,11,6,4)
-R2 HP: 5 - 2 => 3
-B3(2,1,8,3,5) performs [Chain Lightning] to R4(-1,0,12,4,3)
-R4 HP: 12 - 2 => 10
-
-
-[Tick 120] B1,  acting
-Survived Unit: R2, R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R2(3,1,11,6,4)
-R2 HP: 3 - 3 => 0
-Threat set from 0 to -6
-
-
-[Tick 126] B2, B0,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-B0(3,0,16,4,2) performs [Berserk] to R4(-1,0,12,4,3)
-B0 HP: 16 - 0 => 16
-R4 HP: 10 - 3 => 7
-Attack set from 3 to 3
-B2(2,3,10,2,6) performs [Magic Bolt] to R4(-1,0,12,4,3)
-R4 HP: 7 - 2 => 5
-
-
-[Tick 132] B1,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-B1(4,-2,10,7,0) performs [Camo Throw] to R4(-1,0,12,4,3)
-R4 HP: 5 - 4 => 1
-Threat set from 0 to -6
-
-
-[Tick 140] B3,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-B3(2,1,8,3,5) performs [Chain Lightning] to R4(-1,0,12,4,3)
-R4 HP: 1 - 2 => -1
-Battle Over! Blue Team wins!
+[Tick 45] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B4, 
+R3(2,0,10,4,6) performs [Meteor] to B4(-1,0,10,4,3)
+B4 HP: 1 - 2 => -1
+Battle Over! Red Team wins!

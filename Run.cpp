@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "Element/BattleActionLoader.h"
+#include "Element/ComponentSelector.h"
 #include "Element/CounterTypeInitializer.h"
 #include "Element/ElementList.h"
 #include "Element/EquipmentLoader.h"
@@ -73,6 +74,9 @@ class NewMasterController {
 
         elementList = loader.InstantiateElements(actionMap);
 
+        ComponentSelector selector;
+        elementList = selector.SelectRandomCompoent(elementList, 40);
+
         // Set armor, weapons components CounterType
         CounterTypeInitializer counterTypeInitializer(&elementList.armors, &elementList.weapons);
         counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
@@ -122,48 +126,33 @@ class NewMasterController {
 
         GameComponentToCSV::SetSharedDirectory(BalancingLogToCSV::GetSharedDirectory());
 
-        // If there is no setting file, run the experiment once.
-        if (settingFiles.empty()) {
-            std::cout << "EXPERIMENT 1/1" << std::endl;
-            std::cout << "No experiment files found. Using default settings." << std::endl;
+        // Setting files found - run for each file
+        int experimentCount = 1;
+        for (const std::string &fileDir : settingFiles) {
+            std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
+            std::cout << "Loading settings from: " << fileDir << std::endl;
 
-            BalancingLogToCSV::SetExperimentNumber(1);
-            GameComponentToCSV::SetExperimentNumber(1);
+            BalancingLogToCSV::SetExperimentNumber(experimentCount);
+            GameComponentToCSV::SetExperimentNumber(experimentCount);
+
+            settings.LoadFromFile(fileDir);
+
+            // Init CS
+            counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
+            counterTypeInitializer.Init_ArmorList();
+            counterTypeInitializer.Init_WeaponList();
+
+            // Init SYS
+            synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
+            SynergyRule::PrintTotalUnitSynergyApplied();
 
             BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
             balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
 
             BalancingLogToCSV::Convert();
             GameComponentToCSV::Convert(testSubjects);
-        } else {
-            // Setting files found - run for each file
-            int experimentCount = 1;
-            for (const std::string &fileDir : settingFiles) {
-                std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
-                std::cout << "Loading settings from: " << fileDir << std::endl;
 
-                BalancingLogToCSV::SetExperimentNumber(experimentCount);
-                GameComponentToCSV::SetExperimentNumber(experimentCount);
-
-                settings.LoadFromFile(fileDir);
-
-                // Init CS
-                counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
-                counterTypeInitializer.Init_ArmorList();
-                counterTypeInitializer.Init_WeaponList();
-
-                // Init SYS
-                synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
-                SynergyRule::PrintTotalUnitSynergyApplied();
-
-                BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
-                balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
-
-                BalancingLogToCSV::Convert();
-                GameComponentToCSV::Convert(testSubjects);
-
-                experimentCount++;
-            }
+            experimentCount++;
         }
 
         std::cout << "Auto balancing ended" << std::endl;

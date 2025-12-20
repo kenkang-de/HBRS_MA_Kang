@@ -21,6 +21,7 @@ class ExperimentSettings {
     static constexpr float Default_RATIO_BS = 1.0f;
     static constexpr float Default_RATIO_CS = 0.0f;
     static constexpr float Default_RATIO_SYS = 0.0f;
+    static constexpr int Default_TOTAL_GAMECOMPONENTNUMBER = 50;
 
     inline static int APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
     inline static int INDIVIDUALS_PER_GENERATION = Default_INDIVIDUALS_PER_GENERATION;
@@ -32,6 +33,7 @@ class ExperimentSettings {
     inline static float RATIO_BS = Default_RATIO_BS;
     inline static float RATIO_CS = Default_RATIO_CS;
     inline static float RATIO_SYS = Default_RATIO_SYS;
+    inline static int TOTAL_GAMECOMPONENTNUMBER = Default_TOTAL_GAMECOMPONENTNUMBER;
 
     void LoadFromFile(const std::string &filename) {
         APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
@@ -44,6 +46,7 @@ class ExperimentSettings {
         RATIO_BS = Default_RATIO_BS;
         RATIO_CS = Default_RATIO_CS;
         RATIO_SYS = Default_RATIO_SYS;
+        TOTAL_GAMECOMPONENTNUMBER = Default_TOTAL_GAMECOMPONENTNUMBER;
 
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -84,6 +87,8 @@ class ExperimentSettings {
                 RATIO_CS = std::stof(line.substr(9));
             } else if (line.find("RATIO_SYS=") == 0) {
                 RATIO_SYS = std::stof(line.substr(10));
+            } else if (line.find("TOTAL_GAMECOMPONENTNUMBER=") == 0) {
+                TOTAL_GAMECOMPONENTNUMBER = std::stoi(line.substr(26));
             }
         }
 
