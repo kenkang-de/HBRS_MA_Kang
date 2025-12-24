@@ -8,6 +8,8 @@
 #include <string>
 #include <vector>
 
+enum RUNMODE { STRATEGY, BALANCING };
+
 class ExperimentSettings {
   public:
     // Default values
@@ -21,7 +23,7 @@ class ExperimentSettings {
     static constexpr float Default_RATIO_BS = 1.0f;
     static constexpr float Default_RATIO_CS = 0.0f;
     static constexpr float Default_RATIO_SYS = 0.0f;
-    static constexpr int Default_TOTAL_GAMECOMPONENTNUMBER = 50;
+    static constexpr RUNMODE Default_RUNMODE = RUNMODE::STRATEGY;
 
     inline static int APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
     inline static int INDIVIDUALS_PER_GENERATION = Default_INDIVIDUALS_PER_GENERATION;
@@ -33,7 +35,21 @@ class ExperimentSettings {
     inline static float RATIO_BS = Default_RATIO_BS;
     inline static float RATIO_CS = Default_RATIO_CS;
     inline static float RATIO_SYS = Default_RATIO_SYS;
-    inline static int TOTAL_GAMECOMPONENTNUMBER = Default_TOTAL_GAMECOMPONENTNUMBER;
+    inline static RUNMODE currentRunMode = Default_RUNMODE;
+
+    std::string GetExperimentFolderName() const {
+        std::ostringstream oss;
+
+        if (currentRunMode == STRATEGY) {
+            oss << "BS(" << std::fixed << std::setprecision(1) << RATIO_BS << ")"
+                << "CS(" << std::fixed << std::setprecision(1) << RATIO_CS << ")"
+                << "SYS(" << std::fixed << std::setprecision(1) << RATIO_SYS << ")";
+        } else if (currentRunMode == BALANCING) {
+            oss << "POP(" << INDIVIDUALS_PER_GENERATION << ")";
+        }
+
+        return oss.str();
+    }
 
     void LoadFromFile(const std::string &filename) {
         APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
@@ -46,7 +62,7 @@ class ExperimentSettings {
         RATIO_BS = Default_RATIO_BS;
         RATIO_CS = Default_RATIO_CS;
         RATIO_SYS = Default_RATIO_SYS;
-        TOTAL_GAMECOMPONENTNUMBER = Default_TOTAL_GAMECOMPONENTNUMBER;
+        currentRunMode = Default_RUNMODE;
 
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -87,8 +103,13 @@ class ExperimentSettings {
                 RATIO_CS = std::stof(line.substr(9));
             } else if (line.find("RATIO_SYS=") == 0) {
                 RATIO_SYS = std::stof(line.substr(10));
-            } else if (line.find("TOTAL_GAMECOMPONENTNUMBER=") == 0) {
-                TOTAL_GAMECOMPONENTNUMBER = std::stoi(line.substr(26));
+            } else if (line.find("RUNMODE=") == 0) {
+                std::string mode = line.substr(8);
+                if (mode == "STRATEGY") {
+                    currentRunMode = RUNMODE::STRATEGY;
+                } else if (mode == "BALANCING") {
+                    currentRunMode = RUNMODE::BALANCING;
+                }
             }
         }
 

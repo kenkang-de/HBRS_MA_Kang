@@ -1,170 +1,124 @@
-Unit 0: R0 Attack:6 Defense:-1 HP:10 Speed:3 Threat:4 Weapon: [BSW9](Blitz Attack) Armor: [BSA32]
-Unit 1: R1 Attack:6 Defense:1 HP:11 Speed:2 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA46]
-Unit 2: R2 Attack:2 Defense:-1 HP:10 Speed:6 Threat:2 Weapon: [BSW26](Double Shot) Armor: [BSA6]
-Unit 3: R3 Attack:2 Defense:1 HP:7 Speed:5 Threat:1 Weapon: [BSW29](Camo Throw) Armor: [BSA19]
-Unit 4: R4 Attack:1 Defense:2 HP:12 Speed:2 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA39]
-Unit 5: B0 Attack:2 Defense:1 HP:7 Speed:6 Threat:0 Weapon: [BSW17](Shoot) Armor: [BSA19]
-Unit 6: B1 Attack:2 Defense:1 HP:12 Speed:5 Threat:2 Weapon: [BSW17](Shoot) Armor: [BSA20]
-Unit 7: B2 Attack:3 Defense:0 HP:12 Speed:4 Threat:1 Weapon: [BSW28](Heavy Shot) Armor: [BSA17]
-Unit 8: B3 Attack:0 Defense:-1 HP:10 Speed:4 Threat:4 Weapon: [BSW37](Freeze) Armor: [BSA6]
-Unit 9: B4 Attack:2 Defense:0 HP:10 Speed:5 Threat:9 Weapon: [BSW48](Meteor) Armor: [BSA1]
+Unit 0: R0 Attack:2 Defense:6 HP:16 Speed:9 Threat:12 Weapon: [BSW8](Charge Attack) Armor: [BSA8]
+Unit 1: R1 Attack:14 Defense:6 HP:29 Speed:7 Threat:14 Weapon: [BSW25](Smoke Shot) Armor: [BSA37]
+Unit 2: R2 Attack:20 Defense:7 HP:16 Speed:10 Threat:13 Weapon: [BSW26](Double Shot) Armor: [BSA18]
+Unit 3: R3 Attack:19 Defense:3 HP:20 Speed:7 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA32]
+Unit 4: R4 Attack:7 Defense:7 HP:33 Speed:15 Threat:6 Weapon: [BSW27](Tripple Shot) Armor: [BSA44]
+Unit 5: B0 Attack:19 Defense:10 HP:25 Speed:5 Threat:16 Weapon: [BSW1](Slash) Armor: [BSA27]
+Unit 6: B1 Attack:14 Defense:5 HP:22 Speed:9 Threat:5 Weapon: [BSW21](Poison Arrow) Armor: [BSA5]
+Unit 7: B2 Attack:22 Defense:2 HP:24 Speed:10 Threat:15 Weapon: [BSW26](Double Shot) Armor: [BSA2]
+Unit 8: B3 Attack:14 Defense:5 HP:21 Speed:10 Threat:14 Weapon: [BSW31](Wrist Shot) Armor: [BSA4]
+Unit 9: B4 Attack:9 Defense:10 HP:22 Speed:7 Threat:14 Weapon: [BSW48](Meteor) Armor: [BSA40]
 ==========================
 
 
-[Tick 10] R2, B0,  acting
+[Tick 42] R4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(2,-1,10,6,2) performs [Double Shot] to B4(2,0,10,5,9)
-B4 HP: 10 - 2 => 8
-R2(2,-1,10,6,2) performs [Double Shot] to B3(0,-1,10,4,4)
-B3 HP: 10 - 3 => 7
-B0(2,1,7,6,0) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 12 - 0 => 12
+R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
+B0 HP: 25 - 0 => 25
+R4(7,7,33,15,6) performs [Tripple Shot] to B2(22,2,24,10,15)
+B2 HP: 24 - 5 => 19
+R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
+B3 HP: 21 - 2 => 19
 
 
-[Tick 12] R3, B1,  acting
+[Tick 63] R2, B2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(2,1,7,5,1) performs [Camo Throw] to B4(2,0,10,5,9)
-B4 HP: 8 - 2 => 6
-B1(2,1,12,5,2) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 12 - 0 => 12
-Threat set from 1 to 0
+R2(20,7,16,10,13) performs [Double Shot] to B0(19,10,25,5,16)
+B0 HP: 25 - 10 => 15
+R2(20,7,16,10,13) performs [Double Shot] to B2(22,2,24,10,15)
+B2 HP: 19 - 18 => 1
+B2(22,2,24,10,15) performs [Double Shot] to R1(14,6,29,7,14)
+R1 HP: 29 - 16 => 13
+B2(22,2,24,10,15) performs [Double Shot] to R2(20,7,16,10,13)
+R2 HP: 16 - 15 => 1
+B3(14,5,21,10,14) performs [Wrist Shot] to R1(14,6,29,7,14)
+R1 HP: 13 - 8 => 5
+Attack set from 14 to 10
+[A25] R1 attack reduced from 14 to 10 (damage: 8, reduction: 4)
 
 
-[Tick 15] B2,  acting
+[Tick 70] R0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(3,0,12,4,1) performs [Heavy Shot] to R4(1,2,12,2,7)
-R4 HP: 12 - 4 => 8
-Speed set from 4 to 6
+B1(14,5,22,9,5) performs [Poison Arrow] to R1(10,6,29,7,14)
+R1 HP: 5 - 8 => -3
+R0(2,6,16,9,12) performs [Charge Attack] to B0(19,10,25,5,16)
+B0 HP: 15 - 0 => 15
 
 
-[Tick 20] R0, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(2,-1,10,6,2) performs [Double Shot] to B4(2,0,10,5,9)
-B4 HP: 6 - 2 => 4
-R2(2,-1,10,6,2) performs [Double Shot] to B3(0,-1,10,4,4)
-B3 HP: 7 - 3 => 4
-B0(2,1,7,6,0) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 8 - 0 => 8
-R0(6,-1,10,3,4) performs [Blitz Attack] to B4(2,0,10,5,9)
-B4 HP: 4 - 9 => -5
+[Tick 84] R4,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
+R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
+B0 HP: 15 - 0 => 15
+R4(7,7,33,15,6) performs [Tripple Shot] to B2(22,2,24,10,15)
+B2 HP: 1 - 5 => -4
+R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
+B3 HP: 19 - 2 => 17
 
 
-[Tick 24] R3, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
-R3(2,1,7,5,0) performs [Camo Throw] to B3(0,-1,10,4,4)
-B3 HP: 4 - 3 => 1
-B1(2,1,12,5,2) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 8 - 0 => 8
-Threat set from 0 to -1
+[Tick 90] R3, B4,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B3, B4, 
+R3(19,3,20,7,8) performs [Double Shot] to B0(19,10,25,5,16)
+B0 HP: 15 - 9 => 6
+R3(19,3,20,7,8) performs [Double Shot] to B3(14,5,21,10,14)
+B3 HP: 17 - 14 => 3
+B4(9,10,22,7,14) performs [Meteor] to R2(20,7,16,10,13)
+R2 HP: 1 - 9 => -8
+B4(9,10,22,7,14) performs [Meteor] to R0(2,6,16,9,12)
+R0 HP: 16 - 9 => 7
+B4(9,10,22,7,14) performs [Meteor] to R3(19,3,20,7,8)
+R3 HP: 20 - 9 => 11
+B4(9,10,22,7,14) performs [Meteor] to R4(7,7,33,15,6)
+R4 HP: 33 - 9 => 24
 
 
-[Tick 30] R1, B2, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
-B2(3,0,12,6,1) performs [Heavy Shot] to R4(1,2,12,2,7)
-R4 HP: 8 - 4 => 4
-Speed set from 6 to 8
-R2(2,-1,10,6,2) performs [Double Shot] to B3(0,-1,10,4,4)
-B3 HP: 1 - 3 => -2
-R2(2,-1,10,6,2) performs [Double Shot] to B1(2,1,12,5,2)
-B1 HP: 12 - 1 => 11
-B0(2,1,7,6,0) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 4 - 0 => 4
-R1(6,1,11,2,6) performs [Blitz Attack] to B1(2,1,12,5,2)
-B1 HP: 11 - 7 => 4
+[Tick 126] B0, R4,  acting
+Survived Unit: R0, R3, R4, B0, B1, B3, B4, 
+R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
+B0 HP: 6 - 0 => 6
+R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
+B3 HP: 3 - 2 => 1
+R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
+B4 HP: 22 - 0 => 22
+B0(19,10,25,5,16) performs [Slash] to R0(2,6,16,9,12)
+R0 HP: 7 - 13 => -6
 
 
-[Tick 36] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, 
-R3(2,1,7,5,0) performs [Camo Throw] to B1(2,1,12,5,2)
-B1 HP: 4 - 1 => 3
-Threat set from 0 to -1
+[Tick 127] B3,  acting
+Survived Unit: R3, R4, B0, B1, B3, B4, 
+B3(14,5,21,10,14) performs [Wrist Shot] to R3(19,3,20,7,8)
+R3 HP: 11 - 11 => 0
+Attack set from 19 to 14
+[A25] R3 attack reduced from 19 to 14 (damage: 11, reduction: 5)
 
 
-[Tick 37] B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, 
-B1(2,1,12,5,2) performs [Shoot] to R4(1,2,12,2,7)
-R4 HP: 4 - 0 => 4
+[Tick 140] B1,  acting
+Survived Unit: R4, B0, B1, B3, B4, 
+B1(14,5,22,9,5) performs [Poison Arrow] to R4(7,7,33,15,6)
+R4 HP: 24 - 7 => 17
 
 
-[Tick 40] R0, B2, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, 
-B2(3,0,12,8,1) performs [Heavy Shot] to R4(1,2,12,2,7)
-R4 HP: 4 - 4 => 0
-Speed set from 8 to 10
-R2(2,-1,10,6,2) performs [Double Shot] to B1(2,1,12,5,2)
-B1 HP: 3 - 1 => 2
-R2(2,-1,10,6,2) performs [Double Shot] to B2(3,0,12,10,1)
-B2 HP: 12 - 2 => 10
-B0(2,1,7,6,0) performs [Shoot] to R1(6,1,11,2,6)
-R1 HP: 11 - 1 => 10
-R0(6,-1,10,3,4) performs [Blitz Attack] to B1(2,1,12,5,2)
-B1 HP: 2 - 8 => -6
+[Tick 168] R4,  acting
+Survived Unit: R4, B0, B1, B3, B4, 
+R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
+B0 HP: 6 - 0 => 6
+R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
+B3 HP: 1 - 2 => -1
+R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
+B4 HP: 22 - 0 => 22
+[AFTER-ACTION] B1 → R4: Poison Effect
+[BOON] Poison Effect on R4 (Usage: 2/2)
+R4 HP: 17 - 14 => 3
 
 
-[Tick 55] B2,  acting
-Survived Unit: R0, R1, R2, R3, B0, B2, 
-B2(3,0,12,10,1) performs [Heavy Shot] to R1(6,1,11,2,6)
-R1 HP: 10 - 5 => 5
-Speed set from 10 to 12
-
-
-[Tick 58] B2,  acting
-Survived Unit: R0, R1, R2, R3, B0, B2, 
-B2(3,0,12,12,1) performs [Heavy Shot] to R1(6,1,11,2,6)
-R1 HP: 5 - 5 => 0
-Speed set from 12 to 14
-
-
-[Tick 60] R3, R2, B0,  acting
-Survived Unit: R0, R2, R3, B0, B2, 
-R3(2,1,7,5,0) performs [Camo Throw] to B2(3,0,12,14,1)
-B2 HP: 10 - 2 => 8
-R2(2,-1,10,6,2) performs [Double Shot] to B2(3,0,12,14,1)
-B2 HP: 8 - 2 => 6
-R2(2,-1,10,6,2) performs [Double Shot] to B0(2,1,7,6,0)
-B0 HP: 7 - 1 => 6
-B0(2,1,7,6,0) performs [Shoot] to R0(6,-1,10,3,4)
-R0 HP: 10 - 3 => 7
-Threat set from 0 to -1
-
-
-[Tick 63] B2,  acting
-Survived Unit: R0, R2, R3, B0, B2, 
-B2(3,0,12,14,1) performs [Heavy Shot] to R0(6,-1,10,3,4)
-R0 HP: 7 - 7 => 0
-Speed set from 14 to 16
-
-
-[Tick 78] B2,  acting
-Survived Unit: R2, R3, B0, B2, 
-B2(3,0,12,16,1) performs [Heavy Shot] to R2(2,-1,10,6,2)
-R2 HP: 10 - 7 => 3
-Speed set from 16 to 18
-
-
-[Tick 93] B2,  acting
-Survived Unit: R2, R3, B0, B2, 
-B2(3,0,12,18,1) performs [Heavy Shot] to R2(2,-1,10,6,2)
-R2 HP: 3 - 7 => -4
-Speed set from 18 to 20
-
-
-[Tick 95] B0,  acting
-Survived Unit: R3, B0, B2, 
-B0(2,1,7,6,0) performs [Shoot] to R3(2,1,7,5,0)
-R3 HP: 7 - 1 => 6
-
-
-[Tick 98] B2,  acting
-Survived Unit: R3, B0, B2, 
-B2(3,0,12,20,1) performs [Heavy Shot] to R3(2,1,7,5,0)
-R3 HP: 6 - 5 => 1
-Speed set from 20 to 22
-
-
-[Tick 101] B2,  acting
-Survived Unit: R3, B0, B2, 
-B2(3,0,12,22,1) performs [Heavy Shot] to R3(2,1,7,5,0)
-R3 HP: 1 - 5 => -4
-Speed set from 22 to 24
+[Tick 210] B1, R4,  acting
+Survived Unit: R4, B0, B1, B4, 
+B1(14,5,22,9,5) performs [Poison Arrow] to R4(7,7,33,15,6)
+R4 HP: 3 - 7 => -4
+[BOON] Refreshing existing  on R4
+R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
+B0 HP: 6 - 0 => 6
+R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
+B4 HP: 22 - 0 => 22
+R4(7,7,33,15,6) performs [Tripple Shot] to B1(14,5,22,9,5)
+B1 HP: 22 - 2 => 20
 Battle Over! Blue Team wins!

@@ -1,107 +1,147 @@
-Unit 0: R0 Attack:5 Defense:5 HP:10 Speed:1 Threat:8 Weapon: [BSW2](Chop) Armor: [BSA45]
-Unit 1: R1 Attack:3 Defense:0 HP:10 Speed:4 Threat:1 Weapon: [BSW3](Thrust) Armor: [BSA35]
-Unit 2: R2 Attack:4 Defense:1 HP:10 Speed:2 Threat:4 Weapon: [BSW34](Wind Blade) Armor: [BSA33]
-Unit 3: R3 Attack:-1 Defense:1 HP:7 Speed:4 Threat:0 Weapon: [BSW36](Tetrodo) Armor: [BSA19]
-Unit 4: R4 Attack:1 Defense:2 HP:15 Speed:0 Threat:6 Weapon: [BSW41](Bulkup) Armor: [BSA49]
-Unit 5: B0 Attack:4 Defense:2 HP:10 Speed:2 Threat:4 Weapon: [BSW2](Chop) Armor: [BSA36]
-Unit 6: B1 Attack:8 Defense:1 HP:4 Speed:4 Threat:3 Weapon: [BSW9](Blitz Attack) Armor: [BSA27]
-Unit 7: B2 Attack:6 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW15](Taunt) Armor: [BSA15]
-Unit 8: B3 Attack:4 Defense:3 HP:10 Speed:3 Threat:7 Weapon: [BSW22](Delay Shot) Armor: [BSA34]
-Unit 9: B4 Attack:1 Defense:0 HP:8 Speed:3 Threat:2 Weapon: [BSW37](Freeze) Armor: [BSA15]
+Unit 0: R0 Attack:25 Defense:8 HP:14 Speed:14 Threat:19 Weapon: [BSW11](Fade Attack) Armor: [BSA29]
+Unit 1: R1 Attack:9 Defense:5 HP:19 Speed:6 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA35]
+Unit 2: R2 Attack:19 Defense:2 HP:17 Speed:8 Threat:6 Weapon: [BSW26](Double Shot) Armor: [BSA38]
+Unit 3: R3 Attack:6 Defense:4 HP:13 Speed:15 Threat:22 Weapon: [BSW39](Healing Link) Armor: [BSA14]
+Unit 4: R4 Attack:11 Defense:6 HP:23 Speed:9 Threat:13 Weapon: [BSW45](Fatigue) Armor: [BSA36]
+Unit 5: B0 Attack:15 Defense:5 HP:24 Speed:10 Threat:13 Weapon: [BSW15](Taunt) Armor: [BSA13]
+Unit 6: B1 Attack:26 Defense:6 HP:23 Speed:8 Threat:18 Weapon: [BSW29](Camo Throw) Armor: [BSA30]
+Unit 7: B2 Attack:11 Defense:3 HP:33 Speed:9 Threat:6 Weapon: [BSW32](Focus Throw) Armor: [BSA44]
+Unit 8: B3 Attack:11 Defense:14 HP:24 Speed:7 Threat:8 Weapon: [BSW36](Tetrodo) Armor: [BSA39]
+Unit 9: B4 Attack:10 Defense:5 HP:27 Speed:10 Threat:14 Weapon: [BSW37](Freeze) Armor: [BSA11]
 ==========================
 
 
-[Tick 3] R1, R3, B1,  acting
+[Tick 168] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,0,10,4,1) performs [Thrust] to B3(4,3,10,3,7)
-B3 HP: 10 - 0 => 10
-B1(8,1,4,4,3) performs [Blitz Attack] to R0(5,5,10,1,8)
-R0 HP: 10 - 7 => 3
-R3(-1,1,7,4,0) performs [Tetrodo] to B3(4,3,10,3,7)
+R3(6,4,13,15,22) performs [Healing Link] to R0(25,8,14,14,19)
+[HEAL] R0 healed for 0 HP (from 14 to 14/14)
+R3(6,4,13,15,22) performs [Healing Link] to R4(11,6,23,9,13)
+[HEAL] R4 healed for 0 HP (from 23 to 23/23)
 
 
-[Tick 4] B2, B3, B4,  acting
+[Tick 180] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(4,3,10,3,7) performs [Delay Shot] to R0(5,5,10,1,8)
-R0 HP: 3 - 0 => 3
-[AFTER-ACTION] R3 → B3: Tetrodo Effect
-[BOON] Tetrodo Effect on B3 (Usage: 2/2)
-B3 HP: 10 - 0 => 10
-B2(6,0,8,3,2) performs [Taunt] to R0(5,5,10,1,8)
-R0 HP: 3 - 1 => 2
-Threat set from 2 to -4
-B4(1,0,8,3,2) performs [Freeze] to R0(5,5,10,1,8)
+R0(25,8,14,14,19) performs [Fade Attack] to B1(26,6,23,8,18)
+B1 HP: 23 - 19 => 4
+Threat set from 19 to 2
 
 
-[Tick 6] R2, B0, R1, R3, B1,  acting
+[Tick 252] B0, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(4,2,10,2,4) performs [Chop] to R0(5,5,10,1,8)
-R0 HP: 2 - 0 => 2
-Defense set from 5 to 1
-R1(3,0,10,4,1) performs [Thrust] to B3(4,3,10,3,7)
-B3 HP: 10 - 0 => 10
-B1(8,1,4,4,3) performs [Blitz Attack] to R0(5,1,10,1,8)
-R0 HP: 2 - 11 => -9
-R2(4,1,10,2,4) performs [Wind Blade] to B3(4,3,10,3,7)
-B3 HP: 10 - 4 => 6
-R2(4,1,10,2,4) performs [Wind Blade] to B0(4,2,10,2,4)
-B0 HP: 10 - 4 => 6
-R3(-1,1,7,4,0) performs [Tetrodo] to B3(4,3,10,3,7)
-[BOON] Refreshing existing  on B3
+B0(15,5,24,10,13) performs [Taunt] to R3(6,4,13,15,22)
+R3 HP: 13 - 11 => 2
+Threat set from 13 to 3
+B4(10,5,27,10,14) performs [Freeze] to R3(6,4,13,15,22)
 
 
-[Tick 8] B2, B3, B4,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(4,3,10,3,7) performs [Delay Shot] to R4(1,2,15,0,6)
-R4 HP: 15 - 2 => 13
-[AFTER-ACTION] R3 → B3: Tetrodo Effect
-[BOON] Tetrodo Effect on B3 (Usage: 2/2)
-B3 HP: 6 - 0 => 6
-B2(6,0,8,3,0) performs [Taunt] to R4(1,2,15,0,6)
-R4 HP: 13 - 4 => 9
-Threat set from 0 to -6
-B4(1,0,8,3,2) performs [Freeze] to R4(1,2,15,0,6)
+[Tick 280] R4, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B2(11,3,33,9,6) performs [Focus Throw] to R3(6,4,13,15,22)
+R3 HP: 2 - 13 => -11
+R4(11,6,23,9,13) performs [Fatigue] to B1(26,6,23,8,18)
+Speed set from 8 to 4
+R4(11,6,23,9,13) performs [Fatigue] to B4(10,5,27,10,14)
+Speed set from 10 to 6
 
 
-[Tick 9] R1, R3, B1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,0,10,4,1) performs [Thrust] to B3(4,3,10,3,7)
-B3 HP: 6 - 0 => 6
-B1(8,1,4,4,3) performs [Blitz Attack] to R4(1,2,15,0,6)
-R4 HP: 9 - 10 => -1
-R3(-1,1,7,4,0) performs [Tetrodo] to B3(4,3,10,3,7)
-[BOON] Refreshing existing  on B3
+[Tick 315] R2,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
+R2(19,2,17,8,6) performs [Double Shot] to B1(26,6,23,4,18)
+B1 HP: 4 - 13 => -9
+R2(19,2,17,8,6) performs [Double Shot] to B4(10,5,27,6,14)
+B4 HP: 27 - 14 => 13
 
 
-[Tick 12] R2, B0, B2, B3, B4, R1, R3, B1,  acting
-Survived Unit: R1, R2, R3, B0, B1, B2, B3, B4, 
-B3(4,3,10,3,7) performs [Delay Shot] to R2(4,1,10,2,4)
-R2 HP: 10 - 3 => 7
-[AFTER-ACTION] R3 → B3: Tetrodo Effect
-[BOON] Tetrodo Effect on B3 (Usage: 2/2)
-B3 HP: 6 - 0 => 6
-B0(4,2,10,2,4) performs [Chop] to R2(4,1,10,2,4)
-R2 HP: 7 - 3 => 4
-Defense set from 1 to 0
-B2(6,0,8,3,0) performs [Taunt] to R2(4,0,10,2,4)
-R2 HP: 4 - 6 => -2
-R1(3,0,10,4,1) performs [Thrust] to B3(4,3,10,3,7)
-B3 HP: 6 - 0 => 6
-B1(8,1,4,4,3) performs [Blitz Attack] to R1(3,0,10,4,1)
-R1 HP: 10 - 12 => -2
-Threat set from 0 to -6
-R2(4,0,10,2,4) performs [Wind Blade] to B3(4,3,10,3,7)
-B3 HP: 6 - 4 => 2
-R2(4,0,10,2,4) performs [Wind Blade] to B0(4,2,10,2,4)
-B0 HP: 6 - 4 => 2
-B4(1,0,8,3,2) performs [Freeze] to R3(-1,1,7,4,0)
-R3(-1,1,7,4,0) performs [Tetrodo] to B3(4,3,10,3,7)
-[BOON] Refreshing existing  on B3
-[AFTER-ACTION] B4 → R3: FreezeSTART
+[Tick 360] B3, R0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, B4, 
+R0(25,8,14,14,2) performs [Fade Attack] to B4(10,5,27,6,14)
+B4 HP: 13 - 20 => -7
+Threat set from 2 to -15
+B3(11,14,24,7,8) performs [Tetrodo] to R4(11,6,23,9,13)
 
 
-[Tick 15] B1,  acting
-Survived Unit: R3, B0, B1, B2, B3, B4, 
-B1(8,1,4,4,3) performs [Blitz Attack] to R3(-1,1,7,4,0)
-R3 HP: 7 - 11 => -4
-Battle Over! Blue Team wins!
+[Tick 420] R1,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+R1(9,5,19,6,4) performs [Poison Arrow] to B3(11,14,24,7,8)
+B3 HP: 24 - 0 => 24
+
+
+[Tick 504] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+B0(15,5,24,10,3) performs [Taunt] to R4(11,6,23,9,13)
+R4 HP: 23 - 9 => 14
+Threat set from 3 to -7
+
+
+[Tick 540] R0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+R0(25,8,14,14,0) performs [Fade Attack] to B3(11,14,24,7,8)
+B3 HP: 24 - 11 => 13
+Threat set from 0 to -17
+
+
+[Tick 560] B2,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+B2(11,3,33,9,6) performs [Focus Throw] to R4(11,6,23,9,13)
+R4 HP: 14 - 13 => 1
+
+
+[Tick 630] R2,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+R2(19,2,17,8,6) performs [Double Shot] to B3(11,14,24,7,8)
+B3 HP: 13 - 5 => 8
+R2(19,2,17,8,6) performs [Double Shot] to B2(11,3,33,9,6)
+B2 HP: 33 - 16 => 17
+
+
+[Tick 720] R0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, B3, 
+R0(25,8,14,14,0) performs [Fade Attack] to B3(11,14,24,7,8)
+B3 HP: 8 - 11 => -3
+Threat set from 0 to -17
+
+
+[Tick 756] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B2, 
+B0(15,5,24,10,0) performs [Taunt] to R4(11,6,23,9,13)
+R4 HP: 1 - 9 => -8
+Threat set from 0 to -10
+
+
+[Tick 840] R1, B2,  acting
+Survived Unit: R0, R1, R2, B0, B2, 
+R1(9,5,19,6,4) performs [Poison Arrow] to B2(11,3,33,9,6)
+B2 HP: 17 - 6 => 11
+B2(11,3,33,9,6) performs [Focus Throw] to R2(19,2,17,8,6)
+R2 HP: 17 - 13 => 4
+[AFTER-ACTION] R1 → B2: Poison Effect
+[BOON] Poison Effect on B2 (Usage: 2/2)
+B2 HP: 11 - 9 => 2
+
+
+[Tick 900] R0,  acting
+Survived Unit: R0, R1, R2, B0, B2, 
+R0(25,8,14,14,0) performs [Fade Attack] to B2(11,3,33,9,6)
+B2 HP: 2 - 22 => -20
+Threat set from 0 to -17
+
+
+[Tick 946] R2,  acting
+Survived Unit: R0, R1, R2, B0, 
+R2(19,2,17,8,6) performs [Double Shot] to B0(15,5,24,10,0)
+B0 HP: 24 - 14 => 10
+
+
+[Tick 1008] B0,  acting
+Survived Unit: R0, R1, R2, B0, 
+B0(15,5,24,10,0) performs [Taunt] to R2(19,2,17,8,6)
+R2 HP: 4 - 13 => -9
+[AFTER-ACTION] No valid target found for B0
+
+
+[Tick 1080] R0,  acting
+Survived Unit: R0, R1, B0, 
+R0(25,8,14,14,0) performs [Fade Attack] to B0(15,5,24,10,0)
+B0 HP: 10 - 20 => -10
+[AFTER-ACTION] No valid target found for R0
+Battle Over! Red Team wins!

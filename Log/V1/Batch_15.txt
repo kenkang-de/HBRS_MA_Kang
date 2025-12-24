@@ -1,104 +1,139 @@
-Unit 0: R0 Attack:6 Defense:2 HP:12 Speed:2 Threat:7 Weapon: [BSW11](Fade Attack) Armor: [BSA39]
-Unit 1: R1 Attack:6 Defense:0 HP:10 Speed:5 Threat:4 Weapon: [BSW28](Heavy Shot) Armor: [BSA11]
-Unit 2: R2 Attack:0 Defense:0 HP:9 Speed:5 Threat:2 Weapon: [BSW33](Magic Bolt) Armor: [BSA7]
-Unit 3: R3 Attack:2 Defense:0 HP:10 Speed:4 Threat:7 Weapon: [BSW48](Meteor) Armor: [BSA10]
-Unit 4: R4 Attack:4 Defense:0 HP:8 Speed:3 Threat:5 Weapon: [BSW48](Meteor) Armor: [BSA15]
-Unit 5: B0 Attack:5 Defense:-1 HP:10 Speed:5 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA2]
-Unit 6: B1 Attack:3 Defense:0 HP:7 Speed:6 Threat:3 Weapon: [BSW34](Wind Blade) Armor: [BSA5]
-Unit 7: B2 Attack:2 Defense:1 HP:12 Speed:2 Threat:6 Weapon: [BSW35](Chain Lightning) Armor: [BSA20]
-Unit 8: B3 Attack:-1 Defense:1 HP:12 Speed:3 Threat:4 Weapon: [BSW40](Grace) Armor: [BSA20]
-Unit 9: B4 Attack:-1 Defense:0 HP:10 Speed:4 Threat:3 Weapon: [BSW44](Exposure) Armor: [BSA14]
+Unit 0: R0 Attack:10 Defense:8 HP:18 Speed:15 Threat:11 Weapon: [BSW5](Overpower) Armor: [BSA18]
+Unit 1: R1 Attack:21 Defense:13 HP:27 Speed:15 Threat:9 Weapon: [BSW12](Final Attack) Armor: [BSA42]
+Unit 2: R2 Attack:20 Defense:6 HP:21 Speed:9 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA24]
+Unit 3: R3 Attack:17 Defense:4 HP:20 Speed:8 Threat:14 Weapon: [BSW31](Wrist Shot) Armor: [BSA22]
+Unit 4: R4 Attack:5 Defense:3 HP:24 Speed:9 Threat:19 Weapon: [BSW37](Freeze) Armor: [BSA31]
+Unit 5: B0 Attack:20 Defense:12 HP:26 Speed:7 Threat:13 Weapon: [BSW1](Slash) Armor: [BSA23]
+Unit 6: B1 Attack:13 Defense:10 HP:24 Speed:7 Threat:5 Weapon: [BSW24](Boost Acuity) Armor: [BSA28]
+Unit 7: B2 Attack:7 Defense:8 HP:26 Speed:12 Threat:5 Weapon: [BSW27](Tripple Shot) Armor: [BSA10]
+Unit 8: B3 Attack:12 Defense:4 HP:21 Speed:9 Threat:14 Weapon: [BSW32](Focus Throw) Armor: [BSA3]
+Unit 9: B4 Attack:17 Defense:4 HP:31 Speed:11 Threat:10 Weapon: [BSW33](Magic Bolt) Armor: [BSA2]
 ==========================
 
 
-[Tick 10] B1,  acting
+[Tick 1848] R0, R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,7,6,3) performs [Wind Blade] to R0(6,2,12,2,7)
-R0 HP: 12 - 3 => 9
-B1(3,0,7,6,3) performs [Wind Blade] to R3(2,0,10,4,7)
-R3 HP: 10 - 3 => 7
+R0(10,8,18,15,11) performs [Overpower] to B3(12,4,21,9,14)
+B3 HP: 21 - 6 => 15
+R1(21,13,27,15,9) performs [Final Attack] to B3(12,4,21,9,14)
+B3 HP: 15 - 30 => -15
+Defense set from 13 to 0
+[A12] R1 defense changed from 13 to 0
 
 
-[Tick 12] R1, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(6,0,10,5,4) performs [Heavy Shot] to B0(5,-1,10,5,6)
-B0 HP: 10 - 13 => -3
-Speed set from 5 to 6
-R2(0,0,9,5,2) performs [Magic Bolt] to B2(2,1,12,2,6)
-B2 HP: 12 - 0 => 12
+[Tick 2310] B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B2(7,8,26,12,5) performs [Tripple Shot] to R4(5,3,24,9,19)
+R4 HP: 24 - 4 => 20
+B2(7,8,26,12,5) performs [Tripple Shot] to R3(17,4,20,8,14)
+R3 HP: 20 - 3 => 17
+B2(7,8,26,12,5) performs [Tripple Shot] to R0(10,8,18,15,11)
+R0 HP: 18 - 0 => 18
 
 
-[Tick 15] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-B4(-1,0,10,4,3) performs [Exposure] to R0(6,2,12,2,7)
-Threat set from 7 to 6
-B4(-1,0,10,4,3) performs [Exposure] to R3(2,0,10,4,7)
-Threat set from 7 to 6
-B4(-1,0,10,4,3) performs [Exposure] to R4(4,0,8,3,5)
-Threat set from 5 to 4
+[Tick 2520] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B4(17,4,31,11,10) performs [Magic Bolt] to R4(5,3,24,9,19)
+R4 HP: 20 - 17 => 3
 
 
-[Tick 20] R4, B3, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R4(4,0,8,3,4) performs [Meteor] to B2(2,1,12,2,6)
-B2 HP: 12 - 4 => 8
-R4(4,0,8,3,4) performs [Meteor] to B3(-1,1,12,3,4)
-B3 HP: 12 - 4 => 8
-R4(4,0,8,3,4) performs [Meteor] to B1(3,0,7,6,3)
-B1 HP: 7 - 4 => 3
-R4(4,0,8,3,4) performs [Meteor] to B4(-1,0,10,4,3)
-B4 HP: 10 - 4 => 6
-B3(-1,1,12,3,4) performs [Grace] to B2(2,1,12,2,6)
-[HEAL] B2 healed for -1 HP (from 8 to 7/12)
-B3(-1,1,12,3,4) performs [Grace] to B1(3,0,7,6,3)
-[HEAL] B1 healed for -1 HP (from 3 to 2/7)
-B3(-1,1,12,3,4) performs [Grace] to B4(-1,0,10,4,3)
-[HEAL] B4 healed for -1 HP (from 6 to 5/10)
-B1(3,0,7,6,3) performs [Wind Blade] to R0(6,2,12,2,6)
-R0 HP: 9 - 3 => 6
-B1(3,0,7,6,3) performs [Wind Blade] to R3(2,0,10,4,6)
-R3 HP: 7 - 3 => 4
+[Tick 3080] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R2(20,6,21,9,8) performs [Double Shot] to B0(20,12,26,7,13)
+B0 HP: 26 - 8 => 18
+R2(20,6,21,9,8) performs [Double Shot] to B4(17,4,31,11,10)
+B4 HP: 31 - 16 => 15
 
 
-[Tick 24] R1, R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
-R1(6,0,10,6,4) performs [Heavy Shot] to B2(2,1,12,2,6)
-B2 HP: 7 - 11 => -4
-Speed set from 6 to 7
-R2(0,0,9,5,2) performs [Magic Bolt] to B3(-1,1,12,3,4)
-B3 HP: 8 - 0 => 8
+[Tick 3465] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R3(17,4,20,8,14) performs [Wrist Shot] to B0(20,12,26,7,13)
+B0 HP: 18 - 5 => 13
+Attack set from 20 to 18
+[A25] B0 attack reduced from 20 to 18 (damage: 5, reduction: 2)
 
 
-[Tick 30] R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
-R0(6,2,12,2,6) performs [Fade Attack] to B3(-1,1,12,3,4)
-B3 HP: 8 - 5 => 3
-Threat set from 6 to 2
+[Tick 3696] R0, R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R0(10,8,18,15,11) performs [Overpower] to B0(18,12,26,7,13)
+B0 HP: 13 - 0 => 13
+R1(21,0,27,15,9) performs [Final Attack] to B0(18,12,26,7,13)
+B0 HP: 13 - 9 => 4
+Defense set from 0 to 0
+[A12] R1 defense changed from 0 to 0
 
 
-[Tick 34] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
-R1(6,0,10,7,4) performs [Heavy Shot] to B3(-1,1,12,3,4)
-B3 HP: 3 - 11 => -8
-Speed set from 7 to 8
+[Tick 3960] B0, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B1(13,10,24,7,5) performs [Boost Acuity] to R4(5,3,24,9,19)
+R4 HP: 3 - 19 => -16
+B0(18,12,26,7,13) performs [Slash] to R3(17,4,20,8,14)
+R3 HP: 17 - 14 => 3
 
 
-[Tick 36] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
-R2(0,0,9,5,2) performs [Magic Bolt] to B1(3,0,7,6,3)
-B1 HP: 2 - 0 => 2
+[Tick 4620] B2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B4, 
+B2(7,8,26,12,5) performs [Tripple Shot] to R3(17,4,20,8,14)
+R3 HP: 3 - 3 => 0
+B2(7,8,26,12,5) performs [Tripple Shot] to R0(10,8,18,15,11)
+R0 HP: 18 - 0 => 18
+B2(7,8,26,12,5) performs [Tripple Shot] to R1(21,0,27,15,9)
+R1 HP: 27 - 7 => 20
 
 
-[Tick 40] R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
-R4(4,0,8,3,4) performs [Meteor] to B1(3,0,7,6,3)
-B1 HP: 2 - 4 => -2
-R4(4,0,8,3,4) performs [Meteor] to B4(-1,0,10,4,3)
-B4 HP: 5 - 4 => 1
+[Tick 5544] R0, R1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, B4, 
+R0(10,8,18,15,11) performs [Overpower] to B0(18,12,26,7,13)
+B0 HP: 4 - 0 => 4
+R1(21,0,27,15,9) performs [Final Attack] to B0(18,12,26,7,13)
+B0 HP: 4 - 9 => -5
+Defense set from 0 to 0
+[A12] R1 defense changed from 0 to 0
 
 
-[Tick 45] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B4, 
-R3(2,0,10,4,6) performs [Meteor] to B4(-1,0,10,4,3)
-B4 HP: 1 - 2 => -1
+[Tick 6160] R2,  acting
+Survived Unit: R0, R1, R2, B1, B2, B4, 
+R2(20,6,21,9,8) performs [Double Shot] to B4(17,4,31,11,10)
+B4 HP: 15 - 16 => -1
+R2(20,6,21,9,8) performs [Double Shot] to B1(13,10,24,7,5)
+B1 HP: 24 - 10 => 14
+
+
+[Tick 6468] R0, R1,  acting
+Survived Unit: R0, R1, R2, B1, B2, 
+R0(10,8,18,15,11) performs [Overpower] to B1(13,10,24,7,5)
+B1 HP: 14 - 0 => 14
+R1(21,0,27,15,9) performs [Final Attack] to B1(13,10,24,7,5)
+B1 HP: 14 - 11 => 3
+Defense set from 0 to 0
+[A12] R1 defense changed from 0 to 0
+
+
+[Tick 6552] R0, R1,  acting
+Survived Unit: R0, R1, R2, B1, B2, 
+R0(10,8,18,15,11) performs [Overpower] to B1(13,10,24,7,5)
+B1 HP: 3 - 0 => 3
+R1(21,0,27,15,9) performs [Final Attack] to B1(13,10,24,7,5)
+B1 HP: 3 - 11 => -8
+Defense set from 0 to 0
+[A12] R1 defense changed from 0 to 0
+
+
+[Tick 6636] R0, R1,  acting
+Survived Unit: R0, R1, R2, B2, 
+R0(10,8,18,15,11) performs [Overpower] to B2(7,8,26,12,5)
+B2 HP: 26 - 2 => 24
+R1(21,0,27,15,9) performs [Final Attack] to B2(7,8,26,12,5)
+B2 HP: 24 - 13 => 11
+Defense set from 0 to 0
+[A12] R1 defense changed from 0 to 0
+
+
+[Tick 6648] R0, R1,  acting
+Survived Unit: R0, R1, R2, B2, 
+R0(10,8,18,15,11) performs [Overpower] to B2(7,8,26,12,5)
+B2 HP: 11 - 2 => 9
+R1(21,0,27,15,9) performs [Final Attack] to B2(7,8,26,12,5)
+B2 HP: 9 - 13 => -4
+[AFTER-ACTION] No valid target found for R1
 Battle Over! Red Team wins!

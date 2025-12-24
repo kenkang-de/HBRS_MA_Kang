@@ -1,174 +1,551 @@
-Unit 0: R0 Attack:7 Defense:1 HP:4 Speed:5 Threat:1 Weapon: [BSW17](Shoot) Armor: [BSA27]
-Unit 1: R1 Attack:4 Defense:-2 HP:10 Speed:7 Threat:4 Weapon: [BSW25](Smoke Shot) Armor: [BSA3]
-Unit 2: R2 Attack:3 Defense:0 HP:8 Speed:7 Threat:4 Weapon: [BSW26](Double Shot) Armor: [BSA4]
-Unit 3: R3 Attack:3 Defense:2 HP:15 Speed:1 Threat:4 Weapon: [BSW27](Tripple Shot) Armor: [BSA49]
-Unit 4: R4 Attack:1 Defense:0 HP:10 Speed:1 Threat:4 Weapon: [BSW47](Cheer) Armor: [BSA29]
-Unit 5: B0 Attack:3 Defense:1 HP:12 Speed:3 Threat:3 Weapon: [BSW2](Chop) Armor: [BSA20]
-Unit 6: B1 Attack:3 Defense:0 HP:12 Speed:3 Threat:3 Weapon: [BSW21](Poison Arrow) Armor: [BSA38]
-Unit 7: B2 Attack:4 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW29](Camo Throw) Armor: [BSA8]
-Unit 8: B3 Attack:3 Defense:1 HP:6 Speed:3 Threat:3 Weapon: [BSW38](Healing Touch) Armor: [BSA26]
-Unit 9: B4 Attack:1 Defense:3 HP:12 Speed:1 Threat:7 Weapon: [BSW39](Healing Link) Armor: [BSA44]
+Unit 0: R0 Attack:8 Defense:3 HP:10 Speed:9 Threat:8 Weapon: [BSW2](Chop) Armor: [BSA8]
+Unit 1: R1 Attack:5 Defense:1 HP:31 Speed:9 Threat:4 Weapon: [BSW6](Achilles' heel) Armor: [BSA21]
+Unit 2: R2 Attack:12 Defense:3 HP:12 Speed:11 Threat:8 Weapon: [BSW7](Poison Attack) Armor: [BSA16]
+Unit 3: R3 Attack:20 Defense:5 HP:17 Speed:12 Threat:17 Weapon: [BSW34](Wind Blade) Armor: [BSA40]
+Unit 4: R4 Attack:3 Defense:8 HP:19 Speed:6 Threat:4 Weapon: [BSW48](Meteor) Armor: [BSA20]
+Unit 5: B0 Attack:10 Defense:5 HP:16 Speed:10 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA16]
+Unit 6: B1 Attack:13 Defense:10 HP:23 Speed:6 Threat:2 Weapon: [BSW21](Poison Arrow) Armor: [BSA28]
+Unit 7: B2 Attack:5 Defense:4 HP:13 Speed:13 Threat:15 Weapon: [BSW39](Healing Link) Armor: [BSA16]
+Unit 8: B3 Attack:11 Defense:6 HP:17 Speed:9 Threat:11 Weapon: [BSW49](Earthquake) Armor: [BSA16]
+Unit 9: B4 Attack:14 Defense:3 HP:17 Speed:7 Threat:9 Weapon: [BSW49](Earthquake) Armor: [BSA38]
 ==========================
 
 
-[Tick 30] R1, R2,  acting
+[Tick 13860] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(4,-2,10,7,4) performs [Smoke Shot] to B4(1,3,12,1,7)
-B4 HP: 12 - 1 => 11
-Threat set from 7 to 4
-R2(3,0,8,7,4) performs [Double Shot] to B2(4,0,10,6,4)
-B2 HP: 10 - 3 => 7
-R2(3,0,8,7,4) performs [Double Shot] to B4(1,3,12,1,4)
-B4 HP: 11 - 0 => 11
+B2(5,4,13,13,15) performs [Healing Link] to B3(11,6,17,9,11)
+[HEAL] B3 healed for 0 HP (from 17 to 17/17)
+B2(5,4,13,13,15) performs [Healing Link] to B4(14,3,17,7,9)
+[HEAL] B4 healed for 0 HP (from 17 to 17/17)
 
 
-[Tick 35] B2,  acting
+[Tick 15015] R3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(4,0,10,6,4) performs [Camo Throw] to R1(4,-2,10,7,4)
-R1 HP: 10 - 6 => 4
-Threat set from 4 to 0
+R3(20,5,17,12,17) performs [Wind Blade] to B2(5,4,13,13,15)
+B2 HP: 13 - 20 => -7
+R3(20,5,17,12,17) performs [Wind Blade] to B3(11,6,17,9,11)
+B3 HP: 17 - 20 => -3
 
 
-[Tick 42] R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B4(1,3,12,1,4)
-B4 HP: 11 - 4 => 7
+[Tick 16380] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
+R2(12,3,12,11,8) performs [Poison Attack] to B4(14,3,17,7,9)
+B4 HP: 17 - 9 => 8
 
 
-[Tick 60] R2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,0,8,7,4) performs [Double Shot] to B4(1,3,12,1,4)
-B4 HP: 7 - 0 => 7
-R2(3,0,8,7,4) performs [Double Shot] to B0(3,1,12,3,3)
-B0 HP: 12 - 2 => 10
+[Tick 17640] R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
+R2(12,3,12,11,8) performs [Poison Attack] to B4(14,3,17,7,9)
+B4 HP: 8 - 9 => -1
+[BOON] Refreshing existing  on B4
 
 
-[Tick 61] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(4,-2,10,7,4) performs [Smoke Shot] to B4(1,3,12,1,4)
-B4 HP: 7 - 1 => 6
-Threat set from 4 to 1
+[Tick 18018] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R3(20,5,17,12,17)
+R3 HP: 17 - 5 => 12
 
 
-[Tick 70] B0, B1, B3, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(3,0,12,3,3) performs [Poison Arrow] to R1(4,-2,10,7,4)
-R1 HP: 4 - 5 => -1
-B2(4,0,10,6,0) performs [Camo Throw] to R2(3,0,8,7,4)
-R2 HP: 8 - 4 => 4
-Threat set from 0 to -4
-B0(3,1,12,3,3) performs [Chop] to R2(3,0,8,7,4)
-R2 HP: 4 - 3 => 1
-Defense set from 0 to 0
-B3(3,1,6,3,3) performs [Healing Touch] to B0(3,1,12,3,3)
-[HEAL] B0 healed for 2 HP (from 10 to 12/12)
+[Tick 18216] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R3(20,5,17,12,17)
+R3 HP: 12 - 5 => 7
 
 
-[Tick 84] R0,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B0(3,1,12,3,3)
-B0 HP: 12 - 6 => 6
+[Tick 18414] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R3(20,5,17,12,17)
+R3 HP: 7 - 5 => 2
 
 
-[Tick 91] R2,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(3,0,8,7,4) performs [Double Shot] to B0(3,1,12,3,3)
-B0 HP: 6 - 2 => 4
-R2(3,0,8,7,4) performs [Double Shot] to B1(3,0,12,3,3)
-B1 HP: 12 - 3 => 9
+[Tick 18612] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R3(20,5,17,12,17)
+R3 HP: 2 - 5 => -3
+R0 HP: 10 - 7 => 3
 
 
-[Tick 105] B2,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(4,0,10,6,0) performs [Camo Throw] to R2(3,0,8,7,4)
-R2 HP: 1 - 4 => -3
-Threat set from 0 to -4
+[Tick 18810] B0,  acting
+Survived Unit: R0, R1, R2, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R0(8,3,10,9,8)
+R0 HP: 3 - 7 => -4
+R2 HP: 12 - 7 => 5
 
 
-[Tick 126] R0,  acting
-Survived Unit: R0, R3, R4, B0, B1, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B0(3,1,12,3,3)
-B0 HP: 4 - 6 => -2
+[Tick 18900] R2,  acting
+Survived Unit: R1, R2, R4, B0, B1, 
+R2(12,3,12,11,8) performs [Poison Attack] to B0(10,5,16,10,2)
+B0 HP: 16 - 7 => 9
 
 
-[Tick 132] R0,  acting
-Survived Unit: R0, R3, R4, B1, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B1(3,0,12,3,3)
-B1 HP: 9 - 7 => 2
+[Tick 18909] B0,  acting
+Survived Unit: R1, R2, R4, B0, B1, 
+B0(10,5,16,10,2) performs [Killing Spree] to R2(12,3,12,11,8)
+R2 HP: 5 - 7 => -2
+R1 HP: 31 - 9 => 22
+[AFTER-ACTION] R2 → B0: Poison Effect
+[BOON] Poison Effect on B0 (Usage: 3/3)
+B0 HP: 9 - 12 => -3
 
 
-[Tick 138] R0,  acting
-Survived Unit: R0, R3, R4, B1, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B1(3,0,12,3,3)
-B1 HP: 2 - 7 => -5
+[Tick 20020] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,6,2)
+B1 HP: 23 - 0 => 23
+Speed set from 6 to 11
 
 
-[Tick 140] B3, B2,  acting
-Survived Unit: R0, R3, R4, B2, B3, B4, 
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 15 - 2 => 13
-Threat set from 0 to -4
-B3(3,1,6,3,3) performs [Healing Touch] to B4(1,3,12,1,1)
-[HEAL] B4 healed for 3 HP (from 6 to 9/12)
+[Tick 20022] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,11,2)
+B1 HP: 23 - 0 => 23
+Speed set from 11 to 16
 
 
-[Tick 144] R0,  acting
-Survived Unit: R0, R3, R4, B2, B3, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B3(3,1,6,3,3)
-B3 HP: 6 - 6 => 0
+[Tick 20044] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,16,2)
+B1 HP: 23 - 0 => 23
+Speed set from 16 to 21
 
 
-[Tick 145] B2,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 13 - 2 => 11
-Threat set from 0 to -4
+[Tick 20060] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,21,2)
+B1 HP: 23 - 0 => 23
+Speed set from 21 to 26
 
 
-[Tick 150] R0, B2,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B4(1,3,12,1,1)
-B4 HP: 9 - 4 => 5
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 11 - 2 => 9
-Threat set from 0 to -4
+[Tick 20074] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,26,2)
+B1 HP: 23 - 0 => 23
+Speed set from 26 to 31
 
 
-[Tick 155] B2,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 9 - 2 => 7
-Threat set from 0 to -4
+[Tick 20100] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,31,2)
+B1 HP: 23 - 0 => 23
+Speed set from 31 to 36
 
 
-[Tick 156] R0,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B4(1,3,12,1,1)
-B4 HP: 5 - 4 => 1
+[Tick 20162] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,36,2)
+B1 HP: 23 - 0 => 23
+Speed set from 36 to 41
 
 
-[Tick 160] B2,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 7 - 2 => 5
-Threat set from 0 to -4
+[Tick 20166] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,41,2)
+B1 HP: 23 - 0 => 23
+Speed set from 41 to 46
 
 
-[Tick 162] R0,  acting
-Survived Unit: R0, R3, R4, B2, B4, 
-R0(7,1,4,5,1) performs [Shoot] to B4(1,3,12,1,1)
-B4 HP: 1 - 4 => -3
+[Tick 20248] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,46,2)
+B1 HP: 23 - 0 => 23
+Speed set from 46 to 51
 
 
-[Tick 165] B2,  acting
-Survived Unit: R0, R3, R4, B2, 
-B2(4,0,10,6,0) performs [Camo Throw] to R3(3,2,15,1,4)
-R3 HP: 5 - 2 => 3
-Threat set from 0 to -4
+[Tick 20294] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,51,2)
+B1 HP: 23 - 0 => 23
+Speed set from 51 to 56
 
 
-[Tick 168] R0,  acting
-Survived Unit: R0, R3, R4, B2, 
-R0(7,1,4,5,1) performs [Shoot] to B2(4,0,10,6,0)
-B2 HP: 7 - 7 => 0
-Battle Over! Red Team wins!
+[Tick 20328] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,56,2)
+B1 HP: 23 - 0 => 23
+Speed set from 56 to 61
+
+
+[Tick 20384] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,61,2)
+B1 HP: 23 - 0 => 23
+Speed set from 61 to 66
+
+
+[Tick 20506] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,66,2)
+B1 HP: 23 - 0 => 23
+Speed set from 66 to 71
+
+
+[Tick 20528] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,71,2)
+B1 HP: 23 - 0 => 23
+Speed set from 71 to 76
+
+
+[Tick 20670] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,76,2)
+B1 HP: 23 - 0 => 23
+Speed set from 76 to 81
+
+
+[Tick 20746] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,81,2)
+B1 HP: 23 - 0 => 23
+Speed set from 81 to 86
+
+
+[Tick 20764] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,86,2)
+B1 HP: 23 - 0 => 23
+Speed set from 86 to 91
+
+
+[Tick 20850] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,91,2)
+B1 HP: 23 - 0 => 23
+Speed set from 91 to 96
+
+
+[Tick 21032] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,96,2)
+B1 HP: 23 - 0 => 23
+Speed set from 96 to 101
+
+
+[Tick 21064] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,101,2)
+B1 HP: 23 - 0 => 23
+Speed set from 101 to 106
+
+
+[Tick 21266] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,106,2)
+B1 HP: 23 - 0 => 23
+Speed set from 106 to 111
+
+
+[Tick 21372] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,111,2)
+B1 HP: 23 - 0 => 23
+Speed set from 111 to 116
+
+
+[Tick 21446] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,116,2)
+B1 HP: 23 - 0 => 23
+Speed set from 116 to 121
+
+
+[Tick 21562] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,121,2)
+B1 HP: 23 - 0 => 23
+Speed set from 121 to 126
+
+
+[Tick 21804] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,126,2)
+B1 HP: 23 - 0 => 23
+Speed set from 126 to 131
+
+
+[Tick 21818] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,131,2)
+B1 HP: 23 - 0 => 23
+Speed set from 131 to 136
+
+
+[Tick 22080] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,136,2)
+B1 HP: 23 - 0 => 23
+Speed set from 136 to 141
+
+
+[Tick 22216] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,141,2)
+B1 HP: 23 - 0 => 23
+Speed set from 141 to 146
+
+
+[Tick 22310] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,146,2)
+B1 HP: 23 - 0 => 23
+Speed set from 146 to 151
+
+
+[Tick 22456] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,151,2)
+B1 HP: 23 - 0 => 23
+Speed set from 151 to 156
+
+
+[Tick 22758] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,156,2)
+B1 HP: 23 - 0 => 23
+Speed set from 156 to 161
+
+
+[Tick 22810] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,161,2)
+B1 HP: 23 - 0 => 23
+Speed set from 161 to 166
+
+
+[Tick 23132] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,166,2)
+B1 HP: 23 - 0 => 23
+Speed set from 166 to 171
+
+
+[Tick 23298] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,171,2)
+B1 HP: 23 - 0 => 23
+Speed set from 171 to 176
+
+
+[Tick 23336] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,176,2)
+B1 HP: 23 - 0 => 23
+Speed set from 176 to 181
+
+
+[Tick 23512] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,181,2)
+B1 HP: 23 - 0 => 23
+Speed set from 181 to 186
+
+
+[Tick 23874] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,186,2)
+B1 HP: 23 - 0 => 23
+Speed set from 186 to 191
+
+
+[Tick 23936] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,191,2)
+B1 HP: 23 - 0 => 23
+Speed set from 191 to 196
+
+
+[Tick 24318] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,196,2)
+B1 HP: 23 - 0 => 23
+Speed set from 196 to 201
+
+
+[Tick 24514] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,201,2)
+B1 HP: 23 - 0 => 23
+Speed set from 201 to 206
+
+
+[Tick 24648] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,206,2)
+B1 HP: 23 - 0 => 23
+Speed set from 206 to 211
+
+
+[Tick 24854] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,211,2)
+B1 HP: 23 - 0 => 23
+Speed set from 211 to 216
+
+
+[Tick 25276] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,216,2)
+B1 HP: 23 - 0 => 23
+Speed set from 216 to 221
+
+
+[Tick 25300] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,221,2)
+B1 HP: 23 - 0 => 23
+Speed set from 221 to 226
+
+
+[Tick 25742] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,226,2)
+B1 HP: 23 - 0 => 23
+Speed set from 226 to 231
+
+
+[Tick 25968] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,231,2)
+B1 HP: 23 - 0 => 23
+Speed set from 231 to 236
+
+
+[Tick 26122] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,236,2)
+B1 HP: 23 - 0 => 23
+Speed set from 236 to 241
+
+
+[Tick 26358] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,241,2)
+B1 HP: 23 - 0 => 23
+Speed set from 241 to 246
+
+
+[Tick 26840] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,246,2)
+B1 HP: 23 - 0 => 23
+Speed set from 246 to 251
+
+
+[Tick 26922] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,251,2)
+B1 HP: 23 - 0 => 23
+Speed set from 251 to 256
+
+
+[Tick 27424] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,256,2)
+B1 HP: 23 - 0 => 23
+Speed set from 256 to 261
+
+
+[Tick 27680] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,261,2)
+B1 HP: 23 - 0 => 23
+Speed set from 261 to 266
+
+
+[Tick 27738] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,266,2)
+B1 HP: 23 - 0 => 23
+Speed set from 266 to 271
+
+
+[Tick 28004] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,271,2)
+B1 HP: 23 - 0 => 23
+Speed set from 271 to 276
+
+
+[Tick 28546] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,276,2)
+B1 HP: 23 - 0 => 23
+Speed set from 276 to 281
+
+
+[Tick 28638] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,281,2)
+B1 HP: 23 - 0 => 23
+Speed set from 281 to 286
+
+
+[Tick 29200] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,286,2)
+B1 HP: 23 - 0 => 23
+Speed set from 286 to 291
+
+
+[Tick 29486] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,291,2)
+B1 HP: 23 - 0 => 23
+Speed set from 291 to 296
+
+
+[Tick 29680] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,296,2)
+B1 HP: 23 - 0 => 23
+Speed set from 296 to 301
+
+
+[Tick 29976] R1,  acting
+Survived Unit: R1, R4, B1, 
+R1(5,1,31,9,4) performs [Achilles' heel] to B1(13,10,23,301,2)
+B1 HP: 23 - 0 => 23
+Speed set from 301 to 306
+
+
+[Tick 30030] R4, B1,  acting
+Survived Unit: R1, R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R1(5,1,31,9,4)
+R1 HP: 22 - 12 => 10
+R4(3,8,19,6,4) performs [Meteor] to B1(13,10,23,306,2)
+B1 HP: 23 - 3 => 20
+
+
+[Tick 30031] B1,  acting
+Survived Unit: R1, R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R1(5,1,31,9,4)
+R1 HP: 10 - 12 => -2
+[BOON] Refreshing existing  on R1
+
+
+[Tick 30032] B1,  acting
+Survived Unit: R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R4(3,8,19,6,4)
+R4 HP: 19 - 5 => 14
+
+
+[Tick 30033] B1,  acting
+Survived Unit: R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R4(3,8,19,6,4)
+R4 HP: 14 - 5 => 9
+[BOON] Refreshing existing  on R4
+
+
+[Tick 30034] B1,  acting
+Survived Unit: R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R4(3,8,19,6,4)
+R4 HP: 9 - 5 => 4
+[BOON] Refreshing existing  on R4
+
+
+[Tick 30035] B1,  acting
+Survived Unit: R4, B1, 
+B1(13,10,23,306,2) performs [Poison Arrow] to R4(3,8,19,6,4)
+R4 HP: 4 - 5 => -1
+[BOON] Refreshing existing  on R4
+Battle Over! Blue Team wins!

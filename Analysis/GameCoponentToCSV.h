@@ -9,12 +9,11 @@
 class GameComponentToCSV {
   public:
     static void Convert(std::vector<TestSubject *> testSubjects);
-    static void SetSharedDirectory(const std::string &sharedDir);
-    static void SetExperimentNumber(int experimentNumber);
+    static void SetExperimentPath(const std::string &path);
+    static std::string GetExperimentPath();
 
   private:
-    static std::string sharedRunDirectory;
-    static int currentExperimentNumber;
+    static std::string experimentPath;
 };
 
 #endif

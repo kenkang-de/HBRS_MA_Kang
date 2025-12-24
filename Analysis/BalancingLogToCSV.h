@@ -7,13 +7,11 @@
 class BalancingLogToCSV {
   public:
     static void Convert();
-    static void InitializeRunDirectory();
-    static void SetExperimentNumber(int experimentNumber);
-    static std::string GetSharedDirectory();
+    static void SetExperimentPath(const std::string &path);
+    static std::string GetExperimentPath();
 
   private:
-    static std::string sharedRunDirectory;
-    static int currentExperimentNumber;
+    static std::string experimentPath;
 };
 
 #endif

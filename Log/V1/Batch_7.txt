@@ -1,1263 +1,161 @@
-Unit 0: R0 Attack:3 Defense:3 HP:13 Speed:3 Threat:6 Weapon: [BSW3](Thrust) Armor: [BSA47]
-Unit 1: R1 Attack:3 Defense:0 HP:10 Speed:3 Threat:0 Weapon: [BSW19](Momentum) Armor: [BSA14]
-Unit 2: R2 Attack:4 Defense:0 HP:10 Speed:6 Threat:4 Weapon: [BSW21](Poison Arrow) Armor: [BSA11]
-Unit 3: R3 Attack:1 Defense:0 HP:10 Speed:6 Threat:3 Weapon: [BSW31](Wrist Shot) Armor: [BSA10]
-Unit 4: R4 Attack:1 Defense:4 HP:15 Speed:1 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA50]
-Unit 5: B0 Attack:7 Defense:3 HP:10 Speed:2 Threat:8 Weapon: [BSW11](Fade Attack) Armor: [BSA34]
-Unit 6: B1 Attack:1 Defense:3 HP:10 Speed:2 Threat:5 Weapon: [BSW41](Bulkup) Armor: [BSA21]
-Unit 7: B2 Attack:3 Defense:1 HP:6 Speed:2 Threat:3 Weapon: [BSW43](Vow) Armor: [BSA26]
-Unit 8: B3 Attack:2 Defense:-1 HP:10 Speed:1 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA32]
-Unit 9: B4 Attack:0 Defense:2 HP:12 Speed:1 Threat:6 Weapon: [BSW45](Fatigue) Armor: [BSA36]
+Unit 0: R0 Attack:16 Defense:5 HP:19 Speed:8 Threat:18 Weapon: [BSW1](Slash) Armor: [BSA26]
+Unit 1: R1 Attack:2 Defense:8 HP:25 Speed:16 Threat:15 Weapon: [BSW8](Charge Attack) Armor: [BSA12]
+Unit 2: R2 Attack:6 Defense:5 HP:17 Speed:5 Threat:7 Weapon: [BSW21](Poison Arrow) Armor: [BSA8]
+Unit 3: R3 Attack:11 Defense:5 HP:26 Speed:8 Threat:8 Weapon: [BSW24](Boost Acuity) Armor: [BSA47]
+Unit 4: R4 Attack:9 Defense:4 HP:21 Speed:6 Threat:9 Weapon: [BSW30](Fire Arrow) Armor: [BSA20]
+Unit 5: B0 Attack:13 Defense:8 HP:28 Speed:10 Threat:15 Weapon: [BSW21](Poison Arrow) Armor: [BSA45]
+Unit 6: B1 Attack:9 Defense:8 HP:19 Speed:12 Threat:12 Weapon: [BSW24](Boost Acuity) Armor: [BSA14]
+Unit 7: B2 Attack:16 Defense:7 HP:21 Speed:6 Threat:12 Weapon: [BSW37](Freeze) Armor: [BSA43]
+Unit 8: B3 Attack:14 Defense:1 HP:17 Speed:6 Threat:8 Weapon: [BSW40](Grace) Armor: [BSA22]
+Unit 9: B4 Attack:19 Defense:5 HP:20 Speed:15 Threat:19 Weapon: [BSW42](Haste) Armor: [BSA29]
 ==========================
 
 
-[Tick 1] R2, R3,  acting
+[Tick 15] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B0(7,3,10,2,8)
-B0 HP: 10 - 1 => 9
-R3(1,0,10,6,3) performs [Wrist Shot] to B0(7,3,10,2,8)
-B0 HP: 9 - 0 => 9
+R1(2,8,25,16,15) performs [Charge Attack] to B4(19,5,20,15,19)
+B4 HP: 20 - 5 => 15
 
 
-[Tick 2] R0, R1, R2, R3,  acting
+[Tick 20] B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,0,10,3,0) performs [Momentum] to B0(7,3,10,2,8)
-B0 HP: 9 - 0 => 9
-R2(4,0,10,6,4) performs [Poison Arrow] to B0(7,3,10,2,8)
-B0 HP: 9 - 1 => 8
-[BOON] Refreshing existing  on B0
-R3(1,0,10,6,3) performs [Wrist Shot] to B0(7,3,10,2,8)
-B0 HP: 8 - 0 => 8
-R0(3,3,13,3,6) performs [Thrust] to B0(7,3,10,2,8)
-B0 HP: 8 - 0 => 8
+B1(9,8,19,12,12) performs [Boost Acuity] to R0(16,5,19,8,18)
+R0 HP: 19 - 12 => 7
 
 
-[Tick 3] B0, B1, B2, R2, R3,  acting
+[Tick 24] B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B0(7,3,10,2,8)
-B0 HP: 8 - 1 => 7
-[BOON] Refreshing existing  on B0
-R3(1,0,10,6,3) performs [Wrist Shot] to B0(7,3,10,2,8)
-B0 HP: 7 - 0 => 7
-B0(7,3,10,2,8) performs [Fade Attack] to R4(1,4,15,1,8)
-R4 HP: 15 - 3 => 12
-Threat set from 8 to 4
+B0(13,8,28,10,15) performs [Poison Arrow] to R0(16,5,19,8,18)
+R0 HP: 7 - 8 => -1
+
+
+[Tick 30] R3, R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(11,5,26,8,8) performs [Boost Acuity] to B4(19,5,20,15,19)
+B4 HP: 15 - 21 => -6
+R1(2,8,25,16,15) performs [Charge Attack] to B0(13,8,28,10,15)
+B0 HP: 28 - 2 => 26
+
+
+[Tick 40] R4, B2, B3, B1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R4(9,4,21,6,9) performs [Fire Arrow] to B0(13,8,28,10,15)
+B0 HP: 26 - 6 => 20
+B1(9,8,19,12,12) performs [Boost Acuity] to R1(2,8,25,16,15)
+R1 HP: 25 - 17 => 8
+B2(16,7,21,6,12) performs [Freeze] to R1(2,8,25,16,15)
+B3(14,1,17,6,8) performs [Grace] to B0(13,8,28,10,15)
+[HEAL] B0 healed for 8 HP (from 20 to 28/28)
+B3(14,1,17,6,8) performs [Grace] to B1(9,8,19,12,12)
+[HEAL] B1 healed for 0 HP (from 19 to 19/19)
+B3(14,1,17,6,8) performs [Grace] to B2(16,7,21,6,12)
+[HEAL] B2 healed for 0 HP (from 21 to 21/21)
+
+
+[Tick 48] R2, B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(6,5,17,5,7) performs [Poison Arrow] to B0(13,8,28,10,15)
+B0 HP: 28 - 0 => 28
+B0(13,8,28,10,15) performs [Poison Arrow] to R1(2,8,25,16,15)
+R1 HP: 8 - 5 => 3
 [AFTER-ACTION] R2 → B0: Poison Effect
 [BOON] Poison Effect on B0 (Usage: 2/2)
-B0 HP: 7 - 4 => 3
-B1(1,3,10,2,5) performs [Bulkup] to B4(0,2,12,1,6)
-B2(3,1,6,2,3) performs [Vow] to B4(0,2,12,1,6)
-Threat set from 6 to 9
-B2(3,1,6,2,3) performs [Vow] to B1(1,3,10,2,5)
-Threat set from 5 to 8
-[AFTER-ACTION] B2 → B1: Vow Effect Start
-Defense set from 3 to 6
+B0 HP: 28 - 6 => 22
 
 
-[Tick 4] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,0,10,3,0) performs [Momentum] to B4(0,2,12,1,9)
-B4 HP: 12 - 1 => 11
-R2(4,0,10,6,4) performs [Poison Arrow] to B4(0,2,12,1,9)
-B4 HP: 11 - 2 => 9
-R3(1,0,10,6,3) performs [Wrist Shot] to B4(0,2,12,1,9)
-B4 HP: 9 - 0 => 9
-R0(3,3,13,3,6) performs [Thrust] to B4(0,2,12,1,9)
-B4 HP: 9 - 4 => 5
+[Tick 60] R3, B1, R1,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R3(11,5,26,8,8) performs [Boost Acuity] to B0(13,8,28,10,15)
+B0 HP: 22 - 13 => 9
+B1(9,8,19,12,12) performs [Boost Acuity] to R1(2,8,25,16,15)
+R1 HP: 3 - 17 => -14
 
 
-[Tick 5] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B4(0,2,12,1,9)
-B4 HP: 5 - 2 => 3
-[BOON] Refreshing existing  on B4
-R3(1,0,10,6,3) performs [Wrist Shot] to B4(0,2,12,1,9)
-B4 HP: 3 - 0 => 3
-
-
-[Tick 6] B3, B0, B1, B2, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,0,10,3,0) performs [Momentum] to B4(0,2,12,1,9)
-B4 HP: 3 - 1 => 2
-R2(4,0,10,6,4) performs [Poison Arrow] to B4(0,2,12,1,9)
-B4 HP: 2 - 2 => 0
-[BOON] Refreshing existing  on B4
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,6,10,2,8)
-B1 HP: 10 - 0 => 10
-B0(7,3,10,2,4) performs [Fade Attack] to R4(1,4,15,1,8)
-R4 HP: 12 - 3 => 9
-R0(3,3,13,3,6) performs [Thrust] to B1(1,6,10,2,8)
-B1 HP: 10 - 0 => 10
-Threat set from 4 to 0
+[Tick 72] B0,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
+B0(13,8,28,10,15) performs [Poison Arrow] to R4(9,4,21,6,9)
+R4 HP: 21 - 9 => 12
 [AFTER-ACTION] R2 → B0: Poison Effect
 [BOON] Poison Effect on B0 (Usage: 1/2)
-B0 HP: 3 - 4 => -1
+B0 HP: 9 - 6 => 3
 [BOON] Poison Effect expired on B0 - cleaned up
-B3(2,-1,10,1,4) performs [Vow] to B1(1,6,10,2,8)
-Threat set from 8 to 10
-[BOON] Refreshing existing  on B1
-B3(2,-1,10,1,4) performs [Vow] to B3(2,-1,10,1,4)
-Threat set from 4 to 6
-B1(1,6,10,2,10) performs [Bulkup] to B1(1,6,10,2,10)
-B2(3,1,6,2,3) performs [Vow] to B1(1,6,10,2,10)
-Threat set from 10 to 13
-[BOON] Refreshing existing  on B1
-B2(3,1,6,2,3) performs [Vow] to B3(2,-1,10,1,6)
-Threat set from 6 to 9
-[BOON] Refreshing existing  on B3
-[AFTER-ACTION] B3 → B3: Vow Effect Start
-Defense set from -1 to 1
-[AFTER-ACTION] B2 → B1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on B1
- - applying removal effect: Vow Effect End
-Defense set from 6 to 3
-[BOON] Vow Effect Start expired on B1 - cleaned up
-[AFTER-ACTION] B1 → B1: BulkupSTART
-HP set from 10 to 11
 
 
-[Tick 7] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,13)
-B1 HP: 11 - 1 => 10
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,13)
-B1 HP: 10 - 0 => 10
-
-
-[Tick 8] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B1(1,3,11,2,13)
-B1 HP: 10 - 0 => 10
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,13)
-B1 HP: 10 - 1 => 9
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,13)
-B1 HP: 9 - 0 => 9
-R0(3,3,13,3,6) performs [Thrust] to B1(1,3,11,2,13)
-B1 HP: 9 - 0 => 9
-
-
-[Tick 9] B2, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,13)
-B1 HP: 9 - 1 => 8
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,13)
-B1 HP: 8 - 0 => 8
-B2(3,1,6,2,3) performs [Vow] to B1(1,3,11,2,13)
-Threat set from 13 to 16
-B2(3,1,6,2,3) performs [Vow] to B3(2,1,10,1,9)
-Threat set from 9 to 12
-[BOON] Refreshing existing  on B3
-
-
-[Tick 10] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B1(1,3,11,2,16)
-B1 HP: 8 - 0 => 8
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,16)
-B1 HP: 8 - 1 => 7
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,16)
-B1 HP: 7 - 0 => 7
-R0(3,3,13,3,6) performs [Thrust] to B1(1,3,11,2,16)
-B1 HP: 7 - 0 => 7
-
-
-[Tick 11] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,16)
-B1 HP: 7 - 1 => 6
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,16)
-B1 HP: 6 - 0 => 6
-
-
-[Tick 12] B3, B2, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B1(1,3,11,2,16)
-B1 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,16)
-B1 HP: 6 - 1 => 5
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,16)
-B1 HP: 5 - 0 => 5
-R0(3,3,13,3,6) performs [Thrust] to B1(1,3,11,2,16)
-B1 HP: 5 - 0 => 5
-B3(2,1,10,1,12) performs [Vow] to B1(1,3,11,2,16)
-Threat set from 16 to 18
-[BOON] Refreshing existing  on B1
-B3(2,1,10,1,12) performs [Vow] to B3(2,1,10,1,12)
-Threat set from 12 to 14
-[BOON] Refreshing existing  on B3
-B2(3,1,6,2,3) performs [Vow] to B1(1,3,11,2,18)
-Threat set from 18 to 21
-[BOON] Refreshing existing  on B1
-B2(3,1,6,2,3) performs [Vow] to B3(2,1,10,1,14)
-Threat set from 14 to 17
-[BOON] Refreshing existing  on B3
-[AFTER-ACTION] B3 → B3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on B3
- - applying removal effect: Vow Effect End
-Defense set from 1 to 0
-[BOON] Vow Effect Start expired on B3 - cleaned up
-
-
-[Tick 13] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,21)
-B1 HP: 5 - 1 => 4
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,21)
-B1 HP: 4 - 0 => 4
-
-
-[Tick 14] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B1(1,3,11,2,21)
-B1 HP: 4 - 0 => 4
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,21)
-B1 HP: 4 - 1 => 3
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,21)
-B1 HP: 3 - 0 => 3
-R0(3,3,13,3,6) performs [Thrust] to B1(1,3,11,2,21)
-B1 HP: 3 - 0 => 3
-
-
-[Tick 15] B2, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,21)
-B1 HP: 3 - 1 => 2
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,21)
-B1 HP: 2 - 0 => 2
-B2(3,1,6,2,3) performs [Vow] to B1(1,3,11,2,21)
-Threat set from 21 to 24
-[BOON] Refreshing existing  on B1
-B2(3,1,6,2,3) performs [Vow] to B3(2,0,10,1,17)
-Threat set from 17 to 20
-
-
-[Tick 16] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B1(1,3,11,2,24)
-B1 HP: 2 - 0 => 2
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,24)
-B1 HP: 2 - 1 => 1
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B1(1,3,11,2,24)
-B1 HP: 1 - 0 => 1
-R0(3,3,13,3,6) performs [Thrust] to B1(1,3,11,2,24)
-B1 HP: 1 - 0 => 1
-
-
-[Tick 17] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B1(1,3,11,2,24)
-B1 HP: 1 - 1 => 0
-[BOON] Refreshing existing  on B1
-R3(1,0,10,6,3) performs [Wrist Shot] to B3(2,0,10,1,20)
-B3 HP: 10 - 1 => 9
-
-
-[Tick 18] R4, B2, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, B3, 
-R1(3,0,10,3,0) performs [Momentum] to B3(2,0,10,1,20)
-B3 HP: 9 - 3 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B3(2,0,10,1,20)
-B3 HP: 6 - 4 => 2
-R3(1,0,10,6,3) performs [Wrist Shot] to B3(2,0,10,1,20)
-B3 HP: 2 - 1 => 1
-R0(3,3,13,3,6) performs [Thrust] to B3(2,0,10,1,20)
-B3 HP: 1 - 6 => -5
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-B2(3,1,6,2,3) performs [Vow] to B2(3,1,6,2,3)
-Threat set from 3 to 6
-[AFTER-ACTION] B2 → B2: Vow Effect Start
-Defense set from 1 to 4
-
-
-[Tick 19] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 20] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 21] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 22] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 23] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 24] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 25] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 26] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 27] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 28] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 29] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 30] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 31] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 32] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 33] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 34] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 35] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 36] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 37] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 38] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 39] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 40] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 41] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 42] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 43] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 44] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 45] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 46] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 47] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 48] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 49] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 50] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 51] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 52] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 53] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 54] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 55] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 56] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 57] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 58] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 59] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 60] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 61] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 62] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 63] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 64] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 65] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 66] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 67] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 68] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 69] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 70] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 71] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 72] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 73] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 74] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 75] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 76] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 77] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 78] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 79] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 80] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 81] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 82] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 83] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 84] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 85] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 86] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 87] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 88] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 89] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 90] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 91] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 92] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 93] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 94] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 95] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 96] R4, R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R4(1,4,15,1,8) performs [Grace] to R0(3,3,13,3,6)
-[HEAL] R0 healed for 0 HP (from 13 to 13/13)
-R4(1,4,15,1,8) performs [Grace] to R2(4,0,10,6,4)
-[HEAL] R2 healed for 0 HP (from 10 to 10/10)
-R4(1,4,15,1,8) performs [Grace] to R3(1,0,10,6,3)
-[HEAL] R3 healed for 0 HP (from 10 to 10/10)
-
-
-[Tick 97] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 98] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 99] R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-
-
-[Tick 100] R0, R1, R2, R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B2, 
-R1(3,0,10,3,0) performs [Momentum] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R2(4,0,10,6,4) performs [Poison Arrow] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-[BOON] Refreshing existing  on B2
-R3(1,0,10,6,3) performs [Wrist Shot] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-R0(3,3,13,3,6) performs [Thrust] to B2(3,4,6,2,6)
-B2 HP: 6 - 0 => 6
-Battle Over! Tick limit reached
+[Tick 80] R4, B2, B3, B1,  acting
+Survived Unit: R2, R3, R4, B0, B1, B2, B3, 
+R4(9,4,21,6,9) performs [Fire Arrow] to B0(13,8,28,10,15)
+B0 HP: 3 - 6 => -3
+B1(9,8,19,12,12) performs [Boost Acuity] to R4(9,4,21,6,9)
+R4 HP: 12 - 11 => 1
+[AFTER-ACTION] B0 → R4: Poison Effect
+[BOON] Poison Effect on R4 (Usage: 2/2)
+R4 HP: 1 - 13 => -12
+B2(16,7,21,6,12) performs [Freeze] to R3(11,5,26,8,8)
+B3(14,1,17,6,8) performs [Grace] to B1(9,8,19,12,12)
+[HEAL] B1 healed for 0 HP (from 19 to 19/19)
+B3(14,1,17,6,8) performs [Grace] to B2(16,7,21,6,12)
+[HEAL] B2 healed for 0 HP (from 21 to 21/21)
+
+
+[Tick 90] B1,  acting
+Survived Unit: R2, R3, B1, B2, B3, 
+B1(9,8,19,12,12) performs [Boost Acuity] to R3(11,5,26,8,8)
+R3 HP: 26 - 12 => 14
+
+
+[Tick 96] R2,  acting
+Survived Unit: R2, R3, B1, B2, B3, 
+R2(6,5,17,5,7) performs [Poison Arrow] to B1(9,8,19,12,12)
+B1 HP: 19 - 0 => 19
+
+
+[Tick 100] B2, B3, B1,  acting
+Survived Unit: R2, R3, B1, B2, B3, 
+B1(9,8,19,12,12) performs [Boost Acuity] to R3(11,5,26,8,8)
+R3 HP: 14 - 12 => 2
+[AFTER-ACTION] R2 → B1: Poison Effect
+[BOON] Poison Effect on B1 (Usage: 2/2)
+B1 HP: 19 - 6 => 13
+B2(16,7,21,6,12) performs [Freeze] to R3(11,5,26,8,8)
+[BOON] Refreshing existing  on R3
+B3(14,1,17,6,8) performs [Grace] to B1(9,8,19,12,12)
+[HEAL] B1 healed for 6 HP (from 13 to 19/19)
+B3(14,1,17,6,8) performs [Grace] to B2(16,7,21,6,12)
+[HEAL] B2 healed for 0 HP (from 21 to 21/21)
+
+
+[Tick 110] B1,  acting
+Survived Unit: R2, R3, B1, B2, B3, 
+B1(9,8,19,12,12) performs [Boost Acuity] to R3(11,5,26,8,8)
+R3 HP: 2 - 12 => -10
+[AFTER-ACTION] R2 → B1: Poison Effect
+[BOON] Poison Effect on B1 (Usage: 1/2)
+B1 HP: 19 - 6 => 13
+[BOON] Poison Effect expired on B1 - cleaned up
+
+
+[Tick 120] R2, B2, B3, B1,  acting
+Survived Unit: R2, B1, B2, B3, 
+R2(6,5,17,5,7) performs [Poison Arrow] to B1(9,8,19,12,12)
+B1 HP: 13 - 0 => 13
+B1(9,8,19,12,12) performs [Boost Acuity] to R2(6,5,17,5,7)
+R2 HP: 17 - 9 => 8
+[AFTER-ACTION] R2 → B1: Poison Effect
+[BOON] Poison Effect on B1 (Usage: 2/2)
+B1 HP: 13 - 6 => 7
+B2(16,7,21,6,12) performs [Freeze] to R2(6,5,17,5,7)
+B3(14,1,17,6,8) performs [Grace] to B1(9,8,19,12,12)
+[HEAL] B1 healed for 12 HP (from 7 to 19/19)
+B3(14,1,17,6,8) performs [Grace] to B2(16,7,21,6,12)
+[HEAL] B2 healed for 0 HP (from 21 to 21/21)
+
+
+[Tick 125] B1,  acting
+Survived Unit: R2, B1, B2, B3, 
+B1(9,8,19,12,12) performs [Boost Acuity] to R2(6,5,17,5,7)
+R2 HP: 8 - 9 => -1
+[AFTER-ACTION] R2 → B1: Poison Effect
+[BOON] Poison Effect on B1 (Usage: 1/2)
+B1 HP: 19 - 6 => 13
+[BOON] Poison Effect expired on B1 - cleaned up
+Battle Over! Blue Team wins!

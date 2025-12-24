@@ -9,3 +9,6 @@ NUM_BATCHES=20
 
 # Simulations per batch (round-robin matches per batch)  
 SIMULATIONS_PER_BATCH=45
+
+# Total game component number
+TOTAL_GAMECOMPONENTNUMBER=50

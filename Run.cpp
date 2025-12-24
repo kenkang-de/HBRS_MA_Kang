@@ -30,17 +30,21 @@
 #include "ExperimentSettings.h"
 
 class NewMasterController {
+
   private:
     std::string configFile;
     int numBatches;
     int teamsPerBatch;
+    int totalGameComponentNumber;
 
-    ElementList elementList;
+    ElementList originalElementList;
     std::unordered_map<std::string, BattleAction> actionMap;
     std::array<Unit, 10> battleUnits;
 
   public:
     NewMasterController(const std::string &config) : configFile(config) {}
+
+    RUNMODE runMode;
 
     // Load configuration from config file
     void LoadConfiguration() {
@@ -58,93 +62,91 @@ class NewMasterController {
 
             } else if (line.find("TEAMS_PER_BATCH=") == 0) {
                 teamsPerBatch = std::stoi(line.substr(16));
+
+            } else if (line.find("TOTAL_GAMECOMPONENTNUMBER=") == 0) {
+                totalGameComponentNumber = std::stoi(line.substr(26));
             }
         }
     }
 
-    void executeFullPipeline() {
+    void executeFullPipeline(int executionNumber) {
         auto startTime = std::chrono::high_resolution_clock::now();
 
         ExperimentSettings settings;
         std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
 
-        // Stage 1: Action Loading & Instantiation, Element(Equipment) Loading & Instantiation, Unit Instantiation
+        std::string outerFolder = std::to_string(totalGameComponentNumber) + "_" + std::to_string(executionNumber);
+
+        // Load action map
         actionMap = LoadActionsFromYAML("Simulator/" + Paths::BATTLE_ACTIONS_YAML);
         EquipmentLoader loader;
 
-        elementList = loader.InstantiateElements(actionMap);
+        originalElementList = loader.InstantiateElements(actionMap);
 
+        ElementList elementList;
         ComponentSelector selector;
-        elementList = selector.SelectRandomCompoent(elementList, 40);
+        elementList = selector.SelectRandomCompoent(originalElementList, totalGameComponentNumber);
 
-        // Set armor, weapons components CounterType
-        CounterTypeInitializer counterTypeInitializer(&elementList.armors, &elementList.weapons);
-        counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
-        counterTypeInitializer.Init_ArmorList();
-        counterTypeInitializer.Init_WeaponList();
-
-        // Set armor, weapon components UnitSynergy(Synergy consists of a weapon and an armor)
-        SynergyComponentInitializer synergyComponentInitializer(&elementList.armors, &elementList.weapons);
-        synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
-        SynergyRule::PrintTotalUnitSynergyApplied();
-
-        battleUnits = GenerateUnits();
-        std::cout << "Stage 1 Complete" << std::endl;
-
-        // Stage 2: Sampling & Batch Creation
+        // Create batches
         BatchCreator batchCreator;
         BatchConfig batchConfig =
             batchCreator.CreateBatchConfig(numBatches, teamsPerBatch, &elementList.weapons, &elementList.armors);
         std::vector<Batch> batches = batchCreator.CreateBatches(batchConfig);
-        std::cout << "Stage 2 Complete" << std::endl;
+        std::cout << "Batch created." << std::endl;
 
-        // Stage 3: Batch Simulation Execution
-        Simulator simulator(&elementList, &actionMap, &battleUnits);
-        simulator.SimulateBatches(&batches);
-        std::cout << "Stage 3 Complete" << std::endl;
-
-        // Init_TestSubject
-        std::vector<TestSubject *> testSubjects;
-        for (Weapon &weapon : elementList.weapons) {
-            testSubjects.push_back(&weapon);
-        }
-        for (Armor &armor : elementList.armors) {
-            testSubjects.push_back(&armor);
-        }
-
-        // Log first Simulated batch
-        TestSubjectToCSV csvGenerator;
-        csvGenerator.Convert(testSubjects);
-
-        // Stage 4: Autobalancing
-        GeneticBalancingProcessor balancer;
-        balancer.GenerateFirstChromosome(&elementList, testSubjects);
-
-        std::cout << "Auto balancing starts" << std::endl;
-
-        BalancingLogToCSV::InitializeRunDirectory();
-
-        GameComponentToCSV::SetSharedDirectory(BalancingLogToCSV::GetSharedDirectory());
-
-        // Setting files found - run for each file
         int experimentCount = 1;
         for (const std::string &fileDir : settingFiles) {
-            std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
-            std::cout << "Loading settings from: " << fileDir << std::endl;
 
-            BalancingLogToCSV::SetExperimentNumber(experimentCount);
-            GameComponentToCSV::SetExperimentNumber(experimentCount);
+            std::cout << "EXPERIMENT " << experimentCount << "/" << settingFiles.size() << std::endl;
+            std::cout << "Total GameComponent: " + totalGameComponentNumber << std::endl;
 
             settings.LoadFromFile(fileDir);
 
-            // Init CS
+            std::string innerFolder = settings.GetExperimentFolderName();
+            std::string experimentPath = "./Log/Balancing/" + outerFolder + "/" + innerFolder;
+            std::filesystem::create_directories(experimentPath);
+
+            std::filesystem::copy_file(fileDir, experimentPath + "/Configuration.txt",
+                                       std::filesystem::copy_options::overwrite_existing);
+
+            // Set armor, weapons components CounterType
+            CounterTypeInitializer counterTypeInitializer(&elementList.armors, &elementList.weapons);
             counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
             counterTypeInitializer.Init_ArmorList();
             counterTypeInitializer.Init_WeaponList();
 
-            // Init SYS
+            // Set armor, weapon components UnitSynergy(Synergy consists of a weapon and an armor)
+            SynergyComponentInitializer synergyComponentInitializer(&elementList.armors, &elementList.weapons);
             synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
             SynergyRule::PrintTotalUnitSynergyApplied();
+
+            battleUnits = GenerateUnits();
+
+            Simulator simulator(&elementList, &actionMap, &battleUnits);
+            simulator.SimulateBatches(&batches);
+            std::cout << "Initial batches simulated." << std::endl;
+
+            // Init_TestSubject
+            std::vector<TestSubject *> testSubjects;
+            for (Weapon &weapon : elementList.weapons) {
+                testSubjects.push_back(&weapon);
+            }
+            for (Armor &armor : elementList.armors) {
+                testSubjects.push_back(&armor);
+            }
+
+            // Log first Simulated batch
+            TestSubjectToCSV csvGenerator;
+            csvGenerator.Convert(testSubjects);
+
+            // Autobalancing
+            GeneticBalancingProcessor balancer;
+            balancer.GenerateFirstChromosome(&elementList, testSubjects);
+
+            std::cout << "Auto balancing starts" << std::endl;
+
+            BalancingLogToCSV::SetExperimentPath(experimentPath);
+            GameComponentToCSV::SetExperimentPath(experimentPath);
 
             BalancingLog::InitializeLogs(ExperimentSettings::MAXGENERATION);
             balancer.RunAutoBalancing(&simulator, &batchConfig, batches);
@@ -164,12 +166,17 @@ class NewMasterController {
     }
 };
 
-int main() {
+int main(int argc, char *argv[]) {
+
     std::string configFile = Paths::MASTER_CONFIG;
 
-    NewMasterController controller(configFile);
+    for (int execNum = 1; execNum <= std::atoi(argv[1]); execNum++) {
 
-    controller.LoadConfiguration();
+        NewMasterController controller(configFile);
+        controller.LoadConfiguration();
+        controller.executeFullPipeline(execNum);
+    }
 
-    controller.executeFullPipeline();
+    std::cout << "\nAll executions completed." << std::endl;
+    return 0;
 }

@@ -10,34 +10,19 @@
 #include <iostream>
 #include <sstream>
 
-// Static variable definitions
-std::string BalancingLogToCSV::sharedRunDirectory = "";
-int BalancingLogToCSV::currentExperimentNumber = 1;
+std::string BalancingLogToCSV::experimentPath = "";
 
 void BalancingLogToCSV::Convert() {
-    // Use the shared run directory and create experiment subdirectory
-    std::string outputDir = sharedRunDirectory + "Experiment_" + std::to_string(currentExperimentNumber) + "\\";
-    std::filesystem::create_directories(outputDir);
-
-    std::cout << "Using shared run directory: " << sharedRunDirectory << std::endl;
-    std::cout << "Created experiment directory: " << outputDir << std::endl;
-
-    // Generate filename in the new subdirectory
-    std::string filename = outputDir + "BalancingLogResults.csv";
+    std::string filename = experimentPath + "\\BalancingLogResults.csv";
 
     // Create output file
     std::ofstream csvFile(filename);
 
     if (!csvFile.is_open()) {
-        std::cerr << "Error: Could not create " << filename << " file!" << std::endl;
         return;
     }
 
-    std::cout << "Creating file: " << filename << std::endl;
-
-    // Check if we have any data
     if (BalancingLog::BalancingLogs.empty()) {
-        std::cerr << "Warning: No balancing log data found!" << std::endl;
         csvFile.close();
         return;
     }
@@ -47,11 +32,6 @@ void BalancingLogToCSV::Convert() {
     for (const auto &generation : BalancingLog::BalancingLogs) {
         maxEntries = std::max(maxEntries, generation.size());
     }
-
-    std::cout << "Total generations: " << BalancingLog::BalancingLogs.size() << std::endl;
-    std::cout << "Max entries per generation: " << maxEntries << std::endl;
-
-    // Write CSV header
     csvFile << "Generation";
     for (size_t i = 1; i <= maxEntries; ++i) {
         csvFile << ",Entry" << i;
@@ -60,87 +40,47 @@ void BalancingLogToCSV::Convert() {
 
     // Write data for each generation
     for (size_t gen = 0; gen < BalancingLog::BalancingLogs.size(); ++gen) {
-        // Write generation number (1-based)
         csvFile << (gen + 1);
 
         const auto &generationLogs = BalancingLog::BalancingLogs[gen];
-
-        // Debug output
-        std::cout << "Generation " << (gen + 1) << " has " << generationLogs.size() << " entries" << std::endl;
-
-        // Write all entries for this generation
         for (size_t entry = 0; entry < maxEntries; ++entry) {
             csvFile << ",";
             if (entry < generationLogs.size()) {
                 csvFile << generationLogs[entry];
             }
-            // If no entry exists, leave empty (just the comma)
         }
         csvFile << std::endl;
     }
 
     csvFile.close();
-    std::cout << "BalancingLog CSV file created successfully: " << filename << std::endl;
 
-    // Create separate configuration constants file
-    std::string configFilename = outputDir + "Configuration.txt";
+    std::string configFilename = experimentPath + "\\Configuration.txt";
     std::ofstream configFile(configFilename);
 
     if (!configFile.is_open()) {
-        std::cerr << "Error: Could not create " << configFilename << " file!" << std::endl;
         return;
     }
 
     configFile << "Experiment Settings" << std::endl;
     configFile << "========================" << std::endl;
-    // configFile << "DELAY_MULTIPLIER: " << DELAY_MULTIPLIER << std::endl;
-    // configFile << "MULTIPLIER_COUNTER: " << MULTIPLIER_COUNTER << std::endl;
-    // configFile << "MULTIPLIER_BASIC: " << MULTIPLIER_BASIC << std::endl;
-    // configFile << "DEFENSE_RATIO: " << DEFENSE_RATIO << std::endl;
-    // configFile << "SPEED_RATIO: " << SPEED_RATIO << std::endl;
-    configFile << "APPLIEDSTAT_RANGE: " << ExperimentSettings::APPLIEDSTAT_RANGE << std::endl;
-    configFile << "INDIVIDUALS_PER_GENERATION: " << ExperimentSettings::INDIVIDUALS_PER_GENERATION << std::endl;
-    configFile << "ELITES_PER_GENERATION: " << ExperimentSettings::ELITES_PER_GENERATION << std::endl;
-    configFile << "CROSSOVER_PROBABILITY: " << ExperimentSettings::CROSSOVER_PROBABILITY << std::endl;
-    configFile << "MUTATION_PROBABILITY: " << ExperimentSettings::MUTATION_PROBABILITY << std::endl;
-    configFile << "MUTATION_SIGMA: " << ExperimentSettings::MUTATION_SIGMA << std::endl;
-    // configFile << "TARGET_WINRATE: " << TARGET_WINRATE << std::endl;
-    // configFile << "TARGET_THRESHOLD: " << TARGET_THRESHOLD << std::endl;
-    // configFile << "FITNESS_THRESHOLD: " << FITNESS_THRESHOLD << std::endl;
-    // configFile << "FITNESS_MAX: " << FITNESS_MAX << std::endl;
-    // configFile << "RMSE_WEIGHT: " << RMSE_WEIGHT << std::endl;
-    // configFile << "DOC_WEIGHT: " << DOC_WEIGHT << std::endl;
-    configFile << "MAXGENERATION: " << ExperimentSettings::MAXGENERATION << std::endl;
+    configFile << "APPLIEDSTAT_RANGE=" << ExperimentSettings::APPLIEDSTAT_RANGE << std::endl;
+    configFile << "INDIVIDUALS_PER_GENERATION=" << ExperimentSettings::INDIVIDUALS_PER_GENERATION << std::endl;
+    configFile << "MAXGENERATION=" << ExperimentSettings::MAXGENERATION << std::endl;
+    configFile << "ELITES_PER_GENERATION=" << ExperimentSettings::ELITES_PER_GENERATION << std::endl;
+    configFile << "CROSSOVER_PROBABILITY=" << ExperimentSettings::CROSSOVER_PROBABILITY << std::endl;
+    configFile << "MUTATION_PROBABILITY=" << ExperimentSettings::MUTATION_PROBABILITY << std::endl;
+    configFile << "MUTATION_SIGMA=" << ExperimentSettings::MUTATION_SIGMA << std::endl;
+    configFile << "RATIO_BS=" << ExperimentSettings::RATIO_BS << std::endl;
+    configFile << "RATIO_CS=" << ExperimentSettings::RATIO_CS << std::endl;
+    configFile << "RATIO_SYS=" << ExperimentSettings::RATIO_SYS << std::endl;
 
     configFile.close();
-    std::cout << "Configuration file created successfully: " << configFilename << std::endl;
 }
 
-// Initialize the shared run directory with timestamp
-void BalancingLogToCSV::InitializeRunDirectory() {
-    std::string baseOutputDir = Paths::FromAnalysis::LOG_BALANCING_V1_DIR;
-    std::filesystem::create_directories(baseOutputDir);
-
-    auto now = std::chrono::system_clock::now();
-    auto time_t = std::chrono::system_clock::to_time_t(now);
-    auto tm = *std::localtime(&time_t);
-
-    std::ostringstream timestampStream;
-    timestampStream << std::put_time(&tm, "%Y%m%d_%H%M%S");
-    std::string timestamp = timestampStream.str();
-
-    sharedRunDirectory = baseOutputDir + "Run_" + timestamp + "\\";
-    std::filesystem::create_directories(sharedRunDirectory);
-
-    std::cout << "Initialized shared run directory: " << sharedRunDirectory << std::endl;
+void BalancingLogToCSV::SetExperimentPath(const std::string &path) {
+    experimentPath = path;
 }
 
-// Set the current experiment number
-void BalancingLogToCSV::SetExperimentNumber(int experimentNumber) {
-    currentExperimentNumber = experimentNumber;
-}
-
-// Get the shared run directory
-std::string BalancingLogToCSV::GetSharedDirectory() {
-    return sharedRunDirectory;
+std::string BalancingLogToCSV::GetExperimentPath() {
+    return experimentPath;
 }

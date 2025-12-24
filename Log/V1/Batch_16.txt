@@ -1,91 +1,105 @@
-Unit 0: R0 Attack:3 Defense:3 HP:7 Speed:4 Threat:5 Weapon: [BSW6](Achilles' heel) Armor: [BSA23]
-Unit 1: R1 Attack:3 Defense:3 HP:12 Speed:4 Threat:5 Weapon: [BSW17](Shoot) Armor: [BSA41]
-Unit 2: R2 Attack:4 Defense:-1 HP:10 Speed:3 Threat:3 Weapon: [BSW22](Delay Shot) Armor: [BSA32]
-Unit 3: R3 Attack:1 Defense:-2 HP:10 Speed:6 Threat:4 Weapon: [BSW36](Tetrodo) Armor: [BSA3]
-Unit 4: R4 Attack:1 Defense:3 HP:7 Speed:2 Threat:5 Weapon: [BSW43](Vow) Armor: [BSA23]
-Unit 5: B0 Attack:5 Defense:0 HP:14 Speed:5 Threat:4 Weapon: [BSW4](Berserk) Armor: [BSA8]
-Unit 6: B1 Attack:5 Defense:-2 HP:10 Speed:7 Threat:6 Weapon: [BSW9](Blitz Attack) Armor: [BSA3]
-Unit 7: B2 Attack:4 Defense:-1 HP:10 Speed:5 Threat:2 Weapon: [BSW18](Killing Spree) Armor: [BSA6]
-Unit 8: B3 Attack:1 Defense:1 HP:10 Speed:1 Threat:5 Weapon: [BSW38](Healing Touch) Armor: [BSA43]
-Unit 9: B4 Attack:1 Defense:3 HP:10 Speed:1 Threat:7 Weapon: [BSW50](Corrosion) Armor: [BSA28]
+Unit 0: R0 Attack:14 Defense:9 HP:32 Speed:13 Threat:26 Weapon: [BSW14](Leech Attack) Armor: [BSA45]
+Unit 1: R1 Attack:15 Defense:0 HP:23 Speed:12 Threat:9 Weapon: [BSW20](Blitz Shot) Armor: [BSA2]
+Unit 2: R2 Attack:17 Defense:7 HP:21 Speed:8 Threat:14 Weapon: [BSW31](Wrist Shot) Armor: [BSA9]
+Unit 3: R3 Attack:11 Defense:11 HP:25 Speed:9 Threat:9 Weapon: [BSW33](Magic Bolt) Armor: [BSA1]
+Unit 4: R4 Attack:10 Defense:6 HP:16 Speed:8 Threat:7 Weapon: [BSW35](Chain Lightning) Armor: [BSA36]
+Unit 5: B0 Attack:15 Defense:5 HP:13 Speed:10 Threat:10 Weapon: [BSW40](Grace) Armor: [BSA18]
+Unit 6: B1 Attack:21 Defense:5 HP:16 Speed:6 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA43]
+Unit 7: B2 Attack:9 Defense:3 HP:26 Speed:7 Threat:16 Weapon: [BSW44](Exposure) Armor: [BSA4]
+Unit 8: B3 Attack:19 Defense:3 HP:21 Speed:11 Threat:22 Weapon: [BSW44](Exposure) Armor: [BSA29]
+Unit 9: B4 Attack:1 Defense:3 HP:19 Speed:7 Threat:4 Weapon: [BSW50](Corrosion) Armor: [BSA10]
 ==========================
 
 
-[Tick 60] B1,  acting
+[Tick 27720] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(5,-2,10,7,6) performs [Blitz Attack] to R0(3,3,7,4,5)
-R0 HP: 7 - 9 => -2
+R0(14,9,32,13,26) performs [Leech Attack] to B3(19,3,21,11,22)
+B3 HP: 21 - 11 => 10
+[HEAL] R0 healed for 0 HP (from 32 to 32/32)
 
 
-[Tick 70] R3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,-2,10,6,4) performs [Tetrodo] to B4(1,3,10,1,7)
+[Tick 30030] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(15,0,23,12,9) performs [Blitz Shot] to B3(19,3,21,11,22)
+B3 HP: 10 - 24 => -14
 
 
-[Tick 84] B0, B2,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(4,-1,10,5,2) performs [Killing Spree] to R1(3,3,12,4,5)
-R1 HP: 12 - 1 => 11
-B0(5,0,14,5,4) performs [Berserk] to R1(3,3,12,4,5)
-B0 HP: 14 - 0 => 14
-R1 HP: 11 - 2 => 9
-Attack set from 5 to 5
+[Tick 36036] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
+[HEAL] B2 healed for 0 HP (from 26 to 26/26)
+B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
+[HEAL] B1 healed for 0 HP (from 16 to 16/16)
+B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
+[HEAL] B4 healed for 0 HP (from 19 to 19/19)
 
 
-[Tick 105] R1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(3,3,12,4,5) performs [Shoot] to B4(1,3,10,1,7)
-B4 HP: 10 - 0 => 10
+[Tick 39312] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
+[HEAL] B2 healed for 0 HP (from 26 to 26/26)
+B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
+[HEAL] B1 healed for 0 HP (from 16 to 16/16)
+B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
+[HEAL] B4 healed for 0 HP (from 19 to 19/19)
 
 
-[Tick 120] B1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(5,-2,10,7,6) performs [Blitz Attack] to R1(3,3,12,4,5)
-R1 HP: 9 - 9 => 0
+[Tick 40040] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R3(11,11,25,9,9) performs [Magic Bolt] to B2(9,3,26,7,16)
+B2 HP: 26 - 11 => 15
 
 
-[Tick 140] R2, R3,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(4,-1,10,3,3) performs [Delay Shot] to B4(1,3,10,1,7)
-B4 HP: 10 - 1 => 9
-R3(1,-2,10,6,4) performs [Tetrodo] to B4(1,3,10,1,7)
-[BOON] Refreshing existing  on B4
+[Tick 42588] B0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
+[HEAL] B2 healed for 11 HP (from 15 to 26/26)
+B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
+[HEAL] B1 healed for 0 HP (from 16 to 16/16)
+B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
+[HEAL] B4 healed for 0 HP (from 19 to 19/19)
 
 
-[Tick 168] B0, B2,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(4,-1,10,5,2) performs [Killing Spree] to R4(1,3,7,2,5)
-R4 HP: 7 - 1 => 6
-B0(5,0,14,5,4) performs [Berserk] to R4(1,3,7,2,5)
-B0 HP: 14 - 0 => 14
-R4 HP: 6 - 2 => 4
-Attack set from 5 to 5
+[Tick 43680] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R3(11,11,25,9,9) performs [Magic Bolt] to B2(9,3,26,7,16)
+B2 HP: 26 - 11 => 15
 
 
-[Tick 175] R3,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(1,-2,10,6,4) performs [Tetrodo] to B4(1,3,10,1,7)
-[BOON] Refreshing existing  on B4
+[Tick 45045] R2, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
+R2(17,7,21,8,14) performs [Wrist Shot] to B2(9,3,26,7,16)
+B2 HP: 15 - 14 => 1
+Attack set from 9 to 2
+[A25] B2 attack reduced from 9 to 2 (damage: 14, reduction: 7)
+R4(10,6,16,8,7) performs [Chain Lightning] to B2(2,3,26,7,16)
+B2 HP: 1 - 10 => -9
+R4(10,6,16,8,7) performs [Chain Lightning] to B0(15,5,13,10,10)
+B0 HP: 13 - 10 => 3
+R4(10,6,16,8,7) performs [Chain Lightning] to B1(21,5,16,6,7)
+B1 HP: 16 - 10 => 6
 
 
-[Tick 180] B1,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(5,-2,10,7,6) performs [Blitz Attack] to R4(1,3,7,2,5)
-R4 HP: 4 - 9 => -5
+[Tick 47320] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
+R3(11,11,25,9,9) performs [Magic Bolt] to B0(15,5,13,10,10)
+B0 HP: 3 - 11 => -8
 
 
-[Tick 210] R2, B0, B2, R3, B1,  acting
-Survived Unit: R2, R3, B0, B1, B2, B3, B4, 
-R2(4,-1,10,3,3) performs [Delay Shot] to B4(1,3,10,1,7)
-B4 HP: 9 - 1 => 8
-B2(4,-1,10,5,2) performs [Killing Spree] to R3(1,-2,10,6,4)
-R3 HP: 10 - 6 => 4
-B0(5,0,14,5,4) performs [Berserk] to R3(1,-2,10,6,4)
-B0 HP: 14 - 0 => 14
-R3 HP: 4 - 7 => -3
-Attack set from 5 to 5
-B1(5,-2,10,7,6) performs [Blitz Attack] to R2(4,-1,10,3,3)
-R2 HP: 10 - 13 => -3
-R3(1,-2,10,6,4) performs [Tetrodo] to B4(1,3,10,1,7)
-[BOON] Refreshing existing  on B4
-Battle Over! Blue Team wins!
+[Tick 49140] R2, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
+R2(17,7,21,8,14) performs [Wrist Shot] to B1(21,5,16,6,7)
+B1 HP: 6 - 12 => -6
+Attack set from 21 to 15
+[A25] B1 attack reduced from 21 to 15 (damage: 12, reduction: 6)
+R4(10,6,16,8,7) performs [Chain Lightning] to B4(1,3,19,7,4)
+B4 HP: 19 - 10 => 9
+
+
+[Tick 49959] R2, R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B4, 
+R2(17,7,21,8,14) performs [Wrist Shot] to B4(1,3,19,7,4)
+B4 HP: 9 - 14 => -5
+Attack set from 1 to 0
+[A25] B4 attack reduced from 1 to 0 (damage: 14, reduction: 7)
+Battle Over! Red Team wins!

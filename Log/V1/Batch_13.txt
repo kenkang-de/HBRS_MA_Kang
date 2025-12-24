@@ -1,122 +1,103 @@
-Unit 0: R0 Attack:4 Defense:0 HP:13 Speed:5 Threat:3 Weapon: [BSW4](Berserk) Armor: [BSA7]
-Unit 1: R1 Attack:7 Defense:0 HP:8 Speed:3 Threat:3 Weapon: [BSW16](Killer's Spirit) Armor: [BSA15]
-Unit 2: R2 Attack:2 Defense:1 HP:8 Speed:5 Threat:1 Weapon: [BSW25](Smoke Shot) Armor: [BSA18]
-Unit 3: R3 Attack:6 Defense:1 HP:4 Speed:3 Threat:1 Weapon: [BSW27](Tripple Shot) Armor: [BSA27]
-Unit 4: R4 Attack:1 Defense:3 HP:10 Speed:3 Threat:5 Weapon: [BSW39](Healing Link) Armor: [BSA21]
-Unit 5: B0 Attack:4 Defense:3 HP:10 Speed:5 Threat:3 Weapon: [BSW3](Thrust) Armor: [BSA21]
-Unit 6: B1 Attack:4 Defense:1 HP:8 Speed:3 Threat:3 Weapon: [BSW15](Taunt) Armor: [BSA18]
-Unit 7: B2 Attack:5 Defense:0 HP:8 Speed:6 Threat:4 Weapon: [BSW30](Fire Arrow) Armor: [BSA4]
-Unit 8: B3 Attack:0 Defense:3 HP:12 Speed:2 Threat:5 Weapon: [BSW36](Tetrodo) Armor: [BSA41]
-Unit 9: B4 Attack:-2 Defense:3 HP:10 Speed:3 Threat:6 Weapon: [BSW44](Exposure) Armor: [BSA22]
+Unit 0: R0 Attack:13 Defense:5 HP:15 Speed:9 Threat:8 Weapon: [BSW23](All-Out Assault) Armor: [BSA34]
+Unit 1: R1 Attack:9 Defense:7 HP:24 Speed:10 Threat:11 Weapon: [BSW33](Magic Bolt) Armor: [BSA3]
+Unit 2: R2 Attack:6 Defense:9 HP:11 Speed:9 Threat:18 Weapon: [BSW36](Tetrodo) Armor: [BSA3]
+Unit 3: R3 Attack:4 Defense:5 HP:19 Speed:9 Threat:18 Weapon: [BSW37](Freeze) Armor: [BSA3]
+Unit 4: R4 Attack:12 Defense:7 HP:27 Speed:5 Threat:18 Weapon: [BSW44](Exposure) Armor: [BSA27]
+Unit 5: B0 Attack:10 Defense:5 HP:22 Speed:6 Threat:5 Weapon: [BSW18](Killing Spree) Armor: [BSA25]
+Unit 6: B1 Attack:14 Defense:1 HP:24 Speed:9 Threat:10 Weapon: [BSW20](Blitz Shot) Armor: [BSA37]
+Unit 7: B2 Attack:18 Defense:2 HP:18 Speed:9 Threat:10 Weapon: [BSW29](Camo Throw) Armor: [BSA35]
+Unit 8: B3 Attack:20 Defense:9 HP:28 Speed:5 Threat:11 Weapon: [BSW41](Bulkup) Armor: [BSA9]
+Unit 9: B4 Attack:9 Defense:1 HP:22 Speed:8 Threat:13 Weapon: [BSW50](Corrosion) Armor: [BSA37]
 ==========================
 
 
-[Tick 5] B2,  acting
+[Tick 36] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(5,0,8,6,4) performs [Fire Arrow] to R4(1,3,10,3,5)
-R4 HP: 10 - 4 => 6
+R1(9,7,24,10,11) performs [Magic Bolt] to B4(9,1,22,8,13)
+B4 HP: 22 - 9 => 13
 
 
-[Tick 6] R0, R2, B0,  acting
+[Tick 40] R0, R2, R3, B1, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(2,1,8,5,1) performs [Smoke Shot] to B4(-2,3,10,3,6)
-B4 HP: 10 - 0 => 10
-Threat set from 6 to 3
-R0(4,0,13,5,3) performs [Berserk] to B3(0,3,12,2,5)
-R0 HP: 13 - 0 => 13
-B3 HP: 12 - 1 => 11
-Attack set from 4 to 4
-B0(4,3,10,5,3) performs [Thrust] to R4(1,3,10,3,5)
-R4 HP: 6 - 5 => 1
+R0(13,5,15,9,8) performs [All-Out Assault] to B4(9,1,22,8,13)
+Attack set from 13 to 16
+B4 HP: 13 - 15 => -2
+B1(14,1,24,9,10) performs [Blitz Shot] to R2(6,9,11,9,18)
+R2 HP: 11 - 14 => -3
+B2(18,2,18,9,10) performs [Camo Throw] to R3(4,5,19,9,18)
+R3 HP: 19 - 13 => 6
+Threat set from 8 to 24
+Threat set from 10 to -6
+R3(4,5,19,9,18) performs [Freeze] to B3(20,9,28,5,11)
 
 
-[Tick 10] R1, R3, B1, B2,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(6,1,4,3,1) performs [Tripple Shot] to B3(0,3,12,2,5)
-B3 HP: 11 - 3 => 8
-R3(6,1,4,3,1) performs [Tripple Shot] to B2(5,0,8,6,4)
-B2 HP: 8 - 6 => 2
-R3(6,1,4,3,1) performs [Tripple Shot] to B0(4,3,10,5,3)
-B0 HP: 10 - 3 => 7
-B2(5,0,8,6,4) performs [Fire Arrow] to R4(1,3,10,3,5)
-R4 HP: 1 - 4 => -3
-R1(7,0,8,3,3) performs [Killer's Spirit] to B3(0,3,12,2,5)
-B3 HP: 8 - 4 => 4
-B1(4,1,8,3,3) performs [Taunt] to R0(4,0,13,5,3)
-R0 HP: 13 - 4 => 9
-Threat set from 3 to 0
+[Tick 60] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, 
+B0(10,5,22,6,5) performs [Killing Spree] to R0(16,5,15,9,24)
+R0 HP: 15 - 5 => 10
 
 
-[Tick 12] R0, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
-R2(2,1,8,5,1) performs [Smoke Shot] to B3(0,3,12,2,5)
-B3 HP: 4 - 0 => 4
-Threat set from 5 to 2
-R0(4,0,13,5,3) performs [Berserk] to B2(5,0,8,6,4)
-R0 HP: 9 - 0 => 9
-B2 HP: 2 - 4 => -2
-Attack set from 4 to 4
-B0(4,3,10,5,3) performs [Thrust] to R0(4,0,13,5,3)
-R0 HP: 9 - 8 => 1
+[Tick 72] R4, R1,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, 
+R4(12,7,27,5,18) performs [Exposure] to B3(20,9,28,5,11)
+Threat set from 11 to 23
+R4(12,7,27,5,18) performs [Exposure] to B1(14,1,24,9,10)
+Threat set from 10 to 22
+R4(12,7,27,5,18) performs [Exposure] to B0(10,5,22,6,5)
+Threat set from 5 to 17
+R1(9,7,24,10,11) performs [Magic Bolt] to B3(20,9,28,5,23)
+B3 HP: 28 - 9 => 19
 
 
-[Tick 18] R0, R2, B0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R2(2,1,8,5,1) performs [Smoke Shot] to B0(4,3,10,5,3)
-B0 HP: 7 - 0 => 7
-Threat set from 3 to 0
-R0(4,0,13,5,3) performs [Berserk] to B4(-2,3,10,3,3)
-R0 HP: 1 - 0 => 1
-B4 HP: 10 - 1 => 9
-Attack set from 4 to 4
-B0(4,3,10,5,0) performs [Thrust] to R0(4,0,13,5,3)
-R0 HP: 1 - 8 => -7
+[Tick 75] B0,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, 
+B0(10,5,22,6,17) performs [Killing Spree] to R0(16,5,15,9,24)
+R0 HP: 10 - 5 => 5
 
 
-[Tick 20] R1, R3, B1,  acting
-Survived Unit: R1, R2, R3, B0, B1, B3, B4, 
-R3(6,1,4,3,1) performs [Tripple Shot] to B4(-2,3,10,3,3)
-B4 HP: 9 - 3 => 6
-R3(6,1,4,3,1) performs [Tripple Shot] to B3(0,3,12,2,2)
-B3 HP: 4 - 3 => 1
-R3(6,1,4,3,1) performs [Tripple Shot] to B0(4,3,10,5,0)
-B0 HP: 7 - 3 => 4
-R1(7,0,8,3,3) performs [Killer's Spirit] to B4(-2,3,10,3,3)
-B4 HP: 6 - 4 => 2
-B1(4,1,8,3,0) performs [Taunt] to R1(7,0,8,3,3)
-R1 HP: 8 - 4 => 4
-Threat set from 0 to -3
+[Tick 80] R0, B1, B2,  acting
+Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, 
+R0(16,5,15,9,24) performs [All-Out Assault] to B3(20,9,28,5,23)
+Attack set from 16 to 19
+B3 HP: 19 - 10 => 9
+B1(14,1,24,9,22) performs [Blitz Shot] to R0(19,5,15,9,24)
+R0 HP: 5 - 18 => -13
+B2(18,2,18,9,0) performs [Camo Throw] to R3(4,5,19,9,18)
+R3 HP: 6 - 13 => -7
+Threat set from 24 to 43
+Threat set from 0 to -16
 
 
-[Tick 24] R2, B0,  acting
-Survived Unit: R1, R2, R3, B0, B1, B3, B4, 
-R2(2,1,8,5,1) performs [Smoke Shot] to B4(-2,3,10,3,3)
-B4 HP: 2 - 0 => 2
-Threat set from 3 to 0
-B0(4,3,10,5,0) performs [Thrust] to R1(7,0,8,3,3)
-R1 HP: 4 - 8 => -4
+[Tick 81] R1,  acting
+Survived Unit: R1, R4, B0, B1, B2, B3, 
+R1(9,7,24,10,11) performs [Magic Bolt] to B3(20,9,28,5,23)
+B3 HP: 9 - 9 => 0
 
 
-[Tick 30] R3, B1, R2, B0,  acting
-Survived Unit: R2, R3, B0, B1, B3, B4, 
-R3(6,1,4,3,1) performs [Tripple Shot] to B3(0,3,12,2,2)
-B3 HP: 1 - 3 => -2
-R3(6,1,4,3,1) performs [Tripple Shot] to B0(4,3,10,5,0)
-B0 HP: 4 - 3 => 1
-R3(6,1,4,3,1) performs [Tripple Shot] to B1(4,1,8,3,0)
-B1 HP: 8 - 5 => 3
-R2(2,1,8,5,1) performs [Smoke Shot] to B0(4,3,10,5,0)
-B0 HP: 1 - 0 => 1
-Threat set from 0 to -3
-B1(4,1,8,3,0) performs [Taunt] to R2(2,1,8,5,1)
-R2 HP: 8 - 3 => 5
-B0(4,3,10,5,0) performs [Thrust] to R2(2,1,8,5,1)
-R2 HP: 5 - 7 => -2
-Threat set from 0 to -3
+[Tick 90] R4, B0, B1, B2, R1,  acting
+Survived Unit: R1, R4, B0, B1, B2, 
+B0(10,5,22,6,17) performs [Killing Spree] to R4(12,7,27,5,18)
+R4 HP: 27 - 3 => 24
+B1(14,1,24,9,22) performs [Blitz Shot] to R4(12,7,27,5,18)
+R4 HP: 24 - 16 => 8
+B2(18,2,18,9,0) performs [Camo Throw] to R4(12,7,27,5,18)
+R4 HP: 8 - 11 => -3
+Threat set from 0 to -16
+R1(9,7,24,10,11) performs [Magic Bolt] to B1(14,1,24,9,22)
+B1 HP: 24 - 9 => 15
 
 
-[Tick 36] B0,  acting
-Survived Unit: R3, B0, B1, B4, 
-B0(4,3,10,5,0) performs [Thrust] to R3(6,1,4,3,1)
-R3 HP: 4 - 7 => -3
+[Tick 99] R1,  acting
+Survived Unit: R1, B0, B1, B2, 
+R1(9,7,24,10,11) performs [Magic Bolt] to B1(14,1,24,9,22)
+B1 HP: 15 - 9 => 6
+
+
+[Tick 100] B1, B2,  acting
+Survived Unit: R1, B0, B1, B2, 
+B1(14,1,24,9,22) performs [Blitz Shot] to R1(9,7,24,10,11)
+R1 HP: 24 - 16 => 8
+B2(18,2,18,9,0) performs [Camo Throw] to R1(9,7,24,10,11)
+R1 HP: 8 - 11 => -3
+[AFTER-ACTION] No valid target found for B2
 Battle Over! Blue Team wins!
