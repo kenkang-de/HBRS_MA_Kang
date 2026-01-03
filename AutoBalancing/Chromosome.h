@@ -17,6 +17,7 @@ class Chromosome {
 
     float fitness;
 
+    // deprecated
     bool isAppliedAll;
 
   public:

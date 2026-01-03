@@ -1,136 +1,138 @@
-Unit 0: R0 Attack:15 Defense:9 HP:19 Speed:6 Threat:4 Weapon: [BSW16](Killer's Spirit) Armor: [BSA46]
-Unit 1: R1 Attack:16 Defense:4 HP:24 Speed:9 Threat:4 Weapon: [BSW18](Killing Spree) Armor: [BSA33]
-Unit 2: R2 Attack:19 Defense:2 HP:19 Speed:13 Threat:12 Weapon: [BSW23](All-Out Assault) Armor: [BSA2]
-Unit 3: R3 Attack:10 Defense:8 HP:16 Speed:7 Threat:4 Weapon: [BSW35](Chain Lightning) Armor: [BSA28]
-Unit 4: R4 Attack:12 Defense:2 HP:16 Speed:7 Threat:14 Weapon: [BSW47](Cheer) Armor: [BSA38]
-Unit 5: B0 Attack:17 Defense:5 HP:28 Speed:13 Threat:12 Weapon: [BSW13](Prep Attack) Armor: [BSA50]
-Unit 6: B1 Attack:9 Defense:7 HP:17 Speed:10 Threat:8 Weapon: [BSW20](Blitz Shot) Armor: [BSA1]
-Unit 7: B2 Attack:17 Defense:7 HP:14 Speed:7 Threat:13 Weapon: [BSW36](Tetrodo) Armor: [BSA48]
-Unit 8: B3 Attack:17 Defense:12 HP:25 Speed:7 Threat:14 Weapon: [BSW41](Bulkup) Armor: [BSA1]
-Unit 9: B4 Attack:17 Defense:8 HP:24 Speed:9 Threat:8 Weapon: [BSW41](Bulkup) Armor: [BSA16]
+Unit 0: R0 Attack:11 Defense:8 HP:29 Speed:8 Threat:12 Weapon: [BSW12](Final Attack) Armor: [BSA5]
+Unit 1: R1 Attack:10 Defense:7 HP:15 Speed:5 Threat:9 Weapon: [BSW13](Prep Attack) Armor: [BSA33]
+Unit 2: R2 Attack:13 Defense:6 HP:28 Speed:9 Threat:6 Weapon: [BSW15](Taunt) Armor: [BSA9]
+Unit 3: R3 Attack:11 Defense:1 HP:18 Speed:9 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA2]
+Unit 4: R4 Attack:7 Defense:9 HP:23 Speed:7 Threat:12 Weapon: [BSW44](Exposure) Armor: [BSA48]
+Unit 5: B0 Attack:23 Defense:2 HP:26 Speed:7 Threat:14 Weapon: [BSW11](Fade Attack) Armor: [BSA1]
+Unit 6: B1 Attack:13 Defense:2 HP:13 Speed:8 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA2]
+Unit 7: B2 Attack:13 Defense:3 HP:20 Speed:9 Threat:6 Weapon: [BSW19](Momentum) Armor: [BSA38]
+Unit 8: B3 Attack:6 Defense:4 HP:22 Speed:9 Threat:14 Weapon: [BSW24](Boost Acuity) Armor: [BSA14]
+Unit 9: B4 Attack:6 Defense:5 HP:19 Speed:6 Threat:5 Weapon: [BSW32](Focus Throw) Armor: [BSA19]
 ==========================
 
 
-[Tick 630] R2, B0,  acting
+[Tick 280] R2, R3, B2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(19,2,19,13,12) performs [All-Out Assault] to B3(17,12,25,7,14)
-Attack set from 19 to 24
-B3 HP: 25 - 12 => 13
-Threat set from 12 to 36
-B0(17,5,28,13,12) performs [Prep Attack] to R2(24,2,19,13,36)
-HP set from 28 to 43
-R2 HP: 19 - 15 => 4
+R3(11,1,18,9,8) performs [Shoot] to B0(23,2,26,7,14)
+B0 HP: 26 - 9 => 17
+B2(13,3,20,9,6) performs [Momentum] to R0(11,8,29,8,12)
+R0 HP: 29 - 5 => 24
+B3(6,4,22,9,14) performs [Boost Acuity] to R0(11,8,29,8,12)
+R0 HP: 24 - 6 => 18
+R2(13,6,28,9,6) performs [Taunt] to B0(23,2,26,7,14)
+B0 HP: 17 - 11 => 6
+Threat set from 6 to -1
 
 
-[Tick 819] B1,  acting
+[Tick 315] R0, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(9,7,17,10,8) performs [Blitz Shot] to R2(24,2,19,13,36)
-R2 HP: 4 - 17 => -13
+R0(11,8,29,8,12) performs [Final Attack] to B0(23,2,26,7,14)
+B0 HP: 6 - 17 => -11
+B1(13,2,13,8,4) performs [Prep Attack] to R0(11,8,29,8,12)
+HP set from 13 to 18
+R0 HP: 18 - 5 => 13
+Defense set from 8 to 0
+[A12] R0 defense changed from 8 to 0
 
 
-[Tick 910] R1, B4,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-R1(16,4,24,9,4) performs [Killing Spree] to B3(17,12,25,7,14)
-B3 HP: 13 - 4 => 9
-B4(17,8,24,9,8) performs [Bulkup] to B3(17,12,25,7,14)
+[Tick 360] R4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R4(7,9,23,7,12) performs [Exposure] to B3(6,4,22,9,14)
+Threat set from 14 to 21
+R4(7,9,23,7,12) performs [Exposure] to B2(13,3,20,9,6)
+Threat set from 6 to 13
+R4(7,9,23,7,12) performs [Exposure] to B4(6,5,19,6,5)
+Threat set from 5 to 12
 
 
-[Tick 1170] R3, R4, B2,  acting
-Survived Unit: R0, R1, R3, R4, B0, B1, B2, B3, B4, 
-R3(10,8,16,7,4) performs [Chain Lightning] to B3(17,12,25,7,14)
-B3 HP: 9 - 10 => -1
-R3(10,8,16,7,4) performs [Chain Lightning] to B2(17,7,14,7,13)
-B2 HP: 14 - 10 => 4
-R3(10,8,16,7,4) performs [Chain Lightning] to B0(17,5,43,13,12)
-B0 HP: 28 - 10 => 18
-R4(12,2,16,7,14) performs [Cheer] to R4(12,2,16,7,14)
-Attack set from 12 to 24
-B2(17,7,14,7,13) performs [Tetrodo] to R4(24,2,16,7,14)
-[AFTER-ACTION] B2 → R4: Tetrodo Effect
-[BOON] Tetrodo Effect on R4 (Usage: 2/2)
-R4 HP: 16 - 17 => -1
+[Tick 420] B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+B4(6,5,19,6,12) performs [Focus Throw] to R0(11,0,29,8,12)
+R0 HP: 13 - 7 => 6
 
 
-[Tick 1260] B0,  acting
-Survived Unit: R0, R1, R3, B0, B1, B2, B4, 
-B0(17,5,43,13,12) performs [Prep Attack] to R0(15,9,19,6,4)
-HP set from 43 to 51
-R0 HP: 19 - 8 => 11
+[Tick 504] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R1(10,7,15,5,9) performs [Prep Attack] to B3(6,4,22,9,21)
+HP set from 15 to 21
+B3 HP: 22 - 6 => 16
 
 
-[Tick 1365] R0,  acting
-Survived Unit: R0, R1, R3, B0, B1, B2, B4, 
-R0(15,9,19,6,4) performs [Killer's Spirit] to B2(17,7,14,7,13)
-B2 HP: 4 - 8 => -4
-Attack set from 15 to 18
-Defense set from 9 to 12
+[Tick 560] R2, R3, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B1, B2, B3, B4, 
+R3(11,1,18,9,8) performs [Shoot] to B3(6,4,22,9,21)
+B3 HP: 16 - 7 => 9
+B2(13,3,20,9,13) performs [Momentum] to R0(11,0,29,8,12)
+R0 HP: 6 - 13 => -7
+B3(6,4,22,9,21) performs [Boost Acuity] to R4(7,9,23,7,12)
+R4 HP: 23 - 4 => 19
+Speed set from 9 to 11
+R2(13,6,28,9,0) performs [Taunt] to B3(6,4,22,9,21)
+B3 HP: 9 - 9 => 0
+Threat set from 0 to -7
 
 
-[Tick 1638] B1,  acting
-Survived Unit: R0, R1, R3, B0, B1, B4, 
-B1(9,7,17,10,8) performs [Blitz Shot] to R0(18,12,19,6,4)
-R0 HP: 11 - 7 => 4
+[Tick 630] B1,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
+B1(13,2,18,8,4) performs [Prep Attack] to R4(7,9,23,7,12)
+HP set from 18 to 22
+R4 HP: 19 - 4 => 15
 
 
-[Tick 1820] R1, B4,  acting
-Survived Unit: R0, R1, R3, B0, B1, B4, 
-R1(16,4,24,9,4) performs [Killing Spree] to B0(17,5,51,13,12)
-B0 HP: 18 - 11 => 7
-B4(17,8,24,9,8) performs [Bulkup] to B0(17,5,51,13,12)
+[Tick 840] B4, R2, R3, B2,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
+B4(6,5,19,6,12) performs [Focus Throw] to R4(7,9,23,7,12)
+R4 HP: 15 - 0 => 15
+R3(11,1,18,9,8) performs [Shoot] to B2(13,3,20,11,13)
+B2 HP: 20 - 8 => 12
+B2(13,3,20,11,13) performs [Momentum] to R4(7,9,23,7,12)
+R4 HP: 15 - 4 => 11
+R2(13,6,28,9,0) performs [Taunt] to B2(13,3,20,11,13)
+B2 HP: 12 - 10 => 2
+Threat set from 0 to -7
 
 
-[Tick 1890] B0,  acting
-Survived Unit: R0, R1, R3, B0, B1, B4, 
-B0(17,5,51,13,12) performs [Prep Attack] to R0(18,12,19,6,4)
-HP set from 51 to 56
-R0 HP: 4 - 5 => -1
-[AFTER-ACTION] B4 → B0: BulkupSTART
-HP set from 56 to 73
+[Tick 1008] R1,  acting
+Survived Unit: R1, R2, R3, R4, B1, B2, B4, 
+R1(10,7,21,5,9) performs [Prep Attack] to B2(13,3,20,11,13)
+HP set from 21 to 28
+B2 HP: 2 - 7 => -5
 
 
-[Tick 2340] R3,  acting
-Survived Unit: R1, R3, B0, B1, B4, 
-R3(10,8,16,7,4) performs [Chain Lightning] to B0(17,5,73,13,12)
-B0 HP: 24 - 10 => 14
-R3(10,8,16,7,4) performs [Chain Lightning] to B1(9,7,17,10,8)
-B1 HP: 17 - 10 => 7
-R3(10,8,16,7,4) performs [Chain Lightning] to B4(17,8,24,9,8)
-B4 HP: 24 - 10 => 14
+[Tick 3920] R2, R3,  acting
+Survived Unit: R1, R2, R3, R4, B1, B4, 
+R3(11,1,18,9,8) performs [Shoot] to B4(6,5,19,6,12)
+B4 HP: 19 - 6 => 13
+R2(13,6,28,9,0) performs [Taunt] to B4(6,5,19,6,12)
+B4 HP: 13 - 8 => 5
+Threat set from 0 to -7
 
 
-[Tick 2458] B1,  acting
-Survived Unit: R1, R3, B0, B1, B4, 
-B1(9,7,17,10,8) performs [Blitz Shot] to R1(16,4,24,9,4)
-R1 HP: 24 - 15 => 9
+[Tick 4095] B1,  acting
+Survived Unit: R1, R2, R3, R4, B1, B4, 
+B1(13,2,22,8,4) performs [Prep Attack] to R4(7,9,23,7,12)
+HP set from 22 to 26
+R4 HP: 11 - 4 => 7
 
 
-[Tick 2520] B0,  acting
-Survived Unit: R1, R3, B0, B1, B4, 
-B0(17,5,73,13,12) performs [Prep Attack] to R1(16,4,24,9,4)
-HP set from 73 to 86
-R1 HP: 9 - 13 => -4
-[AFTER-ACTION] B4 → B0: BulkupSTART
-[TEMP-BUFF] BulkupSTART expired on B0
- - applying removal effect: BulkupEND
-HP set from 86 to 69
-[BOON] BulkupSTART expired on B0 - cleaned up
+[Tick 4200] R2, R3,  acting
+Survived Unit: R1, R2, R3, R4, B1, B4, 
+R3(11,1,18,9,8) performs [Shoot] to B4(6,5,19,6,12)
+B4 HP: 5 - 6 => -1
+R2(13,6,28,9,0) performs [Taunt] to B1(13,2,26,8,4)
+B1 HP: 13 - 11 => 2
+Threat set from 0 to -7
 
 
-[Tick 3277] B1,  acting
-Survived Unit: R3, B1, B4, 
-B1(9,7,17,10,8) performs [Blitz Shot] to R3(10,8,16,7,4)
-R3 HP: 16 - 11 => 5
+[Tick 4410] B1,  acting
+Survived Unit: R1, R2, R3, R4, B1, 
+B1(13,2,26,8,4) performs [Prep Attack] to R4(7,9,23,7,12)
+HP set from 26 to 30
+R4 HP: 7 - 4 => 3
 
 
-[Tick 3640] B4,  acting
-Survived Unit: R3, B1, B4, 
-B4(17,8,24,9,8) performs [Bulkup] to B1(9,7,17,10,8)
-
-
-[Tick 4096] B1,  acting
-Survived Unit: R3, B1, B4, 
-B1(9,7,17,10,8) performs [Blitz Shot] to R3(10,8,16,7,4)
-R3 HP: 5 - 11 => -6
-[AFTER-ACTION] B4 → B1: BulkupSTART
-HP set from 17 to 34
-Battle Over! Blue Team wins!
+[Tick 4480] R2, R3,  acting
+Survived Unit: R1, R2, R3, R4, B1, 
+R3(11,1,18,9,8) performs [Shoot] to B1(13,2,30,8,4)
+B1 HP: 2 - 9 => -7
+Battle Over! Red Team wins!

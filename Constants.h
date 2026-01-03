@@ -16,7 +16,7 @@ const int NOVELTYK = 5;
 
 // BALANCING
 const float DEFENSE_RATIO = 0.5f;
-const float SPEED_RATIO = 0.3f;
+const float SPEED_RATIO = 0.2f;
 
 const float TARGET_WINRATE = 0.5f;
 const float TARGET_THRESHOLD = 0.05f;

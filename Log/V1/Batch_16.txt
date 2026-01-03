@@ -1,105 +1,685 @@
-Unit 0: R0 Attack:14 Defense:9 HP:32 Speed:13 Threat:26 Weapon: [BSW14](Leech Attack) Armor: [BSA45]
-Unit 1: R1 Attack:15 Defense:0 HP:23 Speed:12 Threat:9 Weapon: [BSW20](Blitz Shot) Armor: [BSA2]
-Unit 2: R2 Attack:17 Defense:7 HP:21 Speed:8 Threat:14 Weapon: [BSW31](Wrist Shot) Armor: [BSA9]
-Unit 3: R3 Attack:11 Defense:11 HP:25 Speed:9 Threat:9 Weapon: [BSW33](Magic Bolt) Armor: [BSA1]
-Unit 4: R4 Attack:10 Defense:6 HP:16 Speed:8 Threat:7 Weapon: [BSW35](Chain Lightning) Armor: [BSA36]
-Unit 5: B0 Attack:15 Defense:5 HP:13 Speed:10 Threat:10 Weapon: [BSW40](Grace) Armor: [BSA18]
-Unit 6: B1 Attack:21 Defense:5 HP:16 Speed:6 Threat:7 Weapon: [BSW40](Grace) Armor: [BSA43]
-Unit 7: B2 Attack:9 Defense:3 HP:26 Speed:7 Threat:16 Weapon: [BSW44](Exposure) Armor: [BSA4]
-Unit 8: B3 Attack:19 Defense:3 HP:21 Speed:11 Threat:22 Weapon: [BSW44](Exposure) Armor: [BSA29]
-Unit 9: B4 Attack:1 Defense:3 HP:19 Speed:7 Threat:4 Weapon: [BSW50](Corrosion) Armor: [BSA10]
+Unit 0: R0 Attack:8 Defense:13 HP:28 Speed:7 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA20]
+Unit 1: R1 Attack:22 Defense:2 HP:23 Speed:6 Threat:10 Weapon: [BSW26](Double Shot) Armor: [BSA1]
+Unit 2: R2 Attack:23 Defense:3 HP:19 Speed:14 Threat:10 Weapon: [BSW45](Fatigue) Armor: [BSA21]
+Unit 3: R3 Attack:8 Defense:6 HP:13 Speed:7 Threat:10 Weapon: [BSW46](Protect) Armor: [BSA48]
+Unit 4: R4 Attack:17 Defense:7 HP:21 Speed:5 Threat:14 Weapon: [BSW49](Earthquake) Armor: [BSA12]
+Unit 5: B0 Attack:13 Defense:12 HP:20 Speed:9 Threat:9 Weapon: [BSW5](Overpower) Armor: [BSA49]
+Unit 6: B1 Attack:9 Defense:7 HP:15 Speed:6 Threat:16 Weapon: [BSW9](Blitz Attack) Armor: [BSA15]
+Unit 7: B2 Attack:16 Defense:5 HP:21 Speed:9 Threat:11 Weapon: [BSW19](Momentum) Armor: [BSA49]
+Unit 8: B3 Attack:10 Defense:6 HP:15 Speed:5 Threat:7 Weapon: [BSW32](Focus Throw) Armor: [BSA12]
+Unit 9: B4 Attack:9 Defense:6 HP:15 Speed:7 Threat:9 Weapon: [BSW46](Protect) Armor: [BSA4]
 ==========================
 
 
-[Tick 27720] R0,  acting
+[Tick 45] R2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(14,9,32,13,26) performs [Leech Attack] to B3(19,3,21,11,22)
-B3 HP: 21 - 11 => 10
-[HEAL] R0 healed for 0 HP (from 32 to 32/32)
+R2(23,3,19,14,10) performs [Fatigue] to B1(9,7,15,6,16)
+Speed set from 6 to 10
+R2(23,3,19,14,10) performs [Fatigue] to B2(16,5,21,9,11)
+Speed set from 9 to 13
 
 
-[Tick 30030] R1,  acting
+[Tick 70] B0, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(15,0,23,12,9) performs [Blitz Shot] to B3(19,3,21,11,22)
-B3 HP: 10 - 24 => -14
+B2(16,5,21,13,11) performs [Momentum] to R4(17,7,21,5,14)
+R4 HP: 21 - 9 => 12
+B0(13,12,20,9,9) performs [Overpower] to R4(17,7,21,5,14)
+R4 HP: 12 - 6 => 6
 
 
-[Tick 36036] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
-[HEAL] B2 healed for 0 HP (from 26 to 26/26)
-B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
-[HEAL] B1 healed for 0 HP (from 16 to 16/16)
-B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
-[HEAL] B4 healed for 0 HP (from 19 to 19/19)
+[Tick 90] R0, R3, B4, R2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B1(9,7,15,10,16)
+B1 HP: 15 - 8 => 7
+R3(8,6,13,7,10) performs [Protect] to R4(17,7,21,5,14)
+B4(9,6,15,7,9) performs [Protect] to B1(9,7,15,10,16)
+R2(23,3,19,14,10) performs [Fatigue] to B1(9,7,15,10,16)
+Speed set from 10 to 14
+R2(23,3,19,14,10) performs [Fatigue] to B2(16,5,21,13,11)
+Speed set from 13 to 17
 
 
-[Tick 39312] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
-[HEAL] B2 healed for 0 HP (from 26 to 26/26)
-B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
-[HEAL] B1 healed for 0 HP (from 16 to 16/16)
-B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
-[HEAL] B4 healed for 0 HP (from 19 to 19/19)
+[Tick 105] R1, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(22,2,23,6,10) performs [Double Shot] to B1(9,7,15,14,16)
+B1 HP: 7 - 15 => -8
+R1(22,2,23,6,10) performs [Double Shot] to B2(16,5,21,17,11)
+B2 HP: 21 - 17 => 4
 
 
-[Tick 40040] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-R3(11,11,25,9,9) performs [Magic Bolt] to B2(9,3,26,7,16)
-B2 HP: 26 - 11 => 15
+[Tick 126] B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R4(17,7,21,5,14)
+R4 HP: 6 - 12 => -6
 
 
-[Tick 42588] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-B0(15,5,13,10,10) performs [Grace] to B2(9,3,26,7,16)
-[HEAL] B2 healed for 11 HP (from 15 to 26/26)
-B0(15,5,13,10,10) performs [Grace] to B1(21,5,16,6,7)
-[HEAL] B1 healed for 0 HP (from 16 to 16/16)
-B0(15,5,13,10,10) performs [Grace] to B4(1,3,19,7,4)
-[HEAL] B4 healed for 0 HP (from 19 to 19/19)
+[Tick 675] R2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B2, B3, B4, 
+R2(23,3,19,14,10) performs [Fatigue] to B2(16,5,21,17,11)
+Speed set from 17 to 21
+R2(23,3,19,14,10) performs [Fatigue] to B0(13,12,20,9,9)
+Speed set from 9 to 13
 
 
-[Tick 43680] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-R3(11,11,25,9,9) performs [Magic Bolt] to B2(9,3,26,7,16)
-B2 HP: 26 - 11 => 15
+[Tick 701] B2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B2, B3, B4, 
+B2(16,5,21,21,11) performs [Momentum] to R1(22,2,23,6,10)
+R1 HP: 23 - 14 => 9
 
 
-[Tick 45045] R2, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B4, 
-R2(17,7,21,8,14) performs [Wrist Shot] to B2(9,3,26,7,16)
-B2 HP: 15 - 14 => 1
-Attack set from 9 to 2
-[A25] B2 attack reduced from 9 to 2 (damage: 14, reduction: 7)
-R4(10,6,16,8,7) performs [Chain Lightning] to B2(2,3,26,7,16)
-B2 HP: 1 - 10 => -9
-R4(10,6,16,8,7) performs [Chain Lightning] to B0(15,5,13,10,10)
-B0 HP: 13 - 10 => 3
-R4(10,6,16,8,7) performs [Chain Lightning] to B1(21,5,16,6,7)
-B1 HP: 16 - 10 => 6
+[Tick 831] B2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B2, B3, B4, 
+B2(16,5,21,21,11) performs [Momentum] to R1(22,2,23,6,10)
+R1 HP: 9 - 14 => -5
+Speed set from 21 to 24
 
 
-[Tick 47320] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B4, 
-R3(11,11,25,9,9) performs [Magic Bolt] to B0(15,5,13,10,10)
-B0 HP: 3 - 11 => -8
+[Tick 961] B2,  acting
+Survived Unit: R0, R2, R3, B0, B2, B3, B4, 
+B2(16,5,21,24,11) performs [Momentum] to R2(23,3,19,14,10)
+R2 HP: 19 - 13 => 6
 
 
-[Tick 49140] R2, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B4, 
-R2(17,7,21,8,14) performs [Wrist Shot] to B1(21,5,16,6,7)
-B1 HP: 6 - 12 => -6
-Attack set from 21 to 15
-[A25] B1 attack reduced from 21 to 15 (damage: 12, reduction: 6)
-R4(10,6,16,8,7) performs [Chain Lightning] to B4(1,3,19,7,4)
-B4 HP: 19 - 10 => 9
+[Tick 980] B0,  acting
+Survived Unit: R0, R2, R3, B0, B2, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R2(23,3,19,14,10)
+R2 HP: 6 - 10 => -4
+R2 HP: 0 - 10 => -10
 
 
-[Tick 49959] R2, R4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B4, 
-R2(17,7,21,8,14) performs [Wrist Shot] to B4(1,3,19,7,4)
-B4 HP: 9 - 14 => -5
-Attack set from 1 to 0
-[A25] B4 attack reduced from 1 to 0 (damage: 14, reduction: 7)
+[Tick 1260] R0, R3, B4,  acting
+Survived Unit: R0, R3, B0, B2, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B2(16,5,21,24,11)
+B2 HP: 4 - 10 => -6
+R3(8,6,13,7,10) performs [Protect] to R3(8,6,13,7,10)
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+[AFTER-ACTION] R3 → R3: ProtectSTART
+Defense set from 6 to 16
+
+
+[Tick 1820] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 1855] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 1890] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 1925] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 1960] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 1995] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2030] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2065] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2100] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2135] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2170] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2205] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2240] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2268] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2275] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2310] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2345] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2359] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2380] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2415] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2450] B3, B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2485] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2520] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2541] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2555] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2590] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2625] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2632] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2660] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2695] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2723] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2730] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2765] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2800] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2814] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 2820] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 20 - 3 => 17
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 2835] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 2870] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 2885] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 17 - 3 => 14
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 2905] B3, B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 2940] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 2950] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 14 - 3 => 11
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 2975] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 2996] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3010] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 3015] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 11 - 3 => 8
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 3045] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 3080] R0, B4, B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,21,20,13,9)
+B0 HP: 8 - 0 => 8
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 3087] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3115] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 3145] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,21,20,13,9)
+B0 HP: 8 - 0 => 8
+B4(9,6,15,7,9) performs [Protect] to B0(13,21,20,13,9)
+[BOON] Refreshing existing  on B0
+
+
+[Tick 3150] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 3178] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3185] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3210] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 8 - 3 => 5
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 3220] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 3255] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 3269] B3,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3275] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 5 - 3 => 2
+B4(9,6,15,7,9) performs [Protect] to B0(13,12,20,13,9)
+
+
+[Tick 3290] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,12,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+Defense set from 12 to 21
+
+
+[Tick 3325] B0,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+B0(13,21,20,13,9) performs [Overpower] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+R3 HP: 13 - 0 => 13
+[AFTER-ACTION] B4 → B0: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B0
+ - applying removal effect: ProtectEND
+Defense set from 21 to 12
+[BOON] ProtectSTART expired on B0 - cleaned up
+
+
+[Tick 3340] R0, B4,  acting
+Survived Unit: R0, R3, B0, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B0(13,12,20,13,9)
+B0 HP: 2 - 3 => -1
+B4(9,6,15,7,9) performs [Protect] to B4(9,6,15,7,9)
+[AFTER-ACTION] B4 → B4: ProtectSTART
+Defense set from 6 to 15
+
+
+[Tick 3360] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3367] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3374] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3381] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3388] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3395] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3402] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3405] R0, B4,  acting
+Survived Unit: R0, R3, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B4(9,15,15,7,9)
+B4 HP: 15 - 0 => 15
+B4(9,15,15,7,9) performs [Protect] to B4(9,15,15,7,9)
+[BOON] Refreshing existing  on B4
+[AFTER-ACTION] B4 → B4: ProtectSTART
+[TEMP-BUFF] ProtectSTART expired on B4
+ - applying removal effect: ProtectEND
+Defense set from 15 to 6
+[BOON] ProtectSTART expired on B4 - cleaned up
+
+
+[Tick 3409] B3,  acting
+Survived Unit: R0, R3, B3, B4, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3410] R0,  acting
+Survived Unit: R0, R3, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B4(9,6,15,7,9)
+B4 HP: 15 - 9 => 6
+
+
+[Tick 3415] R0,  acting
+Survived Unit: R0, R3, B3, B4, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B4(9,6,15,7,9)
+B4 HP: 6 - 9 => -3
+
+
+[Tick 3416] B3,  acting
+Survived Unit: R0, R3, B3, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3420] R0,  acting
+Survived Unit: R0, R3, B3, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B3(10,6,15,5,7)
+B3 HP: 15 - 9 => 6
+
+
+[Tick 3424] B3,  acting
+Survived Unit: R0, R3, B3, 
+B3(10,6,15,5,7) performs [Focus Throw] to R3(8,16,13,7,10)
+R3 HP: 13 - 0 => 13
+
+
+[Tick 3425] R0,  acting
+Survived Unit: R0, R3, B3, 
+R0(8,13,28,7,4) performs [Blitz Shot] to B3(10,6,15,5,7)
+B3 HP: 6 - 9 => -3
 Battle Over! Red Team wins!

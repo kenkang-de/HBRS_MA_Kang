@@ -72,6 +72,10 @@ class NewMasterController {
     void executeFullPipeline(int executionNumber) {
         auto startTime = std::chrono::high_resolution_clock::now();
 
+        // Set batch configuration in ExperimentSettings
+        ExperimentSettings::NUM_BATCHES = numBatches;
+        ExperimentSettings::TEAMS_PER_BATCH = teamsPerBatch;
+
         ExperimentSettings settings;
         std::vector<std::string> settingFiles = settings.GetExperimentFiles("./ExperimentSettings");
 
@@ -109,13 +113,13 @@ class NewMasterController {
             std::filesystem::copy_file(fileDir, experimentPath + "/Configuration.txt",
                                        std::filesystem::copy_options::overwrite_existing);
 
-            // Set armor, weapons components CounterType
+            // Set armor, weapons components CS
             CounterTypeInitializer counterTypeInitializer(&elementList.armors, &elementList.weapons);
             counterTypeInitializer.Init(ExperimentSettings::RATIO_CS);
             counterTypeInitializer.Init_ArmorList();
             counterTypeInitializer.Init_WeaponList();
 
-            // Set armor, weapon components UnitSynergy(Synergy consists of a weapon and an armor)
+            // Set armor, weapon components SYS
             SynergyComponentInitializer synergyComponentInitializer(&elementList.armors, &elementList.weapons);
             synergyComponentInitializer.Init(ExperimentSettings::RATIO_SYS);
             SynergyRule::PrintTotalUnitSynergyApplied();

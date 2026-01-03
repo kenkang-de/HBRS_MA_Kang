@@ -1,110 +1,188 @@
-Unit 0: R0 Attack:13 Defense:3 HP:12 Speed:13 Threat:15 Weapon: [BSW7](Poison Attack) Armor: [BSA14]
-Unit 1: R1 Attack:14 Defense:8 HP:16 Speed:15 Threat:16 Weapon: [BSW8](Charge Attack) Armor: [BSA29]
-Unit 2: R2 Attack:19 Defense:10 HP:17 Speed:15 Threat:6 Weapon: [BSW12](Final Attack) Armor: [BSA16]
-Unit 3: R3 Attack:4 Defense:3 HP:17 Speed:7 Threat:15 Weapon: [BSW45](Fatigue) Armor: [BSA8]
-Unit 4: R4 Attack:3 Defense:8 HP:21 Speed:5 Threat:4 Weapon: [BSW48](Meteor) Armor: [BSA10]
-Unit 5: B0 Attack:21 Defense:8 HP:25 Speed:8 Threat:14 Weapon: [BSW1](Slash) Armor: [BSA19]
-Unit 6: B1 Attack:20 Defense:8 HP:24 Speed:8 Threat:11 Weapon: [BSW1](Slash) Armor: [BSA24]
-Unit 7: B2 Attack:22 Defense:2 HP:11 Speed:13 Threat:17 Weapon: [BSW7](Poison Attack) Armor: [BSA29]
-Unit 8: B3 Attack:10 Defense:1 HP:35 Speed:12 Threat:5 Weapon: [BSW10](Reckless Attack) Armor: [BSA21]
-Unit 9: B4 Attack:12 Defense:10 HP:18 Speed:10 Threat:10 Weapon: [BSW24](Boost Acuity) Armor: [BSA18]
+Unit 0: R0 Attack:12 Defense:6 HP:29 Speed:7 Threat:10 Weapon: [BSW1](Slash) Armor: [BSA37]
+Unit 1: R1 Attack:14 Defense:0 HP:24 Speed:10 Threat:14 Weapon: [BSW8](Charge Attack) Armor: [BSA41]
+Unit 2: R2 Attack:12 Defense:4 HP:22 Speed:7 Threat:8 Weapon: [BSW17](Shoot) Armor: [BSA4]
+Unit 3: R3 Attack:5 Defense:3 HP:21 Speed:9 Threat:11 Weapon: [BSW25](Smoke Shot) Armor: [BSA19]
+Unit 4: R4 Attack:14 Defense:6 HP:15 Speed:6 Threat:9 Weapon: [BSW32](Focus Throw) Armor: [BSA34]
+Unit 5: B0 Attack:8 Defense:5 HP:23 Speed:15 Threat:15 Weapon: [BSW14](Leech Attack) Armor: [BSA24]
+Unit 6: B1 Attack:6 Defense:2 HP:22 Speed:8 Threat:12 Weapon: [BSW24](Boost Acuity) Armor: [BSA19]
+Unit 7: B2 Attack:2 Defense:7 HP:21 Speed:8 Threat:14 Weapon: [BSW36](Tetrodo) Armor: [BSA33]
+Unit 8: B3 Attack:29 Defense:2 HP:23 Speed:8 Threat:12 Weapon: [BSW45](Fatigue) Armor: [BSA1]
+Unit 9: B4 Attack:11 Defense:3 HP:16 Speed:7 Threat:21 Weapon: [BSW46](Protect) Armor: [BSA6]
 ==========================
 
 
-[Tick 728] R1, R2,  acting
+[Tick 168] B0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(14,8,16,15,16) performs [Charge Attack] to B2(22,2,11,13,17)
+B0(8,5,23,15,15) performs [Leech Attack] to R1(14,0,24,10,14)
+R1 HP: 24 - 8 => 16
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
+
+
+[Tick 252] R1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(14,0,24,10,14) performs [Charge Attack] to B4(11,3,16,7,21)
+B4 HP: 16 - 16 => 0
+
+
+[Tick 280] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+R3(5,3,21,9,11) performs [Smoke Shot] to B0(8,5,23,15,15)
+B0 HP: 23 - 0 => 23
+Threat set from 15 to 10
+
+
+[Tick 315] B1, B2, B3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, 
+B1(6,2,22,8,12) performs [Boost Acuity] to R1(14,0,24,10,14)
+R1 HP: 16 - 16 => 0
+B2(2,7,21,8,14) performs [Tetrodo] to R3(5,3,21,9,11)
+B3(29,2,23,8,12) performs [Fatigue] to R3(5,3,21,9,11)
+Speed set from 9 to 5
+B3(29,2,23,8,12) performs [Fatigue] to R0(12,6,29,7,10)
+Speed set from 7 to 3
+
+
+[Tick 336] B0,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
+B0(8,5,23,15,10) performs [Leech Attack] to R3(5,3,21,5,11)
+R3 HP: 21 - 5 => 16
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
+
+
+[Tick 360] R0, R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
+R2(12,4,22,7,8) performs [Shoot] to B2(2,7,21,8,14)
+B2 HP: 21 - 5 => 16
+R0(12,6,29,3,10) performs [Slash] to B2(2,7,21,8,14)
+B2 HP: 16 - 5 => 11
+
+
+[Tick 392] B0,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
+B0(8,5,23,15,10) performs [Leech Attack] to R3(5,3,21,5,11)
+R3 HP: 16 - 5 => 11
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
+
+
+[Tick 420] R4,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, 
+R4(14,6,15,6,9) performs [Focus Throw] to B2(2,7,21,8,14)
 B2 HP: 11 - 17 => -6
-R2(19,10,17,15,6) performs [Final Attack] to B0(21,8,25,8,14)
-B0 HP: 25 - 21 => 4
-Defense set from 10 to 0
-[A12] R2 defense changed from 10 to 0
 
 
-[Tick 840] R0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B3, B4, 
-R0(13,3,12,13,15) performs [Poison Attack] to B0(21,8,25,8,14)
-B0 HP: 4 - 5 => -1
+[Tick 448] B0,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
+B0(8,5,23,15,10) performs [Leech Attack] to R3(5,3,21,5,11)
+R3 HP: 11 - 5 => 6
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
 
 
-[Tick 910] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
-B3(10,1,35,12,5) performs [Reckless Attack] to R1(14,8,16,15,16)
-B3 HP: 35 - 1 => 34
-R1 HP: 16 - 12 => 4
+[Tick 480] R2,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
+R2(12,4,22,7,8) performs [Shoot] to B1(6,2,22,8,12)
+B1 HP: 22 - 10 => 12
 
 
-[Tick 1092] B4,  acting
-Survived Unit: R0, R1, R2, R3, R4, B1, B3, B4, 
-B4(12,10,18,10,10) performs [Boost Acuity] to R1(14,8,16,15,16)
-R1 HP: 4 - 19 => -15
+[Tick 504] B0,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
+B0(8,5,23,15,10) performs [Leech Attack] to R3(5,3,21,5,11)
+R3 HP: 6 - 5 => 1
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
 
 
-[Tick 1365] B1,  acting
-Survived Unit: R0, R2, R3, R4, B1, B3, B4, 
-B1(20,8,24,8,11) performs [Slash] to R0(13,3,12,13,15)
-R0 HP: 12 - 17 => -5
+[Tick 560] R3, R4, B0,  acting
+Survived Unit: R0, R2, R3, R4, B0, B1, B3, 
+R3(5,3,21,5,11) performs [Smoke Shot] to B1(6,2,22,8,12)
+B1 HP: 12 - 3 => 9
+Threat set from 12 to 10
+R4(14,6,15,6,9) performs [Focus Throw] to B3(29,2,23,8,12)
+B3 HP: 23 - 17 => 6
+[AFTER-ACTION] B2 → R3: Tetrodo Effect
+[BOON] Tetrodo Effect on R3 (Usage: 2/2)
+R3 HP: 1 - 2 => -1
+B0(8,5,23,15,10) performs [Leech Attack] to R0(12,6,29,3,10)
+R0 HP: 29 - 2 => 27
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
 
 
-[Tick 1456] R2,  acting
-Survived Unit: R2, R3, R4, B1, B3, B4, 
-R2(19,0,17,15,6) performs [Final Attack] to B1(20,8,24,8,11)
-B1 HP: 24 - 11 => 13
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 600] R2,  acting
+Survived Unit: R0, R2, R4, B0, B1, B3, 
+R2(12,4,22,7,8) performs [Shoot] to B3(29,2,23,8,12)
+B3 HP: 6 - 10 => -4
 
 
-[Tick 1512] R2,  acting
-Survived Unit: R2, R3, R4, B1, B3, B4, 
-R2(19,0,17,15,6) performs [Final Attack] to B1(20,8,24,8,11)
-B1 HP: 13 - 11 => 2
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 616] B0,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+B0(8,5,23,15,10) performs [Leech Attack] to R0(12,6,29,3,10)
+R0 HP: 27 - 2 => 25
+[HEAL] B0 healed for 0 HP (from 23 to 23/23)
 
 
-[Tick 1560] R3,  acting
-Survived Unit: R2, R3, R4, B1, B3, B4, 
-R3(4,3,17,7,15) performs [Fatigue] to B1(20,8,24,8,11)
-Speed set from 8 to 1
-R3(4,3,17,7,15) performs [Fatigue] to B4(12,10,18,10,10)
-Speed set from 10 to 2
+[Tick 630] B1,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 25 - 3 => 22
 
 
-[Tick 1568] R2,  acting
-Survived Unit: R2, R3, R4, B1, B3, B4, 
-R2(19,0,17,15,6) performs [Final Attack] to B1(20,8,24,1,11)
-B1 HP: 2 - 11 => -9
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 640] R0,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+R0(12,6,29,3,10) performs [Slash] to B0(8,5,23,15,10)
+B0 HP: 23 - 7 => 16
 
 
-[Tick 1596] R2,  acting
-Survived Unit: R2, R3, R4, B3, B4, 
-R2(19,0,17,15,6) performs [Final Attack] to B4(12,10,18,2,10)
-B4 HP: 18 - 9 => 9
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 672] B0,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+B0(8,5,23,15,10) performs [Leech Attack] to R0(12,6,29,3,10)
+R0 HP: 22 - 2 => 20
+[HEAL] B0 healed for 2 HP (from 16 to 18/23)
 
 
-[Tick 1624] R2,  acting
-Survived Unit: R2, R3, R4, B3, B4, 
-R2(19,0,17,15,6) performs [Final Attack] to B4(12,10,18,2,10)
-B4 HP: 9 - 9 => 0
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 700] R4,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+R4(14,6,15,6,9) performs [Focus Throw] to B0(8,5,23,15,10)
+B0 HP: 18 - 17 => 1
 
 
-[Tick 1652] R2,  acting
-Survived Unit: R2, R3, R4, B3, 
-R2(19,0,17,15,6) performs [Final Attack] to B3(10,1,35,12,5)
-B3 HP: 34 - 18 => 16
-Defense set from 0 to 0
-[A12] R2 defense changed from 0 to 0
+[Tick 720] R2,  acting
+Survived Unit: R0, R2, R4, B0, B1, 
+R2(12,4,22,7,8) performs [Shoot] to B0(8,5,23,15,10)
+B0 HP: 1 - 7 => -6
 
 
-[Tick 1680] R3, R2,  acting
-Survived Unit: R2, R3, R4, B3, 
-R2(19,0,17,15,6) performs [Final Attack] to B3(10,1,35,12,5)
-B3 HP: 16 - 18 => -2
-[AFTER-ACTION] No valid target found for R2
+[Tick 735] B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 20 - 3 => 17
+
+
+[Tick 756] B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 17 - 3 => 14
+
+
+[Tick 777] B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 14 - 3 => 11
+
+
+[Tick 798] B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 11 - 3 => 8
+
+
+[Tick 819] B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 8 - 3 => 5
+
+
+[Tick 840] R4, R2, B1,  acting
+Survived Unit: R0, R2, R4, B1, 
+R4(14,6,15,6,9) performs [Focus Throw] to B1(6,2,22,8,10)
+B1 HP: 9 - 17 => -8
+B1(6,2,22,8,10) performs [Boost Acuity] to R0(12,6,29,3,10)
+R0 HP: 5 - 3 => 2
 Battle Over! Red Team wins!

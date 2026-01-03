@@ -1,124 +1,707 @@
-Unit 0: R0 Attack:2 Defense:6 HP:16 Speed:9 Threat:12 Weapon: [BSW8](Charge Attack) Armor: [BSA8]
-Unit 1: R1 Attack:14 Defense:6 HP:29 Speed:7 Threat:14 Weapon: [BSW25](Smoke Shot) Armor: [BSA37]
-Unit 2: R2 Attack:20 Defense:7 HP:16 Speed:10 Threat:13 Weapon: [BSW26](Double Shot) Armor: [BSA18]
-Unit 3: R3 Attack:19 Defense:3 HP:20 Speed:7 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA32]
-Unit 4: R4 Attack:7 Defense:7 HP:33 Speed:15 Threat:6 Weapon: [BSW27](Tripple Shot) Armor: [BSA44]
-Unit 5: B0 Attack:19 Defense:10 HP:25 Speed:5 Threat:16 Weapon: [BSW1](Slash) Armor: [BSA27]
-Unit 6: B1 Attack:14 Defense:5 HP:22 Speed:9 Threat:5 Weapon: [BSW21](Poison Arrow) Armor: [BSA5]
-Unit 7: B2 Attack:22 Defense:2 HP:24 Speed:10 Threat:15 Weapon: [BSW26](Double Shot) Armor: [BSA2]
-Unit 8: B3 Attack:14 Defense:5 HP:21 Speed:10 Threat:14 Weapon: [BSW31](Wrist Shot) Armor: [BSA4]
-Unit 9: B4 Attack:9 Defense:10 HP:22 Speed:7 Threat:14 Weapon: [BSW48](Meteor) Armor: [BSA40]
+Unit 0: R0 Attack:13 Defense:2 HP:15 Speed:9 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA2]
+Unit 1: R1 Attack:16 Defense:4 HP:23 Speed:7 Threat:15 Weapon: [BSW11](Fade Attack) Armor: [BSA12]
+Unit 2: R2 Attack:14 Defense:6 HP:13 Speed:7 Threat:8 Weapon: [BSW32](Focus Throw) Armor: [BSA43]
+Unit 3: R3 Attack:11 Defense:5 HP:16 Speed:6 Threat:15 Weapon: [BSW46](Protect) Armor: [BSA12]
+Unit 4: R4 Attack:23 Defense:8 HP:22 Speed:7 Threat:19 Weapon: [BSW49](Earthquake) Armor: [BSA29]
+Unit 5: B0 Attack:17 Defense:10 HP:28 Speed:9 Threat:8 Weapon: [BSW15](Taunt) Armor: [BSA20]
+Unit 6: B1 Attack:9 Defense:11 HP:28 Speed:6 Threat:7 Weapon: [BSW20](Blitz Shot) Armor: [BSA37]
+Unit 7: B2 Attack:16 Defense:6 HP:24 Speed:10 Threat:9 Weapon: [BSW26](Double Shot) Armor: [BSA24]
+Unit 8: B3 Attack:16 Defense:7 HP:16 Speed:7 Threat:12 Weapon: [BSW32](Focus Throw) Armor: [BSA29]
+Unit 9: B4 Attack:17 Defense:4 HP:25 Speed:9 Threat:13 Weapon: [BSW45](Fatigue) Armor: [BSA36]
 ==========================
 
 
-[Tick 42] R4,  acting
+[Tick 63] B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
-B0 HP: 25 - 0 => 25
-R4(7,7,33,15,6) performs [Tripple Shot] to B2(22,2,24,10,15)
-B2 HP: 24 - 5 => 19
-R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
-B3 HP: 21 - 2 => 19
+B2(16,6,24,10,9) performs [Double Shot] to R4(23,8,22,7,19)
+R4 HP: 22 - 8 => 14
+B2(16,6,24,10,9) performs [Double Shot] to R1(16,4,23,7,15)
+R1 HP: 23 - 12 => 11
 
 
-[Tick 63] R2, B2, B3,  acting
+[Tick 70] R0, B0, B4,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(20,7,16,10,13) performs [Double Shot] to B0(19,10,25,5,16)
-B0 HP: 25 - 10 => 15
-R2(20,7,16,10,13) performs [Double Shot] to B2(22,2,24,10,15)
-B2 HP: 19 - 18 => 1
-B2(22,2,24,10,15) performs [Double Shot] to R1(14,6,29,7,14)
-R1 HP: 29 - 16 => 13
-B2(22,2,24,10,15) performs [Double Shot] to R2(20,7,16,10,13)
-R2 HP: 16 - 15 => 1
-B3(14,5,21,10,14) performs [Wrist Shot] to R1(14,6,29,7,14)
-R1 HP: 13 - 8 => 5
-Attack set from 14 to 10
-[A25] R1 attack reduced from 14 to 10 (damage: 8, reduction: 4)
+R0(13,2,15,9,7) performs [Achilles' heel] to B4(17,4,25,9,13)
+B4 HP: 25 - 9 => 16
+Speed set from 9 to 11
+B0(17,10,28,9,8) performs [Taunt] to R4(23,8,22,7,19)
+R4 HP: 14 - 9 => 5
+Threat set from 8 to 1
+B4(17,4,25,11,13) performs [Fatigue] to R4(23,8,22,7,19)
+Speed set from 7 to 5
+B4(17,4,25,11,13) performs [Fatigue] to R1(16,4,23,7,15)
+Speed set from 7 to 5
 
 
-[Tick 70] R0, B1,  acting
+[Tick 90] R1, R2, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(14,5,22,9,5) performs [Poison Arrow] to R1(10,6,29,7,14)
-R1 HP: 5 - 8 => -3
-R0(2,6,16,9,12) performs [Charge Attack] to B0(19,10,25,5,16)
-B0 HP: 15 - 0 => 15
+R2(14,6,13,7,8) performs [Focus Throw] to B4(17,4,25,11,13)
+B4 HP: 16 - 17 => -1
+B3(16,7,16,7,12) performs [Focus Throw] to R4(23,8,22,5,19)
+R4 HP: 5 - 20 => -15
+R1(16,4,23,5,15) performs [Fade Attack] to B3(16,7,16,7,12)
+B3 HP: 16 - 9 => 7
+Threat set from 15 to 3
 
 
-[Tick 84] R4,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B2, B3, B4, 
-R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
-B0 HP: 15 - 0 => 15
-R4(7,7,33,15,6) performs [Tripple Shot] to B2(22,2,24,10,15)
-B2 HP: 1 - 5 => -4
-R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
-B3 HP: 19 - 2 => 17
+[Tick 105] R3, B1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,5,16,6,15)
+R3 HP: 16 - 10 => 6
+R3(11,5,16,6,15) performs [Protect] to R3(11,5,16,6,15)
+[AFTER-ACTION] R3 → R3: ProtectSTART
+Defense set from 5 to 20
 
 
-[Tick 90] R3, B4,  acting
-Survived Unit: R0, R2, R3, R4, B0, B1, B3, B4, 
-R3(19,3,20,7,8) performs [Double Shot] to B0(19,10,25,5,16)
-B0 HP: 15 - 9 => 6
-R3(19,3,20,7,8) performs [Double Shot] to B3(14,5,21,10,14)
-B3 HP: 17 - 14 => 3
-B4(9,10,22,7,14) performs [Meteor] to R2(20,7,16,10,13)
-R2 HP: 1 - 9 => -8
-B4(9,10,22,7,14) performs [Meteor] to R0(2,6,16,9,12)
-R0 HP: 16 - 9 => 7
-B4(9,10,22,7,14) performs [Meteor] to R3(19,3,20,7,8)
-R3 HP: 20 - 9 => 11
-B4(9,10,22,7,14) performs [Meteor] to R4(7,7,33,15,6)
-R4 HP: 33 - 9 => 24
+[Tick 126] B2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+B2(16,6,24,10,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,10,9) performs [Double Shot] to R2(14,6,13,7,8)
+R2 HP: 13 - 10 => 3
 
 
-[Tick 126] B0, R4,  acting
-Survived Unit: R0, R3, R4, B0, B1, B3, B4, 
-R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
-B0 HP: 6 - 0 => 6
-R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
-B3 HP: 3 - 2 => 1
-R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
-B4 HP: 22 - 0 => 22
-B0(19,10,25,5,16) performs [Slash] to R0(2,6,16,9,12)
-R0 HP: 7 - 13 => -6
+[Tick 140] R0, B0,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+R0(13,2,15,9,7) performs [Achilles' heel] to B3(16,7,16,7,12)
+B3 HP: 7 - 6 => 1
+Speed set from 7 to 9
+B0(17,10,28,9,1) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 1 to -6
 
 
-[Tick 127] B3,  acting
-Survived Unit: R3, R4, B0, B1, B3, B4, 
-B3(14,5,21,10,14) performs [Wrist Shot] to R3(19,3,20,7,8)
-R3 HP: 11 - 11 => 0
-Attack set from 19 to 14
-[A25] R3 attack reduced from 19 to 14 (damage: 11, reduction: 5)
+[Tick 189] B2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+B2(16,6,24,10,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,10,9) performs [Double Shot] to R2(14,6,13,7,8)
+R2 HP: 3 - 10 => -7
 
 
-[Tick 140] B1,  acting
-Survived Unit: R4, B0, B1, B3, B4, 
-B1(14,5,22,9,5) performs [Poison Arrow] to R4(7,7,33,15,6)
-R4 HP: 24 - 7 => 17
+[Tick 210] B1, R0, B0,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, B3, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+R0(13,2,15,9,7) performs [Achilles' heel] to B3(16,7,16,9,12)
+B3 HP: 1 - 6 => -5
+Speed set from 9 to 11
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
 
 
-[Tick 168] R4,  acting
-Survived Unit: R4, B0, B1, B3, B4, 
-R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
-B0 HP: 6 - 0 => 6
-R4(7,7,33,15,6) performs [Tripple Shot] to B3(14,5,21,10,14)
-B3 HP: 1 - 2 => -1
-R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
-B4 HP: 22 - 0 => 22
-[AFTER-ACTION] B1 → R4: Poison Effect
-[BOON] Poison Effect on R4 (Usage: 2/2)
-R4 HP: 17 - 14 => 3
+[Tick 220] R0, B0,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+R0(13,2,15,9,7) performs [Achilles' heel] to B2(16,6,24,10,9)
+B2 HP: 24 - 7 => 17
+Speed set from 10 to 12
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
 
 
-[Tick 210] B1, R4,  acting
-Survived Unit: R4, B0, B1, B4, 
-B1(14,5,22,9,5) performs [Poison Arrow] to R4(7,7,33,15,6)
-R4 HP: 3 - 7 => -4
-[BOON] Refreshing existing  on R4
-R4(7,7,33,15,6) performs [Tripple Shot] to B0(19,10,25,5,16)
-B0 HP: 6 - 0 => 6
-R4(7,7,33,15,6) performs [Tripple Shot] to B4(9,10,22,7,14)
-B4 HP: 22 - 0 => 22
-R4(7,7,33,15,6) performs [Tripple Shot] to B1(14,5,22,9,5)
-B1 HP: 22 - 2 => 20
-Battle Over! Blue Team wins!
+[Tick 225] B1,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 230] R0, B0,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+R0(13,2,15,9,7) performs [Achilles' heel] to B2(16,6,24,12,9)
+B2 HP: 17 - 7 => 10
+Speed set from 12 to 14
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 250] R0, B0,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+R0(13,2,15,9,7) performs [Achilles' heel] to B2(16,6,24,14,9)
+B2 HP: 10 - 7 => 3
+Speed set from 14 to 16
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 252] B2,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R0(13,2,15,9,7)
+R0 HP: 15 - 14 => 1
+
+
+[Tick 255] B1,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 297] B2,  acting
+Survived Unit: R0, R1, R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R0(13,2,15,9,7)
+R0 HP: 1 - 14 => -13
+
+
+[Tick 320] B0,  acting
+Survived Unit: R1, R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 342] B2,  acting
+Survived Unit: R1, R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R1(16,4,23,5,3)
+R1 HP: 11 - 12 => -1
+
+
+[Tick 375] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 387] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 396] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 399] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 400] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 405] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 414] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 416] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 423] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 432] B0, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 441] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 447] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 448] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 450] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 459] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 464] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 468] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 471] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 477] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 480] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 486] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 495] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 496] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 504] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 512] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 513] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 519] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 522] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 528] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 531] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 540] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 543] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 544] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 549] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 558] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 560] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 567] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 576] B0, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 585] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 591] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 592] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 594] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 603] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 608] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 612] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 615] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 621] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 624] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 630] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 639] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 640] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 648] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 656] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 657] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 663] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 666] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 672] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 675] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 684] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 687] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 688] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 693] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 702] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 704] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 711] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 720] B0, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 729] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 735] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 736] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 738] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 747] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 752] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 756] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 759] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 765] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 768] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 774] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 783] B1, B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 784] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 792] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 800] B0,  acting
+Survived Unit: R3, B0, B1, B2, 
+B0(17,10,28,9,0) performs [Taunt] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Threat set from 0 to -7
+
+
+[Tick 801] B2,  acting
+Survived Unit: R3, B0, B1, B2, 
+B2(16,6,24,16,9) performs [Double Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+
+
+[Tick 807] B1,  acting
+Survived Unit: R3, B0, B1, B2, 
+B1(9,11,28,6,7) performs [Blitz Shot] to R3(11,20,16,6,15)
+R3 HP: 6 - 0 => 6
+Battle Over! Tick limit reached

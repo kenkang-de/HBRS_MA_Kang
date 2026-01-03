@@ -1,963 +1,153 @@
-Unit 0: R0 Attack:3 Defense:6 HP:22 Speed:12 Threat:5 Weapon: [BSW5](Overpower) Armor: [BSA20]
-Unit 1: R1 Attack:11 Defense:6 HP:27 Speed:18 Threat:9 Weapon: [BSW27](Tripple Shot) Armor: [BSA17]
-Unit 2: R2 Attack:11 Defense:3 HP:23 Speed:13 Threat:18 Weapon: [BSW38](Healing Touch) Armor: [BSA14]
-Unit 3: R3 Attack:12 Defense:8 HP:18 Speed:7 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA34]
-Unit 4: R4 Attack:16 Defense:7 HP:27 Speed:9 Threat:22 Weapon: [BSW47](Cheer) Armor: [BSA50]
-Unit 5: B0 Attack:20 Defense:8 HP:24 Speed:8 Threat:11 Weapon: [BSW1](Slash) Armor: [BSA24]
-Unit 6: B1 Attack:13 Defense:4 HP:18 Speed:13 Threat:11 Weapon: [BSW2](Chop) Armor: [BSA7]
-Unit 7: B2 Attack:6 Defense:3 HP:18 Speed:9 Threat:17 Weapon: [BSW37](Freeze) Armor: [BSA26]
-Unit 8: B3 Attack:16 Defense:10 HP:14 Speed:11 Threat:9 Weapon: [BSW43](Vow) Armor: [BSA18]
-Unit 9: B4 Attack:12 Defense:5 HP:26 Speed:5 Threat:16 Weapon: [BSW44](Exposure) Armor: [BSA9]
+Unit 0: R0 Attack:13 Defense:1 HP:22 Speed:6 Threat:9 Weapon: [BSW1](Slash) Armor: [BSA44]
+Unit 1: R1 Attack:14 Defense:1 HP:22 Speed:11 Threat:16 Weapon: [BSW14](Leech Attack) Armor: [BSA1]
+Unit 2: R2 Attack:14 Defense:7 HP:29 Speed:9 Threat:12 Weapon: [BSW15](Taunt) Armor: [BSA14]
+Unit 3: R3 Attack:10 Defense:3 HP:20 Speed:9 Threat:17 Weapon: [BSW17](Shoot) Armor: [BSA17]
+Unit 4: R4 Attack:10 Defense:1 HP:18 Speed:8 Threat:20 Weapon: [BSW24](Boost Acuity) Armor: [BSA6]
+Unit 5: B0 Attack:12 Defense:4 HP:15 Speed:8 Threat:13 Weapon: [BSW13](Prep Attack) Armor: [BSA17]
+Unit 6: B1 Attack:15 Defense:8 HP:21 Speed:7 Threat:6 Weapon: [BSW13](Prep Attack) Armor: [BSA20]
+Unit 7: B2 Attack:8 Defense:4 HP:24 Speed:8 Threat:15 Weapon: [BSW36](Tetrodo) Armor: [BSA12]
+Unit 8: B3 Attack:12 Defense:4 HP:24 Speed:9 Threat:17 Weapon: [BSW36](Tetrodo) Armor: [BSA34]
+Unit 9: B4 Attack:14 Defense:8 HP:26 Speed:7 Threat:19 Weapon: [BSW44](Exposure) Armor: [BSA34]
 ==========================
 
 
-[Tick 20020] R1,  acting
+[Tick 504] R1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(11,6,27,18,9) performs [Tripple Shot] to B2(6,3,18,9,17)
-B2 HP: 18 - 8 => 10
-R1(11,6,27,18,9) performs [Tripple Shot] to B4(12,5,26,5,16)
+R1(14,1,22,11,16) performs [Leech Attack] to B4(14,8,26,7,19)
 B4 HP: 26 - 6 => 20
-R1(11,6,27,18,9) performs [Tripple Shot] to B0(20,8,24,8,11)
-B0 HP: 24 - 3 => 21
+[HEAL] R1 healed for 0 HP (from 22 to 22/22)
 
 
-[Tick 27720] R2, B1,  acting
+[Tick 616] R2, R3, B3,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(13,4,18,13,11) performs [Chop] to R4(16,7,27,9,22)
-R4 HP: 27 - 6 => 21
-Defense set from 7 to 0
-R2(11,3,23,13,18) performs [Healing Touch] to R4(16,0,27,9,22)
-[HEAL] R4 healed for 6 HP (from 21 to 27/27)
+R3(10,3,20,9,17) performs [Shoot] to B4(14,8,26,7,19)
+B4 HP: 20 - 2 => 18
+R2(14,7,29,9,12) performs [Taunt] to B4(14,8,26,7,19)
+B4 HP: 18 - 6 => 12
+Threat set from 12 to 5
+B3(12,4,24,9,17) performs [Tetrodo] to R4(10,1,18,8,20)
 
 
-[Tick 30030] R0,  acting
+[Tick 693] R4, B0, B2,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R0(3,6,22,12,5) performs [Overpower] to B2(6,3,18,9,17)
-B2 HP: 10 - 0 => 10
-B2 HP: 10 - 0 => 10
+R4(10,1,18,8,20) performs [Boost Acuity] to B4(14,8,26,7,19)
+B4 HP: 12 - 9 => 3
+[AFTER-ACTION] B3 → R4: Tetrodo Effect
+[BOON] Tetrodo Effect on R4 (Usage: 2/2)
+R4 HP: 18 - 12 => 6
+B0(12,4,15,8,13) performs [Prep Attack] to R4(10,1,18,8,20)
+HP set from 15 to 26
+R4 HP: 6 - 11 => -5
+B2(8,4,24,8,15) performs [Tetrodo] to R3(10,3,20,9,17)
 
 
-[Tick 32760] B3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B3(16,10,14,11,9) performs [Vow] to B2(6,3,18,9,17)
-Threat set from 17 to 33
-B3(16,10,14,11,9) performs [Vow] to B4(12,5,26,5,16)
-Threat set from 16 to 32
-
-
-[Tick 40040] R1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R1(11,6,27,18,9) performs [Tripple Shot] to B2(6,3,18,9,33)
-B2 HP: 10 - 8 => 2
-R1(11,6,27,18,9) performs [Tripple Shot] to B4(12,5,26,5,32)
-B4 HP: 20 - 6 => 14
-R1(11,6,27,18,9) performs [Tripple Shot] to B0(20,8,24,8,11)
-B0 HP: 21 - 3 => 18
-
-
-[Tick 45045] B0,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(20,8,24,8,11) performs [Slash] to R4(16,0,27,9,22)
-R4 HP: 27 - 20 => 7
-
-
-[Tick 51480] R3,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(12,8,18,7,7) performs [Vow] to R4(16,0,27,9,22)
-Threat set from 22 to 34
-R3(12,8,18,7,7) performs [Vow] to R2(11,3,23,13,18)
-Threat set from 18 to 30
-
-
-[Tick 55440] R2, B1,  acting
-Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(13,4,18,13,11) performs [Chop] to R4(16,0,27,9,34)
-R4 HP: 7 - 13 => -6
-Defense set from 0 to 0
-R2(11,3,23,13,30) performs [Healing Touch] to R1(11,6,27,18,9)
-[HEAL] R1 healed for 0 HP (from 27 to 27/27)
-[AFTER-ACTION] R3 → R2: Vow Effect Start
-Defense set from 3 to 15
-
-
-[Tick 60060] R0, R1,  acting
+[Tick 792] B1,  acting
 Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
-R1(11,6,27,18,9) performs [Tripple Shot] to B2(6,3,18,9,33)
-B2 HP: 2 - 8 => -6
-R1(11,6,27,18,9) performs [Tripple Shot] to B4(12,5,26,5,32)
-B4 HP: 14 - 6 => 8
-R1(11,6,27,18,9) performs [Tripple Shot] to B0(20,8,24,8,11)
-B0 HP: 18 - 3 => 15
-R0(3,6,22,12,5) performs [Overpower] to B4(12,5,26,5,32)
-B4 HP: 8 - 0 => 8
+B1(15,8,21,7,6) performs [Prep Attack] to R3(10,3,20,9,17)
+HP set from 21 to 33
+R3 HP: 20 - 12 => 8
 
 
-[Tick 65520] B3,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B3(16,10,14,11,9) performs [Vow] to B4(12,5,26,5,32)
-Threat set from 32 to 48
-[BOON] Refreshing existing  on B4
-B3(16,10,14,11,9) performs [Vow] to B0(20,8,24,8,11)
-Threat set from 11 to 27
+[Tick 924] R0,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, B4, 
+R0(13,1,22,6,9) performs [Slash] to B4(14,8,26,7,19)
+B4 HP: 3 - 5 => -2
 
 
-[Tick 80080] R1,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R1(11,6,27,18,9) performs [Tripple Shot] to B4(12,5,26,5,48)
-B4 HP: 8 - 6 => 2
-R1(11,6,27,18,9) performs [Tripple Shot] to B0(20,8,24,8,27)
-B0 HP: 15 - 3 => 12
-R1(11,6,27,18,9) performs [Tripple Shot] to B1(13,4,18,13,11)
-B1 HP: 18 - 7 => 11
+[Tick 1008] R1,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+R1(14,1,22,11,16) performs [Leech Attack] to B3(12,4,24,9,17)
+B3 HP: 24 - 10 => 14
+[HEAL] R1 healed for 0 HP (from 22 to 22/22)
 
 
-[Tick 83160] R2, B1,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B1(13,4,18,13,11) performs [Chop] to R2(11,15,23,13,30)
-R2 HP: 23 - 0 => 23
-Defense set from 15 to 4
-R2(11,4,23,13,30) performs [Healing Touch] to R1(11,6,27,18,9)
-[HEAL] R1 healed for 0 HP (from 27 to 27/27)
-[AFTER-ACTION] R3 → R2: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R2
- - applying removal effect: Vow Effect End
-Defense set from 4 to 0
-[BOON] Vow Effect Start expired on R2 - cleaned up
+[Tick 1232] R2,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+R2(14,7,29,9,5) performs [Taunt] to B3(12,4,24,9,17)
+B3 HP: 14 - 10 => 4
+Threat set from 5 to -2
 
 
-[Tick 90090] B0, R0,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B0(20,8,24,8,27) performs [Slash] to R2(11,0,23,13,30)
-R2 HP: 23 - 20 => 3
-R0(3,6,22,12,5) performs [Overpower] to B4(12,5,26,5,48)
-B4 HP: 2 - 0 => 2
-[AFTER-ACTION] B3 → B0: Vow Effect Start
-Defense set from 8 to 24
+[Tick 1233] R3,  acting
+Survived Unit: R0, R1, R2, R3, B0, B1, B2, B3, 
+R3(10,3,20,9,17) performs [Shoot] to B3(12,4,24,9,17)
+B3 HP: 4 - 6 => -2
+[AFTER-ACTION] B2 → R3: Tetrodo Effect
+[BOON] Tetrodo Effect on R3 (Usage: 2/2)
+R3 HP: 8 - 8 => 0
 
 
-[Tick 98280] B3,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-B3(16,10,14,11,9) performs [Vow] to B4(12,5,26,5,48)
-Threat set from 48 to 64
-[BOON] Refreshing existing  on B4
-B3(16,10,14,11,9) performs [Vow] to B0(20,24,24,8,27)
-Threat set from 27 to 43
-[BOON] Refreshing existing  on B0
+[Tick 1386] B0, B2,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, 
+B0(12,4,26,8,13) performs [Prep Attack] to R1(14,1,22,11,16)
+HP set from 26 to 37
+R1 HP: 22 - 11 => 11
+B2(8,4,24,8,15) performs [Tetrodo] to R1(14,1,22,11,16)
 
 
-[Tick 100100] R1,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, B4, 
-R1(11,6,27,18,9) performs [Tripple Shot] to B4(12,5,26,5,64)
-B4 HP: 2 - 6 => -4
-R1(11,6,27,18,9) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,6,27,18,9) performs [Tripple Shot] to B1(13,4,18,13,11)
-B1 HP: 11 - 7 => 4
+[Tick 1512] R1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, 
+R1(14,1,22,11,16) performs [Leech Attack] to B2(8,4,24,8,15)
+B2 HP: 24 - 10 => 14
+[HEAL] R1 healed for 10 HP (from 11 to 21/22)
+[AFTER-ACTION] B2 → R1: Tetrodo Effect
+[BOON] Tetrodo Effect on R1 (Usage: 2/2)
+R1 HP: 21 - 8 => 13
 
 
-[Tick 102960] R3,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, 
-R3(12,8,18,7,7) performs [Vow] to R2(11,0,23,13,30)
-Threat set from 30 to 42
-R3(12,8,18,7,7) performs [Vow] to R1(11,6,27,18,9)
-Threat set from 9 to 21
+[Tick 1584] B1,  acting
+Survived Unit: R0, R1, R2, B0, B1, B2, 
+B1(15,8,33,7,6) performs [Prep Attack] to R1(14,1,22,11,16)
+HP set from 33 to 47
+R1 HP: 13 - 14 => -1
 
 
-[Tick 110880] B1,  acting
-Survived Unit: R0, R1, R2, R3, B0, B1, B3, 
-B1(13,4,18,13,11) performs [Chop] to R2(11,0,23,13,42)
-R2 HP: 3 - 13 => -10
-Defense set from 0 to 0
+[Tick 1848] R0, R2,  acting
+Survived Unit: R0, R2, B0, B1, B2, 
+R0(13,1,22,6,9) performs [Slash] to B2(8,4,24,8,15)
+B2 HP: 14 - 9 => 5
+R2(14,7,29,9,0) performs [Taunt] to B2(8,4,24,8,15)
+B2 HP: 5 - 10 => -5
+Threat set from 0 to -7
 
 
-[Tick 113256] R3,  acting
-Survived Unit: R0, R1, R3, B0, B1, B3, 
-R3(12,8,18,7,7) performs [Vow] to R1(11,6,27,18,21)
-Threat set from 21 to 33
-[BOON] Refreshing existing  on R1
-R3(12,8,18,7,7) performs [Vow] to R3(12,8,18,7,7)
-Threat set from 7 to 19
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
+[Tick 1904] R2,  acting
+Survived Unit: R0, R2, B0, B1, 
+R2(14,7,29,9,0) performs [Taunt] to B0(12,4,37,8,13)
+B0 HP: 15 - 10 => 5
+Threat set from 0 to -7
 
 
-[Tick 116424] B1,  acting
-Survived Unit: R0, R1, R3, B0, B1, B3, 
-B1(13,4,18,13,11) performs [Chop] to R1(11,6,27,18,33)
-R1 HP: 27 - 7 => 20
-Defense set from 6 to 0
+[Tick 1932] R0,  acting
+Survived Unit: R0, R2, B0, B1, 
+R0(13,1,22,6,9) performs [Slash] to B0(12,4,37,8,13)
+B0 HP: 5 - 9 => -4
 
 
-[Tick 120120] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, B1, B3, 
-R1(11,0,27,18,33) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,33) performs [Tripple Shot] to B1(13,4,18,13,11)
-B1 HP: 4 - 7 => -3
-R1(11,0,27,18,33) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 14 - 1 => 13
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
+[Tick 1960] R2,  acting
+Survived Unit: R0, R2, B1, 
+R2(14,7,29,9,0) performs [Taunt] to B1(15,8,47,7,6)
+B1 HP: 21 - 6 => 15
+Threat set from 0 to -7
 
 
-[Tick 123552] R3,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R3(12,20,18,7,19) performs [Vow] to R1(11,12,27,18,33)
-Threat set from 33 to 45
-[BOON] Refreshing existing  on R1
-R3(12,20,18,7,19) performs [Vow] to R3(12,20,18,7,19)
-Threat set from 19 to 31
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
+[Tick 1974] R2,  acting
+Survived Unit: R0, R2, B1, 
+R2(14,7,29,9,0) performs [Taunt] to B1(15,8,47,7,6)
+B1 HP: 15 - 6 => 9
+Threat set from 0 to -7
 
 
-[Tick 124124] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,12,27,18,45) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,12,27,18,45) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 13 - 1 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
+[Tick 1988] R2,  acting
+Survived Unit: R0, R2, B1, 
+R2(14,7,29,9,0) performs [Taunt] to B1(15,8,47,7,6)
+B1 HP: 9 - 6 => 3
+Threat set from 0 to -7
 
 
-[Tick 124344] R3,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R3(12,8,18,7,31) performs [Vow] to R1(11,0,27,18,45)
-Threat set from 45 to 57
-R3(12,8,18,7,31) performs [Vow] to R3(12,8,18,7,31)
-Threat set from 31 to 43
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 124432] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,57) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,57) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 12 - 1 => 11
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 124740] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,12,27,18,57) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,12,27,18,57) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 11 - 1 => 10
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 125048] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,57) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,57) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 10 - 1 => 9
-
-
-[Tick 125136] R3,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R3(12,20,18,7,43) performs [Vow] to R1(11,0,27,18,57)
-Threat set from 57 to 69
-R3(12,20,18,7,43) performs [Vow] to R3(12,20,18,7,43)
-Threat set from 43 to 55
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 125356] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,69) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,69) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 9 - 1 => 8
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 125664] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,12,27,18,69) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,12,27,18,69) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 8 - 1 => 7
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 125928] R3,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R3(12,8,18,7,55) performs [Vow] to R1(11,0,27,18,69)
-Threat set from 69 to 81
-R3(12,8,18,7,55) performs [Vow] to R3(12,8,18,7,55)
-Threat set from 55 to 67
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 125972] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,81) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,81) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 7 - 1 => 6
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 126126] R0,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 126280] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,12,27,18,81) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,12,27,18,81) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 6 - 1 => 5
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 126588] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,81) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,81) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 5 - 1 => 4
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 126720] R3,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R3(12,20,18,7,67) performs [Vow] to R1(11,0,27,18,81)
-Threat set from 81 to 93
-R3(12,20,18,7,67) performs [Vow] to R3(12,20,18,7,67)
-Threat set from 67 to 79
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 126896] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,93) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,93) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 4 - 1 => 3
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 127050] R0,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 127204] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,12,27,18,93) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,12,27,18,93) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 3 - 1 => 2
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 127512] R3, R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,93) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,93) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 2 - 1 => 1
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R3(12,8,18,7,79) performs [Vow] to R1(11,0,27,18,93)
-Threat set from 93 to 105
-R3(12,8,18,7,79) performs [Vow] to R3(12,8,18,7,79)
-Threat set from 79 to 91
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 127820] R1,  acting
-Survived Unit: R0, R1, R3, B0, B3, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R1(11,0,27,18,105) performs [Tripple Shot] to B3(16,10,14,11,9)
-B3 HP: 1 - 1 => 0
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 127974] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128016] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128058] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128100] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128128] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128142] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128156] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128184] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128212] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128226] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128240] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128268] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128296] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,105) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128304] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,20,18,7,91) performs [Vow] to R1(11,0,27,18,105)
-Threat set from 105 to 117
-R3(12,20,18,7,91) performs [Vow] to R3(12,20,18,7,91)
-Threat set from 91 to 103
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 128310] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128324] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,117) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128352] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,117) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128376] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,8,18,7,103) performs [Vow] to R1(11,0,27,18,117)
-Threat set from 117 to 129
-R3(12,8,18,7,103) performs [Vow] to R3(12,8,18,7,103)
-Threat set from 103 to 115
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 128380] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,129) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128394] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128408] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,129) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128436] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,129) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128448] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,20,18,7,115) performs [Vow] to R1(11,0,27,18,129)
-Threat set from 129 to 141
-R3(12,20,18,7,115) performs [Vow] to R3(12,20,18,7,115)
-Threat set from 115 to 127
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 128464] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,141) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128478] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128492] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,141) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128520] R3, R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,141) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R3(12,8,18,7,127) performs [Vow] to R1(11,0,27,18,141)
-Threat set from 141 to 153
-R3(12,8,18,7,127) performs [Vow] to R3(12,8,18,7,127)
-Threat set from 127 to 139
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 128548] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,153) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128562] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128576] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,153) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128592] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,20,18,7,139) performs [Vow] to R1(11,0,27,18,153)
-Threat set from 153 to 165
-R3(12,20,18,7,139) performs [Vow] to R3(12,20,18,7,139)
-Threat set from 139 to 151
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 128604] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,165) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128632] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,165) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128646] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128660] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,165) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128664] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,8,18,7,151) performs [Vow] to R1(11,0,27,18,165)
-Threat set from 165 to 177
-R3(12,8,18,7,151) performs [Vow] to R3(12,8,18,7,151)
-Threat set from 151 to 163
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 128688] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,177) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128716] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,177) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128730] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128736] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,20,18,7,163) performs [Vow] to R1(11,0,27,18,177)
-Threat set from 177 to 189
-R3(12,20,18,7,163) performs [Vow] to R3(12,20,18,7,163)
-Threat set from 163 to 175
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 128744] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,189) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128772] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,189) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128800] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,189) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128808] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,8,18,7,175) performs [Vow] to R1(11,0,27,18,189)
-Threat set from 189 to 201
-R3(12,8,18,7,175) performs [Vow] to R3(12,8,18,7,175)
-Threat set from 175 to 187
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 128814] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128828] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,201) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128856] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,201) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128880] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,20,18,7,187) performs [Vow] to R1(11,0,27,18,201)
-Threat set from 201 to 213
-R3(12,20,18,7,187) performs [Vow] to R3(12,20,18,7,187)
-Threat set from 187 to 199
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 128884] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,213) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128898] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128912] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,213) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 128940] R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,213) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128952] R3,  acting
-Survived Unit: R0, R1, R3, B0, 
-R3(12,8,18,7,199) performs [Vow] to R1(11,0,27,18,213)
-Threat set from 213 to 225
-R3(12,8,18,7,199) performs [Vow] to R3(12,8,18,7,199)
-Threat set from 199 to 211
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 8 to 20
-
-
-[Tick 128968] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,225) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 128982] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 128996] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,225) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-
-
-[Tick 129024] R3, R0, R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,225) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-R3(12,20,18,7,211) performs [Vow] to R1(11,0,27,18,225)
-Threat set from 225 to 237
-R3(12,20,18,7,211) performs [Vow] to R3(12,20,18,7,211)
-Threat set from 211 to 223
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R3
- - applying removal effect: Vow Effect End
-Defense set from 20 to 8
-[BOON] Vow Effect Start expired on R3 - cleaned up
-
-
-[Tick 129052] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,0,27,18,237) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-Defense set from 0 to 12
-
-
-[Tick 129066] R0,  acting
-Survived Unit: R0, R1, R3, B0, 
-R0(3,6,22,12,5) performs [Overpower] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-
-
-[Tick 129080] R1,  acting
-Survived Unit: R0, R1, R3, B0, 
-R1(11,12,27,18,237) performs [Tripple Shot] to B0(20,24,24,8,43)
-B0 HP: 12 - 0 => 12
-[AFTER-ACTION] R3 → R1: Vow Effect Start
-[TEMP-BUFF] Vow Effect Start expired on R1
- - applying removal effect: Vow Effect End
-Defense set from 12 to 0
-[BOON] Vow Effect Start expired on R1 - cleaned up
-Battle Over! Tick limit reached
+[Tick 2002] R2,  acting
+Survived Unit: R0, R2, B1, 
+R2(14,7,29,9,0) performs [Taunt] to B1(15,8,47,7,6)
+B1 HP: 3 - 6 => -3
+Threat set from 0 to -7
+Battle Over! Red Team wins!

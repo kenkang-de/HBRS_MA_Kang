@@ -1,104 +1,150 @@
-Unit 0: R0 Attack:18 Defense:7 HP:18 Speed:8 Threat:13 Weapon: [BSW11](Fade Attack) Armor: [BSA22]
-Unit 1: R1 Attack:8 Defense:9 HP:25 Speed:6 Threat:10 Weapon: [BSW21](Poison Arrow) Armor: [BSA13]
-Unit 2: R2 Attack:9 Defense:6 HP:24 Speed:11 Threat:5 Weapon: [BSW21](Poison Arrow) Armor: [BSA17]
-Unit 3: R3 Attack:19 Defense:7 HP:20 Speed:12 Threat:15 Weapon: [BSW25](Smoke Shot) Armor: [BSA29]
-Unit 4: R4 Attack:12 Defense:7 HP:20 Speed:9 Threat:14 Weapon: [BSW28](Heavy Shot) Armor: [BSA25]
-Unit 5: B0 Attack:17 Defense:5 HP:21 Speed:11 Threat:8 Weapon: [BSW4](Berserk) Armor: [BSA43]
-Unit 6: B1 Attack:18 Defense:0 HP:27 Speed:12 Threat:6 Weapon: [BSW10](Reckless Attack) Armor: [BSA5]
-Unit 7: B2 Attack:8 Defense:7 HP:18 Speed:9 Threat:20 Weapon: [BSW39](Healing Link) Armor: [BSA27]
-Unit 8: B3 Attack:10 Defense:3 HP:22 Speed:10 Threat:12 Weapon: [BSW42](Haste) Armor: [BSA35]
-Unit 9: B4 Attack:6 Defense:5 HP:19 Speed:6 Threat:15 Weapon: [BSW47](Cheer) Armor: [BSA20]
+Unit 0: R0 Attack:13 Defense:4 HP:20 Speed:13 Threat:22 Weapon: [BSW14](Leech Attack) Armor: [BSA29]
+Unit 1: R1 Attack:6 Defense:10 HP:22 Speed:6 Threat:3 Weapon: [BSW20](Blitz Shot) Armor: [BSA48]
+Unit 2: R2 Attack:10 Defense:3 HP:18 Speed:7 Threat:14 Weapon: [BSW24](Boost Acuity) Armor: [BSA12]
+Unit 3: R3 Attack:16 Defense:3 HP:19 Speed:12 Threat:8 Weapon: [BSW26](Double Shot) Armor: [BSA21]
+Unit 4: R4 Attack:8 Defense:9 HP:25 Speed:7 Threat:11 Weapon: [BSW44](Exposure) Armor: [BSA4]
+Unit 5: B0 Attack:7 Defense:4 HP:29 Speed:8 Threat:5 Weapon: [BSW1](Slash) Armor: [BSA9]
+Unit 6: B1 Attack:21 Defense:10 HP:22 Speed:10 Threat:1 Weapon: [BSW5](Overpower) Armor: [BSA22]
+Unit 7: B2 Attack:8 Defense:7 HP:20 Speed:5 Threat:4 Weapon: [BSW20](Blitz Shot) Armor: [BSA40]
+Unit 8: B3 Attack:10 Defense:6 HP:21 Speed:5 Threat:6 Weapon: [BSW20](Blitz Shot) Armor: [BSA44]
+Unit 9: B4 Attack:4 Defense:5 HP:28 Speed:10 Threat:15 Weapon: [BSW36](Tetrodo) Armor: [BSA14]
 ==========================
 
 
-[Tick 330] R3, B1,  acting
+[Tick 840] R0,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R3(19,7,20,12,15) performs [Smoke Shot] to B2(8,7,18,9,20)
-B2 HP: 18 - 12 => 6
-Threat set from 20 to 13
-B1(18,0,27,12,6) performs [Reckless Attack] to R3(19,7,20,12,15)
-B1 HP: 27 - 0 => 27
-R3 HP: 20 - 22 => -2
+R0(13,4,20,13,22) performs [Leech Attack] to B4(4,5,28,10,15)
+B4 HP: 28 - 8 => 20
+[HEAL] R0 healed for 0 HP (from 20 to 20/20)
 
 
-[Tick 360] R2, B0,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-R2(9,6,24,11,5) performs [Poison Arrow] to B4(6,5,19,6,15)
-B4 HP: 19 - 4 => 15
-B0(17,5,21,11,8) performs [Berserk] to R4(12,7,20,9,14)
-B0 HP: 21 - 5 => 16
-R4 HP: 20 - 10 => 10
-Attack set from 17 to 22
+[Tick 910] R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(16,3,19,12,8) performs [Double Shot] to B4(4,5,28,10,15)
+B4 HP: 20 - 11 => 9
+R3(16,3,19,12,8) performs [Double Shot] to B3(10,6,21,5,6)
+B3 HP: 21 - 10 => 11
 
 
-[Tick 396] B3,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-B3(10,3,22,10,12) performs [Haste] to B4(6,5,19,6,15)
+[Tick 1092] B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B1(21,10,22,10,1) performs [Overpower] to R0(13,4,20,13,22)
+R0 HP: 20 - 17 => 3
+R0 HP: 3 - 17 => -14
 
 
-[Tick 441] R4,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, B4, 
-R4(12,7,20,9,14) performs [Heavy Shot] to B4(6,5,19,6,15)
-B4 HP: 15 - 19 => -4
-Speed set from 9 to 11
+[Tick 1365] B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(7,4,29,8,5) performs [Slash] to R2(10,3,18,7,14)
+R2 HP: 18 - 4 => 14
 
 
-[Tick 495] R0,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B2, B3, 
-R0(18,7,18,8,13) performs [Fade Attack] to B2(8,7,18,9,13)
-B2 HP: 6 - 11 => -5
-Threat set from 13 to 2
+[Tick 1470] B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+B0(7,4,29,8,5) performs [Slash] to R2(10,3,18,7,14)
+R2 HP: 14 - 4 => 10
 
 
-[Tick 660] R1, B1,  acting
-Survived Unit: R0, R1, R2, R4, B0, B1, B3, 
-R1(8,9,25,6,10) performs [Poison Arrow] to B3(10,3,22,10,12)
-B3 HP: 22 - 5 => 17
-B1(18,0,27,12,6) performs [Reckless Attack] to R4(12,7,20,11,14)
-B1 HP: 27 - 0 => 27
-R4 HP: 10 - 22 => -12
+[Tick 1560] R2, R4,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(10,3,18,7,14) performs [Boost Acuity] to B4(4,5,28,10,15)
+B4 HP: 9 - 15 => -6
+R4(8,9,25,7,11) performs [Exposure] to B3(10,6,21,5,6)
+Threat set from 6 to 14
+R4(8,9,25,7,11) performs [Exposure] to B0(7,4,29,8,5)
+Threat set from 5 to 13
+R4(8,9,25,7,11) performs [Exposure] to B2(8,7,20,5,4)
+Threat set from 4 to 12
 
 
-[Tick 720] R2, B0,  acting
-Survived Unit: R0, R1, R2, B0, B1, B3, 
-R2(9,6,24,11,5) performs [Poison Arrow] to B3(10,3,22,10,12)
-B3 HP: 17 - 6 => 11
-[BOON] Refreshing existing  on B3
-B0(22,5,21,11,8) performs [Berserk] to R1(8,9,25,6,10)
-B0 HP: 16 - 5 => 11
-R1 HP: 25 - 13 => 12
-Attack set from 22 to 27
+[Tick 1575] B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+B0(7,4,29,8,13) performs [Slash] to R2(10,3,18,7,14)
+R2 HP: 10 - 4 => 6
 
 
-[Tick 770] B1,  acting
-Survived Unit: R0, R1, R2, B0, B1, B3, 
-B1(18,0,27,12,6) performs [Reckless Attack] to R1(8,9,25,6,10)
-B1 HP: 27 - 0 => 27
-R1 HP: 12 - 22 => -10
+[Tick 1680] R2, R4, B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+R2(10,3,18,7,14) performs [Boost Acuity] to B3(10,6,21,5,14)
+B3 HP: 11 - 9 => 2
+B0(7,4,29,8,13) performs [Slash] to R2(10,3,18,7,14)
+R2 HP: 6 - 4 => 2
+R4(8,9,25,7,11) performs [Exposure] to B3(10,6,21,5,14)
+Threat set from 14 to 22
+R4(8,9,25,7,11) performs [Exposure] to B0(7,4,29,8,13)
+Threat set from 13 to 21
+R4(8,9,25,7,11) performs [Exposure] to B2(8,7,20,5,12)
+Threat set from 12 to 20
 
 
-[Tick 840] R2, B0,  acting
-Survived Unit: R0, R2, B0, B1, B3, 
-R2(9,6,24,11,5) performs [Poison Arrow] to B3(10,3,22,10,12)
-B3 HP: 11 - 6 => 5
-[BOON] Refreshing existing  on B3
-B0(27,5,21,11,8) performs [Berserk] to R2(9,6,24,11,5)
-B0 HP: 11 - 5 => 6
-R2 HP: 24 - 21 => 3
-Attack set from 27 to 32
+[Tick 1785] B0,  acting
+Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, 
+B0(7,4,29,8,21) performs [Slash] to R2(10,3,18,7,14)
+R2 HP: 2 - 4 => -2
 
 
-[Tick 880] B1,  acting
-Survived Unit: R0, R2, B0, B1, B3, 
-B1(18,0,27,12,6) performs [Reckless Attack] to R2(9,6,24,11,5)
-B1 HP: 27 - 0 => 27
-R2 HP: 3 - 22 => -19
+[Tick 1800] R4,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, 
+R4(8,9,25,7,11) performs [Exposure] to B3(10,6,21,5,22)
+Threat set from 22 to 30
+R4(8,9,25,7,11) performs [Exposure] to B0(7,4,29,8,21)
+Threat set from 21 to 29
+R4(8,9,25,7,11) performs [Exposure] to B2(8,7,20,5,20)
+Threat set from 20 to 28
 
 
-[Tick 960] B0,  acting
-Survived Unit: R0, B0, B1, B3, 
-B0(32,5,21,11,8) performs [Berserk] to R0(18,7,18,8,2)
-B0 HP: 6 - 5 => 1
-R0 HP: 18 - 25 => -7
-Attack set from 32 to 37
-Battle Over! Blue Team wins!
+[Tick 1820] R1, R3,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, B3, 
+R1(6,10,22,6,3) performs [Blitz Shot] to B3(10,6,21,5,30)
+B3 HP: 2 - 6 => -4
+R3(16,3,19,12,8) performs [Double Shot] to B0(7,4,29,8,29)
+B0 HP: 29 - 12 => 17
+R3(16,3,19,12,8) performs [Double Shot] to B2(8,7,20,5,28)
+B2 HP: 20 - 9 => 11
+
+
+[Tick 1890] B0, R3,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, 
+R3(16,3,19,12,8) performs [Double Shot] to B0(7,4,29,8,29)
+B0 HP: 17 - 12 => 5
+R3(16,3,19,12,8) performs [Double Shot] to B2(8,7,20,5,28)
+B2 HP: 11 - 9 => 2
+B0(7,4,29,8,29) performs [Slash] to R4(8,9,25,7,11)
+R4 HP: 25 - 0 => 25
+
+
+[Tick 1960] R1, R3,  acting
+Survived Unit: R1, R3, R4, B0, B1, B2, 
+R1(6,10,22,6,3) performs [Blitz Shot] to B0(7,4,29,8,29)
+B0 HP: 5 - 8 => -3
+R3(16,3,19,12,8) performs [Double Shot] to B2(8,7,20,5,28)
+B2 HP: 2 - 9 => -7
+R3(16,3,19,12,8) performs [Double Shot] to B1(21,10,22,10,1)
+B1 HP: 22 - 6 => 16
+
+
+[Tick 2030] R3,  acting
+Survived Unit: R1, R3, R4, B1, 
+R3(16,3,19,12,8) performs [Double Shot] to B1(21,10,22,10,1)
+B1 HP: 16 - 6 => 10
+
+
+[Tick 2040] R4,  acting
+Survived Unit: R1, R3, R4, B1, 
+R4(8,9,25,7,11) performs [Exposure] to B1(21,10,22,10,1)
+Threat set from 1 to 9
+
+
+[Tick 2065] R3,  acting
+Survived Unit: R1, R3, R4, B1, 
+R3(16,3,19,12,8) performs [Double Shot] to B1(21,10,22,10,9)
+B1 HP: 10 - 6 => 4
+
+
+[Tick 2100] R1, R4, R3,  acting
+Survived Unit: R1, R3, R4, B1, 
+R1(6,10,22,6,3) performs [Blitz Shot] to B1(21,10,22,10,9)
+B1 HP: 4 - 2 => 2
+R3(16,3,19,12,8) performs [Double Shot] to B1(21,10,22,10,9)
+B1 HP: 2 - 6 => -4
+Battle Over! Red Team wins!

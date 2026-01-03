@@ -1,97 +1,163 @@
-Unit 0: R0 Attack:9 Defense:2 HP:19 Speed:8 Threat:8 Weapon: [BSW37](Freeze) Armor: [BSA38]
-Unit 1: R1 Attack:12 Defense:7 HP:19 Speed:9 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA4]
-Unit 2: R2 Attack:15 Defense:9 HP:19 Speed:7 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA9]
-Unit 3: R3 Attack:17 Defense:9 HP:20 Speed:10 Threat:7 Weapon: [BSW43](Vow) Armor: [BSA19]
-Unit 4: R4 Attack:9 Defense:7 HP:27 Speed:10 Threat:4 Weapon: [BSW43](Vow) Armor: [BSA44]
-Unit 5: B0 Attack:12 Defense:1 HP:21 Speed:6 Threat:7 Weapon: [BSW3](Thrust) Armor: [BSA22]
-Unit 6: B1 Attack:11 Defense:6 HP:28 Speed:10 Threat:7 Weapon: [BSW3](Thrust) Armor: [BSA42]
-Unit 7: B2 Attack:18 Defense:0 HP:30 Speed:12 Threat:10 Weapon: [BSW10](Reckless Attack) Armor: [BSA2]
-Unit 8: B3 Attack:21 Defense:9 HP:21 Speed:7 Threat:14 Weapon: [BSW43](Vow) Armor: [BSA30]
-Unit 9: B4 Attack:18 Defense:6 HP:22 Speed:5 Threat:26 Weapon: [BSW47](Cheer) Armor: [BSA30]
+Unit 0: R0 Attack:9 Defense:9 HP:29 Speed:7 Threat:13 Weapon: [BSW1](Slash) Armor: [BSA5]
+Unit 1: R1 Attack:12 Defense:3 HP:22 Speed:6 Threat:8 Weapon: [BSW13](Prep Attack) Armor: [BSA19]
+Unit 2: R2 Attack:21 Defense:3 HP:20 Speed:8 Threat:10 Weapon: [BSW19](Momentum) Armor: [BSA43]
+Unit 3: R3 Attack:9 Defense:10 HP:27 Speed:9 Threat:12 Weapon: [BSW31](Wrist Shot) Armor: [BSA5]
+Unit 4: R4 Attack:12 Defense:10 HP:23 Speed:9 Threat:15 Weapon: [BSW47](Cheer) Armor: [BSA5]
+Unit 5: B0 Attack:11 Defense:4 HP:23 Speed:8 Threat:7 Weapon: [BSW6](Achilles' heel) Armor: [BSA9]
+Unit 6: B1 Attack:12 Defense:4 HP:17 Speed:9 Threat:16 Weapon: [BSW6](Achilles' heel) Armor: [BSA17]
+Unit 7: B2 Attack:14 Defense:5 HP:17 Speed:6 Threat:4 Weapon: [BSW13](Prep Attack) Armor: [BSA4]
+Unit 8: B3 Attack:18 Defense:4 HP:25 Speed:8 Threat:18 Weapon: [BSW15](Taunt) Armor: [BSA6]
+Unit 9: B4 Attack:9 Defense:8 HP:20 Speed:8 Threat:6 Weapon: [BSW42](Haste) Armor: [BSA33]
 ==========================
 
 
-[Tick 210] B2,  acting
+[Tick 56] R3, R4, B1,  acting
 Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B2(18,0,30,12,10) performs [Reckless Attack] to R0(9,2,19,8,8)
-B2 HP: 30 - 0 => 30
-R0 HP: 19 - 22 => -3
+R3(9,10,27,9,12) performs [Wrist Shot] to B3(18,4,25,8,18)
+B3 HP: 25 - 5 => 20
+Attack set from 18 to 16
+[A25] B3 attack reduced from 18 to 16 (damage: 5, reduction: 2)
+B1(12,4,17,9,16) performs [Achilles' heel] to R4(12,10,23,9,15)
+R4 HP: 23 - 2 => 21
+Speed set from 9 to 2
+R4(12,10,23,2,15) performs [Cheer] to R4(12,10,23,2,15)
+Attack set from 12 to 24
 
 
-[Tick 252] R3, R4, B1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(11,6,28,10,7) performs [Thrust] to R1(12,7,19,9,7)
-R1 HP: 19 - 15 => 4
-R3(17,9,20,10,7) performs [Vow] to R1(12,7,19,9,7)
-Threat set from 7 to 24
-R3(17,9,20,10,7) performs [Vow] to R2(15,9,19,7,7)
-Threat set from 7 to 24
-R4(9,7,27,10,4) performs [Vow] to R1(12,7,19,9,24)
-Threat set from 24 to 33
-[BOON] Refreshing existing  on R1
-R4(9,7,27,10,4) performs [Vow] to R2(15,9,19,7,24)
-Threat set from 24 to 33
-[BOON] Refreshing existing  on R2
+[Tick 63] R2, B0, B3, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R2(21,3,20,8,10) performs [Momentum] to B3(16,4,25,8,18)
+B3 HP: 20 - 17 => 3
+B0(11,4,23,8,7) performs [Achilles' heel] to R4(24,10,23,2,15)
+R4 HP: 21 - 1 => 20
+Speed set from 2 to 3
+B3(16,4,25,8,18) performs [Taunt] to R4(24,10,23,3,15)
+R4 HP: 20 - 6 => 14
+Threat set from 18 to 6
+B4(9,8,20,8,6) performs [Haste] to B1(12,4,17,9,16)
 
 
-[Tick 360] R2, B3,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-R2(15,9,19,7,33) performs [Vow] to R1(12,7,19,9,33)
-Threat set from 33 to 48
-[BOON] Refreshing existing  on R1
-R2(15,9,19,7,33) performs [Vow] to R2(15,9,19,7,33)
-Threat set from 33 to 48
-[BOON] Refreshing existing  on R2
-B3(21,9,21,7,14) performs [Vow] to B4(18,6,22,5,26)
-Threat set from 26 to 47
-B3(21,9,21,7,14) performs [Vow] to B3(21,9,21,7,14)
-Threat set from 14 to 35
-[AFTER-ACTION] R3 → R2: Vow Effect Start
-Defense set from 9 to 26
-[AFTER-ACTION] B3 → B3: Vow Effect Start
-Defense set from 9 to 30
+[Tick 72] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R0(9,9,29,7,13) performs [Slash] to B1(12,4,17,9,16)
+B1 HP: 17 - 5 => 12
 
 
-[Tick 378] R3, R4, B1,  acting
-Survived Unit: R1, R2, R3, R4, B0, B1, B2, B3, B4, 
-B1(11,6,28,10,7) performs [Thrust] to R1(12,7,19,9,48)
-R1 HP: 4 - 15 => -11
-R3(17,9,20,10,7) performs [Vow] to R2(15,26,19,7,48)
-Threat set from 48 to 65
-[BOON] Refreshing existing  on R2
-R3(17,9,20,10,7) performs [Vow] to R3(17,9,20,10,7)
-Threat set from 7 to 24
-R4(9,7,27,10,4) performs [Vow] to R2(15,26,19,7,65)
-Threat set from 65 to 74
-[BOON] Refreshing existing  on R2
-R4(9,7,27,10,4) performs [Vow] to R3(17,9,20,10,24)
-Threat set from 24 to 33
-[BOON] Refreshing existing  on R3
-[AFTER-ACTION] R3 → R3: Vow Effect Start
-Defense set from 9 to 26
+[Tick 84] R1, B2,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R1(12,3,22,6,8) performs [Prep Attack] to B1(12,4,17,9,16)
+HP set from 22 to 30
+B1 HP: 12 - 8 => 4
+B2(14,5,17,6,4) performs [Prep Attack] to R4(24,10,23,3,15)
+HP set from 17 to 21
+R4 HP: 14 - 4 => 10
 
 
-[Tick 420] B0, B2,  acting
-Survived Unit: R2, R3, R4, B0, B1, B2, B3, B4, 
-B0(12,1,21,6,7) performs [Thrust] to R2(15,26,19,7,74)
-R2 HP: 19 - 0 => 19
-B2(18,0,30,12,10) performs [Reckless Attack] to R2(15,26,19,7,74)
-B2 HP: 30 - 0 => 30
-R2 HP: 19 - 22 => -3
+[Tick 112] R3, B1,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B1, B2, B3, B4, 
+R3(9,10,27,9,12) performs [Wrist Shot] to B1(12,4,17,9,16)
+B1 HP: 4 - 5 => -1
+Attack set from 12 to 10
+[A25] B1 attack reduced from 12 to 10 (damage: 5, reduction: 2)
 
 
-[Tick 455] B2,  acting
-Survived Unit: R3, R4, B0, B1, B2, B3, B4, 
-B2(18,0,30,12,10) performs [Reckless Attack] to R3(17,26,20,10,33)
-B2 HP: 30 - 0 => 30
-R3 HP: 20 - 22 => -2
+[Tick 126] R2, B0, B3, B4,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+R2(21,3,20,8,10) performs [Momentum] to B0(11,4,23,8,7)
+B0 HP: 23 - 17 => 6
+B0(11,4,23,8,7) performs [Achilles' heel] to R4(24,10,23,3,15)
+R4 HP: 10 - 1 => 9
+Speed set from 3 to 4
+B3(16,4,25,8,6) performs [Taunt] to R4(24,10,23,4,15)
+R4 HP: 9 - 6 => 3
+Threat set from 6 to -6
+B4(9,8,20,8,6) performs [Haste] to B0(11,4,23,8,7)
 
 
-[Tick 490] B0, B2,  acting
-Survived Unit: R4, B0, B1, B2, B3, B4, 
-B0(12,1,21,6,7) performs [Thrust] to R4(9,7,27,10,4)
-R4 HP: 27 - 17 => 10
-B2(18,0,30,12,10) performs [Reckless Attack] to R4(9,7,27,10,4)
-B2 HP: 30 - 0 => 30
-R4 HP: 10 - 22 => -12
-Battle Over! Blue Team wins!
+[Tick 144] R0,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+R0(9,9,29,7,13) performs [Slash] to B0(11,4,23,8,7)
+B0 HP: 6 - 5 => 1
+
+
+[Tick 168] R1, B2, R3,  acting
+Survived Unit: R0, R1, R2, R3, R4, B0, B2, B3, B4, 
+R3(9,10,27,9,12) performs [Wrist Shot] to B0(11,4,23,8,7)
+B0 HP: 1 - 5 => -4
+Attack set from 11 to 9
+[A25] B0 attack reduced from 11 to 9 (damage: 5, reduction: 2)
+R1(12,3,30,6,8) performs [Prep Attack] to B4(9,8,20,8,6)
+HP set from 30 to 34
+B4 HP: 20 - 4 => 16
+B2(14,5,21,6,4) performs [Prep Attack] to R4(24,10,23,4,15)
+HP set from 21 to 25
+R4 HP: 3 - 4 => -1
+
+
+[Tick 189] R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, B4, 
+R2(21,3,20,8,10) performs [Momentum] to B4(9,8,20,8,6)
+B4 HP: 16 - 13 => 3
+B3(16,4,25,8,0) performs [Taunt] to R0(9,9,29,7,13)
+R0 HP: 29 - 7 => 22
+Threat set from 0 to -12
+
+
+[Tick 216] R0,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, B4, 
+R0(9,9,29,7,13) performs [Slash] to B4(9,8,20,8,6)
+B4 HP: 3 - 1 => 2
+
+
+[Tick 224] R3,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, B4, 
+R3(9,10,27,9,12) performs [Wrist Shot] to B4(9,8,20,8,6)
+B4 HP: 2 - 1 => 1
+
+
+[Tick 252] R1, B2, R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, B4, 
+R2(21,3,20,8,10) performs [Momentum] to B4(9,8,20,8,6)
+B4 HP: 1 - 13 => -12
+Speed set from 8 to 10
+R1(12,3,34,6,8) performs [Prep Attack] to B2(14,5,25,6,4)
+HP set from 34 to 41
+B2 HP: 17 - 7 => 10
+B2(14,5,25,6,4) performs [Prep Attack] to R0(9,9,29,7,13)
+HP set from 25 to 30
+R0 HP: 22 - 5 => 17
+B3(16,4,25,8,0) performs [Taunt] to R0(9,9,29,7,13)
+R0 HP: 17 - 7 => 10
+Threat set from 0 to -12
+
+
+[Tick 280] R3,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, 
+R3(9,10,27,9,12) performs [Wrist Shot] to B2(14,5,30,6,4)
+B2 HP: 10 - 4 => 6
+Attack set from 14 to 12
+[A25] B2 attack reduced from 14 to 12 (damage: 4, reduction: 2)
+
+
+[Tick 288] R0,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, 
+R0(9,9,29,7,13) performs [Slash] to B2(12,5,30,6,4)
+B2 HP: 6 - 4 => 2
+
+
+[Tick 315] R2, B3,  acting
+Survived Unit: R0, R1, R2, R3, B2, B3, 
+R2(21,3,20,10,10) performs [Momentum] to B2(12,5,30,6,4)
+B2 HP: 2 - 16 => -14
+Speed set from 10 to 12
+B3(16,4,25,8,0) performs [Taunt] to R0(9,9,29,7,13)
+R0 HP: 10 - 7 => 3
+[AFTER-ACTION] No valid target found for B3
+
+
+[Tick 336] R1,  acting
+Survived Unit: R0, R1, R2, R3, B3, 
+R1(12,3,41,6,8) performs [Prep Attack] to B3(16,4,25,8,0)
+HP set from 41 to 49
+B3 HP: 3 - 8 => -5
+Battle Over! Red Team wins!

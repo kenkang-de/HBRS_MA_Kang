@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-enum RUNMODE { STRATEGY, BALANCING };
+enum RUNMODE { STRATEGY, BALANCING_POP, BALANCING_STAT, BATCHSIZE };
 
 class ExperimentSettings {
   public:
@@ -24,6 +24,8 @@ class ExperimentSettings {
     static constexpr float Default_RATIO_CS = 0.0f;
     static constexpr float Default_RATIO_SYS = 0.0f;
     static constexpr RUNMODE Default_RUNMODE = RUNMODE::STRATEGY;
+    static constexpr int Default_NUM_BATCHES = 0;
+    static constexpr int Default_TEAMS_PER_BATCH = 0;
 
     inline static int APPLIEDSTAT_RANGE = Default_APPLIEDSTAT_RANGE;
     inline static int INDIVIDUALS_PER_GENERATION = Default_INDIVIDUALS_PER_GENERATION;
@@ -36,6 +38,8 @@ class ExperimentSettings {
     inline static float RATIO_CS = Default_RATIO_CS;
     inline static float RATIO_SYS = Default_RATIO_SYS;
     inline static RUNMODE currentRunMode = Default_RUNMODE;
+    inline static int NUM_BATCHES = Default_NUM_BATCHES;
+    inline static int TEAMS_PER_BATCH = Default_TEAMS_PER_BATCH;
 
     std::string GetExperimentFolderName() const {
         std::ostringstream oss;
@@ -44,8 +48,12 @@ class ExperimentSettings {
             oss << "BS(" << std::fixed << std::setprecision(1) << RATIO_BS << ")"
                 << "CS(" << std::fixed << std::setprecision(1) << RATIO_CS << ")"
                 << "SYS(" << std::fixed << std::setprecision(1) << RATIO_SYS << ")";
-        } else if (currentRunMode == BALANCING) {
+        } else if (currentRunMode == BALANCING_POP) {
             oss << "POP(" << INDIVIDUALS_PER_GENERATION << ")";
+        } else if (currentRunMode == BALANCING_STAT) {
+            oss << "STAT(" << APPLIEDSTAT_RANGE << ")";
+        } else if (currentRunMode == BATCHSIZE) {
+            oss << "BATCH(" << NUM_BATCHES << ")TEAM(" << TEAMS_PER_BATCH << ")";
         }
 
         return oss.str();
@@ -63,6 +71,8 @@ class ExperimentSettings {
         RATIO_CS = Default_RATIO_CS;
         RATIO_SYS = Default_RATIO_SYS;
         currentRunMode = Default_RUNMODE;
+        NUM_BATCHES = Default_NUM_BATCHES;
+        TEAMS_PER_BATCH = Default_TEAMS_PER_BATCH;
 
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -103,12 +113,20 @@ class ExperimentSettings {
                 RATIO_CS = std::stof(line.substr(9));
             } else if (line.find("RATIO_SYS=") == 0) {
                 RATIO_SYS = std::stof(line.substr(10));
+            } else if (line.find("NUM_BATCHES=") == 0) {
+                NUM_BATCHES = std::stoi(line.substr(12));
+            } else if (line.find("TEAMS_PER_BATCH=") == 0) {
+                TEAMS_PER_BATCH = std::stoi(line.substr(16));
             } else if (line.find("RUNMODE=") == 0) {
                 std::string mode = line.substr(8);
                 if (mode == "STRATEGY") {
                     currentRunMode = RUNMODE::STRATEGY;
-                } else if (mode == "BALANCING") {
-                    currentRunMode = RUNMODE::BALANCING;
+                } else if (mode == "BALANCING_POP") {
+                    currentRunMode = RUNMODE::BALANCING_POP;
+                } else if (mode == "BALANCING_STAT") {
+                    currentRunMode = RUNMODE::BALANCING_STAT;
+                } else if (mode == "BATCHSIZE") {
+                    currentRunMode = RUNMODE::BATCHSIZE;
                 }
             }
         }

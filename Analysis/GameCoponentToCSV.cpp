@@ -24,7 +24,7 @@ void GameComponentToCSV::Convert(std::vector<TestSubject *> testSubjects) {
         return;
     }
 
-    csvFile << "ID,Attack,Defense,Hitpoint,Speed,Threat" << std::endl;
+    csvFile << "ID,Attack,Defense,Hitpoint,Speed,Threat,UsageCount,WinRate" << std::endl;
 
     for (const TestSubject *subject : testSubjects) {
         if (subject) {
@@ -39,6 +39,10 @@ void GameComponentToCSV::Convert(std::vector<TestSubject *> testSubjects) {
                 csvFile << "," << regularStat.GetAttack() << "," << regularStat.GetDefense() << ","
                         << regularStat.GetHP() << "," << regularStat.GetSpeed() << "," << regularStat.GetThreat();
             }
+
+            // Add simulation statistics
+            csvFile << "," << subject->UsageCount << "," << std::fixed << std::setprecision(4) << subject->WinRate;
+
             csvFile << std::endl;
         }
     }
