@@ -1,0 +1,7 @@
+Chromosome Population,Average Highest Generation,Average Highest Fitness,Max Generation,Min Generation,Std Deviation,Count
+50,99.7,0.883136,100,97,0.9,10
+60,100.0,0.887742,100,100,0.0,10
+70,99.7,0.888573,100,97,0.9,10
+80,100.0,0.891217,100,100,0.0,10
+90,98.6,0.88941,100,86,4.2,10
+100,100.0,0.890561,100,100,0.0,10
